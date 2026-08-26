@@ -30,7 +30,8 @@ jobs:
       - name: Verificar alterações
         id: changes
         run: |
-          if git diff --quiet -- dados/; then
+          git add dados/
+          if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
