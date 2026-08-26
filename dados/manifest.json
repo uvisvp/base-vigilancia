@@ -1,12 +1,18 @@
 {
   "projeto": "Base Vigilância Sanitária",
-  "gerado_em": "2026-08-26T23:48:01.472474+00:00",
+  "gerado_em": "2026-08-26T23:58:05.026079+00:00",
   "bases": {
     "dispositivos": {
       "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
       "registros": 115472,
       "fragmentos": 43,
-      "atualizado_em": "2026-08-26T23:48:01.389651+00:00"
+      "atualizado_em": "2026-08-26T23:57:26.506642+00:00"
+    },
+    "afe_ae": {
+      "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
+      "registros": 350860,
+      "fragmentos": 981,
+      "atualizado_em": "2026-08-26T23:58:04.882497+00:00"
     }
   }
 }
