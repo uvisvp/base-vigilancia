@@ -55,13 +55,14 @@ def baixar_csv():
         }
     )
 
-        contexto_ssl = ssl._create_unverified_context()
+    contexto_ssl = ssl._create_unverified_context()
 
     with urllib.request.urlopen(
         requisicao,
         timeout=180,
         context=contexto_ssl
     ) as resposta, temporario.open("wb") as arquivo:
+        shutil.copyfileobj(resposta, arquivo)
 
     print(
         "Arquivo baixado:",
