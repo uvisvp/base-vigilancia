@@ -1,41 +1,12 @@
 {
   "projeto": "Base Vigilância Sanitária",
-  "gerado_em": "2026-08-26T23:26:59.797200+00:00",
-  "fontes": {
+  "gerado_em": "2026-08-26T23:48:01.472474+00:00",
+  "bases": {
     "dispositivos": {
-      "descricao": "Dispositivos médicos / produtos para saúde",
-      "configurada": false,
-      "url": ""
-    },
-    "medicamentos": {
-      "descricao": "Medicamentos regularizados",
-      "configurada": false,
-      "url": ""
-    },
-    "cosmeticos": {
-      "descricao": "Cosméticos, produtos de higiene e perfumes",
-      "configurada": false,
-      "url": ""
-    },
-    "saneantes": {
-      "descricao": "Produtos saneantes",
-      "configurada": false,
-      "url": ""
-    },
-    "suplementos": {
-      "descricao": "Suplementos alimentares regularizados/notificados",
-      "configurada": false,
-      "url": ""
-    },
-    "alimentos": {
-      "descricao": "Alimentos sujeitos a regularização nacional",
-      "configurada": false,
-      "url": ""
-    },
-    "afe_ae": {
-      "descricao": "Empresas com AFE / AE",
-      "configurada": false,
-      "url": ""
+      "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
+      "registros": 115472,
+      "fragmentos": 43,
+      "atualizado_em": "2026-08-26T23:48:01.389651+00:00"
     }
   }
 }
