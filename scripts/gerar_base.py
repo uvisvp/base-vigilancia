@@ -5,14 +5,23 @@ import csv
 import json
 import re
 import urllib.request
-import ssl
 import tempfile
 import shutil
+import ssl
 
 BASE = Path(__file__).resolve().parent.parent
 DADOS = BASE / "dados"
 
-URL_DISPOSITIVOS = "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv"
+URL_DISPOSITIVOS = (
+    "https://dados.anvisa.gov.br/dados/"
+    "TA_PRODUTO_SAUDE_SITE.csv"
+)
+
+URL_AFE_AE = (
+    "https://dados.anvisa.gov.br/dados/"
+    "CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/"
+    "TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV"
+)
 
 
 def somente_numeros(valor):
@@ -20,60 +29,84 @@ def somente_numeros(valor):
 
 
 def texto(valor):
-    return re.sub(r"\s+", " ", str(valor or "").strip())
+    return re.sub(
+        r"\s+",
+        " ",
+        str(valor or "").strip()
+    )
+
+
+def normalizar_nome(valor):
+    return re.sub(
+        r"[^A-Z0-9]",
+        "",
+        str(valor or "").upper()
+    )
 
 
 def achar_coluna(cabecalho, possibilidades):
     mapa = {
-        re.sub(r"[^A-Z0-9]", "", c.upper()): c
+        normalizar_nome(c): c
         for c in cabecalho
         if c
     }
 
     for nome in possibilidades:
-        chave = re.sub(r"[^A-Z0-9]", "", nome.upper())
+        chave = normalizar_nome(nome)
+
         if chave in mapa:
             return mapa[chave]
 
     return None
 
 
-def baixar_csv():
-    print("Baixando base de dispositivos médicos da Anvisa...")
+def baixar_csv(url, prefixo):
+    print("Baixando:", url)
 
     temporario = Path(
         tempfile.mkstemp(
-            prefix="anvisa_dispositivos_",
+            prefix=prefixo,
             suffix=".csv"
         )[1]
     )
 
     requisicao = urllib.request.Request(
-        URL_DISPOSITIVOS,
+        url,
         headers={
-            "User-Agent": "Mozilla/5.0 base-vigilancia"
+            "User-Agent":
+            "Mozilla/5.0 base-vigilancia"
         }
     )
 
-    contexto_ssl = ssl._create_unverified_context()
+    contexto_ssl = (
+        ssl._create_unverified_context()
+    )
 
     with urllib.request.urlopen(
         requisicao,
-        timeout=180,
+        timeout=600,
         context=contexto_ssl
-    ) as resposta, temporario.open("wb") as arquivo:
-        shutil.copyfileobj(resposta, arquivo)
+    ) as resposta, temporario.open(
+        "wb"
+    ) as arquivo:
+
+        shutil.copyfileobj(
+            resposta,
+            arquivo
+        )
+
+    tamanho = temporario.stat().st_size
 
     print(
         "Arquivo baixado:",
-        temporario.stat().st_size,
+        tamanho,
         "bytes"
     )
 
-    if temporario.stat().st_size < 100000:
+    if tamanho < 100000:
         raise RuntimeError(
-            "A base baixada é pequena demais. "
-            "Atualização cancelada por segurança."
+            "Arquivo baixado pequeno demais. "
+            "Atualização cancelada."
         )
 
     return temporario
@@ -110,24 +143,72 @@ def detectar_configuracao(arquivo):
             delimiters=";,|\t"
         )
         delimitador = dialeto.delimiter
+
     except csv.Error:
         pass
+
+    print(
+        "Encoding:",
+        encoding,
+        "| delimitador:",
+        repr(delimitador)
+    )
 
     return encoding, delimitador
 
 
-def gerar_dispositivos():
-    arquivo = baixar_csv()
+def limpar_json(item):
+    return {
+        chave: valor
+        for chave, valor in item.items()
+        if valor not in ("", None)
+    }
 
-    try:
-        encoding, delimitador = detectar_configuracao(
-            arquivo
+
+def gravar_fragmentos(destino, grupos):
+    destino.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    for antigo in destino.glob("*.json"):
+        antigo.unlink()
+
+    for prefixo, itens in grupos.items():
+
+        caminho = destino / (
+            prefixo + ".json"
         )
 
-        destino = DADOS / "dispositivos"
-        destino.mkdir(
-            parents=True,
-            exist_ok=True
+        with caminho.open(
+            "w",
+            encoding="utf-8"
+        ) as f:
+
+            json.dump(
+                itens,
+                f,
+                ensure_ascii=False,
+                separators=(",", ":")
+            )
+
+
+# ==================================================
+# DISPOSITIVOS MÉDICOS
+# ==================================================
+
+def gerar_dispositivos():
+
+    arquivo = baixar_csv(
+        URL_DISPOSITIVOS,
+        "anvisa_dispositivos_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
         )
 
         grupos = defaultdict(list)
@@ -146,11 +227,12 @@ def gerar_dispositivos():
 
             if not leitor.fieldnames:
                 raise RuntimeError(
-                    "O CSV não possui cabeçalho."
+                    "CSV de dispositivos "
+                    "sem cabeçalho."
                 )
 
             print(
-                "Colunas encontradas:",
+                "Colunas dispositivos:",
                 leitor.fieldnames
             )
 
@@ -238,16 +320,19 @@ def gerar_dispositivos():
                 ]
             )
 
-            if not col_registro or not col_produto:
+            if (
+                not col_registro
+                or not col_produto
+            ):
                 raise RuntimeError(
-                    "Não foi possível localizar "
-                    "as colunas essenciais de "
-                    "registro e produto."
+                    "Colunas essenciais de "
+                    "dispositivos não encontradas."
                 )
 
             total = 0
 
             for linha in leitor:
+
                 registro = somente_numeros(
                     linha.get(
                         col_registro,
@@ -271,10 +356,12 @@ def gerar_dispositivos():
                 }
 
                 if col_processo:
-                    item["processo"] = somente_numeros(
-                        linha.get(
-                            col_processo,
-                            ""
+                    item["processo"] = (
+                        somente_numeros(
+                            linha.get(
+                                col_processo,
+                                ""
+                            )
                         )
                     )
 
@@ -287,18 +374,22 @@ def gerar_dispositivos():
                     )
 
                 if col_cnpj:
-                    item["cnpj"] = somente_numeros(
-                        linha.get(
-                            col_cnpj,
-                            ""
+                    item["cnpj"] = (
+                        somente_numeros(
+                            linha.get(
+                                col_cnpj,
+                                ""
+                            )
                         )
                     )
 
                 if col_fabricante:
-                    item["fabricante"] = texto(
-                        linha.get(
-                            col_fabricante,
-                            ""
+                    item["fabricante"] = (
+                        texto(
+                            linha.get(
+                                col_fabricante,
+                                ""
+                            )
                         )
                     )
 
@@ -326,6 +417,8 @@ def gerar_dispositivos():
                         )
                     )
 
+                item = limpar_json(item)
+
                 prefixo = registro[:3]
 
                 grupos[prefixo].append(
@@ -336,34 +429,21 @@ def gerar_dispositivos():
 
         if total < 1000:
             raise RuntimeError(
-                f"Apenas {total} registros foram "
-                "processados. Atualização cancelada."
+                "Base de dispositivos "
+                "gerou poucos registros."
             )
 
-        for antigo in destino.glob("*.json"):
-            antigo.unlink()
-
-        for prefixo, itens in grupos.items():
-            caminho = destino / (
-                prefixo + ".json"
-            )
-
-            with caminho.open(
-                "w",
-                encoding="utf-8"
-            ) as f:
-                json.dump(
-                    itens,
-                    f,
-                    ensure_ascii=False,
-                    separators=(",", ":")
-                )
+        gravar_fragmentos(
+            DADOS / "dispositivos",
+            grupos
+        )
 
         return {
             "fonte": URL_DISPOSITIVOS,
             "registros": total,
             "fragmentos": len(grupos),
-            "atualizado_em": datetime.now(
+            "atualizado_em":
+            datetime.now(
                 timezone.utc
             ).isoformat()
         }
@@ -374,19 +454,344 @@ def gerar_dispositivos():
         )
 
 
-def gerar_manifesto(resultado):
+# ==================================================
+# AFE / AE
+# ==================================================
+
+def gerar_afe_ae():
+
+    arquivo = baixar_csv(
+        URL_AFE_AE,
+        "anvisa_afe_ae_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
+        )
+
+        grupos = defaultdict(list)
+
+        with arquivo.open(
+            "r",
+            encoding=encoding,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV AFE/AE sem cabeçalho."
+                )
+
+            print(
+                "Colunas AFE/AE:",
+                leitor.fieldnames
+            )
+
+            col_cnpj = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CNPJ",
+                    "CNPJ_EMPRESA",
+                    "NU_CNPJ"
+                ]
+            )
+
+            col_razao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "RAZAO_SOCIAL",
+                    "RAZÃO SOCIAL",
+                    "NOME_EMPRESA",
+                    "EMPRESA"
+                ]
+            )
+
+            col_fantasia = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NOME_FANTASIA",
+                    "FANTASIA"
+                ]
+            )
+
+            col_autorizacao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_AUTORIZACAO",
+                    "NUM_AUTORIZACAO",
+                    "AUTORIZACAO",
+                    "AFE"
+                ]
+            )
+
+            col_tipo = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "TIPO_AUTORIZACAO",
+                    "TIPO_AUTORIZAÇÃO",
+                    "TIPO_AFE",
+                    "TIPO"
+                ]
+            )
+
+            col_classe = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CLASSE_PRODUTO",
+                    "TIPO_PRODUTO",
+                    "CATEGORIA_PRODUTO",
+                    "CLASSE"
+                ]
+            )
+
+            col_atividade = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "ATIVIDADE",
+                    "ATIVIDADES",
+                    "ATIVIDADE_AUTORIZADA"
+                ]
+            )
+
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "SITUACAO",
+                    "SITUAÇÃO",
+                    "STATUS"
+                ]
+            )
+
+            col_data = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "DATA_AUTORIZACAO",
+                    "DATA_PUBLICACAO",
+                    "DATA_RESOLUCAO",
+                    "DATA"
+                ]
+            )
+
+            col_endereco = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "ENDERECO",
+                    "ENDEREÇO"
+                ]
+            )
+
+            col_municipio = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "MUNICIPIO",
+                    "MUNICÍPIO",
+                    "CIDADE"
+                ]
+            )
+
+            col_uf = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "UF",
+                    "ESTADO"
+                ]
+            )
+
+            if not col_cnpj:
+                raise RuntimeError(
+                    "Coluna de CNPJ da base "
+                    "AFE/AE não encontrada."
+                )
+
+            total = 0
+
+            for linha in leitor:
+
+                cnpj = somente_numeros(
+                    linha.get(
+                        col_cnpj,
+                        ""
+                    )
+                )
+
+                if len(cnpj) != 14:
+                    continue
+
+                item = {
+                    "cnpj": cnpj
+                }
+
+                if col_razao:
+                    item["razao_social"] = (
+                        texto(
+                            linha.get(
+                                col_razao,
+                                ""
+                            )
+                        )
+                    )
+
+                if col_fantasia:
+                    item["nome_fantasia"] = (
+                        texto(
+                            linha.get(
+                                col_fantasia,
+                                ""
+                            )
+                        )
+                    )
+
+                if col_autorizacao:
+                    item["autorizacao"] = (
+                        texto(
+                            linha.get(
+                                col_autorizacao,
+                                ""
+                            )
+                        )
+                    )
+
+                if col_tipo:
+                    item["tipo"] = texto(
+                        linha.get(
+                            col_tipo,
+                            ""
+                        )
+                    )
+
+                if col_classe:
+                    item["classe"] = texto(
+                        linha.get(
+                            col_classe,
+                            ""
+                        )
+                    )
+
+                if col_atividade:
+                    item["atividade"] = texto(
+                        linha.get(
+                            col_atividade,
+                            ""
+                        )
+                    )
+
+                if col_situacao:
+                    item["situacao"] = texto(
+                        linha.get(
+                            col_situacao,
+                            ""
+                        )
+                    )
+
+                if col_data:
+                    item["data"] = texto(
+                        linha.get(
+                            col_data,
+                            ""
+                        )
+                    )
+
+                if col_endereco:
+                    item["endereco"] = texto(
+                        linha.get(
+                            col_endereco,
+                            ""
+                        )
+                    )
+
+                if col_municipio:
+                    item["municipio"] = texto(
+                        linha.get(
+                            col_municipio,
+                            ""
+                        )
+                    )
+
+                if col_uf:
+                    item["uf"] = texto(
+                        linha.get(
+                            col_uf,
+                            ""
+                        )
+                    )
+
+                item = limpar_json(item)
+
+                # Os 3 primeiros dígitos do CNPJ
+                # definem o fragmento consultado.
+                prefixo = cnpj[:3]
+
+                grupos[prefixo].append(
+                    item
+                )
+
+                total += 1
+
+        if total < 1000:
+            raise RuntimeError(
+                "Base AFE/AE gerou apenas "
+                f"{total} registros."
+            )
+
+        gravar_fragmentos(
+            DADOS / "afe_ae",
+            grupos
+        )
+
+        return {
+            "fonte": URL_AFE_AE,
+            "registros": total,
+            "fragmentos": len(grupos),
+            "atualizado_em":
+            datetime.now(
+                timezone.utc
+            ).isoformat()
+        }
+
+    finally:
+        arquivo.unlink(
+            missing_ok=True
+        )
+
+
+# ==================================================
+# MANIFEST
+# ==================================================
+
+def gerar_manifesto(
+    dispositivos,
+    afe_ae
+):
+
     DADOS.mkdir(
         parents=True,
         exist_ok=True
     )
 
     manifesto = {
-        "projeto": "Base Vigilância Sanitária",
-        "gerado_em": datetime.now(
+        "projeto":
+        "Base Vigilância Sanitária",
+
+        "gerado_em":
+        datetime.now(
             timezone.utc
         ).isoformat(),
+
         "bases": {
-            "dispositivos": resultado
+            "dispositivos":
+            dispositivos,
+
+            "afe_ae":
+            afe_ae
         }
     }
 
@@ -396,6 +801,7 @@ def gerar_manifesto(resultado):
         "w",
         encoding="utf-8"
     ) as f:
+
         json.dump(
             manifesto,
             f,
@@ -404,10 +810,32 @@ def gerar_manifesto(resultado):
         )
 
 
+# ==================================================
+# EXECUÇÃO
+# ==================================================
+
 if __name__ == "__main__":
-    resultado = gerar_dispositivos()
-    gerar_manifesto(resultado)
 
     print(
-        "Base de dispositivos gerada com sucesso."
+        "=== DISPOSITIVOS ==="
+    )
+
+    dispositivos = (
+        gerar_dispositivos()
+    )
+
+    print(
+        "=== AFE / AE ==="
+    )
+
+    afe_ae = gerar_afe_ae()
+
+    gerar_manifesto(
+        dispositivos,
+        afe_ae
+    )
+
+    print(
+        "Todas as bases foram "
+        "geradas com sucesso."
     )
