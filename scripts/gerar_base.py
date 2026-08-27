@@ -687,6 +687,7 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "RAZAO_SOCIAL",
+                    "NO_RAZAO_SOCIAL",
                     "NOME_EMPRESA",
                     "EMPRESA"
                 ]
