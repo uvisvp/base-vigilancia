@@ -1067,73 +1067,81 @@ def gerar_saneantes():
                 leitor.fieldnames
             )
 
-            col_registro = achar_coluna(
-    leitor.fieldnames,
-    [
-        "NU_REGISTRO_PRODUTO",
-        "NUMERO_REGISTRO",
-        "REGISTRO",
-        "NUM_REGISTRO"
-    ]
-)
+                                    col_registro = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NU_REGISTRO_PRODUTO",
+                    "NUMERO_REGISTRO",
+                    "REGISTRO",
+                    "NUM_REGISTRO"
+                ]
+            )
 
-col_produto = achar_coluna(
-    leitor.fieldnames,
-    [
-        "NO_PRODUTO",
-        "NOME_PRODUTO",
-        "PRODUTO",
-        "NOME_COMERCIAL"
-    ]
-)
+            col_produto = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NO_PRODUTO",
+                    "NOME_PRODUTO",
+                    "PRODUTO",
+                    "NOME_COMERCIAL"
+                ]
+            )
 
-col_processo = achar_coluna(
-    leitor.fieldnames,
-    [
-        "NU_PROCESSO",
-        "NUMERO_PROCESSO",
-        "PROCESSO"
-    ]
-)
+            col_processo = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NU_PROCESSO",
+                    "NUMERO_PROCESSO",
+                    "PROCESSO"
+                ]
+            )
 
-col_empresa = achar_coluna(
-    leitor.fieldnames,
-    [
-        "NO_RAZAO_SOCIAL_EMPRESA",
-        "RAZAO_SOCIAL",
-        "EMPRESA",
-        "DETENTOR"
-    ]
-)
+            col_empresa = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NO_RAZAO_SOCIAL_EMPRESA",
+                    "RAZAO_SOCIAL",
+                    "EMPRESA",
+                    "DETENTOR"
+                ]
+            )
 
-col_cnpj = achar_coluna(
-    leitor.fieldnames,
-    [
-        "NU_CNPJ_EMPRESA",
-        "CNPJ",
-        "CNPJ_EMPRESA"
-    ]
-)
+            col_cnpj = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NU_CNPJ_EMPRESA",
+                    "CNPJ",
+                    "CNPJ_EMPRESA"
+                ]
+            )
 
-col_situacao = achar_coluna(
-    leitor.fieldnames,
-    [
-        "ST_PRODUTO_ATIVO",
-        "SITUACAO",
-        "STATUS"
-    ]
-)
+            col_categoria = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CATEGORIA",
+                    "TIPO_PRODUTO",
+                    "CLASSE_PRODUTO"
+                ]
+            )
 
-col_vencimento = achar_coluna(
-    leitor.fieldnames,
-    [
-        "DT_VENCIMENTO_PRODUTO",
-        "VALIDADE",
-        "DATA_VENCIMENTO",
-        "VENCIMENTO"
-    ]
-)
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "ST_PRODUTO_ATIVO",
+                    "SITUACAO",
+                    "STATUS"
+                ]
+            )
 
+            col_vencimento = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "DT_VENCIMENTO_PRODUTO",
+                    "VALIDADE",
+                    "DATA_VENCIMENTO",
+                    "VENCIMENTO"
+                ]
+            )
             if (
                 not col_registro
                 or not col_produto
