@@ -38,6 +38,12 @@ URL_SANEANTES = (
     "TA_CONSULTA_SANEANTES.CSV"
 )
 
+URL_COSMETICOS = (
+    "https://dados.anvisa.gov.br/dados/"
+    "CONSULTAS/PRODUTOS/"
+    "TA_CONSULTA_COSMETICOS.CSV"
+)
+
 # O prefixo é publicado no manifesto. Assim, o HTML funciona com a base atual
 # de três dígitos e também após a redistribuição em fragmentos menores.
 PREFIXOS_BASE = {
@@ -45,6 +51,9 @@ PREFIXOS_BASE = {
     "afe_ae": 3,
     "medicamentos": 4,
     "saneantes": 4,
+    # Cosméticos são fragmentados pelos dígitos 6 a 8 do processo,
+    # e não pelos primeiros dígitos (que quase sempre são 25351).
+    "cosmeticos": 3,
 }
 PREFIXO_INDICE_CNPJ = 3
 PREFIXO_INDICE_AUTORIZACAO = 3
@@ -1505,6 +1514,269 @@ def gerar_saneantes():
 
 
 # ==================================================
+# COSMÉTICOS
+# ==================================================
+
+def gerar_cosmeticos():
+
+    arquivo = baixar_csv(
+        URL_COSMETICOS,
+        "anvisa_cosmeticos_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
+        )
+
+        grupos = defaultdict(list)
+
+        with arquivo.open(
+            "r",
+            encoding=encoding,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV de cosméticos sem cabeçalho."
+                )
+
+            print(
+                "Colunas cosméticos:",
+                leitor.fieldnames
+            )
+
+            col_processo = achar_coluna(
+                leitor.fieldnames,
+                ["NU_PROCESSO"]
+            )
+
+            col_produto = achar_coluna(
+                leitor.fieldnames,
+                ["NO_PRODUTO"]
+            )
+
+            col_cnpj = achar_coluna(
+                leitor.fieldnames,
+                ["NU_CNPJ_EMPRESA"]
+            )
+
+            col_empresa = achar_coluna(
+                leitor.fieldnames,
+                ["NO_RAZAO_SOCIAL_EMPRESA"]
+            )
+
+            col_vencimento = achar_coluna(
+                leitor.fieldnames,
+                ["DT_VENCIMENTO"]
+            )
+
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                ["ST_SITUACAO_PRODUTO"]
+            )
+
+            col_registro = achar_coluna(
+                leitor.fieldnames,
+                ["NU_REGISTRO"]
+            )
+
+            col_tipo = achar_coluna(
+                leitor.fieldnames,
+                ["DS_TIPO_PETICAO"]
+            )
+
+            col_registrado = achar_coluna(
+                leitor.fieldnames,
+                ["ST_REGISTRADO"]
+            )
+
+            col_atualizacao = achar_coluna(
+                leitor.fieldnames,
+                ["DT_ATUALIZACAO"]
+            )
+
+            essenciais = {
+                "NU_PROCESSO": col_processo,
+                "NO_PRODUTO": col_produto,
+                "NU_CNPJ_EMPRESA": col_cnpj,
+                "NO_RAZAO_SOCIAL_EMPRESA": col_empresa,
+                "DT_VENCIMENTO": col_vencimento,
+                "ST_SITUACAO_PRODUTO": col_situacao,
+                "NU_REGISTRO": col_registro,
+                "DS_TIPO_PETICAO": col_tipo,
+                "ST_REGISTRADO": col_registrado,
+                "DT_ATUALIZACAO": col_atualizacao
+            }
+
+            faltando = [
+                nome
+                for nome, coluna_encontrada
+                in essenciais.items()
+                if not coluna_encontrada
+            ]
+
+            if faltando:
+                raise RuntimeError(
+                    "Colunas obrigatórias de cosméticos "
+                    "não encontradas: "
+                    + ", ".join(faltando)
+                )
+
+            total = 0
+            ativos = 0
+            inativos = 0
+
+            for linha in leitor:
+
+                processo = somente_numeros(
+                    linha.get(col_processo, "")
+                )
+
+                produto = texto(
+                    linha.get(col_produto, "")
+                )
+
+                if not processo or not produto:
+                    continue
+
+                cnpj = somente_numeros(
+                    linha.get(col_cnpj, "")
+                )
+
+                empresa = texto(
+                    linha.get(col_empresa, "")
+                )
+
+                registro = somente_numeros(
+                    linha.get(col_registro, "")
+                )
+
+                tipo = texto(
+                    linha.get(col_tipo, "")
+                )
+
+                indicador_registrado = texto(
+                    linha.get(col_registrado, "")
+                )
+
+                if not tipo:
+                    tipo = (
+                        "Registrado"
+                        if indicador_registrado == "1"
+                        else "Não informado"
+                    )
+                elif tipo.upper() == "REGISTRO":
+                    tipo = "Registrado"
+                elif tipo.upper() == "DESCARTAVEL":
+                    tipo = "Descartável"
+
+                codigo_situacao = texto(
+                    linha.get(col_situacao, "")
+                ).upper()
+
+                if codigo_situacao == "S":
+                    situacao = "ATIVO"
+                    ativos += 1
+                elif codigo_situacao == "N":
+                    situacao = "INATIVO"
+                    inativos += 1
+                else:
+                    situacao = codigo_situacao or "NÃO INFORMADA"
+
+                vencimento = texto(
+                    linha.get(col_vencimento, "")
+                )
+                if len(vencimento) >= 10:
+                    vencimento = vencimento[:10]
+
+                atualizado_em = texto(
+                    linha.get(col_atualizacao, "")
+                )
+                if len(atualizado_em) >= 10:
+                    atualizado_em = atualizado_em[:10]
+
+                item = limpar_json({
+                    "processo": processo,
+                    "produto": produto,
+                    "cnpj": cnpj,
+                    "detentor": empresa,
+                    "tipo": tipo,
+                    "situacao": situacao,
+                    "vencimento": vencimento,
+                    "registro": registro,
+                    "atualizado_em": atualizado_em
+                })
+
+                # O shard usa os dígitos 6 a 8 do processo. Isso evita
+                # concentrar mais de um milhão de itens no prefixo 25351.
+                shard = prefixo_processo(
+                    processo
+                )
+
+                grupos[shard].append(
+                    item
+                )
+
+                total += 1
+
+        if total < 100000:
+            raise RuntimeError(
+                "Base de cosméticos gerou apenas "
+                f"{total} registros."
+            )
+
+        validar_reducao(
+            "cosmeticos",
+            total
+        )
+
+        maior = gravar_fragmentos(
+            DADOS / "cosmeticos",
+            grupos
+        )
+
+        print(
+            "cosmeticos:", total, "registros |",
+            len(grupos), "fragmentos |",
+            ativos, "ativos |",
+            inativos, "inativos | maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        metadados = metadados_base(
+            URL_COSMETICOS,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["cosmeticos"],
+            maior
+        )
+
+        metadados.update({
+            "chave": "processo",
+            "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+            "ativos": ativos,
+            "inativos": inativos
+        })
+
+        return metadados
+
+    finally:
+        arquivo.unlink(
+            missing_ok=True
+        )
+
+
+# ==================================================
 # ÍNDICES AUXILIARES DE PRODUTOS
 # ==================================================
 
@@ -1827,6 +2099,7 @@ def gerar_manifesto(
     afe_ae,
     medicamentos,
     saneantes,
+    cosmeticos,
     indices
 ):
 
@@ -1857,7 +2130,10 @@ def gerar_manifesto(
              medicamentos,
 
             "saneantes":
-            saneantes
+            saneantes,
+
+            "cosmeticos":
+            cosmeticos
         },
 
         "indices": indices
@@ -1908,6 +2184,12 @@ if __name__ == "__main__":
     saneantes = gerar_saneantes()
 
     print(
+        "=== COSMÉTICOS ==="
+    )
+
+    cosmeticos = gerar_cosmeticos()
+
+    print(
         "=== ÍNDICES AUXILIARES ==="
     )
 
@@ -1918,6 +2200,7 @@ if __name__ == "__main__":
         afe_ae,
         medicamentos,
         saneantes,
+        cosmeticos,
         indices
     )
 
