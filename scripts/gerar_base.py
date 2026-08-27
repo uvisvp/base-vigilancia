@@ -1338,7 +1338,7 @@ if __name__ == "__main__":
     )
 
     medicamentos = gerar_medicamentos()
-     print(
+    print(
     "=== SANEANTES ==="
     )
 
