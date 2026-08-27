@@ -1340,15 +1340,15 @@ if __name__ == "__main__":
     medicamentos = gerar_medicamentos()
      print(
     "=== SANEANTES ==="
-     )
+    )
 
-saneantes = gerar_saneantes()
+    saneantes = gerar_saneantes()
     gerar_manifesto(
     dispositivos,
     afe_ae,
     medicamentos,
     saneantes
-)
+    )
 
     print(
         "Todas as bases foram "
