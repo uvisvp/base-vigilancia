@@ -28,7 +28,11 @@ URL_MEDICAMENTOS = (
     "DADOS_ABERTOS_MEDICAMENTOS.csv"
 )
 
-
+URL_SANEANTES = (
+    "https://dados.anvisa.gov.br/dados/"
+    "CONSULTAS/PRODUTOS/"
+    "TA_CONSULTA_SANEANTES.CSV"
+)
 def somente_numeros(valor):
     return re.sub(r"\D", "", str(valor or ""))
 
@@ -1020,7 +1024,242 @@ def gerar_medicamentos():
             missing_ok=True
         )
 
+# ==================================================
+# SANEANTES
+# ==================================================
 
+def gerar_saneantes():
+
+    arquivo = baixar_csv(
+        URL_SANEANTES,
+        "anvisa_saneantes_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
+        )
+
+        grupos = defaultdict(list)
+
+        with arquivo.open(
+            "r",
+            encoding=encoding,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV de saneantes "
+                    "sem cabeçalho."
+                )
+
+            print(
+                "Colunas saneantes:",
+                leitor.fieldnames
+            )
+
+            col_registro = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_REGISTRO",
+                    "REGISTRO",
+                    "NUM_REGISTRO",
+                    "NUMERO_REGISTRO_PRODUTO"
+                ]
+            )
+
+            col_produto = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NOME_PRODUTO",
+                    "PRODUTO",
+                    "NOME_COMERCIAL"
+                ]
+            )
+
+            col_processo = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_PROCESSO",
+                    "PROCESSO"
+                ]
+            )
+
+            col_empresa = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "RAZAO_SOCIAL",
+                    "EMPRESA",
+                    "DETENTOR",
+                    "EMPRESA_DETENTORA"
+                ]
+            )
+
+            col_cnpj = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CNPJ",
+                    "CNPJ_EMPRESA",
+                    "CNPJ_DETENTOR"
+                ]
+            )
+
+            col_categoria = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CATEGORIA",
+                    "TIPO_PRODUTO",
+                    "CLASSE_PRODUTO"
+                ]
+            )
+
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "SITUACAO",
+                    "STATUS",
+                    "SITUACAO_REGISTRO"
+                ]
+            )
+
+            col_vencimento = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "VALIDADE",
+                    "DATA_VENCIMENTO",
+                    "VENCIMENTO",
+                    "DATA_VENCIMENTO_REGISTRO"
+                ]
+            )
+
+            if (
+                not col_registro
+                or not col_produto
+            ):
+                raise RuntimeError(
+                    "Não foi possível localizar "
+                    "registro e produto na base "
+                    "de saneantes."
+                )
+
+            total = 0
+
+            for linha in leitor:
+
+                registro = somente_numeros(
+                    linha.get(
+                        col_registro,
+                        ""
+                    )
+                )
+
+                produto = texto(
+                    linha.get(
+                        col_produto,
+                        ""
+                    )
+                )
+
+                if not registro or not produto:
+                    continue
+
+                item = {
+                    "registro": registro,
+                    "produto": produto
+                }
+
+                if col_processo:
+                    item["processo"] = somente_numeros(
+                        linha.get(
+                            col_processo,
+                            ""
+                        )
+                    )
+
+                if col_empresa:
+                    item["detentor"] = texto(
+                        linha.get(
+                            col_empresa,
+                            ""
+                        )
+                    )
+
+                if col_cnpj:
+                    item["cnpj"] = somente_numeros(
+                        linha.get(
+                            col_cnpj,
+                            ""
+                        )
+                    )
+
+                if col_categoria:
+                    item["categoria"] = texto(
+                        linha.get(
+                            col_categoria,
+                            ""
+                        )
+                    )
+
+                if col_situacao:
+                    item["situacao"] = texto(
+                        linha.get(
+                            col_situacao,
+                            ""
+                        )
+                    )
+
+                if col_vencimento:
+                    item["vencimento"] = texto(
+                        linha.get(
+                            col_vencimento,
+                            ""
+                        )
+                    )
+
+                item = limpar_json(item)
+
+                prefixo = registro[:3]
+
+                grupos[prefixo].append(
+                    item
+                )
+
+                total += 1
+
+        if total < 1000:
+            raise RuntimeError(
+                "Base de saneantes gerou "
+                f"apenas {total} registros."
+            )
+
+        gravar_fragmentos(
+            DADOS / "saneantes",
+            grupos
+        )
+
+        return {
+            "fonte": URL_SANEANTES,
+            "registros": total,
+            "fragmentos": len(grupos),
+            "atualizado_em":
+            datetime.now(
+                timezone.utc
+            ).isoformat()
+        }
+
+    finally:
+        arquivo.unlink(
+            missing_ok=True
+        )
 # ==================================================
 # MANIFEST
 # ==================================================
@@ -1028,7 +1267,8 @@ def gerar_medicamentos():
 def gerar_manifesto(
     dispositivos,
     afe_ae,
-    medicamentos
+    medicamentos,
+    saneantes
 ):
 
     DADOS.mkdir(
@@ -1053,7 +1293,10 @@ def gerar_manifesto(
             afe_ae,
 
             "medicamentos":
-            medicamentos
+             medicamentos,
+
+            "saneantes":
+            saneantes
         }
     }
 
@@ -1095,12 +1338,17 @@ if __name__ == "__main__":
     )
 
     medicamentos = gerar_medicamentos()
+     print(
+    "=== SANEANTES ==="
+     )
 
+saneantes = gerar_saneantes()
     gerar_manifesto(
-        dispositivos,
-        afe_ae,
-        medicamentos
-    )
+    dispositivos,
+    afe_ae,
+    medicamentos,
+    saneantes
+)
 
     print(
         "Todas as bases foram "
