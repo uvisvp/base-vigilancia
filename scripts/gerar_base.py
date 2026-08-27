@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from collections import defaultdict
 import csv
 import json
+import os
 import re
 import urllib.request
 import tempfile
@@ -11,6 +12,9 @@ import ssl
 
 BASE = Path(__file__).resolve().parent.parent
 DADOS = BASE / "dados"
+
+LIMITE_REDUCAO = 0.20
+METADADOS_FONTES = {}
 
 URL_DISPOSITIVOS = (
     "https://dados.anvisa.gov.br/dados/"
@@ -33,6 +37,18 @@ URL_SANEANTES = (
     "CONSULTAS/PRODUTOS/"
     "TA_CONSULTA_SANEANTES.CSV"
 )
+
+# O prefixo é publicado no manifesto. Assim, o HTML funciona com a base atual
+# de três dígitos e também após a redistribuição em fragmentos menores.
+PREFIXOS_BASE = {
+    "dispositivos": 5,
+    "afe_ae": 3,
+    "medicamentos": 4,
+    "saneantes": 4,
+}
+PREFIXO_INDICE_CNPJ = 3
+PREFIXO_INDICE_AUTORIZACAO = 3
+TETO_FRAGMENTO = 300_000
 def somente_numeros(valor):
     return re.sub(r"\D", "", str(valor or ""))
 
@@ -98,6 +114,17 @@ def baixar_csv(url, prefixo):
     ) as resposta, temporario.open(
         "wb"
     ) as arquivo:
+
+        METADADOS_FONTES[url] = {
+            "data_fonte": (
+                resposta.headers.get(
+                    "Last-Modified"
+                )
+                or resposta.headers.get("Date")
+                or "não informada"
+            ),
+            "etag": resposta.headers.get("ETag")
+        }
 
         shutil.copyfileobj(
             resposta,
@@ -174,6 +201,131 @@ def limpar_json(item):
     }
 
 
+def carregar_manifesto_anterior():
+    caminho = DADOS / "manifest.json"
+
+    if not caminho.exists():
+        return {}
+
+    try:
+        with caminho.open(
+            "r",
+            encoding="utf-8"
+        ) as f:
+            return json.load(f)
+    except (
+        OSError,
+        json.JSONDecodeError
+    ):
+        return {}
+
+
+def validar_reducao(nome, total):
+    if os.environ.get(
+        "PERMITIR_REDUCAO_ANORMAL"
+    ) == "1":
+        return
+
+    anterior = (
+        carregar_manifesto_anterior()
+        .get("bases", {})
+        .get(nome, {})
+        .get("registros")
+    )
+
+    if not isinstance(anterior, int):
+        return
+
+    minimo = int(
+        anterior * (
+            1 - LIMITE_REDUCAO
+        )
+    )
+
+    if total < minimo:
+        percentual = (
+            100 * (anterior - total)
+            / anterior
+        )
+        raise RuntimeError(
+            f"Base {nome} caiu de "
+            f"{anterior} para {total} "
+            f"registros ({percentual:.1f}%): "
+            "atualização cancelada. "
+            "Revise a fonte ou use "
+            "PERMITIR_REDUCAO_ANORMAL=1 "
+            "após validação manual."
+        )
+
+
+def metadados_base(
+    url,
+    total,
+    fragmentos,
+    prefixo,
+    maior_fragmento
+):
+    gerado_em = datetime.now(
+        timezone.utc
+    ).isoformat()
+
+    fonte = METADADOS_FONTES.get(
+        url,
+        {}
+    )
+
+    resultado = {
+        "status": "ok",
+        "fonte": url,
+        "data_fonte": fonte.get(
+            "data_fonte",
+            "não informada"
+        ),
+        "gerado_em": gerado_em,
+        "atualizado_em": gerado_em,
+        "registros": total,
+        "fragmentos": fragmentos,
+        "prefixo": prefixo,
+        "maior_fragmento": maior_fragmento
+    }
+
+    if fonte.get("etag"):
+        resultado["etag_fonte"] = (
+            fonte["etag"]
+        )
+
+    return resultado
+
+
+def prefixo_processo(processo):
+    numero = somente_numeros(processo)
+
+    if len(numero) >= 8:
+        return numero[5:8]
+
+    return numero[:3]
+
+
+def extrair_cnpj_item(item):
+    cnpj = somente_numeros(
+        item.get("cnpj", "")
+    )
+
+    if len(cnpj) == 14:
+        return cnpj
+
+    correspondencia = re.search(
+        r"(?<!\d)(\d{14})(?!\d)",
+        item.get("detentor", "")
+    )
+
+    return (
+        correspondencia.group(1)
+        if correspondencia
+        else ""
+    )
+
+
 def gravar_fragmentos(destino, grupos):
     destino.mkdir(
         parents=True,
@@ -182,6 +334,8 @@ def gravar_fragmentos(destino, grupos):
 
     for antigo in destino.glob("*.json"):
         antigo.unlink()
+
+    maior = 0
 
     for prefixo, itens in grupos.items():
 
@@ -200,6 +354,13 @@ def gravar_fragmentos(destino, grupos):
                 ensure_ascii=False,
                 separators=(",", ":")
             )
+
+        maior = max(
+            maior,
+            caminho.stat().st_size
+        )
+
+    return maior
 
 
 # ==================================================
@@ -426,7 +587,7 @@ def gerar_dispositivos():
 
                 item = limpar_json(item)
 
-                prefixo = registro[:3]
+                prefixo = registro[:PREFIXOS_BASE["dispositivos"]]
 
                 grupos[prefixo].append(
                     item
@@ -440,20 +601,30 @@ def gerar_dispositivos():
                 "gerou poucos registros."
             )
 
-        gravar_fragmentos(
+        validar_reducao(
+            "dispositivos",
+            total
+        )
+
+        maior = gravar_fragmentos(
             DADOS / "dispositivos",
             grupos
         )
 
-        return {
-            "fonte": URL_DISPOSITIVOS,
-            "registros": total,
-            "fragmentos": len(grupos),
-            "atualizado_em":
-            datetime.now(
-                timezone.utc
-            ).isoformat()
-        }
+        print(
+            "dispositivos:", total, "registros |",
+            len(grupos), "fragmentos | prefixo",
+            PREFIXOS_BASE["dispositivos"], "| maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        return metadados_base(
+            URL_DISPOSITIVOS,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["dispositivos"],
+            maior
+        )
 
     finally:
         arquivo.unlink(
@@ -532,10 +703,34 @@ def gerar_afe_ae():
             col_autorizacao = achar_coluna(
                 leitor.fieldnames,
                 [
+                    "NU_AUTORIZACAO",
+                    "NR_AUTORIZACAO",
+                    "NO_AUTORIZACAO",
+                    "CO_AUTORIZACAO",
+                    "NU_AUTORIZACAO_ESPECIAL",
+                    "NR_AUTORIZACAO_ESPECIAL",
+                    "NUMERO_AUTORIZACAO_ESPECIAL",
+                    "AUTORIZACAO_ESPECIAL",
                     "NUMERO_AUTORIZACAO",
                     "NUM_AUTORIZACAO",
+                    "NUMERO_AFE",
+                    "NU_AFE",
+                    "NUMERO_AE",
+                    "NU_AE",
+                    "NR_AE",
                     "AUTORIZACAO",
-                    "AFE"
+                    "AFE",
+                    "AE"
+                ]
+            )
+
+            col_processo = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_PROCESSO",
+                    "NU_PROCESSO",
+                    "PROCESSO_ANVISA",
+                    "PROCESSO"
                 ]
             )
 
@@ -543,7 +738,9 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "TIPO_AUTORIZACAO",
+                    "TIPO_AUTORIZACAO_ESPECIAL",
                     "TIPO_AFE",
+                    "TIPO_AE",
                     "TIPO"
                 ]
             )
@@ -656,6 +853,14 @@ def gerar_afe_ae():
                         )
                     )
 
+                if col_processo:
+                    item["processo"] = somente_numeros(
+                        linha.get(
+                            col_processo,
+                            ""
+                        )
+                    )
+
                 if col_tipo:
                     item["tipo"] = texto(
                         linha.get(
@@ -722,7 +927,7 @@ def gerar_afe_ae():
 
                 item = limpar_json(item)
 
-                prefixo = cnpj[:3]
+                prefixo = cnpj[:PREFIXOS_BASE["afe_ae"]]
 
                 grupos[prefixo].append(
                     item
@@ -736,20 +941,30 @@ def gerar_afe_ae():
                 f"{total} registros."
             )
 
-        gravar_fragmentos(
+        validar_reducao(
+            "afe_ae",
+            total
+        )
+
+        maior = gravar_fragmentos(
             DADOS / "afe_ae",
             grupos
         )
 
-        return {
-            "fonte": URL_AFE_AE,
-            "registros": total,
-            "fragmentos": len(grupos),
-            "atualizado_em":
-            datetime.now(
-                timezone.utc
-            ).isoformat()
-        }
+        print(
+            "afe_ae:", total, "registros |",
+            len(grupos), "fragmentos | prefixo",
+            PREFIXOS_BASE["afe_ae"], "| maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        return metadados_base(
+            URL_AFE_AE,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["afe_ae"],
+            maior
+        )
 
     finally:
         arquivo.unlink(
@@ -955,6 +1170,10 @@ def gerar_medicamentos():
                             ""
                         )
                     )
+                elif col_empresa:
+                    item["cnpj"] = (
+                        extrair_cnpj_item(item)
+                    )
 
                 if col_categoria:
                     item["categoria"] = texto(
@@ -990,7 +1209,7 @@ def gerar_medicamentos():
 
                 item = limpar_json(item)
 
-                prefixo = registro[:3]
+                prefixo = registro[:PREFIXOS_BASE["medicamentos"]]
 
                 grupos[prefixo].append(
                     item
@@ -1004,20 +1223,30 @@ def gerar_medicamentos():
                 f"apenas {total} registros."
             )
 
-        gravar_fragmentos(
+        validar_reducao(
+            "medicamentos",
+            total
+        )
+
+        maior = gravar_fragmentos(
             DADOS / "medicamentos",
             grupos
         )
 
-        return {
-            "fonte": URL_MEDICAMENTOS,
-            "registros": total,
-            "fragmentos": len(grupos),
-            "atualizado_em":
-            datetime.now(
-                timezone.utc
-            ).isoformat()
-        }
+        print(
+            "medicamentos:", total, "registros |",
+            len(grupos), "fragmentos | prefixo",
+            PREFIXOS_BASE["medicamentos"], "| maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        return metadados_base(
+            URL_MEDICAMENTOS,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["medicamentos"],
+            maior
+        )
 
     finally:
         arquivo.unlink(
@@ -1228,7 +1457,7 @@ def gerar_saneantes():
 
                 item = limpar_json(item)
 
-                prefixo = registro[:3]
+                prefixo = registro[:PREFIXOS_BASE["saneantes"]]
 
                 grupos[prefixo].append(
                     item
@@ -1242,25 +1471,340 @@ def gerar_saneantes():
                 f"apenas {total} registros."
             )
 
-        gravar_fragmentos(
+        validar_reducao(
+            "saneantes",
+            total
+        )
+
+        maior = gravar_fragmentos(
             DADOS / "saneantes",
             grupos
         )
 
-        return {
-            "fonte": URL_SANEANTES,
-            "registros": total,
-            "fragmentos": len(grupos),
-            "atualizado_em":
-            datetime.now(
-                timezone.utc
-            ).isoformat()
-        }
+        print(
+            "saneantes:", total, "registros |",
+            len(grupos), "fragmentos | prefixo",
+            PREFIXOS_BASE["saneantes"], "| maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        return metadados_base(
+            URL_SANEANTES,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["saneantes"],
+            maior
+        )
 
     finally:
         arquivo.unlink(
             missing_ok=True
         )
+
+
+# ==================================================
+# ÍNDICES AUXILIARES DE PRODUTOS
+# ==================================================
+
+def gerar_indices_produtos():
+    bases = (
+        "dispositivos",
+        "medicamentos",
+        "saneantes"
+    )
+
+    processos = defaultdict(
+        lambda: defaultdict(set)
+    )
+    cnpjs = defaultdict(
+        lambda: defaultdict(dict)
+    )
+    autorizacoes = defaultdict(
+        lambda: defaultdict(set)
+    )
+
+    por_base = {
+        nome: {
+            "processos": 0,
+            "cnpjs": 0
+        }
+        for nome in bases
+    }
+
+    for nome in bases:
+        pasta = DADOS / nome
+
+        for caminho in sorted(
+            pasta.glob("*.json")
+        ):
+            with caminho.open(
+                "r",
+                encoding="utf-8"
+            ) as f:
+                itens = json.load(f)
+
+            for item in itens:
+                registro = somente_numeros(
+                    item.get("registro", "")
+                )
+
+                if not registro:
+                    continue
+
+                referencia = (
+                    nome,
+                    registro
+                )
+
+                processo = somente_numeros(
+                    item.get("processo", "")
+                )
+
+                if processo:
+                    processos[
+                        prefixo_processo(
+                            processo
+                        )
+                    ][processo].add(
+                        referencia
+                    )
+                    por_base[nome][
+                        "processos"
+                    ] += 1
+
+                cnpj = extrair_cnpj_item(
+                    item
+                )
+
+                if len(cnpj) == 14:
+                    resumo = limpar_json({
+                        "b": nome,
+                        "registro": registro,
+                        "produto": item.get(
+                            "produto",
+                            ""
+                        ),
+                        "processo": processo,
+                        "detentor": item.get(
+                            "detentor",
+                            ""
+                        ),
+                        "cnpj": cnpj,
+                        "fabricante": item.get(
+                            "fabricante",
+                            ""
+                        ),
+                        "pais": item.get(
+                            "pais",
+                            ""
+                        ),
+                        "classe": item.get(
+                            "classe",
+                            ""
+                        ),
+                        "categoria": item.get(
+                            "categoria",
+                            ""
+                        ),
+                        "classe_terapeutica": (
+                            item.get(
+                                "classe_terapeutica",
+                                ""
+                            )
+                        ),
+                        "situacao": item.get(
+                            "situacao",
+                            ""
+                        ),
+                        "vencimento": item.get(
+                            "vencimento",
+                            ""
+                        )
+                    })
+                    chave_resumo = (
+                        nome,
+                        registro,
+                        processo,
+                        item.get("produto", "")
+                    )
+                    cnpjs[
+                        cnpj[:PREFIXO_INDICE_CNPJ]
+                    ][cnpj][
+                        chave_resumo
+                    ] = resumo
+                    por_base[nome][
+                        "cnpjs"
+                    ] += 1
+
+    pasta_afe = DADOS / "afe_ae"
+    for caminho in sorted(
+        pasta_afe.glob("*.json")
+    ):
+        with caminho.open(
+            "r",
+            encoding="utf-8"
+        ) as f:
+            itens = json.load(f)
+
+        for item in itens:
+            autorizacao = somente_numeros(
+                item.get("autorizacao", "")
+            )
+            cnpj = somente_numeros(
+                item.get("cnpj", "")
+            )
+
+            if autorizacao and len(cnpj) == 14:
+                autorizacoes[
+                    autorizacao[
+                        :PREFIXO_INDICE_AUTORIZACAO
+                    ]
+                ][autorizacao].add(cnpj)
+
+    def preparar(grupos):
+        preparados = {}
+
+        for prefixo in sorted(grupos):
+            preparados[prefixo] = {
+                chave: [
+                    {
+                        "b": base,
+                        "r": registro
+                    }
+                    for base, registro in sorted(
+                        referencias
+                    )
+                ]
+                for chave, referencias in sorted(
+                    grupos[prefixo].items()
+                )
+            }
+
+        return preparados
+
+    processos_prontos = preparar(
+        processos
+    )
+
+    cnpjs_prontos = {
+        prefixo: {
+            cnpj: [
+                resumo
+                for _, resumo in sorted(
+                    resumos.items()
+                )
+            ]
+            for cnpj, resumos in sorted(
+                grupos.items()
+            )
+        }
+        for prefixo, grupos in sorted(
+            cnpjs.items()
+        )
+    }
+
+    autorizacoes_prontas = {
+        prefixo: {
+            autorizacao: [
+                {"c": cnpj}
+                for cnpj in sorted(cnpjs_autorizados)
+            ]
+            for autorizacao, cnpjs_autorizados in sorted(
+                grupos.items()
+            )
+        }
+        for prefixo, grupos in sorted(
+            autorizacoes.items()
+        )
+    }
+
+    gravar_fragmentos(
+        DADOS / "indices" / "processos",
+        processos_prontos
+    )
+    gravar_fragmentos(
+        DADOS / "indices" / "cnpj_produtos",
+        cnpjs_prontos
+    )
+    gravar_fragmentos(
+        DADOS / "indices" / "autorizacoes",
+        autorizacoes_prontas
+    )
+
+    gerado_em = datetime.now(
+        timezone.utc
+    ).isoformat()
+
+    return {
+        "status": "ok",
+        "gerado_em": gerado_em,
+        "processos": {
+            "status": "ok",
+            "fragmentacao": (
+                "dígitos 6 a 8 do processo "
+                "normalizado"
+            ),
+            "chaves": sum(
+                len(itens)
+                for itens in processos_prontos.values()
+            ),
+            "referencias": sum(
+                len(refs)
+                for itens in processos_prontos.values()
+                for refs in itens.values()
+            ),
+            "fragmentos": len(
+                processos_prontos
+            )
+        },
+        "cnpj_produtos": {
+            "status": "ok",
+            "prefixo": PREFIXO_INDICE_CNPJ,
+            "fragmentacao": (
+                "3 primeiros dígitos do CNPJ"
+            ),
+            "chaves": sum(
+                len(itens)
+                for itens in cnpjs_prontos.values()
+            ),
+            "referencias": sum(
+                len(refs)
+                for itens in cnpjs_prontos.values()
+                for refs in itens.values()
+            ),
+            "fragmentos": len(
+                cnpjs_prontos
+            )
+        },
+        "autorizacoes": {
+            "status": (
+                "ok"
+                if autorizacoes_prontas
+                else "indisponivel"
+            ),
+            "prefixo": PREFIXO_INDICE_AUTORIZACAO,
+            "observacao": (
+                "Índice por número de AFE/AE."
+                if autorizacoes_prontas
+                else "A fonte aberta não publicou número de autorização reconhecível."
+            ),
+            "chaves": sum(
+                len(itens)
+                for itens in autorizacoes_prontas.values()
+            ),
+            "referencias": sum(
+                len(refs)
+                for itens in autorizacoes_prontas.values()
+                for refs in itens.values()
+            ),
+            "fragmentos": len(
+                autorizacoes_prontas
+            )
+        },
+        "por_base": por_base
+    }
+
+
 # ==================================================
 # MANIFEST
 # ==================================================
@@ -1269,7 +1813,8 @@ def gerar_manifesto(
     dispositivos,
     afe_ae,
     medicamentos,
-    saneantes
+    saneantes,
+    indices
 ):
 
     DADOS.mkdir(
@@ -1278,6 +1823,8 @@ def gerar_manifesto(
     )
 
     manifesto = {
+        "versao_esquema": 2,
+
         "projeto":
         "Base Vigilância Sanitária",
 
@@ -1298,7 +1845,9 @@ def gerar_manifesto(
 
             "saneantes":
             saneantes
-        }
+        },
+
+        "indices": indices
     }
 
     with (
@@ -1344,22 +1893,21 @@ if __name__ == "__main__":
     )
 
     saneantes = gerar_saneantes()
-    gerar_manifesto(
-    dispositivos,
-    afe_ae,
-    medicamentos,
-    saneantes
-    )
+
     print(
-        "=== ÍNDICES ==="
+        "=== ÍNDICES AUXILIARES ==="
     )
 
-    import runpy
+    indices = gerar_indices_produtos()
 
-    runpy.run_path(
-        str(BASE / "scripts" / "gerar_indices.py"),
-        run_name="__main__"
+    gerar_manifesto(
+        dispositivos,
+        afe_ae,
+        medicamentos,
+        saneantes,
+        indices
     )
+
     print(
         "Todas as bases foram "
         "geradas com sucesso."
