@@ -1067,7 +1067,7 @@ def gerar_saneantes():
                 leitor.fieldnames
             )
 
-                                    col_registro = achar_coluna(
+            col_registro = achar_coluna(
                 leitor.fieldnames,
                 [
                     "NU_REGISTRO_PRODUTO",
