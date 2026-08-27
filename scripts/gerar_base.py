@@ -23,6 +23,11 @@ URL_AFE_AE = (
     "TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV"
 )
 
+URL_MEDICAMENTOS = (
+    "https://dados.anvisa.gov.br/dados/"
+    "DADOS_ABERTOS_MEDICAMENTOS.csv"
+)
+
 
 def somente_numeros(valor):
     return re.sub(r"\D", "", str(valor or ""))
@@ -384,12 +389,10 @@ def gerar_dispositivos():
                     )
 
                 if col_fabricante:
-                    item["fabricante"] = (
-                        texto(
-                            linha.get(
-                                col_fabricante,
-                                ""
-                            )
+                    item["fabricante"] = texto(
+                        linha.get(
+                            col_fabricante,
+                            ""
                         )
                     )
 
@@ -509,7 +512,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "RAZAO_SOCIAL",
-                    "RAZÃO SOCIAL",
                     "NOME_EMPRESA",
                     "EMPRESA"
                 ]
@@ -537,7 +539,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "TIPO_AUTORIZACAO",
-                    "TIPO_AUTORIZAÇÃO",
                     "TIPO_AFE",
                     "TIPO"
                 ]
@@ -566,7 +567,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "SITUACAO",
-                    "SITUAÇÃO",
                     "STATUS"
                 ]
             )
@@ -584,8 +584,7 @@ def gerar_afe_ae():
             col_endereco = achar_coluna(
                 leitor.fieldnames,
                 [
-                    "ENDERECO",
-                    "ENDEREÇO"
+                    "ENDERECO"
                 ]
             )
 
@@ -593,7 +592,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "MUNICIPIO",
-                    "MUNICÍPIO",
                     "CIDADE"
                 ]
             )
@@ -631,32 +629,26 @@ def gerar_afe_ae():
                 }
 
                 if col_razao:
-                    item["razao_social"] = (
-                        texto(
-                            linha.get(
-                                col_razao,
-                                ""
-                            )
+                    item["razao_social"] = texto(
+                        linha.get(
+                            col_razao,
+                            ""
                         )
                     )
 
                 if col_fantasia:
-                    item["nome_fantasia"] = (
-                        texto(
-                            linha.get(
-                                col_fantasia,
-                                ""
-                            )
+                    item["nome_fantasia"] = texto(
+                        linha.get(
+                            col_fantasia,
+                            ""
                         )
                     )
 
                 if col_autorizacao:
-                    item["autorizacao"] = (
-                        texto(
-                            linha.get(
-                                col_autorizacao,
-                                ""
-                            )
+                    item["autorizacao"] = texto(
+                        linha.get(
+                            col_autorizacao,
+                            ""
                         )
                     )
 
@@ -726,8 +718,6 @@ def gerar_afe_ae():
 
                 item = limpar_json(item)
 
-                # Os 3 primeiros dígitos do CNPJ
-                # definem o fragmento consultado.
                 prefixo = cnpj[:3]
 
                 grupos[prefixo].append(
@@ -764,12 +754,281 @@ def gerar_afe_ae():
 
 
 # ==================================================
+# MEDICAMENTOS
+# ==================================================
+
+def gerar_medicamentos():
+
+    arquivo = baixar_csv(
+        URL_MEDICAMENTOS,
+        "anvisa_medicamentos_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
+        )
+
+        grupos = defaultdict(list)
+
+        with arquivo.open(
+            "r",
+            encoding=encoding,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV de medicamentos "
+                    "sem cabeçalho."
+                )
+
+            print(
+                "Colunas medicamentos:",
+                leitor.fieldnames
+            )
+
+            col_registro = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_REGISTRO_PRODUTO",
+                    "NUMERO_REGISTRO",
+                    "REGISTRO_PRODUTO",
+                    "REGISTRO"
+                ]
+            )
+
+            col_produto = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NOME_PRODUTO",
+                    "PRODUTO"
+                ]
+            )
+
+            col_principio = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "PRINCIPIO_ATIVO",
+                    "PRINCÍPIO_ATIVO"
+                ]
+            )
+
+            col_processo = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "NUMERO_PROCESSO",
+                    "PROCESSO"
+                ]
+            )
+
+            col_empresa = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "EMPRESA_DETENTORA_REGISTRO",
+                    "EMPRESA_DETENTORA",
+                    "DETENTOR_REGISTRO",
+                    "RAZAO_SOCIAL"
+                ]
+            )
+
+            col_cnpj = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CNPJ_EMPRESA",
+                    "CNPJ_DETENTOR",
+                    "CNPJ"
+                ]
+            )
+
+            col_categoria = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CATEGORIA_REGULATORIA",
+                    "CATEGORIA_REGULATÓRIA",
+                    "CATEGORIA"
+                ]
+            )
+
+            col_classe = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "CLASSE_TERAPEUTICA",
+                    "CLASSE_TERAPÊUTICA"
+                ]
+            )
+
+            col_vencimento = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "DATA_VENCIMENTO_REGISTRO",
+                    "VENCIMENTO_REGISTRO",
+                    "VENCIMENTO"
+                ]
+            )
+
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                [
+                    "SITUACAO_REGISTRO",
+                    "SITUACAO",
+                    "STATUS"
+                ]
+            )
+
+            if (
+                not col_registro
+                or not col_produto
+            ):
+                raise RuntimeError(
+                    "Não foi possível localizar "
+                    "registro e produto na base "
+                    "de medicamentos."
+                )
+
+            total = 0
+
+            for linha in leitor:
+
+                registro = somente_numeros(
+                    linha.get(
+                        col_registro,
+                        ""
+                    )
+                )
+
+                produto = texto(
+                    linha.get(
+                        col_produto,
+                        ""
+                    )
+                )
+
+                if not registro or not produto:
+                    continue
+
+                item = {
+                    "registro": registro,
+                    "produto": produto
+                }
+
+                if col_principio:
+                    item["principio_ativo"] = texto(
+                        linha.get(
+                            col_principio,
+                            ""
+                        )
+                    )
+
+                if col_processo:
+                    item["processo"] = somente_numeros(
+                        linha.get(
+                            col_processo,
+                            ""
+                        )
+                    )
+
+                if col_empresa:
+                    item["detentor"] = texto(
+                        linha.get(
+                            col_empresa,
+                            ""
+                        )
+                    )
+
+                if col_cnpj:
+                    item["cnpj"] = somente_numeros(
+                        linha.get(
+                            col_cnpj,
+                            ""
+                        )
+                    )
+
+                if col_categoria:
+                    item["categoria"] = texto(
+                        linha.get(
+                            col_categoria,
+                            ""
+                        )
+                    )
+
+                if col_classe:
+                    item["classe_terapeutica"] = texto(
+                        linha.get(
+                            col_classe,
+                            ""
+                        )
+                    )
+
+                if col_vencimento:
+                    item["vencimento"] = texto(
+                        linha.get(
+                            col_vencimento,
+                            ""
+                        )
+                    )
+
+                if col_situacao:
+                    item["situacao"] = texto(
+                        linha.get(
+                            col_situacao,
+                            ""
+                        )
+                    )
+
+                item = limpar_json(item)
+
+                prefixo = registro[:3]
+
+                grupos[prefixo].append(
+                    item
+                )
+
+                total += 1
+
+        if total < 1000:
+            raise RuntimeError(
+                "Base de medicamentos gerou "
+                f"apenas {total} registros."
+            )
+
+        gravar_fragmentos(
+            DADOS / "medicamentos",
+            grupos
+        )
+
+        return {
+            "fonte": URL_MEDICAMENTOS,
+            "registros": total,
+            "fragmentos": len(grupos),
+            "atualizado_em":
+            datetime.now(
+                timezone.utc
+            ).isoformat()
+        }
+
+    finally:
+        arquivo.unlink(
+            missing_ok=True
+        )
+
+
+# ==================================================
 # MANIFEST
 # ==================================================
 
 def gerar_manifesto(
     dispositivos,
-    afe_ae
+    afe_ae,
+    medicamentos
 ):
 
     DADOS.mkdir(
@@ -791,7 +1050,10 @@ def gerar_manifesto(
             dispositivos,
 
             "afe_ae":
-            afe_ae
+            afe_ae,
+
+            "medicamentos":
+            medicamentos
         }
     }
 
@@ -820,9 +1082,7 @@ if __name__ == "__main__":
         "=== DISPOSITIVOS ==="
     )
 
-    dispositivos = (
-        gerar_dispositivos()
-    )
+    dispositivos = gerar_dispositivos()
 
     print(
         "=== AFE / AE ==="
@@ -830,9 +1090,16 @@ if __name__ == "__main__":
 
     afe_ae = gerar_afe_ae()
 
+    print(
+        "=== MEDICAMENTOS ==="
+    )
+
+    medicamentos = gerar_medicamentos()
+
     gerar_manifesto(
         dispositivos,
-        afe_ae
+        afe_ae,
+        medicamentos
     )
 
     print(
