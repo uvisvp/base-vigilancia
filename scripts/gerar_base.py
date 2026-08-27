@@ -687,7 +687,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "RAZAO_SOCIAL",
-                    "NO_RAZAO_SOCIAL",
                     "NOME_EMPRESA",
                     "EMPRESA"
                 ]
@@ -697,7 +696,6 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "NOME_FANTASIA",
-                    "NO_FANTASIA",
                     "FANTASIA"
                 ]
             )
@@ -1332,7 +1330,6 @@ def gerar_saneantes():
                 [
                     "NO_RAZAO_SOCIAL_EMPRESA",
                     "RAZAO_SOCIAL",
-                    "NO_RAZAO_SOCIAL",
                     "EMPRESA",
                     "DETENTOR"
                 ]
