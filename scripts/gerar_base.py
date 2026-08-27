@@ -696,6 +696,7 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "NOME_FANTASIA",
+                    "NO_FANTASIA",
                     "FANTASIA"
                 ]
             )
