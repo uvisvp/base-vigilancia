@@ -687,6 +687,7 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "RAZAO_SOCIAL",
+                    "NO_RAZAO_SOCIAL",
                     "NOME_EMPRESA",
                     "EMPRESA"
                 ]
@@ -696,6 +697,7 @@ def gerar_afe_ae():
                 leitor.fieldnames,
                 [
                     "NOME_FANTASIA",
+                    "NO_FANTASIA",
                     "FANTASIA"
                 ]
             )
@@ -1653,6 +1655,17 @@ def gerar_indices_produtos():
             cnpj = somente_numeros(
                 item.get("cnpj", "")
             )
+            processo = somente_numeros(
+                item.get("processo", "")
+            )
+
+            # AFE/AE usa o CNPJ como referência primária no índice de processo.
+            if processo and len(cnpj) == 14:
+                processos[
+                    prefixo_processo(processo)
+                ][processo].add(
+                    ("afe_ae", cnpj)
+                )
 
             if autorizacao and len(cnpj) == 14:
                 autorizacoes[
