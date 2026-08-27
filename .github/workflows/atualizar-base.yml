@@ -24,9 +24,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Inspecionar base de cosméticos V2
-        run: python scripts/inspecionar_cosmeticos_v2.py
-
+    
       - name: Gerar base
         run: python scripts/gerar_base.py
 
