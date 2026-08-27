@@ -1350,7 +1350,16 @@ if __name__ == "__main__":
     medicamentos,
     saneantes
     )
+    print(
+        "=== ÍNDICES ==="
+    )
 
+    import runpy
+
+    runpy.run_path(
+        str(BASE / "scripts" / "gerar_indices.py"),
+        run_name="__main__"
+    )
     print(
         "Todas as bases foram "
         "geradas com sucesso."
