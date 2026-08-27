@@ -1,60 +1,60 @@
 {
   "versao_esquema": 2,
   "projeto": "Base Vigilância Sanitária",
-  "gerado_em": "2026-08-27T12:33:16.686215+00:00",
+  "gerado_em": "2026-08-27T13:16:53.277527+00:00",
   "bases": {
     "dispositivos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
-      "data_fonte": "Thu, 27 Aug 2026 11:18:31 GMT",
-      "gerado_em": "2026-08-27T12:31:56.716875+00:00",
-      "atualizado_em": "2026-08-27T12:31:56.716875+00:00",
+      "data_fonte": "Thu, 27 Aug 2026 13:09:03 GMT",
+      "gerado_em": "2026-08-27T13:15:26.577473+00:00",
+      "atualizado_em": "2026-08-27T13:15:26.577473+00:00",
       "registros": 115472,
       "fragmentos": 2522,
       "prefixo": 5,
       "maior_fragmento": 862344,
-      "etag_fonte": "\"1a3f88c-65a057eed01e3\""
+      "etag_fonte": "\"1a3f88c-65a070a3bfdee\""
     },
     "afe_ae": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
-      "data_fonte": "Thu, 27 Aug 2026 11:18:58 GMT",
-      "gerado_em": "2026-08-27T12:32:42.525803+00:00",
-      "atualizado_em": "2026-08-27T12:32:42.525803+00:00",
+      "data_fonte": "Thu, 27 Aug 2026 13:09:45 GMT",
+      "gerado_em": "2026-08-27T13:16:21.425477+00:00",
+      "atualizado_em": "2026-08-27T13:16:21.425477+00:00",
       "registros": 350906,
       "fragmentos": 981,
       "prefixo": 3,
-      "maior_fragmento": 4143706,
-      "etag_fonte": "\"12a0f7ef-65a058094a5bc\""
+      "maior_fragmento": 4517626,
+      "etag_fonte": "\"12a0f7ef-65a070cbb9687\""
     },
     "medicamentos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
-      "data_fonte": "Thu, 27 Aug 2026 11:18:52 GMT",
-      "gerado_em": "2026-08-27T12:32:53.136296+00:00",
-      "atualizado_em": "2026-08-27T12:32:53.136296+00:00",
+      "data_fonte": "Thu, 27 Aug 2026 13:09:42 GMT",
+      "gerado_em": "2026-08-27T13:16:31.476725+00:00",
+      "atualizado_em": "2026-08-27T13:16:31.476725+00:00",
       "registros": 32672,
       "fragmentos": 437,
       "prefixo": 4,
       "maior_fragmento": 545392,
-      "etag_fonte": "\"7edf83-65a0580340612\""
+      "etag_fonte": "\"7edf83-65a070c97aa98\""
     },
     "saneantes": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_SANEANTES.CSV",
-      "data_fonte": "Thu, 27 Aug 2026 11:18:27 GMT",
-      "gerado_em": "2026-08-27T12:33:09.085144+00:00",
-      "atualizado_em": "2026-08-27T12:33:09.085144+00:00",
+      "data_fonte": "Thu, 27 Aug 2026 13:08:52 GMT",
+      "gerado_em": "2026-08-27T13:16:45.743704+00:00",
+      "atualizado_em": "2026-08-27T13:16:45.743704+00:00",
       "registros": 28656,
       "fragmentos": 886,
       "prefixo": 4,
       "maior_fragmento": 99901,
-      "etag_fonte": "\"1742917-65a057eb8fbdb\""
+      "etag_fonte": "\"1742917-65a0709995901\""
     }
   },
   "indices": {
     "status": "ok",
-    "gerado_em": "2026-08-27T12:33:16.335150+00:00",
+    "gerado_em": "2026-08-27T13:16:52.956561+00:00",
     "processos": {
       "status": "ok",
       "fragmentacao": "dígitos 6 a 8 do processo normalizado",
