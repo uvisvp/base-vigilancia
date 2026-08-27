@@ -1331,6 +1331,7 @@ def gerar_saneantes():
                 [
                     "NO_RAZAO_SOCIAL_EMPRESA",
                     "RAZAO_SOCIAL",
+                    "NO_RAZAO_SOCIAL",
                     "EMPRESA",
                     "DETENTOR"
                 ]
