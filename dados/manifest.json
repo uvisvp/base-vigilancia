@@ -1,81 +1,81 @@
 {
   "versao_esquema": 2,
   "projeto": "Base Vigilância Sanitária",
-  "gerado_em": "2026-08-27T19:47:54.187599+00:00",
+  "gerado_em": "2026-08-29T19:57:46.206847+00:00",
   "bases": {
     "dispositivos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
-      "data_fonte": "Thu, 27 Aug 2026 13:09:03 GMT",
-      "gerado_em": "2026-08-27T19:45:21.163263+00:00",
-      "atualizado_em": "2026-08-27T19:45:21.163263+00:00",
-      "registros": 115472,
+      "data_fonte": "Fri, 28 Aug 2026 15:37:08 GMT",
+      "gerado_em": "2026-08-29T19:55:42.973240+00:00",
+      "atualizado_em": "2026-08-29T19:55:42.973240+00:00",
+      "registros": 115471,
       "fragmentos": 2522,
       "prefixo": 5,
       "maior_fragmento": 862344,
-      "etag_fonte": "\"1a3f88c-65a070a3bfdee\""
+      "etag_fonte": "\"1a3fd5d-65a1d39b2814c\""
     },
     "afe_ae": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
-      "data_fonte": "Thu, 27 Aug 2026 13:09:45 GMT",
-      "gerado_em": "2026-08-27T19:46:18.191125+00:00",
-      "atualizado_em": "2026-08-27T19:46:18.191125+00:00",
-      "registros": 350906,
+      "data_fonte": "Fri, 28 Aug 2026 15:37:48 GMT",
+      "gerado_em": "2026-08-29T19:56:23.828551+00:00",
+      "atualizado_em": "2026-08-29T19:56:23.828551+00:00",
+      "registros": 351010,
       "fragmentos": 981,
       "prefixo": 3,
-      "maior_fragmento": 4517626,
-      "etag_fonte": "\"12a0f7ef-65a070cbb9687\""
+      "maior_fragmento": 4521773,
+      "etag_fonte": "\"12a2493d-65a1d3c173005\""
     },
     "medicamentos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
-      "data_fonte": "Thu, 27 Aug 2026 13:09:42 GMT",
-      "gerado_em": "2026-08-27T19:46:28.937255+00:00",
-      "atualizado_em": "2026-08-27T19:46:28.937255+00:00",
+      "data_fonte": "Fri, 28 Aug 2026 15:37:43 GMT",
+      "gerado_em": "2026-08-29T19:56:32.746963+00:00",
+      "atualizado_em": "2026-08-29T19:56:32.746963+00:00",
       "registros": 32672,
       "fragmentos": 437,
       "prefixo": 4,
       "maior_fragmento": 545392,
-      "etag_fonte": "\"7edf83-65a070c97aa98\""
+      "etag_fonte": "\"7ee03d-65a1d3bc487e4\""
     },
     "saneantes": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_SANEANTES.CSV",
-      "data_fonte": "Thu, 27 Aug 2026 13:08:52 GMT",
-      "gerado_em": "2026-08-27T19:46:46.053032+00:00",
-      "atualizado_em": "2026-08-27T19:46:46.053032+00:00",
+      "data_fonte": "Fri, 28 Aug 2026 15:37:01 GMT",
+      "gerado_em": "2026-08-29T19:56:44.892206+00:00",
+      "atualizado_em": "2026-08-29T19:56:44.892206+00:00",
       "registros": 28656,
       "fragmentos": 886,
       "prefixo": 4,
       "maior_fragmento": 99901,
-      "etag_fonte": "\"1742917-65a0709995901\""
+      "etag_fonte": "\"1743e9b-65a1d39476a95\""
     },
     "cosmeticos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
-      "data_fonte": "Thu, 27 Aug 2026 13:10:16 GMT",
-      "gerado_em": "2026-08-27T19:47:42.143476+00:00",
-      "atualizado_em": "2026-08-27T19:47:42.143476+00:00",
-      "registros": 1192597,
+      "data_fonte": "Fri, 28 Aug 2026 15:38:19 GMT",
+      "gerado_em": "2026-08-29T19:57:34.826141+00:00",
+      "atualizado_em": "2026-08-29T19:57:34.826141+00:00",
+      "registros": 1193055,
       "fragmentos": 992,
       "prefixo": 3,
       "maior_fragmento": 1568125,
-      "etag_fonte": "\"d77bc0e-65a070e941aeb\"",
+      "etag_fonte": "\"d790b27-65a1d3dece4df\"",
       "chave": "processo",
       "fragmentacao": "dígitos 6 a 8 do processo normalizado",
-      "ativos": 1002061,
-      "inativos": 190533
+      "ativos": 1002447,
+      "inativos": 190605
     }
   },
   "indices": {
     "status": "ok",
-    "gerado_em": "2026-08-27T19:47:53.505806+00:00",
+    "gerado_em": "2026-08-29T19:57:45.575317+00:00",
     "processos": {
       "status": "ok",
       "fragmentacao": "dígitos 6 a 8 do processo normalizado",
-      "chaves": 512365,
-      "referencias": 512368,
+      "chaves": 512469,
+      "referencias": 512472,
       "fragmentos": 1000
     },
     "cnpj_produtos": {
@@ -90,13 +90,13 @@
       "status": "ok",
       "prefixo": 3,
       "observacao": "Índice por número de AFE/AE.",
-      "chaves": 350906,
-      "referencias": 350906,
+      "chaves": 351010,
+      "referencias": 351010,
       "fragmentos": 377
     },
     "por_base": {
       "dispositivos": {
-        "processos": 115472,
+        "processos": 115471,
         "cnpjs": 0
       },
       "medicamentos": {
