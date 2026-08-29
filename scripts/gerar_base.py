@@ -15,7 +15,7 @@ DADOS = BASE / "dados"
 
 LIMITE_REDUCAO = 0.20
 METADADOS_FONTES = {}
-VERSAO_GERADOR = "2026-08-29-alimentos-v1"
+VERSAO_GERADOR = "2026-08-29-alimentos-v2"
 
 URL_DISPOSITIVOS = (
     "https://dados.anvisa.gov.br/dados/"
@@ -67,8 +67,8 @@ PREFIXOS_BASE = {
     # Cosméticos são fragmentados pelos dígitos 6 a 8 do processo,
     # e não pelos primeiros dígitos (que quase sempre são 25351).
     "cosmeticos": 3,
-    # Alimentos usam a mesma fragmentação equilibrada por processo.
-    "alimentos": 3,
+    # Quatro dígitos evitam concentrar processos antigos em arquivos grandes.
+    "alimentos": 4,
 }
 PREFIXO_INDICE_CNPJ = 3
 PREFIXO_INDICE_AUTORIZACAO = 3
@@ -322,13 +322,13 @@ def metadados_base(
     return resultado
 
 
-def prefixo_processo(processo):
+def prefixo_processo(processo, tamanho=3):
     numero = somente_numeros(processo)
 
-    if len(numero) >= 8:
-        return numero[5:8]
+    if len(numero) >= 5 + tamanho:
+        return numero[5:5 + tamanho]
 
-    return numero[:3]
+    return numero[:tamanho]
 
 
 def extrair_cnpj_item(item):
@@ -2103,6 +2103,16 @@ def gerar_alimentos():
 
             def data_curta(valor_data):
                 dado = texto(valor_data)
+
+                # Registros antigos podem publicar apenas MMAAAA,
+                # por exemplo 122001 para dezembro de 2001.
+                if re.fullmatch(r"\d{6}", dado):
+                    mes = int(dado[:2])
+                    ano = int(dado[2:])
+
+                    if 1 <= mes <= 12 and 1900 <= ano <= 2200:
+                        return f"{dado[:2]}/{dado[2:]}"
+
                 return (
                     dado[:10]
                     if len(dado) >= 10
@@ -2275,7 +2285,8 @@ def gerar_alimentos():
 
                 grupos[
                     prefixo_processo(
-                        processo
+                        processo,
+                        PREFIXOS_BASE["alimentos"]
                     )
                 ].append(item)
 
@@ -2328,7 +2339,7 @@ def gerar_alimentos():
             ),
             "chave": "processo",
             "fragmentacao": (
-                "dígitos 6 a 8 do processo normalizado"
+                "dígitos 6 a 9 do processo normalizado"
             ),
             "registrados": registrados,
             "notificados": notificados,
