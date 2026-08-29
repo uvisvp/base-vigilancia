@@ -17,6 +17,7 @@ PAGINA_CMED = (
 )
 
 EAN_TESTE = "07896641816864"
+VERSAO_INSPETOR = "2026-08-29-cmed-v2"
 
 
 CANDIDATOS = {
@@ -169,10 +170,12 @@ def baixar_planilha(url):
 
 
 def encontrar_cabecalho(planilha):
+    melhor = None
+
     for numero_linha, valores in enumerate(
         planilha.iter_rows(
             min_row=1,
-            max_row=40,
+            max_row=250,
             values_only=True,
         ),
         start=1,
@@ -183,15 +186,64 @@ def encontrar_cabecalho(planilha):
             if valor is not None
         }
 
-        if {
-            "REGISTRO", "PRODUTO", "APRESENTACAO"
-        }.issubset(normalizados) and (
-            "EAN1" in normalizados or "GTIN1" in normalizados
+        marcadores = {
+            "REGISTRO",
+            "PRODUTO",
+            "APRESENTACAO",
+            "EAN1",
+            "GTIN1",
+            "CNPJ",
+            "LABORATORIO",
+            "CODIGOGGREM",
+            "GGREM",
+        }
+        presentes = normalizados.intersection(
+            marcadores
+        )
+        pontuacao = len(presentes)
+
+        if melhor is None or pontuacao > melhor[0]:
+            melhor = (
+                pontuacao,
+                numero_linha,
+                [texto_excel(valor) for valor in valores],
+                sorted(presentes),
+            )
+
+        tem_ean = (
+            "EAN1" in normalizados
+            or "GTIN1" in normalizados
+            or any(
+                nome.startswith("EAN")
+                or nome.startswith("GTIN")
+                for nome in normalizados
+            )
+        )
+
+        if (
+            "REGISTRO" in normalizados
+            and "PRODUTO" in normalizados
+            and tem_ean
         ):
             return numero_linha, [
                 texto_excel(valor)
                 for valor in valores
             ]
+
+    if melhor:
+        print(
+            "MELHOR CANDIDATO A CABEÇALHO:",
+            {
+                "pontuacao": melhor[0],
+                "linha": melhor[1],
+                "marcadores": melhor[3],
+                "valores": melhor[2],
+            },
+            flush=True,
+        )
+
+        if melhor[0] >= 4:
+            return melhor[1], melhor[2]
 
     raise RuntimeError(
         "Cabeçalho da planilha CMED não foi localizado."
@@ -364,6 +416,7 @@ def inspecionar(caminho):
 
 
 def main():
+    print("Versão do inspetor:", VERSAO_INSPETOR, flush=True)
     url = resolver_url_planilha()
     print("URL PMC XLS LOCALIZADA:", url, flush=True)
     caminho = baixar_planilha(url)
