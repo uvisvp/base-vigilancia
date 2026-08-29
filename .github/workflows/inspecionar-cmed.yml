@@ -1,0 +1,27 @@
+name: Inspecionar base CMED
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar leitor de planilha
+        run: python -m pip install --disable-pip-version-check openpyxl
+
+      - name: Inspecionar colunas oficiais da CMED
+        run: python scripts/inspecionar_cmed.py
