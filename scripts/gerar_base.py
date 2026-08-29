@@ -15,6 +15,7 @@ DADOS = BASE / "dados"
 
 LIMITE_REDUCAO = 0.20
 METADADOS_FONTES = {}
+VERSAO_GERADOR = "2026-08-29-alimentos-v1"
 
 URL_DISPOSITIVOS = (
     "https://dados.anvisa.gov.br/dados/"
@@ -44,6 +45,18 @@ URL_COSMETICOS = (
     "TA_CONSULTA_COSMETICOS.CSV"
 )
 
+URL_ALIMENTOS = (
+    "https://dados.anvisa.gov.br/dados/"
+    "CONSULTAS/PRODUTOS/"
+    "TA_CONSULTA_ALIMENTOS.CSV"
+)
+
+URL_ALIMENTOS_RESULTADO = (
+    "https://dados.anvisa.gov.br/dados/"
+    "CONSULTAS/PRODUTOS/"
+    "TA_CONSULTA_ALIMENTOS_RESULTADO.CSV"
+)
+
 # O prefixo é publicado no manifesto. Assim, o HTML funciona com a base atual
 # de três dígitos e também após a redistribuição em fragmentos menores.
 PREFIXOS_BASE = {
@@ -54,9 +67,12 @@ PREFIXOS_BASE = {
     # Cosméticos são fragmentados pelos dígitos 6 a 8 do processo,
     # e não pelos primeiros dígitos (que quase sempre são 25351).
     "cosmeticos": 3,
+    # Alimentos usam a mesma fragmentação equilibrada por processo.
+    "alimentos": 3,
 }
 PREFIXO_INDICE_CNPJ = 3
 PREFIXO_INDICE_AUTORIZACAO = 3
+PREFIXO_INDICE_REGULARIZACAO_ALIMENTOS = 3
 TETO_FRAGMENTO = 300_000
 def somente_numeros(valor):
     return re.sub(r"\D", "", str(valor or ""))
@@ -1777,15 +1793,578 @@ def gerar_cosmeticos():
 
 
 # ==================================================
+# ALIMENTOS E SUPLEMENTOS NOTIFICADOS
+# ==================================================
+
+def gerar_alimentos():
+
+    arquivo_resultado = baixar_csv(
+        URL_ALIMENTOS_RESULTADO,
+        "anvisa_alimentos_resultado_"
+    )
+
+    resultados = defaultdict(list)
+    total_resultados = 0
+
+    try:
+        encoding_resultado, delimitador_resultado = (
+            detectar_configuracao(
+                arquivo_resultado
+            )
+        )
+
+        with arquivo_resultado.open(
+            "r",
+            encoding=encoding_resultado,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador_resultado
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV de resultados de alimentos "
+                    "sem cabeçalho."
+                )
+
+            print(
+                "Colunas resultados alimentos:",
+                leitor.fieldnames
+            )
+
+            col_chave = achar_coluna(
+                leitor.fieldnames,
+                ["CO_SEQ_APRESENTACAO_PRODUTO"]
+            )
+            col_numero = achar_coluna(
+                leitor.fieldnames,
+                ["NU_APRESENTACAO_PRODUTO"]
+            )
+            col_registro = achar_coluna(
+                leitor.fieldnames,
+                ["NU_REGISTRO"]
+            )
+            col_validade = achar_coluna(
+                leitor.fieldnames,
+                ["VALIDADE"]
+            )
+            col_forma = achar_coluna(
+                leitor.fieldnames,
+                ["DS_FORMA_FISICA"]
+            )
+            col_situacao = achar_coluna(
+                leitor.fieldnames,
+                ["SITUACAO_APRESENTACAO"]
+            )
+            col_material = achar_coluna(
+                leitor.fieldnames,
+                ["MATERIAL_EMBALAGENS"]
+            )
+            col_embalagem = achar_coluna(
+                leitor.fieldnames,
+                ["TIPO_EMBALAGENS"]
+            )
+            col_envasadoras = achar_coluna(
+                leitor.fieldnames,
+                ["EMPRESAS_ENVASADORAS"]
+            )
+            col_internacionais = achar_coluna(
+                leitor.fieldnames,
+                ["EMPRESAS_INTERNACIONAIS"]
+            )
+            col_grupos = achar_coluna(
+                leitor.fieldnames,
+                ["GRUPOS_POPULACIONAIS"]
+            )
+            col_vias = achar_coluna(
+                leitor.fieldnames,
+                ["VIAS_ADMINISTRACAO"]
+            )
+            col_tabela = achar_coluna(
+                leitor.fieldnames,
+                ["TABELA_NUTRICIONAL"]
+            )
+            col_intolerancias = achar_coluna(
+                leitor.fieldnames,
+                ["INTOLERANCIAS"]
+            )
+            col_alergenicos = achar_coluna(
+                leitor.fieldnames,
+                ["ALERGENICOS"]
+            )
+
+            if not col_chave:
+                raise RuntimeError(
+                    "Coluna CO_SEQ_APRESENTACAO_PRODUTO "
+                    "não encontrada nos resultados de alimentos."
+                )
+
+            for linha in leitor:
+                chave = somente_numeros(
+                    linha.get(col_chave, "")
+                )
+
+                if not chave:
+                    continue
+
+                detalhe = limpar_json({
+                    "numero": texto(
+                        linha.get(col_numero, "")
+                    ) if col_numero else "",
+                    "registro": somente_numeros(
+                        linha.get(col_registro, "")
+                    ) if col_registro else "",
+                    "prazo_validade": texto(
+                        linha.get(col_validade, "")
+                    ) if col_validade else "",
+                    "forma_fisica": texto(
+                        linha.get(col_forma, "")
+                    ) if col_forma else "",
+                    "situacao": texto(
+                        linha.get(col_situacao, "")
+                    ) if col_situacao else "",
+                    "material_embalagem": texto(
+                        linha.get(col_material, "")
+                    ) if col_material else "",
+                    "tipo_embalagem": texto(
+                        linha.get(col_embalagem, "")
+                    ) if col_embalagem else "",
+                    "envasadores": texto(
+                        linha.get(col_envasadoras, "")
+                    ) if col_envasadoras else "",
+                    "empresas_internacionais": texto(
+                        linha.get(col_internacionais, "")
+                    ) if col_internacionais else "",
+                    "grupos_populacionais": texto(
+                        linha.get(col_grupos, "")
+                    ) if col_grupos else "",
+                    "vias_administracao": texto(
+                        linha.get(col_vias, "")
+                    ) if col_vias else "",
+                    "tabela_nutricional": texto(
+                        linha.get(col_tabela, "")
+                    ) if col_tabela else "",
+                    "intolerancias": texto(
+                        linha.get(col_intolerancias, "")
+                    ) if col_intolerancias else "",
+                    "alergenicos": texto(
+                        linha.get(col_alergenicos, "")
+                    ) if col_alergenicos else ""
+                })
+
+                if detalhe:
+                    resultados[chave].append(
+                        detalhe
+                    )
+
+                total_resultados += 1
+
+    finally:
+        arquivo_resultado.unlink(
+            missing_ok=True
+        )
+
+    arquivo = baixar_csv(
+        URL_ALIMENTOS,
+        "anvisa_alimentos_"
+    )
+
+    try:
+        encoding, delimitador = (
+            detectar_configuracao(
+                arquivo
+            )
+        )
+
+        grupos = defaultdict(list)
+
+        with arquivo.open(
+            "r",
+            encoding=encoding,
+            errors="replace",
+            newline=""
+        ) as f:
+
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador
+            )
+
+            if not leitor.fieldnames:
+                raise RuntimeError(
+                    "CSV de alimentos sem cabeçalho."
+                )
+
+            print(
+                "Colunas alimentos:",
+                leitor.fieldnames
+            )
+
+            def coluna(nome):
+                return achar_coluna(
+                    leitor.fieldnames,
+                    [nome]
+                )
+
+            col_produto = coluna("NO_PRODUTO")
+            col_regularizacao = coluna(
+                "NU_REGISTRO_NOTIFICACAO_PRODUTO"
+            )
+            col_processo = coluna("NU_PROCESSO")
+            col_empresa = coluna(
+                "NO_RAZAO_SOCIAL_EMPRESA"
+            )
+            col_cnpj = coluna("NU_CNPJ_EMPRESA")
+            col_situacao_assunto = coluna(
+                "DS_SITUACAO_ASSUNTO_DOC"
+            )
+            col_vencimento = coluna(
+                "DT_VENCIMENTO_REGISTRO"
+            )
+            col_regularizado_em = coluna(
+                "DT_REGULARIZACAO"
+            )
+            col_apresentacao = coluna(
+                "CO_SEQ_APRESENTACAO_PRODUTO"
+            )
+            col_publicacao = coluna("DT_PUBLICACAO")
+            col_situacao_em = coluna("DT_SITUACAO")
+            col_inicio_analise = coluna(
+                "DT_INICIO_ANALISE"
+            )
+            col_registro_produto = coluna(
+                "NU_REGISTRO_PRODUTO"
+            )
+            col_ativo = coluna("ST_PRODUTO_ATIVO")
+            col_registro = coluna("NU_REGISTRO")
+            col_marcas = coluna("MARCAS")
+            col_situacao_registro = coluna(
+                "SITUACAO_REGISTRO"
+            )
+            col_tipo = coluna("TIPO_REGULARIZACAO")
+            col_categoria = coluna(
+                "DS_CATEGORIA_PRODUTO"
+            )
+            col_alegacao = coluna(
+                "DS_ALEGACAO_FUNCIONAL"
+            )
+            col_atualizacao = coluna("DT_CARGA_ETL")
+
+            essenciais = {
+                "NO_PRODUTO": col_produto,
+                "NU_REGISTRO_NOTIFICACAO_PRODUTO": (
+                    col_regularizacao
+                ),
+                "NU_PROCESSO": col_processo,
+                "NO_RAZAO_SOCIAL_EMPRESA": col_empresa,
+                "NU_CNPJ_EMPRESA": col_cnpj,
+                "CO_SEQ_APRESENTACAO_PRODUTO": (
+                    col_apresentacao
+                ),
+                "TIPO_REGULARIZACAO": col_tipo,
+                "DS_CATEGORIA_PRODUTO": col_categoria,
+                "DT_CARGA_ETL": col_atualizacao
+            }
+
+            faltando = [
+                nome
+                for nome, encontrada in essenciais.items()
+                if not encontrada
+            ]
+
+            if faltando:
+                raise RuntimeError(
+                    "Colunas obrigatórias de alimentos "
+                    "não encontradas: "
+                    + ", ".join(faltando)
+                )
+
+            total = 0
+            registrados = 0
+            notificados = 0
+            ativos = 0
+            inativos = 0
+            suplementos = 0
+            enriquecidos = 0
+
+            def valor(linha, coluna_encontrada):
+                if not coluna_encontrada:
+                    return ""
+                return texto(
+                    linha.get(
+                        coluna_encontrada,
+                        ""
+                    )
+                )
+
+            def data_curta(valor_data):
+                dado = texto(valor_data)
+                return (
+                    dado[:10]
+                    if len(dado) >= 10
+                    else dado
+                )
+
+            for linha in leitor:
+                processo = somente_numeros(
+                    linha.get(col_processo, "")
+                )
+                produto = valor(
+                    linha,
+                    col_produto
+                )
+
+                if not processo or not produto:
+                    continue
+
+                regularizacao = somente_numeros(
+                    linha.get(
+                        col_regularizacao,
+                        ""
+                    )
+                )
+
+                if not regularizacao:
+                    regularizacao = somente_numeros(
+                        linha.get(
+                            col_registro,
+                            ""
+                        ) if col_registro else ""
+                    )
+
+                if not regularizacao:
+                    regularizacao = somente_numeros(
+                        linha.get(
+                            col_registro_produto,
+                            ""
+                        ) if col_registro_produto else ""
+                    )
+
+                tipo = valor(
+                    linha,
+                    col_tipo
+                )
+
+                if tipo.upper() == "NOTIFICADO":
+                    tipo = "Notificado"
+                    notificados += 1
+                elif tipo.upper() == "REGISTRADO":
+                    tipo = "Registrado"
+                    registrados += 1
+
+                codigo_ativo = valor(
+                    linha,
+                    col_ativo
+                ).upper()
+
+                if codigo_ativo in (
+                    "S", "SIM", "1", "ATIVO"
+                ):
+                    ativo = True
+                    ativos += 1
+                elif codigo_ativo in (
+                    "N", "NAO", "NÃO", "0", "INATIVO"
+                ):
+                    ativo = False
+                    inativos += 1
+                else:
+                    ativo = None
+
+                situacao_registro = valor(
+                    linha,
+                    col_situacao_registro
+                )
+                situacao_assunto = valor(
+                    linha,
+                    col_situacao_assunto
+                )
+
+                situacao = (
+                    situacao_registro
+                    or situacao_assunto
+                    or (
+                        "ATIVO"
+                        if ativo is True
+                        else "INATIVO"
+                        if ativo is False
+                        else "NÃO INFORMADA"
+                    )
+                )
+
+                categoria = valor(
+                    linha,
+                    col_categoria
+                )
+
+                if "SUPLEMENT" in (
+                    produto + " " + categoria
+                ).upper():
+                    suplementos += 1
+
+                chave_apresentacao = somente_numeros(
+                    linha.get(
+                        col_apresentacao,
+                        ""
+                    )
+                )
+                apresentacoes = resultados.get(
+                    chave_apresentacao,
+                    []
+                )
+
+                if apresentacoes:
+                    enriquecidos += 1
+
+                item = {
+                    "processo": processo,
+                    "registro": regularizacao,
+                    "produto": produto,
+                    "marcas": valor(
+                        linha,
+                        col_marcas
+                    ),
+                    "cnpj": somente_numeros(
+                        linha.get(col_cnpj, "")
+                    ),
+                    "detentor": valor(
+                        linha,
+                        col_empresa
+                    ),
+                    "categoria": categoria,
+                    "tipo": tipo,
+                    "situacao": situacao,
+                    "situacao_documento": situacao_assunto,
+                    "ativo": ativo,
+                    "vencimento_registro": data_curta(
+                        valor(linha, col_vencimento)
+                    ),
+                    "regularizado_em": data_curta(
+                        valor(linha, col_regularizado_em)
+                    ),
+                    "publicado_em": data_curta(
+                        valor(linha, col_publicacao)
+                    ),
+                    "situacao_em": data_curta(
+                        valor(linha, col_situacao_em)
+                    ),
+                    "inicio_analise_em": data_curta(
+                        valor(linha, col_inicio_analise)
+                    ),
+                    "alegacao_funcional": valor(
+                        linha,
+                        col_alegacao
+                    ),
+                    "atualizado_em": data_curta(
+                        valor(linha, col_atualizacao)
+                    )
+                }
+
+                if apresentacoes:
+                    item["apresentacoes"] = (
+                        apresentacoes
+                    )
+
+                if ativo is None:
+                    item.pop("ativo")
+
+                item = limpar_json(item)
+
+                grupos[
+                    prefixo_processo(
+                        processo
+                    )
+                ].append(item)
+
+                total += 1
+
+        if total < 50000:
+            raise RuntimeError(
+                "Base de alimentos gerou apenas "
+                f"{total} registros."
+            )
+
+        validar_reducao(
+            "alimentos",
+            total
+        )
+
+        maior = gravar_fragmentos(
+            DADOS / "alimentos",
+            grupos
+        )
+
+        print(
+            "alimentos:", total, "registros |",
+            len(grupos), "fragmentos |",
+            registrados, "registrados |",
+            notificados, "notificados |",
+            suplementos, "suplementos |",
+            enriquecidos, "com apresentação | maior",
+            f"{maior / 1024:.0f} KB"
+        )
+
+        metadados = metadados_base(
+            URL_ALIMENTOS,
+            total,
+            len(grupos),
+            PREFIXOS_BASE["alimentos"],
+            maior
+        )
+
+        fonte_resultado = METADADOS_FONTES.get(
+            URL_ALIMENTOS_RESULTADO,
+            {}
+        )
+
+        metadados.update({
+            "fonte_resultado": URL_ALIMENTOS_RESULTADO,
+            "data_fonte_resultado": fonte_resultado.get(
+                "data_fonte",
+                "não informada"
+            ),
+            "chave": "processo",
+            "fragmentacao": (
+                "dígitos 6 a 8 do processo normalizado"
+            ),
+            "registrados": registrados,
+            "notificados": notificados,
+            "suplementos_identificados": suplementos,
+            "ativos": ativos,
+            "inativos": inativos,
+            "resultados_apresentacao": total_resultados,
+            "produtos_enriquecidos": enriquecidos
+        })
+
+        if fonte_resultado.get("etag"):
+            metadados["etag_fonte_resultado"] = (
+                fonte_resultado["etag"]
+            )
+
+        return metadados
+
+    finally:
+        arquivo.unlink(
+            missing_ok=True
+        )
+
+
+# ==================================================
 # ÍNDICES AUXILIARES DE PRODUTOS
 # ==================================================
 
 def gerar_indices_produtos():
-    bases = (
-        "dispositivos",
-        "medicamentos",
-        "saneantes"
-    )
+    bases = {
+        "dispositivos": "registro",
+        "medicamentos": "registro",
+        "saneantes": "registro",
+        # Alimentos são armazenados por processo; por isso a referência
+        # do índice aponta para o processo, e não para o registro.
+        "alimentos": "processo"
+    }
 
     processos = defaultdict(
         lambda: defaultdict(set)
@@ -1794,6 +2373,9 @@ def gerar_indices_produtos():
         lambda: defaultdict(dict)
     )
     autorizacoes = defaultdict(
+        lambda: defaultdict(set)
+    )
+    regularizacoes_alimentos = defaultdict(
         lambda: defaultdict(set)
     )
 
@@ -1805,7 +2387,7 @@ def gerar_indices_produtos():
         for nome in bases
     }
 
-    for nome in bases:
+    for nome, campo_referencia in bases.items():
         pasta = DADOS / nome
 
         for caminho in sorted(
@@ -1822,16 +2404,23 @@ def gerar_indices_produtos():
                     item.get("registro", "")
                 )
 
-                if not registro:
+                processo = somente_numeros(
+                    item.get("processo", "")
+                )
+
+                identificador = somente_numeros(
+                    item.get(
+                        campo_referencia,
+                        ""
+                    )
+                )
+
+                if not identificador:
                     continue
 
                 referencia = (
                     nome,
-                    registro
-                )
-
-                processo = somente_numeros(
-                    item.get("processo", "")
+                    identificador
                 )
 
                 if processo:
@@ -1845,6 +2434,19 @@ def gerar_indices_produtos():
                     por_base[nome][
                         "processos"
                     ] += 1
+
+                if (
+                    nome == "alimentos"
+                    and registro
+                    and processo
+                ):
+                    regularizacoes_alimentos[
+                        registro[
+                            :PREFIXO_INDICE_REGULARIZACAO_ALIMENTOS
+                        ]
+                    ][registro].add(
+                        processo
+                    )
 
                 cnpj = extrair_cnpj_item(
                     item
@@ -1892,6 +2494,18 @@ def gerar_indices_produtos():
                         ),
                         "vencimento": item.get(
                             "vencimento",
+                            ""
+                        ) or item.get(
+                            "vencimento_registro",
+                            ""
+                        ),
+                        "tipo": item.get(
+                            "tipo",
+                            ""
+                        ),
+                        "referencia": identificador,
+                        "marcas": item.get(
+                            "marcas",
                             ""
                         )
                     })
@@ -2003,6 +2617,23 @@ def gerar_indices_produtos():
         )
     }
 
+    regularizacoes_alimentos_prontas = {
+        prefixo: {
+            regularizacao: [
+                {"p": processo}
+                for processo in sorted(
+                    processos_regularizacao
+                )
+            ]
+            for regularizacao, processos_regularizacao in sorted(
+                grupos.items()
+            )
+        }
+        for prefixo, grupos in sorted(
+            regularizacoes_alimentos.items()
+        )
+    }
+
     gravar_fragmentos(
         DADOS / "indices" / "processos",
         processos_prontos
@@ -2014,6 +2645,10 @@ def gerar_indices_produtos():
     gravar_fragmentos(
         DADOS / "indices" / "autorizacoes",
         autorizacoes_prontas
+    )
+    gravar_fragmentos(
+        DADOS / "indices" / "regularizacoes_alimentos",
+        regularizacoes_alimentos_prontas
     )
 
     gerado_em = datetime.now(
@@ -2086,6 +2721,32 @@ def gerar_indices_produtos():
                 autorizacoes_prontas
             )
         },
+        "regularizacoes_alimentos": {
+            "status": (
+                "ok"
+                if regularizacoes_alimentos_prontas
+                else "indisponivel"
+            ),
+            "prefixo": (
+                PREFIXO_INDICE_REGULARIZACAO_ALIMENTOS
+            ),
+            "fragmentacao": (
+                "3 primeiros dígitos do número de "
+                "registro ou notificação"
+            ),
+            "chaves": sum(
+                len(itens)
+                for itens in regularizacoes_alimentos_prontas.values()
+            ),
+            "referencias": sum(
+                len(refs)
+                for itens in regularizacoes_alimentos_prontas.values()
+                for refs in itens.values()
+            ),
+            "fragmentos": len(
+                regularizacoes_alimentos_prontas
+            )
+        },
         "por_base": por_base
     }
 
@@ -2100,6 +2761,7 @@ def gerar_manifesto(
     medicamentos,
     saneantes,
     cosmeticos,
+    alimentos,
     indices
 ):
 
@@ -2133,7 +2795,10 @@ def gerar_manifesto(
             saneantes,
 
             "cosmeticos":
-            cosmeticos
+            cosmeticos,
+
+            "alimentos":
+            alimentos
         },
 
         "indices": indices
@@ -2159,6 +2824,11 @@ def gerar_manifesto(
 # ==================================================
 
 if __name__ == "__main__":
+
+    print(
+        "Versão do gerador:",
+        VERSAO_GERADOR
+    )
 
     print(
         "=== DISPOSITIVOS ==="
@@ -2190,6 +2860,12 @@ if __name__ == "__main__":
     cosmeticos = gerar_cosmeticos()
 
     print(
+        "=== ALIMENTOS E SUPLEMENTOS ==="
+    )
+
+    alimentos = gerar_alimentos()
+
+    print(
         "=== ÍNDICES AUXILIARES ==="
     )
 
@@ -2201,6 +2877,7 @@ if __name__ == "__main__":
         medicamentos,
         saneantes,
         cosmeticos,
+        alimentos,
         indices
     )
 
