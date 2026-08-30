@@ -28,8 +28,14 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Gerar base
+      - name: Instalar leitor de planilha
+        run: python -m pip install --disable-pip-version-check openpyxl
+
+      - name: Gerar bases principais
         run: python scripts/gerar_base.py
+
+      - name: Gerar constituintes de suplementos
+        run: python scripts/gerar_suplementos_constituintes.py
 
       - name: Verificar alterações
         id: changes
