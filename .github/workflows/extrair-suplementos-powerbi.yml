@@ -1,0 +1,32 @@
+name: Extrair suplementos Power BI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extrair:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extrair todos os campos
+        run: python scripts/extrair_suplementos_powerbi.py
+
+      - name: Guardar extração
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-extracao-suplementos
+          path: diagnostico-extracao-suplementos/
+          if-no-files-found: warn
+          retention-days: 3
