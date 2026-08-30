@@ -421,7 +421,7 @@ def main():
     )
     url_esquema = base + "/conceptualschema"
 
-       def obter_json_powerbi(nome, url):
+def obter_json_powerbi(nome, url):
         ultimo_erro = None
 
         for tentativa in range(1, 7):
