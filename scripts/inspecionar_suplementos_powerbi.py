@@ -421,21 +421,116 @@ def main():
     )
     url_esquema = base + "/conceptualschema"
 
-    texto_modelos, status_modelos, _ = (
-        baixar_texto(
-            url_modelos,
-            headers_powerbi(resource_key)
-        )
-    )
-    texto_esquema, status_esquema, _ = (
-        baixar_texto(
-            url_esquema,
-            headers_powerbi(resource_key)
-        )
+       def obter_json_powerbi(nome, url):
+        ultimo_erro = None
+
+        for tentativa in range(1, 7):
+            try:
+                texto, status, cabecalhos = baixar_texto(
+                    url,
+                    headers_powerbi(resource_key)
+                )
+
+                tipo = cabecalhos.get(
+                    "Content-Type",
+                    ""
+                )
+
+                print(
+                    f"{nome}: tentativa {tentativa}"
+                    f" | status {status}"
+                    f" | {len(texto)} caracteres"
+                    f" | tipo {tipo or 'não informado'}"
+                )
+
+                # Salva a resposta mesmo quando não for JSON,
+                # permitindo gerar o artifact para diagnóstico.
+                (
+                    SAIDA / f"{nome}-resposta.txt"
+                ).write_text(
+                    texto,
+                    encoding="utf-8"
+                )
+
+                gravar_json(
+                    f"{nome}-diagnostico.json",
+                    {
+                        "tentativa": tentativa,
+                        "status": status,
+                        "content_type": tipo,
+                        "cabecalhos": cabecalhos,
+                        "previa": texto[:500]
+                    }
+                )
+
+                limpo = texto.lstrip(
+                    "\ufeff \t\r\n"
+                )
+
+                if limpo.startswith(")]}'"):
+                    quebra = limpo.find("\n")
+                    limpo = (
+                        limpo[quebra + 1:]
+                        if quebra >= 0
+                        else limpo[4:]
+                    ).lstrip()
+
+                if not limpo:
+                    raise json.JSONDecodeError(
+                        "Resposta vazia",
+                        texto,
+                        0
+                    )
+
+                return json.loads(limpo)
+
+            except Exception as erro:
+                ultimo_erro = erro
+
+                print(
+                    f"{nome}: resposta ainda "
+                    f"indisponível: {erro!r}"
+                )
+
+                if tentativa < 6:
+                    espera = min(
+                        tentativa * 5,
+                        15
+                    )
+
+                    print(
+                        f"Nova tentativa em "
+                        f"{espera} segundos."
+                    )
+
+                    time.sleep(espera)
+
+        raise RuntimeError(
+            f"{nome}: o Power BI não devolveu "
+            "JSON após seis tentativas. "
+            "Consulte o artifact gerado."
+        ) from ultimo_erro
+
+    modelos = obter_json_powerbi(
+        "modelos-e-exploracao",
+        url_modelos
     )
 
-    modelos = json.loads(texto_modelos)
-    esquema = json.loads(texto_esquema)
+    esquema = obter_json_powerbi(
+        "esquema-conceitual",
+        url_esquema
+    )
+
+    status_modelos = 200
+    status_esquema = 200
+    texto_modelos = json.dumps(
+        modelos,
+        ensure_ascii=False
+    )
+    texto_esquema = json.dumps(
+        esquema,
+        ensure_ascii=False
+    )
 
     caminho_modelos = gravar_json(
         "modelos-e-exploracao.json",
