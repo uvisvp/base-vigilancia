@@ -1,6 +1,7 @@
 from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import urlparse, urlunparse
+import gzip
 import json
 import re
 import ssl
@@ -74,10 +75,25 @@ def baixar_texto(url, headers=None):
     with abrir_url(url, headers) as resposta:
         conteudo = resposta.read()
         status = resposta.status
-        cabecalhos = dict(resposta.headers.items())
+        cabecalhos = dict(
+            resposta.headers.items()
+        )
+
+        codificacao = resposta.headers.get(
+            "Content-Encoding",
+            ""
+        ).lower()
+
+        if "gzip" in codificacao:
+            conteudo = gzip.decompress(
+                conteudo
+            )
 
     return (
-        conteudo.decode("utf-8", errors="replace"),
+        conteudo.decode(
+            "utf-8",
+            errors="replace"
+        ),
         status,
         cabecalhos
     )
