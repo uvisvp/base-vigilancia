@@ -21,7 +21,7 @@ DADOS = BASE / "dados"
 
 LIMITE_REDUCAO = 0.20
 METADADOS_FONTES = {}
-VERSAO_GERADOR = "2026-08-29-cmed-v1"
+VERSAO_GERADOR = "2026-08-30-cmed-v2"
 
 URL_DISPOSITIVOS = (
     "https://dados.anvisa.gov.br/dados/"
@@ -81,7 +81,7 @@ PREFIXOS_BASE = {
     # Quatro dígitos evitam concentrar processos antigos em arquivos grandes.
     "alimentos": 4,
     # O GTIN é normalizado com 14 dígitos e consultado diretamente.
-    "cmed": 6,
+    "cmed": 8,
 }
 PREFIXO_INDICE_CNPJ = 3
 PREFIXO_INDICE_AUTORIZACAO = 3
@@ -1838,7 +1838,7 @@ def gerar_cmed():
             "fonte_pagina": PAGINA_CMED,
             "chave": "GTIN normalizado com 14 dígitos",
             "fragmentacao": (
-                "6 primeiros dígitos do GTIN-14"
+                "8 primeiros dígitos do GTIN-14"
             ),
             "eans_unicos": len(eans_unicos),
             "referencias_ean": referencias_ean,
