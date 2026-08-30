@@ -1,9 +1,10 @@
 from pathlib import Path
 from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlencode, urljoin, urlparse
 import gzip
 import html
 import json
+import os
 import re
 import time
 import urllib.error
@@ -17,12 +18,16 @@ GATEWAY = (
     "consultas-externas-api"
 )
 API_V1 = f"{GATEWAY}/api/v1"
+TOKEN_URL = (
+    "https://acesso.prd.apps.anvisa.gov.br/auth/"
+    "realms/externo/protocol/openid-connect/token"
+)
 SAIDA = Path("diagnostico-produtos-irregulares")
-VERSAO_INSPETOR = "2026-08-30-gateway-v3"
+VERSAO_INSPETOR = "2026-08-30-autenticacao-v4"
 MAXIMO_ATIVOS = 80
 
 
-def requisitar(url, metodo="GET", dados=None, tentativas=3):
+def requisitar(url, metodo="GET", dados=None, tentativas=3, token=None):
     ultimo_erro = None
 
     for tentativa in range(1, tentativas + 1):
@@ -37,6 +42,9 @@ def requisitar(url, metodo="GET", dados=None, tentativas=3):
                 "AppleWebKit/537.36 Chrome/124 Safari/537.36"
             ),
         }
+
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
 
         if dados is not None:
             corpo = json.dumps(
@@ -91,6 +99,69 @@ def requisitar(url, metodo="GET", dados=None, tentativas=3):
             time.sleep(espera)
 
     return 0, {}, b"", repr(ultimo_erro)
+
+
+def obter_token():
+    client_id = os.environ.get("ANVISA_CLIENT_ID", "").strip()
+    client_secret = os.environ.get("ANVISA_CLIENT_SECRET", "").strip()
+
+    if not client_id or not client_secret:
+        raise RuntimeError(
+            "Configure ANVISA_CLIENT_ID e ANVISA_CLIENT_SECRET "
+            "nos Secrets do GitHub Actions."
+        )
+
+    corpo = urlencode({
+        "grant_type": "client_credentials",
+        "client_id": client_id,
+        "client_secret": client_secret,
+    }).encode("utf-8")
+    pedido = urllib.request.Request(
+        TOKEN_URL,
+        data=corpo,
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 Chrome/124 Safari/537.36"
+            ),
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(pedido, timeout=180) as resposta:
+            dados = json.loads(resposta.read().decode("utf-8"))
+    except urllib.error.HTTPError as erro:
+        texto = erro.read().decode("utf-8", errors="replace")
+        raise RuntimeError(
+            f"Falha ao obter token da Anvisa: HTTP {erro.code}. "
+            f"Resposta: {texto[:500]}"
+        ) from erro
+    except (urllib.error.URLError, TimeoutError, OSError) as erro:
+        raise RuntimeError(
+            f"Falha de conexão ao obter token da Anvisa: {erro!r}"
+        ) from erro
+
+    token = dados.get("access_token")
+    if not token:
+        raise RuntimeError(
+            "A Anvisa respondeu, mas não devolveu access_token."
+        )
+
+    gravar_json(
+        SAIDA / "autenticacao-resumo.json",
+        {
+            "status": "ok",
+            "token_type": dados.get("token_type", ""),
+            "expires_in": dados.get("expires_in"),
+            "scope": dados.get("scope", ""),
+            "observacao": "Token e credenciais não foram armazenados.",
+        },
+    )
+    print("Token temporário da Anvisa obtido com sucesso.")
+    return token
 
 
 def nome_seguro(nome):
@@ -260,12 +331,13 @@ def baixar_arvore_javascript(conteudo_html):
     return relatorio, contextos, urls_encontradas
 
 
-def testar_endpoint(nome, url, metodo="GET", dados=None):
+def testar_endpoint(nome, url, metodo="GET", dados=None, token=None):
     print(metodo, url)
     status, cabecalhos, conteudo, erro = requisitar(
         url,
         metodo=metodo,
         dados=dados,
+        token=token,
     )
     resumo, convertido = salvar_resposta(
         nome,
@@ -282,7 +354,7 @@ def testar_endpoint(nome, url, metodo="GET", dados=None):
     return resumo, convertido
 
 
-def testar_gateway():
+def testar_gateway(token):
     consultas = []
 
     alvos_get = [
@@ -295,7 +367,7 @@ def testar_gateway():
     ]
 
     for nome, url in alvos_get:
-        resumo, _ = testar_endpoint(nome, url)
+        resumo, _ = testar_endpoint(nome, url, token=token)
         consultas.append(resumo)
 
     corpos = [
@@ -311,6 +383,7 @@ def testar_gateway():
             f"{API_V1}/dossie",
             metodo="POST",
             dados=corpo,
+            token=token,
         )
         consultas.append(resumo)
 
@@ -328,6 +401,8 @@ def main():
         "gateway": GATEWAY,
     }
 
+    token = obter_token()
+
     print("GET", DOCUMENTACAO)
     status, cabecalhos, conteudo, erro = requisitar(DOCUMENTACAO)
     resumo_documentacao, _ = salvar_resposta(
@@ -338,11 +413,16 @@ def main():
         erro,
     )
 
-    if not conteudo:
-        raise RuntimeError("O portal da API não devolveu conteúdo.")
+    if conteudo and status == 200:
+        ativos, contextos, urls = baixar_arvore_javascript(conteudo)
+    else:
+        ativos, contextos, urls = [], [], set()
+        print(
+            "Portal de documentação indisponível; "
+            "continuando pelo gateway autenticado."
+        )
 
-    ativos, contextos, urls = baixar_arvore_javascript(conteudo)
-    consultas_gateway = testar_gateway()
+    consultas_gateway = testar_gateway(token)
     resumo_geral.update({
         "resumo_documentacao": resumo_documentacao,
         "ativos_javascript": len(ativos),
@@ -357,12 +437,9 @@ def main():
     print("Contextos relevantes:", len(contextos))
     print("Respostas JSON no gateway:", json_validos)
 
-    if not any(
-        "chunk-zld6l27i" in Path(item["arquivo"]).name
-        for item in ativos
-    ):
+    if json_validos == 0:
         raise RuntimeError(
-            "O módulo de Consultas Externas não foi localizado. "
+            "O token foi obtido, mas o gateway não devolveu JSON. "
             "Baixe o artifact para análise."
         )
 
