@@ -20,6 +20,9 @@ jobs:
           python-version: "3.12"
 
       - name: Inspecionar API de produtos irregulares
+        env:
+          ANVISA_CLIENT_ID: ${{ secrets.ANVISA_CLIENT_ID }}
+          ANVISA_CLIENT_SECRET: ${{ secrets.ANVISA_CLIENT_SECRET }}
         run: python scripts/inspecionar_produtos_irregulares.py
 
       - name: Guardar diagnóstico
