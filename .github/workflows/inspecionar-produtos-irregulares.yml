@@ -1,0 +1,31 @@
+name: Inspecionar produtos irregulares
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Inspecionar API de produtos irregulares
+        run: python scripts/inspecionar_produtos_irregulares.py
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-produtos-irregulares
+          path: diagnostico-produtos-irregulares/
+          if-no-files-found: error
