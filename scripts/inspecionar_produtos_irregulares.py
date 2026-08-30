@@ -23,7 +23,7 @@ TOKEN_URL = (
     "realms/externo/protocol/openid-connect/token"
 )
 SAIDA = Path("diagnostico-produtos-irregulares")
-VERSAO_INSPETOR = "2026-08-30-autenticacao-v4"
+VERSAO_INSPETOR = "2026-08-30-dossie-v5"
 MAXIMO_ATIVOS = 80
 
 
@@ -361,6 +361,10 @@ def testar_gateway(token):
         ("tipos-produto", f"{API_V1}/dossie/tiposProduto"),
         ("acoes-fiscalizacao", f"{API_V1}/dossie/acoesFiscalizacao"),
         ("classes-risco", f"{API_V1}/dossie/classesRisco"),
+        (
+            "detalhe-dossie-exemplo",
+            f"{API_V1}/dossie/25351093571202597",
+        ),
         ("swagger-config", f"{GATEWAY}/swagger-ui/swagger-config"),
         ("swagger-api-docs", f"{GATEWAY}/v3/api-docs"),
         ("swagger-index", f"{GATEWAY}/swagger-ui/index.html"),
@@ -370,17 +374,47 @@ def testar_gateway(token):
         resumo, _ = testar_endpoint(nome, url, token=token)
         consultas.append(resumo)
 
+    tipos = "6,2,15,1,8,12,3"
     corpos = [
-        {},
-        {"page": 0, "size": 5},
-        {"pageIndex": 0, "pageSize": 5},
-        {"pagina": 0, "tamanhoPagina": 5},
+        {
+            "page": 1,
+            "count": 5,
+            "filter": {
+                "tipoAssunto": "1",
+                "tiposProduto": tipos,
+            },
+        },
+        {
+            "page": 1,
+            "count": 5,
+            "filter": {
+                "tipoAssunto": "2",
+                "tiposProduto": tipos,
+            },
+        },
+        {
+            "page": 1,
+            "count": 5,
+            "filter": {
+                "tipoAssunto": "3",
+                "tiposProduto": tipos,
+            },
+        },
+        {
+            "page": 1,
+            "count": 5,
+            "filter": {
+                "parametroProduto": "SUPLEMENTO",
+                "tipoAssunto": "2",
+                "tiposProduto": "6",
+            },
+        },
     ]
 
     for indice, corpo in enumerate(corpos, start=1):
         resumo, _ = testar_endpoint(
             f"busca-dossie-{indice}",
-            f"{API_V1}/dossie",
+            f"{API_V1}/dossie/",
             metodo="POST",
             dados=corpo,
             token=token,
@@ -433,14 +467,23 @@ def main():
     gravar_json(SAIDA / "resumo-geral.json", resumo_geral)
 
     json_validos = sum(1 for item in consultas_gateway if item["json"])
+    buscas_validas = sum(
+        1
+        for item in consultas_gateway
+        if item["nome"].startswith("busca-dossie-")
+        and item["json"]
+        and item["status"] == 200
+    )
     print("Ativos JavaScript:", len(ativos))
     print("Contextos relevantes:", len(contextos))
     print("Respostas JSON no gateway:", json_validos)
+    print("Buscas de dossiê válidas:", buscas_validas)
 
-    if json_validos == 0:
+    if buscas_validas == 0:
         raise RuntimeError(
-            "O token foi obtido, mas o gateway não devolveu JSON. "
-            "Baixe o artifact para análise."
+            "A autenticação e os metadados funcionaram, mas nenhuma "
+            "busca de dossiê devolveu JSON válido. Baixe o artifact "
+            "para análise."
         )
 
     print("Diagnóstico do gateway de Produtos Irregulares concluído.")
