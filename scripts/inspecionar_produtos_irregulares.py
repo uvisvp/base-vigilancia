@@ -1,5 +1,6 @@
 from pathlib import Path
 from datetime import datetime, timezone
+from urllib.parse import urljoin, urlparse
 import gzip
 import html
 import json
@@ -10,8 +11,10 @@ import urllib.request
 
 
 BASE_API = "https://api.anvisa.gov.br/consultas-externas"
+PORTAL_API = "https://api.anvisa.gov.br/"
 PAGINA_CONSULTA = "https://consultas.anvisa.gov.br/#/dossie/"
 SAIDA = Path("diagnostico-produtos-irregulares")
+VERSAO_INSPETOR = "2026-08-30-javascript-v2"
 
 
 def requisitar(url, metodo="GET", dados=None, tentativas=3):
@@ -74,7 +77,7 @@ def requisitar(url, metodo="GET", dados=None, tentativas=3):
         if tentativa < tentativas:
             espera = 5 * tentativa
             print(
-                "Falha temporária:",
+                "Falha temporÃ¡ria:",
                 repr(ultimo_erro),
                 "| nova tentativa em",
                 espera,
@@ -147,115 +150,188 @@ def texto_da_documentacao(conteudo):
     return texto.strip()
 
 
+def extrair_ativos_javascript(conteudo_html):
+    texto = conteudo_html.decode("utf-8", errors="replace")
+    caminhos = re.findall(
+        r'(?:src|href)=["\']([^"\']+\.js(?:\?[^"\']*)?)["\']',
+        texto,
+        flags=re.IGNORECASE,
+    )
+    ativos = []
+
+    for caminho in caminhos:
+        url = urljoin(PORTAL_API, html.unescape(caminho))
+        if (
+            "ruxitagentjs" in url
+            or "/cdn-cgi/" in url
+            or url in ativos
+        ):
+            continue
+        ativos.append(url)
+
+    return ativos
+
+
+def contextos_relevantes(texto, nome_arquivo):
+    padrao = re.compile(
+        r"dossi[eÃª]|consultas-externas|openapi|swagger|"
+        r"api[_-]?url|base[_-]?url|environment",
+        flags=re.IGNORECASE,
+    )
+    vistos = set()
+    contextos = []
+
+    for encontrado in padrao.finditer(texto):
+        inicio = max(0, encontrado.start() - 350)
+        fim = min(len(texto), encontrado.end() + 500)
+        contexto = texto[inicio:fim].replace("\r", " ").replace("\n", " ")
+        contexto = re.sub(r"\s+", " ", contexto).strip()
+        chave = contexto.casefold()
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        contextos.append(f"\n### {nome_arquivo}\n{contexto}\n")
+
+    return contextos
+
+
+def analisar_javascript(conteudo_html):
+    ativos = extrair_ativos_javascript(conteudo_html)
+    relatorio = []
+    contextos = []
+    urls_encontradas = set()
+    pasta_ativos = SAIDA / "javascript"
+    pasta_ativos.mkdir(parents=True, exist_ok=True)
+
+    for indice, url in enumerate(ativos, start=1):
+        print("GET JavaScript", url)
+        status, cabecalhos, conteudo, erro = requisitar(url)
+        nome = Path(urlparse(url).path).name or f"ativo-{indice}.js"
+        nome = nome_seguro(nome.removesuffix(".js")) + ".js"
+        caminho = pasta_ativos / nome
+
+        if conteudo:
+            caminho.write_bytes(conteudo)
+
+        texto = conteudo.decode("utf-8", errors="replace")
+        achados_ativo = contextos_relevantes(texto, nome)
+        contextos.extend(achados_ativo)
+
+        for encontrada in re.findall(
+            r"https?://[^\"'`\\\s<>]+",
+            texto,
+            flags=re.IGNORECASE,
+        ):
+            if any(
+                termo in encontrada.casefold()
+                for termo in ("anvisa", "dossie", "swagger", "openapi")
+            ):
+                urls_encontradas.add(encontrada.rstrip(",;.)]"))
+
+        relatorio.append({
+            "url": url,
+            "arquivo": str(caminho),
+            "status": status,
+            "bytes": len(conteudo),
+            "tipo_conteudo": cabecalhos.get("Content-Type", ""),
+            "erro": erro,
+            "contextos_relevantes": len(achados_ativo),
+        })
+
+    (SAIDA / "achados-javascript.txt").write_text(
+        "\n".join(contextos),
+        encoding="utf-8",
+    )
+    gravar_json(
+        SAIDA / "javascript-resumo.json",
+        {
+            "ativos": relatorio,
+            "urls_encontradas": sorted(urls_encontradas),
+        },
+    )
+    return relatorio, contextos, urls_encontradas
+
+
+def testar_configuracoes():
+    candidatos = [
+        "assets/config.json",
+        "assets/config/config.json",
+        "assets/environment.json",
+        "config.json",
+        "swagger.json",
+        "openapi.json",
+        "v3/api-docs",
+    ]
+    resultados = []
+
+    for indice, caminho in enumerate(candidatos, start=1):
+        url = urljoin(PORTAL_API, caminho)
+        print("GET configuraÃ§Ã£o", url)
+        status, cabecalhos, conteudo, erro = requisitar(url)
+        resumo, _ = salvar_resposta(
+            f"configuracao-{indice}",
+            status,
+            cabecalhos,
+            conteudo,
+            erro,
+        )
+        resumo["url"] = url
+        resultados.append(resumo)
+
+    gravar_json(SAIDA / "configuracoes-resumo.json", resultados)
+    return resultados
+
+
 def main():
+    print("VersÃ£o do inspetor:", VERSAO_INSPETOR)
     SAIDA.mkdir(parents=True, exist_ok=True)
     resumo_geral = {
         "gerado_em": datetime.now(timezone.utc).isoformat(),
         "base_api": BASE_API,
+        "portal_api": PORTAL_API,
         "consultas": [],
     }
 
-    consultas_get = [
-        ("documentacao", f"{BASE_API}/dossie-doc"),
-        ("tipos-produto", f"{BASE_API}/dossie/tiposProduto"),
-        ("acoes-fiscalizacao", f"{BASE_API}/dossie/acoesFiscalizacao"),
-        ("classes-risco", f"{BASE_API}/dossie/classesRisco"),
-    ]
+    url_documentacao = f"{BASE_API}/dossie-doc"
+    print("GET", url_documentacao)
+    status, cabecalhos, conteudo, erro = requisitar(url_documentacao)
+    resumo, _ = salvar_resposta(
+        "documentacao",
+        status,
+        cabecalhos,
+        conteudo,
+        erro,
+    )
+    resumo_geral["consultas"].append(resumo)
 
-    for nome, url in consultas_get:
-        print("GET", url)
-        status, cabecalhos, conteudo, erro = requisitar(url)
-        resumo, _ = salvar_resposta(
-            nome,
-            status,
-            cabecalhos,
-            conteudo,
-            erro,
-        )
-        resumo_geral["consultas"].append(resumo)
+    if not conteudo:
+        raise RuntimeError("O portal da API nÃ£o devolveu conteÃºdo.")
 
-        if nome == "documentacao" and conteudo:
-            (SAIDA / "documentacao-limpa.txt").write_text(
-                texto_da_documentacao(conteudo),
-                encoding="utf-8",
-            )
+    (SAIDA / "documentacao-limpa.txt").write_text(
+        texto_da_documentacao(conteudo),
+        encoding="utf-8",
+    )
 
-    tentativas_post = [
-        {
-            "sorting": {"processo": "DESC"},
-            "order": "DESC",
-            "page": "1",
-            "count": 20,
-            "filter": {"tipoAssunto": "1"},
-        },
-        {
-            "sorting": {"processo": "DESC"},
-            "page": 1,
-            "count": 20,
-            "filter": {
-                "tipoAssunto": "1",
-                "parametroProduto": "SUPLEMENTO",
-            },
-        },
-        {
-            "sorting": {"processo": "DESC"},
-            "order": "DESC",
-            "page": "1",
-            "count": 20,
-            "filter": {
-                "tipoAssunto": "1",
-                "parametroProduto": "",
-                "processo": "",
-                "empresaEnvolvidaCnpj": "",
-                "empresaEnvolvidaRazaoSocial": "",
-            },
-        },
-    ]
-
-    post_valido = False
-    for indice, payload in enumerate(tentativas_post, start=1):
-        nome = f"busca-post-{indice}"
-        gravar_json(SAIDA / f"{nome}-payload.json", payload)
-        print("POST", f"{BASE_API}/dossie", "| tentativa", indice)
-        status, cabecalhos, conteudo, erro = requisitar(
-            f"{BASE_API}/dossie",
-            metodo="POST",
-            dados=payload,
-        )
-        resumo, convertido = salvar_resposta(
-            nome,
-            status,
-            cabecalhos,
-            conteudo,
-            erro,
-        )
-        resumo_geral["consultas"].append(resumo)
-
-        if status == 200 and isinstance(convertido, (dict, list)):
-            post_valido = True
-            break
-
-    resumo_geral["post_valido"] = post_valido
+    ativos, contextos, urls = analisar_javascript(conteudo)
+    configuracoes = testar_configuracoes()
+    resumo_geral.update({
+        "ativos_javascript": len(ativos),
+        "contextos_relevantes": len(contextos),
+        "urls_encontradas": sorted(urls),
+        "configuracoes_testadas": len(configuracoes),
+    })
     gravar_json(SAIDA / "resumo-geral.json", resumo_geral)
 
-    for item in resumo_geral["consultas"]:
-        print(
-            item["nome"],
-            "| status",
-            item["status"],
-            "|",
-            item["bytes"],
-            "bytes | JSON",
-            item["json"],
-        )
+    print("Ativos JavaScript:", len(ativos))
+    print("Contextos relevantes:", len(contextos))
+    print("URLs encontradas:", len(urls))
 
-    if not post_valido:
+    if not ativos:
         raise RuntimeError(
-            "Nenhuma consulta POST devolveu JSON válido. "
-            "Baixe o artifact para análise."
+            "Nenhum arquivo JavaScript foi localizado no portal."
         )
 
-    print("Diagnóstico da API concluído com sucesso.")
+    print("DiagnÃ³stico dos arquivos da API concluÃ­do.")
 
 
 if __name__ == "__main__":
