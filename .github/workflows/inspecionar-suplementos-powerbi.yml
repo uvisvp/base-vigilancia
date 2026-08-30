@@ -1,0 +1,32 @@
+name: Inspecionar suplementos Power BI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Inspecionar painel público
+        run: python scripts/inspecionar_suplementos_powerbi.py
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-powerbi-suplementos
+          path: diagnostico-powerbi-suplementos/
+          if-no-files-found: warn
+          retention-days: 3
