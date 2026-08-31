@@ -1,0 +1,51 @@
+name: Diagnosticar Aditivos Power BI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: diagnosticar-aditivos-powerbi
+  cancel-in-progress: false
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ler estrutura dos painéis
+        run: python scripts/diagnosticar_powerbi_aditivos.py
+
+      - name: Publicar diagnóstico
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp dados/diagnostico_aditivos_powerbi.json /tmp/diagnostico_aditivos_powerbi.json
+
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/diagnostico_aditivos_powerbi.json dados/diagnostico_aditivos_powerbi.json
+            git add dados/diagnostico_aditivos_powerbi.json
+            if git diff --cached --quiet; then
+              echo "Diagnóstico já está atualizado."
+              exit 0
+            fi
+            git commit -m "Atualiza diagnóstico Power BI de aditivos"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
