@@ -37,9 +37,9 @@ TOKEN_URL = (
 )
 FONTE = "https://api.anvisa.gov.br/consultas-externas/dossie-doc"
 
-VERSAO = "2026-08-30-produtos-irregulares-v1"
+VERSAO = "2026-08-31-produtos-irregulares-v2"
 TIPOS_PRODUTO = "6,2,15,1,8,12,3"
-ITENS_POR_PAGINA = 100
+ITENS_POR_PAGINA = 300
 MAX_TRABALHADORES = 3
 LIMITE_QUEDA = 0.90
 LIMITE_DETALHES = 0.90
@@ -365,70 +365,175 @@ class ClienteAnvisa:
 
 
 def consultar_resumos(cliente):
-    pagina = 1
-    total_paginas = None
-    total_elementos = None
     resumos = {}
+    ids_dossie = set()
+    total_elementos = 0
+    paginas_consultadas = 0
 
-    while total_paginas is None or pagina <= total_paginas:
-        resposta = cliente.json(
-            f"{API}/dossie/",
-            metodo="POST",
-            dados={
-                "sorting": {"processo": "ASC"},
-                "order": "ASC",
-                "page": pagina,
-                "count": ITENS_POR_PAGINA,
-                "filter": {
-                    "tipoAssunto": "1",
-                    "tiposProduto": TIPOS_PRODUTO,
+    def pontuacao_resumo(item):
+        try:
+            atualizado = int(item.get("dataAtualizacao") or 0)
+        except (TypeError, ValueError):
+            atualizado = 0
+        try:
+            id_dossie = int(item.get("idDossie") or 0)
+        except (TypeError, ValueError):
+            id_dossie = 0
+        return atualizado, id_dossie
+
+    def executar_passagem(tipo_assunto, ordem):
+        nonlocal total_elementos, paginas_consultadas
+
+        pagina = 1
+        total_paginas = None
+        total_tipo = None
+        ids_antes = len(ids_dossie)
+
+        while total_paginas is None or pagina <= total_paginas:
+            resposta = cliente.json(
+                f"{API}/dossie/",
+                metodo="POST",
+                dados={
+                    # O contrato OpenAPI atual usa size e column.
+                    # count é mantido por compatibilidade com a
+                    # documentação antiga do mesmo endpoint.
+                    "sorting": {"processo": ordem},
+                    "column": "processo",
+                    "order": ordem,
+                    "page": pagina,
+                    "size": ITENS_POR_PAGINA,
+                    "count": ITENS_POR_PAGINA,
+                    "filter": {
+                        "tipoAssunto": tipo_assunto,
+                        "tiposProduto": TIPOS_PRODUTO,
+                    },
                 },
-            },
-        )
-        if not isinstance(resposta, dict):
-            raise RuntimeError(
-                "A busca de dossiês não devolveu um objeto JSON."
             )
+            if not isinstance(resposta, dict):
+                raise RuntimeError(
+                    "A busca de dossiês não devolveu um objeto JSON."
+                )
 
-        conteudo = resposta.get("content") or []
-        if not isinstance(conteudo, list):
-            raise RuntimeError(
-                "A busca de dossiês não devolveu content em lista."
+            conteudo = resposta.get("content") or []
+            if not isinstance(conteudo, list):
+                raise RuntimeError(
+                    "A busca de dossiês não devolveu content em lista."
+                )
+
+            total_paginas = int(resposta.get("totalPages") or 0)
+            informado = int(resposta.get("totalElements") or 0)
+            if total_tipo is None:
+                total_tipo = informado
+                total_elementos += informado
+            elif informado != total_tipo:
+                raise RuntimeError(
+                    "A quantidade da fonte mudou durante a paginação "
+                    f"do assunto {tipo_assunto}: "
+                    f"{total_tipo} -> {informado}."
+                )
+
+            numero_resposta = int(resposta.get("number") or 0)
+            if numero_resposta != pagina - 1:
+                raise RuntimeError(
+                    "A API devolveu uma página diferente da solicitada: "
+                    f"solicitada {pagina}, recebida "
+                    f"{numero_resposta + 1}."
+                )
+
+            for item in conteudo:
+                if not isinstance(item, dict):
+                    continue
+
+                id_dossie = item.get("idDossie")
+                if id_dossie not in (None, ""):
+                    ids_dossie.add(str(id_dossie))
+
+                processo = processo_do_item(item)
+                if not processo:
+                    continue
+
+                anterior = resumos.get(processo)
+                if (
+                    anterior is None
+                    or pontuacao_resumo(item)
+                    > pontuacao_resumo(anterior)
+                ):
+                    resumos[processo] = item
+
+            paginas_consultadas += 1
+            print(
+                "Assunto",
+                tipo_assunto,
+                "| ordem",
+                ordem,
+                "| página",
+                pagina,
+                "de",
+                total_paginas,
+                "| IDs únicos:",
+                len(ids_dossie),
+                "| processos únicos:",
+                len(resumos),
             )
+            if resposta.get("last") is True:
+                break
+            pagina += 1
 
-        total_paginas = int(resposta.get("totalPages") or 0)
-        total_elementos = int(resposta.get("totalElements") or 0)
-        for item in conteudo:
-            if not isinstance(item, dict):
-                continue
-            processo = processo_do_item(item)
-            if processo:
-                resumos[processo] = item
+        ids_novos = len(ids_dossie) - ids_antes
+        return int(total_tipo or 0), ids_novos
 
-        print(
-            "Página",
-            pagina,
-            "de",
-            total_paginas,
-            "| dossiês únicos:",
-            len(resumos),
+    # 2 = produtos irregulares; 3 = produtos falsificados.
+    # As consultas separadas evitam a paginação instável observada
+    # quando o filtro 1 ("todos") é usado.
+    totais_tipos = []
+    for tipo_assunto in ("2", "3"):
+        total_tipo, ids_novos = executar_passagem(
+            tipo_assunto,
+            "ASC",
         )
-        if resposta.get("last") is True:
-            break
-        pagina += 1
+        totais_tipos.append((tipo_assunto, total_tipo))
+
+        # Segunda passagem, em ordem inversa, somente se a primeira
+        # não cobriu praticamente todos os IDs informados pela fonte.
+        if total_tipo and ids_novos < total_tipo * 0.98:
+            print(
+                "Cobertura incompleta no assunto",
+                tipo_assunto,
+                f"({ids_novos}/{total_tipo}).",
+                "Repetindo em ordem inversa.",
+            )
+            executar_passagem(tipo_assunto, "DESC")
 
     if total_elementos < 1000:
         raise RuntimeError(
             "A API informou apenas "
             f"{total_elementos} dossiês. Publicação cancelada."
         )
-    if len(resumos) < total_elementos * 0.98:
+
+    quantidade_unica = len(ids_dossie) if ids_dossie else len(resumos)
+    if quantidade_unica < total_elementos * 0.98:
         raise RuntimeError(
             "Foram recuperados apenas "
-            f"{len(resumos)} de {total_elementos} dossiês."
+            f"{quantidade_unica} IDs únicos de "
+            f"{total_elementos} dossiês informados pela fonte."
         )
-    return resumos, total_elementos, total_paginas
+    if len(resumos) < 1000:
+        raise RuntimeError(
+            "Foram recuperados apenas "
+            f"{len(resumos)} processos únicos."
+        )
 
+    print(
+        "Cobertura final:",
+        quantidade_unica,
+        "IDs únicos de",
+        total_elementos,
+        "| processos únicos:",
+        len(resumos),
+        "| por assunto:",
+        totais_tipos,
+    )
+    return resumos, total_elementos, paginas_consultadas
 
 def carregar_existentes():
     registros = {}
