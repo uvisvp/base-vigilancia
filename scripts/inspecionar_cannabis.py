@@ -24,8 +24,12 @@ TOKEN_URL = (
 )
 SAIDA = Path("diagnostico-cannabis")
 VERSAO = "2026-08-31-cannabis-v1"
-MAXIMO_ATIVOS = 80
+MAXIMO_ATIVOS = 140
 MAXIMO_RESPOSTA = 20 * 1024 * 1024
+ATIVOS_OBRIGATORIOS = (
+    "scripts/app/cannabis/cannabis.controller.js",
+    "scripts/services/cannabis.service.js",
+)
 
 
 def agora_iso():
@@ -234,7 +238,7 @@ def extrair_ativos_html(conteudo):
     )
     unicos = []
     vistos = set()
-    for caminho in caminhos:
+    for caminho in ATIVOS_OBRIGATORIOS + tuple(caminhos):
         url = urljoin(PORTAL, caminho)
         if url not in vistos:
             vistos.add(url)
@@ -275,6 +279,8 @@ def extrair_endpoints(texto):
 def caminho_cannabis(valor):
     valor = valor.strip()
     if not valor:
+        return ""
+    if ".js" in valor.casefold():
         return ""
     if valor.startswith("http://") or valor.startswith("https://"):
         if "api-gateway.prd.apps.anvisa.gov.br" not in valor:
