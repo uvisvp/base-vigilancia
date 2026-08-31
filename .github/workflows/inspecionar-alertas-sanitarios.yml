@@ -1,0 +1,37 @@
+name: Inspecionar Alertas Sanitários
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Inspecionar fonte oficial
+        run: python scripts/inspecionar_alertas_sanitarios.py
+
+      - name: Publicar resumo
+        if: always()
+        run: |
+          if [ -f diagnostico-alertas-sanitarios/RESUMO.md ]; then
+            cat diagnostico-alertas-sanitarios/RESUMO.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Salvar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-alertas-sanitarios
+          path: diagnostico-alertas-sanitarios/
+          if-no-files-found: warn
