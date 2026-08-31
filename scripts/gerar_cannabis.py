@@ -40,7 +40,7 @@ class Sessao:
             urllib.request.HTTPCookieProcessor(CookieJar())
         )
 
-    def json(self, url, params=None, tentativas=4):
+    def json(self, url, params=None, tentativas=10):
         if params:
             url += ("&" if "?" in url else "?") + urlencode(params)
         ultimo = None
@@ -65,7 +65,23 @@ class Sessao:
                     TimeoutError, OSError, json.JSONDecodeError) as erro:
                 ultimo = erro
                 if tentativa < tentativas:
-                    time.sleep(5 * tentativa)
+                    if isinstance(erro, urllib.error.HTTPError) and erro.code == 429:
+                        retry_after = erro.headers.get("Retry-After", "")
+                        try:
+                            espera = max(30, int(retry_after))
+                        except (TypeError, ValueError):
+                            espera = min(180, 20 * tentativa)
+                        print(
+                            "Limite temporário da Anvisa (HTTP 429).",
+                            "Nova tentativa em", espera, "segundos.",
+                        )
+                    else:
+                        espera = min(60, 5 * tentativa)
+                        print(
+                            "Falha temporária:", repr(erro),
+                            "| nova tentativa em", espera, "segundos.",
+                        )
+                    time.sleep(espera)
         raise RuntimeError(f"Falha na API Cannabis: {url}: {ultimo!r}")
 
 
@@ -168,6 +184,8 @@ def main():
         detalhe = sessao.json(API + "/produtos/" + processo)
         produtos.append(limpar_produto(detalhe, resumo))
         print("Detalhes:", indice, "de", len(resumos), "|", processo)
+        # Evita exceder o limite de consultas do portal da Anvisa.
+        time.sleep(2)
 
     registros = defaultdict(list)
     processos = defaultdict(list)
