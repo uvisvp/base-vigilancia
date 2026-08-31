@@ -1,0 +1,115 @@
+name: Atualizar Aditivos e Coadjuvantes
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 11 * * 4"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-aditivos-coadjuvantes
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar bases da Anvisa
+        run: python scripts/gerar_aditivos_coadjuvantes.py
+
+      - name: Verificar alterações
+        id: changes
+        run: |
+          git add dados/aditivos_alimentares dados/coadjuvantes_tecnologia dados/enzimas_coadjuvantes dados/manifest.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Preparar publicação protegida
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          rm -rf /tmp/aditivos_alimentares /tmp/coadjuvantes_tecnologia /tmp/enzimas_coadjuvantes
+          cp -a dados/aditivos_alimentares /tmp/aditivos_alimentares
+          cp -a dados/coadjuvantes_tecnologia /tmp/coadjuvantes_tecnologia
+          cp -a dados/enzimas_coadjuvantes /tmp/enzimas_coadjuvantes
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
+          nomes = ["aditivos_alimentares", "coadjuvantes_tecnologia", "enzimas_coadjuvantes"]
+          blocos = {}
+          for nome in nomes:
+              bloco = manifesto.get("bases", {}).get(nome)
+              if not bloco:
+                  raise SystemExit(f"Bloco {nome} ausente no manifesto gerado")
+              blocos[nome] = bloco
+          Path("/tmp/manifest_aditivos.json").write_text(
+              json.dumps(blocos, ensure_ascii=False, separators=(",", ":")),
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Salvar sem sobrescrever outras bases
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de publicação $tentativa/5"
+            git fetch origin main
+            git reset --hard origin/main
+
+            rm -rf dados/aditivos_alimentares dados/coadjuvantes_tecnologia dados/enzimas_coadjuvantes
+            cp -a /tmp/aditivos_alimentares dados/aditivos_alimentares
+            cp -a /tmp/coadjuvantes_tecnologia dados/coadjuvantes_tecnologia
+            cp -a /tmp/enzimas_coadjuvantes dados/enzimas_coadjuvantes
+
+            python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("dados/manifest.json")
+          manifesto = json.loads(path.read_text(encoding="utf-8"))
+          blocos = json.loads(Path("/tmp/manifest_aditivos.json").read_text(encoding="utf-8"))
+          manifesto.setdefault("bases", {}).update(blocos)
+          path.write_text(
+              json.dumps(manifesto, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+          PY
+
+            git add dados/aditivos_alimentares dados/coadjuvantes_tecnologia dados/enzimas_coadjuvantes dados/manifest.json
+            if git diff --cached --quiet; then
+              echo "Nenhuma alteração restante para publicar."
+              exit 0
+            fi
+
+            git commit -m "Atualiza Aditivos e Coadjuvantes Anvisa"
+            if git push origin HEAD:main; then
+              echo "Atualização publicada com sucesso."
+              exit 0
+            fi
+
+            echo "O main mudou durante a publicação; tentando novamente."
+          done
+
+          echo "Não foi possível publicar após 5 tentativas."
+          exit 1
