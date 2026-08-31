@@ -1,0 +1,196 @@
+{
+  "paineis": {
+    "aditivos_alimentares": {
+      "painel": "aditivos_alimentares",
+      "fonte": "https://app.powerbi.com/view?r=eyJrIjoiZmQ2ZDBjNTItMDFmMi00MmM5LWE4Y2QtMzBhOGZlYTU4OGUzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection08a3239a66872bb5b7a9",
+      "resource_key": "fd6d0c52-01f2-42c9-a8cd-30a8fea588e3",
+      "api": "https://wabi-brazil-south-api.analysis.windows.net",
+      "modelos": [
+        {
+          "id": 4076931,
+          "dbName": "72d27435-9160-48d2-897a-b90e51f0e571"
+        }
+      ],
+      "chaves_schema": [
+        "schemas"
+      ],
+      "entidades": [
+        {
+          "entidade": "DateTableTemplate_1a7d9ca2-4d3c-4741-a4df-0a03d6b3284f",
+          "campos": [
+            "Date",
+            "Ano",
+            "MonthNo",
+            "Mês",
+            "QuarterNo",
+            "Trimestre",
+            "Dia"
+          ],
+          "caminho": "/schemas/0/schema/Entities/0"
+        },
+        {
+          "entidade": "Aditivos Permitidos",
+          "campos": [
+            "Número categoria",
+            "INS",
+            "Função",
+            "Aplicação dos limites",
+            "Limite mg/kg",
+            "Restrição de Uso",
+            "Explicação sobre limite",
+            "Restrição de uso?",
+            "Aditivos",
+            "Categoria do alimento",
+            "Limite g/100g",
+            "Regulamento Original",
+            "Regulamento pós consolidação",
+            "Observações"
+          ],
+          "caminho": "/schemas/0/schema/Entities/1"
+        },
+        {
+          "entidade": "_Medidas",
+          "campos": [
+            "Aditivos permitidos",
+            "Funções autorizadas",
+            "Categorias autorizadas"
+          ],
+          "caminho": "/schemas/0/schema/Entities/2"
+        },
+        {
+          "entidade": "Categorias",
+          "campos": [
+            "Categoria",
+            "Nome Categoria",
+            "Descrição Categoria",
+            "Regulamentos",
+            "Alimentos",
+            "Categoria Codex",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10"
+          ],
+          "caminho": "/schemas/0/schema/Entities/3"
+        }
+      ]
+    },
+    "coadjuvantes_tecnologia": {
+      "painel": "coadjuvantes_tecnologia",
+      "fonte": "https://app.powerbi.com/view?r=eyJrIjoiOWViN2VjMWItNWRkYy00ZGNkLTg0M2UtY2Y0Nzg3NzlhMTY1IiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection08a3239a66872bb5b7a9",
+      "resource_key": "9eb7ec1b-5ddc-4dcd-843e-cf478779a165",
+      "api": "https://wabi-brazil-south-api.analysis.windows.net",
+      "modelos": [
+        {
+          "id": 4081909,
+          "dbName": "db867d5f-5b58-4c01-bbb1-6038d40fe0fb"
+        }
+      ],
+      "chaves_schema": [
+        "schemas"
+      ],
+      "entidades": [
+        {
+          "entidade": "DateTableTemplate_1a7d9ca2-4d3c-4741-a4df-0a03d6b3284f",
+          "campos": [
+            "Date",
+            "Ano",
+            "MonthNo",
+            "Mês",
+            "QuarterNo",
+            "Trimestre",
+            "Dia"
+          ],
+          "caminho": "/schemas/0/schema/Entities/0"
+        },
+        {
+          "entidade": "Coadjuvantes Permitidos",
+          "campos": [
+            "CodCategoria",
+            "Categoria",
+            "Categoria do Alimento",
+            "Condições de Uso",
+            "Função tecnológica",
+            "Coadjuvante de Tecnologia",
+            "Aplicação do limite",
+            "Explicação sobre limites",
+            "Legislação",
+            "Limite máximo de resíduo (mg/kg)"
+          ],
+          "caminho": "/schemas/0/schema/Entities/1"
+        },
+        {
+          "entidade": "_Medidas",
+          "campos": [
+            "Coadjuvantes permitidos",
+            "Funções autorizadas",
+            "Categorias autorizadas"
+          ],
+          "caminho": "/schemas/0/schema/Entities/2"
+        }
+      ]
+    },
+    "enzimas_coadjuvantes": {
+      "painel": "enzimas_coadjuvantes",
+      "fonte": "https://app.powerbi.com/view?r=eyJrIjoiZmMzYTQxYmItMWVkNi00MzczLThjODAtOWI5ODdiMjZjNzQ0IiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection",
+      "resource_key": "fc3a41bb-1ed6-4373-8c80-9b987b26c744",
+      "api": "https://wabi-brazil-south-api.analysis.windows.net",
+      "modelos": [
+        {
+          "id": 3097165,
+          "dbName": "d1ecf24f-9062-4310-b5b4-c6c19da2cf00"
+        }
+      ],
+      "chaves_schema": [
+        "schemas"
+      ],
+      "entidades": [
+        {
+          "entidade": "DateTableTemplate_af4320ac-8408-475a-a43d-a6022660737d",
+          "campos": [
+            "Date",
+            "Ano",
+            "MonthNo",
+            "Mês",
+            "QuarterNo",
+            "Trimestre",
+            "Dia"
+          ],
+          "caminho": "/schemas/0/schema/Entities/0"
+        },
+        {
+          "entidade": "Última Atualização",
+          "campos": [
+            "Última Atualização"
+          ],
+          "caminho": "/schemas/0/schema/Entities/1"
+        },
+        {
+          "entidade": "LocalDateTable_1b3de657-0b14-4f84-a17c-540727d2aee5",
+          "campos": [
+            "Date",
+            "Ano",
+            "MonthNo",
+            "Mês",
+            "QuarterNo",
+            "Trimestre",
+            "Dia"
+          ],
+          "caminho": "/schemas/0/schema/Entities/2"
+        },
+        {
+          "entidade": "Enzimas aprovadas total",
+          "campos": [
+            "Enzima",
+            "Fonte",
+            "Empresa peticionante",
+            "Fabricante",
+            "Uso aprovado",
+            "Instrumento de aprovação"
+          ],
+          "caminho": "/schemas/0/schema/Entities/3"
+        }
+      ]
+    }
+  }
+}
