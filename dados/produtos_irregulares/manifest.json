@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "fonte": "https://api.anvisa.gov.br/consultas-externas/dossie-doc",
+  "tipo_fonte": "API autenticada da Anvisa",
+  "gerado_em": "2026-08-31T01:06:20.996069+00:00",
+  "atualizado_em": "2026-08-31T01:06:20.996069+00:00",
+  "versao_gerador": "2026-08-31-produtos-irregulares-v3",
+  "registros": 4853,
+  "presentes_na_fonte": 4853,
+  "ausentes_na_fonte": 0,
+  "detalhes_validos": 4853,
+  "detalhes_reutilizados": 0,
+  "detalhes_consultados": 4853,
+  "erros_detalhe": 0,
+  "total_informado_fonte": 5101,
+  "paginas_consultadas": 18,
+  "fragmentos": 878,
+  "chave": "processo",
+  "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+  "campos_excluidos": [
+    "resolução CBPF",
+    "validade de certificado CBPF",
+    "HTML bruto da motivação"
+  ]
+}
