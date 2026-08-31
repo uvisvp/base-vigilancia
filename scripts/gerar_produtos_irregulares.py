@@ -37,7 +37,7 @@ TOKEN_URL = (
 )
 FONTE = "https://api.anvisa.gov.br/consultas-externas/dossie-doc"
 
-VERSAO = "2026-08-31-produtos-irregulares-v2"
+VERSAO = "2026-08-31-produtos-irregulares-v3"
 TIPOS_PRODUTO = "6,2,15,1,8,12,3"
 ITENS_POR_PAGINA = 300
 MAX_TRABALHADORES = 3
@@ -367,7 +367,9 @@ class ClienteAnvisa:
 def consultar_resumos(cliente):
     resumos = {}
     ids_dossie = set()
-    total_elementos = 0
+    totais_por_assunto = {}
+    linhas_por_assunto = {}
+    unicos_por_assunto = {}
     paginas_consultadas = 0
 
     def pontuacao_resumo(item):
@@ -381,13 +383,15 @@ def consultar_resumos(cliente):
             id_dossie = 0
         return atualizado, id_dossie
 
-    def executar_passagem(tipo_assunto, ordem):
-        nonlocal total_elementos, paginas_consultadas
-
+    # 2 = produtos irregulares; 3 = produtos falsificados.
+    # A fonte pode repetir o mesmo dossiê em mais de uma linha.
+    # Por isso validamos separadamente as linhas paginadas e os IDs.
+    for tipo_assunto in ("2", "3"):
         pagina = 1
         total_paginas = None
         total_tipo = None
-        ids_antes = len(ids_dossie)
+        linhas_tipo = 0
+        ids_tipo = set()
 
         while total_paginas is None or pagina <= total_paginas:
             resposta = cliente.json(
@@ -397,9 +401,9 @@ def consultar_resumos(cliente):
                     # O contrato OpenAPI atual usa size e column.
                     # count é mantido por compatibilidade com a
                     # documentação antiga do mesmo endpoint.
-                    "sorting": {"processo": ordem},
+                    "sorting": {"processo": "ASC"},
                     "column": "processo",
-                    "order": ordem,
+                    "order": "ASC",
                     "page": pagina,
                     "size": ITENS_POR_PAGINA,
                     "count": ITENS_POR_PAGINA,
@@ -424,7 +428,6 @@ def consultar_resumos(cliente):
             informado = int(resposta.get("totalElements") or 0)
             if total_tipo is None:
                 total_tipo = informado
-                total_elementos += informado
             elif informado != total_tipo:
                 raise RuntimeError(
                     "A quantidade da fonte mudou durante a paginação "
@@ -440,13 +443,16 @@ def consultar_resumos(cliente):
                     f"{numero_resposta + 1}."
                 )
 
+            linhas_tipo += len(conteudo)
             for item in conteudo:
                 if not isinstance(item, dict):
                     continue
 
                 id_dossie = item.get("idDossie")
                 if id_dossie not in (None, ""):
-                    ids_dossie.add(str(id_dossie))
+                    chave_id = str(id_dossie)
+                    ids_tipo.add(chave_id)
+                    ids_dossie.add(chave_id)
 
                 processo = processo_do_item(item)
                 if not processo:
@@ -464,14 +470,14 @@ def consultar_resumos(cliente):
             print(
                 "Assunto",
                 tipo_assunto,
-                "| ordem",
-                ordem,
                 "| página",
                 pagina,
                 "de",
                 total_paginas,
+                "| linhas:",
+                linhas_tipo,
                 "| IDs únicos:",
-                len(ids_dossie),
+                len(ids_tipo),
                 "| processos únicos:",
                 len(resumos),
             )
@@ -479,59 +485,79 @@ def consultar_resumos(cliente):
                 break
             pagina += 1
 
-        ids_novos = len(ids_dossie) - ids_antes
-        return int(total_tipo or 0), ids_novos
-
-    # 2 = produtos irregulares; 3 = produtos falsificados.
-    # As consultas separadas evitam a paginação instável observada
-    # quando o filtro 1 ("todos") é usado.
-    totais_tipos = []
-    for tipo_assunto in ("2", "3"):
-        total_tipo, ids_novos = executar_passagem(
-            tipo_assunto,
-            "ASC",
-        )
-        totais_tipos.append((tipo_assunto, total_tipo))
-
-        # Segunda passagem, em ordem inversa, somente se a primeira
-        # não cobriu praticamente todos os IDs informados pela fonte.
-        if total_tipo and ids_novos < total_tipo * 0.98:
-            print(
-                "Cobertura incompleta no assunto",
-                tipo_assunto,
-                f"({ids_novos}/{total_tipo}).",
-                "Repetindo em ordem inversa.",
+        total_tipo = int(total_tipo or 0)
+        if linhas_tipo != total_tipo:
+            raise RuntimeError(
+                "Paginação incompleta no assunto "
+                f"{tipo_assunto}: recebidas {linhas_tipo} de "
+                f"{total_tipo} linhas."
             )
-            executar_passagem(tipo_assunto, "DESC")
+
+        # Até 10% de duplicação é tolerado porque totalElements
+        # contabiliza repetições do mesmo idDossie na fonte.
+        if total_tipo and len(ids_tipo) < total_tipo * 0.90:
+            raise RuntimeError(
+                "Duplicação anormal no assunto "
+                f"{tipo_assunto}: apenas {len(ids_tipo)} IDs "
+                f"únicos em {total_tipo} linhas."
+            )
+
+        totais_por_assunto[tipo_assunto] = total_tipo
+        linhas_por_assunto[tipo_assunto] = linhas_tipo
+        unicos_por_assunto[tipo_assunto] = len(ids_tipo)
+
+        print(
+            "Assunto",
+            tipo_assunto,
+            "concluído:",
+            linhas_tipo,
+            "linhas |",
+            len(ids_tipo),
+            "IDs únicos |",
+            linhas_tipo - len(ids_tipo),
+            "repetições da fonte.",
+        )
+
+    total_elementos = sum(totais_por_assunto.values())
+    quantidade_unica = len(ids_dossie)
 
     if total_elementos < 1000:
         raise RuntimeError(
             "A API informou apenas "
-            f"{total_elementos} dossiês. Publicação cancelada."
+            f"{total_elementos} linhas. Publicação cancelada."
         )
-
-    quantidade_unica = len(ids_dossie) if ids_dossie else len(resumos)
-    if quantidade_unica < total_elementos * 0.98:
+    if quantidade_unica < total_elementos * 0.90:
         raise RuntimeError(
             "Foram recuperados apenas "
-            f"{quantidade_unica} IDs únicos de "
-            f"{total_elementos} dossiês informados pela fonte."
+            f"{quantidade_unica} IDs únicos em "
+            f"{total_elementos} linhas informadas pela fonte."
         )
-    if len(resumos) < 1000:
+    if len(resumos) < quantidade_unica * 0.98:
         raise RuntimeError(
-            "Foram recuperados apenas "
-            f"{len(resumos)} processos únicos."
+            "Existem menos processos únicos do que IDs de dossiê: "
+            f"{len(resumos)} processos para "
+            f"{quantidade_unica} IDs."
         )
 
     print(
         "Cobertura final:",
-        quantidade_unica,
-        "IDs únicos de",
+        sum(linhas_por_assunto.values()),
+        "linhas de",
         total_elementos,
+        "| IDs únicos:",
+        quantidade_unica,
         "| processos únicos:",
         len(resumos),
+        "| repetições:",
+        total_elementos - quantidade_unica,
         "| por assunto:",
-        totais_tipos,
+        {
+            chave: {
+                "linhas": totais_por_assunto[chave],
+                "unicos": unicos_por_assunto[chave],
+            }
+            for chave in totais_por_assunto
+        },
     )
     return resumos, total_elementos, paginas_consultadas
 
