@@ -1,0 +1,12 @@
+Coloque aqui os arquivos de legislação a extrair.
+
+Layout aceito:
+  fontes/<norma_id>/texto_bruto.html   ->  textos/<norma_id>--texto_bruto.txt
+  fontes/<norma_id>/norma.pdf          ->  textos/<norma_id>--norma.txt
+  fontes/<norma_id>.html               ->  textos/<norma_id>.txt
+
+Extensões processadas: .pdf .html .htm .xhtml
+
+O arquivo normas.csv neste diretorio e o catalogo usado por scripts/baixar_normas.py.
+Colunas: norma_id, grupo, baixar (sim/nao), url, rotulo, observacao.
+Para incluir uma norma nova, acrescente uma linha. Para excluir, ponha 'nao' em baixar.

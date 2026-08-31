@@ -1,0 +1,109 @@
+name: Extrair textos de legislação
+
+on:
+  workflow_dispatch:
+    inputs:
+      baixar:
+        description: "Baixar as normas de fontes/normas.csv antes de extrair"
+        type: boolean
+        default: true
+      somente:
+        description: "Baixar só um grupo (ex.: rdc-anvisa, lei-federal). Vazio = todos"
+        type: string
+        default: ""
+      autoteste:
+        description: "Rodar a verificação interna do extrator antes de processar"
+        type: boolean
+        default: true
+      entrada:
+        description: "Pasta com os arquivos .pdf / .html a extrair"
+        type: string
+        default: "fontes"
+      saida:
+        description: "Pasta onde gravar os .txt extraídos"
+        type: string
+        default: "textos"
+      limite:
+        description: "Caracteres por parte do documento (para caber numa mensagem)"
+        type: string
+        default: "80000"
+
+permissions:
+  contents: read
+
+jobs:
+  extrair:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install --quiet beautifulsoup4 pypdf requests
+
+      - name: Verificar o extrator (autoteste)
+        if: ${{ inputs.autoteste }}
+        run: python scripts/extrair_textos.py --autoteste
+
+      - name: Baixar as normas do catálogo
+        if: ${{ inputs.baixar }}
+        run: |
+          python scripts/baixar_normas.py \
+            --catalogo fontes/normas.csv \
+            --destino "${{ inputs.entrada }}" \
+            --relatorio "${{ inputs.entrada }}/relatorio-download" \
+            ${{ inputs.somente != '' && format('--somente {0}', inputs.somente) || '' }}
+
+      - name: Extrair textos
+        run: |
+          python scripts/extrair_textos.py \
+            --entrada "${{ inputs.entrada }}" \
+            --saida "${{ inputs.saida }}" \
+            --relatorio "${{ inputs.saida }}/relatorio-extracao"
+
+      - name: Juntar em documentos para colar
+        run: |
+          python scripts/juntar_textos.py \
+            --entrada "${{ inputs.saida }}" \
+            --saida documento \
+            --limite "${{ inputs.limite }}"
+
+      - name: Resumo da execução
+        if: always()
+        run: |
+          DL="${{ inputs.entrada }}/relatorio-download.md"
+          if [ -f "$DL" ]; then cat "$DL" >> "$GITHUB_STEP_SUMMARY"; echo "" >> "$GITHUB_STEP_SUMMARY"; fi
+          REL="${{ inputs.saida }}/relatorio-extracao.md"
+          if [ -f "$REL" ]; then
+            cat "$REL" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Relatório de extração não gerado." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f documento/INDICE.md ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat documento/INDICE.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Guardar textos e relatório
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: textos-legislacao
+          path: ${{ inputs.saida }}/
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Guardar documentos para colar
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: documento-para-colar
+          path: documento/
+          if-no-files-found: warn
+          retention-days: 7
