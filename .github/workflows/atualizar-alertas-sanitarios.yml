@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -31,19 +33,74 @@ jobs:
       - name: Verificar alterações
         id: changes
         run: |
-          git add dados/
+          git add dados/alertas_sanitarios dados/manifest.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Salvar atualização
+      - name: Preparar atualização para publicação
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          rm -rf /tmp/alertas_sanitarios
+          cp -a dados/alertas_sanitarios /tmp/alertas_sanitarios
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
+          alerta = manifesto.get("bases", {}).get("alertas_sanitarios")
+          if not alerta:
+              raise SystemExit("Bloco alertas_sanitarios ausente no manifesto gerado.")
+          Path("/tmp/manifest_alertas.json").write_text(
+              json.dumps(alerta, ensure_ascii=False, separators=(",", ":")),
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Salvar atualização sem sobrescrever outras bases
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dados/
-          git commit -m "Atualiza Alertas Sanitários"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          for tentativa in 1 2 3 4 5; do
+            echo "Tentativa de publicação $tentativa/5"
+            git fetch origin main
+            git reset --hard origin/main
+
+            rm -rf dados/alertas_sanitarios
+            cp -a /tmp/alertas_sanitarios dados/alertas_sanitarios
+
+            python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("dados/manifest.json")
+          manifesto = json.loads(path.read_text(encoding="utf-8"))
+          alerta = json.loads(Path("/tmp/manifest_alertas.json").read_text(encoding="utf-8"))
+          manifesto.setdefault("bases", {})["alertas_sanitarios"] = alerta
+          path.write_text(
+              json.dumps(manifesto, ensure_ascii=False, separators=(",", ":")),
+              encoding="utf-8",
+          )
+          PY
+
+            git add dados/alertas_sanitarios dados/manifest.json
+            if git diff --cached --quiet; then
+              echo "Nenhuma alteração restante para publicar."
+              exit 0
+            fi
+
+            git commit -m "Atualiza Alertas Sanitários"
+            if git push origin HEAD:main; then
+              echo "Atualização publicada com sucesso."
+              exit 0
+            fi
+
+            echo "O main mudou durante a publicação; tentando novamente sobre a versão mais nova."
+          done
+
+          echo "Não foi possível publicar após 5 tentativas."
+          exit 1
