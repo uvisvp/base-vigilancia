@@ -1,0 +1,42 @@
+name: Inspecionar produtos de Cannabis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Inspecionar fonte de Produtos de Cannabis
+        env:
+          ANVISA_CLIENT_ID: ${{ secrets.ANVISA_CLIENT_ID }}
+          ANVISA_CLIENT_SECRET: ${{ secrets.ANVISA_CLIENT_SECRET }}
+        run: python scripts/inspecionar_cannabis.py
+
+      - name: Publicar resumo da inspeção
+        if: always()
+        run: |
+          if [ -f diagnostico-cannabis/RESUMO.md ]; then
+            cat diagnostico-cannabis/RESUMO.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-cannabis
+          path: diagnostico-cannabis/
+          if-no-files-found: error
