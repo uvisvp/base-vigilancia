@@ -1,1 +1,333 @@
-{"versao_esquema":2,"projeto":"Base Vigilância Sanitária","gerado_em":"2026-08-31T01:06:20.996069+00:00","bases":{"dispositivos":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv","data_fonte":"Fri, 28 Aug 2026 15:37:08 GMT","gerado_em":"2026-08-30T14:23:49.033982+00:00","atualizado_em":"2026-08-30T14:23:49.033982+00:00","registros":115471,"fragmentos":2522,"prefixo":5,"maior_fragmento":862344,"etag_fonte":"\"1a3fd5d-65a1d39b2814c\""},"afe_ae":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV","data_fonte":"Fri, 28 Aug 2026 15:37:48 GMT","gerado_em":"2026-08-30T14:24:35.239720+00:00","atualizado_em":"2026-08-30T14:24:35.239720+00:00","registros":351010,"fragmentos":981,"prefixo":3,"maior_fragmento":4521773,"etag_fonte":"\"12a2493d-65a1d3c173005\""},"medicamentos":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv","data_fonte":"Fri, 28 Aug 2026 15:37:43 GMT","gerado_em":"2026-08-30T14:24:43.088512+00:00","atualizado_em":"2026-08-30T14:24:43.088512+00:00","registros":32672,"fragmentos":437,"prefixo":4,"maior_fragmento":545392,"etag_fonte":"\"7ee03d-65a1d3bc487e4\""},"cmed":{"status":"ok","fonte":"https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos/arquivos/xls_conformidade_site_20260811_192510234.xlsx/@@download/file","data_fonte":"Sun, 30 Aug 2026 14:24:49 GMT","gerado_em":"2026-08-30T14:25:17.342664+00:00","atualizado_em":"2026-08-30T14:25:17.342664+00:00","registros":26001,"fragmentos":370,"prefixo":8,"maior_fragmento":1560727,"etag_fonte":"W/\"bf60e8-d8lFl0mO3BB6rEwKw5WLk3PFVT4:dtagent10343260715123811Gh+C\"","fonte_pagina":"https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos","chave":"GTIN normalizado com 14 dígitos","fragmentacao":"8 primeiros dígitos do GTIN-14","eans_unicos":27024,"referencias_ean":27218,"restricao_hospitalar_sim":3920,"tipos":{"-":56,"Biológico":1526,"Específico":2056,"Fitoterápico":322,"Genérico":9500,"Novo":3710,"Produto de Terapia Avançada":44,"Radiofármaco":3,"Similar":8784},"tarjas":{"Não informada":4692,"Sem tarja":1837,"Tarja Preta":727,"Tarja Vermelha":13400,"Tarja Vermelha sob restrição":5345},"campos_excluidos":["preços","regime de preço","comercialização","CAP","PMVG","CONFAZ","ICMS"]},"saneantes":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_SANEANTES.CSV","data_fonte":"Fri, 28 Aug 2026 15:37:01 GMT","gerado_em":"2026-08-30T14:25:29.857712+00:00","atualizado_em":"2026-08-30T14:25:29.857712+00:00","registros":28656,"fragmentos":886,"prefixo":4,"maior_fragmento":99901,"etag_fonte":"\"1743e9b-65a1d39476a95\""},"cosmeticos":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV","data_fonte":"Fri, 28 Aug 2026 15:38:19 GMT","gerado_em":"2026-08-30T14:26:25.346336+00:00","atualizado_em":"2026-08-30T14:26:25.346336+00:00","registros":1193055,"fragmentos":992,"prefixo":3,"maior_fragmento":1568125,"etag_fonte":"\"d790b27-65a1d3dece4df\"","chave":"processo","fragmentacao":"dígitos 6 a 8 do processo normalizado","ativos":1002447,"inativos":190605},"alimentos":{"status":"ok","fonte":"https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS.CSV","data_fonte":"Fri, 28 Aug 2026 15:37:07 GMT","gerado_em":"2026-08-30T14:26:54.041089+00:00","atualizado_em":"2026-08-30T14:26:54.041089+00:00","registros":63313,"fragmentos":4378,"prefixo":4,"maior_fragmento":1189766,"etag_fonte":"\"1dbfa39-65a1d39a471a0\"","fonte_resultado":"https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS_RESULTADO.CSV","data_fonte_resultado":"Fri, 28 Aug 2026 15:37:16 GMT","chave":"processo","fragmentacao":"dígitos 6 a 9 do processo normalizado","registrados":49920,"notificados":13393,"suplementos_identificados":15202,"ativos":14418,"inativos":48894,"resultados_apresentacao":63666,"produtos_enriquecidos":63313,"etag_fonte_resultado":"\"13796d5-65a1d3a2bff11\""},"suplementos_constituintes":{"status":"ok","fonte":"https://app.powerbi.com/view?r=eyJrIjoiNDU4Y2UxNmEtZjc0Yi00ZTkyLTk3N2EtZTEyZTI5MjdkNzQ2IiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection","tipo_fonte":"Painel público Power BI da Anvisa","gerado_em":"2026-08-30T14:27:11.045047+00:00","atualizado_em":"2026-08-30T14:27:11.045047+00:00","registros":558,"constituintes_unicos":537,"categorias":["Aminoácidos","Carboidratos","Enzimas","Fibras Alimentares","Lipídeos","Minerais","Outros Nutrientes","Probióticos","Proteínas","Substâncias bioativas","Vitaminas"],"quantidade_categorias":11,"campos":["categoria","constituinte","cas","funcao","limite_0_6_meses","limite_7_11_meses","limite_1_3_anos","limite_4_8_anos","limite_9_18_anos","limite_19_mais","limite_gestantes","limite_lactantes","alegacoes","rotulagem_complementar","especificacoes","observacoes","outras_informacoes","nutriente_substancia_enzima","link_especificacoes"],"quantidade_campos":19,"fragmentos":89,"prefixo":2,"maior_fragmento":87899,"chave":"constituinte","fragmentacao":"2 primeiros caracteres alfanuméricos do constituinte, sem acentos","catalogo":"suplementos_constituintes/catalogo.json","itens_catalogo":540},"produtos_irregulares":{"status":"ok","fonte":"https://api.anvisa.gov.br/consultas-externas/dossie-doc","tipo_fonte":"API autenticada da Anvisa","gerado_em":"2026-08-31T01:06:20.996069+00:00","atualizado_em":"2026-08-31T01:06:20.996069+00:00","versao_gerador":"2026-08-31-produtos-irregulares-v3","registros":4853,"presentes_na_fonte":4853,"ausentes_na_fonte":0,"detalhes_validos":4853,"detalhes_reutilizados":0,"detalhes_consultados":4853,"erros_detalhe":0,"total_informado_fonte":5101,"paginas_consultadas":18,"fragmentos":878,"chave":"processo","fragmentacao":"dígitos 6 a 8 do processo normalizado","campos_excluidos":["resolução CBPF","validade de certificado CBPF","HTML bruto da motivação"],"maior_fragmento":89125,"catalogo":"produtos_irregulares/catalogo.json"},"cannabis":{"status":"ok","fonte":"https://consultas.anvisa.gov.br/api/consulta/cannabis","gerado_em":"2026-08-31T12:47:50.753101+00:00","registros":65,"apresentacoes":130,"ativos":55,"cancelados_caducos":10,"indices":["registro","processo","cnpj"],"observacao":"Sem histórico de expedientes ou alterações."},"alertas_sanitarios":{"status":"ok","fonte":"https://consultas.anvisa.gov.br/api/consulta/alertasSanitarios","gerado_em":"2026-08-31T15:23:58.448153+00:00","alertas":5129,"novos_ou_alterados":5129,"reutilizados":0,"com_registro":3608,"com_cnpj":3474,"com_lote_serie_modelo":3741,"indices":["numero_alerta","registro","cnpj","lote_serie_modelo","ano"],"observacao":"Versão completa sem cópia local dos PDFs anexos."}},"indices":{"status":"ok","gerado_em":"2026-08-30T14:27:07.645091+00:00","processos":{"status":"ok","fragmentacao":"dígitos 6 a 8 do processo normalizado","chaves":561109,"referencias":561121,"fragmentos":1000},"cnpj_produtos":{"status":"ok","prefixo":3,"fragmentacao":"3 primeiros dígitos do CNPJ","chaves":10703,"referencias":109969,"fragmentos":955},"autorizacoes":{"status":"ok","prefixo":3,"observacao":"Índice por número de AFE/AE.","chaves":351010,"referencias":351010,"fragmentos":377},"regularizacoes_alimentos":{"status":"ok","prefixo":3,"fragmentacao":"3 primeiros dígitos do número de registro ou notificação","chaves":48596,"referencias":48596,"fragmentos":275},"por_base":{"dispositivos":{"processos":115471,"cnpjs":0},"medicamentos":{"processos":32672,"cnpjs":32672},"saneantes":{"processos":28656,"cnpjs":28656},"alimentos":{"processos":63313,"cnpjs":63313}},"produtos_irregulares":{"status":"ok","processo":{"formato":"mapa processo para dossiê","fragmentos":878,"fragmentacao":"dígitos 6 a 8 do processo"},"cnpj":{"chaves":2416,"fragmentos":667,"prefixo":3,"maior_fragmento":1069},"registro":{"chaves":2559,"fragmentos":152,"prefixo":3,"maior_fragmento":12309},"lote":{"chaves":13183,"fragmentos":525,"prefixo":2,"normalizacao":"somente caracteres alfanuméricos","maior_fragmento":51879}}}}
+{
+  "versao_esquema": 2,
+  "projeto": "Base Vigilância Sanitária",
+  "gerado_em": "2026-08-31T16:59:49.647530+00:00",
+  "bases": {
+    "dispositivos": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
+      "data_fonte": "Mon, 31 Aug 2026 14:11:19 GMT",
+      "gerado_em": "2026-08-31T16:56:49.177498+00:00",
+      "atualizado_em": "2026-08-31T16:56:49.177498+00:00",
+      "registros": 115456,
+      "fragmentos": 2522,
+      "prefixo": 5,
+      "maior_fragmento": 862344,
+      "etag_fonte": "\"1a403a8-65a58604ce3bf\""
+    },
+    "afe_ae": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
+      "data_fonte": "Mon, 31 Aug 2026 14:12:04 GMT",
+      "gerado_em": "2026-08-31T16:57:28.779279+00:00",
+      "atualizado_em": "2026-08-31T16:57:28.779279+00:00",
+      "registros": 351036,
+      "fragmentos": 981,
+      "prefixo": 3,
+      "maior_fragmento": 4521773,
+      "etag_fonte": "\"12a2c067-65a5862fa5dee\""
+    },
+    "medicamentos": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
+      "data_fonte": "Mon, 31 Aug 2026 14:11:56 GMT",
+      "gerado_em": "2026-08-31T16:57:37.542399+00:00",
+      "atualizado_em": "2026-08-31T16:57:37.542399+00:00",
+      "registros": 32672,
+      "fragmentos": 437,
+      "prefixo": 4,
+      "maior_fragmento": 545394,
+      "etag_fonte": "\"7ee090-65a586281edcd\""
+    },
+    "cmed": {
+      "status": "ok",
+      "fonte": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos/arquivos/xls_conformidade_site_20260811_192510234.xlsx/@@download/file",
+      "data_fonte": "Mon, 31 Aug 2026 16:57:40 GMT",
+      "gerado_em": "2026-08-31T16:58:05.488859+00:00",
+      "atualizado_em": "2026-08-31T16:58:05.488859+00:00",
+      "registros": 26001,
+      "fragmentos": 370,
+      "prefixo": 8,
+      "maior_fragmento": 1560727,
+      "etag_fonte": "W/\"bf60e8-d8lFl0mO3BB6rEwKw5WLk3PFVT4:dtagent10343260715123811Gh+C\"",
+      "fonte_pagina": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos",
+      "chave": "GTIN normalizado com 14 dígitos",
+      "fragmentacao": "8 primeiros dígitos do GTIN-14",
+      "eans_unicos": 27024,
+      "referencias_ean": 27218,
+      "restricao_hospitalar_sim": 3920,
+      "tipos": {
+        "-": 56,
+        "Biológico": 1526,
+        "Específico": 2056,
+        "Fitoterápico": 322,
+        "Genérico": 9500,
+        "Novo": 3710,
+        "Produto de Terapia Avançada": 44,
+        "Radiofármaco": 3,
+        "Similar": 8784
+      },
+      "tarjas": {
+        "Não informada": 4692,
+        "Sem tarja": 1837,
+        "Tarja Preta": 727,
+        "Tarja Vermelha": 13400,
+        "Tarja Vermelha sob restrição": 5345
+      },
+      "campos_excluidos": [
+        "preços",
+        "regime de preço",
+        "comercialização",
+        "CAP",
+        "PMVG",
+        "CONFAZ",
+        "ICMS"
+      ]
+    },
+    "saneantes": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_SANEANTES.CSV",
+      "data_fonte": "Mon, 31 Aug 2026 14:11:12 GMT",
+      "gerado_em": "2026-08-31T16:58:16.074359+00:00",
+      "atualizado_em": "2026-08-31T16:58:16.074359+00:00",
+      "registros": 28656,
+      "fragmentos": 886,
+      "prefixo": 4,
+      "maior_fragmento": 99901,
+      "etag_fonte": "\"1745122-65a585fdad0dd\""
+    },
+    "cosmeticos": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
+      "data_fonte": "Mon, 31 Aug 2026 14:12:38 GMT",
+      "gerado_em": "2026-08-31T16:59:04.542465+00:00",
+      "atualizado_em": "2026-08-31T16:59:04.542465+00:00",
+      "registros": 1193660,
+      "fragmentos": 992,
+      "prefixo": 3,
+      "maior_fragmento": 1568125,
+      "etag_fonte": "\"d7aa345-65a586502287f\"",
+      "chave": "processo",
+      "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+      "ativos": 1003017,
+      "inativos": 190640
+    },
+    "alimentos": {
+      "status": "ok",
+      "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS.CSV",
+      "data_fonte": "Mon, 31 Aug 2026 14:11:20 GMT",
+      "gerado_em": "2026-08-31T16:59:31.936333+00:00",
+      "atualizado_em": "2026-08-31T16:59:31.936333+00:00",
+      "registros": 63633,
+      "fragmentos": 4379,
+      "prefixo": 4,
+      "maior_fragmento": 1189766,
+      "etag_fonte": "\"1df95ab-65a586057d938\"",
+      "fonte_resultado": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS_RESULTADO.CSV",
+      "data_fonte_resultado": "Mon, 31 Aug 2026 14:11:28 GMT",
+      "chave": "processo",
+      "fragmentacao": "dígitos 6 a 9 do processo normalizado",
+      "registrados": 49920,
+      "notificados": 13713,
+      "suplementos_identificados": 15522,
+      "ativos": 14738,
+      "inativos": 48894,
+      "resultados_apresentacao": 63986,
+      "produtos_enriquecidos": 63633,
+      "etag_fonte_resultado": "\"13b8f8a-65a5860d83dea\""
+    },
+    "suplementos_constituintes": {
+      "status": "ok",
+      "fonte": "https://app.powerbi.com/view?r=eyJrIjoiNDU4Y2UxNmEtZjc0Yi00ZTkyLTk3N2EtZTEyZTI5MjdkNzQ2IiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection",
+      "tipo_fonte": "Painel público Power BI da Anvisa",
+      "gerado_em": "2026-08-31T16:59:49.647530+00:00",
+      "atualizado_em": "2026-08-31T16:59:49.647530+00:00",
+      "registros": 558,
+      "constituintes_unicos": 537,
+      "categorias": [
+        "Aminoácidos",
+        "Carboidratos",
+        "Enzimas",
+        "Fibras Alimentares",
+        "Lipídeos",
+        "Minerais",
+        "Outros Nutrientes",
+        "Probióticos",
+        "Proteínas",
+        "Substâncias bioativas",
+        "Vitaminas"
+      ],
+      "quantidade_categorias": 11,
+      "campos": [
+        "categoria",
+        "constituinte",
+        "cas",
+        "funcao",
+        "limite_0_6_meses",
+        "limite_7_11_meses",
+        "limite_1_3_anos",
+        "limite_4_8_anos",
+        "limite_9_18_anos",
+        "limite_19_mais",
+        "limite_gestantes",
+        "limite_lactantes",
+        "alegacoes",
+        "rotulagem_complementar",
+        "especificacoes",
+        "observacoes",
+        "outras_informacoes",
+        "nutriente_substancia_enzima",
+        "link_especificacoes"
+      ],
+      "quantidade_campos": 19,
+      "fragmentos": 89,
+      "prefixo": 2,
+      "maior_fragmento": 87899,
+      "chave": "constituinte",
+      "fragmentacao": "2 primeiros caracteres alfanuméricos do constituinte, sem acentos",
+      "catalogo": "suplementos_constituintes/catalogo.json",
+      "itens_catalogo": 540
+    },
+    "produtos_irregulares": {
+      "status": "ok",
+      "fonte": "https://api.anvisa.gov.br/consultas-externas/dossie-doc",
+      "tipo_fonte": "API autenticada da Anvisa",
+      "gerado_em": "2026-08-31T01:06:20.996069+00:00",
+      "atualizado_em": "2026-08-31T01:06:20.996069+00:00",
+      "versao_gerador": "2026-08-31-produtos-irregulares-v3",
+      "registros": 4853,
+      "presentes_na_fonte": 4853,
+      "ausentes_na_fonte": 0,
+      "detalhes_validos": 4853,
+      "detalhes_reutilizados": 0,
+      "detalhes_consultados": 4853,
+      "erros_detalhe": 0,
+      "total_informado_fonte": 5101,
+      "paginas_consultadas": 18,
+      "fragmentos": 878,
+      "chave": "processo",
+      "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+      "campos_excluidos": [
+        "resolução CBPF",
+        "validade de certificado CBPF",
+        "HTML bruto da motivação"
+      ],
+      "maior_fragmento": 89125,
+      "catalogo": "produtos_irregulares/catalogo.json"
+    },
+    "cannabis": {
+      "status": "ok",
+      "fonte": "https://consultas.anvisa.gov.br/api/consulta/cannabis",
+      "gerado_em": "2026-08-31T12:47:50.753101+00:00",
+      "registros": 65,
+      "apresentacoes": 130,
+      "ativos": 55,
+      "cancelados_caducos": 10,
+      "indices": [
+        "registro",
+        "processo",
+        "cnpj"
+      ],
+      "observacao": "Sem histórico de expedientes ou alterações."
+    },
+    "alertas_sanitarios": {
+      "status": "ok",
+      "fonte": "https://consultas.anvisa.gov.br/api/consulta/alertasSanitarios",
+      "gerado_em": "2026-08-31T15:23:58.448153+00:00",
+      "alertas": 5129,
+      "novos_ou_alterados": 5129,
+      "reutilizados": 0,
+      "com_registro": 3608,
+      "com_cnpj": 3474,
+      "com_lote_serie_modelo": 3741,
+      "indices": [
+        "numero_alerta",
+        "registro",
+        "cnpj",
+        "lote_serie_modelo",
+        "ano"
+      ],
+      "observacao": "Versão completa sem cópia local dos PDFs anexos."
+    }
+  },
+  "indices": {
+    "status": "ok",
+    "gerado_em": "2026-08-31T16:59:46.265819+00:00",
+    "processos": {
+      "status": "ok",
+      "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+      "chaves": 561306,
+      "referencias": 561318,
+      "fragmentos": 1000
+    },
+    "cnpj_produtos": {
+      "status": "ok",
+      "prefixo": 3,
+      "fragmentacao": "3 primeiros dígitos do CNPJ",
+      "chaves": 10708,
+      "referencias": 110149,
+      "fragmentos": 955
+    },
+    "autorizacoes": {
+      "status": "ok",
+      "prefixo": 3,
+      "observacao": "Índice por número de AFE/AE.",
+      "chaves": 351036,
+      "referencias": 351036,
+      "fragmentos": 377
+    },
+    "regularizacoes_alimentos": {
+      "status": "ok",
+      "prefixo": 3,
+      "fragmentacao": "3 primeiros dígitos do número de registro ou notificação",
+      "chaves": 48776,
+      "referencias": 48776,
+      "fragmentos": 275
+    },
+    "por_base": {
+      "dispositivos": {
+        "processos": 115456,
+        "cnpjs": 0
+      },
+      "medicamentos": {
+        "processos": 32672,
+        "cnpjs": 32672
+      },
+      "saneantes": {
+        "processos": 28656,
+        "cnpjs": 28656
+      },
+      "alimentos": {
+        "processos": 63633,
+        "cnpjs": 63633
+      }
+    },
+    "produtos_irregulares": {
+      "status": "ok",
+      "processo": {
+        "formato": "mapa processo para dossiê",
+        "fragmentos": 878,
+        "fragmentacao": "dígitos 6 a 8 do processo"
+      },
+      "cnpj": {
+        "chaves": 2416,
+        "fragmentos": 667,
+        "prefixo": 3,
+        "maior_fragmento": 1069
+      },
+      "registro": {
+        "chaves": 2559,
+        "fragmentos": 152,
+        "prefixo": 3,
+        "maior_fragmento": 12309
+      },
+      "lote": {
+        "chaves": 13183,
+        "fragmentos": 525,
+        "prefixo": 2,
+        "normalizacao": "somente caracteres alfanuméricos",
+        "maior_fragmento": 51879
+      }
+    }
+  }
+}
