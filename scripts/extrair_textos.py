@@ -118,6 +118,11 @@ def extrair_html(caminho: Path) -> tuple[str, dict]:
         tag.decompose()
         removidos += 1
     for tag in sopa.find_all(True):
+        # Ao decompor um elemento pai, o BeautifulSoup invalida os atributos
+        # dos filhos que ja estavam na lista de iteracao. Ignore esses filhos
+        # para que blocos de navegacao aninhados nao interrompam a extracao.
+        if getattr(tag, "attrs", None) is None:
+            continue
         alvo = " ".join(filter(None, [
             " ".join(tag.get("class", [])) if isinstance(tag.get("class"), list) else (tag.get("class") or ""),
             tag.get("id") or "",
@@ -283,7 +288,8 @@ def autoteste() -> int:
         (d / "texto_bruto.html").write_text(
             "<html><head><title>t</title><style>a{}</style>"
             "<script>var x=1;</script></head><body>"
-            "<nav>Menu Principal</nav><div class='breadcrumb'>Inicio > Leis</div>"
+            "<nav>Menu Principal</nav><div class='breadcrumb'>"
+            "<span>Inicio</span> &gt; <a href='/leis'>Leis</a></div>"
             "<h1>LEI N\u00ba 1, DE 1\u00ba DE JANEIRO DE 2000.</h1>"
             "<p>Art. 1\u00ba Fica institu\u00eddo o regime de fiscaliza\u00e7\u00e3o sanit\u00e1ria.</p>"
             "<p>Par\u00e1grafo \u00fanico. A a\u00e7\u00e3o \u00e9 permanente.</p>"
