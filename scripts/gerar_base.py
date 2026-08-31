@@ -3375,6 +3375,59 @@ def gerar_manifesto(
         exist_ok=True
     )
 
+    caminho_manifesto = DADOS / "manifest.json"
+    manifesto_anterior = {}
+
+    if caminho_manifesto.exists():
+        try:
+            manifesto_anterior = json.loads(
+                caminho_manifesto.read_text(
+                    encoding="utf-8"
+                )
+            )
+        except (OSError, json.JSONDecodeError) as erro:
+            raise RuntimeError(
+                "Manifesto principal anterior inválido."
+            ) from erro
+
+    bases_principais = {
+        "dispositivos",
+        "afe_ae",
+        "medicamentos",
+        "cmed",
+        "saneantes",
+        "cosmeticos",
+        "alimentos"
+    }
+    indices_principais = {
+        "status",
+        "gerado_em",
+        "processos",
+        "cnpj_produtos",
+        "autorizacoes",
+        "regularizacoes_alimentos",
+        "por_base"
+    }
+
+    bases_preservadas = {
+        nome: dados
+        for nome, dados in (
+            manifesto_anterior.get("bases", {})
+            if isinstance(manifesto_anterior, dict)
+            else {}
+        ).items()
+        if nome not in bases_principais
+    }
+    indices_preservados = {
+        nome: dados
+        for nome, dados in (
+            manifesto_anterior.get("indices", {})
+            if isinstance(manifesto_anterior, dict)
+            else {}
+        ).items()
+        if nome not in indices_principais
+    }
+
     manifesto = {
         "versao_esquema": 2,
 
@@ -3411,6 +3464,13 @@ def gerar_manifesto(
 
         "indices": indices
     }
+
+    manifesto["bases"].update(
+        bases_preservadas
+    )
+    manifesto["indices"].update(
+        indices_preservados
+    )
 
     with (
         DADOS / "manifest.json"
