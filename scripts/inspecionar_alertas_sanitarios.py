@@ -100,8 +100,8 @@ def main():
         "page": 1,
         "count": 20,
         "column": "numeroSeqAlerta",
-        "direction": "desc",
-        "filter[dataInicial]": "2000-01-01T00:00:00.000Z",
+        "order": "desc",
+        "filter[dataInicial]": "2025-01-01T00:00:00.000Z",
         "filter[dataFinal]": date.today().isoformat() + "T23:59:59.999Z",
     }
     print("GET", API + "/listagem")
