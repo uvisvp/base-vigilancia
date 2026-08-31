@@ -1,0 +1,67 @@
+name: Atualizar produtos irregulares
+
+on:
+  workflow_dispatch:
+    inputs:
+      forcar_detalhes:
+        description: "Baixar novamente todos os detalhes"
+        required: false
+        default: false
+        type: boolean
+
+  schedule:
+    # Terça-feira às 06:00 no horário de Brasília
+    # GitHub Actions usa UTC: 06:00 BRT = 09:00 UTC
+    - cron: "0 9 * * 2"
+
+permissions:
+  contents: write
+
+concurrency:
+  # A mesma trava da atualização principal evita conflito no manifest.json.
+  group: atualizar-base-anvisa
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar produtos irregulares
+        env:
+          ANVISA_CLIENT_ID: ${{ secrets.ANVISA_CLIENT_ID }}
+          ANVISA_CLIENT_SECRET: ${{ secrets.ANVISA_CLIENT_SECRET }}
+          PRODUTOS_IRREGULARES_FORCAR_DETALHES: ${{ inputs.forcar_detalhes }}
+        run: python scripts/gerar_produtos_irregulares.py
+
+      - name: Verificar alterações
+        id: changes
+        run: |
+          git add dados/produtos_irregulares/
+          git add dados/indices/irregulares_cnpj/
+          git add dados/indices/irregulares_registro/
+          git add dados/indices/irregulares_lote/
+          git add dados/manifest.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Salvar atualização
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza produtos irregulares da Anvisa"
+          git pull --rebase origin main
+          git push origin HEAD:main
