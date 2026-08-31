@@ -19,7 +19,7 @@ DADOS = BASE / "dados"
 DESTINO = DADOS / "alertas_sanitarios"
 API = "https://consultas.anvisa.gov.br/api/consulta/alertasSanitarios"
 ROTA = "https://consultas.anvisa.gov.br/#/alertas-sanitarios/"
-VERSAO = "2026-08-31-alertas-completo-v1"
+VERSAO = "2026-08-31-alertas-completo-v2"
 ANO_INICIAL = 2000
 
 
@@ -138,14 +138,31 @@ def carregar_publicados():
     return publicados
 
 
+def limpar_contextual(valor):
+    valor = str(valor or "").strip()
+    valor = re.split(
+        r"(?i)\s*(?:#|\b(?:em\s+anexo|anexos?|carta\s+aos?\s+clientes?|"
+        r"mapa\s+de\s+distribui[cç][aã]o)\b)",
+        valor,
+        maxsplit=1,
+    )[0]
+    valor = re.split(
+        r"(?i)\s*[. ]+\b(?:registro|regulariza[cç][aã]o)(?:\s+anvisa)?\b",
+        valor,
+        maxsplit=1,
+    )[0]
+    return valor.strip(" .;-–—")
+
+
 def extrair_contextuais(texto, rotulos):
     encontrados = []
     padrao = "|".join(rotulos)
     for valor in re.findall(
         rf"(?im)(?:{padrao})\s*:\s*([^\n]+)", texto
     ):
+        valor = limpar_contextual(valor)
         for parte in re.split(r"\s*;\s*|\s*,\s*(?=[A-Z0-9])", valor):
-            parte = parte.strip(" .;-–—")
+            parte = limpar_contextual(parte)
             if parte and len(parte) <= 180:
                 encontrados.append(parte)
     return encontrados
@@ -160,10 +177,16 @@ def identificadores(textos):
         "modelo": [r"modelos? afetad[oa]s?", r"modelos?"],
     }
     vistos = set()
+    ignorar = {
+        "TODOSOSLOTES", "TODOS", "NAOSEAPLICA", "NAOAPLICAVEL",
+        "NAOINFORMADO", "SEMLOTE", "SEMNUMERO",
+    }
     for tipo, rotulos in categorias.items():
         for valor in extrair_contextuais(unido, rotulos):
             chave = normalizar(valor)
-            if not chave or chave in {"TODOSOSLOTES", "TODOS", "NAOSEAPLICA"}:
+            if not chave or chave in ignorar:
+                continue
+            if len(chave) < 2:
                 continue
             assinatura = (tipo, chave)
             if assinatura not in vistos:
@@ -175,10 +198,13 @@ def identificadores(textos):
 def extrair_registros(textos):
     unido = "\n".join(textos)
     registros = set()
-    for valor in re.findall(
-        r"(?i)(?:registro|regulariza[cç][aã]o)(?:\s+ANVISA)?\s*:\s*([0-9./-]{8,24})",
-        unido,
-    ):
+    padrao = (
+        r"(?i)\b(?:registro|regulariza[cç][aã]o)"
+        r"(?:\s+(?:da\s+)?anvisa)?"
+        r"(?:\s*(?:n(?:[º°o.]|[úu]mero)?))?"
+        r"\s*[:#-]?\s*([0-9][0-9./-]{7,23})"
+    )
+    for valor in re.findall(padrao, unido):
         numero = digitos(valor)
         if 8 <= len(numero) <= 14:
             registros.add(numero)
@@ -203,6 +229,7 @@ def limpar(detalhe):
     valores = [valor for valor in textos.values() if valor]
     numero = detalhe.get("numeroSeqAlerta")
     return {
+        "_versao_parser": VERSAO,
         "id_alerta": detalhe.get("idAlerta"),
         "numero_alerta": numero,
         "tipo_alerta": detalhe.get("tipoAlerta"),
@@ -260,7 +287,11 @@ def main():
         sorted(listagem.items(), key=lambda x: int(x[0])), start=1
     ):
         anterior = anteriores.get(chave)
-        if anterior and anterior.get("data_atualizacao") == resumo.get("dataUltimaAtualizacao"):
+        if (
+            anterior
+            and anterior.get("_versao_parser") == VERSAO
+            and anterior.get("data_atualizacao") == resumo.get("dataUltimaAtualizacao")
+        ):
             alertas.append(anterior)
             reutilizados += 1
         else:
@@ -334,6 +365,7 @@ def main():
     manifesto.setdefault("bases", {})["alertas_sanitarios"] = {
         "status": "ok", "fonte": API,
         "gerado_em": datetime.now(timezone.utc).isoformat(),
+        "versao_gerador": VERSAO,
         "alertas": len(alertas), "novos_ou_alterados": baixados,
         "reutilizados": reutilizados,
         "com_registro": sum(bool(x.get("registros")) for x in alertas),
