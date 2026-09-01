@@ -1,0 +1,42 @@
+name: Atualizar banco IN 211
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/gerar_banco_in211.py"
+      - "tests/test_parser_in211.py"
+      - ".github/workflows/atualizar-in211.yml"
+  schedule:
+    - cron: "30 9 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar-in211:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependências
+        run: pip install requests beautifulsoup4
+      - name: Testar parser da IN 211
+        run: python tests/test_parser_in211.py
+      - name: Gerar banco IN 211
+        run: python scripts/gerar_banco_in211.py
+      - name: Commit se houver alteração
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/alimentos/in211/
+          if git diff --cached --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "Atualiza banco IN 211"
+            git push
+          fi
