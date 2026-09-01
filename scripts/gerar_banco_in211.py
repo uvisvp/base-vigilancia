@@ -13,7 +13,7 @@ URL = ("https://anvisalegis.datalegis.net/action/ActionDatalegis.php?"
        "acao=abrirTextoAto&cod_menu=1686&cod_modulo=135&link=S&"
        "numeroAto=00000211&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2023")
 
-PARSER_VERSION = "1.0.0"
+PARSER_VERSION = "1.0.1"
 MIN_TOTAL = 15000
 MAX_DROP = 0.20
 
@@ -42,11 +42,11 @@ def atomizar_celula(td):
     return txt(" ".join(td.stripped_strings))
 
 def is_cat_line(s):
-    return bool(re.match(r"^\d{2}(?:\.\d+)+\s+\S", txt(s)))
+    return bool(re.match(r"^\d{1,2}(?:\.\d+)+\s+\S", txt(s)))
 
 def parse_categoria(s):
     s = txt(s)
-    m = re.match(r"^(\d{2}(?:\.\d+)+)\s+(.*)$", s)
+    m = re.match(r"^(\d{1,2}(?:\.\d+)+)\s+(.*)$", s)
     return (m.group(1), m.group(2)) if m else (None, None)
 
 def detectar_anexo(s):
@@ -71,6 +71,17 @@ def achar_colunas(headers):
         "nota": pick("nota", "condições de uso", "condicoes de uso", "observação", "observacao"),
     }
 
+def eh_cabecalho(row):
+    """Reconhece apenas o cabeçalho real, não menções a INS nas notas."""
+    celulas = [norm(x) for x in row]
+    return (
+        len(celulas) >= 4
+        and any(x.startswith("funcao") for x in celulas)
+        and any(x == "ins" for x in celulas)
+        and any(x.startswith(("aditivo", "coadjuvante")) for x in celulas)
+        and any(x.startswith("limite") for x in celulas)
+    )
+
 def parse_html(html):
     soup = BeautifulSoup(html, "html.parser")
     anexo = None
@@ -91,24 +102,47 @@ def parse_html(html):
                     categoria_codigo, categoria_nome = cc, cn
             continue
 
-        rows = el.find_all("tr")
-        if not rows: continue
-        matrix = [[atomizar_celula(td) for td in tr.find_all(["th","td"])] for tr in rows]
-        matrix = [r for r in matrix if any(r)]
-        if len(matrix) < 2: continue
-
-        # Procura uma linha de cabeçalho plausível nas primeiras 3 linhas.
-        hi = None
+        # Os Anexos III e IV ficam em tabelas longas com centenas de
+        # cabeçalhos repetidos. A função costuma usar rowspan, portanto as
+        # linhas seguintes têm uma célula a menos. A leitura precisa ser
+        # sequencial, mantendo o cabeçalho e a função correntes.
         cols = None
-        for i,row in enumerate(matrix[:3]):
-            nrow = " | ".join(norm(x) for x in row)
-            if "ins" in nrow and ("limite" in nrow or "aditivo" in nrow or "coadjuvante" in nrow):
-                hi = i; cols = achar_colunas(row); break
-        if hi is None or cols is None: continue
-        if cols["nome"] is None: continue
-
+        largura = 0
         last_funcao = ""
-        for row in matrix[hi+1:]:
+        for tr in el.find_all("tr"):
+            row = [atomizar_celula(td) for td in tr.find_all(["th","td"], recursive=False)]
+            if not any(row):
+                continue
+
+            if len(row) == 1:
+                linha = row[0]
+                if is_cat_line(linha):
+                    cc,cn = parse_categoria(linha)
+                    if cc:
+                        categoria_codigo, categoria_nome = cc, cn
+                elif norm(linha) == "alimentos e ingredientes em geral":
+                    categoria_codigo, categoria_nome = "geral", linha
+                last_funcao = ""
+                continue
+
+            nrow = " | ".join(norm(x) for x in row)
+            if eh_cabecalho(row):
+                cols = achar_colunas(row)
+                largura = len(row)
+                last_funcao = ""
+                if "coadjuvante" in nrow:
+                    anexo = "IV"
+                elif "aditivo" in nrow:
+                    anexo = "III"
+                continue
+            if not cols or cols["nome"] is None:
+                continue
+
+            # rowspan da coluna Função: a célula só aparece na primeira
+            # autorização do grupo e deve ser herdada nas demais.
+            if len(row) == largura - 1 and cols.get("funcao") is not None:
+                row.insert(cols["funcao"], "")
+
             def get(k):
                 idx = cols.get(k)
                 return txt(row[idx]) if idx is not None and idx < len(row) else ""
