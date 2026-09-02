@@ -102,7 +102,7 @@ def main():
     if antigo.exists():
         try:
             m = json.loads(antigo.read_text(encoding="utf-8"))
-            if m.get("sha256") == fonte_sha:
+            if m.get("sha256") == fonte_sha and m.get("versao_schema") == SCHEMA_VERSION:
                 print("SEM_ALTERACAO: SHA-256 da fonte oficial não mudou.")
                 return 0
         except Exception:
