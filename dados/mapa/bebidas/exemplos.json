@@ -1,0 +1,117 @@
+[
+  {
+    "id": "bebidas-00000001",
+    "origem": {
+      "UF": "PR",
+      "MUNICIPIO": "Paranavaí",
+      "NUMERO_REGISTRO_ESTABELECIMENTO": "PR0001422",
+      "STATUS_DO_REGISTRO": "Cancelado",
+      "CPF_CNPJ": "**.***.082/***-**",
+      "RAZAO_SOCIAL": "INDUSTRIA DE BEBIDAS PRATIKO LTDA - ME",
+      "AREA_ATUACAO": "VINHOS E BEBIDAS",
+      "ATIVIDADE": "BEBIDAS EM GERAL",
+      "CLASSIFICACAO": "PRODUTOR OU FABRICANTE"
+    },
+    "cnpj_original": "**.***.082/***-**",
+    "cnpj_norm": "082",
+    "cnpj_valido": false,
+    "razao_social": "INDUSTRIA DE BEBIDAS PRATIKO LTDA - ME",
+    "razao_social_norm": "INDUSTRIA DE BEBIDAS PRATIKO LTDA - ME",
+    "municipio": "Paranavaí",
+    "municipio_norm": "PARANAVAI",
+    "uf": "PR",
+    "atividade": "BEBIDAS EM GERAL"
+  },
+  {
+    "id": "bebidas-00000002",
+    "origem": {
+      "UF": "RS",
+      "MUNICIPIO": "Caxias do Sul",
+      "NUMERO_REGISTRO_ESTABELECIMENTO": "RS0034908",
+      "STATUS_DO_REGISTRO": "Ativo",
+      "CPF_CNPJ": "**.***.061/***-**",
+      "RAZAO_SOCIAL": "CANTINA DE VINHO SANTA CECILIA LTDA - EPP",
+      "AREA_ATUACAO": "VINHOS E BEBIDAS",
+      "ATIVIDADE": "VINHOS E DERIVADOS DA UVA E DO VINHO",
+      "CLASSIFICACAO": "PRODUTOR OU ELABORADOR"
+    },
+    "cnpj_original": "**.***.061/***-**",
+    "cnpj_norm": "061",
+    "cnpj_valido": false,
+    "razao_social": "CANTINA DE VINHO SANTA CECILIA LTDA - EPP",
+    "razao_social_norm": "CANTINA DE VINHO SANTA CECILIA LTDA - EPP",
+    "municipio": "Caxias do Sul",
+    "municipio_norm": "CAXIAS DO SUL",
+    "uf": "RS",
+    "atividade": "VINHOS E DERIVADOS DA UVA E DO VINHO"
+  },
+  {
+    "id": "bebidas-00000003",
+    "origem": {
+      "UF": "PR",
+      "MUNICIPIO": "Paranavaí",
+      "NUMERO_REGISTRO_ESTABELECIMENTO": "PR0008028",
+      "STATUS_DO_REGISTRO": "Cancelado",
+      "CPF_CNPJ": "**.***.239/***-**",
+      "RAZAO_SOCIAL": "CITRI AGROINDUSTRIAL S/A.",
+      "AREA_ATUACAO": "VINHOS E BEBIDAS",
+      "ATIVIDADE": "BEBIDAS EM GERAL",
+      "CLASSIFICACAO": "PRODUTOR OU FABRICANTE"
+    },
+    "cnpj_original": "**.***.239/***-**",
+    "cnpj_norm": "239",
+    "cnpj_valido": false,
+    "razao_social": "CITRI AGROINDUSTRIAL S/A.",
+    "razao_social_norm": "CITRI AGROINDUSTRIAL S/A.",
+    "municipio": "Paranavaí",
+    "municipio_norm": "PARANAVAI",
+    "uf": "PR",
+    "atividade": "BEBIDAS EM GERAL"
+  },
+  {
+    "id": "bebidas-00000004",
+    "origem": {
+      "UF": "PR",
+      "MUNICIPIO": "Paranavaí",
+      "NUMERO_REGISTRO_ESTABELECIMENTO": "PR0008028",
+      "STATUS_DO_REGISTRO": "Cancelado",
+      "CPF_CNPJ": "**.***.239/***-**",
+      "RAZAO_SOCIAL": "CITRI AGROINDUSTRIAL S/A.",
+      "AREA_ATUACAO": "VINHOS E BEBIDAS",
+      "ATIVIDADE": "BEBIDAS EM GERAL",
+      "CLASSIFICACAO": "EXPORTADOR"
+    },
+    "cnpj_original": "**.***.239/***-**",
+    "cnpj_norm": "239",
+    "cnpj_valido": false,
+    "razao_social": "CITRI AGROINDUSTRIAL S/A.",
+    "razao_social_norm": "CITRI AGROINDUSTRIAL S/A.",
+    "municipio": "Paranavaí",
+    "municipio_norm": "PARANAVAI",
+    "uf": "PR",
+    "atividade": "BEBIDAS EM GERAL"
+  },
+  {
+    "id": "bebidas-00000005",
+    "origem": {
+      "UF": "RS",
+      "MUNICIPIO": "Rio Grande",
+      "NUMERO_REGISTRO_ESTABELECIMENTO": "RS0023400",
+      "STATUS_DO_REGISTRO": "Ativo",
+      "CPF_CNPJ": "**.***.755/***-**",
+      "RAZAO_SOCIAL": "Supermercado Guanabara S/A",
+      "AREA_ATUACAO": "VINHOS E BEBIDAS",
+      "ATIVIDADE": "VINHOS E DERIVADOS DA UVA E DO VINHO",
+      "CLASSIFICACAO": "IMPORTADOR"
+    },
+    "cnpj_original": "**.***.755/***-**",
+    "cnpj_norm": "755",
+    "cnpj_valido": false,
+    "razao_social": "Supermercado Guanabara S/A",
+    "razao_social_norm": "SUPERMERCADO GUANABARA S/A",
+    "municipio": "Rio Grande",
+    "municipio_norm": "RIO GRANDE",
+    "uf": "RS",
+    "atividade": "VINHOS E DERIVADOS DA UVA E DO VINHO"
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "id": "mapa_bebidas",
+  "nome_base": "MAPA — SIPEAGRO — Vinhos e Bebidas",
+  "orgao": "Ministério da Agricultura e Pecuária — MAPA",
+  "fonte": "SIPEAGRO",
+  "url_fonte": "https://dados.agricultura.gov.br/dataset/sipeagro/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82",
+  "url_arquivo": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
+  "arquivo_origem": "sipeagrovinhosebebidas.csv",
+  "formato_origem": "CSV",
+  "data_fonte": "Sun, 30 Aug 2026 05:30:12 GMT",
+  "data_download": "2026-09-02T22:29:28+00:00",
+  "data_processamento": "2026-09-02T22:29:28+00:00",
+  "quantidade_registros": 31580,
+  "versao_schema": "1.0.0",
+  "sha256": "942cb3495355df468497d9d9909b68cab41a2c2f2734d35e81b689fdcf459e0b",
+  "http": {
+    "content_type": "text/csv",
+    "content_length": null,
+    "last_modified": "Sun, 30 Aug 2026 05:30:12 GMT",
+    "etag": "\"1788067812.67-4665431\"",
+    "date_http": "Wed, 02 Sep 2026 22:29:25 GMT"
+  },
+  "indices": {
+    "cnpj": {
+      "arquivo": "indice_cnpj.json",
+      "quantidade_chaves": 1000,
+      "quantidade_referencias": 31578
+    },
+    "nome": {
+      "arquivo": "indice_nome.json",
+      "quantidade_chaves": 11951,
+      "quantidade_referencias": 31578
+    },
+    "municipio_uf": {
+      "arquivo": "indice_municipio_uf.json",
+      "quantidade_chaves": 2462,
+      "quantidade_referencias": 31580
+    }
+  },
+  "fragmentacao": {
+    "tipo": "lotes",
+    "tamanho_lote": 5000,
+    "arquivos": [
+      {
+        "arquivo": "lotes/0001.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0002.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0003.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0004.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0005.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0006.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0007.json",
+        "quantidade": 1580
+      }
+    ]
+  },
+  "validacoes": {
+    "quantidade_registros": 31580,
+    "linhas_vazias_descartadas": 0,
+    "colunas_origem": [
+      "UF",
+      "MUNICIPIO",
+      "NUMERO_REGISTRO_ESTABELECIMENTO",
+      "STATUS_DO_REGISTRO",
+      "CPF_CNPJ",
+      "RAZAO_SOCIAL",
+      "AREA_ATUACAO",
+      "ATIVIDADE",
+      "CLASSIFICACAO"
+    ],
+    "colunas_detectadas": {
+      "cnpj": "CPF_CNPJ",
+      "razao_social": "RAZAO_SOCIAL",
+      "nome_fantasia": null,
+      "municipio": "MUNICIPIO",
+      "uf": "UF",
+      "endereco": null,
+      "registro_mapa": null,
+      "atividade": "ATIVIDADE",
+      "categoria": null,
+      "produto": null,
+      "marca": null,
+      "situacao": null,
+      "data_registro": null,
+      "validade": null
+    },
+    "registros_sem_cnpj": 2,
+    "cnpjs_validos": 0,
+    "cnpjs_invalidos": 31578
+  }
+}

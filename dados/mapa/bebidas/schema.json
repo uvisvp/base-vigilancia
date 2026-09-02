@@ -1,0 +1,31 @@
+{
+  "versao_schema": "1.0.0",
+  "campos_origem": [
+    "UF",
+    "MUNICIPIO",
+    "NUMERO_REGISTRO_ESTABELECIMENTO",
+    "STATUS_DO_REGISTRO",
+    "CPF_CNPJ",
+    "RAZAO_SOCIAL",
+    "AREA_ATUACAO",
+    "ATIVIDADE",
+    "CLASSIFICACAO"
+  ],
+  "mapeamento_detectado": {
+    "cnpj": "CPF_CNPJ",
+    "razao_social": "RAZAO_SOCIAL",
+    "nome_fantasia": null,
+    "municipio": "MUNICIPIO",
+    "uf": "UF",
+    "endereco": null,
+    "registro_mapa": null,
+    "atividade": "ATIVIDADE",
+    "categoria": null,
+    "produto": null,
+    "marca": null,
+    "situacao": null,
+    "data_registro": null,
+    "validade": null
+  },
+  "regra": "Todas as colunas oficiais são preservadas em origem; campos locais só são criados quando identificados na fonte."
+}
