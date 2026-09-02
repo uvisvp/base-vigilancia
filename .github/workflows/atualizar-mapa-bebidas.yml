@@ -1,0 +1,143 @@
+name: Atualizar MAPA - Vinhos e Bebidas
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-mapa-bebidas
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: python -m pip install --upgrade requests
+
+      - name: Gerar base MAPA - Vinhos e Bebidas
+        run: python scripts/gerar_mapa_bebidas.py
+
+      - name: Validar arquivos gerados
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          base = Path("dados/mapa/bebidas")
+          obrigatorios = [
+              base / "manifest.json",
+              base / "schema.json",
+              base / "fonte.sha256",
+          ]
+
+          if not base.exists():
+              raise SystemExit("ERRO: pasta dados/mapa/bebidas não existe.")
+
+          for p in obrigatorios:
+              if not p.exists():
+                  raise SystemExit(f"ERRO: arquivo obrigatório ausente: {p}")
+
+          manifest = json.loads((base / "manifest.json").read_text(encoding="utf-8"))
+          total = int(manifest.get("quantidade_registros", 0))
+          if total <= 0:
+              raise SystemExit("ERRO: manifest informa zero registros.")
+
+          # Valida todos os JSONs.
+          for jf in base.rglob("*.json"):
+              try:
+                  json.loads(jf.read_text(encoding="utf-8"))
+              except Exception as e:
+                  raise SystemExit(f"ERRO: JSON inválido em {jf}: {e}")
+
+          # Schema 1.1.0: fragmentos ficam dentro de fragmentacao.fragmentos.
+          frag_info = manifest.get("fragmentacao", {})
+          fragmentos = frag_info.get("fragmentos", [])
+          if not fragmentos:
+              raise SystemExit("ERRO: manifest não contém fragmentacao.fragmentos.")
+
+          soma = 0
+          for frag in fragmentos:
+              arquivo = frag.get("arquivo")
+              quantidade = frag.get("quantidade")
+              if not arquivo:
+                  raise SystemExit(f"ERRO: fragmento sem arquivo: {frag}")
+              if quantidade is None:
+                  raise SystemExit(f"ERRO: fragmento sem quantidade: {frag}")
+
+              caminho = base / arquivo
+              if not caminho.exists():
+                  raise SystemExit(f"ERRO: fragmento ausente: {caminho}")
+
+              dados = json.loads(caminho.read_text(encoding="utf-8"))
+              if not isinstance(dados, list):
+                  raise SystemExit(f"ERRO: fragmento não é lista: {caminho}")
+
+              real = len(dados)
+              declarado = int(quantidade)
+              if real != declarado:
+                  raise SystemExit(
+                      f"ERRO: {caminho}: quantidade declarada={declarado}, real={real}"
+                  )
+              soma += real
+
+          if soma != total:
+              raise SystemExit(
+                  f"ERRO: soma dos fragmentos ({soma}) difere do manifest ({total})."
+              )
+
+          # Confirma os índices esperados no schema 1.1.0.
+          indices_esperados = [
+              "indice_cnpj.json",
+              "indice_registro.json",
+              "indice_nome.json",
+              "indice_municipio_uf.json",
+              "indice_classificacao.json",
+              "indice_area_atuacao.json",
+          ]
+          for nome in indices_esperados:
+              p = base / nome
+              if not p.exists():
+                  raise SystemExit(f"ERRO: índice esperado ausente: {p}")
+              obj = json.loads(p.read_text(encoding="utf-8"))
+              if not isinstance(obj, dict):
+                  raise SystemExit(f"ERRO: índice não é objeto JSON: {p}")
+
+          print(f"OK: {total} registros.")
+          print(f"OK: {len(fragmentos)} fragmentos; soma={soma}.")
+          print("OK: JSONs, fragmentos e índices obrigatórios validados.")
+          PY
+
+      - name: Verificar alterações da base
+        id: changes
+        shell: bash
+        run: |
+          if [ -n "$(git status --porcelain -- dados/mapa/bebidas)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Há alterações na base MAPA Bebidas."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sem alterações na base MAPA Bebidas."
+          fi
+
+      - name: Publicar atualização
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/mapa/bebidas
+          git commit -m "Atualiza base MAPA de Vinhos e Bebidas"
+          git push
