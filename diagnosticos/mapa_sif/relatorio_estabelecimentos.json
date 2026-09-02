@@ -1,0 +1,55 @@
+{
+  "id": "relatorio_estabelecimentos",
+  "nome": "Relatório de Estabelecimentos",
+  "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/7d02af92-e3cf-4ae4-af8a-0dad334ffdfa/download/sigsifrelatorioestabelecimentos.csv",
+  "http_status": 200,
+  "tamanho_bytes": 560810,
+  "sha256": "1ad31078aa28573e47544510c31b8c9b819922c7615bb6b03179e7503a142efe",
+  "last_modified_http": "Wed, 02 Sep 2026 06:00:12 GMT",
+  "encoding_detectado": "utf-8-sig",
+  "separador_detectado": ";",
+  "quantidade_registros": 3318,
+  "quantidade_colunas": 8,
+  "colunas": [
+    "AREA",
+    "CATEGORIA",
+    "CLASSE",
+    "SIF",
+    "RAZAO_SOCIAL",
+    "LOGRADOURO",
+    "MUNICIPIO",
+    "UF"
+  ],
+  "exemplos": [
+    {
+      "AREA": "PESCADO",
+      "CATEGORIA": "UNIDADE DE BENEF. DE PESCADO E PROD. DE PESCADO",
+      "CLASSE": "EP2 - ENTREPOSTO DE PESCADOS",
+      "SIF": "349",
+      "RAZAO_SOCIAL": "INDUSTRIA DE FRIO E PESCA SA",
+      "LOGRADOURO": "AV. ALM. BARROSO, 501",
+      "MUNICIPIO": "FORTALEZA",
+      "UF": "CE"
+    },
+    {
+      "AREA": "CARNE",
+      "CATEGORIA": "ABATEDOURO FRIGORÍFICO",
+      "CLASSE": "MSD - MIGRADO - SDA DIGITAL",
+      "SIF": "2423",
+      "RAZAO_SOCIAL": "SEARA ALIMENTOS LTDA",
+      "LOGRADOURO": "NUCR DE TAGUATINGA, SN, AREA RURAL AREA ISOLADA GUARIROBA LOTE 04 BLOCO A B C",
+      "MUNICIPIO": "BRASÍLIA",
+      "UF": "DF"
+    },
+    {
+      "AREA": "CARNE",
+      "CATEGORIA": "ABATEDOURO FRIGORÍFICO",
+      "CLASSE": "AA1 - AVES - MAIS DE 3000/H",
+      "SIF": "3921",
+      "RAZAO_SOCIAL": "NUTRIZA AGROINDUSTRIAL DE ALIMENTOS S/A",
+      "LOGRADOURO": "RODOVIA GO 330 KM 01, S/N",
+      "MUNICIPIO": "PIRES DO RIO",
+      "UF": "GO"
+    }
+  ]
+}
