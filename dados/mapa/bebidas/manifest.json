@@ -1,46 +1,45 @@
 {
   "id": "mapa_bebidas",
-  "nome_base": "MAPA — SIPEAGRO — Vinhos e Bebidas",
+  "nome_base": "MAPA — SIPEAGRO — Vinhos e Bebidas — Estabelecimentos",
   "orgao": "Ministério da Agricultura e Pecuária — MAPA",
-  "fonte": "SIPEAGRO",
-  "url_fonte": "https://dados.agricultura.gov.br/dataset/sipeagro/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82",
-  "url_arquivo": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
+  "fonte": "Portal de Dados Abertos do MAPA / SIPEAGRO",
+  "url_fonte": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
   "arquivo_origem": "sipeagrovinhosebebidas.csv",
-  "formato_origem": "CSV",
   "data_fonte": "Sun, 30 Aug 2026 05:30:12 GMT",
-  "data_download": "2026-09-02T22:29:28+00:00",
-  "data_processamento": "2026-09-02T22:29:28+00:00",
-  "quantidade_registros": 31580,
-  "versao_schema": "1.0.0",
+  "data_download": "2026-09-02T23:13:45Z",
+  "data_processamento": "2026-09-02T23:13:45Z",
+  "quantidade_registros": 31582,
+  "versao_schema": "1.1.0",
   "sha256": "942cb3495355df468497d9d9909b68cab41a2c2f2734d35e81b689fdcf459e0b",
-  "http": {
-    "content_type": "text/csv",
-    "content_length": null,
-    "last_modified": "Sun, 30 Aug 2026 05:30:12 GMT",
-    "etag": "\"1788067812.67-4665431\"",
-    "date_http": "Wed, 02 Sep 2026 22:29:25 GMT"
-  },
-  "indices": {
-    "cnpj": {
-      "arquivo": "indice_cnpj.json",
-      "quantidade_chaves": 1000,
-      "quantidade_referencias": 31578
-    },
-    "nome": {
-      "arquivo": "indice_nome.json",
-      "quantidade_chaves": 11951,
-      "quantidade_referencias": 31578
-    },
-    "municipio_uf": {
-      "arquivo": "indice_municipio_uf.json",
-      "quantidade_chaves": 2462,
-      "quantidade_referencias": 31580
-    }
+  "campos_origem": [
+    "UF",
+    "MUNICIPIO",
+    "NUMERO_REGISTRO_ESTABELECIMENTO",
+    "STATUS_DO_REGISTRO",
+    "CPF_CNPJ",
+    "RAZAO_SOCIAL",
+    "AREA_ATUACAO",
+    "ATIVIDADE",
+    "CLASSIFICACAO"
+  ],
+  "mapeamento_detectado": {
+    "cnpj": "CPF_CNPJ",
+    "razao_social": "RAZAO_SOCIAL",
+    "municipio": "MUNICIPIO",
+    "uf": "UF",
+    "registro_mapa": "NUMERO_REGISTRO_ESTABELECIMENTO",
+    "situacao": "STATUS_DO_REGISTRO",
+    "area_atuacao": "AREA_ATUACAO",
+    "atividade": "ATIVIDADE",
+    "classificacao": "CLASSIFICACAO"
   },
   "fragmentacao": {
-    "tipo": "lotes",
     "tamanho_lote": 5000,
-    "arquivos": [
+    "fragmentos": [
+      {
+        "arquivo": "lotes/0000.json",
+        "quantidade": 5000
+      },
       {
         "arquivo": "lotes/0001.json",
         "quantidade": 5000
@@ -63,46 +62,41 @@
       },
       {
         "arquivo": "lotes/0006.json",
-        "quantidade": 5000
-      },
-      {
-        "arquivo": "lotes/0007.json",
-        "quantidade": 1580
+        "quantidade": 1582
       }
     ]
   },
-  "validacoes": {
-    "quantidade_registros": 31580,
-    "linhas_vazias_descartadas": 0,
-    "colunas_origem": [
-      "UF",
-      "MUNICIPIO",
-      "NUMERO_REGISTRO_ESTABELECIMENTO",
-      "STATUS_DO_REGISTRO",
-      "CPF_CNPJ",
-      "RAZAO_SOCIAL",
-      "AREA_ATUACAO",
-      "ATIVIDADE",
-      "CLASSIFICACAO"
-    ],
-    "colunas_detectadas": {
-      "cnpj": "CPF_CNPJ",
-      "razao_social": "RAZAO_SOCIAL",
-      "nome_fantasia": null,
-      "municipio": "MUNICIPIO",
-      "uf": "UF",
-      "endereco": null,
-      "registro_mapa": null,
-      "atividade": "ATIVIDADE",
-      "categoria": null,
-      "produto": null,
-      "marca": null,
-      "situacao": null,
-      "data_registro": null,
-      "validade": null
+  "indices": {
+    "cnpj": {
+      "arquivo": "indice_cnpj.json",
+      "chaves": 0
     },
-    "registros_sem_cnpj": 2,
-    "cnpjs_validos": 0,
-    "cnpjs_invalidos": 31578
-  }
+    "registro": {
+      "arquivo": "indice_registro.json",
+      "chaves": 12687
+    },
+    "nome": {
+      "arquivo": "indice_nome.json",
+      "chaves": 11951
+    },
+    "municipio_uf": {
+      "arquivo": "indice_municipio_uf.json",
+      "chaves": 2463
+    },
+    "classificacao": {
+      "arquivo": "indice_classificacao.json",
+      "chaves": 15
+    },
+    "area_atuacao": {
+      "arquivo": "indice_area_atuacao.json",
+      "chaves": 1
+    }
+  },
+  "estatisticas": {
+    "cnpj_valido": 0,
+    "cnpj_invalido": 0,
+    "sem_cnpj": 4,
+    "registros_mapa_vazios": 0
+  },
+  "observacao": "Este recurso contém dados de estabelecimentos. Não são inferidos produtos, marcas ou outros campos ausentes da fonte."
 }

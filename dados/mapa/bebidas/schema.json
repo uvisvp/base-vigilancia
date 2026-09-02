@@ -1,5 +1,5 @@
 {
-  "versao_schema": "1.0.0",
+  "versao_schema": "1.1.0",
   "campos_origem": [
     "UF",
     "MUNICIPIO",
@@ -14,18 +14,32 @@
   "mapeamento_detectado": {
     "cnpj": "CPF_CNPJ",
     "razao_social": "RAZAO_SOCIAL",
-    "nome_fantasia": null,
     "municipio": "MUNICIPIO",
     "uf": "UF",
-    "endereco": null,
-    "registro_mapa": null,
+    "registro_mapa": "NUMERO_REGISTRO_ESTABELECIMENTO",
+    "situacao": "STATUS_DO_REGISTRO",
+    "area_atuacao": "AREA_ATUACAO",
     "atividade": "ATIVIDADE",
-    "categoria": null,
-    "produto": null,
-    "marca": null,
-    "situacao": null,
-    "data_registro": null,
-    "validade": null
+    "classificacao": "CLASSIFICACAO"
   },
-  "regra": "Todas as colunas oficiais são preservadas em origem; campos locais só são criados quando identificados na fonte."
+  "campos_normalizados": [
+    "cnpj_original",
+    "cnpj_norm",
+    "razao_social",
+    "razao_social_norm",
+    "municipio",
+    "municipio_norm",
+    "uf",
+    "numero_registro_mapa",
+    "numero_registro_mapa_norm",
+    "situacao",
+    "situacao_norm",
+    "area_atuacao",
+    "area_atuacao_norm",
+    "atividade",
+    "atividade_norm",
+    "classificacao",
+    "classificacao_norm"
+  ],
+  "regra": "Todas as colunas oficiais são preservadas em origem; normalização nunca substitui o valor oficial."
 }
