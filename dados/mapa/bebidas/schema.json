@@ -1,5 +1,5 @@
 {
-  "versao_schema": "1.1.0",
+  "versao_schema": "1.2.0",
   "campos_origem": [
     "UF",
     "MUNICIPIO",
@@ -11,35 +11,20 @@
     "ATIVIDADE",
     "CLASSIFICACAO"
   ],
-  "mapeamento_detectado": {
-    "cnpj": "CPF_CNPJ",
+  "mapeamento": {
+    "cpf_cnpj_original": "CPF_CNPJ",
+    "cpf_cnpj_parcial_norm": "CPF_CNPJ (somente dígitos visíveis; não é CNPJ/CPF completo)",
     "razao_social": "RAZAO_SOCIAL",
     "municipio": "MUNICIPIO",
     "uf": "UF",
-    "registro_mapa": "NUMERO_REGISTRO_ESTABELECIMENTO",
+    "numero_registro_mapa": "NUMERO_REGISTRO_ESTABELECIMENTO",
     "situacao": "STATUS_DO_REGISTRO",
     "area_atuacao": "AREA_ATUACAO",
     "atividade": "ATIVIDADE",
     "classificacao": "CLASSIFICACAO"
   },
-  "campos_normalizados": [
-    "cnpj_original",
-    "cnpj_norm",
-    "razao_social",
-    "razao_social_norm",
-    "municipio",
-    "municipio_norm",
-    "uf",
-    "numero_registro_mapa",
-    "numero_registro_mapa_norm",
-    "situacao",
-    "situacao_norm",
-    "area_atuacao",
-    "area_atuacao_norm",
-    "atividade",
-    "atividade_norm",
-    "classificacao",
-    "classificacao_norm"
-  ],
-  "regra": "Todas as colunas oficiais são preservadas em origem; normalização nunca substitui o valor oficial."
+  "identificador_principal": "numero_registro_mapa",
+  "indice_cnpj": false,
+  "motivo_sem_indice_cnpj": "A fonte pública fornece CPF/CNPJ mascarado; não é possível consulta exata por CNPJ.",
+  "regra": "Todas as colunas oficiais são preservadas em origem; campos ausentes não são inferidos."
 }

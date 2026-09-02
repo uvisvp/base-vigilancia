@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "cnpj_original": "**.***.082/***-**",
-    "cnpj_norm": "082",
+    "cpf_cnpj_original": "**.***.082/***-**",
+    "cpf_cnpj_parcial_norm": "082",
     "razao_social": "INDUSTRIA DE BEBIDAS PRATIKO LTDA - ME",
     "razao_social_norm": "INDUSTRIA DE BEBIDAS PRATIKO LTDA - ME",
     "municipio": "Paranavaí",
@@ -32,8 +32,8 @@
   },
   {
     "id": 1,
-    "cnpj_original": "**.***.061/***-**",
-    "cnpj_norm": "061",
+    "cpf_cnpj_original": "**.***.061/***-**",
+    "cpf_cnpj_parcial_norm": "061",
     "razao_social": "CANTINA DE VINHO SANTA CECILIA LTDA - EPP",
     "razao_social_norm": "CANTINA DE VINHO SANTA CECILIA LTDA - EPP",
     "municipio": "Caxias do Sul",
@@ -63,8 +63,8 @@
   },
   {
     "id": 2,
-    "cnpj_original": "**.***.239/***-**",
-    "cnpj_norm": "239",
+    "cpf_cnpj_original": "**.***.239/***-**",
+    "cpf_cnpj_parcial_norm": "239",
     "razao_social": "CITRI AGROINDUSTRIAL S/A.",
     "razao_social_norm": "CITRI AGROINDUSTRIAL S/A.",
     "municipio": "Paranavaí",
@@ -94,8 +94,8 @@
   },
   {
     "id": 3,
-    "cnpj_original": "**.***.239/***-**",
-    "cnpj_norm": "239",
+    "cpf_cnpj_original": "**.***.239/***-**",
+    "cpf_cnpj_parcial_norm": "239",
     "razao_social": "CITRI AGROINDUSTRIAL S/A.",
     "razao_social_norm": "CITRI AGROINDUSTRIAL S/A.",
     "municipio": "Paranavaí",
@@ -125,8 +125,8 @@
   },
   {
     "id": 4,
-    "cnpj_original": "**.***.755/***-**",
-    "cnpj_norm": "755",
+    "cpf_cnpj_original": "**.***.755/***-**",
+    "cpf_cnpj_parcial_norm": "755",
     "razao_social": "Supermercado Guanabara S/A",
     "razao_social_norm": "SUPERMERCADO GUANABARA S/A",
     "municipio": "Rio Grande",

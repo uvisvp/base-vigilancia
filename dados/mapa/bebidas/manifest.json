@@ -6,10 +6,10 @@
   "url_fonte": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
   "arquivo_origem": "sipeagrovinhosebebidas.csv",
   "data_fonte": "Sun, 30 Aug 2026 05:30:12 GMT",
-  "data_download": "2026-09-02T23:13:45Z",
-  "data_processamento": "2026-09-02T23:13:45Z",
+  "data_download": "2026-09-02T23:49:19Z",
+  "data_processamento": "2026-09-02T23:49:19Z",
   "quantidade_registros": 31582,
-  "versao_schema": "1.1.0",
+  "versao_schema": "1.2.0",
   "sha256": "942cb3495355df468497d9d9909b68cab41a2c2f2734d35e81b689fdcf459e0b",
   "campos_origem": [
     "UF",
@@ -22,17 +22,9 @@
     "ATIVIDADE",
     "CLASSIFICACAO"
   ],
-  "mapeamento_detectado": {
-    "cnpj": "CPF_CNPJ",
-    "razao_social": "RAZAO_SOCIAL",
-    "municipio": "MUNICIPIO",
-    "uf": "UF",
-    "registro_mapa": "NUMERO_REGISTRO_ESTABELECIMENTO",
-    "situacao": "STATUS_DO_REGISTRO",
-    "area_atuacao": "AREA_ATUACAO",
-    "atividade": "ATIVIDADE",
-    "classificacao": "CLASSIFICACAO"
-  },
+  "identificador_principal": "numero_registro_mapa",
+  "consulta_exata_por_cnpj": false,
+  "limitacao_cnpj": "CPF/CNPJ é mascarado na fonte pública do SIPEAGRO; não reconstruir nem inferir.",
   "fragmentacao": {
     "tamanho_lote": 5000,
     "fragmentos": [
@@ -67,10 +59,6 @@
     ]
   },
   "indices": {
-    "cnpj": {
-      "arquivo": "indice_cnpj.json",
-      "chaves": 0
-    },
     "registro": {
       "arquivo": "indice_registro.json",
       "chaves": 12687
@@ -90,13 +78,22 @@
     "area_atuacao": {
       "arquivo": "indice_area_atuacao.json",
       "chaves": 1
+    },
+    "situacao": {
+      "arquivo": "indice_situacao.json",
+      "chaves": 4
+    },
+    "atividade": {
+      "arquivo": "indice_atividade.json",
+      "chaves": 3
     }
   },
   "estatisticas": {
-    "cnpj_valido": 0,
-    "cnpj_invalido": 0,
-    "sem_cnpj": 4,
-    "registros_mapa_vazios": 0
+    "identificador_fiscal_mascarado": 31580,
+    "identificador_fiscal_vazio": 0,
+    "identificador_fiscal_completo_detectado": 0,
+    "registros_mapa_vazios": 0,
+    "registros_mapa_duplicados": 10599
   },
-  "observacao": "Este recurso contém dados de estabelecimentos. Não são inferidos produtos, marcas ou outros campos ausentes da fonte."
+  "observacao": "Este recurso contém dados de estabelecimentos de Vinhos e Bebidas. Não são inferidos produtos, marcas ou outros campos ausentes da fonte."
 }
