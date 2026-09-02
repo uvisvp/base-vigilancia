@@ -1,0 +1,56 @@
+name: Diagnosticar MAPA - SIF
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: python -m pip install --upgrade requests
+
+      - name: Inspecionar fontes oficiais SIF
+        run: python scripts/inspecionar_mapa_sif.py
+
+      - name: Validar diagnóstico
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("diagnosticos/mapa_sif/resumo.json")
+          if not p.exists():
+              raise SystemExit("ERRO: resumo.json não foi criado.")
+          d = json.loads(p.read_text(encoding="utf-8"))
+          if len(d.get("fontes", [])) != 2:
+              raise SystemExit("ERRO: diagnóstico não contém as duas fontes.")
+          for f in d["fontes"]:
+              if f.get("quantidade_registros", 0) <= 0:
+                  raise SystemExit(f"ERRO: fonte vazia: {f.get('nome')}")
+              if not f.get("colunas"):
+                  raise SystemExit(f"ERRO: fonte sem colunas: {f.get('nome')}")
+          print("OK: duas fontes SIF inspecionadas.")
+          PY
+
+      - name: Publicar diagnóstico
+        run: |
+          if [ -n "$(git status --porcelain -- diagnosticos/mapa_sif)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add diagnosticos/mapa_sif
+            git commit -m "Diagnostica fontes oficiais MAPA SIF"
+            git push
+          else
+            echo "Diagnóstico sem alterações."
+          fi
