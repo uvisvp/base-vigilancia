@@ -44,14 +44,36 @@ jobs:
           d=json.loads(p.read_text(encoding='utf-8')); nos=d.get('nos',[])
           artigos=[n for n in nos if n.get('tipo')=='artigo']
           numeros={n.get('numero') for n in artigos}
-          if '1' not in numeros: raise SystemExit('Art. 1º ausente do JSON')
+          obrig={'1','18','24','33','48','50','50-A','51'}
+          faltam=obrig-numeros
+          if faltam: raise SystemExit('Dispositivos-chave ausentes: '+', '.join(sorted(faltam)))
+          if len([n for n in artigos if n.get('numero')=='50-A']) != 1:
+              raise SystemExit('Art. 50-A deve existir exatamente uma vez')
           nums=[]
           for x in numeros:
               try: nums.append(int(x))
               except: pass
-          if not nums or max(nums)<40: raise SystemExit('RDC 429 aparentemente incompleta no JSON')
-          rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
+          if not nums or max(nums)<51: raise SystemExit('RDC 429 aparentemente incompleta no JSON')
+          val=d.get('validacao',{})
+          rep=val.get('ids_estruturais_repetidos',[])
           if rep: raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
+          art_rep=val.get('artigos_repetidos_na_fonte',{})
+          if art_rep: raise SystemExit('Artigos repetidos na fonte/parse: '+str(art_rep))
+
+          por_num={}
+          for a in artigos: por_num.setdefault(a.get('numero'),[]).append(a)
+          if 'ROTULAGEM NUTRICIONAL FRONTAL' not in por_num['18'][0].get('texto','').upper():
+              raise SystemExit('Art. 18 não corresponde à rotulagem nutricional frontal')
+          if 'ALEGAÇÕES NUTRICIONAIS' not in por_num['24'][0].get('texto','').upper():
+              raise SystemExit('Art. 24 não corresponde às alegações nutricionais')
+          filhos33=[n for n in nos if n.get('pai')==por_num['33'][0].get('id') and n.get('tipo')=='inciso']
+          if {n.get('numero') for n in filhos33}!={'I','II'}:
+              raise SystemExit('Art. 33 sem incisos I e II íntegros')
+          if 'INFRAÇÃO SANITÁRIA' not in por_num['48'][0].get('texto','').upper():
+              raise SystemExit('Art. 48 não contém a regra de infração sanitária esperada')
+          if not por_num['50-A'][0].get('texto','').upper().startswith('ART. 50-A'):
+              raise SystemExit('Art. 50-A perdeu sua redação literal')
+
           tabelas=[n for n in nos if n.get('tipo')=='tabela' and n.get('origem_estrutura')=='html_oficial']
           linhas=[n for n in nos if n.get('tipo')=='linha_tabela' and n.get('origem_estrutura')=='html_oficial']
           tf=fonte.read_text(encoding='utf-8').count('[[TABELA_INICIO]]')
@@ -62,6 +84,11 @@ jobs:
           textos_linhas={n.get('texto') for n in linhas}
           dup=[a for a in artigos if a.get('texto') in textos_linhas]
           if dup: raise SystemExit('Artigo duplicado como célula de tabela')
+
+          tipos={}
+          for n in nos: tipos[n.get('tipo')]=tipos.get(n.get('tipo'),0)+1
+          print('DISPOSITIVOS-CHAVE OK:', ', '.join(sorted(obrig)))
+          print('TIPOS:', tipos)
           print(f'OK: RDC 429/2020 estruturada; nós={len(nos)}; artigos={len(artigos)}; maior_artigo={max(nums)}; tabelas={len(tabelas)}; células={len(linhas)}')
           PY
       - name: Atualizar manifesto regulatório
