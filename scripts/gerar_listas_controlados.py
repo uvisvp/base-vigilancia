@@ -15,9 +15,9 @@ RE_TAG=re.compile(r'<[^>]+>')
 RE_LISTA_SIMPLES=re.compile(r'^LISTA\s*[-–—]\s*(A1|A2|A3|B1|B2|C1|C2|C3|C5|D1|D2|E)\s*$',re.I)
 RE_LISTA_F=re.compile(r'^LISTA\s*[-–—]?\s*(F[1-4])(?:\s*[-–—:]\s*(.+))?\s*$',re.I)
 RE_LISTA_F_PAI=re.compile(r'^LISTA\s*[-–—]\s*F\s*$',re.I)
-# A fonte oficial mistura "1. Nome" e "1.Nome". O espaco apos o ponto e opcional.
-# Exige que o primeiro caractere do nome nao seja digito, evitando interpretar 1.1/3.500 etc. como substancia.
-RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*([^\d\s].*)$')
+# Aceita "1. Nome" e "1.Nome". O nome pode iniciar por algarismo (ex.: 1-boc-4-AP),
+# mas nunca pode iniciar por "digito + ponto", o que bloqueia subitens/valores 1.1, 3.500 etc.
+RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*(?!\d+\.)(\S.*)$')
 RE_ADENDO=re.compile(r'^ADENDO\s*:?\s*$',re.I)
 RE_ITEM_ADENDO=re.compile(r'^(\d+(?:\.\d+)*)\)??\.?\s+(.+)$')
 LISTAS_ESPERADAS={'A1','A2','A3','B1','B2','C1','C2','C3','C5','D1','D2','E','F1','F2','F3','F4'}
@@ -64,7 +64,11 @@ def parsear(linhas):
    continue
   ms=RE_SUBSTANCIA.match(linha)
   if ms:
-   numero,nome=ms.group(1),ms.group(2).strip();listas[atual]['substancias'].append({'id':id_registro(atual,'substancia',numero),'lista':atual,'tipo':'substancia','numero':numero,'nome':nome});continue
+   numero,nome=ms.group(1),ms.group(2).strip()
+   # Tabelas da família F podem chegar como "1. | NOME | ..." após limpeza do HTML.
+   nome=nome.lstrip('|').strip()
+   if '|' in nome: nome=nome.split('|',1)[0].strip()
+   listas[atual]['substancias'].append({'id':id_registro(atual,'substancia',numero),'lista':atual,'tipo':'substancia','numero':numero,'nome':nome});continue
   if not listas[atual]['substancias'] and not modo_adendo and not linha.upper().startswith(('MINISTERIO','AGENCIA','LISTA ')):
    titulo_pendente.append(linha)
    if not listas[atual]['titulo']:listas[atual]['titulo']=' '.join(titulo_pendente)
@@ -92,9 +96,16 @@ def gerar():
  (SAIDA/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8');print(f'OK: {len(listas)} listas, {ts} substancias, {ta} adendos');return manifest
 
 def autoteste():
- amostra=['LISTA - A1','LISTA DAS SUBSTANCIAS ENTORPECENTES','1. Acetilmetadol','2.Morfina','ADENDO:','1) ficam tambem sob controle:','1.1. os sais e isomeros','LISTA - B2','LISTA DAS SUBSTANCIAS PSICOTROPICAS ANOREXIGENAS','1.Aminorex','2.Anfepramona','LISTA - C1','LISTA DAS OUTRAS SUBSTANCIAS','1.Acepromazina','LISTA - D1','LISTA DE PRECURSORAS','1.1-boc-4-AP','LISTA - F','LISTA F1 - SUBSTANCIAS ENTORPECENTES','1. | DIMETOCAINA | ou | exemplo','LISTA F2 - SUBSTANCIAS PSICOTROPICAS','1. | EXEMPLO F2','LISTA F3 - PRECURSORAS','1. | EXEMPLO F3','LISTA F4 - OUTRAS','1. | FENIBUT']
+ amostra=['LISTA - A1','LISTA DAS SUBSTANCIAS ENTORPECENTES','1. Acetilmetadol','2.Morfina','ADENDO:','1) ficam tambem sob controle:','1.1. os sais e isomeros','LISTA - B2','LISTA DAS SUBSTANCIAS PSICOTROPICAS ANOREXIGENAS','1.Aminorex','2.Anfepramona','LISTA - C1','LISTA DAS OUTRAS SUBSTANCIAS','1.Acepromazina','LISTA - D1','LISTA DE PRECURSORAS','1.1-boc-4-AP','LISTA - F','LISTA F1 - SUBSTANCIAS ENTORPECENTES','1. | DIMETOCAINA | exemplo','LISTA F2 - SUBSTANCIAS PSICOTROPICAS','1. | EXEMPLO F2','LISTA F3 - PRECURSORAS','1. | EXEMPLO F3','LISTA F4 - OUTRAS','1. | FENIBUT']
  d=parsear(amostra)
- assert d['B2']['substancias'][0]['nome']=='Aminorex';assert d['C1']['substancias'][0]['nome']=='Acepromazina';assert d['D1']['substancias'][0]['nome']=='1-boc-4-AP';assert 'F' not in d;assert d['F1']['substancias'];assert not RE_SUBSTANCIA.match('1.1. texto');assert not RE_SUBSTANCIA.match('3.500 kcal');print('AUTOTESTE OK')
+ assert d['A1']['substancias'][0]['nome']=='Acetilmetadol'
+ assert d['B2']['substancias'][0]['nome']=='Aminorex'
+ assert d['C1']['substancias'][0]['nome']=='Acepromazina'
+ assert d['D1']['substancias'][0]['nome']=='1-boc-4-AP'
+ assert 'F' not in d and d['F1']['substancias'][0]['nome']=='DIMETOCAINA'
+ assert not RE_SUBSTANCIA.match('1.1. texto')
+ assert not RE_SUBSTANCIA.match('3.500 kcal')
+ print('AUTOTESTE OK')
 if __name__=='__main__':
  import sys
  autoteste() if '--autoteste' in sys.argv else gerar()
