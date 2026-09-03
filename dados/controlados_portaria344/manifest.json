@@ -1,0 +1,13 @@
+{
+  "schema": "controlados-portaria344-v1",
+  "status": "ok",
+  "norma_base": "Portaria SVS/MS 344/1998 - Anexo I",
+  "norma_fonte": "RDC Anvisa 1.036/2026",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&codTipo=&cod_menu=1696&cod_modulo=134&desItem=&desItemFim=&numeroAto=00001036&orgao=RDC%2FDC%2FANVISA%2FMS&pesquisa=true&seqAto=000&tipo=RDC&valorAno=2026",
+  "data_fonte": "Thu, 03 Sep 2026 12:04:02 GMT",
+  "gerado_em": "2026-09-03T12:04:02.249483+00:00",
+  "listas": 16,
+  "substancias": 783,
+  "adendos": 146,
+  "sha256": "121a9048b7bd7e9ca07c815699fa21951337926328d3dad4b2fddd22484ef7bc"
+}
