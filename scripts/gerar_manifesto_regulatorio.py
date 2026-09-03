@@ -47,7 +47,15 @@ COSMETICOS_REGISTRO = {
     "Repelente de insetos infantil",
 }
 COSMETICOS_COMPLEMENTARES = {"RDC 906/2024", "RDC 898/2024"}
+COSMETICOS_REVOGADAS_NO_MARCO_ATIVO = {
+    "RDC 752/2022",
+    "RDC 646/2022",
+    "RDC 773/2023",
+    "RDC 409/2020",
+    "RDC 765/2022",
+}
 SANEANTES_MARCO_ATUAL = {"RDC 989/2025", "IN 394/2025", "RDC 1.040/2026", "IN 468/2026"}
+SANEANTES_REVOGADAS_NO_MARCO_ATIVO = {"RDC 59/2010", "RDC 492/2021", "RDC 878/2024"}
 
 
 def ler_json(path: Path):
@@ -124,11 +132,15 @@ def validar_cosmeticos(obj):
     if len(notificacao) != 1 or notificacao[0].get("regularizacao") != "notificacao":
         raise RuntimeError("Cosméticos: regra residual de notificação ausente ou inválida")
 
-    # A RDC 752/2022 pode existir em observação histórica de revogação, mas nunca
-    # em campos estruturados que definem o marco vigente.
-    ativos = [obj.get("norma_principal", "")] + [x for x in complementares if x]
-    if any("752/2022" in x for x in ativos):
-        raise RuntimeError("Cosméticos: RDC 752/2022 não pode integrar o marco vigente")
+    # Normas revogadas podem existir em observações históricas, mas nunca nos
+    # campos estruturados que definem o marco vigente e operacional.
+    ativos = {obj.get("norma_principal", "")} | {x for x in complementares if x}
+    revogadas_ativas = ativos & COSMETICOS_REVOGADAS_NO_MARCO_ATIVO
+    if revogadas_ativas:
+        raise RuntimeError(
+            "Cosméticos: norma(s) revogada(s) no marco vigente: "
+            + ", ".join(sorted(revogadas_ativas))
+        )
     return regras
 
 
@@ -158,9 +170,13 @@ def validar_saneantes(obj):
     if "RDC 899/2024" not in complementares:
         raise RuntimeError("Saneantes: RDC 899/2024 ausente das normas complementares")
 
-    ativos = [principal] + [x for x in complementares if x] + [pos.get("norma", "")]
-    if any("59/2010" in x for x in ativos):
-        raise RuntimeError("Saneantes: RDC 59/2010 não pode integrar o marco vigente")
+    ativos = {principal} | {x for x in complementares if x} | {pos.get("norma", "")}
+    revogadas_ativas = ativos & SANEANTES_REVOGADAS_NO_MARCO_ATIVO
+    if revogadas_ativas:
+        raise RuntimeError(
+            "Saneantes: norma(s) revogada(s) no marco vigente: "
+            + ", ".join(sorted(revogadas_ativas))
+        )
     return regras
 
 
