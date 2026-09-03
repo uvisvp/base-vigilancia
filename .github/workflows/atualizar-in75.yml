@@ -1,0 +1,56 @@
+name: Atualizar IN 75/2020 completa
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/baixar_in75_2020.py'
+      - 'scripts/estruturar_legislacao.py'
+      - 'dados/legislacao_curada/in-75-2020-anexo-xv.json'
+      - '.github/workflows/atualizar-in75.yml'
+  schedule:
+    - cron: '30 9 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Baixar IN 75/2020 oficial completa
+        run: python scripts/baixar_in75_2020.py
+      - name: Estruturar legislação
+        run: python scripts/estruturar_legislacao.py
+      - name: Validar anexos estruturados
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('dados/legislacao_v12/normas/in-75-2020.json')
+          if not p.exists(): raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          anexos={n.get('anexo') for n in d.get('nos',[]) if n.get('tipo')=='anexo'}
+          esp={'I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'}
+          falta=esp-anexos
+          if falta: raise SystemExit('Anexos não estruturados: '+', '.join(sorted(falta)))
+          rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
+          if rep: raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
+          print('OK: 20 anexos estruturados sem colisão de IDs')
+          PY
+      - name: Atualizar manifesto regulatório
+        run: python scripts/gerar_manifesto_regulatorio.py
+      - name: Commit se houver alterações
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add textos/ dados/legislacao_v12/ dados/regulatorio/
+          if git diff --cached --quiet; then
+            echo 'Sem alterações.'
+          else
+            git commit -m 'Atualiza IN 75/2020 e manifesto regulatório'
+            git push
+          fi
