@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-03T13:38:54.849024+00:00",
+  "gerado_em": "2026-09-03T13:41:38.419748+00:00",
   "normas": {
     "IN 75-2020": {
       "arquivo": "in-75-2020.json",
@@ -9,8 +9,8 @@
     },
     "RDC 429-2020": {
       "arquivo": "rdc-429-2020.json",
-      "nos": 366,
-      "sha256_texto": "81fd2386c7df02e2050680c03f612960336e09e02cb97120ba740e7400b6a649"
+      "nos": 350,
+      "sha256_texto": "be4e0a8d2689b8a983e7c495f16f09376c2a8a120b0b0a72f55278206aa93eef"
     }
   },
   "curados": 3
