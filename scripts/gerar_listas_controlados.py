@@ -12,7 +12,9 @@ Saida:
 Principios:
 - lista (A1, A2, A3, B1, B2, C1, C2, C3, C5, D1, D2, E, F1-F4) faz parte
   da identidade do registro;
-- numeracao de substancia so e reconhecida dentro de uma LISTA;
+- o cabecalho-pai "LISTA - F" nao e tratado como lista de substancias; F1-F4
+  sao reconhecidas como sublistas, inclusive quando o titulo vem na mesma linha;
+- numeracao de substancia so e reconhecida dentro de uma LISTA valida;
 - ADENDO e seus itens sao guardados em colecao separada e nao colidem com a
   numeracao das substancias;
 - nenhum valor numerico no corpo de um adendo vira substancia por inferencia.
@@ -39,7 +41,12 @@ NORMA_FONTE = "RDC Anvisa 1.036/2026"
 NORMA_BASE = "Portaria SVS/MS 344/1998 - Anexo I"
 
 RE_TAG = re.compile(r"<[^>]+>")
-RE_LISTA = re.compile(r"^LISTA\s*[-–—]?\s*([A-F]\d?)\s*$", re.I)
+# Cabecalhos oficiais simples: LISTA - A1, LISTA - E etc.
+RE_LISTA_SIMPLES = re.compile(r"^LISTA\s*[-–—]\s*(A1|A2|A3|B1|B2|C1|C2|C3|C5|D1|D2|E)\s*$", re.I)
+# Na Lista F existe um cabecalho-pai "LISTA - F" e depois sublistas no formato
+# "LISTA F1 - SUBSTANCIAS ENTORPECENTES". So F1-F4 sao unidades consultaveis.
+RE_LISTA_F = re.compile(r"^LISTA\s*[-–—]?\s*(F[1-4])(?:\s*[-–—:]\s*(.+))?\s*$", re.I)
+RE_LISTA_F_PAI = re.compile(r"^LISTA\s*[-–—]\s*F\s*$", re.I)
 RE_SUBSTANCIA = re.compile(r"^(\d+)\.\s+(.+)$")
 RE_ADENDO = re.compile(r"^ADENDO\s*:?\s*$", re.I)
 RE_ITEM_ADENDO = re.compile(r"^(\d+(?:\.\d+)*)\)??\.?\s+(.+)$")
@@ -63,7 +70,6 @@ def baixar() -> tuple[str, dict]:
 
 
 def html_para_linhas(html: str) -> list[str]:
-    # Insere quebra em elementos de bloco antes de retirar tags.
     x = re.sub(r"</?(?:p|div|li|tr|td|th|br|h\d)\b[^>]*>", "\n", html, flags=re.I)
     x = unescape(RE_TAG.sub(" ", x)).replace("\xa0", " ")
     linhas = []
@@ -78,6 +84,18 @@ def id_registro(lista: str, tipo: str, numero: str) -> str:
     return f"portaria-344-1998::anexo-i::lista-{lista.lower()}::{tipo}::{numero.lower()}"
 
 
+def nova_lista(listas: dict, codigo: str, titulo: str = "") -> None:
+    listas.setdefault(codigo, {
+        "id": f"portaria-344-1998::anexo-i::lista-{codigo.lower()}",
+        "lista": codigo,
+        "titulo": titulo.strip(),
+        "substancias": [],
+        "adendos": [],
+    })
+    if titulo.strip() and not listas[codigo]["titulo"]:
+        listas[codigo]["titulo"] = titulo.strip()
+
+
 def parsear(linhas: list[str]) -> dict:
     listas: dict[str, dict] = {}
     atual = None
@@ -85,16 +103,27 @@ def parsear(linhas: list[str]) -> dict:
     titulo_pendente = []
 
     for linha in linhas:
-        m = RE_LISTA.match(linha)
+        # O cabecalho geral da familia F nao deve alterar a lista corrente nem
+        # gerar um registro "F". As unidades normativas consultaveis sao F1-F4.
+        if RE_LISTA_F_PAI.match(linha):
+            atual = None
+            modo_adendo = False
+            titulo_pendente = []
+            continue
+
+        mf = RE_LISTA_F.match(linha)
+        if mf:
+            atual = mf.group(1).upper()
+            titulo_inline = (mf.group(2) or "").strip()
+            nova_lista(listas, atual, titulo_inline)
+            modo_adendo = False
+            titulo_pendente = []
+            continue
+
+        m = RE_LISTA_SIMPLES.match(linha)
         if m:
             atual = m.group(1).upper()
-            listas.setdefault(atual, {
-                "id": f"portaria-344-1998::anexo-i::lista-{atual.lower()}",
-                "lista": atual,
-                "titulo": "",
-                "substancias": [],
-                "adendos": [],
-            })
+            nova_lista(listas, atual)
             modo_adendo = False
             titulo_pendente = []
             continue
@@ -106,12 +135,11 @@ def parsear(linhas: list[str]) -> dict:
             modo_adendo = True
             continue
 
-        # Captura o titulo oficial imediatamente apos o cabecalho da lista.
         if not listas[atual]["substancias"] and not modo_adendo:
             if linha.upper().startswith("LISTA "):
                 continue
             if linha.startswith("(") and linha.endswith(")"):
-                if titulo_pendente:
+                if titulo_pendente and not listas[atual]["titulo"]:
                     listas[atual]["titulo"] = " ".join(titulo_pendente)
                 continue
 
@@ -133,7 +161,6 @@ def parsear(linhas: list[str]) -> dict:
         ms = RE_SUBSTANCIA.match(linha)
         if ms:
             numero, nome = ms.group(1), ms.group(2).strip()
-            # So aceita numero inteiro no inicio dentro do corpo nominal da LISTA.
             listas[atual]["substancias"].append({
                 "id": id_registro(atual, "substancia", numero),
                 "lista": atual,
@@ -143,19 +170,22 @@ def parsear(linhas: list[str]) -> dict:
             })
             continue
 
-        # Texto anterior ao primeiro item nominal compoe o titulo da lista.
         if not listas[atual]["substancias"] and not modo_adendo:
             if not linha.upper().startswith("MINISTERIO") and not linha.upper().startswith("AGENCIA"):
                 titulo_pendente.append(linha)
-                listas[atual]["titulo"] = " ".join(titulo_pendente)
+                if not listas[atual]["titulo"]:
+                    listas[atual]["titulo"] = " ".join(titulo_pendente)
 
     return listas
 
 
 def validar(listas: dict[str, dict]) -> None:
     faltantes = sorted(LISTAS_ESPERADAS - set(listas))
+    extras = sorted(set(listas) - LISTAS_ESPERADAS)
     if faltantes:
         raise RuntimeError("Listas ausentes na fonte: " + ", ".join(faltantes))
+    if extras:
+        raise RuntimeError("Listas inesperadas na extracao: " + ", ".join(extras))
 
     ids = []
     total_substancias = 0
@@ -227,11 +257,25 @@ def autoteste() -> None:
         "LISTA - B1",
         "LISTA DAS SUBSTANCIAS PSICOTROPICAS",
         "1. Alprazolam",
+        "LISTA - F",
+        "LISTA DAS SUBSTANCIAS DE USO PROSCRITO NO BRASIL",
+        "LISTA F1 - SUBSTANCIAS ENTORPECENTES",
+        "1. Dimetocaina",
+        "LISTA F2 - SUBSTANCIAS PSICOTROPICAS",
+        "1. Exemplo F2",
+        "LISTA F3 - SUBSTANCIAS PRECURSORAS",
+        "1. Exemplo F3",
+        "LISTA F4 - OUTRAS SUBSTANCIAS",
+        "1. Fenibut",
     ]
     d = parsear(amostra)
     assert d["A1"]["substancias"][0]["nome"] == "Acetilmetadol"
     assert d["A1"]["substancias"][0]["id"] != d["B1"]["substancias"][0]["id"]
     assert d["A1"]["adendos"][0]["tipo"] == "adendo"
+    assert "F" not in d
+    assert d["F1"]["substancias"][0]["nome"] == "Dimetocaina"
+    assert d["F4"]["substancias"][0]["nome"] == "Fenibut"
+    assert d["F1"]["titulo"] == "SUBSTANCIAS ENTORPECENTES"
     print("AUTOTESTE OK")
 
 
