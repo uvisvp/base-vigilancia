@@ -1,21 +1,62 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T14:25:33.371842+00:00",
+  "gerado_em": "2026-09-03T14:26:59.792884+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "ab06e31ee14d816cdfeb4bbb60019ae4c0d53fb5f5a995f67b80377c8a99dd6f",
+      "sha256": "482448ebc7f2d875d7f605858a0c1089a8ac17e24b25af87b56cba68f513397c",
       "normas": 2,
       "curados": 3
+    },
+    "in75_completa": {
+      "status": "ok",
+      "arquivo": "dados/legislacao_v12/normas/in-75-2020.json",
+      "schema": "legislacao-hierarquica-v12",
+      "sha256": "96479957bbf402564b157233face4583deb272f903fabb7fcf87dbaa3659a29c",
+      "registros": 2138,
+      "norma": "IN 75-2020",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true",
+      "data_norma": "2020-10-08",
+      "sha256_texto": "8e37dd8c013001020eab269807e74c1a4837ec96044315aa8c5175de4a8753e5",
+      "anexos": 23,
+      "anexos_incluidos": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V",
+        "VI",
+        "VII",
+        "VIII",
+        "IX",
+        "X",
+        "XI",
+        "XII",
+        "XIII",
+        "XIV",
+        "XV",
+        "XVI",
+        "XVII",
+        "XVIII",
+        "XIX",
+        "XX",
+        "XXI",
+        "XXII",
+        "XXIII"
+      ],
+      "tabelas": 21,
+      "linhas_tabela": 2002
     },
     "in75_anexo_xv": {
       "status": "ok",
       "arquivo": "dados/legislacao_curada/in-75-2020-anexo-xv.json",
       "schema": "legislacao-curada-v1",
       "sha256": "aa1af2705dc23ad2bfe321c8894bd545b81a66fe51fcc406e03581c65584d615",
-      "registros": 3
+      "registros": 3,
+      "escopo": "operacional_complementar",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true"
     },
     "regularizacao_cosmeticos": {
       "status": "ok",
