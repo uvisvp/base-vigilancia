@@ -4,11 +4,13 @@
 
 Integra, sem misturar texto literal com regra operacional:
 - legislação hierárquica estruturada (dados/legislacao_v12);
-- limites curados da IN 75/2020;
+- base completa da IN 75/2020 e seus 23 anexos;
+- limites curados do Anexo XV da IN 75/2020;
 - regras operacionais de regularização de cosméticos e saneantes;
 - listas operacionais da Portaria 344/98.
 
-O manifesto apenas referencia arquivos existentes e valida seus schemas/IDs.
+O manifesto referencia arquivos existentes e falha quando uma base obrigatória está
+ausente ou estruturalmente incompleta.
 """
 from __future__ import annotations
 
@@ -21,6 +23,18 @@ BASE = Path(__file__).resolve().parent.parent
 DADOS = BASE / "dados"
 CURADA = DADOS / "legislacao_curada"
 SAIDA = DADOS / "regulatorio"
+
+IN75_FONTE_OFICIAL = (
+    "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?"
+    "acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&"
+    "orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&"
+    "cod_modulo=310&pesquisa=true"
+)
+IN75_ANEXOS = [
+    "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI",
+    "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
+    "XXI", "XXII", "XXIII",
+]
 
 
 def ler_json(path: Path):
@@ -81,6 +95,43 @@ def main():
             "arquivo": "dados/legislacao_v12/manifest.json"
         }
 
+    # Base completa da IN 75/2020: é obrigatória e independente do Anexo XV curado.
+    in75_completa = registrar_arquivo(
+        manifest,
+        "in75_completa",
+        DADOS / "legislacao_v12" / "normas" / "in-75-2020.json",
+        "legislacao-hierarquica-v12",
+        lambda o: len(o.get("nos", [])),
+    )
+    if in75_completa:
+        nos = in75_completa.get("nos", [])
+        anexos_nos = [n for n in nos if n.get("tipo") == "anexo"]
+        anexos = [n.get("anexo") for n in anexos_nos]
+        if len(anexos_nos) != 23 or set(anexos) != set(IN75_ANEXOS):
+            raise RuntimeError(
+                f"IN 75/2020 completa: anexos inválidos; quantidade={len(anexos_nos)}, "
+                f"achados={sorted(set(anexos))}"
+            )
+        ids_estruturais = [n.get("id") for n in nos if n.get("estrutural", True)]
+        validar_ids_unicos(
+            [{"id": x} for x in ids_estruturais if x],
+            contexto="IN 75/2020 completa",
+        )
+        repetidos = in75_completa.get("validacao", {}).get("ids_estruturais_repetidos", [])
+        if repetidos:
+            raise RuntimeError(f"IN 75/2020 completa: IDs estruturais repetidos: {repetidos[:10]}")
+        reg = manifest["bases"]["in75_completa"]
+        reg.update({
+            "norma": in75_completa.get("norma"),
+            "fonte_oficial": IN75_FONTE_OFICIAL,
+            "data_norma": "2020-10-08",
+            "sha256_texto": in75_completa.get("sha256_texto"),
+            "anexos": len(anexos_nos),
+            "anexos_incluidos": IN75_ANEXOS,
+            "tabelas": len([n for n in nos if n.get("tipo") == "tabela"]),
+            "linhas_tabela": len([n for n in nos if n.get("tipo") == "linha_tabela"]),
+        })
+
     in75 = registrar_arquivo(
         manifest,
         "in75_anexo_xv",
@@ -98,6 +149,10 @@ def main():
         achados = {r.get("numero") for r in regs}
         if obrig - achados:
             raise RuntimeError("IN 75/2020 Anexo XV incompleto")
+        manifest["bases"]["in75_anexo_xv"].update({
+            "escopo": "operacional_complementar",
+            "fonte_oficial": IN75_FONTE_OFICIAL,
+        })
 
     for nome, arquivo, categoria in [
         ("regularizacao_cosmeticos", "regularizacao-cosmeticos.json", "cosmeticos"),
