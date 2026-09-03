@@ -1,4 +1,4 @@
-lname: Atualizar Aditivos e Coadjuvantes
+name: Atualizar Aditivos e Coadjuvantes
 
 on:
   workflow_dispatch:
