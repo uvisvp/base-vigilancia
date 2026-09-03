@@ -15,11 +15,13 @@ RE_TAG=re.compile(r'<[^>]+>')
 RE_LISTA_SIMPLES=re.compile(r'^LISTA\s*[-–—]\s*(A1|A2|A3|B1|B2|C1|C2|C3|C5|D1|D2|E)\s*$',re.I)
 RE_LISTA_F=re.compile(r'^LISTA\s*[-–—]?\s*(F[1-4])(?:\s*[-–—:]\s*(.+))?\s*$',re.I)
 RE_LISTA_F_PAI=re.compile(r'^LISTA\s*[-–—]\s*F\s*$',re.I)
-# Aceita "1. Nome" e "1.Nome". O nome pode iniciar por algarismo (ex.: 1-boc-4-AP),
-# mas nunca pode iniciar por "digito + ponto", o que bloqueia subitens/valores 1.1, 3.500 etc.
-RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*(?!\d+\.)(\S.*)$')
+# A fonte mistura "1. Nome" e "1.Nome". A identificacao inicial e permissiva;
+# a funcao abaixo rejeita subitens e valores de tabela antes de criar registros.
+RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*(\S.*)$')
 RE_ADENDO=re.compile(r'^ADENDO\s*:?\s*$',re.I)
 RE_ITEM_ADENDO=re.compile(r'^(\d+(?:\.\d+)*)\)??\.?\s+(.+)$')
+RE_SUBITEM_NO_NOME=re.compile(r'^\d+\.\s*')
+RE_VALOR_UNIDADE=re.compile(r'^\d+(?:[.,]\d+)?\s*(?:kcal|kj|g|mg|µg|μg|mcg|kg|ml|mL|l|L|ui|UI|%)\b',re.I)
 LISTAS_ESPERADAS={'A1','A2','A3','B1','B2','C1','C2','C3','C5','D1','D2','E','F1','F2','F3','F4'}
 
 def baixar():
@@ -40,6 +42,13 @@ def id_registro(lista,tipo,numero):return f'portaria-344-1998::anexo-i::lista-{l
 def nova_lista(listas,codigo,titulo=''):
  listas.setdefault(codigo,{'id':f'portaria-344-1998::anexo-i::lista-{codigo.lower()}','lista':codigo,'titulo':titulo.strip(),'substancias':[],'adendos':[]})
  if titulo.strip() and not listas[codigo]['titulo']:listas[codigo]['titulo']=titulo.strip()
+
+def nome_substancia_valido(nome):
+ nome=nome.strip()
+ if not nome:return False
+ if RE_SUBITEM_NO_NOME.match(nome):return False
+ if RE_VALOR_UNIDADE.match(nome):return False
+ return True
 
 def parsear(linhas):
  listas={}; atual=None; modo_adendo=False; titulo_pendente=[]
@@ -65,9 +74,9 @@ def parsear(linhas):
   ms=RE_SUBSTANCIA.match(linha)
   if ms:
    numero,nome=ms.group(1),ms.group(2).strip()
-   # Tabelas da família F podem chegar como "1. | NOME | ..." após limpeza do HTML.
    nome=nome.lstrip('|').strip()
-   if '|' in nome: nome=nome.split('|',1)[0].strip()
+   if '|' in nome:nome=nome.split('|',1)[0].strip()
+   if not nome_substancia_valido(nome):continue
    listas[atual]['substancias'].append({'id':id_registro(atual,'substancia',numero),'lista':atual,'tipo':'substancia','numero':numero,'nome':nome});continue
   if not listas[atual]['substancias'] and not modo_adendo and not linha.upper().startswith(('MINISTERIO','AGENCIA','LISTA ')):
    titulo_pendente.append(linha)
@@ -103,8 +112,10 @@ def autoteste():
  assert d['C1']['substancias'][0]['nome']=='Acepromazina'
  assert d['D1']['substancias'][0]['nome']=='1-boc-4-AP'
  assert 'F' not in d and d['F1']['substancias'][0]['nome']=='DIMETOCAINA'
- assert not RE_SUBSTANCIA.match('1.1. texto')
- assert not RE_SUBSTANCIA.match('3.500 kcal')
+ assert not nome_substancia_valido('1. texto')
+ assert not nome_substancia_valido('500 kcal')
+ assert not nome_substancia_valido('600 mg')
+ assert nome_substancia_valido('1-boc-4-AP')
  print('AUTOTESTE OK')
 if __name__=='__main__':
  import sys
