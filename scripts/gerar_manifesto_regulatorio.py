@@ -35,6 +35,19 @@ IN75_ANEXOS = [
     "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
     "XXI", "XXII", "XXIII",
 ]
+COSMETICOS_REGISTRO = {
+    "Bronzeador",
+    "Gel antisséptico para as mãos",
+    "Produto para alisar os cabelos",
+    "Produto para alisar e tingir os cabelos",
+    "Produto para ondular os cabelos",
+    "Protetor solar",
+    "Protetor solar infantil",
+    "Repelente de insetos",
+    "Repelente de insetos infantil",
+}
+COSMETICOS_COMPLEMENTARES = {"RDC 906/2024", "RDC 898/2024"}
+SANEANTES_MARCO_ATUAL = {"RDC 989/2025", "IN 394/2025", "RDC 1.040/2026", "IN 468/2026"}
 
 
 def ler_json(path: Path):
@@ -72,6 +85,83 @@ def registrar_arquivo(manifest, nome, path, schema_esperado=None, contagem=None)
         reg["registros"] = contagem(obj)
     manifest["bases"][nome] = reg
     return obj
+
+
+def validar_regularizacao_base(obj, categoria, contexto):
+    if obj.get("categoria") != categoria:
+        raise RuntimeError(f"{contexto}: categoria inesperada {obj.get('categoria')!r}")
+    regras = obj.get("regras")
+    if not isinstance(regras, list) or not regras:
+        raise RuntimeError(f"{contexto}: regras ausentes")
+    if any(not isinstance(r, dict) or not r.get("id") for r in regras):
+        raise RuntimeError(f"{contexto}: regra sem ID")
+    validar_ids_unicos(regras, contexto=contexto)
+    return regras
+
+
+def validar_cosmeticos(obj):
+    regras = validar_regularizacao_base(obj, "cosmeticos", "regularizacao_cosmeticos")
+    if obj.get("norma_principal") != "RDC 907/2024":
+        raise RuntimeError("Cosméticos: norma principal deve ser RDC 907/2024")
+
+    complementares = {
+        x.get("norma") if isinstance(x, dict) else x
+        for x in obj.get("normas_complementares", [])
+    }
+    faltam_comp = COSMETICOS_COMPLEMENTARES - complementares
+    if faltam_comp:
+        raise RuntimeError(f"Cosméticos: normas complementares ausentes: {sorted(faltam_comp)}")
+
+    regras_registro = [r for r in regras if r.get("regularizacao") == "registro"]
+    produtos_registro = {r.get("produto") for r in regras_registro}
+    if len(regras_registro) != 9 or produtos_registro != COSMETICOS_REGISTRO:
+        raise RuntimeError(
+            "Cosméticos: lista de produtos sujeitos a registro divergente; "
+            f"quantidade={len(regras_registro)}, produtos={sorted(x for x in produtos_registro if x)}"
+        )
+
+    notificacao = [r for r in regras if r.get("id") == "cosmeticos::notificacao::demais"]
+    if len(notificacao) != 1 or notificacao[0].get("regularizacao") != "notificacao":
+        raise RuntimeError("Cosméticos: regra residual de notificação ausente ou inválida")
+
+    # A RDC 752/2022 pode existir em observação histórica de revogação, mas nunca
+    # em campos estruturados que definem o marco vigente.
+    ativos = [obj.get("norma_principal", "")] + [x for x in complementares if x]
+    if any("752/2022" in x for x in ativos):
+        raise RuntimeError("Cosméticos: RDC 752/2022 não pode integrar o marco vigente")
+    return regras
+
+
+def validar_saneantes(obj):
+    regras = validar_regularizacao_base(obj, "saneantes", "regularizacao_saneantes")
+    principal = obj.get("norma_principal", "")
+    complementares = {
+        x.get("norma") if isinstance(x, dict) else x
+        for x in obj.get("normas_complementares", [])
+    }
+    marco = {principal} | complementares
+    faltam = SANEANTES_MARCO_ATUAL - marco
+    if faltam:
+        raise RuntimeError(f"Saneantes: normas obrigatórias ausentes: {sorted(faltam)}")
+
+    por_id = {r["id"]: r for r in regras}
+    risco1 = por_id.get("saneantes::risco-1::notificacao")
+    risco2 = por_id.get("saneantes::risco-2::registro")
+    if not risco1 or risco1.get("regularizacao") != "notificacao":
+        raise RuntimeError("Saneantes: regra Risco 1 -> notificação ausente ou inválida")
+    if not risco2 or risco2.get("regularizacao") != "registro":
+        raise RuntimeError("Saneantes: regra Risco 2 -> registro ausente ou inválida")
+
+    pos = obj.get("norma_pos_regularizacao_geral")
+    if not isinstance(pos, dict) or pos.get("norma") != "RDC 899/2024":
+        raise RuntimeError("Saneantes: RDC 899/2024 deve constar como norma geral de pós-regularização")
+    if "RDC 899/2024" not in complementares:
+        raise RuntimeError("Saneantes: RDC 899/2024 ausente das normas complementares")
+
+    ativos = [principal] + [x for x in complementares if x] + [pos.get("norma", "")]
+    if any("59/2010" in x for x in ativos):
+        raise RuntimeError("Saneantes: RDC 59/2010 não pode integrar o marco vigente")
+    return regras
 
 
 def main():
@@ -153,29 +243,41 @@ def main():
             "fonte_oficial": IN75_FONTE_OFICIAL,
         })
 
-    for nome, arquivo, categoria in [
-        ("regularizacao_cosmeticos", "regularizacao-cosmeticos.json", "cosmeticos"),
-        ("regularizacao_saneantes", "regularizacao-saneantes.json", "saneantes"),
-    ]:
-        obj = registrar_arquivo(
-            manifest, nome, CURADA / arquivo, "regularizacao-produtos-v1",
-            lambda o: len(o.get("regras", [])))
-        if obj:
-            if obj.get("categoria") != categoria:
-                raise RuntimeError(f"{nome}: categoria inesperada")
-            validar_ids_unicos(obj.get("regras", []), contexto=nome)
-            reg = manifest["bases"][nome]
-            reg.update({
-                "categoria": obj.get("categoria"),
-                "fonte_oficial": obj.get("fonte_oficial"),
-                "data_fonte": obj.get("data_fonte"),
-                "tipo_data_fonte": obj.get("tipo_data_fonte"),
-                "norma_principal": obj.get("norma_principal"),
-                "normas_complementares": obj.get("normas_complementares", []),
-            })
-            if categoria == "saneantes":
-                reg["norma_pos_regularizacao_geral"] = obj.get("norma_pos_regularizacao_geral")
-                reg["norma_revogada_relevante"] = obj.get("norma_revogada_relevante")
+    cosmeticos = registrar_arquivo(
+        manifest, "regularizacao_cosmeticos", CURADA / "regularizacao-cosmeticos.json",
+        "regularizacao-produtos-v1", lambda o: len(o.get("regras", [])))
+    if cosmeticos:
+        regras = validar_cosmeticos(cosmeticos)
+        reg = manifest["bases"]["regularizacao_cosmeticos"]
+        reg.update({
+            "categoria": cosmeticos.get("categoria"),
+            "fonte_oficial": cosmeticos.get("fonte_oficial"),
+            "data_fonte": cosmeticos.get("data_fonte"),
+            "tipo_data_fonte": cosmeticos.get("tipo_data_fonte"),
+            "norma_principal": cosmeticos.get("norma_principal"),
+            "normas_complementares": cosmeticos.get("normas_complementares", []),
+            "produtos_registro_obrigatorio": len([r for r in regras if r.get("regularizacao") == "registro"]),
+            "regra_demais_produtos": "notificacao",
+        })
+
+    saneantes = registrar_arquivo(
+        manifest, "regularizacao_saneantes", CURADA / "regularizacao-saneantes.json",
+        "regularizacao-produtos-v1", lambda o: len(o.get("regras", [])))
+    if saneantes:
+        validar_saneantes(saneantes)
+        reg = manifest["bases"]["regularizacao_saneantes"]
+        reg.update({
+            "categoria": saneantes.get("categoria"),
+            "fonte_oficial": saneantes.get("fonte_oficial"),
+            "data_fonte": saneantes.get("data_fonte"),
+            "tipo_data_fonte": saneantes.get("tipo_data_fonte"),
+            "norma_principal": saneantes.get("norma_principal"),
+            "normas_complementares": saneantes.get("normas_complementares", []),
+            "norma_pos_regularizacao_geral": saneantes.get("norma_pos_regularizacao_geral"),
+            "norma_revogada_relevante": saneantes.get("norma_revogada_relevante"),
+            "risco_1": "notificacao",
+            "risco_2": "registro",
+        })
 
     ctrl_manifest = DADOS / "controlados_portaria344" / "manifest.json"
     ctrl = registrar_arquivo(manifest, "controlados_portaria344", ctrl_manifest,
