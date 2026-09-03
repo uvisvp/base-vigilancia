@@ -95,7 +95,6 @@ def main():
             "arquivo": "dados/legislacao_v12/manifest.json"
         }
 
-    # Base completa da IN 75/2020: é obrigatória e independente do Anexo XV curado.
     in75_completa = registrar_arquivo(
         manifest,
         "in75_completa",
@@ -165,6 +164,18 @@ def main():
             if obj.get("categoria") != categoria:
                 raise RuntimeError(f"{nome}: categoria inesperada")
             validar_ids_unicos(obj.get("regras", []), contexto=nome)
+            reg = manifest["bases"][nome]
+            reg.update({
+                "categoria": obj.get("categoria"),
+                "fonte_oficial": obj.get("fonte_oficial"),
+                "data_fonte": obj.get("data_fonte"),
+                "tipo_data_fonte": obj.get("tipo_data_fonte"),
+                "norma_principal": obj.get("norma_principal"),
+                "normas_complementares": obj.get("normas_complementares", []),
+            })
+            if categoria == "saneantes":
+                reg["norma_pos_regularizacao_geral"] = obj.get("norma_pos_regularizacao_geral")
+                reg["norma_revogada_relevante"] = obj.get("norma_revogada_relevante")
 
     ctrl_manifest = DADOS / "controlados_portaria344" / "manifest.json"
     ctrl = registrar_arquivo(manifest, "controlados_portaria344", ctrl_manifest,
