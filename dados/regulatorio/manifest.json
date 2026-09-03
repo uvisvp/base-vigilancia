@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T14:33:12.399729+00:00",
+  "gerado_em": "2026-09-03T14:40:10.301990+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "1e6dee3216422bf46218a98b2b051bb8d847f998aacc60395d031f6a7cf71d6e",
+      "sha256": "6a45b1a06fc4e1a3e1ce784e0d3d22276b6bba135dc49601abb4d95442faaa6f",
       "normas": 2,
       "curados": 3
     },
@@ -82,7 +82,9 @@
           "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-revisa-e-consolida-normas-das-areas-de-cosmeticos-e-saneantes",
           "data_norma": "2024-08-28"
         }
-      ]
+      ],
+      "produtos_registro_obrigatorio": 9,
+      "regra_demais_produtos": "notificacao"
     },
     "regularizacao_saneantes": {
       "status": "ok",
@@ -108,7 +110,9 @@
         "data_norma": "2024-08-28",
         "nota": "Aplicar em conjunto com as regras específicas posteriores da RDC 1.040/2026 e da IN 468/2026 para as alterações vinculadas à RDC 989/2025 e à IN 394/2025."
       },
-      "norma_revogada_relevante": "RDC 59/2010"
+      "norma_revogada_relevante": "RDC 59/2010",
+      "risco_1": "notificacao",
+      "risco_2": "registro"
     },
     "controlados_portaria344": {
       "status": "ok",
