@@ -1,10 +1,10 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-03T13:18:33.115281+00:00",
+  "gerado_em": "2026-09-03T13:19:05.258387+00:00",
   "normas": {
     "IN 75-2020": {
       "arquivo": "in-75-2020.json",
-      "nos": 2159,
+      "nos": 2138,
       "sha256_texto": "8e37dd8c013001020eab269807e74c1a4837ec96044315aa8c5175de4a8753e5"
     }
   },
