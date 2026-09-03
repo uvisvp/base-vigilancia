@@ -1,0 +1,209 @@
+name: Atualizar MAPA - SIF
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-mapa-sif
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependências
+        run: python -m pip install --upgrade requests
+
+      - name: Gerar base MAPA - SIF
+        run: python scripts/gerar_mapa_sif.py
+
+      - name: Validar arquivos gerados
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          base = Path("dados/mapa/sif")
+          obrigatorios = [
+              base / "manifest.json",
+              base / "schema.json",
+              base / "fonte_principal.sha256",
+              base / "fonte_relatorio.sha256",
+          ]
+
+          if not base.exists():
+              raise SystemExit("ERRO: pasta dados/mapa/sif não existe.")
+
+          for p in obrigatorios:
+              if not p.exists():
+                  raise SystemExit(f"ERRO: arquivo obrigatório ausente: {p}")
+
+          manifest = json.loads((base / "manifest.json").read_text(encoding="utf-8"))
+          schema = json.loads((base / "schema.json").read_text(encoding="utf-8"))
+
+          total = int(manifest.get("quantidade_registros", 0))
+          if total <= 0:
+              raise SystemExit("ERRO: manifest informa zero registros.")
+
+          if manifest.get("versao_schema") != "1.0.0":
+              raise SystemExit(
+                  f"ERRO: schema inesperado: {manifest.get('versao_schema')}"
+              )
+
+          if manifest.get("identificador_principal") != "numero_sif":
+              raise SystemExit("ERRO: identificador principal deve ser numero_sif.")
+
+          if schema.get("preserva_multiplas_classificacoes") is not True:
+              raise SystemExit("ERRO: schema deve preservar múltiplas classificações.")
+
+          # Valida todos os JSONs.
+          for jf in base.rglob("*.json"):
+              try:
+                  json.loads(jf.read_text(encoding="utf-8"))
+              except Exception as e:
+                  raise SystemExit(f"ERRO: JSON inválido em {jf}: {e}")
+
+          # Fragmentos.
+          fragmentos = manifest.get("fragmentacao", {}).get("fragmentos", [])
+          if not fragmentos:
+              raise SystemExit("ERRO: manifest não contém fragmentacao.fragmentos.")
+
+          soma = 0
+          for frag in fragmentos:
+              arquivo = frag.get("arquivo")
+              quantidade = frag.get("quantidade")
+              if not arquivo or quantidade is None:
+                  raise SystemExit(f"ERRO: fragmento inválido: {frag}")
+
+              caminho = base / arquivo
+              if not caminho.exists():
+                  raise SystemExit(f"ERRO: fragmento ausente: {caminho}")
+
+              dados = json.loads(caminho.read_text(encoding="utf-8"))
+              if not isinstance(dados, list):
+                  raise SystemExit(f"ERRO: fragmento não é lista: {caminho}")
+
+              real = len(dados)
+              declarado = int(quantidade)
+              if real != declarado:
+                  raise SystemExit(
+                      f"ERRO: {caminho}: quantidade declarada={declarado}, real={real}"
+                  )
+              soma += real
+
+          if soma != total:
+              raise SystemExit(
+                  f"ERRO: soma dos fragmentos ({soma}) difere do manifest ({total})."
+              )
+
+          # Índices esperados.
+          indices_esperados = [
+              "indice_sif.json",
+              "indice_cnpj.json",
+              "indice_nome.json",
+              "indice_municipio_uf.json",
+              "indice_situacao.json",
+              "indice_area.json",
+              "indice_categoria.json",
+              "indice_classe.json",
+          ]
+
+          for nome in indices_esperados:
+              p = base / nome
+              if not p.exists():
+                  raise SystemExit(f"ERRO: índice esperado ausente: {p}")
+              obj = json.loads(p.read_text(encoding="utf-8"))
+              if not isinstance(obj, dict):
+                  raise SystemExit(f"ERRO: índice não é objeto JSON: {p}")
+
+          # Teste de referência de cada índice.
+          for nome in indices_esperados:
+              idx = json.loads((base / nome).read_text(encoding="utf-8"))
+              for refs in idx.values():
+                  if not isinstance(refs, list):
+                      raise SystemExit(f"ERRO: refs inválidas em {nome}")
+                  for ref in refs:
+                      if not (isinstance(ref, list) and len(ref) == 2):
+                          raise SystemExit(f"ERRO: referência inválida em {nome}: {ref}")
+                      lote, pos = ref
+                      if lote < 0 or lote >= len(fragmentos):
+                          raise SystemExit(f"ERRO: lote órfão em {nome}: {ref}")
+                      if pos < 0 or pos >= int(fragmentos[lote]["quantidade"]):
+                          raise SystemExit(f"ERRO: posição órfã em {nome}: {ref}")
+
+          # Teste estrutural em registro real.
+          primeiro_frag = base / fragmentos[0]["arquivo"]
+          dados = json.loads(primeiro_frag.read_text(encoding="utf-8"))
+          if not dados:
+              raise SystemExit("ERRO: primeiro fragmento vazio.")
+
+          reg = dados[0]
+          campos_necessarios = [
+              "numero_sif",
+              "numero_sif_norm",
+              "cnpj_original",
+              "cnpj_norm",
+              "razao_social",
+              "nome_fantasia",
+              "numero_processo",
+              "situacao",
+              "logradouro",
+              "bairro",
+              "cep",
+              "municipio",
+              "uf",
+              "area_categoria_origem",
+              "categoria_classe_origem",
+              "classificacoes",
+              "origem_principal",
+          ]
+          faltantes = [c for c in campos_necessarios if c not in reg]
+          if faltantes:
+              raise SystemExit(
+                  "ERRO: registro sem campos obrigatórios: " + ", ".join(faltantes)
+              )
+
+          if not isinstance(reg["classificacoes"], list):
+              raise SystemExit("ERRO: classificacoes deve ser lista.")
+
+          print(f"OK: {total} registros.")
+          print(f"OK: {len(fragmentos)} fragmentos; soma={soma}.")
+          print("OK: índices SIF/CNPJ/nome/município/situação/área/categoria/classe.")
+          print("OK: referências dos índices validadas.")
+          print("OK: múltiplas classificações preservadas.")
+          PY
+
+      - name: Verificar alterações da base
+        id: changes
+        shell: bash
+        run: |
+          if [ -n "$(git status --porcelain -- dados/mapa/sif)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Há alterações na base MAPA SIF."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sem alterações na base MAPA SIF."
+          fi
+
+      - name: Publicar atualização
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A dados/mapa/sif
+          git commit -m "Atualiza base MAPA SIF"
+          git push
