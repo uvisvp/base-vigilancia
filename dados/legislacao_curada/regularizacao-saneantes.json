@@ -2,12 +2,15 @@
   "schema": "regularizacao-produtos-v1",
   "categoria": "saneantes",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-correcoes-na-rdc-989-2025-e-aprimora-procedimentos-para-produtos-saneantes",
+  "data_fonte": "2026-08-28",
+  "tipo_data_fonte": "publicacao_pagina_oficial",
   "norma_principal": "RDC 989/2025",
   "normas_complementares": ["IN 394/2025", "RDC 1.040/2026", "IN 468/2026", "RDC 899/2024"],
   "norma_pos_regularizacao_geral": {
     "norma": "RDC 899/2024",
     "escopo": "Procedimentos gerais relacionados às alterações pós-regularização de produtos saneantes.",
     "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-revisa-e-consolida-normas-das-areas-de-cosmeticos-e-saneantes",
+    "data_norma": "2024-08-28",
     "nota": "Aplicar em conjunto com as regras específicas posteriores da RDC 1.040/2026 e da IN 468/2026 para as alterações vinculadas à RDC 989/2025 e à IN 394/2025."
   },
   "norma_revogada_relevante": "RDC 59/2010",
