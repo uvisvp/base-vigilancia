@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Gera a base operacional das listas mais aplicáveis da Portaria SVS/MS 344/1998.
 
-Escopo deliberado: A1, A2, A3, B1, B2 e C1, C2, C3, C4, C5.
+Escopo deliberado: A1, A2, A3, B1, B2 e C1, C2, C3, C5.
 As demais listas são reconhecidas apenas como limites de seção e não são publicadas.
 """
 from __future__ import annotations
@@ -15,11 +15,11 @@ BASE=Path(__file__).resolve().parent.parent
 SAIDA=BASE/'dados'/'controlados_portaria344'
 URL_FONTE=('https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&codTipo=&cod_menu=1696&cod_modulo=134&desItem=&desItemFim=&numeroAto=00001036&orgao=RDC%2FDC%2FANVISA%2FMS&pesquisa=true&seqAto=000&tipo=RDC&valorAno=2026')
 NORMA_FONTE='RDC Anvisa 1.036/2026'; NORMA_BASE='Portaria SVS/MS 344/1998 - Anexo I'
-LISTAS_ESCOPO=('A1','A2','A3','B1','B2','C1','C2','C3','C4','C5')
+LISTAS_ESCOPO=('A1','A2','A3','B1','B2','C1','C2','C3','C5')
 LISTAS_ESPERADAS=set(LISTAS_ESCOPO)
 RE_TAG=re.compile(r'<[^>]+>')
 # Reconhece QUALQUER cabeçalho de lista para encerrar corretamente a anterior,
-# mas só abre/coleta as dez listas do escopo operacional.
+# mas só abre/coleta as listas do escopo operacional.
 RE_QUALQUER_LISTA=re.compile(r'^LISTA\s*[-–—]?\s*([A-F](?:\d)?)\b(?:\s*[-–—:]\s*(.*))?$',re.I)
 RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*(\S.*)$')
 RE_ADENDO=re.compile(r'^ADENDO\s*:?\s*$',re.I)
