@@ -1,0 +1,50 @@
+{
+  "versao_schema": "1.0.1",
+  "fonte_principal_campos": [
+    "CPF_CNPJ",
+    "RAZAO_SOCIAL",
+    "NOME_FANTASIA",
+    "NR_SIF",
+    "DATA_RESERVA",
+    "DT_REGISTRO",
+    "NUMERO_PROCESSO",
+    "SITUACAO",
+    "LOGRADOURO",
+    "BAIRRO",
+    "CEP",
+    "MUNICIPIO",
+    "UF",
+    "TELEFONE",
+    "EMAIL",
+    "AREA_CATEGORIA",
+    "CATEGORIA_CLASSE",
+    "DATA_OCORRENCIA",
+    "DESCRICAO_OCORRENCIA"
+  ],
+  "fonte_complementar_campos": [
+    "AREA",
+    "CATEGORIA",
+    "CLASSE",
+    "SIF",
+    "RAZAO_SOCIAL",
+    "LOGRADOURO",
+    "MUNICIPIO",
+    "UF"
+  ],
+  "identificador_principal": "numero_sif",
+  "campo_identificador_fiscal_origem": "CPF_CNPJ",
+  "relacionamento_fontes": "NR_SIF da fonte principal ↔ SIF do relatório complementar",
+  "preserva_multiplas_classificacoes": true,
+  "campos_normalizados": [
+    "numero_sif_norm",
+    "cnpj_norm",
+    "razao_social_norm",
+    "nome_fantasia_norm",
+    "municipio_norm",
+    "situacao_norm",
+    "classificacoes[].area_norm",
+    "classificacoes[].categoria_norm",
+    "classificacoes[].classe_norm"
+  ],
+  "regra": "Valores oficiais são preservados. A fonte complementar enriquece classificação por SIF sem sobrescrever os campos da fonte cadastral principal."
+}

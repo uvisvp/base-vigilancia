@@ -1,0 +1,107 @@
+{
+  "id": "mapa_sif",
+  "nome_base": "MAPA — SIF / DIPOA — Estabelecimentos de Produtos de Origem Animal",
+  "orgao": "Ministério da Agricultura e Pecuária — MAPA / DIPOA",
+  "fontes": [
+    {
+      "nome": "Estabelecimentos Registrados no SIF",
+      "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/97277e92-264a-4dc0-9aea-f87b8ea93798/download/sigsifestabelecimentosregistradosnosif.csv",
+      "arquivo_origem": "sigsifestabelecimentosregistradosnosif.csv",
+      "data_fonte": "Wed, 02 Sep 2026 06:02:11 GMT",
+      "sha256": "6a9b944ac34f9872b00b32338d5b5f4969c724167d6e2006ec2f71b372538c5a",
+      "encoding_detectado": "utf-8-sig",
+      "separador_detectado": ";",
+      "quantidade_registros": 24174
+    },
+    {
+      "nome": "Relatório de Estabelecimentos",
+      "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/7d02af92-e3cf-4ae4-af8a-0dad334ffdfa/download/sigsifrelatorioestabelecimentos.csv",
+      "arquivo_origem": "sigsifrelatorioestabelecimentos.csv",
+      "data_fonte": "Wed, 02 Sep 2026 06:00:12 GMT",
+      "sha256": "1ad31078aa28573e47544510c31b8c9b819922c7615bb6b03179e7503a142efe",
+      "encoding_detectado": "utf-8-sig",
+      "separador_detectado": ";",
+      "quantidade_registros": 3318
+    }
+  ],
+  "data_download": "2026-09-03T00:15:13Z",
+  "data_processamento": "2026-09-03T00:15:13Z",
+  "quantidade_registros": 24174,
+  "versao_schema": "1.0.1",
+  "sha256_conjunto": "7bd4174158b8e514c71b20f48b59cf90999d2075827892b03d19af8e991aa5f5",
+  "identificador_principal": "numero_sif",
+  "campo_identificador_fiscal_origem": "CPF_CNPJ",
+  "duplicados_numero_sif_na_fonte_principal": 1025,
+  "fragmentacao": {
+    "tamanho_lote": 5000,
+    "fragmentos": [
+      {
+        "arquivo": "lotes/0000.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0001.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0002.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0003.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0004.json",
+        "quantidade": 4174
+      }
+    ]
+  },
+  "indices": {
+    "sif": {
+      "arquivo": "indice_sif.json",
+      "chaves": 3147
+    },
+    "cnpj": {
+      "arquivo": "indice_cnpj.json",
+      "chaves": 2880
+    },
+    "nome": {
+      "arquivo": "indice_nome.json",
+      "chaves": 3742
+    },
+    "municipio_uf": {
+      "arquivo": "indice_municipio_uf.json",
+      "chaves": 1493
+    },
+    "situacao": {
+      "arquivo": "indice_situacao.json",
+      "chaves": 1
+    },
+    "area": {
+      "arquivo": "indice_area.json",
+      "chaves": 7
+    },
+    "categoria": {
+      "arquivo": "indice_categoria.json",
+      "chaves": 18
+    },
+    "classe": {
+      "arquivo": "indice_classe.json",
+      "chaves": 69
+    }
+  },
+  "estatisticas": {
+    "fonte_principal_registros": 24174,
+    "fonte_relatorio_registros": 3318,
+    "relatorio_sem_sif": 0,
+    "principal_sem_sif": 0,
+    "cnpj_valido": 23881,
+    "cnpj_invalido": 0,
+    "sem_cnpj": 0,
+    "sif_com_classificacao_complementar": 24138,
+    "sif_sem_classificacao_complementar": 36,
+    "sif_com_multiplas_classificacoes": 3326
+  },
+  "observacao": "Base cadastral principal enriquecida com todas as classificações Área/Categoria/Classe disponíveis no relatório complementar por SIF. Resultado vazio significa apenas 'não localizado nesta base'."
+}
