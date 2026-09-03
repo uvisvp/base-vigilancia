@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T14:30:37.744408+00:00",
+  "gerado_em": "2026-09-03T14:32:08.585648+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "9a585709e2ecc7475148b5d78c7ed55aef5e2875166b9b4311365d2eff9ce3c7",
+      "sha256": "07f0f9ce682ad102895f7f308b10b80f70e9b175aefa3df4a25f072fb7b41570",
       "normas": 2,
       "curados": 3
     },
@@ -62,7 +62,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-cosmeticos.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "9ae5147d6fcf2eb4ddbcafd273141e7ea35981fdeac60d4b48ae62aca40194fb",
+      "sha256": "5a24b01e5bbcbd4c16fa5727ffef04ba90d59669f07b16233169c7cc3d91a84c",
       "registros": 10
     },
     "regularizacao_saneantes": {
