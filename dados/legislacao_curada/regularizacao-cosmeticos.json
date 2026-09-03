@@ -1,0 +1,19 @@
+{
+  "schema": "regularizacao-produtos-v1",
+  "categoria": "cosmeticos",
+  "fonte_oficial": "https://www.gov.br/anvisa/pt-br/comunicacao/campanhas/estetica/consulta-de-cosmeticos",
+  "norma_principal": "RDC 907/2024",
+  "observacao": "Base operacional para enquadramento da forma de regularizacao. O texto literal dos dispositivos permanece no banco legislativo hierarquico.",
+  "regras": [
+    {"id":"cosmeticos::registro::bronzeador","produto":"Bronzeador","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::gel-antisseptico-maos","produto":"Gel antisséptico para as mãos","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::alisar-cabelos","produto":"Produto para alisar os cabelos","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::alisar-tingir-cabelos","produto":"Produto para alisar e tingir os cabelos","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::ondular-cabelos","produto":"Produto para ondular os cabelos","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::protetor-solar","produto":"Protetor solar","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::protetor-solar-infantil","produto":"Protetor solar infantil","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::repelente-insetos","produto":"Repelente de insetos","regularizacao":"registro"},
+    {"id":"cosmeticos::registro::repelente-insetos-infantil","produto":"Repelente de insetos infantil","regularizacao":"registro"},
+    {"id":"cosmeticos::notificacao::demais","produto":"Demais produtos de higiene pessoal, cosméticos e perfumes fora da lista de registro","regularizacao":"notificacao","nota":"Isentos de registro; sujeitos a notificação, observadas exceções e enquadramentos específicos da legislação vigente."}
+  ]
+}
