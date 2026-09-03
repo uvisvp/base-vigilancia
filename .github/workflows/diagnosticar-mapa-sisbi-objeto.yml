@@ -1,0 +1,92 @@
+name: Diagnosticar objeto MAPA e-SISBI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar-objeto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Executar diagnóstico do objeto Gestão dos Produtos
+        run: |
+          python scripts/inspecionar_mapa_sisbi_objeto.py
+
+      - name: Validar arquivos gerados
+        run: |
+          test -f diagnosticos/mapa_sisbi/resumo_objeto.json
+          test -f diagnosticos/mapa_sisbi/objeto_produtos.json
+          test -f diagnosticos/mapa_sisbi/layout_produtos.json
+          test -f diagnosticos/mapa_sisbi/cabecalhos_produtos.json
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          pasta = Path("diagnosticos/mapa_sisbi")
+
+          arquivos = [
+              "resumo_objeto.json",
+              "objeto_produtos.json",
+              "layout_produtos.json",
+              "cabecalhos_produtos.json",
+          ]
+
+          for nome in arquivos:
+              caminho = pasta / nome
+              with caminho.open("r", encoding="utf-8") as f:
+                  json.load(f)
+
+          resumo = json.loads(
+              (pasta / "resumo_objeto.json").read_text(encoding="utf-8")
+          )
+
+          status = resumo.get("status")
+
+          if status != "diagnostico_objeto_concluido":
+              raise SystemExit(
+                  f"Diagnóstico do objeto não concluído. Status: {status}"
+              )
+
+          print("Diagnóstico do objeto validado.")
+          print("App ID:", resumo.get("app_id"))
+          print("Objeto:", resumo.get("objeto_id"))
+          print("Tipo:", resumo.get("qType"))
+          print("Título:", resumo.get("titulo"))
+          print("Colunas:", resumo.get("colunas_qcx"))
+          print("Linhas:", resumo.get("linhas_qcy"))
+          print("Dimensões:", resumo.get("quantidade_dimensoes"))
+          print("Medidas:", resumo.get("quantidade_medidas"))
+          print("Cabeçalhos:")
+          for cab in resumo.get("cabecalhos") or []:
+              print(" -", cab)
+          PY
+
+      - name: Commitar diagnóstico se houver alteração
+        run: |
+          if [ -n "$(git status --porcelain -- diagnosticos/mapa_sisbi)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A diagnosticos/mapa_sisbi
+            git commit -m "Diagnostica objeto Gestão dos Produtos do e-SISBI"
+            git push
+          else
+            echo "Sem alterações no diagnóstico do objeto e-SISBI."
+          fi
