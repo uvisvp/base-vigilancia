@@ -14,11 +14,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: atualizar-manifesto-regulatorio
+  cancel-in-progress: false
+
 jobs:
   atualizar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -51,10 +57,32 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add textos/ dados/legislacao_v12/ dados/regulatorio/
-          if git diff --cached --quiet; then
-            echo 'Sem alterações.'
-          else
+
+          for tentativa in 1 2 3; do
+            echo "Tentativa $tentativa de 3"
+            git fetch origin main
+
+            if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+              echo 'main mudou durante a execução; regenerando sobre a versão mais recente'
+              git reset --hard origin/main
+              python scripts/estruturar_legislacao.py --autoteste
+              python scripts/baixar_in75_2020.py
+              python scripts/estruturar_legislacao.py
+              python scripts/gerar_manifesto_regulatorio.py
+            fi
+
+            git add textos/ dados/legislacao_v12/ dados/regulatorio/
+            if git diff --cached --quiet; then
+              echo 'Sem alterações após sincronização.'
+              exit 0
+            fi
+
             git commit -m 'Atualiza IN 75/2020 e manifesto regulatório'
-            git push
-          fi
+            if git push origin HEAD:main; then
+              echo 'IN 75/2020 atualizada com sucesso.'
+              exit 0
+            fi
+          done
+
+          echo 'Falha após 3 tentativas por concorrência de commits.'
+          exit 1
