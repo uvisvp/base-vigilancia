@@ -34,22 +34,54 @@ jobs:
         run: python scripts/baixar_in75_2020.py
       - name: Estruturar legislação
         run: python scripts/estruturar_legislacao.py
-      - name: Validar anexos estruturados
+      - name: Validar conteúdo estruturado
         run: |
           python - <<'PY'
           import json, pathlib
           p=pathlib.Path('dados/legislacao_v12/normas/in-75-2020.json')
-          if not p.exists(): raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
+          if not p.exists():
+              raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
           d=json.loads(p.read_text(encoding='utf-8'))
-          anexos={n.get('anexo') for n in d.get('nos',[]) if n.get('tipo')=='anexo'}
+          nos=d.get('nos',[])
+          anexos_nos=[n for n in nos if n.get('tipo')=='anexo']
+          anexos={n.get('anexo') for n in anexos_nos}
           esp={'I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII'}
           falta=esp-anexos
           extra=anexos-esp
-          if falta: raise SystemExit('Anexos não estruturados: '+', '.join(sorted(falta)))
-          if extra: raise SystemExit('Anexos inesperados: '+', '.join(sorted(extra)))
+          if falta:
+              raise SystemExit('Anexos não estruturados: '+', '.join(sorted(falta)))
+          if extra:
+              raise SystemExit('Anexos inesperados: '+', '.join(sorted(extra)))
+          if len(anexos_nos) != 23:
+              raise SystemExit(f'Quantidade de nós de anexo incorreta: {len(anexos_nos)}')
+
           rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
-          if rep: raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
-          print('OK: 23 anexos estruturados sem colisão de IDs')
+          if rep:
+              raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
+
+          tabelas=[n for n in nos if n.get('tipo')=='tabela']
+          linhas=[n for n in nos if n.get('tipo')=='linha_tabela']
+          artigos=[n for n in nos if n.get('tipo')=='artigo']
+          itens=[n for n in nos if n.get('tipo')=='item']
+          textos_linhas={n.get('texto') for n in linhas}
+          artigos_em_tabela=[a for a in artigos if a.get('texto') in textos_linhas]
+          if artigos_em_tabela:
+              raise SystemExit('Artigo duplicado como linha de tabela: '+str([a.get('id') for a in artigos_em_tabela[:10]]))
+
+          for alvo in ('I','II','XV','XXIII'):
+              raiz=[n for n in anexos_nos if n.get('anexo')==alvo]
+              if len(raiz)!=1:
+                  raise SystemExit(f'ANEXO {alvo}: esperado 1 nó raiz, encontrado {len(raiz)}')
+              filhos=[n for n in nos if n.get('anexo')==alvo and n.get('tipo')!='anexo']
+              if not filhos:
+                  raise SystemExit(f'ANEXO {alvo}: sem conteúdo estruturado')
+              tipos={}
+              for n in filhos:
+                  tipos[n.get('tipo')]=tipos.get(n.get('tipo'),0)+1
+              print(f"ANEXO {alvo}: título={raiz[0].get('texto','')!r}; nós={len(filhos)}; tipos={tipos}")
+
+          print(f'TOTAL: nós={len(nos)}; anexos={len(anexos_nos)}; tabelas={len(tabelas)}; linhas_tabela={len(linhas)}; artigos={len(artigos)}; itens={len(itens)}')
+          print('OK: 23 anexos, conteúdo presente e nenhum artigo duplicado como linha de tabela')
           PY
       - name: Atualizar manifesto regulatório
         run: python scripts/gerar_manifesto_regulatorio.py
