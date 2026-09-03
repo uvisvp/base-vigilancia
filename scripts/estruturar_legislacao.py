@@ -10,7 +10,8 @@ from pathlib import Path
 BASE=Path(__file__).resolve().parent.parent
 TEXTOS=BASE/'textos'; CURADA=BASE/'dados'/'legislacao_curada'; SAIDA=BASE/'dados'/'legislacao_v12'
 RE_ANEXO=re.compile(r"^\s*ANEXO\s+([IVXLCDM]+|\d+[A-Z]?)(?=\s|[-–—:]|$)(?:\s*[-–—:]\s*(.*)|\s+(.*))?$",re.I)
-RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
+# Aceita artigos simples e artigos acrescidos, como Art. 50-A, sem confundi-los com Art. 50.
+RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+(?:-[A-Z]|[A-Z])?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PARAGRAFO=re.compile(r"^\s*§\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PU=re.compile(r"^\s*Par[aá]grafo\s+[uú]nico\.?\s*(.*)$",re.I)
 RE_INCISO=re.compile(r"^\s*([IVXLCDM]+)\s*[-–—]\s+(.+)$")
@@ -151,10 +152,11 @@ def processar(textos=TEXTOS,saida=SAIDA):
     print(f"OK: {len(documentos)} norma(s); {manifest['curados']} registro(s) curado(s)."); return manifest
 
 def autoteste():
-    amostra='''Art. 1º Regra.\nI - primeiro.\nArt. 2º Outra regra.\nI - outro inciso I.\n§ 1º Parágrafo.\nI - inciso do parágrafo.\nArt. 2º Redação adicional.\nANEXO II\nVDR oficial\n[[TABELA_INICIO]]\nArt. 99 célula, não dispositivo\n[[TABELA_FIM]]\n'''
+    amostra='''Art. 1º Regra.\nI - primeiro.\nArt. 2º Outra regra.\nI - outro inciso I.\n§ 1º Parágrafo.\nI - inciso do parágrafo.\nArt. 2º Redação adicional.\nArt. 50-A Dispositivo acrescido.\nANEXO II\nVDR oficial\n[[TABELA_INICIO]]\nArt. 99 célula, não dispositivo\n[[TABELA_FIM]]\n'''
     d=estruturar_texto('Norma teste',amostra); ids=[n['id'] for n in d['nos'] if n.get('estrutural',True)]
     assert len(ids)==len(set(ids)),ids
     assert len([n for n in d['nos'] if n['tipo']=='artigo' and n['numero']=='2'])==2
+    assert any(n['tipo']=='artigo' and n['numero']=='50-A' and n['id'].endswith('artigo::50-a') for n in d['nos'])
     assert d['validacao']['artigos_repetidos_na_fonte']=={'sem-anexo:2':2}
     incisos=[n for n in d['nos'] if n['tipo']=='inciso']; assert len({n['id'] for n in incisos})==len(incisos)
     assert not any(n['tipo']=='artigo' and n['numero']=='99' for n in d['nos'])
