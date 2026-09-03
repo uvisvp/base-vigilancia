@@ -1,0 +1,83 @@
+name: Diagnosticar MAPA e-SISBI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Executar diagnóstico e-SISBI V2
+        run: |
+          python scripts/inspecionar_mapa_sisbi.py
+
+      - name: Validar arquivos gerados
+        run: |
+          test -f diagnosticos/mapa_sisbi/resumo.json
+          test -f diagnosticos/mapa_sisbi/assets.json
+          test -f diagnosticos/mapa_sisbi/qlik.json
+          test -f diagnosticos/mapa_sisbi/referencias_produtos.json
+          test -f diagnosticos/mapa_sisbi/amostra_textual.json
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          pasta = Path("diagnosticos/mapa_sisbi")
+          arquivos = [
+              "resumo.json",
+              "assets.json",
+              "qlik.json",
+              "referencias_produtos.json",
+              "amostra_textual.json",
+          ]
+
+          for nome in arquivos:
+              caminho = pasta / nome
+              with caminho.open("r", encoding="utf-8") as f:
+                  json.load(f)
+
+          resumo = json.loads((pasta / "resumo.json").read_text(encoding="utf-8"))
+          status = resumo.get("status", "")
+
+          if status != "diagnostico_qlik_concluido":
+              raise SystemExit(
+                  f"Diagnóstico Qlik não concluído com sucesso. Status: {status}"
+              )
+
+          print("Diagnóstico Qlik validado.")
+          print("Status:", status)
+          print("Painel:", resumo.get("painel"))
+          print("Assets:", resumo.get("quantidade_assets"))
+          print("Assets inspecionados:", resumo.get("assets_inspecionados"))
+          print("Fontes analisadas:", resumo.get("fontes_analisadas"))
+          print("App IDs:", resumo.get("app_ids_encontrados"))
+          print("Objetos getObject:", resumo.get("objetos_getObject"))
+          print("IDs Qlik:", resumo.get("ids_qlik_encontrados"))
+          print("Campos Qlik:", resumo.get("campos_qlik_encontrados"))
+          print("Referências a produtos:", resumo.get("referencias_produtos"))
+          PY
+
+      - name: Commitar diagnóstico se houver alteração
+        run: |
+          if [ -n "$(git status --porcelain -- diagnosticos/mapa_sisbi)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A diagnosticos/mapa_sisbi
+            git commit -m "Atualiza diagnóstico Qlik do MAPA e-SISBI"
+            git push
+          else
+            echo "Sem alterações no diagnóstico MAPA e-SISBI."
+          fi
