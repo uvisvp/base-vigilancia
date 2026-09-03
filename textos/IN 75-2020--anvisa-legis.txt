@@ -50,6 +50,7 @@ ANTONIO BARRA TORRES
 Diretor-Presidente Substituto
 ANEXO I
 LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL É VOLUNTÁRIA, DESDE QUE ATENDIDOS OS REQUISITOS ESTABELECIDOS NA RESOLUÇÃO - RDC Nº 429, de 2020.
+[[TABELA_INICIO]]
 1. Alimentos em embalagens cuja superfície visível para rotulagem seja menor ou igual a 100 cm2.
 2. Alimentos embalados nos pontos de venda a pedido do consumidor.
 3. Alimentos embalados que sejam preparados ou fracionados e comercializados no próprio estabelecimento.
@@ -59,8 +60,10 @@ LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL É VO
 7. Vinagres, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
 8. Frutas, hortaliças, leguminosas, tubérculos, cereais, nozes, castanhas, sementes e cogumelos, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
 9. Carnes e pescados embalados, refrigerados ou congelados, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
+[[TABELA_FIM]]
 ANEXO II
 VDR PARA FINS DE ROTULAGEM NUTRICIONAL DOS ALIMENTOS EM GERAL.
+[[TABELA_INICIO]]
 Constituintes
 VDR (unidade)
 Valor energético
@@ -147,8 +150,10 @@ Zinco
 11 mg
 Colina
 550 mg
+[[TABELA_FIM]]
 ANEXO III
 REGRAS PARA ARREDONDAMENTO E PARA EXPRESSÃO DAS QUANTIDADES NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Faixa das quantidades nutricionais
 Regras para arredondamento das quantidades nutricionais
 Forma de expressão das quantidades nutricionais
@@ -170,8 +175,10 @@ Quando a terceira casa decimal for menor que 5, manter a segunda casa decimal in
 Quando a terceira casa decimal for maior ou igual a 5, arredondar a segunda casa decimal para cima em 1 unidade.
 Quando a segunda casa decimal for 0, declarar os valores com um dígito decimal.
 Para os demais casos, declarar os valores com dois dígitos decimais.
+[[TABELA_FIM]]
 ANEXO IV
 QUANTIDADES NÃO SIGNIFICATIVAS DE VALOR ENERGÉTICO E DE NUTRIENTES E SUA FORMA DE EXPRESSÃO NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Constituintes
 Quantidades não significativas
 Condições das quantidades não significativas no produto
@@ -289,9 +296,11 @@ Suplementos alimentares com quantidades não significativas por porção.
 Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
 No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
 0
+[[TABELA_FIM]]
 ANEXO V
 TAMANHO DAS PORÇÕES DOS ALIMENTOS PARA FINS DE DECLARAÇÃO DA ROTULAGEM NUTRICIONAL.
 RET., 13/10/2022 - Seção 1
+[[TABELA_INICIO]]
 Grupo I: Produtos de panificação, cereais, leguminosas, raízes, tubérculos e seus derivados (Valor energético médio da porção é 150 kcal).
 Produtos
 Tamanho das porções
@@ -738,8 +747,10 @@ Colheres de chá
 Bebidas alcoólicas
 Quantidade equivalente a 10 g de etanol
 Unidades ou copos
+[[TABELA_FIM]]
 ANEXO VI
 REGRAS PARA ARREDONDAMENTO E PARA EXPRESSÃO DO NÚMERO DE PORÇÕES NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Números de porções na embalagem
 Regras para arredondamento das porções
 Forma de expressão das porções
@@ -750,8 +761,10 @@ Embalagens com mais de 2 porções não inteiras.
 Quando a primeira casa decimal for menor que 5, manter o número inteiro.
 Quando a primeira casa decimal for maior ou igual 5, arredondar o número inteiro para cima em 1 unidade.
 Porções por embalagem: Cerca de (números inteiros).
+[[TABELA_FIM]]
 ANEXO VII
 TIPOS DE UTENSÍLIOS DOMÉSTICOS E SUAS CAPACIDADES PARA DECLARAÇÃO DA MEDIDA CASEIRA DOS ALIMENTOS NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Tipos de utensílios domésticos
 Capacidades
 Xícara de chá
@@ -766,8 +779,10 @@ Prato raso
 22 cm de diâmetro
 Prato fundo
 250 cm 3 ou ml
+[[TABELA_FIM]]
 ANEXO VIII
 VDR PARA FINS DE ROTULAGEM NUTRICIONAL DOS ALIMENTOS PARA FINS ESPECIAIS NÃO CONTEMPLADOS NO § 6º DO ART. 8º DA RESOLUÇÃO - RDC Nº 429, DE 2020, QUE TENHAM INDICAÇÃO PARA GRUPOS POPULACIONAIS ESPECÍFICOS NO SEU RÓTULO E DOS SUPLEMENTOS ALIMENTARES.
+[[TABELA_INICIO]]
 Constituintes
 Unidades
 0 a 6 meses
@@ -1198,6 +1213,7 @@ mg
 550
 450
 550
+[[TABELA_FIM]]
 ANEXO IX
 MODELOS PARA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
 RET., 13/10/2022 - Seção 1
@@ -1208,6 +1224,7 @@ RET., 13/10/2022 - Seção 1
 5. Modelo agregado:
 ANEXO X
 REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA DECLARAÇÃO SIMPLIFICADA DA INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 1. DECLARAÇÃO SIMPLIFICADA DE VALOR ENERGÉTICO E NUTRIENTES, EXCETO MINERAIS E VITAMINAS
 Parâmetro
 Requisito para formatação
@@ -1269,8 +1286,10 @@ Tipo de fonte: mesmo tipo usado para declaração das demais informações.
 Estilo: regular, combinação de caixa alta e baixa.
 Corpo: 6 pt.
 Alinhamento: à esquerda.
+[[TABELA_FIM]]
 ANEXO XI
 NOMES DOS CONSTITUINTES OU SEUS NOMES ALTERNATIVOS E AS RESPECTIVAS ABREVIAÇÕES, ORDEM, INDENTAÇÃO E UNIDADES DE MEDIDA PARA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Nomes e ordem dos constituintes
 Nomes alternativos
 Abreviações
@@ -1491,8 +1510,10 @@ mg
 Nomes das substâncias bioativas específicas
 Não se aplica
 g, mg ou µg
+[[TABELA_FIM]]
 ANEXO XII
 REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Parâmetros de formatação
 Requisitos para formatação
 Altura das linhas na grade interna
@@ -1593,12 +1614,14 @@ Tamanho da fonte: 6 pt.
 Alinhamento horizontal: à esquerda.
 Alinhamento vertical: superior
 RET., 13/10/2022 - Seção 1
+[[TABELA_FIM]]
 ANEXO XIII
 MODELO LINEAR DE DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
 RET., 17/05/2024 - Seção 1
 RET., 13/10/2022 - Seção 1
 ANEXO XIV
 REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DO MODELO LINEAR DE DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+[[TABELA_INICIO]]
 Parâmetros de formatação
 Requisitos para formatação
 Tipos de fonte
@@ -1641,8 +1664,10 @@ Tipografia da nota de rodapé: "**No alimento pronto para o consumo."
 Estilo: regular, combinação de caixa alta e baixa.
 Tamanho da fonte: 6 pt.
 Alinhamento horizontal: à esquerda.
+[[TABELA_FIM]]
 ANEXO XV
 LIMITES DE AÇÚCARES ADICIONADOS, GORDURAS SATURADAS E SÓDIO PARA FINS DE DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
+[[TABELA_INICIO]]
 Nutrientes
 Alimentos sólidos ou semissólidos
 Alimentos líquidos
@@ -1655,8 +1680,10 @@ Quantidade maior ou igual a 3 g de gorduras saturadas por 100 ml do alimento.
 Sódio
 Quantidade maior ou igual a 600 mg de sódio por 100 g do alimento.
 Quantidade maior ou igual a 300 mg de sódio por 100 ml do alimento.
+[[TABELA_FIM]]
 ANEXO XVI
 LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL É VEDADA.
+[[TABELA_INICIO]]
 1. Frutas, hortaliças, leguminosas, tubérculos, cereais, nozes, castanhas, sementes e cogumelos, desde que não sejam adicionados de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
 2. Farinhas, desde que não sejam adicionadas de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
 3. Carnes e pescados embalados, refrigerados ou congelados, desde que não sejam adicionados de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
@@ -1676,6 +1703,7 @@ LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL É VEDADA.
 17. Produtos destinados exclusivamente aos serviços de alimentação.
 18. Aditivos alimentares e coadjuvantes de tecnologia.
 19. Fórmulas dietoterápicas para erros inatos do metabolismo. ( Incluído pela Resolução - RDC nº 460, de 21/12/2020 )
+[[TABELA_FIM]]
 ANEXO XVII
 MODELOS PARA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
 1. Modelos que devem ser usados em alimentos cujas quantidades de açúcares adicionados, gorduras saturadas e sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
@@ -1687,6 +1715,7 @@ MODELOS PARA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
 7. Modelos que devem ser usados em alimentos cujas quantidades de sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
 ANEXO XVIII
 REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
+[[TABELA_INICIO]]
 1. Posicionamento e relações de tamanho, espessura e distância
 Medidas de referência
 Y: equivale a altura da letra "A", no texto "ALTO EM".
@@ -1764,8 +1793,10 @@ Percentual de ocupação
 2%
 3%
 4%
+[[TABELA_FIM]]
 ANEXO XIX
 TERMOS AUTORIZADOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS.
+[[TABELA_INICIO]]
 Atributos nutricionais
 Termos autorizados para alegações nutricionais
 Baixo
@@ -1784,8 +1815,10 @@ Reduzido
 reduzido em..., menos..., menor teor de..., light em...
 Aumentado
 aumentado em..., mais...
+[[TABELA_FIM]]
 ANEXO XX
 CRITÉRIOS DE COMPOSIÇÃO E DE ROTULAGEM QUE DEVEM SER ATENDIDOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS.
+[[TABELA_INICIO]]
 1. Valor energético
 Atributos nutricionais
 Critérios de composição
@@ -1894,6 +1927,8 @@ Redução mínima de 25%; e
 O alimento de referência não atende aos critérios para o atributo nutricional baixo em gorduras saturadas.
 A redução não deve resultar em um aumento das quantidades de ácidos graxos trans; e
 A energia proveniente de gorduras saturadas não representa mais de 10% do valor energético total do alimento.
+[[TABELA_FIM]]
+[[TABELA_INICIO]]
 6. Gorduras trans
 Atributos nutricionais
 Critérios de composição
@@ -2033,8 +2068,10 @@ Mínimo de 30% do VDR da respectiva vitamina ou mineral definido no Anexo II des
 Aumentado
 Aumento mínimo de 25%; e
 O alimento de referência atende aos critérios para o atributo nutricional fonte da vitamina ou mineral objeto da alegação.
+[[TABELA_FIM]]
 ANEXO XXI
 PERFIL DE AMINOÁCIDOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS DE PROTEÍNA.
+[[TABELA_INICIO]]
 Aminoácidos
 Composição de Referência (miligrama de aminoácido por grama de proteína).
 Histidina
@@ -2055,8 +2092,10 @@ Triptofano
 6
 Valina
 39
+[[TABELA_FIM]]
 ANEXO XXII
 FATORES DE CONVERSÃO PARA DETERMINAÇÃO DO VALOR ENERGÉTICO DOS ALIMENTOS.
+[[TABELA_INICIO]]
 Nutrientes
 Fator de conversão (kcal/g)
 Carboidratos, exceto poliois
@@ -2089,8 +2128,10 @@ Fibras alimentares solúveis, exceto polidextrose
 2
 Polidextrose
 1
+[[TABELA_FIM]]
 ANEXO XXIII
 FATORES DE CONVERSÃO DE NUTRIENTES PARA DETERMINAÇÃO DO VALOR NUTRICIONAL DOS ALIMENTOS.
+[[TABELA_INICIO]]
 Nutrientes
 Fatores de conversão
 Vitamina A
@@ -2109,6 +2150,7 @@ Quando determinado pelo método Kjeldahl, aplicar a fórmula "Proteína = conte�
 (2) 5,75, para outras proteínas vegetais;
 (3) 6,38, para proteínas lácteas; e
 (4) 6,25, para proteínas da carne ou misturas de proteínas.
+[[TABELA_FIM]]
 PUB D.O.U., 09/10/2020 - Seção 1
 Este texto não substitui a Publicação Oficial.
 Carregando...
