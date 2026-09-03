@@ -1,0 +1,53 @@
+name: Atualizar listas da Portaria 344/98
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Segunda-feira às 06:20 no horário de Brasília
+    - cron: "20 9 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-controlados-portaria344
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Autoteste do gerador
+        run: python scripts/gerar_listas_controlados.py --autoteste
+
+      - name: Gerar listas vigentes
+        run: python scripts/gerar_listas_controlados.py
+
+      - name: Verificar alterações
+        id: changes
+        run: |
+          git add dados/controlados_portaria344/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Salvar atualização
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza listas da Portaria 344/98"
+          git pull --rebase origin main
+          git push origin HEAD:main
