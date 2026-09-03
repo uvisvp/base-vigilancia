@@ -3,9 +3,15 @@
   "categoria": "saneantes",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-correcoes-na-rdc-989-2025-e-aprimora-procedimentos-para-produtos-saneantes",
   "norma_principal": "RDC 989/2025",
-  "normas_complementares": ["IN 394/2025", "RDC 1.040/2026", "IN 468/2026"],
+  "normas_complementares": ["IN 394/2025", "RDC 1.040/2026", "IN 468/2026", "RDC 899/2024"],
+  "norma_pos_regularizacao_geral": {
+    "norma": "RDC 899/2024",
+    "escopo": "Procedimentos gerais relacionados às alterações pós-regularização de produtos saneantes.",
+    "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-revisa-e-consolida-normas-das-areas-de-cosmeticos-e-saneantes",
+    "nota": "Aplicar em conjunto com as regras específicas posteriores da RDC 1.040/2026 e da IN 468/2026 para as alterações vinculadas à RDC 989/2025 e à IN 394/2025."
+  },
   "norma_revogada_relevante": "RDC 59/2010",
-  "observacao": "Marco operacional vigente para o app. A classificacao concreta do produto deve ser resolvida pelos criterios da RDC 989/2025 e da IN 394/2025, com as alteracoes de 2026; este arquivo nao transforma resumo em texto normativo literal.",
+  "observacao": "Marco operacional vigente para o app. A classificação concreta do produto deve ser resolvida pelos critérios da RDC 989/2025 e da IN 394/2025, com as alterações da RDC 1.040/2026 e da IN 468/2026. A RDC 899/2024 permanece como referência geral para alterações pós-regularização, observadas as regras específicas posteriores de 2026. A RDC 59/2010 está revogada e não deve ser apresentada como norma vigente. Este arquivo não transforma resumo em texto normativo literal.",
   "regras": [
     {"id":"saneantes::risco-1::notificacao","classe":"risco 1","regularizacao":"notificacao","nota":"Produtos enquadrados como risco 1 seguem o regime de notificação previsto no marco vigente."},
     {"id":"saneantes::risco-2::registro","classe":"risco 2","regularizacao":"registro","nota":"Produtos enquadrados como risco 2 seguem o regime de registro previsto no marco vigente."},
