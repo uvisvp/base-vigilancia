@@ -2,7 +2,10 @@ name: Atualizar listas da Portaria 344/98
 
 on:
   workflow_dispatch:
-
+  push:
+    paths:
+      - "scripts/gerar_listas_controlados.py"
+      - ".github/workflows/atualizar-controlados-portaria344.yml"
   schedule:
     # Segunda-feira às 06:20 no horário de Brasília
     - cron: "20 9 * * 1"
