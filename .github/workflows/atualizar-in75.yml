@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Autoteste do estruturador
+        run: python scripts/estruturar_legislacao.py --autoteste
       - name: Baixar IN 75/2020 oficial completa
         run: python scripts/baixar_in75_2020.py
       - name: Estruturar legislação
@@ -34,12 +36,14 @@ jobs:
           if not p.exists(): raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
           d=json.loads(p.read_text(encoding='utf-8'))
           anexos={n.get('anexo') for n in d.get('nos',[]) if n.get('tipo')=='anexo'}
-          esp={'I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'}
+          esp={'I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII'}
           falta=esp-anexos
+          extra=anexos-esp
           if falta: raise SystemExit('Anexos não estruturados: '+', '.join(sorted(falta)))
+          if extra: raise SystemExit('Anexos inesperados: '+', '.join(sorted(extra)))
           rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
           if rep: raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
-          print('OK: 20 anexos estruturados sem colisão de IDs')
+          print('OK: 23 anexos estruturados sem colisão de IDs')
           PY
       - name: Atualizar manifesto regulatório
         run: python scripts/gerar_manifesto_regulatorio.py
