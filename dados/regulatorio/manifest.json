@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T14:26:59.792884+00:00",
+  "gerado_em": "2026-09-03T14:30:05.512416+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "482448ebc7f2d875d7f605858a0c1089a8ac17e24b25af87b56cba68f513397c",
+      "sha256": "3f522a1c56dd28a842a78311f7600b8fb4ae4fe44a6101e2b18352dea21bf7cf",
       "normas": 2,
       "curados": 3
     },
@@ -62,14 +62,14 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-cosmeticos.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "c8c25d9d2aed580f6afc71ab710e8e71b22577801fbb5654c384bbfec45dd97b",
+      "sha256": "9ae5147d6fcf2eb4ddbcafd273141e7ea35981fdeac60d4b48ae62aca40194fb",
       "registros": 10
     },
     "regularizacao_saneantes": {
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-saneantes.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "679ea396be808bfedc3997b9d591890fd64ff605a2bd94954e03637b54db7305",
+      "sha256": "a79a07d55f646adc563169615768a8ff27c3589e85a5e554b3b1b2655e58bc78",
       "registros": 4
     },
     "controlados_portaria344": {
