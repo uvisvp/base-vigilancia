@@ -3354,6 +3354,148 @@ def gerar_indices_produtos():
         "por_base": por_base
     }
 
+# ==================================================
+# MAPA — LEITURA DOS MANIFESTOS LOCAIS
+# ==================================================
+
+def carregar_manifesto_mapa(caminho, id_esperado):
+    if not caminho.exists():
+        raise RuntimeError(
+            f"Manifesto MAPA ausente: {caminho}"
+        )
+
+    try:
+        dados = json.loads(
+            caminho.read_text(encoding="utf-8")
+        )
+    except (OSError, json.JSONDecodeError) as erro:
+        raise RuntimeError(
+            f"Manifesto MAPA inválido: {caminho}"
+        ) from erro
+
+    if dados.get("id") != id_esperado:
+        raise RuntimeError(
+            f"Manifesto MAPA com id inesperado em {caminho}: "
+            f"{dados.get('id')!r}"
+        )
+
+    total = dados.get("quantidade_registros")
+    if not isinstance(total, int) or total <= 0:
+        raise RuntimeError(
+            f"Manifesto MAPA sem quantidade_registros válida: {caminho}"
+        )
+
+    fragmentos = (
+        dados.get("fragmentacao", {})
+        .get("fragmentos", [])
+    )
+
+    if not isinstance(fragmentos, list) or not fragmentos:
+        raise RuntimeError(
+            f"Manifesto MAPA sem fragmentos válidos: {caminho}"
+        )
+
+    soma = sum(
+        int(item.get("quantidade", 0))
+        for item in fragmentos
+        if isinstance(item, dict)
+    )
+
+    if soma != total:
+        raise RuntimeError(
+            f"Manifesto MAPA inconsistente em {caminho}: "
+            f"soma_fragmentos={soma}, total={total}"
+        )
+
+    return dados
+
+
+def resumo_mapa_bebidas():
+    origem = carregar_manifesto_mapa(
+        DADOS / "mapa" / "bebidas" / "manifest.json",
+        "mapa_bebidas"
+    )
+
+    return {
+        "status": "ok",
+        "fonte": origem.get("url_fonte", ""),
+        "orgao": origem.get("orgao", ""),
+        "nome_base": origem.get("nome_base", ""),
+        "data_fonte": origem.get(
+            "data_fonte",
+            "data da fonte não informada"
+        ),
+        "gerado_em": origem.get("data_processamento", ""),
+        "atualizado_em": origem.get("data_processamento", ""),
+        "registros": origem["quantidade_registros"],
+        "fragmentos": len(
+            origem["fragmentacao"]["fragmentos"]
+        ),
+        "tamanho_lote": origem["fragmentacao"].get(
+            "tamanho_lote"
+        ),
+        "versao_schema": origem.get("versao_schema"),
+        "sha256": origem.get("sha256"),
+        "chave": origem.get(
+            "identificador_principal",
+            "numero_registro_mapa"
+        ),
+        "consulta_exata_por_cnpj": origem.get(
+            "consulta_exata_por_cnpj",
+            False
+        ),
+        "limitacao_cnpj": origem.get(
+            "limitacao_cnpj",
+            ""
+        ),
+        "indices": origem.get("indices", {}),
+        "estatisticas": origem.get("estatisticas", {}),
+        "arquivo_manifesto": "mapa/bebidas/manifest.json",
+        "arquivo_schema": "mapa/bebidas/schema.json",
+        "observacao": origem.get("observacao", "")
+    }
+
+
+def resumo_mapa_sif():
+    origem = carregar_manifesto_mapa(
+        DADOS / "mapa" / "sif" / "manifest.json",
+        "mapa_sif"
+    )
+
+    return {
+        "status": "ok",
+        "orgao": origem.get("orgao", ""),
+        "nome_base": origem.get("nome_base", ""),
+        "fontes": origem.get("fontes", []),
+        "gerado_em": origem.get("data_processamento", ""),
+        "atualizado_em": origem.get("data_processamento", ""),
+        "registros": origem["quantidade_registros"],
+        "fragmentos": len(
+            origem["fragmentacao"]["fragmentos"]
+        ),
+        "tamanho_lote": origem["fragmentacao"].get(
+            "tamanho_lote"
+        ),
+        "versao_schema": origem.get("versao_schema"),
+        "sha256_conjunto": origem.get("sha256_conjunto"),
+        "chave": origem.get(
+            "identificador_principal",
+            "numero_sif"
+        ),
+        "campo_identificador_fiscal_origem": origem.get(
+            "campo_identificador_fiscal_origem",
+            "CPF_CNPJ"
+        ),
+        "duplicados_numero_sif_na_fonte_principal": origem.get(
+            "duplicados_numero_sif_na_fonte_principal"
+        ),
+        "indices": origem.get("indices", {}),
+        "estatisticas": origem.get("estatisticas", {}),
+        "arquivo_manifesto": "mapa/sif/manifest.json",
+        "arquivo_schema": "mapa/sif/schema.json",
+        "observacao": origem.get("observacao", "")
+    }
+
 
 # ==================================================
 # MANIFEST
@@ -3369,6 +3511,120 @@ def gerar_manifesto(
     alimentos,
     indices
 ):
+
+    DADOS.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    caminho_manifesto = DADOS / "manifest.json"
+    manifesto_anterior = {}
+
+    if caminho_manifesto.exists():
+        try:
+            manifesto_anterior = json.loads(
+                caminho_manifesto.read_text(
+                    encoding="utf-8"
+                )
+            )
+        except (OSError, json.JSONDecodeError) as erro:
+            raise RuntimeError(
+                "Manifesto principal anterior inválido."
+            ) from erro
+
+    # MAPA é carregado dos manifests locais já validados pelos
+    # workflows específicos. Assim o manifesto geral nunca fica
+    # com contagens/copias manuais desatualizadas.
+    mapa_bebidas = resumo_mapa_bebidas()
+    mapa_sif = resumo_mapa_sif()
+
+    bases_principais = {
+        "dispositivos",
+        "afe_ae",
+        "medicamentos",
+        "cmed",
+        "saneantes",
+        "cosmeticos",
+        "alimentos",
+        "mapa_bebidas",
+        "mapa_sif"
+    }
+
+    indices_principais = {
+        "status",
+        "gerado_em",
+        "processos",
+        "cnpj_produtos",
+        "autorizacoes",
+        "regularizacoes_alimentos",
+        "por_base"
+    }
+
+    bases_preservadas = {
+        nome: dados
+        for nome, dados in (
+            manifesto_anterior.get("bases", {})
+            if isinstance(manifesto_anterior, dict)
+            else {}
+        ).items()
+        if nome not in bases_principais
+    }
+
+    indices_preservados = {
+        nome: dados
+        for nome, dados in (
+            manifesto_anterior.get("indices", {})
+            if isinstance(manifesto_anterior, dict)
+            else {}
+        ).items()
+        if nome not in indices_principais
+    }
+
+    manifesto = {
+        "versao_esquema": 2,
+        "projeto": "Base Vigilância Sanitária",
+        "gerado_em": datetime.now(
+            timezone.utc
+        ).isoformat(),
+
+        "bases": {
+            "dispositivos": dispositivos,
+            "afe_ae": afe_ae,
+            "medicamentos": medicamentos,
+            "cmed": cmed,
+            "saneantes": saneantes,
+            "cosmeticos": cosmeticos,
+            "alimentos": alimentos,
+            "mapa_bebidas": mapa_bebidas,
+            "mapa_sif": mapa_sif
+        },
+
+        "indices": indices
+    }
+
+    # Preserva bases auxiliares já geradas por outros workflows,
+    # como suplementos, produtos irregulares, cannabis, alertas,
+    # aditivos, coadjuvantes etc.
+    manifesto["bases"].update(
+        bases_preservadas
+    )
+
+    manifesto["indices"].update(
+        indices_preservados
+    )
+
+    with caminho_manifesto.open(
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            manifesto,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
 
     DADOS.mkdir(
         parents=True,
