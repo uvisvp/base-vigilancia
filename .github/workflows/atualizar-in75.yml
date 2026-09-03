@@ -37,13 +37,18 @@ jobs:
       - name: Validar conteúdo estruturado
         run: |
           python - <<'PY'
-          import json, pathlib
+          import json, pathlib, re
+
           p=pathlib.Path('dados/legislacao_v12/normas/in-75-2020.json')
           fonte=pathlib.Path('textos/IN 75-2020--anvisa-legis.txt')
+          curado=pathlib.Path('dados/legislacao_curada/in-75-2020-anexo-xv.json')
           if not p.exists():
               raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
           if not fonte.exists():
               raise SystemExit('Texto oficial da IN 75/2020 não foi preservado')
+          if not curado.exists():
+              raise SystemExit('Anexo XV curado não foi preservado')
+
           d=json.loads(p.read_text(encoding='utf-8'))
           texto_fonte=fonte.read_text(encoding='utf-8')
           nos=d.get('nos',[])
@@ -59,9 +64,17 @@ jobs:
           if len(anexos_nos) != 23:
               raise SystemExit(f'Quantidade de nós de anexo incorreta: {len(anexos_nos)}')
 
+          ids_estruturais=[n.get('id') for n in nos if n.get('estrutural',True)]
+          if len(ids_estruturais) != len(set(ids_estruturais)):
+              vistos=set(); repetidos=[]
+              for x in ids_estruturais:
+                  if x in vistos and x not in repetidos:
+                      repetidos.append(x)
+                  vistos.add(x)
+              raise SystemExit('IDs estruturais repetidos: '+str(repetidos[:10]))
           rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
           if rep:
-              raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
+              raise SystemExit('Validação interna reporta IDs estruturais repetidos: '+str(rep[:10]))
 
           tabelas=[n for n in nos if n.get('tipo')=='tabela']
           linhas=[n for n in nos if n.get('tipo')=='linha_tabela']
@@ -83,7 +96,18 @@ jobs:
           if artigos_em_tabela:
               raise SystemExit('Artigo duplicado como linha de tabela: '+str([a.get('id') for a in artigos_em_tabela[:10]]))
 
-          for alvo in ('I','II','XV','XXIII'):
+          # Valores nutricionais não podem virar números de dispositivos jurídicos.
+          padrao_valor=re.compile(r'^\s*(?:2\.000(?:\s*kcal)?|600\s*mg|300\s*mg|15\s*g|7,5\s*g|6\s*g|3\s*g)\b', re.I)
+          tipos_dispositivo={'artigo','paragrafo','inciso','item'}
+          falsos=[n for n in nos if n.get('tipo') in tipos_dispositivo and padrao_valor.search(n.get('texto',''))]
+          if falsos:
+              raise SystemExit('Valor nutricional convertido em dispositivo: '+str([(n.get('id'),n.get('texto')) for n in falsos[:10]]))
+          valores_encontrados=[n for n in nos if padrao_valor.search(n.get('texto',''))]
+          print('VALORES NUTRICIONAIS AMOSTRADOS:', [(n.get('anexo'),n.get('tipo'),n.get('texto')) for n in valores_encontrados[:20]])
+
+          # Confere os dez anexos indicados para amostragem operacional e mostra conteúdo real das tabelas.
+          criticos=('II','IV','V','VIII','IX','XV','XX','XXI','XXII','XXIII')
+          for alvo in criticos:
               raiz=[n for n in anexos_nos if n.get('anexo')==alvo]
               if len(raiz)!=1:
                   raise SystemExit(f'ANEXO {alvo}: esperado 1 nó raiz, encontrado {len(raiz)}')
@@ -95,10 +119,34 @@ jobs:
               tipos={}
               for n in filhos:
                   tipos[n.get('tipo')]=tipos.get(n.get('tipo'),0)+1
-              print(f"ANEXO {alvo}: título={raiz[0].get('texto','')!r}; nós={len(filhos)}; tipos={tipos}")
+              amostra=[n.get('texto') for n in filhos if n.get('tipo')=='linha_tabela' and n.get('texto')][:5]
+              print(f"ANEXO {alvo}: título={raiz[0].get('texto','')!r}; nós={len(filhos)}; tipos={tipos}; amostra_tabela={amostra}")
+
+          # O Anexo XV operacional curado é complementar e deve manter exatamente os três limites aprovados.
+          c=json.loads(curado.read_text(encoding='utf-8')).get('registros',[])
+          if len(c)!=3:
+              raise SystemExit(f'Anexo XV curado: esperado 3 registros, encontrado {len(c)}')
+          esperado={
+              'acucares-adicionados':(15,'g/100g',7.5,'g/100ml'),
+              'gorduras-saturadas':(6,'g/100g',3,'g/100ml'),
+              'sodio':(600,'mg/100g',300,'mg/100ml'),
+          }
+          por_numero={r.get('numero'):r for r in c}
+          if set(por_numero)!=set(esperado):
+              raise SystemExit('Anexo XV curado: registros inesperados ou ausentes: '+str(sorted(por_numero)))
+          for numero,(vs,us,vl,ul) in esperado.items():
+              r=por_numero[numero]
+              s=r.get('solidos_semissolidos',{}); l=r.get('liquidos',{})
+              if (s.get('operador'),s.get('valor'),s.get('unidade')) != ('>=',vs,us):
+                  raise SystemExit(f'Anexo XV curado inválido em {numero}/sólidos: {s}')
+              if (l.get('operador'),l.get('valor'),l.get('unidade')) != ('>=',vl,ul):
+                  raise SystemExit(f'Anexo XV curado inválido em {numero}/líquidos: {l}')
+              if not r.get('fonte_oficial'):
+                  raise SystemExit(f'Anexo XV curado sem fonte oficial: {numero}')
+          print('ANEXO XV CURADO OK:', sorted(por_numero))
 
           print(f'TOTAL: nós={len(nos)}; anexos={len(anexos_nos)}; tabelas_fonte={tabelas_fonte}; tabelas_json={len(tabelas)}; linhas_tabela={len(linhas)}; artigos={len(artigos)}; itens={len(itens)}')
-          print('OK: 23 anexos, títulos presentes, paridade de tabelas e nenhum artigo duplicado como linha de tabela')
+          print('OK: 23 anexos, IDs únicos, tabelas preservadas, anexos críticos amostrados, valores nutricionais protegidos e Anexo XV curado íntegro')
           PY
       - name: Atualizar manifesto regulatório
         run: python scripts/gerar_manifesto_regulatorio.py
