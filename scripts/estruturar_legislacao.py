@@ -8,7 +8,10 @@ from pathlib import Path
 
 BASE=Path(__file__).resolve().parent.parent
 TEXTOS=BASE/'textos'; CURADA=BASE/'dados'/'legislacao_curada'; SAIDA=BASE/'dados'/'legislacao_v12'
-RE_ANEXO=re.compile(r"^\s*ANEXO\s+([IVXLCDM]+|\d+[A-Z]?)(?:\s*[-–—:]\s*(.*)|\s+(.*))?$",re.I)
+# Aceita tanto "ANEXO XV - Limites" quanto títulos oficiais em que o nome do
+# anexo vem na linha seguinte. O lookahead impede que "ANEXO I" case o início
+# de "ANEXO II", "ANEXO III" etc.
+RE_ANEXO=re.compile(r"^\s*ANEXO\s+([IVXLCDM]+|\d+[A-Z]?)(?=\s|[-–—:]|$)(?:\s*[-–—:]\s*(.*)|\s+(.*))?$",re.I)
 RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PARAGRAFO=re.compile(r"^\s*§\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PU=re.compile(r"^\s*Par[aá]grafo\s+[uú]nico\.?\s*(.*)$",re.I)
@@ -43,7 +46,6 @@ def estruturar_texto(norma,texto):
   m=RE_TITULO_TABELA.match(linha)
   if m:
    tabela=m.group(2); em_tabela=True; nos.append(novo_no(norma,anexo,'tabela',tabela,f'Tabela {tabela}',linha,ordem,pai=chave(norma,anexo,'anexo',anexo) if anexo else None)); continue
-  # Parágrafo/inciso também encerram tabela para impedir captura indevida de prosa jurídica.
   m=RE_PU.match(linha)
   if m:
    em_tabela=False; tabela=None; n=novo_no(norma,anexo,'paragrafo','unico','Parágrafo único',linha,ordem,pai=artigo_id); nos.append(n); paragrafo_id=n['id']; inciso_id=None; continue
@@ -53,7 +55,6 @@ def estruturar_texto(norma,texto):
   m=RE_INCISO.match(linha)
   if m and artigo_id:
    em_tabela=False; tabela=None; numero=m.group(1).upper(); n=novo_no(norma,anexo,'inciso',numero,f'Inciso {numero}',linha,ordem,pai=paragrafo_id or artigo_id); nos.append(n); inciso_id=n['id']; continue
-  # Valor explícito de tabela nunca vira dispositivo. Estado de tabela conserva demais linhas tabulares.
   if em_tabela or RE_VALOR_TABELA.match(linha):
    nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Linha de tabela',linha,ordem,pai=(chave(norma,anexo,'tabela',tabela) if tabela else (chave(norma,anexo,'anexo',anexo) if anexo else None)),meta={'estrutural':False})); continue
   m=RE_ITEM.match(linha)
@@ -91,9 +92,9 @@ def processar(textos=TEXTOS,saida=SAIDA):
  (saida/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8'); print(f"OK: {len(documentos)} norma(s); {manifest['curados']} registro(s) curado(s)."); return manifest
 
 def autoteste():
- amostra='''INSTRUÇÃO NORMATIVA\nANEXO II Tabela de referência\nTABELA 1\n2.000 kcal Carboidratos 300 g\n300 mg Colesterol\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
+ amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nValores diários de referência\nANEXO II Tabela de referência\nTABELA 1\n2.000 kcal Carboidratos 300 g\n300 mg Colesterol\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
  d=estruturar_texto('IN 75/2020',amostra); ids=[n['id'] for n in d['nos']]; anexos={n['anexo'] for n in d['nos'] if n['tipo']=='anexo'}
- assert anexos=={'II','XV','XVI','XXIII'},anexos; assert not any('item::2-000' in x for x in ids); assert len([x for x in ids if 'artigo::17' in x])==1; assert len(ids)==len(set(ids)); print('AUTOTESTE OK')
+ assert anexos=={'I','II','XV','XVI','XXIII'},anexos; assert not any('item::2-000' in x for x in ids); assert len([x for x in ids if 'artigo::17' in x])==1; assert len(ids)==len(set(ids)); print('AUTOTESTE OK')
 def main():
  p=argparse.ArgumentParser(); p.add_argument('--autoteste',action='store_true'); p.add_argument('--textos',default=str(TEXTOS)); p.add_argument('--saida',default=str(SAIDA)); a=p.parse_args(); autoteste() if a.autoteste else processar(a.textos,a.saida)
 if __name__=='__main__':main()
