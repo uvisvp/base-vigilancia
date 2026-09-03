@@ -6,7 +6,7 @@ Integra, sem misturar texto literal com regra operacional:
 - legislação hierárquica estruturada (dados/legislacao_v12);
 - limites curados da IN 75/2020;
 - regras operacionais de regularização de cosméticos e saneantes;
-- listas vigentes da Portaria 344/98, quando já geradas.
+- listas operacionais da Portaria 344/98.
 
 O manifesto apenas referencia arquivos existentes e valida seus schemas/IDs.
 """
@@ -68,7 +68,6 @@ def main():
         "bases": {},
     }
 
-    # Legislação hierárquica já estruturada/curada.
     leg_manifest = DADOS / "legislacao_v12" / "manifest.json"
     if leg_manifest.exists():
         obj = registrar_arquivo(manifest, "legislacao_hierarquica", leg_manifest,
@@ -82,7 +81,6 @@ def main():
             "arquivo": "dados/legislacao_v12/manifest.json"
         }
 
-    # IN 75/2020 - Anexo XV: dados numéricos usados pela lupa.
     in75 = registrar_arquivo(
         manifest,
         "in75_anexo_xv",
@@ -101,7 +99,6 @@ def main():
         if obrig - achados:
             raise RuntimeError("IN 75/2020 Anexo XV incompleto")
 
-    # Bases operacionais de regularização.
     for nome, arquivo, categoria in [
         ("regularizacao_cosmeticos", "regularizacao-cosmeticos.json", "cosmeticos"),
         ("regularizacao_saneantes", "regularizacao-saneantes.json", "saneantes"),
@@ -114,13 +111,18 @@ def main():
                 raise RuntimeError(f"{nome}: categoria inesperada")
             validar_ids_unicos(obj.get("regras", []), contexto=nome)
 
-    # Portaria 344/98 é produzida por workflow separado; ausência não invalida
-    # o manifesto, mas fica explicitamente visível para o app/diagnóstico.
     ctrl_manifest = DADOS / "controlados_portaria344" / "manifest.json"
     ctrl = registrar_arquivo(manifest, "controlados_portaria344", ctrl_manifest,
-                             "controlados-portaria344-v1")
+                             "controlados-portaria344-v2")
     if ctrl:
+        listas_esperadas = ["A1","A2","A3","B1","B2","C1","C2","C3","C5"]
+        if ctrl.get("status") != "ok" or ctrl.get("escopo") != "operacional":
+            raise RuntimeError("Portaria 344: base operacional inválida")
+        if ctrl.get("listas_incluidas") != listas_esperadas:
+            raise RuntimeError("Portaria 344: escopo de listas inesperado")
         manifest["bases"]["controlados_portaria344"].update({
+            "escopo": ctrl.get("escopo"),
+            "listas_incluidas": ctrl.get("listas_incluidas"),
             "listas": ctrl.get("listas"),
             "substancias": ctrl.get("substancias"),
             "adendos": ctrl.get("adendos"),
@@ -128,7 +130,6 @@ def main():
             "data_fonte": ctrl.get("data_fonte"),
         })
 
-    # Estado global: pronto apenas quando todas as quatro famílias estão presentes.
     faltantes = [k for k,v in manifest["bases"].items() if v.get("status") != "ok"]
     manifest["status"] = "ok" if not faltantes else "parcial"
     manifest["faltantes"] = faltantes
