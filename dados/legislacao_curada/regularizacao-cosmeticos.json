@@ -2,17 +2,21 @@
   "schema": "regularizacao-produtos-v1",
   "categoria": "cosmeticos",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/comunicacao/campanhas/estetica/consulta-de-cosmeticos",
+  "data_fonte": "2026-04-27",
+  "tipo_data_fonte": "ultima_modificacao_pagina_oficial",
   "norma_principal": "RDC 907/2024",
   "normas_complementares": [
     {
       "norma": "RDC 906/2024",
       "escopo": "Procedimentos e requisitos para regularização de produtos cosméticos para alisar ou ondular os cabelos.",
-      "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/alisamento-seguro-operacao-fiscaliza-fabricantes-de-alisantes-irregulares"
+      "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/alisamento-seguro-operacao-fiscaliza-fabricantes-de-alisantes-irregulares",
+      "data_norma": "2024-09-19"
     },
     {
       "norma": "RDC 898/2024",
       "escopo": "Obrigatoriedade de descrever em português, na rotulagem, a composição de produtos de higiene pessoal, cosméticos e perfumes.",
-      "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-revisa-e-consolida-normas-das-areas-de-cosmeticos-e-saneantes"
+      "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-revisa-e-consolida-normas-das-areas-de-cosmeticos-e-saneantes",
+      "data_norma": "2024-08-28"
     }
   ],
   "observacao": "Base operacional para enquadramento da forma de regularização. A RDC 907/2024 é a referência principal vigente para regularização; a RDC 906/2024 complementa os requisitos de alisantes/ondulantes e a RDC 898/2024 complementa a rotulagem da composição em português. A RDC 752/2022 foi revogada pela RDC 907/2024 e não integra o marco vigente desta base. O texto literal dos dispositivos permanece no banco legislativo hierárquico.",
