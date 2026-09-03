@@ -8,9 +8,6 @@ from pathlib import Path
 
 BASE=Path(__file__).resolve().parent.parent
 TEXTOS=BASE/'textos'; CURADA=BASE/'dados'/'legislacao_curada'; SAIDA=BASE/'dados'/'legislacao_v12'
-# Aceita tanto "ANEXO XV - Limites" quanto títulos oficiais em que o nome do
-# anexo vem na linha seguinte. O lookahead impede que "ANEXO I" case o início
-# de "ANEXO II", "ANEXO III" etc.
 RE_ANEXO=re.compile(r"^\s*ANEXO\s+([IVXLCDM]+|\d+[A-Z]?)(?=\s|[-–—:]|$)(?:\s*[-–—:]\s*(.*)|\s+(.*))?$",re.I)
 RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PARAGRAFO=re.compile(r"^\s*§\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
@@ -19,6 +16,8 @@ RE_INCISO=re.compile(r"^\s*([IVXLCDM]+)\s*[-–—]\s+(.+)$")
 RE_ITEM=re.compile(r"^\s*(\d+(?:\.\d+){0,4})\s*[.)-]\s+([A-Za-zÀ-ÿ].+)$")
 RE_VALOR_TABELA=re.compile(r"^\s*[<>≤≥~]?\s*\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?\s*(?:kcal|kj|g|mg|µg|mcg|ml|l|%|ui)\b",re.I)
 RE_TITULO_TABELA=re.compile(r"^\s*(TABELA|QUADRO)\s+([A-Z0-9IVXLCDM.-]+)\b",re.I)
+MARCADOR_TABELA_INICIO='[[TABELA_INICIO]]'
+MARCADOR_TABELA_FIM='[[TABELA_FIM]]'
 
 def slug(s):
  s=unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode('ascii'); return re.sub(r'[^a-zA-Z0-9]+','-',s).strip('-').lower() or 'norma'
@@ -32,7 +31,6 @@ def novo_no(norma,anexo,tipo,numero,rotulo,texto,ordem,pai=None,meta=None):
  return n
 
 def resolver_norma(documentos,norma):
- """Reutiliza uma norma já carregada quando a grafia muda, mas o slug é igual."""
  if norma in documentos:return norma
  alvo=slug(norma); candidatos=[k for k in documentos if slug(k)==alvo]
  if len(candidatos)==1:return candidatos[0]
@@ -40,7 +38,6 @@ def resolver_norma(documentos,norma):
  return norma
 
 def validar_destinos(documentos):
- """Impede sobrescrita silenciosa quando duas normas apontam para o mesmo JSON."""
  vistos={}
  for norma in documentos:
   destino=f'{slug(norma)}.json'
@@ -50,19 +47,37 @@ def validar_destinos(documentos):
  return vistos
 
 def estruturar_texto(norma,texto):
- linhas=[x.strip() for x in texto.splitlines() if x.strip()]; nos=[]; anexo=None; artigo_id=paragrafo_id=inciso_id=None; em_tabela=False; tabela=None
+ linhas=[x.strip() for x in texto.splitlines() if x.strip()]
+ nos=[]; anexo=None; artigo_id=paragrafo_id=inciso_id=None; em_tabela=False; tabela=None
+ contadores_tabela={}
  for ordem,linha in enumerate(linhas,1):
   m=RE_ANEXO.match(linha)
   if m:
    anexo=m.group(1).upper(); titulo=((m.group(2) or m.group(3) or '')).strip(); nid=chave(norma,anexo,'anexo',anexo)
    nos.append({'id':nid,'norma':norma,'anexo':anexo,'tipo':'anexo','numero':anexo,'rotulo':f'Anexo {anexo}','texto':titulo,'ordem':ordem})
    artigo_id=paragrafo_id=inciso_id=None; em_tabela=False; tabela=None; continue
+
+  if linha==MARCADOR_TABELA_INICIO:
+   if anexo:
+    contadores_tabela[anexo]=contadores_tabela.get(anexo,0)+1
+    tabela=f'html-{contadores_tabela[anexo]}'
+    nos.append(novo_no(norma,anexo,'tabela',tabela,f'Tabela {contadores_tabela[anexo]} do Anexo {anexo}','',ordem,pai=chave(norma,anexo,'anexo',anexo),meta={'origem_estrutura':'html_oficial'}))
+    em_tabela=True
+   continue
+  if linha==MARCADOR_TABELA_FIM:
+   em_tabela=False; tabela=None; continue
+
+  # Dentro de <table> oficial, a marcação HTML prevalece sobre aparência textual.
+  # Isso evita que uma célula parecida com artigo/item seja duplicada como dispositivo.
+  if em_tabela:
+   nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Célula de tabela',linha,ordem,pai=chave(norma,anexo,'tabela',tabela),meta={'estrutural':False,'origem_estrutura':'html_oficial'})); continue
+
   m=RE_ARTIGO.match(linha)
   if m:
-   numero=m.group(1); n=novo_no(norma,anexo,'artigo',numero,f'Art. {numero}',linha,ordem); nos.append(n); artigo_id=n['id']; paragrafo_id=inciso_id=None; em_tabela=False; tabela=None; continue
+   numero=m.group(1); n=novo_no(norma,anexo,'artigo',numero,f'Art. {numero}',linha,ordem); nos.append(n); artigo_id=n['id']; paragrafo_id=inciso_id=None; tabela=None; continue
   m=RE_TITULO_TABELA.match(linha)
   if m:
-   tabela=m.group(2); em_tabela=True; nos.append(novo_no(norma,anexo,'tabela',tabela,f'Tabela {tabela}',linha,ordem,pai=chave(norma,anexo,'anexo',anexo) if anexo else None)); continue
+   tabela=m.group(2); em_tabela=True; nos.append(novo_no(norma,anexo,'tabela',tabela,f'Tabela {tabela}',linha,ordem,pai=chave(norma,anexo,'anexo',anexo) if anexo else None,meta={'origem_estrutura':'texto'})); continue
   m=RE_PU.match(linha)
   if m:
    em_tabela=False; tabela=None; n=novo_no(norma,anexo,'paragrafo','unico','Parágrafo único',linha,ordem,pai=artigo_id); nos.append(n); paragrafo_id=n['id']; inciso_id=None; continue
@@ -72,8 +87,8 @@ def estruturar_texto(norma,texto):
   m=RE_INCISO.match(linha)
   if m and artigo_id:
    em_tabela=False; tabela=None; numero=m.group(1).upper(); n=novo_no(norma,anexo,'inciso',numero,f'Inciso {numero}',linha,ordem,pai=paragrafo_id or artigo_id); nos.append(n); inciso_id=n['id']; continue
-  if em_tabela or RE_VALOR_TABELA.match(linha):
-   nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Linha de tabela',linha,ordem,pai=(chave(norma,anexo,'tabela',tabela) if tabela else (chave(norma,anexo,'anexo',anexo) if anexo else None)),meta={'estrutural':False})); continue
+  if RE_VALOR_TABELA.match(linha):
+   nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Linha de tabela',linha,ordem,pai=chave(norma,anexo,'anexo',anexo) if anexo else None,meta={'estrutural':False,'motivo':'valor_tabelar_sem_marcacao'})); continue
   m=RE_ITEM.match(linha)
   if m and (anexo or artigo_id):
    numero=m.group(1)
@@ -113,9 +128,14 @@ def processar(textos=TEXTOS,saida=SAIDA):
  (saida/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8'); print(f"OK: {len(documentos)} norma(s); {manifest['curados']} registro(s) curado(s)."); return manifest
 
 def autoteste():
- amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nValores diários de referência\nANEXO II Tabela de referência\nTABELA 1\n2.000 kcal Carboidratos 300 g\n300 mg Colesterol\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
+ amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nLista\n1. Item de lista\nANEXO II\nVDR\n[[TABELA_INICIO]]\nConstituintes\nVDR (unidade)\n2.000 kcal\nArt. 99 célula, não dispositivo\n[[TABELA_FIM]]\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
  d=estruturar_texto('IN 75/2020',amostra); ids=[n['id'] for n in d['nos']]; anexos={n['anexo'] for n in d['nos'] if n['tipo']=='anexo'}
- assert anexos=={'I','II','XV','XVI','XXIII'},anexos; assert not any('item::2-000' in x for x in ids); assert len([x for x in ids if 'artigo::17' in x])==1; assert len(ids)==len(set(ids))
+ assert anexos=={'I','II','XV','XVI','XXIII'},anexos
+ assert len([n for n in d['nos'] if n['tipo']=='tabela' and n.get('anexo')=='II'])==1
+ assert len([n for n in d['nos'] if n['tipo']=='artigo' and n.get('numero')=='17'])==1
+ assert not any(n['tipo']=='artigo' and n.get('numero')=='99' for n in d['nos'])
+ assert any(n['tipo']=='linha_tabela' and n.get('texto','').startswith('Art. 99') for n in d['nos'])
+ assert len(ids)==len(set(ids))
  docs={'IN 75-2020':d}; assert resolver_norma(docs,'IN 75/2020')=='IN 75-2020'; assert validar_destinos(docs)=={'in-75-2020.json':'IN 75-2020'}
  try:
   validar_destinos({'IN 75-2020':d,'IN 75/2020':d})
