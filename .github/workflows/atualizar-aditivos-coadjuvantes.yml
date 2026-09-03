@@ -1,4 +1,4 @@
-name: Atualizar Aditivos e Coadjuvantes
+lname: Atualizar Aditivos e Coadjuvantes
 
 on:
   workflow_dispatch:
@@ -31,6 +31,9 @@ jobs:
       - name: Gerar bases da Anvisa
         run: python scripts/gerar_aditivos_coadjuvantes.py
 
+      - name: Gerar índice de aditivos por categoria
+        run: python scripts/gera_por_categoria.py
+
       - name: Verificar alterações
         id: changes
         run: |
@@ -53,7 +56,12 @@ jobs:
           from pathlib import Path
 
           manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
-          nomes = ["aditivos_alimentares", "coadjuvantes_tecnologia", "enzimas_coadjuvantes"]
+          nomes = [
+              "aditivos_alimentares",
+              "aditivos_por_categoria",
+              "coadjuvantes_tecnologia",
+              "enzimas_coadjuvantes",
+          ]
           blocos = {}
           for nome in nomes:
               bloco = manifesto.get("bases", {}).get(nome)
