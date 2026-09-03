@@ -3,7 +3,8 @@
 """Baixa a versão oficial consolidada da IN 75/2020 no AnvisaLegis.
 
 A publicação só prossegue se a fonte contiver todos os Anexos I a XXIII.
-Isso evita gerar silenciosamente uma base parcial.
+A limpeza preserva marcadores estruturais de tabelas existentes no HTML oficial,
+para que o banco hierárquico não perca o agrupamento das células.
 """
 from __future__ import annotations
 import re, urllib.request
@@ -14,6 +15,8 @@ BASE=Path(__file__).resolve().parent.parent
 OUT=BASE/'textos'/'IN 75-2020--anvisa-legis.txt'
 URL='https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true'
 ROMANOS=('I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII')
+MARCADOR_TABELA_INICIO='[[TABELA_INICIO]]'
+MARCADOR_TABELA_FIM='[[TABELA_FIM]]'
 
 def baixar():
     req=urllib.request.Request(URL,headers={
@@ -31,6 +34,10 @@ def baixar():
 
 def limpar(html):
     x=re.sub(r'(?is)<(script|style).*?>.*?</\1>',' ',html)
+    # A fonte oficial usa tabelas HTML. Preservamos apenas as fronteiras como
+    # metadado técnico; o conteúdo textual das células continua literal.
+    x=re.sub(r'(?is)<table\b[^>]*>',f'\n{MARCADOR_TABELA_INICIO}\n',x)
+    x=re.sub(r'(?is)</table\s*>',f'\n{MARCADOR_TABELA_FIM}\n',x)
     x=re.sub(r'(?i)<br\s*/?>','\n',x)
     x=re.sub(r'(?i)</(?:p|div|li|tr|td|th|h[1-6])>','\n',x)
     x=re.sub(r'<[^>]+>',' ',x)
@@ -51,7 +58,6 @@ def validar(texto):
         raise RuntimeError('IN 75/2020 incompleta; anexos ausentes: '+', '.join(faltam))
     if not re.search(r'(?i)INSTRU[CÇ][AÃ]O(?:\s+NORMATIVA)?(?:-IN)?\s*(?:N[º°.]*)?\s*75',texto):
         raise RuntimeError('Fonte não reconhecida como IN 75/2020')
-    # Travas de conteúdo: pontos importantes espalhados pela norma.
     obrigatorios=(
         'VDR PARA FINS DE ROTULAGEM NUTRICIONAL',
         'TAMANHO DAS PORÇÕES',
@@ -63,13 +69,20 @@ def validar(texto):
     ausentes=[x for x in obrigatorios if x not in normal]
     if ausentes:
         raise RuntimeError('IN 75/2020 falhou nas travas de conteúdo: '+', '.join(ausentes))
+    aberturas=texto.count(MARCADOR_TABELA_INICIO)
+    fechamentos=texto.count(MARCADOR_TABELA_FIM)
+    if aberturas != fechamentos:
+        raise RuntimeError(f'HTML oficial com tabelas desbalanceadas: {aberturas} início(s), {fechamentos} fim(ns)')
+    if aberturas == 0:
+        raise RuntimeError('Nenhuma tabela HTML foi preservada da fonte oficial')
 
 def main():
     texto=limpar(baixar())
     validar(texto)
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(texto,encoding='utf-8')
-    print(f'OK: IN 75/2020 integral, Anexos I a XXIII presentes, {len(texto)} caracteres')
+    tabelas=texto.count(MARCADOR_TABELA_INICIO)
+    print(f'OK: IN 75/2020 integral, Anexos I a XXIII presentes, {len(texto)} caracteres, {tabelas} tabela(s) HTML preservada(s)')
 
 if __name__=='__main__':
     main()
