@@ -1,0 +1,89 @@
+name: Atualizar RDC 429/2020 completa
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/baixar_rdc429_2020.py'
+      - 'scripts/estruturar_legislacao.py'
+      - '.github/workflows/atualizar-rdc429.yml'
+  schedule:
+    - cron: '40 9 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-manifesto-regulatorio
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Autoteste do estruturador
+        run: python scripts/estruturar_legislacao.py --autoteste
+      - name: Baixar RDC 429/2020 oficial consolidada
+        run: python scripts/baixar_rdc429_2020.py
+      - name: Estruturar legislação
+        run: python scripts/estruturar_legislacao.py
+      - name: Validar RDC 429 estruturada
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('dados/legislacao_v12/normas/rdc-429-2020.json')
+          fonte=pathlib.Path('textos/RDC 429-2020--anvisa-legis.txt')
+          if not p.exists(): raise SystemExit('JSON da RDC 429/2020 não foi gerado')
+          if not fonte.exists(): raise SystemExit('Texto oficial da RDC 429/2020 não foi preservado')
+          d=json.loads(p.read_text(encoding='utf-8')); nos=d.get('nos',[])
+          artigos=[n for n in nos if n.get('tipo')=='artigo']
+          numeros={n.get('numero') for n in artigos}
+          if '1' not in numeros: raise SystemExit('Art. 1º ausente do JSON')
+          nums=[]
+          for x in numeros:
+              try: nums.append(int(x))
+              except: pass
+          if not nums or max(nums)<40: raise SystemExit('RDC 429 aparentemente incompleta no JSON')
+          rep=d.get('validacao',{}).get('ids_estruturais_repetidos',[])
+          if rep: raise SystemExit('IDs estruturais repetidos: '+str(rep[:10]))
+          tabelas=[n for n in nos if n.get('tipo')=='tabela' and n.get('origem_estrutura')=='html_oficial']
+          linhas=[n for n in nos if n.get('tipo')=='linha_tabela' and n.get('origem_estrutura')=='html_oficial']
+          tf=fonte.read_text(encoding='utf-8').count('[[TABELA_INICIO]]')
+          if len(tabelas)!=tf: raise SystemExit(f'Paridade de tabelas falhou: fonte={tf}, JSON={len(tabelas)}')
+          pais={n.get('id') for n in tabelas}
+          orfas=[n for n in linhas if n.get('pai') not in pais]
+          if orfas: raise SystemExit('Células HTML sem tabela-pai')
+          textos_linhas={n.get('texto') for n in linhas}
+          dup=[a for a in artigos if a.get('texto') in textos_linhas]
+          if dup: raise SystemExit('Artigo duplicado como célula de tabela')
+          print(f'OK: RDC 429/2020 estruturada; nós={len(nos)}; artigos={len(artigos)}; maior_artigo={max(nums)}; tabelas={len(tabelas)}; células={len(linhas)}')
+          PY
+      - name: Atualizar manifesto regulatório
+        run: python scripts/gerar_manifesto_regulatorio.py
+      - name: Commit se houver alterações
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for tentativa in 1 2 3; do
+            echo "Tentativa $tentativa de 3"
+            git fetch origin main
+            if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+              git reset --hard origin/main
+              python scripts/estruturar_legislacao.py --autoteste
+              python scripts/baixar_rdc429_2020.py
+              python scripts/estruturar_legislacao.py
+              python scripts/gerar_manifesto_regulatorio.py
+            fi
+            git add textos/ dados/legislacao_v12/ dados/regulatorio/
+            if git diff --cached --quiet; then echo 'Sem alterações após sincronização.'; exit 0; fi
+            git commit -m 'Atualiza RDC 429/2020 e manifesto regulatório'
+            if git push origin HEAD:main; then echo 'RDC 429/2020 atualizada com sucesso.'; exit 0; fi
+          done
+          echo 'Falha após 3 tentativas por concorrência de commits.'
+          exit 1
