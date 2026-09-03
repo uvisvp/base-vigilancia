@@ -31,10 +31,27 @@ def novo_no(norma,anexo,tipo,numero,rotulo,texto,ordem,pai=None,meta=None):
  if meta:n.update(meta)
  return n
 
+def resolver_norma(documentos,norma):
+ """Reutiliza uma norma já carregada quando a grafia muda, mas o slug é igual."""
+ if norma in documentos:return norma
+ alvo=slug(norma); candidatos=[k for k in documentos if slug(k)==alvo]
+ if len(candidatos)==1:return candidatos[0]
+ if len(candidatos)>1:raise RuntimeError(f'Norma ambígua {norma}: {candidatos}')
+ return norma
+
+def validar_destinos(documentos):
+ """Impede sobrescrita silenciosa quando duas normas apontam para o mesmo JSON."""
+ vistos={}
+ for norma in documentos:
+  destino=f'{slug(norma)}.json'
+  if destino in vistos and vistos[destino]!=norma:
+   raise RuntimeError(f'Colisão de arquivo: {vistos[destino]} e {norma} -> {destino}')
+  vistos[destino]=norma
+ return vistos
+
 def estruturar_texto(norma,texto):
  linhas=[x.strip() for x in texto.splitlines() if x.strip()]; nos=[]; anexo=None; artigo_id=paragrafo_id=inciso_id=None; em_tabela=False; tabela=None
  for ordem,linha in enumerate(linhas,1):
-  # Limites estruturais têm precedência absoluta sobre estado de tabela.
   m=RE_ANEXO.match(linha)
   if m:
    anexo=m.group(1).upper(); titulo=((m.group(2) or m.group(3) or '')).strip(); nid=chave(norma,anexo,'anexo',anexo)
@@ -83,8 +100,12 @@ def processar(textos=TEXTOS,saida=SAIDA):
  manifest={'schema':'legislacao-hierarquica-v12','gerado_em':datetime.now(timezone.utc).isoformat(),'normas':{},'curados':0}; documentos={}
  for arq in sorted(textos.glob('*.txt')):
   norma=arq.stem.split('--',1)[0]; documentos[norma]=estruturar_texto(norma,arq.read_text(encoding='utf-8'))
- for r in carregar_curados():
-  norma=r['norma']; doc=documentos.setdefault(norma,{'schema':'legislacao-hierarquica-v12','norma':norma,'sha256_texto':None,'nos':[],'validacao':{'ids_estruturais_repetidos':[]}}); doc['nos']=[n for n in doc['nos'] if n['id']!=r['id']]; doc['nos'].append(r); manifest['curados']+=1
+ for r0 in carregar_curados():
+  norma=resolver_norma(documentos,r0['norma']); r=dict(r0)
+  if norma!=r['norma']:
+   r['norma']=norma; r['id']=chave(norma,r.get('anexo'),r['tipo'],str(r['numero']))
+  doc=documentos.setdefault(norma,{'schema':'legislacao-hierarquica-v12','norma':norma,'sha256_texto':None,'nos':[],'validacao':{'ids_estruturais_repetidos':[]}}); doc['nos']=[n for n in doc['nos'] if n['id']!=r['id']]; doc['nos'].append(r); manifest['curados']+=1
+ validar_destinos(documentos)
  for norma,doc in sorted(documentos.items()):
   ids=[n['id'] for n in doc['nos'] if n.get('estrutural',True)]; rep=sorted({x for x in ids if ids.count(x)>1}); doc['validacao']['ids_estruturais_repetidos']=rep
   if rep:raise RuntimeError(f'{norma}: IDs estruturais duplicados: {rep[:10]}')
@@ -94,7 +115,15 @@ def processar(textos=TEXTOS,saida=SAIDA):
 def autoteste():
  amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nValores diários de referência\nANEXO II Tabela de referência\nTABELA 1\n2.000 kcal Carboidratos 300 g\n300 mg Colesterol\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
  d=estruturar_texto('IN 75/2020',amostra); ids=[n['id'] for n in d['nos']]; anexos={n['anexo'] for n in d['nos'] if n['tipo']=='anexo'}
- assert anexos=={'I','II','XV','XVI','XXIII'},anexos; assert not any('item::2-000' in x for x in ids); assert len([x for x in ids if 'artigo::17' in x])==1; assert len(ids)==len(set(ids)); print('AUTOTESTE OK')
+ assert anexos=={'I','II','XV','XVI','XXIII'},anexos; assert not any('item::2-000' in x for x in ids); assert len([x for x in ids if 'artigo::17' in x])==1; assert len(ids)==len(set(ids))
+ docs={'IN 75-2020':d}; assert resolver_norma(docs,'IN 75/2020')=='IN 75-2020'; assert validar_destinos(docs)=={'in-75-2020.json':'IN 75-2020'}
+ try:
+  validar_destinos({'IN 75-2020':d,'IN 75/2020':d})
+ except RuntimeError:
+  pass
+ else:
+  raise AssertionError('Colisão de arquivo não detectada')
+ print('AUTOTESTE OK')
 def main():
  p=argparse.ArgumentParser(); p.add_argument('--autoteste',action='store_true'); p.add_argument('--textos',default=str(TEXTOS)); p.add_argument('--saida',default=str(SAIDA)); a=p.parse_args(); autoteste() if a.autoteste else processar(a.textos,a.saida)
 if __name__=='__main__':main()
