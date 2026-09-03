@@ -1,0 +1,158 @@
+[
+  {
+    "url": "https://cdn.dsgovserprodesign.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css",
+    "inspecionado": false,
+    "erro": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cdn.dsgovserprodesign.estaleiro.serpro.gov.br'. (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "tamanho_bytes": 93734,
+    "sha256": "d8824f7067cdfea38afec7e9ffaf072125266824206d69ef1f112d72153a505e",
+    "analisado": true,
+    "contem_qlik": false,
+    "contem_export": false,
+    "contem_excel": true,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "tamanho_bytes": 31000,
+    "sha256": "799aeb25cc0373fdee0e1b1db7ad6c2f6a0e058dfadaa3379689f583213190bd",
+    "analisado": true,
+    "contem_qlik": false,
+    "contem_export": false,
+    "contem_excel": true,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://fonts.googleapis.com",
+    "inspecionado": false,
+    "motivo": "asset não textual"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap",
+    "inspecionado": false,
+    "motivo": "asset não textual"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap",
+    "inspecionado": false,
+    "motivo": "asset não textual"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&amp;display=swap",
+    "inspecionado": false,
+    "motivo": "asset não textual"
+  },
+  {
+    "url": "https://fonts.gstatic.com",
+    "inspecionado": false,
+    "motivo": "asset não textual"
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/base.css",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "text/css;charset=utf-8",
+    "tamanho_bytes": 373425,
+    "sha256": "4c562b61dc303bd2bed24ee083fb3802af7d5ff9d51ac8b397620df1878d5335",
+    "analisado": true,
+    "contem_qlik": false,
+    "contem_export": false,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/base.js",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "tamanho_bytes": 225635,
+    "sha256": "6c1a46bb4604ee2eaa33c058b9d69d42f56f89a03cc289e98cf33e318c6a6a9a",
+    "analisado": true,
+    "contem_qlik": false,
+    "contem_export": true,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/custom.css",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "text/css;charset=utf-8",
+    "tamanho_bytes": 4917,
+    "sha256": "ffe164ef3d3eecc5f9821d8fa61effb7603872af7b2beb313e2f764797af6280",
+    "analisado": true,
+    "contem_qlik": true,
+    "contem_export": false,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/jquery.min.js",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "tamanho_bytes": 89500,
+    "sha256": "80f04717f32ea0320c5e8618fbacedd1fee3a8775ad8292140a6113551d4b5b0",
+    "analisado": true,
+    "contem_qlik": false,
+    "contem_export": true,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "tamanho_bytes": 11274,
+    "sha256": "cb0042b1456561a1a8c9d6ca2343b7b34a9b10ebf25451c01a7090ca17967fa7",
+    "analisado": true,
+    "contem_qlik": true,
+    "contem_export": true,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": true
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "application/javascript;charset=utf-8",
+    "tamanho_bytes": 360194,
+    "sha256": "f291a2db285683f36e3c500d94ecf38ed69ad4ecc0e1660888bd8cb81e1ba135",
+    "analisado": true,
+    "contem_qlik": true,
+    "contem_export": true,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/resources/autogenerated/qlik-styles.css",
+    "inspecionado": true,
+    "http_status": 200,
+    "content_type": "text/css;charset=utf-8",
+    "tamanho_bytes": 77,
+    "sha256": "972516c0764a24030324b529cf8a7bfcf41696e20fbb839a45e7939c87b604f1",
+    "analisado": true,
+    "contem_qlik": true,
+    "contem_export": false,
+    "contem_excel": false,
+    "contem_csv": false,
+    "contem_produto": false
+  }
+]

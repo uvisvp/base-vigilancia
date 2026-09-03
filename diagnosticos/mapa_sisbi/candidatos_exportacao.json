@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+    "origem": "html_principal",
+    "pontuacao": 8
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/base.js",
+    "origem": "html_principal",
+    "pontuacao": 6
+  },
+  {
+    "url": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/jquery.min.js",
+    "origem": "html_principal",
+    "pontuacao": 6
+  }
+]

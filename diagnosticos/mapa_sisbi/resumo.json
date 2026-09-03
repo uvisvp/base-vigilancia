@@ -1,0 +1,20 @@
+{
+  "status": "diagnostico_concluido_com_candidatos",
+  "orgao": "Ministério da Agricultura e Pecuária — MAPA",
+  "sistema": "e-SISBI / SISBI-POA",
+  "painel": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/DSN_ESISBI_2.html",
+  "executado_em": "2026-09-03T01:07:02.903058+00:00",
+  "observacao": "Somente recursos públicos; sem contorno de autenticação, CAPTCHA ou controles de acesso.",
+  "http_status": 200,
+  "content_type": "text/html;charset=utf-8",
+  "last_modified": "Thu, 09 Oct 2025 19:43:41 GMT",
+  "etag": "638956358219139678",
+  "tamanho_bytes": 42139,
+  "sha256_html": "43435b514ab475b4193228fee6d2ed1f5efa99d935ba3c9143801f989d4a5aae",
+  "quantidade_assets": 15,
+  "contem_gestao_produtos": true,
+  "contem_produtos": true,
+  "contem_qlik": true,
+  "assets_inspecionados": 9,
+  "candidatos_exportacao": 3
+}
