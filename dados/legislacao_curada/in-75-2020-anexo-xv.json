@@ -1,0 +1,44 @@
+{
+  "schema": "legislacao-curada-v1",
+  "registros": [
+    {
+      "norma": "IN 75/2020",
+      "anexo": "XV",
+      "tipo": "linha_tabela",
+      "numero": "acucares-adicionados",
+      "rotulo": "Açúcares adicionados",
+      "texto": "Alimentos sólidos ou semissólidos: quantidade maior ou igual a 15 g de açúcares adicionados por 100 g do alimento. Alimentos líquidos: quantidade maior ou igual a 7,5 g de açúcares adicionados por 100 ml do alimento.",
+      "solidos_semissolidos": {"operador": ">=", "valor": 15, "unidade": "g/100g"},
+      "liquidos": {"operador": ">=", "valor": 7.5, "unidade": "g/100ml"},
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&cod_modulo=310",
+      "fonte_publicacao": "Diário Oficial da União, 09/10/2020, Seção 1, IN nº 75/2020",
+      "verificado_em": "2026-09-03"
+    },
+    {
+      "norma": "IN 75/2020",
+      "anexo": "XV",
+      "tipo": "linha_tabela",
+      "numero": "gorduras-saturadas",
+      "rotulo": "Gorduras saturadas",
+      "texto": "Alimentos sólidos ou semissólidos: quantidade maior ou igual a 6 g de gorduras saturadas por 100 g do alimento. Alimentos líquidos: quantidade maior ou igual a 3 g de gorduras saturadas por 100 ml do alimento.",
+      "solidos_semissolidos": {"operador": ">=", "valor": 6, "unidade": "g/100g"},
+      "liquidos": {"operador": ">=", "valor": 3, "unidade": "g/100ml"},
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&cod_modulo=310",
+      "fonte_publicacao": "Diário Oficial da União, 09/10/2020, Seção 1, IN nº 75/2020",
+      "verificado_em": "2026-09-03"
+    },
+    {
+      "norma": "IN 75/2020",
+      "anexo": "XV",
+      "tipo": "linha_tabela",
+      "numero": "sodio",
+      "rotulo": "Sódio",
+      "texto": "Alimentos sólidos ou semissólidos: quantidade maior ou igual a 600 mg de sódio por 100 g do alimento. Alimentos líquidos: quantidade maior ou igual a 300 mg de sódio por 100 ml do alimento.",
+      "solidos_semissolidos": {"operador": ">=", "valor": 600, "unidade": "mg/100g"},
+      "liquidos": {"operador": ">=", "valor": 300, "unidade": "mg/100ml"},
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&cod_modulo=310",
+      "fonte_publicacao": "Diário Oficial da União, 09/10/2020, Seção 1, IN nº 75/2020",
+      "verificado_em": "2026-09-03"
+    }
+  ]
+}
