@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -63,11 +65,38 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Salvar atualização
+      - name: Salvar atualização sem conflito concorrente
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Atualiza banco regulatório estruturado"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          for tentativa in 1 2 3; do
+            echo "Tentativa $tentativa de 3"
+            git fetch origin main
+
+            if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+              echo "main mudou durante a execução; regenerando sobre a versão mais recente"
+              git reset --hard origin/main
+              python scripts/estruturar_legislacao.py --autoteste
+              python scripts/estruturar_legislacao.py
+              python scripts/gerar_manifesto_regulatorio.py
+            fi
+
+            git add dados/legislacao_v12/ dados/regulatorio/
+            if git diff --cached --quiet; then
+              echo "Nenhuma alteração pendente após sincronização."
+              exit 0
+            fi
+
+            git commit -m "Atualiza banco regulatório estruturado"
+            if git push origin HEAD:main; then
+              echo "Atualização regulatória salva com sucesso."
+              exit 0
+            fi
+
+            echo "Outro commit chegou antes do push; nova tentativa será feita."
+          done
+
+          echo "Falha após 3 tentativas por concorrência de commits."
+          exit 1
