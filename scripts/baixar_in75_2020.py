@@ -16,35 +16,53 @@ URL='https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirText
 ROMANOS=('I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII')
 
 def baixar():
-    req=urllib.request.Request(URL,headers={'User-Agent':'base-vigilancia/1.0'})
-    with urllib.request.urlopen(req,timeout=120) as r: bruto=r.read()
+    req=urllib.request.Request(URL,headers={
+        'User-Agent':'Mozilla/5.0 base-vigilancia/1.0',
+        'Accept':'text/html,application/xhtml+xml'
+    })
+    with urllib.request.urlopen(req,timeout=120) as r:
+        bruto=r.read()
     for enc in ('utf-8','windows-1252','latin-1'):
-        try: return bruto.decode(enc)
-        except UnicodeDecodeError: pass
+        try:
+            return bruto.decode(enc)
+        except UnicodeDecodeError:
+            pass
     return bruto.decode('utf-8',errors='replace')
 
 def limpar(html):
-    x=re.sub(r'(?is)<(script|style).*?>.*?</\\1>',' ',html)
-    x=re.sub(r'(?i)<br\\s*/?>','\\n',x)
-    x=re.sub(r'(?i)</(?:p|div|li|tr|td|th|h[1-6])>','\\n',x)
+    x=re.sub(r'(?is)<(script|style).*?>.*?</\1>',' ',html)
+    x=re.sub(r'(?i)<br\s*/?>','\n',x)
+    x=re.sub(r'(?i)</(?:p|div|li|tr|td|th|h[1-6])>','\n',x)
     x=re.sub(r'<[^>]+>',' ',x)
-    x=unescape(x).replace('\\xa0',' ')
+    x=unescape(x).replace('\xa0',' ')
     linhas=[]
     for ln in x.splitlines():
-        ln=re.sub(r'[ \\t]+',' ',ln).strip()
-        if ln: linhas.append(ln)
-    return '\\n'.join(linhas)+'\\n'
+        ln=re.sub(r'[ \t]+',' ',ln).strip()
+        if ln:
+            linhas.append(ln)
+    return '\n'.join(linhas)+'\n'
 
 def validar(texto):
     faltam=[]
     for r in ROMANOS:
-        if not re.search(rf'(?im)^\\s*ANEXO\\s+{r}\\b',texto): faltam.append(r)
+        if not re.search(rf'(?im)^\s*ANEXO\s+{r}\b',texto):
+            faltam.append(r)
     if faltam:
         raise RuntimeError('IN 75/2020 incompleta; anexos ausentes: '+', '.join(faltam))
-    if not re.search(r'(?i)INSTRU[CÇ][AÃ]O NORMATIVA',texto):
-        raise RuntimeError('Fonte não reconhecida como Instrução Normativa')
-    if not re.search(r'(?im)^\\s*ANEXO\\s+XXIII\\b',texto):
-        raise RuntimeError('Fim da IN 75/2020 não localizado')
+    if not re.search(r'(?i)INSTRU[CÇ][AÃ]O(?:\s+NORMATIVA)?(?:-IN)?\s*(?:N[º°.]*)?\s*75',texto):
+        raise RuntimeError('Fonte não reconhecida como IN 75/2020')
+    # Travas de conteúdo: pontos importantes espalhados pela norma.
+    obrigatorios=(
+        'VDR PARA FINS DE ROTULAGEM NUTRICIONAL',
+        'TAMANHO DAS PORÇÕES',
+        'ROTULAGEM NUTRICIONAL FRONTAL',
+        'AÇÚCARES ADICIONADOS',
+        'FATORES DE CONVERSÃO',
+    )
+    normal=texto.upper()
+    ausentes=[x for x in obrigatorios if x not in normal]
+    if ausentes:
+        raise RuntimeError('IN 75/2020 falhou nas travas de conteúdo: '+', '.join(ausentes))
 
 def main():
     texto=limpar(baixar())
