@@ -1,0 +1,642 @@
+{
+  "app_ids": [
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5431,
+      "contexto": "oader(){\n\t\t$('#loader').show();\n\t}\n\n\t//oculta loader\n\tfunction hideLoader(){\n\t\t$('#loader').fadeOut(100);\n\t}\n\n\n\t/*####################################################\n\t\n\t\tALERTA\n\t\t\n\t\t- daqui em diante, ao utilizar o\n\t\t  dev-hub para inserir objetos\n\t\t  dos aplicativos no mashup,\n\t\t  o qlik sense escreve trechos\n\t\t  de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject(",
+      "app_id": "cce5fdb4-1444-4088-b557-2e49d7d1035e"
+    }
+  ],
+  "app_ids_variaveis": [],
+  "configuracoes": [
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/base.js",
+      "campo": "host",
+      "valor_bruto": "null)||d(e)",
+      "contexto": "a).scrollLeft,scrollTop:c.scrollTop}:r(a)),s(t)?((b=i(t)).x+=t.clientLeft,b.y+=t.clientTop):h&&(b.x=u(h))),{x:m.left+g.scrollLeft-b.x,y:m.top+g.scrollTop-b.y,width:m.width,height:m.height}}function f(e){var t=i(e),n=e.offsetWidth,o=e.offsetHeight;return Math.abs(t.width-n)<=1&&(n=t.width),Math.abs(t.height-o)<=1&&(o=t.height),{x:e.offsetLeft,y:e.offsetTop,width:n,height:o}}function g(e){return\"html\"===l(e)?e:e.assignedSlot||e.parentNode||(c(e)?e.host:null)||d(e)}function b(e,t){var n;void 0===t&&(t=[]);var i=function e(t){return[\"html\",\"body\",\"#document\"].indexOf(l(t))>=0?t.ownerDocument.body:s(t)&&p(t)?t:e(g(t))}(e),r=i===(null==(n=e.ownerDocument)?void 0:n.body),a=o(i),c=r?[a].concat(a.visualViewport||[],p(i)?i:[]):i,d=t.concat(c);return r?d:d.concat(b(g(c)))}function v(e){return[\"table\",\"td\",\"th\"].indexOf(l(e))>=0}function y(e){return s(e)&&\"fixed\"!==h(e).position?e.offsetParent:null}"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "campo": "host",
+      "valor_bruto": "window.location.hostname",
+      "contexto": "/*\n * MAPA - Template Padrão\n */\n\nvar prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( \"/extensions\" ) + 1 );\nvar config = {\n\thost: window.location.hostname,\n\tprefix: prefix,\n\tport: window.location.port,\n\tisSecure: window.location.protocol === \"https:\"\n};\n\nvar app;\nrequire.config( { baseUrl: (config.isSecure ? \"https://\" : \"http://\" ) + config.host + (config.port ? \":\" + config.port : \"\" ) + config.prefix + \"resources\" } );\nrequire( [\"js/qlik\"], function ( qlik ) {\n\n\t/*\n\t\tEste trecho que encontra-se comentado, serve para que\n\t\to usuário consiga obter o ID do tema que de"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "campo": "prefix",
+      "valor_bruto": "prefix",
+      "contexto": "/*\n * MAPA - Template Padrão\n */\n\nvar prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( \"/extensions\" ) + 1 );\nvar config = {\n\thost: window.location.hostname,\n\tprefix: prefix,\n\tport: window.location.port,\n\tisSecure: window.location.protocol === \"https:\"\n};\n\nvar app;\nrequire.config( { baseUrl: (config.isSecure ? \"https://\" : \"http://\" ) + config.host + (config.port ? \":\" + config.port : \"\" ) + config.prefix + \"resources\" } );\nrequire( [\"js/qlik\"], function ( qlik ) {\n\n\t/*\n\t\tEste trecho que encontra-se comentado, serve para que\n\t\to usuário consiga obter o ID do tema que deseja usar\n\t\tcomo tema padrão do m"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "campo": "port",
+      "valor_bruto": "window.location.port",
+      "contexto": "/*\n * MAPA - Template Padrão\n */\n\nvar prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( \"/extensions\" ) + 1 );\nvar config = {\n\thost: window.location.hostname,\n\tprefix: prefix,\n\tport: window.location.port,\n\tisSecure: window.location.protocol === \"https:\"\n};\n\nvar app;\nrequire.config( { baseUrl: (config.isSecure ? \"https://\" : \"http://\" ) + config.host + (config.port ? \":\" + config.port : \"\" ) + config.prefix + \"resources\" } );\nrequire( [\"js/qlik\"], function ( qlik ) {\n\n\t/*\n\t\tEste trecho que encontra-se comentado, serve para que\n\t\to usuário consiga obter o ID do tema que deseja usar\n\t\tcomo tema padrão do mashup.\n\n\t\tOs nome"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "campo": "port",
+      "valor_bruto": "\"\" ) + config.prefix + \"resources\"",
+      "contexto": "/*\n * MAPA - Template Padrão\n */\n\nvar prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( \"/extensions\" ) + 1 );\nvar config = {\n\thost: window.location.hostname,\n\tprefix: prefix,\n\tport: window.location.port,\n\tisSecure: window.location.protocol === \"https:\"\n};\n\nvar app;\nrequire.config( { baseUrl: (config.isSecure ? \"https://\" : \"http://\" ) + config.host + (config.port ? \":\" + config.port : \"\" ) + config.prefix + \"resources\" } );\nrequire( [\"js/qlik\"], function ( qlik ) {\n\n\t/*\n\t\tEste trecho que encontra-se comentado, serve para que\n\t\to usuário consiga obter o ID do tema que deseja usar\n\t\tcomo tema padrão do mashup.\n\n\t\tOs nomes e IDs serão exibidos no console do navegador.\n\t\tPara configurar o tema padrão deste mashup:\n\t\t- Copiar o ID do tema desejado;\n\t\t- Atribuir o ID copiado à variável 'themeID'\n\n\t\tTemas padrão do Qlik Sense:"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "campo": "isSecure",
+      "valor_bruto": "window.location.protocol === \"https:\"",
+      "contexto": "/*\n * MAPA - Template Padrão\n */\n\nvar prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( \"/extensions\" ) + 1 );\nvar config = {\n\thost: window.location.hostname,\n\tprefix: prefix,\n\tport: window.location.port,\n\tisSecure: window.location.protocol === \"https:\"\n};\n\nvar app;\nrequire.config( { baseUrl: (config.isSecure ? \"https://\" : \"http://\" ) + config.host + (config.port ? \":\" + config.port : \"\" ) + config.prefix + \"resources\" } );\nrequire( [\"js/qlik\"], function ( qlik ) {\n\n\t/*\n\t\tEste trecho que encontra-se comentado, serve para que\n\t\to usuário consiga obter o ID do tema que deseja usar\n\t\tcomo tema padrão do mashup.\n\n\t\tOs nomes e IDs serão exibidos no con"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "host",
+      "valor_bruto": "mr(\"$$host\")",
+      "contexto": "\"#\"+Ee(n):\"\",function(e){for(var t=e.split(\"/\"),n=t.length;n--;)t[n]=Ee(t[n].replace(/%2F/g,\"/\"));return t.join(\"/\")}(e)+(i?\"?\"+i:\"\")+o),this.$$absUrl=this.$$normalizeUrl(this.$$url),this.$$urlUpdatedByLocation=!0},absUrl:mr(\"$$absUrl\"),url:function(e){if(I(e))return this.$$url;var t=nr.exec(e);return(t[1]||\"\"===e)&&this.path(decodeURIComponent(t[1])),(t[2]||t[1]||\"\"===e)&&this.search(t[3]||\"\"),this.hash(t[5]||\"\"),this},protocol:mr(\"$$protocol\"),host:mr(\"$$host\"),port:mr(\"$$port\"),path:vr(\"$$path\",(function(e){return\"/\"===(e=null!==e?e.toString():\"\").charAt(0)?e:\"/\"+e})),search:function(e,t){switch(arguments.length){case 0:return this.$$search;case 1:if(H(e)||B(e))e=e.toString(),this.$$search=Se(e);else{if(!U(e))throw ir(\"isrcharg\",\"The first argument of the `$location#search()` call must be a string or an object.\");S(e=se(e,{}),(function(t,n){null==t&&delete e[n]})),this.$$search=e}brea"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "host",
+      "valor_bruto": "ui.host",
+      "contexto": ".$$timeoutId,r=o[n];return Fr(r.promise),r.reject(\"canceled\"),delete o[n],t.defer.cancel(n)},a}]}var si,ui=e.document.createElement(\"a\"),ci=fi(e.location.href);ui.href=\"https://[::1]\";var li=\"[::1]\"===ui.hostname;function fi(e){if(!H(e))return e;var t=e;a&&(ui.setAttribute(\"href\",t),t=ui.href),ui.setAttribute(\"href\",t);var n=ui.hostname;return!li&&n.indexOf(\":\")>-1&&(n=\"[\"+n+\"]\"),{href:ui.href,protocol:ui.protocol?ui.protocol.replace(/:$/,\"\"):\"\",host:ui.host,search:ui.search?ui.search.replace(/^\\?/,\"\"):\"\",hash:ui.hash?ui.hash.replace(/^#/,\"\"):\"\",hostname:n,port:ui.port,pathname:\"/\"===ui.pathname.charAt(0)?ui.pathname:\"/\"+ui.pathname}}function pi(e,t){return e=fi(e),t=fi(t),e.protocol===t.protocol&&e.host===t.host}function di(){this.$get=R(e)}function hi(e){var t=e[0]||{},n={},r=\"\";function i(e){try{return decodeURIComponent(e)}catch(t){return e}}return function(){var e,o,a,s,u,c=function"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "prefix",
+      "valor_bruto": "!0",
+      "contexto": ".additive()};return t},additive:function(){for(var e,t=this.multiplicative();e=this.expect(\"+\",\"-\");)t={type:Er.BinaryExpression,operator:e.text,left:t,right:this.multiplicative()};return t},multiplicative:function(){for(var e,t=this.unary();e=this.expect(\"*\",\"/\",\"%\");)t={type:Er.BinaryExpression,operator:e.text,left:t,right:this.unary()};return t},unary:function(){var e;return(e=this.expect(\"+\",\"-\",\"!\"))?{type:Er.UnaryExpression,operator:e.text,prefix:!0,argument:this.unary()}:this.primary()},primary:function(){var e,t;for(this.expect(\"(\")?(e=this.filterChain(),this.consume(\")\")):this.expect(\"[\")?e=this.arrayDeclaration():this.expect(\"{\")?e=this.object():this.selfReferential.hasOwnProperty(this.peek().text)?e=se(this.selfReferential[this.consume().text]):this.options.literals.hasOwnProperty(this.peek().text)?e={type:Er.Literal,value:this.options.literals[this.consume().text]}:this.peek("
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "prefix",
+      "valor_bruto": "c",
+      "contexto": "(null,{skipMap:!0})([e]),!0}function y(e){var t,n=e?e.indexOf(\"!\"):-1;return n>-1&&(t=e.substring(0,n),e=e.substring(n+1,e.length)),[t,e]}function b(e,t,n,i){var o,a,s,u,c=null,l=t?t.name:null,p=e,d=!0,g=\"\";return e||(d=!1,e=\"_@r\"+(h+=1)),c=(u=y(e))[0],e=u[1],c&&(c=v(c,l,i),a=getOwn(f,c)),e&&(c?g=n?e:a&&a.normalize?a.normalize(e,(function(e){return v(e,l,i)})):-1===e.indexOf(\"!\")?v(e,l,i):e:(c=(u=y(g=v(e,l,i)))[0],g=u[1],n=!0,o=r.nameToUrl(g))),{prefix:c,name:g,parentMap:t,unnormalized:!!(s=!c||a||n?\"\":\"_unnormalized\"+(m+=1)),url:o,originalName:p,isDefine:d,id:(c?c+\"!\"+g:g)+s}}function w(e){var t=e.id,n=getOwn(s,t);return n||(n=s[t]=new r.Module(e)),n}function x(e,t,n){var r=e.id,i=getOwn(s,r);!hasProp(f,r)||i&&!i.defineEmitComplete?(i=w(e)).error&&\"error\"===t?n(i.error):i.on(t,n):\"defined\"===t&&n(f[r])}function C(e,t){var n=e.requireModules,r=!1;t?t(e):(each(n,(function(t){var n=getOwn("
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "port",
+      "valor_bruto": "mr(\"$$port\")",
+      "contexto": "ion(e){for(var t=e.split(\"/\"),n=t.length;n--;)t[n]=Ee(t[n].replace(/%2F/g,\"/\"));return t.join(\"/\")}(e)+(i?\"?\"+i:\"\")+o),this.$$absUrl=this.$$normalizeUrl(this.$$url),this.$$urlUpdatedByLocation=!0},absUrl:mr(\"$$absUrl\"),url:function(e){if(I(e))return this.$$url;var t=nr.exec(e);return(t[1]||\"\"===e)&&this.path(decodeURIComponent(t[1])),(t[2]||t[1]||\"\"===e)&&this.search(t[3]||\"\"),this.hash(t[5]||\"\"),this},protocol:mr(\"$$protocol\"),host:mr(\"$$host\"),port:mr(\"$$port\"),path:vr(\"$$path\",(function(e){return\"/\"===(e=null!==e?e.toString():\"\").charAt(0)?e:\"/\"+e})),search:function(e,t){switch(arguments.length){case 0:return this.$$search;case 1:if(H(e)||B(e))e=e.toString(),this.$$search=Se(e);else{if(!U(e))throw ir(\"isrcharg\",\"The first argument of the `$location#search()` call must be a string or an object.\");S(e=se(e,{}),(function(t,n){null==t&&delete e[n]})),this.$$search=e}break;default:I(t)||nu"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js",
+      "campo": "port",
+      "valor_bruto": "ui.port",
+      "contexto": "ment.createElement(\"a\"),ci=fi(e.location.href);ui.href=\"https://[::1]\";var li=\"[::1]\"===ui.hostname;function fi(e){if(!H(e))return e;var t=e;a&&(ui.setAttribute(\"href\",t),t=ui.href),ui.setAttribute(\"href\",t);var n=ui.hostname;return!li&&n.indexOf(\":\")>-1&&(n=\"[\"+n+\"]\"),{href:ui.href,protocol:ui.protocol?ui.protocol.replace(/:$/,\"\"):\"\",host:ui.host,search:ui.search?ui.search.replace(/^\\?/,\"\"):\"\",hash:ui.hash?ui.hash.replace(/^#/,\"\"):\"\",hostname:n,port:ui.port,pathname:\"/\"===ui.pathname.charAt(0)?ui.pathname:\"/\"+ui.pathname}}function pi(e,t){return e=fi(e),t=fi(t),e.protocol===t.protocol&&e.host===t.host}function di(){this.$get=R(e)}function hi(e){var t=e[0]||{},n={},r=\"\";function i(e){try{return decodeURIComponent(e)}catch(t){return e}}return function(){var e,o,a,s,u,c=function(e){try{return e.cookie||\"\"}catch(e){return\"\"}}(t);if(c!==r)for(e=(r=c).split(\"; \"),n={},a=0;a<e.length;a++)(s=(o"
+    }
+  ],
+  "objetos_getObject": [
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5530,
+      "contexto": "(100);\n\t}\n\n\n\t/*####################################################\n\t\n\t\tALERTA\n\t\t\n\t\t- daqui em diante, ao utilizar o\n\t\t  dev-hub para inserir objetos\n\t\t  dos aplicativos no mashup,\n\t\t  o qlik sense escreve trechos\n\t\t  de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jz",
+      "argumento_1": "tabela-gestao-servicos-full",
+      "argumento_2": "WBLdmcj"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5587,
+      "contexto": "##########\n\t\n\t\tALERTA\n\t\t\n\t\t- daqui em diante, ao utilizar o\n\t\t  dev-hub para inserir objetos\n\t\t  dos aplicativos no mashup,\n\t\t  o qlik sense escreve trechos\n\t\t  de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr",
+      "argumento_1": "tabela-gestao-produtos-full",
+      "argumento_2": "YwuSG"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5644,
+      "contexto": "o\n\t\t  dev-hub para inserir objetos\n\t\t  dos aplicativos no mashup,\n\t\t  o qlik sense escreve trechos\n\t\t  de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven'",
+      "argumento_1": "filtro-produto-uf",
+      "argumento_2": "ejPtGXn"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5691,
+      "contexto": "icativos no mashup,\n\t\t  o qlik sense escreve trechos\n\t\t  de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','a",
+      "argumento_1": "filtro-produto-municipio",
+      "argumento_2": "AXfZV"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5743,
+      "contexto": "de script podendo sobrescrever\n\t\t  seu código inserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz'",
+      "argumento_1": "filtro-produto-cpf-cnpj",
+      "argumento_2": "PeVAzw"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5795,
+      "contexto": "nserido manualmente.\n\t\t  \n\t\t- não remover as linhas de comentário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-conso",
+      "argumento_1": "filtro-produto-estabelecimento",
+      "argumento_2": "SQQFF"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5853,
+      "contexto": "entário\n\t\t- não mudar a ordem dos comentários\n\t\t- evitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabele",
+      "argumento_1": "filtro-produto-servico",
+      "argumento_2": "dNnwLn"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5904,
+      "contexto": "vitar alterar o código daqui em diante \n\t\t\n\t####################################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-c",
+      "argumento_1": "filtro-produto-padronizado",
+      "argumento_2": "QjUjRfX"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 5960,
+      "contexto": "########################################*/\n\n\t//callbacks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabel",
+      "argumento_1": "filtro-produto-nome-venda",
+      "argumento_2": "CBjCCj"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6014,
+      "contexto": "ks -- inserted here --\n\t//open apps -- inserted here --\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico",
+      "argumento_1": "filtro-produto-registro",
+      "argumento_2": "ptXzFmB"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6067,
+      "contexto": "--\n\tvar app = qlik.openApp('cce5fdb4-1444-4088-b557-2e49d7d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');",
+      "argumento_1": "grafico-barra-produto-servico",
+      "argumento_2": "pQkRcu"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6125,
+      "contexto": "d1035e', config);\n\n\t//get objects -- inserted here --\n\tapp.getObject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.ge",
+      "argumento_1": "grafico-barra-produto-tipo-inspecao",
+      "argumento_2": "jzzjRN"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6189,
+      "contexto": "ject('tabela-gestao-servicos-full','WBLdmcj');\n\tapp.getObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\ta",
+      "argumento_1": "grafico-barra-produto-area",
+      "argumento_2": "EBPr"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6242,
+      "contexto": "etObject('tabela-gestao-produtos-full','YwuSG');\n\t\n\tapp.getObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','R",
+      "argumento_1": "grafico-barra-produto-rank",
+      "argumento_2": "dDmyven"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6299,
+      "contexto": "etObject('filtro-produto-uf','ejPtGXn');\n\tapp.getObject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GC",
+      "argumento_1": "kpi-produto-integrado-2",
+      "argumento_2": "ajdBb"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6350,
+      "contexto": "ject('filtro-produto-municipio','AXfZV');\n\tapp.getObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-munic",
+      "argumento_1": "kpi-produto-geral-2",
+      "argumento_2": "mDhKz"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6399,
+      "contexto": "tObject('filtro-produto-cpf-cnpj','PeVAzw');\n\tapp.getObject('filtro-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-s",
+      "argumento_1": "tabela-gestao-abrangencia-consorcio",
+      "argumento_2": "NQjVKpw"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6466,
+      "contexto": "-produto-estabelecimento','SQQFF');\n\tapp.getObject('filtro-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-",
+      "argumento_1": "tabela-gestao-estabelecimentos",
+      "argumento_2": "rxXxN"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6524,
+      "contexto": "-produto-servico','dNnwLn');\n\tapp.getObject('filtro-produto-padronizado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municip",
+      "argumento_1": "tabela-gestao-cadastro-estabelecimento",
+      "argumento_2": "hzgwH"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6590,
+      "contexto": "izado','QjUjRfX');\n\tapp.getObject('filtro-produto-nome-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-",
+      "argumento_1": "tabela-gestao-escopos",
+      "argumento_2": "PeWjBB"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6642,
+      "contexto": "me-venda','CBjCCj');\n\tapp.getObject('filtro-produto-registro','ptXzFmB');\n\tapp.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-es",
+      "argumento_1": "grafico-barra-servico-municipal-estabelecimento",
+      "argumento_2": "rmCBv"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6717,
+      "contexto": "app.getObject('grafico-barra-produto-servico','pQkRcu');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-int",
+      "argumento_1": "mapa-servico-municipal",
+      "argumento_2": "mKUtbBh"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6769,
+      "contexto": "u');\n\tapp.getObject('grafico-barra-produto-tipo-inspecao','jzzjRN');\n\tapp.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-s",
+      "argumento_1": "kpi-estabelecimento-integrado-municipal",
+      "argumento_2": "VVHPzvw"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6838,
+      "contexto": "app.getObject('grafico-barra-produto-area','EBPr');\n\tapp.getObject('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecime",
+      "argumento_1": "kpi-estabelecimento-geral-municipal",
+      "argumento_2": "RrRGvd"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6902,
+      "contexto": "ect('grafico-barra-produto-rank','dDmyven');\t\n\tapp.getObject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-es",
+      "argumento_1": "kpi-servico-geral-municipal",
+      "argumento_2": "GCJDEs"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 6958,
+      "contexto": "ject('kpi-produto-integrado-2','ajdBb');\n\tapp.getObject('kpi-produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servic",
+      "argumento_1": "kpi-servico-integrado-municipal",
+      "argumento_2": "AMjPAkP"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7019,
+      "contexto": "produto-geral-2','mDhKz');\n\t\n\tapp.getObject('tabela-gestao-abrangencia-consorcio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-e",
+      "argumento_1": "grafico-barra-servico-consorcio-estabelecimento",
+      "argumento_2": "jnStrpU"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7096,
+      "contexto": "cio','NQjVKpw');\n\t\n\tapp.getObject('tabela-gestao-estabelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecim",
+      "argumento_1": "mapa-servico-consorcio",
+      "argumento_2": "AHpsnPn"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7148,
+      "contexto": "abelecimentos','rxXxN');\n\tapp.getObject('tabela-gestao-cadastro-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-s",
+      "argumento_1": "kpi-municipio-integrado-consorcio",
+      "argumento_2": "LAjmjWX"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7211,
+      "contexto": "-estabelecimento','hzgwH');\n\tapp.getObject('tabela-gestao-escopos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-",
+      "argumento_1": "kpi-municipio-geral-consorcio",
+      "argumento_2": "UJKzFv"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7271,
+      "contexto": "copos','PeWjBB');\n\t\n\tapp.getObject('grafico-barra-servico-municipal-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha",
+      "argumento_1": "kpi-estabelecimento-integrado-consorcio",
+      "argumento_2": "TqcW"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7337,
+      "contexto": "l-estabelecimento','rmCBv');\n\tapp.getObject('mapa-servico-municipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','",
+      "argumento_1": "kpi-servico-integrado-consorcio",
+      "argumento_2": "kSMVYc"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7399,
+      "contexto": "cipal','mKUtbBh');\n\tapp.getObject('kpi-estabelecimento-integrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');",
+      "argumento_1": "kpi-servico-geral-consorcio",
+      "argumento_2": "Pccemp"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7457,
+      "contexto": "egrado-municipal','VVHPzvw');\n\tapp.getObject('kpi-estabelecimento-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getO",
+      "argumento_1": "kpi-estabelecimento-geral-consorcio",
+      "argumento_2": "DAjbk"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7522,
+      "contexto": "-geral-municipal','RrRGvd');\n\tapp.getObject('kpi-servico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-esta",
+      "argumento_1": "mapa-servico-estadual",
+      "argumento_2": "DUyHZyV"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7573,
+      "contexto": "rvico-geral-municipal','GCJDEs');\n\tapp.getObject('kpi-servico-integrado-municipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camad",
+      "argumento_1": "grafico-barra-servico-estadual-estabelecimento",
+      "argumento_2": "PVYGUEH"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7649,
+      "contexto": "cipal','AMjPAkP');\n\tapp.getObject('grafico-barra-servico-consorcio-estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObjec",
+      "argumento_1": "kpi-estabelecimento-integrado-estadual",
+      "argumento_2": "WCNgbf"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7716,
+      "contexto": "estabelecimento','jnStrpU');\n\tapp.getObject('mapa-servico-consorcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integ",
+      "argumento_1": "kpi-estabelecimento-geral-estadual",
+      "argumento_2": "bGhLu"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7778,
+      "contexto": "orcio','AHpsnPn');\n\tapp.getObject('kpi-municipio-integrado-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');",
+      "argumento_1": "kpi-servico-geral-estadual",
+      "argumento_2": "zgcXDqG"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7834,
+      "contexto": "do-consorcio','LAjmjWX');\n\tapp.getObject('kpi-municipio-geral-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tap",
+      "argumento_1": "kpi-servico-integrado-estadual",
+      "argumento_2": "uPQdcA"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7893,
+      "contexto": "al-consorcio','UJKzFv');\n\t\n\tapp.getObject('kpi-estabelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObjec",
+      "argumento_1": "grafico-linha-portaria",
+      "argumento_2": "LCfng"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7943,
+      "contexto": "abelecimento-integrado-consorcio','TqcW');\n\tapp.getObject('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.",
+      "argumento_1": "grafico-barra-tipo-servico",
+      "argumento_2": "cdqSre"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 7998,
+      "contexto": "ct('kpi-servico-integrado-consorcio','kSMVYc');\n\t\n\tapp.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cube",
+      "argumento_1": "texto-selecao-servico",
+      "argumento_2": "QChQSvC"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8049,
+      "contexto": "app.getObject('kpi-servico-geral-consorcio','Pccemp');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new A",
+      "argumento_1": "mapa-camada-abrangencia",
+      "argumento_2": "nSxc"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8099,
+      "contexto": "p');\n\t\n\tapp.getObject('kpi-estabelecimento-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do fil",
+      "argumento_1": "mapa-camada-uf",
+      "argumento_2": "uLvkD"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8141,
+      "contexto": "-geral-consorcio','DAjbk');\n\t\n\tapp.getObject('mapa-servico-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a cl",
+      "argumento_1": "mapa-camada-estabelecimento",
+      "argumento_2": "LRKwprb"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8198,
+      "contexto": "o-estadual','DUyHZyV');\n\tapp.getObject('grafico-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", functio",
+      "argumento_1": "mapa-camada-servico",
+      "argumento_2": "CyCzS"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8245,
+      "contexto": "-barra-servico-estadual-estabelecimento','PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSel",
+      "argumento_1": "mapa-servicos",
+      "argumento_2": "QueJzQ"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8287,
+      "contexto": "PVYGUEH');\n\tapp.getObject('kpi-estabelecimento-integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(s",
+      "argumento_1": "kpi-servico-geral",
+      "argumento_2": "hNwrjwb"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8334,
+      "contexto": "integrado-estadual','WCNgbf');\n\tapp.getObject('kpi-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField ===",
+      "argumento_1": "kpi-servico-integrado",
+      "argumento_2": "upWEnp"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8384,
+      "contexto": "-estabelecimento-geral-estadual','bGhLu');\n\tapp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField === \"ID_SERVICO_INSPECAO\";\n\t\t\n    });\n\n    // Verifiq",
+      "argumento_1": "kpi-produto-geral",
+      "argumento_2": "mDhKz"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8429,
+      "contexto": "pp.getObject('kpi-servico-geral-estadual','zgcXDqG');\n\tapp.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField === \"ID_SERVICO_INSPECAO\";\n\t\t\n    });\n\n    // Verifique se houve alguma seleção no campo \"ID_SERVI",
+      "argumento_1": "kpi-estabelecimento-geral",
+      "argumento_2": "UMMVN"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8482,
+      "contexto": "app.getObject('kpi-servico-integrado-estadual','uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField === \"ID_SERVICO_INSPECAO\";\n\t\t\n    });\n\n    // Verifique se houve alguma seleção no campo \"ID_SERVICO_INSPECAO\"\n     if (selecoesServico.length > 0) {",
+      "argumento_1": "kpi-produto-integrado",
+      "argumento_2": "ajdBb"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8531,
+      "contexto": "'uPQdcA');\n\tapp.getObject('grafico-linha-portaria','LCfng');\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField === \"ID_SERVICO_INSPECAO\";\n\t\t\n    });\n\n    // Verifique se houve alguma seleção no campo \"ID_SERVICO_INSPECAO\"\n     if (selecoesServico.length > 0) {\n        // Se houve alguma seleção, torne os eleme",
+      "argumento_1": "kpi-estabelecimento-integrado",
+      "argumento_2": "Wshtzf"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 8589,
+      "contexto": ");\n\tapp.getObject('grafico-barra-tipo-servico','cdqSre');\n\tapp.getObject('texto-selecao-servico','QChQSvC');\n\tapp.getObject('mapa-camada-abrangencia','nSxc');\n\tapp.getObject('mapa-camada-uf','uLvkD');\n\tapp.getObject('mapa-camada-estabelecimento','LRKwprb');\n\tapp.getObject('mapa-camada-servico','CyCzS');\n\tapp.getObject('mapa-servicos','QueJzQ');\n\tapp.getObject('kpi-servico-geral','hNwrjwb');\n\tapp.getObject('kpi-servico-integrado','upWEnp');\n\tapp.getObject('kpi-produto-geral','mDhKz');\n\tapp.getObject('kpi-estabelecimento-geral','UMMVN');\n\tapp.getObject('kpi-produto-integrado','ajdBb');\n\tapp.getObject('kpi-estabelecimento-integrado','Wshtzf');\n\tapp.getObject('texto-atualizacao','hQMXvy');\n\t//create cubes and lists -- inserted here --\n\tif ( app ) { new AppUi( app ); }\n\n\n\n\n\n\n// Assista às seleções do filtro \"ID_SERVICO_INSPECAO\" seleconando a classe do elemento\napp.getList(\"CurrentSelections\", function(reply) {\n    var selecoesServico = reply.qSelectionObject.qSelections.filter(function(selection) {\n        return selection.qField === \"ID_SERVICO_INSPECAO\";\n\t\t\n    });\n\n    // Verifique se houve alguma seleção no campo \"ID_SERVICO_INSPECAO\"\n     if (selecoesServico.length > 0) {\n        // Se houve alguma seleção, torne os elementos visíveis\n        var elementosVisiveis = document.que",
+      "argumento_1": "texto-atualizacao",
+      "argumento_2": "hQMXvy"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 9686,
+      "contexto": "se houve alguma seleção no campo \"ID_SERVICO_INSPECAO\"\n     if (selecoesServico.length > 0) {\n        // Se houve alguma seleção, torne os elementos visíveis\n        var elementosVisiveis = document.querySelectorAll('.elementoVisivel');\n        elementosVisiveis.forEach(function(elemento) {\n            elemento.style.display = 'block';\n        });\n    } else {\n        // Caso contrário, mantenha os elementos invisíveis\n        var elementosVisiveis = document.querySelectorAll('.elementoVisivel');\n        elementosVisiveis.forEach(function(elemento) {\n            elemento.style.display = 'none';\n        });\n    }\n});\t\n\n//Exportação de tabela\napp.getObject('botao-exportar-tabela-servico-full','WBLdmcj').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-servico-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-escopos-full','PeWjBB').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-escopos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-cadastros-estabelecimentos-full ','hzgwH').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-cadastros-estabelecimen",
+      "argumento_1": "botao-exportar-tabela-servico-full",
+      "argumento_2": "WBLdmcj"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 9933,
+      "contexto": "lementosVisiveis.forEach(function(elemento) {\n            elemento.style.display = 'block';\n        });\n    } else {\n        // Caso contrário, mantenha os elementos invisíveis\n        var elementosVisiveis = document.querySelectorAll('.elementoVisivel');\n        elementosVisiveis.forEach(function(elemento) {\n            elemento.style.display = 'none';\n        });\n    }\n});\t\n\n//Exportação de tabela\napp.getObject('botao-exportar-tabela-servico-full','WBLdmcj').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-servico-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-escopos-full','PeWjBB').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-escopos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-cadastros-estabelecimentos-full ','hzgwH').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-cadastros-estabelecimentos-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-estabelecimentos-full','rxXxN').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabe",
+      "argumento_1": "botao-exportar-tabela-escopos-full",
+      "argumento_2": "PeWjBB"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 10178,
+      "contexto": "Visivel');\n        elementosVisiveis.forEach(function(elemento) {\n            elemento.style.display = 'none';\n        });\n    }\n});\t\n\n//Exportação de tabela\napp.getObject('botao-exportar-tabela-servico-full','WBLdmcj').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-servico-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-escopos-full','PeWjBB').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-escopos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-cadastros-estabelecimentos-full ','hzgwH').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-cadastros-estabelecimentos-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-estabelecimentos-full','rxXxN').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-estabelecimentos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-abrangencia-full ','NQjVKpw').then(function(reply){\t\t\t\t\t\n\t\t$('#bot",
+      "argumento_1": "botao-exportar-tabela-cadastros-estabelecimentos-full ",
+      "argumento_2": "hzgwH"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 10462,
+      "contexto": "ull').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-escopos-full','PeWjBB').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-escopos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-cadastros-estabelecimentos-full ','hzgwH').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-cadastros-estabelecimentos-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-estabelecimentos-full','rxXxN').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-estabelecimentos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-abrangencia-full ','NQjVKpw').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-abrangencia-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-produto-full','YwuSG').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-produto-full').",
+      "argumento_1": "botao-exportar-tabela-estabelecimentos-full",
+      "argumento_2": "rxXxN"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 10725,
+      "contexto": "ion(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-cadastros-estabelecimentos-full ','hzgwH').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-cadastros-estabelecimentos-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-estabelecimentos-full','rxXxN').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-estabelecimentos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-abrangencia-full ','NQjVKpw').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-abrangencia-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-produto-full','YwuSG').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-produto-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\n});",
+      "argumento_1": "botao-exportar-tabela-abrangencia-full ",
+      "argumento_2": "NQjVKpw"
+    },
+    {
+      "origem": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+      "posicao": 10982,
+      "contexto": "imentos-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\napp.getObject('botao-exportar-tabela-estabelecimentos-full','rxXxN').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-estabelecimentos-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-abrangencia-full ','NQjVKpw').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-abrangencia-full ').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\t\napp.getObject('botao-exportar-tabela-produto-full','YwuSG').then(function(reply){\t\t\t\t\t\n\t\t$('#botao-exportar-tabela-produto-full').click(function(){\n            var qTable = qlik.table(reply);\n\t\t\tqTable.exportData({download: true});\n\t\t});\n\t});\n\n});",
+      "argumento_1": "botao-exportar-tabela-produto-full",
+      "argumento_2": "YwuSG"
+    }
+  ],
+  "ids_qlik": [
+    "AHpsnPn",
+    "AMjPAkP",
+    "AXfZV",
+    "CBjCCj",
+    "CyCzS",
+    "DAjbk",
+    "DUyHZyV",
+    "EBPr",
+    "GCJDEs",
+    "LAjmjWX",
+    "LCfng",
+    "LRKwprb",
+    "NQjVKpw",
+    "PVYGUEH",
+    "Pccemp",
+    "PeVAzw",
+    "PeWjBB",
+    "QChQSvC",
+    "QjUjRfX",
+    "QueJzQ",
+    "RrRGvd",
+    "SQQFF",
+    "TqcW",
+    "UJKzFv",
+    "UMMVN",
+    "VVHPzvw",
+    "WBLdmcj",
+    "WCNgbf",
+    "Wshtzf",
+    "YwuSG",
+    "ajdBb",
+    "bGhLu",
+    "botao-exportar-tabela-abrangencia-full ",
+    "botao-exportar-tabela-cadastros-estabelecimentos-full ",
+    "botao-exportar-tabela-escopos-full",
+    "botao-exportar-tabela-estabelecimentos-full",
+    "botao-exportar-tabela-produto-full",
+    "botao-exportar-tabela-servico-full",
+    "cdqSre",
+    "dDmyven",
+    "dNnwLn",
+    "ejPtGXn",
+    "filtro-produto-cpf-cnpj",
+    "filtro-produto-estabelecimento",
+    "filtro-produto-municipio",
+    "filtro-produto-nome-venda",
+    "filtro-produto-padronizado",
+    "filtro-produto-registro",
+    "filtro-produto-servico",
+    "filtro-produto-uf",
+    "grafico-barra-produto-area",
+    "grafico-barra-produto-rank",
+    "grafico-barra-produto-servico",
+    "grafico-barra-produto-tipo-inspecao",
+    "grafico-barra-servico-consorcio-estabelecimento",
+    "grafico-barra-servico-estadual-estabelecimento",
+    "grafico-barra-servico-municipal-estabelecimento",
+    "grafico-barra-tipo-servico",
+    "grafico-linha-portaria",
+    "hNwrjwb",
+    "hQMXvy",
+    "hzgwH",
+    "jnStrpU",
+    "jzzjRN",
+    "kSMVYc",
+    "kpi-estabelecimento-geral",
+    "kpi-estabelecimento-geral-consorcio",
+    "kpi-estabelecimento-geral-estadual",
+    "kpi-estabelecimento-geral-municipal",
+    "kpi-estabelecimento-integrado",
+    "kpi-estabelecimento-integrado-consorcio",
+    "kpi-estabelecimento-integrado-estadual",
+    "kpi-estabelecimento-integrado-municipal",
+    "kpi-municipio-geral-consorcio",
+    "kpi-municipio-integrado-consorcio",
+    "kpi-produto-geral",
+    "kpi-produto-geral-2",
+    "kpi-produto-integrado",
+    "kpi-produto-integrado-2",
+    "kpi-servico-geral",
+    "kpi-servico-geral-consorcio",
+    "kpi-servico-geral-estadual",
+    "kpi-servico-geral-municipal",
+    "kpi-servico-integrado",
+    "kpi-servico-integrado-consorcio",
+    "kpi-servico-integrado-estadual",
+    "kpi-servico-integrado-municipal",
+    "mDhKz",
+    "mKUtbBh",
+    "mapa-camada-abrangencia",
+    "mapa-camada-estabelecimento",
+    "mapa-camada-servico",
+    "mapa-camada-uf",
+    "mapa-servico-consorcio",
+    "mapa-servico-estadual",
+    "mapa-servico-municipal",
+    "mapa-servicos",
+    "nSxc",
+    "pQkRcu",
+    "ptXzFmB",
+    "rmCBv",
+    "rxXxN",
+    "tabela-gestao-abrangencia-consorcio",
+    "tabela-gestao-cadastro-estabelecimento",
+    "tabela-gestao-escopos",
+    "tabela-gestao-estabelecimentos",
+    "tabela-gestao-produtos-full",
+    "tabela-gestao-servicos-full",
+    "texto-atualizacao",
+    "texto-selecao-servico",
+    "uLvkD",
+    "uPQdcA",
+    "upWEnp",
+    "zgcXDqG"
+  ],
+  "campos_qlik": [],
+  "createCube": [],
+  "createHyperCube": [],
+  "fontes_analisadas": [
+    "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/DSN_ESISBI_2.html",
+    "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/base.js",
+    "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/qliksense.js",
+    "https://mapa-indicadores.agricultura.gov.br/publico/resources/assets/external/requirejs/require.js"
+  ],
+  "app_ids_unicos": [
+    "cce5fdb4-1444-4088-b557-2e49d7d1035e"
+  ]
+}

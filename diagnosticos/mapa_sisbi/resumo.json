@@ -1,10 +1,11 @@
 {
-  "status": "diagnostico_concluido_com_candidatos",
+  "status": "diagnostico_qlik_concluido",
+  "versao_diagnostico": "2.1.0",
   "orgao": "Ministério da Agricultura e Pecuária — MAPA",
   "sistema": "e-SISBI / SISBI-POA",
   "painel": "https://mapa-indicadores.agricultura.gov.br/publico/extensions/DSN_ESISBI_2/DSN_ESISBI_2.html",
-  "executado_em": "2026-09-03T01:07:02.903058+00:00",
-  "observacao": "Somente recursos públicos; sem contorno de autenticação, CAPTCHA ou controles de acesso.",
+  "executado_em": "2026-09-03T01:24:07.102571+00:00",
+  "observacao": "Diagnóstico passivo de recursos públicos do painel Qlik Sense. Não contorna autenticação, CAPTCHA, sessão ou controles de acesso.",
   "http_status": 200,
   "content_type": "text/html;charset=utf-8",
   "last_modified": "Thu, 09 Oct 2025 19:43:41 GMT",
@@ -12,9 +13,14 @@
   "tamanho_bytes": 42139,
   "sha256_html": "43435b514ab475b4193228fee6d2ed1f5efa99d935ba3c9143801f989d4a5aae",
   "quantidade_assets": 15,
+  "assets_inspecionados": 3,
+  "fontes_analisadas": 4,
   "contem_gestao_produtos": true,
-  "contem_produtos": true,
   "contem_qlik": true,
-  "assets_inspecionados": 9,
-  "candidatos_exportacao": 3
+  "app_ids_encontrados": 1,
+  "objetos_getObject": 61,
+  "ids_qlik_encontrados": 114,
+  "campos_qlik_encontrados": 0,
+  "referencias_produtos": 74,
+  "conclusao_preliminar": "Foram encontradas referências estruturais do Qlik. Revisar qlik.json e referencias_produtos.json antes de criar qualquer coletor ou banco definitivo."
 }
