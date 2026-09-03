@@ -46,6 +46,17 @@ def validar_destinos(documentos):
   vistos[destino]=norma
  return vistos
 
+def preencher_titulos_anexos(nos):
+ """Quando o título oficial vem na linha seguinte a 'ANEXO X', promove-o a metadado do anexo sem apagar o texto literal."""
+ for raiz in [n for n in nos if n.get('tipo')=='anexo' and not n.get('texto')]:
+  seguintes=[n for n in nos if n.get('anexo')==raiz.get('anexo') and n.get('ordem',0)>raiz.get('ordem',0)]
+  if not seguintes: continue
+  primeiro=min(seguintes,key=lambda n:n.get('ordem',0))
+  if primeiro.get('tipo')=='bloco' and primeiro.get('texto'):
+   raiz['texto']=primeiro['texto']
+   raiz['titulo_origem']='linha_seguinte'
+   primeiro['papel']='titulo_anexo'
+
 def estruturar_texto(norma,texto):
  linhas=[x.strip() for x in texto.splitlines() if x.strip()]
  nos=[]; anexo=None; artigo_id=paragrafo_id=inciso_id=None; em_tabela=False; tabela=None
@@ -67,8 +78,6 @@ def estruturar_texto(norma,texto):
   if linha==MARCADOR_TABELA_FIM:
    em_tabela=False; tabela=None; continue
 
-  # Dentro de <table> oficial, a marcação HTML prevalece sobre aparência textual.
-  # Isso evita que uma célula parecida com artigo/item seja duplicada como dispositivo.
   if em_tabela:
    nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Célula de tabela',linha,ordem,pai=chave(norma,anexo,'tabela',tabela),meta={'estrutural':False,'origem_estrutura':'html_oficial'})); continue
 
@@ -96,6 +105,7 @@ def estruturar_texto(norma,texto):
     nos.append(novo_no(norma,anexo,'linha_tabela',f'linha-{ordem}','Linha de tabela',linha,ordem,pai=chave(norma,anexo,'anexo',anexo) if anexo else None,meta={'estrutural':False,'motivo':'numero_tabela'})); continue
    nos.append(novo_no(norma,anexo,'item',numero,f'Item {numero}',linha,ordem,pai=inciso_id or paragrafo_id or artigo_id or (chave(norma,anexo,'anexo',anexo) if anexo else None))); continue
   nos.append(novo_no(norma,anexo,'bloco',f'b{ordem}','Texto',linha,ordem,pai=inciso_id or paragrafo_id or artigo_id or (chave(norma,anexo,'anexo',anexo) if anexo else None),meta={'estrutural':False}))
+ preencher_titulos_anexos(nos)
  ids=[n['id'] for n in nos if n.get('estrutural',True)]; repetidos=sorted({x for x in ids if ids.count(x)>1})
  return {'schema':'legislacao-hierarquica-v12','norma':norma,'sha256_texto':sha256_texto(texto),'nos':nos,'validacao':{'ids_estruturais_repetidos':repetidos}}
 
@@ -128,9 +138,10 @@ def processar(textos=TEXTOS,saida=SAIDA):
  (saida/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8'); print(f"OK: {len(documentos)} norma(s); {manifest['curados']} registro(s) curado(s)."); return manifest
 
 def autoteste():
- amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nLista\n1. Item de lista\nANEXO II\nVDR\n[[TABELA_INICIO]]\nConstituintes\nVDR (unidade)\n2.000 kcal\nArt. 99 célula, não dispositivo\n[[TABELA_FIM]]\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
+ amostra='''INSTRUÇÃO NORMATIVA\nANEXO I\nLista oficial do anexo\n1. Item de lista\nANEXO II\nVDR oficial\n[[TABELA_INICIO]]\nConstituintes\nVDR (unidade)\n2.000 kcal\nArt. 99 célula, não dispositivo\n[[TABELA_FIM]]\nArt. 17. Aplicam-se as disposições.\nANEXO XV - Limites\n15. Açúcares adicionados\nANEXO XVI Exceções\n15. Bebidas alcoólicas.\nANEXO XXIII: fatores de conversão\n'''
  d=estruturar_texto('IN 75/2020',amostra); ids=[n['id'] for n in d['nos']]; anexos={n['anexo'] for n in d['nos'] if n['tipo']=='anexo'}
  assert anexos=={'I','II','XV','XVI','XXIII'},anexos
+ assert next(n for n in d['nos'] if n['tipo']=='anexo' and n['anexo']=='II')['texto']=='VDR oficial'
  assert len([n for n in d['nos'] if n['tipo']=='tabela' and n.get('anexo')=='II'])==1
  assert len([n for n in d['nos'] if n['tipo']=='artigo' and n.get('numero')=='17'])==1
  assert not any(n['tipo']=='artigo' and n.get('numero')=='99' for n in d['nos'])
