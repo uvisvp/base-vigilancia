@@ -39,9 +39,13 @@ jobs:
           python - <<'PY'
           import json, pathlib
           p=pathlib.Path('dados/legislacao_v12/normas/in-75-2020.json')
+          fonte=pathlib.Path('textos/IN 75-2020--anvisa-legis.txt')
           if not p.exists():
               raise SystemExit('Arquivo estruturado da IN 75/2020 não foi gerado')
+          if not fonte.exists():
+              raise SystemExit('Texto oficial da IN 75/2020 não foi preservado')
           d=json.loads(p.read_text(encoding='utf-8'))
+          texto_fonte=fonte.read_text(encoding='utf-8')
           nos=d.get('nos',[])
           anexos_nos=[n for n in nos if n.get('tipo')=='anexo']
           anexos={n.get('anexo') for n in anexos_nos}
@@ -63,6 +67,17 @@ jobs:
           linhas=[n for n in nos if n.get('tipo')=='linha_tabela']
           artigos=[n for n in nos if n.get('tipo')=='artigo']
           itens=[n for n in nos if n.get('tipo')=='item']
+          tabelas_fonte=texto_fonte.count('[[TABELA_INICIO]]')
+          if tabelas_fonte == 0:
+              raise SystemExit('Fonte oficial sem marcadores de tabela preservados')
+          tabelas_html=[n for n in tabelas if n.get('origem_estrutura')=='html_oficial']
+          if len(tabelas_html) != tabelas_fonte:
+              raise SystemExit(f'Paridade de tabelas falhou: fonte={tabelas_fonte}, JSON={len(tabelas_html)}')
+          pais_tabela={n.get('id') for n in tabelas}
+          orfas=[n for n in linhas if n.get('origem_estrutura')=='html_oficial' and n.get('pai') not in pais_tabela]
+          if orfas:
+              raise SystemExit('Células HTML sem tabela-pai: '+str([n.get('id') for n in orfas[:10]]))
+
           textos_linhas={n.get('texto') for n in linhas}
           artigos_em_tabela=[a for a in artigos if a.get('texto') in textos_linhas]
           if artigos_em_tabela:
@@ -72,6 +87,8 @@ jobs:
               raiz=[n for n in anexos_nos if n.get('anexo')==alvo]
               if len(raiz)!=1:
                   raise SystemExit(f'ANEXO {alvo}: esperado 1 nó raiz, encontrado {len(raiz)}')
+              if not raiz[0].get('texto'):
+                  raise SystemExit(f'ANEXO {alvo}: título vazio')
               filhos=[n for n in nos if n.get('anexo')==alvo and n.get('tipo')!='anexo']
               if not filhos:
                   raise SystemExit(f'ANEXO {alvo}: sem conteúdo estruturado')
@@ -80,8 +97,8 @@ jobs:
                   tipos[n.get('tipo')]=tipos.get(n.get('tipo'),0)+1
               print(f"ANEXO {alvo}: título={raiz[0].get('texto','')!r}; nós={len(filhos)}; tipos={tipos}")
 
-          print(f'TOTAL: nós={len(nos)}; anexos={len(anexos_nos)}; tabelas={len(tabelas)}; linhas_tabela={len(linhas)}; artigos={len(artigos)}; itens={len(itens)}')
-          print('OK: 23 anexos, conteúdo presente e nenhum artigo duplicado como linha de tabela')
+          print(f'TOTAL: nós={len(nos)}; anexos={len(anexos_nos)}; tabelas_fonte={tabelas_fonte}; tabelas_json={len(tabelas)}; linhas_tabela={len(linhas)}; artigos={len(artigos)}; itens={len(itens)}')
+          print('OK: 23 anexos, títulos presentes, paridade de tabelas e nenhum artigo duplicado como linha de tabela')
           PY
       - name: Atualizar manifesto regulatório
         run: python scripts/gerar_manifesto_regulatorio.py
