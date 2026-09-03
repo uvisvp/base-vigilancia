@@ -1,0 +1,75 @@
+name: Testar atualização automática MAPA e-SISBI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependência WebSocket
+        run: |
+          python -m pip install --upgrade pip
+          pip install websocket-client
+
+      - name: Executar diagnóstico de viabilidade automática
+        run: |
+          python scripts/inspecionar_mapa_sisbi_automatico.py
+
+      - name: Validar resultado
+        run: |
+          test -f diagnosticos/mapa_sisbi/viabilidade_automatica.json
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          caminho = Path("diagnosticos/mapa_sisbi/viabilidade_automatica.json")
+          dados = json.loads(caminho.read_text(encoding="utf-8"))
+
+          status = dados.get("status")
+
+          if status not in {
+              "viavel_para_atualizacao_automatica",
+              "inviavel_para_atualizacao_automatica",
+          }:
+              raise SystemExit(f"Status inesperado: {status}")
+
+          print("Diagnóstico concluído.")
+          print("Status:", status)
+          print("Continuar projeto:", dados.get("continuar_projeto"))
+          print("Endpoint funcional:", dados.get("endpoint_funcional"))
+
+          for i, resultado in enumerate(dados.get("resultados") or [], start=1):
+              print(f"Endpoint {i}:", resultado.get("url"))
+              print("  conectou_websocket:", resultado.get("conectou_websocket"))
+              print("  abriu_app:", resultado.get("abriu_app"))
+              print("  obteve_objeto:", resultado.get("obteve_objeto"))
+              print("  obteve_layout:", resultado.get("obteve_layout"))
+              if resultado.get("erro"):
+                  print("  erro:", resultado.get("erro"))
+          PY
+
+      - name: Commitar diagnóstico se houver alteração
+        run: |
+          if [ -n "$(git status --porcelain -- diagnosticos/mapa_sisbi)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A diagnosticos/mapa_sisbi
+            git commit -m "Testa viabilidade automática do e-SISBI"
+            git push
+          else
+            echo "Sem alterações no diagnóstico de viabilidade."
+          fi
