@@ -8,6 +8,7 @@ on:
       - "scripts/gerar_manifesto_regulatorio.py"
       - "dados/legislacao_curada/**"
       - "dados/controlados_portaria344/**"
+      - ".github/workflows/atualizar-regulatorio.yml"
   schedule:
     - cron: "40 9 * * 1"
 
@@ -41,17 +42,73 @@ jobs:
       - name: Gerar manifesto regulatório
         run: python scripts/gerar_manifesto_regulatorio.py
 
-      - name: Validar manifesto
+      - name: Validar manifesto e marcos vigentes
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
+
           p=Path('dados/regulatorio/manifest.json')
           d=json.loads(p.read_text(encoding='utf-8'))
           assert d['schema']=='manifesto-regulatorio-v1'
-          for k in ('in75_anexo_xv','regularizacao_cosmeticos','regularizacao_saneantes'):
+          assert d['status']=='ok', d
+          assert d.get('faltantes')==[], d.get('faltantes')
+
+          obrigatorias=(
+              'in75_completa',
+              'in75_anexo_xv',
+              'regularizacao_cosmeticos',
+              'regularizacao_saneantes',
+              'controlados_portaria344',
+          )
+          for k in obrigatorias:
               assert d['bases'][k]['status']=='ok', (k,d['bases'][k])
+
+          in75=d['bases']['in75_completa']
+          assert in75['schema']=='legislacao-hierarquica-v12'
+          assert in75['anexos']==23, in75
+          assert in75['anexos_incluidos']==[
+              'I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII',
+              'XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII'
+          ], in75.get('anexos_incluidos')
+          assert in75.get('sha256') and in75.get('sha256_texto')
+
+          cos=json.loads(Path('dados/legislacao_curada/regularizacao-cosmeticos.json').read_text(encoding='utf-8'))
+          assert cos['norma_principal']=='RDC 907/2024'
+          comp_cos={x['norma'] if isinstance(x,dict) else x for x in cos.get('normas_complementares',[])}
+          assert {'RDC 906/2024','RDC 898/2024'} <= comp_cos, comp_cos
+          assert not any('752' in x for x in comp_cos), comp_cos
+          assert '752' not in cos['norma_principal']
+          regs={r['produto']:r['regularizacao'] for r in cos['regras']}
+          registro_esperado={
+              'Bronzeador','Gel antisséptico para as mãos','Produto para alisar os cabelos',
+              'Produto para alisar e tingir os cabelos','Produto para ondular os cabelos',
+              'Protetor solar','Protetor solar infantil','Repelente de insetos',
+              'Repelente de insetos infantil'
+          }
+          assert {p for p,v in regs.items() if v=='registro'}==registro_esperado, regs
+          assert regs['Demais produtos de higiene pessoal, cosméticos e perfumes fora da lista de registro']=='notificacao'
+
+          san=json.loads(Path('dados/legislacao_curada/regularizacao-saneantes.json').read_text(encoding='utf-8'))
+          assert san['norma_principal']=='RDC 989/2025'
+          comp_san=set(san.get('normas_complementares',[]))
+          assert {'IN 394/2025','RDC 1.040/2026','IN 468/2026','RDC 899/2024'} <= comp_san, comp_san
+          assert 'RDC 59/2010' not in comp_san
+          assert san.get('norma_revogada_relevante')=='RDC 59/2010'
+          assert san.get('norma_pos_regularizacao_geral',{}).get('norma')=='RDC 899/2024'
+          regras={r['id']:r for r in san['regras']}
+          assert regras['saneantes::risco-1::notificacao']['regularizacao']=='notificacao'
+          assert regras['saneantes::risco-2::registro']['regularizacao']=='registro'
+
+          ctrl=d['bases']['controlados_portaria344']
+          assert ctrl['schema']=='controlados-portaria344-v2'
+          assert ctrl['listas_incluidas']==['A1','A2','A3','B1','B2','C1','C2','C3','C5']
+
           print('Manifesto regulatório válido:', d['status'])
+          print('IN 75 completa:', in75['anexos'], 'anexos;', in75['registros'], 'registros')
+          print('Cosméticos: RDC 907/2024 +', sorted(comp_cos))
+          print('Saneantes:', san['norma_principal'], '+', sorted(comp_san))
+          print('Portaria 344:', ctrl['listas_incluidas'])
           print('Faltantes:', d.get('faltantes', []))
           PY
 
