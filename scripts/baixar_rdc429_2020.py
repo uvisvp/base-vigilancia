@@ -15,6 +15,11 @@ OUT=BASE/'textos'/'RDC 429-2020--anvisa-legis.txt'
 URL='https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&numeroAto=00000429&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020'
 MARCADOR_TABELA_INICIO='[[TABELA_INICIO]]'
 MARCADOR_TABELA_FIM='[[TABELA_FIM]]'
+LIXO_INTERFACE={
+    '-->','NORMAS REGULATÓRIAS DA ANVISA','Busca de Normas','Voltar','COPIAR LINK',
+    'CRIAR TAGS','IMPRIMIR','PDF','VER NOTAS DE ALTERAÇÃO','FECHAR NOTAS DE ALTERAÇÃO',
+    '+','|','-','Ver mais detalhes','Carregando...'
+}
 
 def baixar():
     req=urllib.request.Request(URL,headers={
@@ -41,15 +46,12 @@ def limpar(html):
     linhas=[]
     for ln in x.splitlines():
         ln=re.sub(r'[ \t]+',' ',ln).strip()
-        if ln:
+        if ln and ln not in LIXO_INTERFACE:
             linhas.append(ln)
     return '\n'.join(linhas)+'\n'
 
 def validar(texto):
     normal=texto.upper()
-    # O cabeçalho do AnvisaLegis pode aparecer como "Resolução da Diretoria
-    # Colegiada - RDC nº 429" ou apenas "RDC nº 429" em trechos de interface.
-    # Exigimos simultaneamente o número da RDC, o ano e conteúdo nuclear da norma.
     if not re.search(r'(?i)\bRDC\b\s*(?:N[º°.]*)?\s*429\b',texto):
         raise RuntimeError('Fonte não reconhecida como RDC 429/2020: número da RDC ausente')
     if not re.search(r'(?i)(?:DE\s+8\s+DE\s+OUTUBRO\s+DE\s+2020|RDC\s*(?:N[º°.]*)?\s*429[^\n]{0,120}2020)',texto):
@@ -64,10 +66,12 @@ def validar(texto):
     ausentes=[x for x in obrigatorios if x not in normal]
     if ausentes:
         raise RuntimeError('RDC 429/2020 falhou nas travas de conteúdo: '+', '.join(ausentes))
+    if not re.search(r'(?im)^\s*Art\.?\s*50-A\b',texto):
+        raise RuntimeError('RDC 429/2020 consolidada sem Art. 50-A; possível alteração estrutural da fonte')
     artigos=[int(x) for x in re.findall(r'(?im)^\s*Art\.?\s*(\d+)\s*[ºo°.]?',texto)]
     if not artigos or 1 not in artigos:
         raise RuntimeError('RDC 429/2020 sem Art. 1º reconhecível')
-    if max(artigos)<40:
+    if max(artigos)<51:
         raise RuntimeError(f'RDC 429/2020 aparentemente incompleta; maior artigo reconhecido: {max(artigos)}')
     aberturas=texto.count(MARCADOR_TABELA_INICIO)
     fechamentos=texto.count(MARCADOR_TABELA_FIM)
@@ -80,7 +84,7 @@ def main():
     qtd_artigos,maior,tabelas=validar(texto)
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(texto,encoding='utf-8')
-    print(f'OK: RDC 429/2020 oficial preservada, {len(texto)} caracteres, {qtd_artigos} artigos numerados, maior Art. {maior}, {tabelas} tabela(s) HTML')
+    print(f'OK: RDC 429/2020 oficial preservada, {len(texto)} caracteres, {qtd_artigos} artigos numerados, maior Art. {maior}, Art. 50-A presente, {tabelas} tabela(s) HTML')
 
 if __name__=='__main__':
     main()
