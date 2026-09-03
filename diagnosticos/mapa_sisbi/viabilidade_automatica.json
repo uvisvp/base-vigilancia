@@ -1,0 +1,32 @@
+{
+  "status": "inviavel_para_atualizacao_automatica",
+  "versao_diagnostico": "4.0.0",
+  "orgao": "Ministério da Agricultura e Pecuária — MAPA",
+  "sistema": "e-SISBI / SISBI-POA",
+  "executado_em": "2026-09-03T01:57:35.572865+00:00",
+  "app_id": "cce5fdb4-1444-4088-b557-2e49d7d1035e",
+  "objeto_id": "YwuSG",
+  "endpoint_funcional": null,
+  "criterio": "Só considerar viável se um processo não interativo conseguir, sem autenticação/credenciais/CAPTCHA, abrir o app público, obter o objeto YwuSG e ler seu layout.",
+  "continuar_projeto": false,
+  "resultados": [
+    {
+      "url": "wss://mapa-indicadores.agricultura.gov.br/publico/app/cce5fdb4-1444-4088-b557-2e49d7d1035e",
+      "conectou_websocket": false,
+      "abriu_app": false,
+      "obteve_objeto": false,
+      "obteve_layout": false,
+      "erro_fase": "conexao",
+      "erro": "WebSocketBadStatusException: Handshake status 403 Forbidden -+-+- {'set-cookie': 'Abacaxi=!YYlMpFun/LTO7HMQplnZVailJg+hzesnfq5HvT8ZA1CaL8toGYeaiK2QQ+oIfO8ZaDCP4sG2PZsnCcw=; path=/; Httponly; Secure', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'vary': 'Accept-Encoding'} -+-+- None"
+    },
+    {
+      "url": "wss://mapa-indicadores.agricultura.gov.br/app/cce5fdb4-1444-4088-b557-2e49d7d1035e",
+      "conectou_websocket": false,
+      "abriu_app": false,
+      "obteve_objeto": false,
+      "obteve_layout": false,
+      "erro_fase": "conexao",
+      "erro": "WebSocketConnectionClosedException: Connection to remote host was lost."
+    }
+  ]
+}
