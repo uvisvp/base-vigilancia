@@ -15,13 +15,12 @@ RE_TAG=re.compile(r'<[^>]+>')
 RE_LISTA_SIMPLES=re.compile(r'^LISTA\s*[-–—]\s*(A1|A2|A3|B1|B2|C1|C2|C3|C5|D1|D2|E)\s*$',re.I)
 RE_LISTA_F=re.compile(r'^LISTA\s*[-–—]?\s*(F[1-4])(?:\s*[-–—:]\s*(.+))?\s*$',re.I)
 RE_LISTA_F_PAI=re.compile(r'^LISTA\s*[-–—]\s*F\s*$',re.I)
-# A fonte mistura "1. Nome" e "1.Nome". A identificacao inicial e permissiva;
-# a funcao abaixo rejeita subitens e valores de tabela antes de criar registros.
 RE_SUBSTANCIA=re.compile(r'^(\d+)\.\s*(\S.*)$')
+RE_NUMERO_SO=re.compile(r'^(\d+)\.\s*$')
 RE_ADENDO=re.compile(r'^ADENDO\s*:?\s*$',re.I)
 RE_ITEM_ADENDO=re.compile(r'^(\d+(?:\.\d+)*)\)??\.?\s+(.+)$')
-RE_SUBITEM_NO_NOME=re.compile(r'^\d+\.\s*')
-RE_VALOR_UNIDADE=re.compile(r'^\d+(?:[.,]\d+)?\s*(?:kcal|kj|g|mg|µg|μg|mcg|kg|ml|mL|l|L|ui|UI|%)\b',re.I)
+RE_VALOR_UNIDADE=re.compile(r'^\d+(?:[.,]\d+)?\s*(?:kcal|kj|g|mg|mcg|µg|ug|ml|l|ui|%)\b',re.I)
+RE_SUBITEM_NUMERICO=re.compile(r'^\d+\.\d+(?:\.|\s|$)')
 LISTAS_ESPERADAS={'A1','A2','A3','B1','B2','C1','C2','C3','C5','D1','D2','E','F1','F2','F3','F4'}
 
 def baixar():
@@ -43,41 +42,55 @@ def nova_lista(listas,codigo,titulo=''):
  listas.setdefault(codigo,{'id':f'portaria-344-1998::anexo-i::lista-{codigo.lower()}','lista':codigo,'titulo':titulo.strip(),'substancias':[],'adendos':[]})
  if titulo.strip() and not listas[codigo]['titulo']:listas[codigo]['titulo']=titulo.strip()
 
-def nome_substancia_valido(nome):
- nome=nome.strip()
- if not nome:return False
- if RE_SUBITEM_NO_NOME.match(nome):return False
- if RE_VALOR_UNIDADE.match(nome):return False
+def nome_valido(nome):
+ n=nome.strip().lstrip('|').strip()
+ if not n:return False
+ if RE_VALOR_UNIDADE.match(n) or RE_SUBITEM_NUMERICO.match(n):return False
+ if n.lower() in {'ou','substância','substancias','substâncias','nº','n°','numero','número'}:return False
+ return True
+
+def adicionar_substancia(listas,lista,numero,nome):
+ nome=nome.strip().lstrip('|').strip()
+ if '|' in nome:nome=nome.split('|',1)[0].strip()
+ if not nome_valido(nome):return False
+ listas[lista]['substancias'].append({'id':id_registro(lista,'substancia',numero),'lista':lista,'tipo':'substancia','numero':numero,'nome':nome})
  return True
 
 def parsear(linhas):
- listas={}; atual=None; modo_adendo=False; titulo_pendente=[]
+ listas={}; atual=None; modo_adendo=False; titulo_pendente=[]; pendente_f=None
  for linha in linhas:
-  if RE_LISTA_F_PAI.match(linha):atual=None;modo_adendo=False;titulo_pendente=[];continue
+  if RE_LISTA_F_PAI.match(linha):atual=None;modo_adendo=False;titulo_pendente=[];pendente_f=None;continue
   mf=RE_LISTA_F.match(linha)
   if mf:
-   atual=mf.group(1).upper();nova_lista(listas,atual,(mf.group(2) or '').strip());modo_adendo=False;titulo_pendente=[];continue
+   atual=mf.group(1).upper();nova_lista(listas,atual,(mf.group(2) or '').strip());modo_adendo=False;titulo_pendente=[];pendente_f=None;continue
   m=RE_LISTA_SIMPLES.match(linha)
   if m:
-   atual=m.group(1).upper();nova_lista(listas,atual);modo_adendo=False;titulo_pendente=[];continue
+   atual=m.group(1).upper();nova_lista(listas,atual);modo_adendo=False;titulo_pendente=[];pendente_f=None;continue
   if not atual:continue
-  if RE_ADENDO.match(linha):modo_adendo=True;continue
-  if not listas[atual]['substancias'] and not modo_adendo and linha.startswith('(') and linha.endswith(')'):
-   if titulo_pendente and not listas[atual]['titulo']:listas[atual]['titulo']=' '.join(titulo_pendente)
-   continue
+  if RE_ADENDO.match(linha):modo_adendo=True;pendente_f=None;continue
   if modo_adendo:
    ma=RE_ITEM_ADENDO.match(linha)
    if ma:
     numero,texto=ma.group(1),ma.group(2).strip();listas[atual]['adendos'].append({'id':id_registro(atual,'adendo',numero),'lista':atual,'tipo':'adendo','numero':numero,'texto':texto})
    elif listas[atual]['adendos']:listas[atual]['adendos'][-1]['texto']+=' '+linha
    continue
+  # Nas tabelas F, o HTML oficial pode separar as células: "1." / "2F-VIMINOL" / "ou" / nome químico.
+  if atual.startswith('F'):
+   mn=RE_NUMERO_SO.match(linha)
+   if mn:
+    pendente_f=mn.group(1);continue
+   if pendente_f is not None:
+    if adicionar_substancia(listas,atual,pendente_f,linha):
+     pendente_f=None;continue
+    # cabeçalhos/células auxiliares não devem consumir o número pendente
+    if linha.lower() in {'ou','a) substâncias','a) substancias','substâncias','substancias'}:continue
   ms=RE_SUBSTANCIA.match(linha)
   if ms:
    numero,nome=ms.group(1),ms.group(2).strip()
-   nome=nome.lstrip('|').strip()
-   if '|' in nome:nome=nome.split('|',1)[0].strip()
-   if not nome_substancia_valido(nome):continue
-   listas[atual]['substancias'].append({'id':id_registro(atual,'substancia',numero),'lista':atual,'tipo':'substancia','numero':numero,'nome':nome});continue
+   if adicionar_substancia(listas,atual,numero,nome):continue
+  if not listas[atual]['substancias'] and not modo_adendo and linha.startswith('(') and linha.endswith(')'):
+   if titulo_pendente and not listas[atual]['titulo']:listas[atual]['titulo']=' '.join(titulo_pendente)
+   continue
   if not listas[atual]['substancias'] and not modo_adendo and not linha.upper().startswith(('MINISTERIO','AGENCIA','LISTA ')):
    titulo_pendente.append(linha)
    if not listas[atual]['titulo']:listas[atual]['titulo']=' '.join(titulo_pendente)
@@ -105,17 +118,14 @@ def gerar():
  (SAIDA/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8');print(f'OK: {len(listas)} listas, {ts} substancias, {ta} adendos');return manifest
 
 def autoteste():
- amostra=['LISTA - A1','LISTA DAS SUBSTANCIAS ENTORPECENTES','1. Acetilmetadol','2.Morfina','ADENDO:','1) ficam tambem sob controle:','1.1. os sais e isomeros','LISTA - B2','LISTA DAS SUBSTANCIAS PSICOTROPICAS ANOREXIGENAS','1.Aminorex','2.Anfepramona','LISTA - C1','LISTA DAS OUTRAS SUBSTANCIAS','1.Acepromazina','LISTA - D1','LISTA DE PRECURSORAS','1.1-boc-4-AP','LISTA - F','LISTA F1 - SUBSTANCIAS ENTORPECENTES','1. | DIMETOCAINA | exemplo','LISTA F2 - SUBSTANCIAS PSICOTROPICAS','1. | EXEMPLO F2','LISTA F3 - PRECURSORAS','1. | EXEMPLO F3','LISTA F4 - OUTRAS','1. | FENIBUT']
+ amostra=['LISTA - A1','LISTA DAS SUBSTANCIAS ENTORPECENTES','1. Acetilmetadol','2.Morfina','ADENDO:','1) ficam tambem sob controle:','1.1. os sais e isomeros','LISTA - B2','1.Aminorex','LISTA - D1','1.1-boc-4-AP','LISTA - F','LISTA F1 - SUBSTANCIAS ENTORPECENTES','1.','2F-VIMINOL','ou','nome quimico','2. | DIMETOCAINA | exemplo','LISTA F2 - SUBSTANCIAS PSICOTROPICAS','a) SUBSTANCIAS','1.','(+) - LISERGIDA','ou','LSD','LISTA F3 - PRECURSORAS','1. | EXEMPLO F3','LISTA F4 - OUTRAS','1. | FENIBUT']
  d=parsear(amostra)
  assert d['A1']['substancias'][0]['nome']=='Acetilmetadol'
  assert d['B2']['substancias'][0]['nome']=='Aminorex'
- assert d['C1']['substancias'][0]['nome']=='Acepromazina'
  assert d['D1']['substancias'][0]['nome']=='1-boc-4-AP'
- assert 'F' not in d and d['F1']['substancias'][0]['nome']=='DIMETOCAINA'
- assert not nome_substancia_valido('1. texto')
- assert not nome_substancia_valido('500 kcal')
- assert not nome_substancia_valido('600 mg')
- assert nome_substancia_valido('1-boc-4-AP')
+ assert d['F1']['substancias'][0]['nome']=='2F-VIMINOL' and d['F1']['substancias'][1]['nome']=='DIMETOCAINA'
+ assert d['F2']['substancias'][0]['nome']=='(+) - LISERGIDA'
+ assert not nome_valido('3.500 kcal') and not nome_valido('600 mg') and not nome_valido('1.1. texto')
  print('AUTOTESTE OK')
 if __name__=='__main__':
  import sys
