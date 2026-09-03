@@ -1,0 +1,2114 @@
+Instrução Normativa - IN nº 75, de 08/10/2020
+-->
+-->
+NORMAS REGULATÓRIAS DA ANVISA
+Busca de Normas
+Voltar
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇÃO
+FECHAR NOTAS DE ALTERAÇÃO
++
+|
+-
+Vigente com Alterações Instrução Normativa - IN nº 75, de 08/10/2020
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+INSTRUÇÃO NORMATIVA-IN Nº 75, DE 8 DE OUTUBRO DE 2020
+Estabelece os requisitos técnicos para declaração da rotulagem nutricional nos alimentos embalados.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV aliado ao art. 7º, III e IV, da Lei n.º 9.782, de 26 de janeiro de 1999 , e ao art. 53, VII, §§ 1º e 3º do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC n° 255, de 10 de dezembro de 2018, em reunião realizada em 7 de outubro de 2020, resolve:
+Art. 1º Esta Instrução Normativa estabelece os requisitos técnicos para a declaração da rotulagem nutricional dos alimentos embalados.
+Parágrafo único. Esta Instrução Normativa se aplica de maneira complementar à Resolução de Diretoria Colegiada - RDC nº 429, de 8 de outubro de 2020 .
+Art. 2º O Anexo I define a lista de alimentos cuja declaração da tabela de informação nutricional é voluntária, desde que atendidos aos requisitos estabelecidos na Resolução de Diretoria Colegiada - RDC nº 429, de 2020.
+Art. 3º O Anexo II define os valores diários de referência (VDR) para fins de rotulagem nutricional dos alimentos em geral.
+Art. 4º O Anexo III define as regras para arredondamento e para expressão das quantidades na tabela de informação nutricional.
+Art. 5º O Anexo IV define as quantidades não significativas de valor energético e de nutrientes e sua forma de expressão na tabela de informação nutricional.
+Art. 6º O Anexo V define o tamanho das porções dos alimentos para fins de declaração da rotulagem nutricional.
+Art. 7º O Anexo VI define as regras para arredondamento e para expressão do número de porções na tabela de informação nutricional.
+Art. 8º O Anexo VII define os tipos de utensílios domésticos e suas capacidades para declaração da medida caseira dos alimentos na tabela de informação nutricional.
+Art. 9º O Anexo VIII define os VDR para fins de rotulagem nutricional dos alimentos para fins especiais não contemplados no § 6º do art. 8º da Resolução de Diretoria Colegiada - RDC nº 429, de 2020 , que tenham indicação para grupos populacionais específicos no seu rótulo e dos suplementos alimentares.
+Art. 10. O Anexo IX define os modelos para declaração da tabela de informação nutricional.
+Art. 11. O Anexo X define os requisitos específicos para formatação da declaração simplificada da informação nutricional.
+Art. 12. O Anexo XI define os nomes dos constituintes ou seus nomes alternativos e as respectivas abreviações, ordem, indentação e unidades de medida para declaração da tabela de informação nutricional.
+Art. 13. O Anexo XII define os requisitos específicos para formatação da tabela de informação nutricional.
+Art. 14. O Anexo XIII define o modelo linear de declaração da tabela de informação nutricional.
+Art. 15. O Anexo XIV define os requisitos específicos para formatação do modelo linear de declaração da tabela de informação nutricional.
+Art. 16. O Anexo XV define os limites de açúcares adicionados, gorduras saturadas e sódio para fins de declaração da rotulagem nutricional frontal.
+Art. 17. O Anexo XVI define a lista de alimentos cuja declaração da rotulagem nutricional frontal é vedada.
+Art. 18. O Anexo XVII define os modelos para declaração da rotulagem nutricional frontal.
+Art. 19. O Anexo XVIII define as regras para formatação da rotulagem nutricional frontal.
+Art. 20. O Anexo XIX define os termos autorizados para declaração de alegações nutricionais.
+Art. 21. O Anexo XX define os critérios de composição e de rotulagem que devem ser atendidos para declaração de alegações nutricionais.
+Art. 22. O Anexo XXI define o perfil de aminoácidos para declaração de alegações nutricionais de proteínas.
+Art. 23. O Anexo XXII define os fatores de conversão para determinação do valor energético dos alimentos.
+Art. 24. O Anexo XXIII define os fatores de conversão de nutrientes para determinação do valor nutricional dos alimentos.
+Art. 25. Esta Instrução Normativa entra em vigor após decorridos 24 (vinte e quatro) meses de sua publicação.
+ANTONIO BARRA TORRES
+Diretor-Presidente Substituto
+ANEXO I
+LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL É VOLUNTÁRIA, DESDE QUE ATENDIDOS OS REQUISITOS ESTABELECIDOS NA RESOLUÇÃO - RDC Nº 429, de 2020.
+1. Alimentos em embalagens cuja superfície visível para rotulagem seja menor ou igual a 100 cm2.
+2. Alimentos embalados nos pontos de venda a pedido do consumidor.
+3. Alimentos embalados que sejam preparados ou fracionados e comercializados no próprio estabelecimento.
+4. Bebidas alcoólicas.
+5. Gelo destinado ao consumo humano.
+6. Especiarias, café, erva-mate e espécies vegetais para o preparo de chás, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
+7. Vinagres, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
+8. Frutas, hortaliças, leguminosas, tubérculos, cereais, nozes, castanhas, sementes e cogumelos, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
+9. Carnes e pescados embalados, refrigerados ou congelados, desde que não sejam adicionados de ingredientes que agreguem valor nutricional significativo ao produto, conforme Anexo IV desta Instrução Normativa.
+ANEXO II
+VDR PARA FINS DE ROTULAGEM NUTRICIONAL DOS ALIMENTOS EM GERAL.
+Constituintes
+VDR (unidade)
+Valor energético
+2.000 kcal
+Carboidratos
+300 g
+Açúcares adicionados
+50 g
+Proteínas
+50 g
+Gorduras totais
+65 g
+Gorduras saturadas
+20 g
+Gorduras trans
+2 g
+Gorduras monoinsaturadas
+20 g
+Gorduras poli-insaturadas
+20 g
+Ômega 6
+18 g
+Ômega 3
+4.000 mg
+Colesterol
+300 mg
+Fibras alimentares
+25 g
+Sódio
+2.000 mg
+Vitamina A
+800 µg de RAE
+Vitamina D
+15 µg
+Vitamina E
+15 mg
+Vitamina K
+120 µg
+Vitamina C
+100 mg
+Tiamina
+1,2 mg
+Riboflavina
+1,2 mg
+Niacina
+15 mg de NE
+Vitamina B6
+1,3 mg
+Biotina
+30 µg
+Ácido fólico
+400 µg de DFE
+Ácido pantotênico
+5 mg
+Vitamina B12
+2,4 µg
+Cálcio
+1.000 mg
+Cloreto
+2.300 mg
+Cobre
+900 µg
+Cromo
+35 µg
+Ferro
+14 mg
+Flúor
+4 mg
+Fósforo
+700 mg
+Iodo
+150 µg
+Magnésio
+420 mg
+Manganês
+3 mg
+Molibdênio
+45 µg
+Potássio
+3.500 mg
+Selênio
+60 µg
+Zinco
+11 mg
+Colina
+550 mg
+ANEXO III
+REGRAS PARA ARREDONDAMENTO E PARA EXPRESSÃO DAS QUANTIDADES NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Faixa das quantidades nutricionais
+Regras para arredondamento das quantidades nutricionais
+Forma de expressão das quantidades nutricionais
+Valores maiores ou iguais a 10.
+Quando a primeira casa decimal for menor que 5, manter o número inteiro.
+Quando a primeira casa decimal for maior ou igual 5, arredondar o número inteiro para cima em 1 unidade.
+Declarar os valores em números inteiros.
+Valores menores que 10 e maiores ou iguais a 1.
+Quando a segunda casa decimal for menor que 5, manter a primeira casa decimal inalterada.
+Quando a segunda casa decimal for maior ou igual a 5, arredondar a primeira casa decimal para cima em 1 unidade.
+Quando a primeira casa decimal for 0, declarar os valores em números inteiros.
+Para os demais casos, declarar os valores com um dígito decimal.
+Valores menores do que 1 expressos em gramas (g).
+Quando a segunda casa decimal for menor que 5, manter a primeira casa decimal inalterada.
+Quando a segunda casa decimal for maior ou igual a 5, arredondar a primeira casa decimal para cima em 1 unidade.
+Declarar os valores com um dígito decimal.
+Valores menores do que 1 expressos em miligramas (mg) ou microgramas (µg).
+Quando a terceira casa decimal for menor que 5, manter a segunda casa decimal inalterada.
+Quando a terceira casa decimal for maior ou igual a 5, arredondar a segunda casa decimal para cima em 1 unidade.
+Quando a segunda casa decimal for 0, declarar os valores com um dígito decimal.
+Para os demais casos, declarar os valores com dois dígitos decimais.
+ANEXO IV
+QUANTIDADES NÃO SIGNIFICATIVAS DE VALOR ENERGÉTICO E DE NUTRIENTES E SUA FORMA DE EXPRESSÃO NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Constituintes
+Quantidades não significativas
+Condições das quantidades não significativas no produto
+Forma de expressão dos valores não significativos
+Valor energético
+Menor ou igual a 4 kcal.
+Suplementos alimentares com quantidades não significativas na porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou 100 ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Carboidratos
+Menor ou igual a 0,5 g.
+Suplementos alimentares:
+(1) com quantidades não significativas na porção; e
+(2) com quantidades não significativas de açúcares totais expressas como zero; e
+(3) sem outro carboidrato declarado com valor diferente de zero.
+0
+Demais alimentos:
+(1) com quantidades não significativas por 100 g ou 100 ml e por porção; e
+(2) com quantidades não significativas de açúcares totais por 100 g ou 100 ml e por porção expressas como zero; e
+(3) sem outro carboidrato declarado com valor diferente de zero.
+0
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Açúcares totais
+Menor ou igual a 0,5 g.
+Suplementos alimentares:
+(1) com quantidades não significativas na porção; e
+(2) sem açúcares adicionados; e
+(3) sem outro açúcar declarado com valor diferente de zero.
+0
+Demais alimentos:
+(1) com quantidades não significativas por 100 g ou 100 ml e por porção; e
+(2) sem açúcares adicionados; e
+(3) sem outro açúcar declarado com valor diferente de zero.
+0
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Açúcares adicionados
+Sem açúcares adicionados.
+Produto atende aos critérios estabelecidos para o atributo nutricional sem adição de açúcares definidos no Anexo XX desta Instrução Normativa.
+0
+Lactose
+Menor ou igual a 0,1 g.
+Suplementos alimentares:
+(1) com quantidades não significativas por porção do produto pronto para o consumo; e
+(2) com quantidades não significativas por 100 g ou 100 ml do produto tal como exposto à venda.
+0
+Alimentos para fins especiais para dietas com restrição de lactose com quantidades não significativas por 100 g ou 100 ml do alimento pronto para o consumo.
+0
+Demais alimentos com quantidades não significativas por 100 g ou 100 ml do alimento tal como exposto à venda.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Proteínas
+Menor ou igual a 0,5 g.
+Suplementos alimentares:
+(1) com quantidades não significativas na porção; e
+(2) sem aminoácido naturalmente presente nas proteínas declarado com valor diferente de zero.
+0
+Demais alimentos:
+(1) com quantidades não significativas por 100 g ou 100 ml e por porção; e
+(2) sem aminoácido naturalmente presente nas proteínas declarado com valor diferente de zero.
+0
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Gorduras totais
+Menor ou igual a 0,5 g.
+Suplementos alimentares:
+(1) com quantidades não significativas por porção; e
+(2) com quantidades não significativas de gorduras saturadas expressas como zero; e
+(3) com quantidades não significativas de gorduras trans expressas como zero; e
+(4) sem outra gordura, incluindo colesterol, declarada com valor diferente de zero.
+0
+Demais alimentos:
+(1) com quantidades não significativas por 100 g ou 100 ml e por porção; e
+(2) com quantidades não significativas de gorduras saturadas por 100 g ou 100 ml e por porção expressas como zero; e
+(3) com quantidades não significativas de gorduras trans por 100 g ou 100 ml e por porção expressas como zero; e
+(4) sem outra gordura, incluindo colesterol, declarada com valor diferente de zero.
+0
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Gorduras saturadas
+Menor ou igual a 0,1 g.
+Suplementos alimentares com quantidades não significativas por porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Gorduras trans
+Menor ou igual a 0,1 g.
+Suplementos alimentares com quantidades não significativas por porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Colesterol
+Menor ou igual a 5 mg.
+Suplementos alimentares com quantidades não significativas por porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Fibras alimentares
+Menor ou igual a 0,5 g.
+Suplementos alimentares com quantidades não significativas por porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+Sódio
+Menor ou igual a 5 mg.
+Suplementos alimentares com quantidades não significativas por porção.
+0
+Demais alimentos com quantidades não significativas por 100 g ou ml e por porção.
+No caso dos alimentos que requerem preparo com adição de outros ingredientes, utilizar 100 g ou 100 ml do alimento pronto para o consumo, considerando o valor nutricional dos ingredientes adicionados, conforme instruções de preparo indicadas pelo fabricante no rótulo.
+0
+ANEXO V
+TAMANHO DAS PORÇÕES DOS ALIMENTOS PARA FINS DE DECLARAÇÃO DA ROTULAGEM NUTRICIONAL.
+RET., 13/10/2022 - Seção 1
+Grupo I: Produtos de panificação, cereais, leguminosas, raízes, tubérculos e seus derivados (Valor energético médio da porção é 150 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Amidos e féculas
+20 g
+Colheres de sopa
+Arroz cru
+50 g
+Xícaras
+Aveia em flocos sem outros ingredientes
+30 g
+Colheres de sopa
+Barra de cereais com até 10% de gordura
+30 g
+Unidades
+Batata, mandioca e outros tubérculos, cozidos em água embalada à vácuo
+150 g
+Unidades ou xícara
+Batata e mandioca pré-frita congelada
+85 g
+Unidades ou xícaras
+Produtos à base de tubérculos e cereais pré-fritos ou congelados
+85 g
+Unidades
+Biscoito salgados, integrais e grissines
+30 g
+Unidades
+Bolos, todos os tipos sem recheio
+60 g
+Fatia ou fração
+Canjica (grão cru)
+50 g
+Xícaras
+Cereal matinal pesando até 45 g por xícara
+30 g
+Xícaras
+Cereal matinal pesando mais do que 45 g por xícara
+40 g
+Xícaras
+Cereais integrais crus
+45 g
+Xícaras
+Farinhas de cereais e tubérculos, todos os tipos
+50 g
+Xícaras
+Farelo de cereais e germe de trigo
+10 g
+Colheres de sopa
+Farinha láctea
+30 g
+Colheres de sopa
+Farofa pronta
+35 g
+Colheres de sopa
+Massa alimentícia seca
+80 g
+Pratos ou xícaras
+Massa desidratada com recheio
+70 g
+Pratos ou xícaras
+Massas frescas com e sem recheios
+100 g
+Pratos ou xícaras
+Pães embalados fatiados ou não, com ou sem recheio
+50 g
+Unidades ou fatias
+Pães embalados de consumo individual, chipa paraguaia
+50 g
+Unidades
+Pão doce sem frutas
+40 g
+Unidades
+Pão croissant, outros produtos de panificação, salgados ou doces sem recheio
+40 g
+Unidades
+Pão de batata, pão de queijo e outros resfriados e congelados com recheio e massas para pães
+40 g
+Unidades ou fatias
+Pão de batata, pão de queijo e outros resfriados e congelados sem recheio, chipa paraguaia
+50 g
+Unidades ou fatias
+Pipoca
+25 g
+Xícaras
+Torradas
+30 g
+Unidades
+Tofu
+40 g
+Fatias
+Trigo para quibe e proteína texturizada de soja
+50 g
+Xícaras
+Leguminosas secas, todas
+60 g
+Xícaras
+Pós para preparar flans e sobremesas
+Quantidade suficiente para preparar 120 g
+Colheres de sopa
+Sagu
+30 g
+Colheres de sopa
+Massas para pasteis e panquecas
+30 g
+Unidades
+Massa para tortas salgadas
+30 g
+Frações
+Massa para pizza
+40 g
+Fatias
+Farinha de rosca
+30 g
+Colheres de sopa
+Preparações à base de soja tipo: milanesa, almondegas e hambúrguer
+80 g
+Unidades
+Mistura para sopa paraguaia y chipaguazú
+Quantidade suficiente para preparar 150 g
+Fatias
+Pré-mistura para preparar bori-bori
+Quantidade suficiente para preparar 80 g
+Colheres de sopa
+Pré-mistura para preparar chipa paraguaia e mbeyu e outros pães
+Quantidade suficiente para preparar 50 g
+Colheres de sopa
+Preparado desidratados para purês de tubérculos
+Quantidade suficiente para 150 g
+Colheres de sopa ou xícaras
+Pós para preparar bolos e tortas
+Quantidade suficiente para preparar 60 g
+Colheres de sopa
+Grupo II: Verduras, hortaliças e conservas vegetais (Valor energético médio da porção é 30 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Concentrado de vegetais triplo (extrato)
+30 g
+Colheres de sopa
+Concentrado de vegetais
+15 g
+Colheres de sopa
+Purê ou polpa de vegetais, incluindo tomate
+60 g
+Colheres de sopa
+Molho de tomate ou à base de tomate e outros vegetais
+60 g
+Colheres de sopa
+Picles e alcaparras
+15 g
+Colheres de sopa
+Sucos de vegetais, frutas e sojas
+200 ml
+Copos
+Vegetais desidratados em conserva (tomate seco)
+40 g
+Colheres de sopa
+Vegetais desidratados para sopa
+40 g
+Colheres de sopa
+Vegetais desidratados para purê
+Quantidade suficiente para preparar 150 g
+Colheres de sopa
+Vegetais em conserva (alcachofra, aspargo, cogumelos, pimentão, pepino e palmito) em salmoura, vinagre e azeite
+50 g
+Unidades ou xícaras
+Jardineira e outras conservas de vegetais e legumes (cenouras, ervilhas, milho, tomate pelado e outros)
+130 g
+Xícaras
+Vegetais empanados
+80 g
+Unidades
+Grupo III: Frutas, sucos, néctares e refrescos de frutas (Valor energético médio da porção é 70 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Polpa de frutas para refresco, sucos concentrados de frutas e desidratados
+Quantidade suficiente para preparar 200 ml
+Colheres de sopa
+Polpa de frutas para sobremesas
+50 g
+Colheres de sopa
+Suco, néctar e bebidas de frutas
+200 ml
+Copos
+Frutas desidratadas (peras, pêssegos, abacaxi, ameixas, partes comestíveis)
+50 g
+Unidades ou colheres de sopa
+Uva passa
+30 g
+Colheres de sopa
+Fruta em conserva, incluindo salada de frutas
+140 g
+Unidades ou colheres de sopa
+Grupo IV: Leites e derivados (Valor energético médio da porção é 125 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Bebida láctea
+200 ml
+Copos
+Leites fermentados, iogurte, todos os tipos
+200 g
+Copos
+Leite fluido, todos os tipos
+200 ml
+Copos
+Leite evaporado
+Quantidade suficiente para preparar 200 ml
+Colheres de sopa
+Queijo ralado
+10 g
+Colheres de sopa
+Queijo cottage, ricota desnatado, queijo minas, requeijão desnatado e petit-suisse
+50 g
+Colheres de sopa
+Outros queijos (ricota, semiduros, branco, requeijão, queijo cremoso, fundidos e em pasta)
+30 g
+Colheres de sopa ou fatias
+Leite em pó
+Quantidade suficiente para preparar 200 ml
+Colheres de sopa
+Sobremesas lácteas
+120 g
+Unidades ou xícaras
+Pós para preparar sobremesas lácteas
+Quantidade suficiente para preparar 120 g
+Colheres de sopa
+Pós para preparar sorvetes
+Quantidade suficiente para preparar 50 g
+Colheres de sopa
+Grupo V: Carnes e ovos (Valor energético médio da porção é 125 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Almôndegas à base de carnes
+80 g
+Unidades
+Anchovas em conserva
+15 g
+Colheres de sopa
+Apresuntado e corned beef
+30 g
+Fatias
+Atum, sardinha, pescado, mariscos, outros peixes em conserva com ou sem molhos
+60 g
+Unidades ou colheres de sopa
+Caviar
+10 g
+Colheres de chá
+Charque
+30 g
+Frações ou pratos
+Hambúrguer à base de carnes
+80 g
+Unidades
+Linguiça, salsicha, todos os tipos
+50 g
+Unidades ou frações
+Kani-kama
+20 g
+Unidades ou colheres de sopa
+Preparações de carnes temperados, defumadas, cozidas ou não
+100 g
+Unidades
+Preparações de carnes com farinhas ou empanadas
+130 g
+Unidades
+Embutidos, fiambre e presunto
+40 g
+Unidades ou fatias
+Peito de peru, blanquet
+60 g
+Unidades ou fatias
+Patês (presunto, fígado e bacon etc)
+10 g
+Colheres de chá
+Ovo
+Quantidade que corresponda a 1 unidade
+Unidades
+Grupo VI: Óleos, gorduras e sementes oleaginosas (Valor energético médio da porção é 100 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Óleos vegetais, todos os tipos
+13 ml
+Colheres de sopa
+Azeitona
+20 g
+Unidades
+Bacon em pedaços - defumado ou fresco
+10 g
+Fatias
+Banha e gorduras animais
+10 g
+Colheres de sopa
+Gordura vegetal
+10 g
+Colheres de sopa
+Maionese e molhos à base de maionese
+12 g
+Colheres de sopa
+Manteiga, margarina e similares
+10 g
+Colheres de sopa
+Molhos para saladas à base de óleo (todos os tipos)
+13 ml
+Colheres de sopa
+Chantilly
+20 g
+Colheres de sopa
+Creme de leite
+15 g
+Colheres de sopa
+Leite de coco
+15 g
+Colheres de sopa
+Coco ralado
+12 g
+Colheres de chá
+Sementes oleaginosas (misturados, cortados, picados, inteiros)
+15 g
+Colheres de sopa
+Grupo VII: Açúcares e produtos com energia proveniente de carboidratos e gorduras (Valor energético médio da porção é 100 kcal).
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Açúcar, todos os tipos
+5 g
+Colheres de chá
+Achocolatado em pó, pós com base de cacau, chocolate em pó e cacau em pó
+20 g
+Colheres de sopa
+Doces em corte (goiaba, marmelo, figo, batata etc)
+40 g
+Fatias
+Doces em pasta (abóbora, goiaba, leite, banana, mocotó)
+20 g
+Colheres de sopa
+Geleias diversas
+20 g
+Colheres de sopa
+Glicose de milho, mel, melado, cobertura de frutas, leite condensado e outros xaropes (cassis, groselha, framboesa, amora, guaraná etc)
+20 g
+Colheres de sopa
+Pó para gelatina
+Quantidade suficiente para preparar 120 g
+Colheres de sopa
+Sobremesa de gelatina pronta
+120 g
+Unidades
+Frutas inteiras em conserva para adornos (cereja maraschino, framboesa)
+20 g
+Unidades
+Balas, pirulitos e pastilhas
+20 g
+Unidades
+Goma de mascar
+3 g
+Unidades
+Chocolates, bombons e similares
+25 g
+Unidades ou frações
+Confeitos de chocolate e drageados em geral
+25 g
+Unidades ou colheres de sopa
+Sorvetes de massa
+60 g ou 130 ml
+Bolas ou unidades
+Sorvetes individuais
+60 g ou 130 ml
+Unidades
+Barra de cereais com mais de 10% de gorduras, torrones, pé de moleque e paçoca
+20 g
+Unidades ou frações
+Bebidas não alcoólicas, carbonadas ou não (chás, bebidas à base de soja e refrigerantes)
+200 ml
+Xícaras ou copos
+Pós para preparo de refresco
+Quantidade suficiente para preparar 200 ml
+Colheres de sopa
+Biscoito doce, com ou sem recheio
+30 g
+Unidades
+Brownies e alfajores
+40 g
+Unidades
+Frutas cristalizadas
+30 g
+Unidades ou colheres de sopa
+Panetone
+80 g
+Unidades ou fatias
+Bolo com frutas
+60 g
+Unidades ou fatias
+Bolos e similares com recheio ou cobertura
+60 g
+Unidades ou fatias
+Pão croissant, produtos de panificação, salgados ou doces com recheio ou cobertura
+40 g
+Unidades
+Snacks à base de cereais e farinhas para petisco
+25 g
+Xícaras
+Mistura para preparo de docinho, cobertura para bolos, tortas e sorvetes etc
+20 g
+Colheres de sopa
+Grupo VIII: Molhos, temperos prontos, caldos, sopas, pratos semiprontos ou prontos para consumo e bebidas alcoólicas.
+Produtos
+Tamanho das porções
+Medidas caseiras sugeridas
+Caldo (carne, galinha, legumes etc) e pós para sopa incluindo (bori-bori, pirá caldo, shoyo)
+Quantidade suficiente para 250 ml
+Unidades, colheres de sopa ou frações
+Catchup e mostarda
+12 g
+Colheres de sopa
+Molhos à base de soja ou vinagre
+Quantidade que corresponda a 1 colher de sopa
+Colheres de sopa
+Molhos à base de produtos lácteos ou caldos
+Quantidade que corresponda a 2 colheres de sopa
+Colheres de sopa
+Pós para preparar molhos
+Quantidade suficiente para preparar 2 colheres de sopa
+Colheres de sopa
+Misso
+20 g
+Colheres de sopa
+Missoshiro
+Quantidade suficiente para 200 ml
+Colheres de sopa
+Extrato de soja
+30 g
+Colheres de sopa
+Pratos preparados prontos e semipronto não incluídos em outros itens da tabela
+100 g
+Unidades ou frações
+Tempero completos
+5 g
+Colheres de chá
+Bebidas alcoólicas
+Quantidade equivalente a 10 g de etanol
+Unidades ou copos
+ANEXO VI
+REGRAS PARA ARREDONDAMENTO E PARA EXPRESSÃO DO NÚMERO DE PORÇÕES NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Números de porções na embalagem
+Regras para arredondamento das porções
+Forma de expressão das porções
+Embalagens com 3 ou mais porções inteiras.
+Não se aplica.
+Porções por embalagem: (números inteiros).
+Embalagens com mais de 2 porções não inteiras.
+Quando a primeira casa decimal for menor que 5, manter o número inteiro.
+Quando a primeira casa decimal for maior ou igual 5, arredondar o número inteiro para cima em 1 unidade.
+Porções por embalagem: Cerca de (números inteiros).
+ANEXO VII
+TIPOS DE UTENSÍLIOS DOMÉSTICOS E SUAS CAPACIDADES PARA DECLARAÇÃO DA MEDIDA CASEIRA DOS ALIMENTOS NA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Tipos de utensílios domésticos
+Capacidades
+Xícara de chá
+200 cm 3 ou ml
+Copo
+200 cm 3 ou ml
+Colher de sopa
+10 cm 3 ou ml
+Colher de chá
+5 cm 3 ou ml
+Prato raso
+22 cm de diâmetro
+Prato fundo
+250 cm 3 ou ml
+ANEXO VIII
+VDR PARA FINS DE ROTULAGEM NUTRICIONAL DOS ALIMENTOS PARA FINS ESPECIAIS NÃO CONTEMPLADOS NO § 6º DO ART. 8º DA RESOLUÇÃO - RDC Nº 429, DE 2020, QUE TENHAM INDICAÇÃO PARA GRUPOS POPULACIONAIS ESPECÍFICOS NO SEU RÓTULO E DOS SUPLEMENTOS ALIMENTARES.
+Constituintes
+Unidades
+0 a 6 meses
+7 a 11 meses
+1 a 3 anos
+4 a 8 anos
+9 a 18 anos
+³ 19 anos
+Gestantes
+Lactantes
+Valor energético
+kcal
+550
+700
+1.000
+1.500
+2.500
+2.000
+2.300
+2.600
+Carboidratos
+g
+60
+95
+150
+225
+375
+300
+345
+360
+Açúcares adicionados
+g
+-
+-
+25
+35
+60
+50
+55
+65
+Proteínas
+g
+9
+11
+25
+35
+60
+50
+55
+65
+Gorduras totais
+g
+30
+27
+33
+50
+80
+65
+75
+85
+Gorduras saturadas
+g
+-
+-
+11
+16
+27
+20
+25
+28
+Gorduras trans
+g
+-
+-
+1
+1,5
+2,5
+2
+2,5
+2,5
+Gorduras monoinsaturadas
+g
+-
+-
+11
+16
+27
+20
+25
+28
+Gorduras poli-insaturadas
+g
+-
+-
+11
+16
+27
+20
+25
+28
+Ômega 6
+g
+-
+-
+9
+13
+22
+18
+20
+23
+Ômega 3
+mg
+-
+-
+2.000
+3.000
+5.000
+4.000
+5.000
+5.000
+Colesterol
+mg
+-
+-
+300
+300
+300
+300
+300
+300
+Fibras alimentares
+g
+-
+-
+19
+25
+38
+25
+28
+29
+Sódio
+mg
+120
+370
+1.000
+2.000
+2.000
+2.000
+2.000
+2.000
+Vitamina A
+µg de RAE
+400
+500
+300
+400
+900
+800
+770
+1.300
+Vitamina D
+µg
+10
+10
+15
+15
+15
+15
+15
+15
+Vitamina E
+mg
+4
+5
+6
+7
+15
+15
+15
+15
+Vitamina K
+µg
+2
+2,5
+30
+55
+75
+120
+90
+90
+Vitamina C
+mg
+40
+50
+15
+25
+75
+100
+85
+120
+Tiamina
+mg
+0,2
+0,3
+0,5
+0,6
+1,2
+1,2
+1,4
+1,4
+Riboflavina
+mg
+0,3
+0,4
+0,5
+0,6
+1,3
+1,2
+1,4
+1,6
+Niacina
+mg de NE
+2
+4
+6
+8
+16
+15
+18
+17
+Vitamina B6
+mg
+0,1
+0,3
+0,5
+0,6
+1,3
+1,3
+1,9
+2
+Biotina
+µg
+5
+6
+8
+12
+25
+30
+30
+35
+Ácido fólico
+µg de DFE
+65
+80
+150
+200
+400
+400
+600
+500
+Ácido pantotênico
+mg
+1,7
+1,8
+2
+3
+5
+5
+6
+7
+Vitamina B12
+µg
+0,4
+0,5
+0,9
+1,2
+2,4
+2,4
+2,6
+2,8
+Cálcio
+mg
+200
+260
+700
+1.000
+1.300
+1.000
+1.300
+1.300
+Cloreto
+mg
+180
+570
+1.500
+1.900
+2.300
+2.300
+2.300
+2.300
+Cobre
+µg
+200
+220
+340
+440
+890
+900
+1.000
+1.300
+Cromo
+µg
+0,2
+5,5
+11
+15
+35
+35
+30
+45
+Ferro
+mg
+0,27
+11
+7
+10
+15
+14
+27
+10
+Flúor
+mg
+0,01
+0,5
+0,7
+1
+3
+4
+3
+3
+Fósforo
+mg
+100
+275
+460
+500
+1.250
+700
+1.250
+1.250
+Iodo
+µg
+110
+130
+90
+90
+150
+150
+220
+290
+Magnésio
+mg
+30
+75
+80
+130
+410
+420
+400
+360
+Manganês
+mg
+0,003
+0,6
+1,2
+1,5
+2,2
+3
+2
+2,6
+Molibdênio
+µg
+2
+3
+17
+22
+43
+45
+5
+50
+Potássio
+mg
+400
+700
+3.000
+3.500
+3.500
+3.500
+3.500
+3.500
+Selênio
+µg
+15
+20
+20
+30
+55
+60
+60
+70
+Zinco
+mg
+2
+3
+3
+5
+11
+11
+12
+13
+Colina
+mg
+125
+150
+200
+250
+550
+550
+450
+550
+ANEXO IX
+MODELOS PARA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+RET., 13/10/2022 - Seção 1
+1. Modelo vertical:
+2. Modelo horizontal:
+3. Modelo vertical quebrado:
+4. Modelo horizontal quebrado:
+5. Modelo agregado:
+ANEXO X
+REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA DECLARAÇÃO SIMPLIFICADA DA INFORMAÇÃO NUTRICIONAL.
+1. DECLARAÇÃO SIMPLIFICADA DE VALOR ENERGÉTICO E NUTRIENTES, EXCETO MINERAIS E VITAMINAS
+Parâmetro
+Requisito para formatação
+Modelo de referência
+Aplicável aos modelos definidos no Anexo IX.
+Localização da informação
+Abaixo da última linha de grade.
+Linha de separação
+Inclusão de linha separando a declaração simplificada do texto imediatamente abaixo.
+Texto para declaração simplificada
+Não contém quantidades significativas de (acrescentar nomes dos constituintes presentes em quantidades não significativas).
+Tipografia do texto
+Formatação Padrão
+Formatação Reduzida
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: regular.
+Corpo: 8 pt.
+Alinhamento: à esquerda.
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: regular.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+2. DECLARAÇÃO SIMPLIFICADA DE MINERAIS E VITAMINAS
+Parâmetro
+Requisito para formatação
+Modelo de referência
+Aplicável aos modelos definidos no Anexo IX.
+Localização da informação
+Abaixo da última linha de grade ou da declaração simplificada de valor energético e nutrientes, quando esta informação estiver presente.
+Linha de separação
+Inclusão de linha separando a declaração simplificada de minerais da declaração simplificada de vitaminas.
+Inclusão de linha separando a declaração simplificada de vitaminas da nota de rodapé.
+Forma de declaração de minerais
+MINERAIS. Por 100 g ( Porção, %VD): Cálcio 00 mg ( 00 mg, 0%) Cloreto 00 mg ( 00 mg, 0%) Cobre 00 µg ( 00 µg, 0%) Cromo 00 µg ( 00 µg, 0%) Ferro 00 mg ( 00 mg, 0%) Flúor 00 mg ( 00 mg, 0%) Fósforo 00 mg ( 00 mg, 0%) Iodo 00 µg( 00 µg, 0%) Magnésio 00 mg ( 00 mg, 0%) Manganês 00 mg ( 00 mg, 0%) Molibdênio 00 µg ( 00 µg, 0%) Potássio 00 mg ( 00 mg, 0%) Selênio 00 µg ( 00 µg, 0%) Zinco 00 mg ( 00 mg, 0%).
+Forma de declaração de vitaminas
+VITAMINAS. Por 100 g ( Porção, %VD): Vitamina A 00 µg ( 00 µg 0%) Vitamina D 00 µg ( 00 µg, 0%) Vitamina E 00 mg ( 00 mg, 0%) Vitamina K 00 µg ( 00 µg, 0%) Vitamina C 00 mg ( 00 mg, 0%) Vitamina B1 00 mg ( 00 mg, X%) Vitamina B2 00 mg ( 00 mg, 0%) Vitamina B3 00 mg ( 00 mg, 0%) Vitamina B5 00 mg ( 00 mg, 0%) Vitamina B6 00 mg ( 00 mg, 0%) Vitamina B7 00 µg ( 00 µg, 0%) Vitamina B9 00 µg ( 00 µg, 0%) Vitamina B12 00 µg ( 00 µg, 0%).
+Símbolo separador
+Fonte: texto normal.
+Subconjunto: Formas geométricas.
+Nome: Black Circle.
+Tipografia do texto
+Formatação Padrão
+Formatação Reduzida
+Tipografia das palavras "MINERAIS" e "VITAMINAS"
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: negrito (bold), caixa alta.
+Corpo: 8 pt.
+Alinhamento: à esquerda.
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: negrito (bold), caixa alta.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+Tipografia dos nomes e valores dos minerais e vitaminas
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 8 pt.
+Alinhamento: à esquerda.
+Tipo de fonte: mesmo tipo usado para declaração das demais informações.
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+ANEXO XI
+NOMES DOS CONSTITUINTES OU SEUS NOMES ALTERNATIVOS E AS RESPECTIVAS ABREVIAÇÕES, ORDEM, INDENTAÇÃO E UNIDADES DE MEDIDA PARA DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Nomes e ordem dos constituintes
+Nomes alternativos
+Abreviações
+Indentação
+Unidades de medidas
+Valor energético
+Não se aplica
+kcal
+Carboidratos
+Não se aplica
+g
+Açúcares totais
+Primeiro nível
+g
+Açúcares adicionados
+Aç adicionados
+Segundo nível
+g
+Nomes de dissacarídeos específicos
+Segundo nível
+g
+Nomes de monossacarídeos específicos
+Segundo nível
+g
+Poliois totais
+Primeiro nível
+g
+Nomes de poliois específicos
+Segundo nível
+g
+Nomes de outros carboidratos específicos
+Primeiro nível
+g
+Proteínas
+Não se aplica
+g
+Nomes de aminoácidos específicos
+Primeiro nível
+mg
+Gorduras totais
+Não se aplica
+g
+Gorduras saturadas
+Gord saturadas
+Primeiro nível
+g
+Gorduras trans
+Gord trans
+Primeiro nível
+g
+Gorduras monoinsaturadas
+Gord monoinsaturadas
+Primeiro nível
+g
+Ômega 9
+Segundo nível
+g
+Ácido oleico
+Terceiro nível
+g
+Gorduras poli-insaturadas
+Gord poli-insaturadas
+Primeiro nível
+g
+Ômega 6
+Segundo nível
+g
+Ácido linoleico
+Ac linoleico
+Terceiro nível
+g
+Ácido araquidônico
+ARA
+Ac araquidônico
+Terceiro nível
+g
+Ômega 3
+Segundo nível
+mg
+Ácido linolênico
+Ac linolênico
+Terceiro nível
+mg
+Ácido eicosapentaenoico
+EPA
+Ac eicosapentaenoico
+Terceiro nível
+mg
+Ácido docosaexaenoico
+DHA
+Ac docosaexaenoico
+Terceiro nível
+mg
+Colesterol
+Primeiro nível
+mg
+Fibras alimentares
+Fibras
+Não se aplica
+g
+Nomes de fibras alimentares específicas
+Primeiro nível
+g
+Sódio
+Não se aplica
+mg
+Vitamina A
+Vit A
+Não se aplica
+µg
+Vitamina D
+Vit D
+Não se aplica
+µg
+Vitamina E
+Vit E
+Não se aplica
+mg
+Vitamina K
+Vit K
+Não se aplica
+µg
+Vitamina C
+Vit C
+Não se aplica
+mg
+Vitamina B1
+Tiamina
+Vit B1
+Não se aplica
+mg
+Vitamina B2
+Riboflavina
+Vit B2
+Não se aplica
+mg
+Vitamina B3
+Niacina
+Vit B3
+Não se aplica
+mg
+Vitamina B5
+Ácido pantotênico
+Vit B5 ou Ac pantotênico
+Não se aplica
+mg
+Vitamina B6
+Piridoxina
+Vit B6
+Não se aplica
+mg
+Vitamina B7
+Biotina
+Vit B7
+Não se aplica
+µg
+Vitamina B9
+Ácido fólico
+Vit B9 ou Ac fólico
+Não se aplica
+µg
+Vitamina B12
+Cianocobalamina
+Vit B12
+Não se aplica
+µg
+Cálcio
+Não se aplica
+mg
+Cloreto
+Não se aplica
+mg
+Cobre
+Não se aplica
+µg
+Cromo
+Não se aplica
+µg
+Ferro
+Não se aplica
+mg
+Flúor
+Não se aplica
+mg
+Fósforo
+Não se aplica
+mg
+Iodo
+Não se aplica
+µg
+Magnésio
+Não se aplica
+mg
+Manganês
+Não se aplica
+mg
+Molibdênio
+Não se aplica
+µg
+Potássio
+Não se aplica
+mg
+Selênio
+Não se aplica
+µg
+Zinco
+Não se aplica
+mg
+Colina
+Não se aplica
+mg
+Taurina
+Não se aplica
+mg
+Nucleotídeos
+Não se aplica
+mg
+Nomes das substâncias bioativas específicas
+Não se aplica
+g, mg ou µg
+ANEXO XII
+REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Parâmetros de formatação
+Requisitos para formatação
+Altura das linhas na grade interna
+Todas as linhas devem ter mesma altura.
+Indentação
+Referência: letra "n", em caixa baixa, com mesmo tipo de fonte e corpo tipográfico usado para o nome dos constituintes.
+Primeiro nível: recuo igual "n".
+Segundo nível: recuo igual a "nn".
+Terceiro nível: recuo igual a "nnn".
+Símbolo separador dos subtítulos (modelo vertical quebrado)
+Fonte: texto normal.
+Subconjunto: Formas geométricas.
+Nome: Black Circle.
+Tipografia e alinhamento
+Formatação Padrão
+Formatação Reduzida
+Tipos de fonte
+Arial
+Helvetica
+Arial
+Helvetica
+Arial Narrow
+Helvetica Condensed
+Tipografia do título "INFORMAÇÃO NUTRICIONAL"
+RET., 13/10/2022 - Seção 1
+Estilo: negrito (bold), caixa alta.
+Corpo: 10 pt.
+Alinhamento horizontal e vertical: centralizado.
+RET., 13/10/2022 - Seção 1
+Estilo: negrito (bold), caixa alta.
+Corpo: 8 pt.
+Alinhamento horizontal e vertical: centralizado.
+RET., 13/10/2022 - Seção 1
+Tipografia dos subtítulos: "Porções por embalagem:" e "Porção: X g ou ml (medida caseira)"
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 8 pt. Alinhamento horizontal: à esquerda.
+Alinhamento vertical: centralizado, para os modelos vertical e vertical quebrado, e superior, para os demais modelos.
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt. Alinhamento horizontal: à esquerda.
+Alinhamento vertical: centralizado, para os modelos vertical e vertical quebrado, e superior, para os demais modelos.
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Tipografia dos títulos das colunas: "100 g", "X g ou ml" e "%VD*"
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Estilo: negrito (bold), combinação de caixa alta e baixa.
+Corpo: 8 pt. Alinhamento horizontal e vertical: centralizado.
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Estilo: negrito (bold), combinação de caixa alta e baixa.
+Corpo: 6 pt. Alinhamento horizontal e vertical: centralizado.
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+Tipografia do nome dos constituintes
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 8 pt.
+Alinhamento horizontal: à esquerda.
+Alinhamento vertical: centralizado.
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento horizontal: à esquerda.
+Alinhamento vertical: centralizado.
+Tipografia dos valores nutricionais
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 8 pt.
+Alinhamento horizontal e vertical: centralizado.
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento horizontal e vertical: centralizado.
+RET., 13/10/2022 - Seção 1
+Tipografia da nota de rodapé: ''*Percentual de valores diários fornecidos pela porção.''
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento horizontal: à esquerda.
+Alinhamento vertical: superior
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento horizontal: à esquerda .
+Alinhamento vertical: superior
+RET., 13/10/2022 - Seção 1
+Tipografia da nota de rodapé: ''**No alimento pronto para o consumo.''
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Tamanho da fonte: 6 pt.
+Alinhamento horizontal: à esquerda.
+Alinhamento vertical: superior
+RET., 13/10/2022 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Tamanho da fonte: 6 pt.
+Alinhamento horizontal: à esquerda.
+Alinhamento vertical: superior
+RET., 13/10/2022 - Seção 1
+ANEXO XIII
+MODELO LINEAR DE DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+RET., 17/05/2024 - Seção 1
+RET., 13/10/2022 - Seção 1
+ANEXO XIV
+REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DO MODELO LINEAR DE DECLARAÇÃO DA TABELA DE INFORMAÇÃO NUTRICIONAL.
+Parâmetros de formatação
+Requisitos para formatação
+Tipos de fonte
+Arial
+Helvetica
+Arial Narrow
+Helvetica Condensed
+Tipografia do título "INFORMAÇÃO NUTRICIONAL"
+Estilo: negrito (bold), caixa alta.
+Corpo: 8 pt.
+Alinhamento: à esquerda.
+Tipografia dos subtítulos: ''Porções por embalagem:'' e ''Porção: X g ou ml (medida caseira)''
+RET., 17/05/2024 - Seção 1
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt. Alinhamento: à esquerda.
+RET., 17/05/2024 - Seção 1
+Símbolo separador dos subtítulos e dos constituintes sem indentação
+RET., 13/10/2022 - Seção 1
+Fonte: texto normal.
+Subconjunto: Formas geométricas.
+Nome: Black Circle
+RET., 13/10/2022 - Seção 1
+Tipografia da base de declaração: "Por 100 g ou ml (Porção, % VD*):"
+Estilo: combinação de regular e negrito (bold) e de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+Tipografia do nome dos constituintes
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+Tipografia dos valores nutricionais em 100 g, na porção e do % VD
+Estilo: combinação de regular e negrito (bold) e de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento: à esquerda.
+Tipografia da nota de rodapé: "*Percentual de valores diários fornecidos pela porção."
+Estilo: regular, combinação de caixa alta e baixa.
+Corpo: 6 pt.
+Alinhamento horizontal: à esquerda.
+Tipografia da nota de rodapé: "**No alimento pronto para o consumo."
+Estilo: regular, combinação de caixa alta e baixa.
+Tamanho da fonte: 6 pt.
+Alinhamento horizontal: à esquerda.
+ANEXO XV
+LIMITES DE AÇÚCARES ADICIONADOS, GORDURAS SATURADAS E SÓDIO PARA FINS DE DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
+Nutrientes
+Alimentos sólidos ou semissólidos
+Alimentos líquidos
+Açúcares adicionados
+Quantidade maior ou igual a 15 g de açúcares adicionados por 100 g do alimento.
+Quantidade maior ou igual a 7,5 g de açúcares adicionados por 100 ml do alimento.
+Gorduras saturadas
+Quantidade maior ou igual a 6 g de gorduras saturadas por 100 g do alimento.
+Quantidade maior ou igual a 3 g de gorduras saturadas por 100 ml do alimento.
+Sódio
+Quantidade maior ou igual a 600 mg de sódio por 100 g do alimento.
+Quantidade maior ou igual a 300 mg de sódio por 100 ml do alimento.
+ANEXO XVI
+LISTA DE ALIMENTOS CUJA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL É VEDADA.
+1. Frutas, hortaliças, leguminosas, tubérculos, cereais, nozes, castanhas, sementes e cogumelos, desde que não sejam adicionados de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+2. Farinhas, desde que não sejam adicionadas de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+3. Carnes e pescados embalados, refrigerados ou congelados, desde que não sejam adicionados de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+4. Ovos, desde que não sejam adicionados de ingredientes que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+5. Leites fermentados, desde que não sejam adicionados de ingredientes opcionais que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+6. Queijos, desde que não sejam adicionados de ingredientes opcionais que agreguem açúcares adicionados ou valor nutricional significativo de gorduras saturadas ou de sódio ao produto, conforme Anexo IV desta Instrução Normativa.
+7. Leites de todas as espécies de animais mamíferos.
+8. Leite em pó.
+9. Azeite de oliva e outros óleos vegetais, prensados a frio ou refinados.
+10. Sal destinado ao consumo humano.
+11. Fórmulas infantis.
+12. Fórmulas para nutrição enteral.
+13. Alimentos para controle de peso.
+14. Suplementos alimentares.
+15. Bebidas alcoólicas.
+16. Produtos destinados exclusivamente ao processamento industrial.
+17. Produtos destinados exclusivamente aos serviços de alimentação.
+18. Aditivos alimentares e coadjuvantes de tecnologia.
+19. Fórmulas dietoterápicas para erros inatos do metabolismo. ( Incluído pela Resolução - RDC nº 460, de 21/12/2020 )
+ANEXO XVII
+MODELOS PARA DECLARAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
+1. Modelos que devem ser usados em alimentos cujas quantidades de açúcares adicionados, gorduras saturadas e sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+2. Modelos que devem ser usados em alimentos cujas quantidades de açúcares adicionados e gorduras saturadas sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+3. Modelos que devem ser usados em alimentos cujas quantidades de açúcares adicionados e sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+4. Modelos que devem ser usados em alimentos cujas quantidades de gorduras saturadas e sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+5. Modelos que devem ser usados em alimentos cujas quantidades de açúcares adicionados sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+6. Modelos que devem ser usados em alimentos cujas quantidades de gorduras saturadas sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+7. Modelos que devem ser usados em alimentos cujas quantidades de sódio sejam iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa.
+ANEXO XVIII
+REQUISITOS ESPECÍFICOS PARA FORMATAÇÃO DA ROTULAGEM NUTRICIONAL FRONTAL.
+1. Posicionamento e relações de tamanho, espessura e distância
+Medidas de referência
+Y: equivale a altura da letra "A", no texto "ALTO EM".
+Z: equivale a largura da letra "I" no texto "SÓDIO".
+Borda externa
+Espessura : 1Z.
+Dotada de cantos arredondados.
+Margem interna
+2Z.
+Distanciamento entre os blocos informativos
+2Z.
+Módulo do título e dos nutrientes
+Altura: 3Y.
+Largura: 8Y.
+Dotados de cantos arredondados.
+Posicionamento da lupa
+Posição: Lateral esquerda do bloco informativo "ALTO EM".
+Distância da borda do bloco informativo "ALTO EM": 1Z.
+Inclinação: 30 graus.
+Altura: 3Y.
+Tamanho do cabo da lupa
+Comprimento: 1,3Y.
+Espessura: 2,6Z.
+Dotado de bordas arredondadas.
+Tamanho do elemento circular da lupa
+Diâmetro: 1,7Y.
+Espessura: 1,4Z.
+Altura do elemento de conexão entre o cabo e a circunferência da lupa: 1,2Z.
+Elemento de conexão entre o cabo e a circunferência da lupa
+Comprimento: 1,2Z.
+Espessura: 1,5Z.
+2. Tipografia e alinhamento
+Tipos de fonte
+Arial Narrow
+Tipografia do bloco informativo ''ALTO EM''
+RET., 13/10/2022 - Seção 1
+Cor da fonte: preto, em fundo branco.
+Estilo: negrito (bold), caixa alta.
+Alinhamento vertical: centralizado.
+Alinhamento horizontal: texto finalizado a uma distância 2Z da lateral direita do bloco informativo.
+RET., 13/10/2022 - Seção 1
+Tipografia do bloco informativo "AÇÚCAR ADICIONADO", "GORDURA SATURADA" e "SÓDIO"
+Cor da fonte: branca, em fundo preto.
+Estilo: negrito (bold), caixa alta.
+Alinhamento vertical e horizontal: centralizado.
+3. Tamanho da fonte
+3.1 - Embalagens com área de painel principal igual ou maior que 35 cm 2 até 100 cm 2
+Tamanho da fonte
+Mínimo
+Máximo
+Não se aplica.
+9 pontos.
+3.2 - Embalagens com área de painel principal maior que 100 cm 2
+Tamanho da fonte
+Mínimo
+Máximo
+9 pontos.
+15 pontos.
+4. Percentual de ocupação rotulagem nutricional frontal
+4.1 - Embalagens com área de painel principal igual ou maior que 35 cm 2 até 100 cm 2
+Quantidade de blocos informativos
+2 blocos
+3 blocos
+4 blocos
+Percentual de ocupação
+3,5%
+5,25%
+7%
+4.2 - Embalagens com área de painel principal maior que 100 cm 2
+Quantidade de blocos informativos
+2 blocos
+3 blocos
+4 blocos
+Percentual de ocupação
+2%
+3%
+4%
+ANEXO XIX
+TERMOS AUTORIZADOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS.
+Atributos nutricionais
+Termos autorizados para alegações nutricionais
+Baixo
+baixo em..., pouco..., baixo teor de..., leve em...
+Muito baixo
+muito baixo em...
+Não contém
+não contém..., livre de..., zero (0 ou 0%)..., sem..., isento de...
+Sem adição de
+sem adição de..., zero adição de..., sem .... adicionado
+Alto conteúdo
+alto conteúdo em..., rico em..., alto teor...
+Fonte
+Fonte de..., com..., contém...
+Reduzido
+reduzido em..., menos..., menor teor de..., light em...
+Aumentado
+aumentado em..., mais...
+ANEXO XX
+CRITÉRIOS DE COMPOSIÇÃO E DE ROTULAGEM QUE DEVEM SER ATENDIDOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS.
+1. Valor energético
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 4 kcal por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso.
+Os termos calorias, quilocalorias ou kcal podem ser utilizados em substituição à expressão valor energético.
+Baixo
+Máximo de 40 kcal por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Os termos calorias, quilocalorias ou kcal podem ser utilizados em substituição à expressão valor energético.
+Máximo de 40 kcal por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso.
+Reduzido
+Redução mínima de 25%; e
+O alimento de referência não atende aos critérios para o atributo nutricional baixo em valor energético.
+Os termos calorias, quilocalorias ou kcal podem ser utilizados em substituição à expressão valor energético.
+2. Açúcares
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+RET., 13/10/2022 - Seção 1
+Máximo de 0,5 g por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso; e
+Nenhum açúcar é declarado com valores superiores a zero na tabela de informação nutricional.
+RET., 13/10/2022 - Seção 1
+Caso o alimento tenha adição de açúcares ou de ingredientes com açúcares, deve ser inserido um asterisco após seu nome que faça referência depois da lista de ingredientes à seguinte nota: "(*) fornece quantidades não significativas de açúcares"; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+RET., 13/10/2022 - Seção 1
+Baixo
+O produto não pode ter quantidades de açúcares adicionados iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Máximo de 5 g por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 5 g por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso.
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Sem adição de
+O alimento não contém açúcares adicionados; e
+O alimento não contém ingredientes que contenham açúcares adicionados; e
+O alimento não contém ingredientes que contenham naturalmente açúcares e que sejam adicionados aos alimentos como substitutos dos açúcares para fornecer sabor doce; e
+Não é utilizado nenhum meio durante o processamento, tal como o uso de enzimas, que possa aumentar o conteúdo de açúcares no produto final.
+Caso o alimento não atenda aos critérios para o atributo nutricional não contém açúcares, deve ser declarada junto à alegação nutricional a frase "contém açúcares próprios dos ingredientes", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Reduzido
+O produto não pode ter quantidades de açúcares adicionados iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Redução mínima de 25%; e
+A diferença absoluta em relação ao alimento de referência deve ser no mínimo 5 g de açúcares por porção de referência.
+3. Lactose
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 0,1 g por 100 g ou ml do produto tal como exposto à venda.
+A quantidade de galactose deve ser declarada na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa.
+4. Gorduras totais
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+RET., 13/10/2022 - Seção 1
+RET., 16/11/2022 - Seção 1
+Máximo de 0,5 g por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso; e
+Cumpre com os critérios para os atributos nutricionais não contém gorduras saturadas, gorduras trans, colesterol; e
+Nenhum tipo de gordura é declarado com valores superiores a zero na tabela de informação nutricional.
+RET., 13/10/2022 - Seção 1
+RET., 16/11/2022 - Seção 1
+Caso o alimento tenha adição de gorduras, óleos ou de ingredientes com gorduras, deve ser inserido um asterisco após seu nome que faça referência depois da lista de ingredientes à seguinte nota: "(*) fornece quantidades não significativas de gorduras"; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+RET., 13/10/2022 - Seção 1
+RET., 16/11/2022 - Seção 1
+Baixo
+O produto não pode ter quantidades de gorduras saturadas iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Máximo de 3 g por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 3 g por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso.
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Sem adição de
+RET., 13/10/2022 - Seção 1
+O produto não pode ter quantidades de gorduras saturadas iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+O alimento não contém gorduras ou óleos de origem animal ou vegetal adicionados; e
+O alimento não contém manteiga, margarina e cremes vegetais adicionados; e
+O alimento não contém creme de leite e derivados adicionados; e
+O alimento não contém ingredientes que contenham os ingredientes anteriores adicionados.
+RET., 13/10/2022 - Seção 1
+Caso o alimento não atenda aos critérios para o atributo nutricional não contém gorduras, deve ser declarada junto à alegação nutricional a frase "contém gordura própria dos ingredientes", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+RET., 13/10/2022 - Seção 1
+Reduzido
+O produto não pode ter quantidades de gorduras saturadas iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Redução mínima de 25% no conteúdo de gorduras totais; e
+O alimento de referência não atende aos critérios para o atributo nutricional baixo em gorduras totais.
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em valor energético, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em valor energético", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+5. Gorduras saturadas
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 0,1 g por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso; ou
+No caso de leites desnatados, fermentados desnatados e queijos desnatados, máximo de 0,2 g por porção de referência; e
+Cumpre com os critérios para o atributo nutricional não contém gorduras trans.
+Baixo
+O produto não pode ter quantidades de gorduras saturadas iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Máximo de 1,5 g da soma de gorduras saturadas e trans por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 1,5 g da soma de gorduras saturadas e trans por 50 g ou ml, para porções referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso; e
+Cumpre com os critérios para o atributo nutricional não contém gorduras trans; e
+Máximo de 10% do valor energético total do alimento proveniente de gorduras saturadas.
+Reduzido
+O produto não pode ter quantidades de gorduras saturadas iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Redução mínima de 25%; e
+O alimento de referência não atende aos critérios para o atributo nutricional baixo em gorduras saturadas.
+A redução não deve resultar em um aumento das quantidades de ácidos graxos trans; e
+A energia proveniente de gorduras saturadas não representa mais de 10% do valor energético total do alimento.
+6. Gorduras trans
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 0,1 g por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso; e
+Cumpre com os critérios para o atributo nutricional baixo em gorduras saturadas.
+7. Colesterol
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 5 mg por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso; e
+Cumpre com os critérios para o atributo nutricional baixo em gorduras saturadas.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa.
+Baixo
+Máximo de 20 mg por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 20 mg por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso; e
+Cumpre com os critérios para o atributo nutricional baixo em gorduras saturadas.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa.
+Reduzido
+Redução mínima de 25%; e
+O alimento atende às condições estabelecidas para o atributo nutricional baixo em gorduras saturadas; e
+O alimento de referência não atende aos critérios para o atributo nutricional baixo em colesterol.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa.
+8. Sódio
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Não contém
+Máximo de 5 mg por porção de referência, por 100 g ou ml e por embalagem individual, quando for o caso.
+Muito baixo
+O produto não pode ter quantidades de sódio iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Máximo de 40 mg por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 40 mg por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso.
+Baixo
+O produto não pode ter quantidades de sódio iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Máximo de 80 mg por porção de referência, para porções maiores que 30 g ou ml, e por embalagem individual, quando for o caso; ou
+Máximo de 80 mg por 50 g ou ml, para porções de referência menores ou iguais a 30 g ou ml, e por embalagem individual, quando for o caso.
+Reduzido
+O produto não pode ter quantidades de sódio iguais ou superiores aos limites definidos no Anexo XV desta Instrução Normativa, exceto quando se tratar de categoria excetuada no Anexo XVI desta Instrução Normativa; e
+Redução mínima de 25%; e
+O alimento de referência não atende aos critérios para o atributo nutricional baixo em sódio.
+9. Sal
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Sem adição de
+O alimento não contém sal (cloreto de sódio) adicionado; e
+O alimento não contém outros sais de sódio adicionados; e
+O alimento não contém ingredientes que tenham sais de sódio adicionados; e
+O alimento de referência contém sal (cloreto de sódio) ou outro sal de sódio adicionado.
+O produto não pode ter declaração de rotulagem nutricional frontal de sódio.
+Caso o alimento não atenda aos critérios para o atributo nutricional não contém sódio, deve ser declarada junto à alegação nutricional a frase "contém sódio próprio dos ingredientes", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+10. Ácidos graxos ômega 3
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 300 mg de ácido alfa-linolênico por porção de referência e por embalagem individual quando for o caso; ou
+Mínimo de 40 mg da soma de EPA e DHA por porção de referência e por embalagem individual quando for o caso.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas, ômega 3, ácidos linolênico, EPA e DHA e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Alto conteúdo
+Mínimo de 600 mg de ácido alfa-linolênico por porção de referência e por embalagem individual quando for o caso; ou
+Mínimo de 80 mg da soma de EPA e DHA por porção de referência e por embalagem individual quando for o caso.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas, ômega 3, ácidos linolênico, EPA e DHA e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+11. Ácidos graxos ômega 6
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 1,5 g de ácido linoleico por porção de referência e por embalagem individual quando for o caso; e
+Mínimo de 45% dos ácidos graxos presentes no alimento correspondem ao ácido graxo linoleico; e
+Mais de 20% do valor energético total do alimento proveniente de ácido linoleico.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas, ômega 6, e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Alto conteúdo
+Mínimo de 3 g de ácido linoleico por porção de referência e por embalagem individual quando for o caso; e
+Mínimo de 45% dos ácidos graxos presentes no alimento correspondem ao ácido graxo linoleico; e
+Mais de 20% do valor energético total do alimento proveniente de ácido linoleico.
+As quantidades de gorduras monoinsaturadas, poli-insaturadas, ômega 6, e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+12. Ácidos graxos ômega 9
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 2 g de ácido oleico por porção de referência e por embalagem individual quando for o caso; e
+Mínimo de 45% dos ácidos graxos presentes no alimento correspondem ao ácido graxo oleico; e
+Mais de 20% do valor energético total do alimento proveniente de ácido oleico.
+As quantidades de gorduras monoinsaturadas, ômega 9, poli-insaturadas, e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+Alto conteúdo
+Mínimo de 4 g de ácido oleico por porção de referência e por embalagem individual quando for o caso; e
+Mínimo de 45% dos ácidos graxos presentes no alimento correspondem ao ácido graxo oleico; e
+Mais de 20% do valor energético total do alimento proveniente de ácido oleico.
+As quantidades de gorduras monoinsaturadas, ômega 9, poli-insaturadas, e colesterol devem ser declaradas na tabela de informação nutricional, conforme Anexo XI desta Instrução Normativa; e
+Caso o alimento não atenda aos critérios para os atributos nutricionais baixo ou reduzido em gorduras saturadas, deve ser declarada junto à alegação nutricional a frase "Este não é um alimento baixo ou reduzido em gorduras saturadas", com o mesmo tipo de letra da alegação nutricional, com pelo menos 50% do seu tamanho, de cor contrastante ao fundo do rótulo e que garanta a visibilidade e a legibilidade da informação.
+13. Proteínas
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 10% do VDR de proteínas definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso; e
+As quantidades de aminoácidos essenciais da proteína adicionada atendem ao definido no Anexo XXI desta Instrução Normativa.
+Alto conteúdo
+Mínimo de 20% do VDR de proteínas definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso; e
+As quantidades de aminoácidos essenciais da proteína adicionada atendem ao definido no Anexo XXI desta Instrução Normativa.
+Aumentado
+Aumento mínimo de 25%; e
+O alimento de referência atende aos critérios para o atributo nutricional fonte de proteína; e
+As quantidades de aminoácidos essenciais da proteína adicionada atendem ao definido no Anexo XXI desta Instrução Normativa.
+14. Fibras alimentares
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 10% do VDR de fibras alimentares definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso.
+Não podem ser declaradas alegações nutricionais para fibras alimentares específicas.
+Alto conteúdo
+Mínimo de 20% do VDR de fibras alimentares definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso.
+Não podem ser declaradas alegações nutricionais para fibras alimentares específicas.
+Aumentado
+Aumento mínimo de 25%; e
+O alimento de referência atende aos critérios para o atributo nutricional fonte de fibras alimentares.
+Não podem ser declaradas alegações nutricionais para fibras alimentares específicas.
+15. Vitaminas e minerais
+Atributos nutricionais
+Critérios de composição
+Critérios de rotulagem
+Fonte
+Mínimo de 15% do VDR da respectiva vitamina ou mineral definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso.
+Alto conteúdo
+Mínimo de 30% do VDR da respectiva vitamina ou mineral definido no Anexo II desta Instrução Normativa por porção de referência e por embalagem individual quando for o caso.
+Aumentado
+Aumento mínimo de 25%; e
+O alimento de referência atende aos critérios para o atributo nutricional fonte da vitamina ou mineral objeto da alegação.
+ANEXO XXI
+PERFIL DE AMINOÁCIDOS PARA DECLARAÇÃO DE ALEGAÇÕES NUTRICIONAIS DE PROTEÍNA.
+Aminoácidos
+Composição de Referência (miligrama de aminoácido por grama de proteína).
+Histidina
+15
+Isoleucina
+30
+Leucina
+59
+Lisina
+45
+Metionina e cisteína
+22
+Fenilalanina e tirosina
+38
+Treonina
+23
+Triptofano
+6
+Valina
+39
+ANEXO XXII
+FATORES DE CONVERSÃO PARA DETERMINAÇÃO DO VALOR ENERGÉTICO DOS ALIMENTOS.
+Nutrientes
+Fator de conversão (kcal/g)
+Carboidratos, exceto poliois
+4
+Proteínas
+4
+Gorduras
+9
+Álcool (etanol)
+7
+Ácidos orgânicos
+3
+Lactitol
+2
+Xilitol
+2,4
+Maltitol
+2,1
+Sorbitol
+2,6
+Manitol
+1,6
+Eritritol
+0
+Isomalte
+2
+Tagatose
+3
+Fibras alimentares solúveis, exceto polidextrose
+2
+Polidextrose
+1
+ANEXO XXIII
+FATORES DE CONVERSÃO DE NUTRIENTES PARA DETERMINAÇÃO DO VALOR NUTRICIONAL DOS ALIMENTOS.
+Nutrientes
+Fatores de conversão
+Vitamina A
+1 µg de equivalente de atividade de retinol (RAE) = 3,33 UI de vitamina A = 1 µg de retinol = 12 µg de betacaroteno = 24 µg de outros carotenoides provitamina A.
+Vitamina D
+1 µg de colecalciferol = 40 UI de vitamina D.
+Vitamina E
+1 mg de alfa-tocoferol = 1 mg de d-alfa tocoferol (natural) = 2 mg de alfa tocoferol sintético = 1,49 UI
+Niacina
+1 mg de niacina equivalente (NE) = 1 mg de niacina = 60 mg de triptofano.
+Ácido fólico
+1 µg de folato dietético equivalente (DFE) = 1 mg de folato naturalmente presente no alimento = 0,6 µg de ácido fólico = 0,6 µg de L-metilfolato de suplemento.
+Proteínas
+Quando determinado pelo método Kjeldahl, aplicar a fórmula "Proteína = conteúdo total de nitrogênio x fator", utilizando os seguintes fatores:
+(1) 6,25, para proteínas de soja e de milho;
+(2) 5,75, para outras proteínas vegetais;
+(3) 6,38, para proteínas lácteas; e
+(4) 6,25, para proteínas da carne ou misturas de proteínas.
+PUB D.O.U., 09/10/2020 - Seção 1
+Este texto não substitui a Publicação Oficial.
+Carregando...

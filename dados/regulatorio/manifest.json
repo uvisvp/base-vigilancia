@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T12:50:22.686283+00:00",
+  "gerado_em": "2026-09-03T12:53:25.195226+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "a8c7657285504b65784e14f9b46bf74828e11b405f6c7109fb1469046a45ee4a",
+      "sha256": "d4434a3c7a46de90147cbce17b6d59ae4b368d35ae9feea8dded20ead635facc",
       "normas": 1,
       "curados": 3
     },
@@ -14,7 +14,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/in-75-2020-anexo-xv.json",
       "schema": "legislacao-curada-v1",
-      "sha256": "e9f7911cd09b645b7db34e21f378d9daa501de4f1715a6f1aab88bc69d73b617",
+      "sha256": "aa1af2705dc23ad2bfe321c8894bd545b81a66fe51fcc406e03581c65584d615",
       "registros": 3
     },
     "regularizacao_cosmeticos": {
