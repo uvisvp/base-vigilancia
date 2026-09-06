@@ -123,7 +123,7 @@ jobs:
       - name: Verificar alterações
         id: changes
         run: |
-          git add dados/legislacao_v12/ dados/regulatorio/
+          git add dados/legislacao_v12/ dados/regulatorio/ dados/roteiros/ textos/
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
@@ -148,7 +148,7 @@ jobs:
               python scripts/gerar_manifesto_regulatorio.py
             fi
 
-            git add dados/legislacao_v12/ dados/regulatorio/
+            git add dados/legislacao_v12/ dados/regulatorio/ dados/roteiros/ textos/
             if git diff --cached --quiet; then
               echo "Nenhuma alteração pendente após sincronização."
               exit 0
