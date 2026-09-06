@@ -1,0 +1,16 @@
+{
+  "norma": "Lei 9965-2000",
+  "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/l9965.htm",
+  "consultado_em": "2026-09-06T00:56:39.706708+00:00",
+  "data_fonte": "2000-04-27",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "827daf94612ee605c5f5a98c8ef3d2ad98f656afdeae41432bf3355afd6a7885",
+  "sha256_texto": "02a55609146822d29a4e225fdf05b700958670909b8646b7456dca47c93d8144",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei 9965-2000--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.606157+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}

@@ -6,6 +6,9 @@ on:
     paths:
       - "scripts/estruturar_legislacao.py"
       - "scripts/gerar_manifesto_regulatorio.py"
+      - "scripts/estruturar_legislacao.py"
+      - "dados/roteiros/**"
+      - "textos/**"
       - "dados/legislacao_curada/**"
       - "dados/controlados_portaria344/**"
       - ".github/workflows/atualizar-regulatorio.yml"
@@ -60,9 +63,14 @@ jobs:
               'regularizacao_cosmeticos',
               'regularizacao_saneantes',
               'controlados_portaria344',
+              'roteiro_drogaria',
           )
           for k in obrigatorias:
               assert d['bases'][k]['status']=='ok', (k,d['bases'][k])
+
+          roteiro=d['bases']['roteiro_drogaria']
+          assert roteiro['schema']=='roteiro-estruturado-v1'
+          assert roteiro['cards']==8 and roteiro['perguntas']>0 and roteiro['dispositivos']>0
 
           in75=d['bases']['in75_completa']
           assert in75['schema']=='legislacao-hierarquica-v12'
@@ -157,3 +165,4 @@ jobs:
 
           echo "Falha após 3 tentativas por concorrência de commits."
           exit 1
+

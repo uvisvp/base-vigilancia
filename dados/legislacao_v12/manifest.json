@@ -1,16 +1,555 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-03T18:35:42.231193+00:00",
+  "gerado_em": "2026-09-06T01:51:52.559315+00:00",
   "normas": {
+    "IN 360-2025": {
+      "arquivo": "in-360-2025.json",
+      "nos": 155,
+      "sha256_texto": "bb6f0cbfdd55d8e656f21afc6aabecf765a1faa660aa6843df025100a138b44e",
+      "proveniencia": {
+        "norma": "IN 360-2025",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000360&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2025",
+        "consultado_em": "2026-09-06T00:56:39.632280+00:00",
+        "data_fonte": "2025-04-23",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "312b0cc71473eb937f71e34bdc37614487bae829a0577860107754610319756b",
+        "sha256_texto": "bb6f0cbfdd55d8e656f21afc6aabecf765a1faa660aa6843df025100a138b44e",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\IN 360-2025--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.601558+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
     "IN 75-2020": {
       "arquivo": "in-75-2020.json",
       "nos": 2138,
       "sha256_texto": "8e37dd8c013001020eab269807e74c1a4837ec96044315aa8c5175de4a8753e5"
     },
+    "Lei 5991-1973": {
+      "arquivo": "lei-5991-1973.json",
+      "nos": 179,
+      "sha256_texto": "c3d69961cdd36dc9d647cc200fb1c7fdc51187da5658678cf0731a718627ef19",
+      "proveniencia": {
+        "norma": "Lei 5991-1973",
+        "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/l5991.htm",
+        "consultado_em": "2026-09-06T00:56:39.752052+00:00",
+        "data_fonte": "1973-12-17",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "2621c8b86bd5a18e2a39c8a89f8b959f18fbae7ed5778d892a04d75da6bfc4c7",
+        "sha256_texto": "c3d69961cdd36dc9d647cc200fb1c7fdc51187da5658678cf0731a718627ef19",
+        "alteracoes_encontradas": [
+          "(Incluído pela Lei nº 9.069 de 1995)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\Lei 5991-1973--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.606157+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "Lei 9965-2000": {
+      "arquivo": "lei-9965-2000.json",
+      "nos": 17,
+      "sha256_texto": "02a55609146822d29a4e225fdf05b700958670909b8646b7456dca47c93d8144",
+      "proveniencia": {
+        "norma": "Lei 9965-2000",
+        "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/l9965.htm",
+        "consultado_em": "2026-09-06T00:56:39.706708+00:00",
+        "data_fonte": "2000-04-27",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "827daf94612ee605c5f5a98c8ef3d2ad98f656afdeae41432bf3355afd6a7885",
+        "sha256_texto": "02a55609146822d29a4e225fdf05b700958670909b8646b7456dca47c93d8144",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Lei 9965-2000--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.606157+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "Portaria SVS MS 344-1998": {
+      "arquivo": "portaria-svs-ms-344-1998.json",
+      "nos": 2313,
+      "sha256_texto": "62cc1b984ad82c518cac4f69650bf8c8e998bdf5c0e973ad49ff8df82f40d4c6",
+      "proveniencia": {
+        "norma": "Portaria SVS MS 344-1998",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000344&orgao=SVS%2FMS&seqAto=000&tipo=POR&valorAno=1998",
+        "consultado_em": "2026-09-06T00:56:39.945604+00:00",
+        "data_fonte": "1998-05-12",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "c8d8699b21f1b11909e3593e70cd40604c0fd497f7ee5b5cba925f77a9d9e1ce",
+        "sha256_texto": "62cc1b984ad82c518cac4f69650bf8c8e998bdf5c0e973ad49ff8df82f40d4c6",
+        "alteracoes_encontradas": [
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 16, de 01/04/2014)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 231, de 20/06/2018)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 367, de 06/04/2020)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 11, de 22/03/2011)",
+          "(Revogado, unicamente no que se refere à substância talidomida, pela Resolução da Diretoria Colegiada - RDC nº 11, de 22/03/2011)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 438, de 06/11/2020)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 63, de 09/09/2008)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 812, de 31/08/2023)",
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Revogado, unicamente no que se refere à substância talidomida pela Resolução da Diretoria Colegiada - RDC nº 11, de 22/03/2011)",
+          "(Revogada pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024, retificada no DOU nº 160, de 20 de agosto de 2024)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024, retificada no DOU nº 160, de 20 de agosto de 2024)",
+          "(Redação dada pela",
+          "(Revogado, unicamente no que se refere à substância talidomida pela Resolução da Diretoria Colegiada - RDC nº 011, de 22/03/2011)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 66, de 18/03/2016)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 66, de 18/03/2016)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 768, de 12/12/2022)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 768, de 12/12/2022)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 768, de 12/12/2022)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 60, de 17/12/2010)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 96, de 17/12/2008)",
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.036, de 09/07/2026)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\Portaria SVS MS 344-1998--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.607682+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "Portaria SVS MS 6-1999": {
+      "arquivo": "portaria-svs-ms-6-1999.json",
+      "nos": 874,
+      "sha256_texto": "a9a130c0b7f1fcc29b4a537c4538dfc5aa2e92b87c723cceef3552d0b1a602a3",
+      "proveniencia": {
+        "norma": "Portaria SVS MS 6-1999",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000006&orgao=SVS%2FMS&seqAto=000&tipo=POR&valorAno=1999",
+        "consultado_em": "2026-09-06T00:56:39.922811+00:00",
+        "data_fonte": "1999-01-29",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "22b9ad19212a52bea6cd443bdde038cdcd15ecfb0a26467312f456af82ece096",
+        "sha256_texto": "a9a130c0b7f1fcc29b4a537c4538dfc5aa2e92b87c723cceef3552d0b1a602a3",
+        "alteracoes_encontradas": [
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 16, de 01/04/2014)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 1, de 04/01/2012)",
+          "((Revogado pela Resolução da Diretoria Colegiada - RDC nº 1, de 04/01/2012)",
+          "(Revogada pela Resolução da Diretoria Colegiada - RDC nº 367, de 06/04/2020)",
+          "(Revogado pela Resolução 367/2020)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 62, de 11/02/2016)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 11, de 22/03/2011)",
+          "(Revogado, unicamente no que se refere à substância talidomida, pela Resolução da Diretoria Colegiada - RDC nº 011, de 22/03/2011)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024)",
+          "(Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Revogada pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 873, de 27/05/2024)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 13, de 19/03/2009)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 13, de 19/03/2009)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 768, de 12/12/2022)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\Portaria SVS MS 6-1999--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.607682+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 1000-2025": {
+      "arquivo": "rdc-1000-2025.json",
+      "nos": 203,
+      "sha256_texto": "bbc314e4814220129daafebdc8be487f9cebfbafaae9885cd4a80cfbdd35b195",
+      "proveniencia": {
+        "norma": "RDC 1000-2025",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001000&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2025",
+        "consultado_em": "2026-09-06T00:56:39.315590+00:00",
+        "data_fonte": "2025-12-11",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "479109d383668d89d93164fcfc2a995a773153a6d0212ea781d20a9122b60071",
+        "sha256_texto": "bbc314e4814220129daafebdc8be487f9cebfbafaae9885cd4a80cfbdd35b195",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.028, de 01/06/2026)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 1000-2025--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.591952+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+        "vigente_desde": "2026-02-13",
+        "regra_transicao": {
+          "norma_alteradora": "RDC 1028-2026",
+          "prazo_disponibilizacao": "2026-09-30",
+          "operacional_desde": null,
+          "dias_aceitacao_sem_numero_apos_inicio": 30,
+          "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/sncr-anvisa-inicia-etapa-de-integracao-com-sistemas-de-prescricao-eletronica-e-amplia-prazo-para-implementacao",
+          "verificado_em": "2026-09-06",
+          "nota": "Prazo de disponibilização não comprova operação. Requisitos dependentes de SNCR permanecem sem geração automática de infração até atualização oficial da data operacional."
+        }
+      }
+    },
+    "RDC 1015-2026": {
+      "arquivo": "rdc-1015-2026.json",
+      "nos": 855,
+      "sha256_texto": "e0d474ee06a7ed3fc5104787f08f4753e49c9f93264492317f49bb3a19cc98ad",
+      "proveniencia": {
+        "norma": "RDC 1015-2026",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001015&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "consultado_em": "2026-09-06T00:56:39.540329+00:00",
+        "data_fonte": "2026-02-02",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "8ac38a2fe84baa1c60e1172c89401fb4de3a4af1d717c984c06c2f0026a906b7",
+        "sha256_texto": "e0d474ee06a7ed3fc5104787f08f4753e49c9f93264492317f49bb3a19cc98ad",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.023, de 11/05/2026)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 1015-2026--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.597655+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+        "vigente_desde": "2026-05-04"
+      }
+    },
+    "RDC 1023-2026": {
+      "arquivo": "rdc-1023-2026.json",
+      "nos": 1842,
+      "sha256_texto": "fc9f6ac761311c87f41563ae5c992316a1759c93d4803e2d738206e86c5aeb6c",
+      "proveniencia": {
+        "norma": "RDC 1023-2026",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001023&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "consultado_em": "2026-09-06T00:56:39.694517+00:00",
+        "data_fonte": "2026-05-11",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "46abd184d0ca02cb96cdc3de8492913e7693bc7f01445c8e0be4fda43c738cb4",
+        "sha256_texto": "fc9f6ac761311c87f41563ae5c992316a1759c93d4803e2d738206e86c5aeb6c",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 1023-2026--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.604620+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 1028-2026": {
+      "arquivo": "rdc-1028-2026.json",
+      "nos": 16,
+      "sha256_texto": "31719b844ee786344a75d3aec0aa1daae9e94baf8ce42ff6138e8815fe130e39",
+      "proveniencia": {
+        "norma": "RDC 1028-2026",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001028&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "consultado_em": "2026-09-06T00:56:39.329358+00:00",
+        "data_fonte": "2026-06-01",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "8286c2e25904fe82034a52e7747b6324049e4df55bee3dcccb8d67d3682622e0",
+        "sha256_texto": "31719b844ee786344a75d3aec0aa1daae9e94baf8ce42ff6138e8815fe130e39",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 1028-2026--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.593467+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 133-2016": {
+      "arquivo": "rdc-133-2016.json",
+      "nos": 28,
+      "sha256_texto": "645117bd9904db8c76e9e811ca9f2520c6eefed7f1f60194abe69a8fea6b344f",
+      "proveniencia": {
+        "norma": "RDC 133-2016",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000133&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2016",
+        "consultado_em": "2026-09-06T00:56:39.429657+00:00",
+        "data_fonte": "2016-12-15",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "4c923cb52ec44fc36852e732b7f53d04096276203e7b69d61d85d5e87f70e53d",
+        "sha256_texto": "645117bd9904db8c76e9e811ca9f2520c6eefed7f1f60194abe69a8fea6b344f",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 133-2016--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.594987+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 22-2014": {
+      "arquivo": "rdc-22-2014.json",
+      "nos": 145,
+      "sha256_texto": "d545a0b431cbeeb52068d9ded2fb14749943da2fd1a066280847fcd5f5debf1a",
+      "proveniencia": {
+        "norma": "RDC 22-2014",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+        "consultado_em": "2026-09-06T00:56:39.304877+00:00",
+        "data_fonte": "2014-04-29",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "93017301a9de7ed9141b1e3a041aa7b91588756efc8a437d4324f412d651c0f2",
+        "sha256_texto": "d545a0b431cbeeb52068d9ded2fb14749943da2fd1a066280847fcd5f5debf1a",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 22-2014--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.591952+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 222-2018": {
+      "arquivo": "rdc-222-2018.json",
+      "nos": 547,
+      "sha256_texto": "6b4791fc7d60ca9ff81d3b909e2019aaa2378482162d3fa72450d54c54dc5637",
+      "proveniencia": {
+        "norma": "RDC 222-2018",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000222&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2018",
+        "consultado_em": "2026-09-06T00:56:39.481199+00:00",
+        "data_fonte": "2018-03-28",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "1ab287d06fc3792007ccdefb4d58d14f19ec9482ff5d7f7e9307e9aa21ee9fc7",
+        "sha256_texto": "6b4791fc7d60ca9ff81d3b909e2019aaa2378482162d3fa72450d54c54dc5637",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 222-2018--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.597655+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 327-2019": {
+      "arquivo": "rdc-327-2019.json",
+      "nos": 413,
+      "sha256_texto": "861309767bfaefc94b11e8a4f8a21fa5aa25d0dcb12b8108c45e9ff25e1781da",
+      "proveniencia": {
+        "norma": "RDC 327-2019",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000327&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2019",
+        "consultado_em": "2026-09-06T00:56:39.656313+00:00",
+        "data_fonte": "2019-12-09",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "73d2857a9d56e65f54247588e83d11118c5d5910344b15d97cd9412f78b5b42a",
+        "sha256_texto": "861309767bfaefc94b11e8a4f8a21fa5aa25d0dcb12b8108c45e9ff25e1781da",
+        "alteracoes_encontradas": [
+          "Revogada pela Resolução da Diretoria Colegiada Anvisa nº 1.015, de 02/02/2026"
+        ],
+        "status_vigencia": "revogado",
+        "texto": "textos\\RDC 327-2019--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.601558+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+        "revogado_por": "RDC 1015/2026"
+      }
+    },
     "RDC 429-2020": {
       "arquivo": "rdc-429-2020.json",
       "nos": 350,
       "sha256_texto": "be4e0a8d2689b8a983e7c495f16f09376c2a8a120b0b0a72f55278206aa93eef"
+    },
+    "RDC 44-2009": {
+      "arquivo": "rdc-44-2009.json",
+      "nos": 350,
+      "sha256_texto": "3b82a8e195608400e325cc50c3da03bb84f7fb103fdec313ca2dea294be491bd",
+      "proveniencia": {
+        "norma": "RDC 44-2009",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000044&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2009",
+        "consultado_em": "2026-09-06T00:56:39.321757+00:00",
+        "data_fonte": "2009-08-17",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "b1183c0ae02eb9d72789927fe569a87e028602b805de3ea74242617d1c5bee1b",
+        "sha256_texto": "3b82a8e195608400e325cc50c3da03bb84f7fb103fdec313ca2dea294be491bd",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução 41/2012)",
+          "(Incluído pela Resolução 41/2012)",
+          "(Redação dada pela Resolução 812/2023)",
+          "(Redação dada pela Resolução 786/2023)",
+          "(Revogado pela Resolução 786/2023)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 44-2009--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.591952+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 471-2021": {
+      "arquivo": "rdc-471-2021.json",
+      "nos": 96,
+      "sha256_texto": "4e068041b0784d2f823a9655368cb0cf533c79e95b273e00de13eabd39e566bd",
+      "proveniencia": {
+        "norma": "RDC 471-2021",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000471&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
+        "consultado_em": "2026-09-06T00:56:39.292660+00:00",
+        "data_fonte": "2021-02-23",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "85c1d483660a44a6d61ba0e2ddd2ef01fd30cc6ea5e49e7baf246dea80158743",
+        "sha256_texto": "4e068041b0784d2f823a9655368cb0cf533c79e95b273e00de13eabd39e566bd",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 973, de 23/04/2025)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 973, de 23/04/2025"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 471-2021--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.590444+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 50-2014": {
+      "arquivo": "rdc-50-2014.json",
+      "nos": 123,
+      "sha256_texto": "cccf27c5f4e420725cd9931afe3128e45a65bca3ab7d9069f5dc135a3e7ea24a",
+      "proveniencia": {
+        "norma": "RDC 50-2014",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000050&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+        "consultado_em": "2026-09-06T00:56:39.415944+00:00",
+        "data_fonte": "2014-09-25",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "95bc471a25137d0a62f3424733a4d63687db9c24c022a2f23708abc6fef150ab",
+        "sha256_texto": "cccf27c5f4e420725cd9931afe3128e45a65bca3ab7d9069f5dc135a3e7ea24a",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução 133/2016)",
+          "(Incluído pela Resolução 133/2016)",
+          "(Revogado pela Resolução 406/2020)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 50-2014--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.594987+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 565-2021": {
+      "arquivo": "rdc-565-2021.json",
+      "nos": 11,
+      "sha256_texto": "a2466de5d639e5dc7bfab005c6bb17c19d3e2d3bb688a615c39fd5bf81d99e22",
+      "proveniencia": {
+        "norma": "RDC 565-2021",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000565&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
+        "consultado_em": "2026-09-06T00:56:39.437257+00:00",
+        "data_fonte": "2021-09-29",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "5237fa03aeda374082cb5c74d965c2c5ac43d68d0db111cdfbe054c0fc3cef1b",
+        "sha256_texto": "a2466de5d639e5dc7bfab005c6bb17c19d3e2d3bb688a615c39fd5bf81d99e22",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 565-2021--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.596508+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 58-2007": {
+      "arquivo": "rdc-58-2007.json",
+      "nos": 53,
+      "sha256_texto": "b954a8e4b710de92a6e370d1db8aa89940bd6308b0309121e5f60ce568af0fd6",
+      "proveniencia": {
+        "norma": "RDC 58-2007",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000058&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2007",
+        "consultado_em": "2026-09-06T00:56:39.370483+00:00",
+        "data_fonte": "2007-09-05",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "f16c8157181abb41fb29ee5385703f1fc90a532036f8076babf05459cd96db19",
+        "sha256_texto": "b954a8e4b710de92a6e370d1db8aa89940bd6308b0309121e5f60ce568af0fd6",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC n° 873, de 27/05/2024)",
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 25, de 30/06/2010)",
+          "(Revogado pela Resolução - RDC nº 52, de 10/10/2011, sustada pelo Decreto Legislativo nº 273, de 04/09/2014) (Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+          "(Redação dada pela Resolução - RDC nº 25, de 30/06/2010, revogada pela Resolução - RDC nº 52, de 10/10/2011, sendo esta sustada pelo Decreto Legislativo nº 273, de 04/09/2014, resultando em retorno da vigência da RDC nº 25, de 2010) (Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+          "(Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 58-2007--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.593467+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 786-2023": {
+      "arquivo": "rdc-786-2023.json",
+      "nos": 604,
+      "sha256_texto": "c834b3329d4329f10a741018da468e80bf923874ac3c1f9b74d8a6eeeb65498a",
+      "proveniencia": {
+        "norma": "RDC 786-2023",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000786&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2023",
+        "consultado_em": "2026-09-06T00:56:39.657836+00:00",
+        "data_fonte": "2023-05-05",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "405bbecab78d9f67fb00fff9d8f1916ac4ad13865583abdbd3e60cb308edff9b",
+        "sha256_texto": "c834b3329d4329f10a741018da468e80bf923874ac3c1f9b74d8a6eeeb65498a",
+        "alteracoes_encontradas": [
+          "Revogada pela Resolução da Diretoria Colegiada - RDC nº 978, de 06/06/2025",
+          "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)",
+          "(Redação dada pela",
+          "(Incluído pela",
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)",
+          "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)"
+        ],
+        "status_vigencia": "revogado",
+        "texto": "textos\\RDC 786-2023--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.603086+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+        "revogado_por": "RDC 978/2025"
+      }
+    },
+    "RDC 973-2025": {
+      "arquivo": "rdc-973-2025.json",
+      "nos": 45,
+      "sha256_texto": "b8d1590b6f12ca6d8bd1f53901e48492adae975fbe4ee9e2f963e52c44b4c97d",
+      "proveniencia": {
+        "norma": "RDC 973-2025",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000973&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2025",
+        "consultado_em": "2026-09-06T00:56:39.617497+00:00",
+        "data_fonte": "2025-04-23",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "e764e9586a009e71fc3dc56c669a7b50995b45df79bedb0f34e305c9c961e967",
+        "sha256_texto": "b8d1590b6f12ca6d8bd1f53901e48492adae975fbe4ee9e2f963e52c44b4c97d",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\RDC 973-2025--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.601049+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 978-2025": {
+      "arquivo": "rdc-978-2025.json",
+      "nos": 601,
+      "sha256_texto": "26da55b32c5279ca75e61cfe92aef6663113a9a6a3e52b56f8b6d263efdc82c0",
+      "proveniencia": {
+        "norma": "RDC 978-2025",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000978&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2025",
+        "consultado_em": "2026-09-06T00:56:39.596460+00:00",
+        "data_fonte": "2025-06-06",
+        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+        "sha256_fonte": "4da2e1e362f2439ded07ccbb7119f171a93e0f48a86855343b22cc792d0bbec5",
+        "sha256_texto": "26da55b32c5279ca75e61cfe92aef6663113a9a6a3e52b56f8b6d263efdc82c0",
+        "alteracoes_encontradas": [
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa - RDC nº 986, de 15/08/2025)",
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa - RDC nº 986, de 15/08/2025)"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\RDC 978-2025--oficial.txt",
+        "data_processamento": "2026-09-06T00:58:23.599264+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
     }
   },
   "curados": 3

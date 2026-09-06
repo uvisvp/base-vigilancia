@@ -1,0 +1,16 @@
+{
+  "norma": "RDC 973-2025",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000973&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2025",
+  "consultado_em": "2026-09-06T00:56:39.617497+00:00",
+  "data_fonte": "2025-04-23",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "e764e9586a009e71fc3dc56c669a7b50995b45df79bedb0f34e305c9c961e967",
+  "sha256_texto": "b8d1590b6f12ca6d8bd1f53901e48492adae975fbe4ee9e2f963e52c44b4c97d",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\RDC 973-2025--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.601049+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}

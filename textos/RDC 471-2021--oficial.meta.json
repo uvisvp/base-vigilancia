@@ -1,0 +1,19 @@
+{
+  "norma": "RDC 471-2021",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000471&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
+  "consultado_em": "2026-09-06T00:56:39.292660+00:00",
+  "data_fonte": "2021-02-23",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "85c1d483660a44a6d61ba0e2ddd2ef01fd30cc6ea5e49e7baf246dea80158743",
+  "sha256_texto": "4e068041b0784d2f823a9655368cb0cf533c79e95b273e00de13eabd39e566bd",
+  "alteracoes_encontradas": [
+    "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 973, de 23/04/2025)",
+    "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 973, de 23/04/2025"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\RDC 471-2021--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.590444+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}

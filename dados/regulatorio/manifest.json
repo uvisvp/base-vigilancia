@@ -1,13 +1,13 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-03T18:35:42.525813+00:00",
+  "gerado_em": "2026-09-06T01:51:52.883659+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "f981de10fe47340016aeecb54a13fe01a956d11520455e9853830a1f941d3c04",
-      "normas": 2,
+      "sha256": "3b8fdb14d1274cc9560ecd6a0bbde60ba254b0bdb70175c82f428b6067b289d9",
+      "normas": 23,
       "curados": 3
     },
     "in75_completa": {
@@ -53,7 +53,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/in-75-2020-anexo-xv.json",
       "schema": "legislacao-curada-v1",
-      "sha256": "aa1af2705dc23ad2bfe321c8894bd545b81a66fe51fcc406e03581c65584d615",
+      "sha256": "c32f56f35f9554d1ceadf6d11816b922ac3b1acbc6fc8821ac71ef718141ac7d",
       "registros": 3,
       "escopo": "operacional_complementar",
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true"
@@ -62,7 +62,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-cosmeticos.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "5a24b01e5bbcbd4c16fa5727ffef04ba90d59669f07b16233169c7cc3d91a84c",
+      "sha256": "a975def850f7aec5ce4b19f0901e09f1e86b9e5e0e754a10f92deb6f4aaef2d5",
       "registros": 10,
       "categoria": "cosmeticos",
       "fonte_oficial": "https://www.gov.br/anvisa/pt-br/comunicacao/campanhas/estetica/consulta-de-cosmeticos",
@@ -90,7 +90,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-saneantes.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "45ad94b33de1319ff5a8358f6fa17a28e9388d40b97b02032c6f4089683d779e",
+      "sha256": "e5c4fad5ec8126f444a7895f373a48266c65dc299e0037194319626513f9c78d",
       "registros": 4,
       "categoria": "saneantes",
       "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-correcoes-na-rdc-989-2025-e-aprimora-procedimentos-para-produtos-saneantes",
@@ -118,7 +118,7 @@
       "status": "ok",
       "arquivo": "dados/controlados_portaria344/manifest.json",
       "schema": "controlados-portaria344-v2",
-      "sha256": "5968ba93dae6296a8631c00bd972c0a77737c5044834a88b38411d1545a1256e",
+      "sha256": "191c6a21ef06061dd1bf8a19eb7f6f81f27946229849f34538a2202045f6ef0c",
       "escopo": "operacional",
       "listas_incluidas": [
         "A1",
@@ -136,6 +136,46 @@
       "adendos": 101,
       "norma_fonte": "RDC Anvisa 1.036/2026",
       "data_fonte": "Thu, 03 Sep 2026 12:19:43 GMT"
+    },
+    "roteiro_drogaria": {
+      "status": "ok",
+      "arquivo": "dados/roteiros/drogaria.json",
+      "schema": "roteiro-estruturado-v1",
+      "sha256": "b7ab9135dd2d6a023bbfb61b1ac4ab6ce4b63b5d67e30d54593c5e7621aef01a",
+      "registros": 304,
+      "versao": "drogaria-2026.09.06-2",
+      "cards": 8,
+      "perguntas": 304,
+      "dispositivos": 187,
+      "normas": {
+        "RDC 44-2009": 82,
+        "RDC 22-2014": 3,
+        "RDC 471-2021": 13,
+        "IN 360-2025": 2,
+        "Lei 5991-1973": 2,
+        "Portaria SVS MS 344-1998": 34,
+        "RDC 58-2007": 3,
+        "RDC 50-2014": 4,
+        "Lei 9965-2000": 2,
+        "RDC 1015-2026": 5,
+        "RDC 1023-2026": 1,
+        "RDC 1000-2025": 5,
+        "RDC 222-2018": 31
+      },
+      "repositorio": "uvisvp/base-vigilancia",
+      "base_commit": "2c6b442c9c0549599bf060eef4e00910f94218f4",
+      "pendencias": [
+        {
+          "norma": "Portaria CVS-SP 23/2003",
+          "dispositivos": "arts. 1º, 4º e 5º",
+          "motivo": "Fonte oficial localizada; acesso HTTP 403 impede conferência integral. Achados específicos ficam sem enquadramento automático.",
+          "fonte_oficial": "https://cvs.saude.sp.gov.br/up/CVS%2023-2003.pdf"
+        },
+        {
+          "norma": "NBR 9050 e norma local de acessibilidade",
+          "motivo": "Texto técnico e incorporação local não validados; checklist PCD descritivo."
+        }
+      ]
     }
   },
   "status": "ok",

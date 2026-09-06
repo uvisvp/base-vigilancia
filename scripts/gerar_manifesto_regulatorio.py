@@ -314,6 +314,40 @@ def main():
             "data_fonte": ctrl.get("data_fonte"),
         })
 
+    roteiro_path = DADOS / "roteiros" / "drogaria.json"
+    roteiro = registrar_arquivo(
+        manifest, "roteiro_drogaria", roteiro_path,
+        "roteiro-estruturado-v1", lambda o: len(o.get("perguntas", [])))
+    if roteiro:
+        if len(roteiro.get("cards", [])) != 8:
+            raise RuntimeError("Roteiro Drogaria: o catálogo precisa conter exatamente 8 cards")
+        normas = {}
+        for rid, ref in roteiro.get("referencias", {}).items():
+            arquivo = DADOS / ref.get("arquivo", "")
+            obj = ler_json(arquivo)
+            if not obj:
+                raise RuntimeError(f"Roteiro Drogaria: arquivo ausente para {rid}: {arquivo}")
+            if obj.get("sha256_texto") != ref.get("sha256_texto"):
+                raise RuntimeError(f"Roteiro Drogaria: hash divergente para {rid}")
+            nos = [n for n in obj.get("nos", []) if n.get("id") == rid]
+            if len(nos) != 1:
+                raise RuntimeError(f"Roteiro Drogaria: dispositivo ausente ou ambíguo: {rid}")
+            if not str(nos[0].get("status_vigencia", "")).startswith("vigente"):
+                raise RuntimeError(f"Roteiro Drogaria: referência não vigente: {rid}")
+            normas.setdefault(obj.get("norma"), 0)
+            normas[obj.get("norma")] += 1
+        manifest["bases"]["roteiro_drogaria"].update({
+            "schema": roteiro.get("schema"),
+            "versao": roteiro.get("versao"),
+            "cards": len(roteiro.get("cards", [])),
+            "perguntas": len(roteiro.get("perguntas", [])),
+            "dispositivos": len(roteiro.get("referencias", {})),
+            "normas": normas,
+            "repositorio": roteiro.get("repositorio"),
+            "base_commit": roteiro.get("base_commit"),
+            "pendencias": roteiro.get("pendencias", []),
+        })
+
     faltantes = [k for k,v in manifest["bases"].items() if v.get("status") != "ok"]
     manifest["status"] = "ok" if not faltantes else "parcial"
     manifest["faltantes"] = faltantes
@@ -325,3 +359,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

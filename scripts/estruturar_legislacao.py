@@ -11,7 +11,7 @@ BASE=Path(__file__).resolve().parent.parent
 TEXTOS=BASE/'textos'; CURADA=BASE/'dados'/'legislacao_curada'; SAIDA=BASE/'dados'/'legislacao_v12'
 RE_ANEXO=re.compile(r"^\s*ANEXO\s+([IVXLCDM]+|\d+[A-Z]?)(?=\s|[-–—:]|$)(?:\s*[-–—:]\s*(.*)|\s+(.*))?$",re.I)
 # Aceita artigos simples e artigos acrescidos, como Art. 50-A, sem confundi-los com Art. 50.
-RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+(?:-[A-Z]|[A-Z])?)\s*[ºo°.]?\s*(.*)$",re.I)
+RE_ARTIGO=re.compile(r"^\s*Art\.?\s*(\d+(?:-[A-Z]|[A-NP-Z])?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PARAGRAFO=re.compile(r"^\s*§\s*(\d+[A-Z]?)\s*[ºo°.]?\s*(.*)$",re.I)
 RE_PU=re.compile(r"^\s*Par[aá]grafo\s+[uú]nico\.?\s*(.*)$",re.I)
 RE_INCISO=re.compile(r"^\s*([IVXLCDM]+)\s*[-–—]\s+(.+)$")
@@ -136,6 +136,27 @@ def processar(textos=TEXTOS,saida=SAIDA):
     manifest={'schema':'legislacao-hierarquica-v12','gerado_em':datetime.now(timezone.utc).isoformat(),'normas':{},'curados':0}; documentos={}
     for arq in sorted(textos.glob('*.txt')):
         norma=arq.stem.split('--',1)[0]; documentos[norma]=estruturar_texto(norma,arq.read_text(encoding='utf-8'))
+        meta_path=arq.with_suffix('.meta.json')
+        if meta_path.exists():
+            meta=json.loads(meta_path.read_text(encoding='utf-8'))
+            if meta.get('sha256_texto')!=documentos[norma]['sha256_texto']:
+                raise RuntimeError(f'{arq.name}: texto diferente da fonte revisada; renovar metadados antes de publicar')
+            documentos[norma]['proveniencia']=meta
+            for no in documentos[norma]['nos']:
+                no['status_vigencia']='revogado' if re.search(r'\(Revogad[oa]',no['texto'],re.I) else meta.get('status_vigencia','pendente_validacao')
+                # Alíneas das normas novas recebem IDs estáveis no mesmo esquema.
+                m=re.match(r'^([a-z])\)\s+',no['texto']) if no['tipo']=='bloco' else None
+                if m and no.get('pai') and meta.get('estruturar_alineas'):
+                    no.update(tipo='alinea',numero=m.group(1),rotulo=f'Alínea {m.group(1)}',estrutural=True)
+                    no['id']=no['pai']+'::alinea::'+m.group(1)
+            contagem=Counter(no['id'] for no in documentos[norma]['nos'])
+            ocorrencias=Counter()
+            for no in documentos[norma]['nos']:
+                if contagem[no['id']]>1:
+                    original=no['id']; ocorrencias[original]+=1
+                    no['id']=original+'::ocorrencia-'+str(ocorrencias[original])
+                    no['ambiguidade_na_fonte']=True
+                    no['status_vigencia']='pendente_validacao'
     for r0 in carregar_curados():
         norma=resolver_norma(documentos,r0['norma']); r=dict(r0)
         if norma!=r['norma']:
@@ -148,6 +169,8 @@ def processar(textos=TEXTOS,saida=SAIDA):
         if rep:raise RuntimeError(f'{norma}: IDs estruturais duplicados: {rep[:10]}')
         destino=normas_dir/f'{slug(norma)}.json'; destino.write_text(json.dumps(doc,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
         manifest['normas'][norma]={'arquivo':destino.name,'nos':len(doc['nos']),'sha256_texto':doc.get('sha256_texto')}
+        if doc.get('proveniencia'):
+            manifest['normas'][norma]['proveniencia']=doc['proveniencia']
     (saida/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     print(f"OK: {len(documentos)} norma(s); {manifest['curados']} registro(s) curado(s)."); return manifest
 
@@ -170,3 +193,4 @@ def main():
     p=argparse.ArgumentParser(); p.add_argument('--autoteste',action='store_true'); p.add_argument('--textos',default=str(TEXTOS)); p.add_argument('--saida',default=str(SAIDA)); a=p.parse_args()
     autoteste() if a.autoteste else processar(a.textos,a.saida)
 if __name__=='__main__':main()
+

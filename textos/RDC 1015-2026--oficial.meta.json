@@ -1,0 +1,19 @@
+{
+  "norma": "RDC 1015-2026",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001015&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+  "consultado_em": "2026-09-06T00:56:39.540329+00:00",
+  "data_fonte": "2026-02-02",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "8ac38a2fe84baa1c60e1172c89401fb4de3a4af1d717c984c06c2f0026a906b7",
+  "sha256_texto": "e0d474ee06a7ed3fc5104787f08f4753e49c9f93264492317f49bb3a19cc98ad",
+  "alteracoes_encontradas": [
+    "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.023, de 11/05/2026)"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\RDC 1015-2026--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.597655+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+  "vigente_desde": "2026-05-04"
+}

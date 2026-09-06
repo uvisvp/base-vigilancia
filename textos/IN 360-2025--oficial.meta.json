@@ -1,0 +1,16 @@
+{
+  "norma": "IN 360-2025",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000360&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2025",
+  "consultado_em": "2026-09-06T00:56:39.632280+00:00",
+  "data_fonte": "2025-04-23",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "312b0cc71473eb937f71e34bdc37614487bae829a0577860107754610319756b",
+  "sha256_texto": "bb6f0cbfdd55d8e656f21afc6aabecf765a1faa660aa6843df025100a138b44e",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\IN 360-2025--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.601558+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}

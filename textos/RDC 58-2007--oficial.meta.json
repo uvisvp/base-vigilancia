@@ -1,0 +1,25 @@
+{
+  "norma": "RDC 58-2007",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000058&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2007",
+  "consultado_em": "2026-09-06T00:56:39.370483+00:00",
+  "data_fonte": "2007-09-05",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "f16c8157181abb41fb29ee5385703f1fc90a532036f8076babf05459cd96db19",
+  "sha256_texto": "b954a8e4b710de92a6e370d1db8aa89940bd6308b0309121e5f60ce568af0fd6",
+  "alteracoes_encontradas": [
+    "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+    "(Redação dada pela Resolução da Diretoria Colegiada - RDC n° 873, de 27/05/2024)",
+    "(Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)",
+    "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+    "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 25, de 30/06/2010)",
+    "(Revogado pela Resolução - RDC nº 52, de 10/10/2011, sustada pelo Decreto Legislativo nº 273, de 04/09/2014) (Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+    "(Redação dada pela Resolução - RDC nº 25, de 30/06/2010, revogada pela Resolução - RDC nº 52, de 10/10/2011, sendo esta sustada pelo Decreto Legislativo nº 273, de 04/09/2014, resultando em retorno da vigência da RDC nº 25, de 2010) (Revogado pela Resolução da Diretoria Colegiada - RDC nº 133, de 15/12/2016)",
+    "(Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.000, de 11/12/2025)"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\RDC 58-2007--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.593467+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}

@@ -1,0 +1,24 @@
+{
+  "norma": "RDC 786-2023",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000786&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2023",
+  "consultado_em": "2026-09-06T00:56:39.657836+00:00",
+  "data_fonte": "2023-05-05",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "405bbecab78d9f67fb00fff9d8f1916ac4ad13865583abdbd3e60cb308edff9b",
+  "sha256_texto": "c834b3329d4329f10a741018da468e80bf923874ac3c1f9b74d8a6eeeb65498a",
+  "alteracoes_encontradas": [
+    "Revogada pela Resolução da Diretoria Colegiada - RDC nº 978, de 06/06/2025",
+    "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)",
+    "(Redação dada pela",
+    "(Incluído pela",
+    "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)",
+    "(Incluído pela Resolução da Diretoria Colegiada - RDC nº 824, de 26/10/2023)"
+  ],
+  "status_vigencia": "revogado",
+  "texto": "textos\\RDC 786-2023--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.603086+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+  "revogado_por": "RDC 978/2025"
+}

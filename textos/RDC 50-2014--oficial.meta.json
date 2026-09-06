@@ -1,0 +1,20 @@
+{
+  "norma": "RDC 50-2014",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000050&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+  "consultado_em": "2026-09-06T00:56:39.415944+00:00",
+  "data_fonte": "2014-09-25",
+  "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
+  "sha256_fonte": "95bc471a25137d0a62f3424733a4d63687db9c24c022a2f23708abc6fef150ab",
+  "sha256_texto": "cccf27c5f4e420725cd9931afe3128e45a65bca3ab7d9069f5dc135a3e7ea24a",
+  "alteracoes_encontradas": [
+    "(Redação dada pela Resolução 133/2016)",
+    "(Incluído pela Resolução 133/2016)",
+    "(Revogado pela Resolução 406/2020)"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\RDC 50-2014--oficial.txt",
+  "data_processamento": "2026-09-06T00:58:23.594987+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+}
