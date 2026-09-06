@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-06T01:51:52.883659+00:00",
+  "gerado_em": "2026-09-06T01:58:03.749694+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "3b8fdb14d1274cc9560ecd6a0bbde60ba254b0bdb70175c82f428b6067b289d9",
+      "sha256": "0817ff9c8c2254179cbe1cdaf24ab054f56caa3614821229eec54e3e6f64896b",
       "normas": 23,
       "curados": 3
     },
@@ -141,9 +141,9 @@
       "status": "ok",
       "arquivo": "dados/roteiros/drogaria.json",
       "schema": "roteiro-estruturado-v1",
-      "sha256": "b7ab9135dd2d6a023bbfb61b1ac4ab6ce4b63b5d67e30d54593c5e7621aef01a",
+      "sha256": "d7264422ccc1f15719b7d1c193d39cfa519aeb0a2d8ba60bde61e7a6e5a82411",
       "registros": 304,
-      "versao": "drogaria-2026.09.06-2",
+      "versao": "drogaria-2026.09.06-3",
       "cards": 8,
       "perguntas": 304,
       "dispositivos": 187,
@@ -163,7 +163,7 @@
         "RDC 222-2018": 31
       },
       "repositorio": "uvisvp/base-vigilancia",
-      "base_commit": "2c6b442c9c0549599bf060eef4e00910f94218f4",
+      "base_commit": "d178f6d5182b16dd9c69fa7e56af9195272bcdb6",
       "pendencias": [
         {
           "norma": "Portaria CVS-SP 23/2003",

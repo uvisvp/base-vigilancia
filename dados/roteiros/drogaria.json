@@ -1,4 +1,2296 @@
- {
+{
+  "schema": "roteiro-estruturado-v1",
+  "versao": "drogaria-2026.09.06-3",
+  "gerado_em": "2026-09-06",
+  "repositorio": "uvisvp/base-vigilancia",
+  "base_commit": "d178f6d5182b16dd9c69fa7e56af9195272bcdb6",
+  "cards": [
+    {
+      "id": 1,
+      "titulo": "Dados da inspeção e do estabelecimento"
+    },
+    {
+      "id": 2,
+      "titulo": "Área Física"
+    },
+    {
+      "id": 3,
+      "titulo": "Medicamentos Termolábeis"
+    },
+    {
+      "id": 4,
+      "titulo": "Medicamentos Controlados, Antimicrobianos e Receituário"
+    },
+    {
+      "id": 5,
+      "titulo": "Serviços Farmacêuticos e Administração de Medicamentos"
+    },
+    {
+      "id": 6,
+      "titulo": "Documentos de Qualidade e Registros"
+    },
+    {
+      "id": 7,
+      "titulo": "Resíduos e Produtos Impróprios"
+    },
+    {
+      "id": 8,
+      "titulo": "Transporte"
+    }
+  ],
+  "perguntas": [
+    {
+      "id": "doc_lfs",
+      "card": 1,
+      "grupo": "Licenciamento",
+      "pergunta": "Foi apresentado o documento: A licença sanitária vigente.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 2, inciso III"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::2::inciso::iii"
+      ],
+      "frase_positiva": "Foi apresentado o documento: A licença sanitária vigente.",
+      "frase_negativa": "Não foi apresentado o documento: A licença sanitária vigente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null,
+      "documento": "A licença sanitária vigente"
+    },
+    {
+      "id": "doc_crt",
+      "card": 1,
+      "grupo": "Responsabilidade técnica",
+      "pergunta": "Foi apresentado o documento: A Certidão de Regularidade Técnica vigente.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 2, inciso IV"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::2::inciso::iv"
+      ],
+      "frase_positiva": "Foi apresentado o documento: A Certidão de Regularidade Técnica vigente.",
+      "frase_negativa": "Não foi apresentado o documento: A Certidão de Regularidade Técnica vigente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null,
+      "documento": "A Certidão de Regularidade Técnica vigente"
+    },
+    {
+      "id": "lic_match",
+      "card": 1,
+      "grupo": "Licenciamento",
+      "pergunta": "Os dados e atividades observados correspondem à licença sanitária.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 90"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::90"
+      ],
+      "frase_positiva": "Os dados e atividades observados correspondem à licença sanitária.",
+      "frase_negativa": "Foram observadas divergências entre o estabelecimento e os dados ou atividades da licença.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "rt_present",
+      "card": 1,
+      "grupo": "Responsabilidade técnica",
+      "pergunta": "Há farmacêutico responsável técnico ou substituto durante todo o horário de funcionamento.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 3"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::3"
+      ],
+      "frase_positiva": "Há farmacêutico responsável técnico ou substituto durante todo o horário de funcionamento.",
+      "frase_negativa": "Não há assistência farmacêutica durante todo o horário de funcionamento.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "team_id",
+      "card": 1,
+      "grupo": "Responsabilidade técnica",
+      "pergunta": "Os funcionários estão identificados e com uniformes limpos; a identificação do farmacêutico é distinta.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 17",
+        "Art. 17, parágrafo único"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::17",
+        "rdc-44-2009::artigo::17::paragrafo::unico"
+      ],
+      "frase_positiva": "Os funcionários estão identificados e com uniformes limpos; a identificação do farmacêutico é distinta.",
+      "frase_negativa": "Foram constatadas falhas na identificação ou nos uniformes da equipe.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "doc_aso",
+      "card": 1,
+      "grupo": "Responsabilidade técnica",
+      "pergunta": "Foi apresentado o documento: O conjunto de ASOs dos funcionários amostrados.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Foi apresentado o documento: O conjunto de ASOs dos funcionários amostrados.",
+      "frase_negativa": "Não foi apresentado o documento: O conjunto de ASOs dos funcionários amostrados.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null,
+      "documento": "O conjunto de ASOs dos funcionários amostrados",
+      "pendencia_validacao": "Conferir NR-7 e legislação ocupacional aplicável antes do enquadramento."
+    },
+    {
+      "id": "alteracao_estrutural",
+      "card": 1,
+      "grupo": "Caracterização física",
+      "pergunta": "Houve alteração significativa desde a última inspeção?",
+      "tipo": "escopo",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Houve alteração significativa nas instalações desde a última inspeção.",
+      "frase_negativa": "Não houve alteração significativa nas instalações desde a última inspeção.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "access_ind",
+      "card": 1,
+      "grupo": "Caracterização física",
+      "pergunta": "O acesso é independente ou se enquadra nas exceções para galerias, shoppings e supermercados.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 13",
+        "Art. 13, § 1º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::13",
+        "rdc-44-2009::artigo::13::paragrafo::1"
+      ],
+      "frase_positiva": "O acesso é independente ou se enquadra nas exceções para galerias, shoppings e supermercados.",
+      "frase_negativa": "O acesso às instalações comunica-se com local distinto fora das exceções permitidas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null,
+      "ajuda": "O art. 13, §1º admite comunicação para drogarias em galerias de shoppings e supermercados; o §2º permite compartilhar sanitário, DML e guarda de pertences."
+    },
+    {
+      "id": "vaccine",
+      "card": 1,
+      "grupo": "Atividades com licenciamento próprio",
+      "pergunta": "O estabelecimento realiza vacinação?",
+      "tipo": "escopo",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "O estabelecimento realiza vacinação.",
+      "frase_negativa": "O estabelecimento não realiza vacinação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "vaccine_licensed",
+      "card": 1,
+      "grupo": "Atividades com licenciamento próprio",
+      "pergunta": "Foi apresentado o documento: A licença sanitária específica de vacinação.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Foi apresentado o documento: A licença sanitária específica de vacinação.",
+      "frase_negativa": "Não foi apresentado o documento: A licença sanitária específica de vacinação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": {
+        "id": "vaccine",
+        "eq": "sim"
+      },
+      "documento": "A licença sanitária específica de vacinação",
+      "pendencia_validacao": "Validar norma específica de vacinação e licenciamento local."
+    },
+    {
+      "id": "eac",
+      "card": 1,
+      "grupo": "Atividades com licenciamento próprio",
+      "pergunta": "O estabelecimento executa Exames de Análises Clínicas (EAC)?",
+      "tipo": "escopo",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "O estabelecimento executa Exames de Análises Clínicas.",
+      "frase_negativa": "O estabelecimento não executa Exames de Análises Clínicas.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": null
+    },
+    {
+      "id": "eac_licensed",
+      "card": 1,
+      "grupo": "Atividades com licenciamento próprio",
+      "pergunta": "Foi apresentado o documento: A licença sanitária específica de EAC.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Foi apresentado o documento: A licença sanitária específica de EAC.",
+      "frase_negativa": "Não foi apresentado o documento: A licença sanitária específica de EAC.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "3",
+      "condicao": {
+        "id": "eac",
+        "eq": "sim"
+      },
+      "documento": "A licença sanitária específica de EAC",
+      "pendencia_validacao": "RDC 978/2025 substituiu a RDC 786/2023. Validar enquadramento e licenciamento local do serviço."
+    },
+    {
+      "id": "surface",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Pisos, paredes e tetos estão íntegros, lisos, impermeáveis e facilmente laváveis.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 6, § 1º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::6::paragrafo::1"
+      ],
+      "frase_positiva": "Pisos, paredes e tetos estão íntegros, lisos, impermeáveis e facilmente laváveis.",
+      "frase_negativa": "Pisos, paredes ou tetos apresentam condições incompatíveis com conservação e higienização.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "clean_pests",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Os ambientes estão limpos e protegidos contra a entrada de pragas.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 6, § 2º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::6::paragrafo::2"
+      ],
+      "frase_positiva": "Os ambientes estão limpos e protegidos contra a entrada de pragas.",
+      "frase_negativa": "Há falhas de higiene ou de proteção dos ambientes contra a entrada de pragas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "ralos_protegidos",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Os ralos existentes estão protegidos contra a entrada de pragas.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 6, § 2º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::6::paragrafo::2"
+      ],
+      "frase_positiva": "Os ralos existentes estão protegidos contra a entrada de pragas.",
+      "frase_negativa": "Os ralos existentes não estão protegidos contra a entrada de pragas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "light_vent",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "A iluminação e a ventilação são compatíveis com as atividades.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 6, § 3º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::6::paragrafo::3"
+      ],
+      "frase_positiva": "A iluminação e a ventilação são compatíveis com as atividades.",
+      "frase_negativa": "A iluminação ou a ventilação é incompatível com as atividades desenvolvidas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "lic_visible",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "A licença sanitária e a CRT estão afixadas em local visível ao público.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 2, § 1º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::2::paragrafo::1"
+      ],
+      "frase_positiva": "A licença sanitária e a CRT estão afixadas em local visível ao público.",
+      "frase_negativa": "A licença sanitária ou a CRT não está afixada em local visível ao público.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "fire",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Há equipamentos de combate a incêndio em quantidade suficiente.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 6, § 4º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::6::paragrafo::4"
+      ],
+      "frase_positiva": "Há equipamentos de combate a incêndio em quantidade suficiente.",
+      "frase_negativa": "A quantidade de equipamentos de combate a incêndio é insuficiente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null
+    },
+    {
+      "id": "ralos_escamoteaveis",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Os ralos são escamoteáveis?",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Os ralos são escamoteáveis.",
+      "frase_negativa": "Os ralos não são escamoteáveis.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ajuda": "Descrição. A resposta Não não gera irregularidade; a proteção contra pragas é avaliada em pergunta própria."
+    },
+    {
+      "id": "doc_pragas",
+      "card": 2,
+      "grupo": "Condições gerais",
+      "pergunta": "Foi apresentado o documento: O registro de controle de pragas por empresa licenciada.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 7",
+        "Art. 7, parágrafo único"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::7",
+        "rdc-44-2009::artigo::7::paragrafo::unico"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O registro de controle de pragas por empresa licenciada.",
+      "frase_negativa": "Não foi apresentado o documento: O registro de controle de pragas por empresa licenciada.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "documento": "O registro de controle de pragas por empresa licenciada"
+    },
+    {
+      "id": "receiving_area",
+      "card": 2,
+      "grupo": "Recebimento",
+      "pergunta": "O recebimento ocorre em área específica e por pessoa treinada, conforme POP.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 32"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::32"
+      ],
+      "frase_positiva": "O recebimento ocorre em área específica e por pessoa treinada, conforme POP.",
+      "frase_negativa": "O recebimento apresenta falha de área, capacitação ou procedimento.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "recebimento"
+    },
+    {
+      "id": "receiving_exam",
+      "card": 2,
+      "grupo": "Recebimento",
+      "pergunta": "No recebimento são conferidos conservação, lote, validade, autenticidade e origem.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 34"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::34"
+      ],
+      "frase_positiva": "No recebimento são conferidos conservação, lote, validade, autenticidade e origem.",
+      "frase_negativa": "A conferência de conservação, lote, validade, autenticidade ou origem é insuficiente no recebimento.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "recebimento"
+    },
+    {
+      "id": "doc_receiving_pop",
+      "card": 2,
+      "grupo": "Recebimento",
+      "pergunta": "Foi apresentado o documento: O POP de recebimento.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 32"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::32"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O POP de recebimento.",
+      "frase_negativa": "Não foi apresentado o documento: O POP de recebimento.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "documento": "O POP de recebimento",
+      "ambiente": "recebimento"
+    },
+    {
+      "id": "mip_grouped",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "Os MIPs estão separados dos demais produtos na área de autosserviço.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 41, § 2º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::41::paragrafo::2"
+      ],
+      "frase_positiva": "Os MIPs estão separados dos demais produtos na área de autosserviço.",
+      "frase_negativa": "Os MIPs não estão separados dos demais produtos na área de autosserviço.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao"
+    },
+    {
+      "id": "generics",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "A lista atualizada de medicamentos genéricos comercializados no país está disponível aos usuários.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 42, § 1º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::42::paragrafo::1"
+      ],
+      "frase_positiva": "A lista atualizada de medicamentos genéricos comercializados no país está disponível aos usuários.",
+      "frase_negativa": "A lista atualizada de medicamentos genéricos não está disponível aos usuários.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao"
+    },
+    {
+      "id": "r44_50",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "O estabelecimento respeita a proibição de captar receitas magistrais ou oficinais e intermediar sua manipulação.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 50"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::50"
+      ],
+      "frase_positiva": "O estabelecimento respeita a proibição de captar receitas magistrais ou oficinais e intermediar sua manipulação.",
+      "frase_negativa": "O estabelecimento capta receitas magistrais ou oficinais ou intermedeia sua manipulação.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao"
+    },
+    {
+      "id": "products_integrity",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "Os produtos amostrados têm identificação, validade e embalagem íntegras.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 46"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::46"
+      ],
+      "frase_positiva": "Os produtos amostrados têm identificação, validade e embalagem íntegras.",
+      "frase_negativa": "Os produtos amostrados apresentam falhas de identificação, validade ou integridade da embalagem.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao"
+    },
+    {
+      "id": "products_regular",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "Os produtos adquiridos estão regularizados junto à Anvisa ou legalmente isentos.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 30"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::30"
+      ],
+      "frase_positiva": "Os produtos adquiridos estão regularizados junto à Anvisa ou legalmente isentos.",
+      "frase_negativa": "Foram adquiridos produtos sem regularização exigível junto à Anvisa.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao"
+    },
+    {
+      "id": "sem_embalagem_hospitalar",
+      "card": 2,
+      "grupo": "Área de dispensação e produtos",
+      "pergunta": "A comercialização das embalagens dos medicamentos amostrados é permitida à drogaria.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "A comercialização das embalagens dos medicamentos amostrados é permitida à drogaria.",
+      "frase_negativa": "Foram encontradas embalagens cuja permissão de comercialização precisa ser conferida.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dispensacao",
+      "pendencia_validacao": "Conferir categoria, rotulagem aprovada e norma específica; embalagem hospitalar não é enquadramento automático."
+    },
+    {
+      "id": "stock_order",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "O estoque possui capacidade e organização suficientes para preservar identidade, integridade e rastreabilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35",
+        "Art. 35, § 1º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35",
+        "rdc-44-2009::artigo::35::paragrafo::1"
+      ],
+      "frase_positiva": "O estoque possui capacidade e organização suficientes para preservar identidade, integridade e rastreabilidade.",
+      "frase_negativa": "O estoque apresenta capacidade ou organização insuficiente para preservar os produtos.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "armazenamento"
+    },
+    {
+      "id": "stock_support",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "Os produtos estão em suportes afastados do piso, paredes e teto e protegidos de luz, umidade e calor.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 36",
+        "Art. 35, § 2º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::36",
+        "rdc-44-2009::artigo::35::paragrafo::2"
+      ],
+      "frase_positiva": "Os produtos estão em suportes afastados do piso, paredes e teto e protegidos de luz, umidade e calor.",
+      "frase_negativa": "O armazenamento não mantém o afastamento ou a proteção exigidos para os produtos.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "armazenamento"
+    },
+    {
+      "id": "env_pop",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "O POP define a verificação de temperatura e umidade e as medidas para desvios.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 4º",
+        "Art. 35, § 5º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::4",
+        "rdc-44-2009::artigo::35::paragrafo::5"
+      ],
+      "frase_positiva": "O POP define a verificação de temperatura e umidade e as medidas para desvios.",
+      "frase_negativa": "O POP não define adequadamente o monitoramento ambiental ou as medidas para desvios.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "armazenamento"
+    },
+    {
+      "id": "corrosivos_pop",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "Corrosivos, inflamáveis ou explosivos têm armazenamento justificado em POP, longe de calor e faíscas.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 39"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::39"
+      ],
+      "frase_positiva": "Corrosivos, inflamáveis ou explosivos têm armazenamento justificado em POP, longe de calor e faíscas.",
+      "frase_negativa": "O armazenamento de corrosivos, inflamáveis ou explosivos descumpre o POP ou as condições de proteção contra calor e faíscas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "armazenamento"
+    },
+    {
+      "id": "doc_env_records",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "Foi apresentado o documento: O registro de temperatura e umidade do ambiente.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 4º",
+        "Art. 88, inciso IX"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::4",
+        "rdc-44-2009::artigo::88::inciso::ix"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O registro de temperatura e umidade do ambiente.",
+      "frase_negativa": "Não foi apresentado o documento: O registro de temperatura e umidade do ambiente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "documento": "O registro de temperatura e umidade do ambiente",
+      "repetir": "armazenamento"
+    },
+    {
+      "id": "doc_therm_cal",
+      "card": 2,
+      "grupo": "Armazenamento",
+      "pergunta": "Foi apresentado o documento: O certificado de calibração exigível do instrumento.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 88, inciso V"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::88::inciso::v"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O certificado de calibração exigível do instrumento.",
+      "frase_negativa": "Não foi apresentado o documento: O certificado de calibração exigível do instrumento.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "documento": "O certificado de calibração exigível do instrumento",
+      "repetir": "armazenamento",
+      "ajuda": "Considerar a exigibilidade e periodicidade definidas para o instrumento."
+    },
+    {
+      "id": "dml_ok",
+      "card": 2,
+      "grupo": "DML",
+      "pergunta": "Os materiais de limpeza estão regularizados e em local designado e identificado.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 8"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::8"
+      ],
+      "frase_positiva": "Os materiais de limpeza estão regularizados e em local designado e identificado.",
+      "frase_negativa": "Os materiais de limpeza não estão regularizados ou em local designado e identificado.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "dml"
+    },
+    {
+      "id": "break_room",
+      "card": 2,
+      "grupo": "Refeitório",
+      "pergunta": "A área de refeições ou descanso está separada dos demais ambientes.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 11"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::11"
+      ],
+      "frase_positiva": "A área de refeições ou descanso está separada dos demais ambientes.",
+      "frase_negativa": "A área de refeições ou descanso não está separada dos demais ambientes.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "refeitorio"
+    },
+    {
+      "id": "refeitorio_lavatorio",
+      "card": 2,
+      "grupo": "Refeitório",
+      "pergunta": "A área de refeições permite higienizar as mãos.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "A área de refeições permite higienizar as mãos.",
+      "frase_negativa": "Foram observadas limitações para higienização das mãos na área de refeições.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "refeitorio",
+      "pendencia_validacao": "Conferir fundamento específico ocupacional/local."
+    },
+    {
+      "id": "refeitorio_sifao",
+      "card": 2,
+      "grupo": "Refeitório",
+      "pergunta": "Não há alimentos sob o sifão ou a pia.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Não há alimentos sob o sifão ou a pia.",
+      "frase_negativa": "Foram observados alimentos sob o sifão ou a pia.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "refeitorio",
+      "pendencia_validacao": "Conferir fundamento específico ocupacional/local."
+    },
+    {
+      "id": "refeitorio_equip",
+      "card": 2,
+      "grupo": "Refeitório",
+      "pergunta": "Os equipamentos da área de refeições estão limpos e conservados.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Os equipamentos da área de refeições estão limpos e conservados.",
+      "frase_negativa": "Foram observadas falhas de limpeza ou conservação dos equipamentos da área de refeições.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "ambiente": "refeitorio",
+      "pendencia_validacao": "Conferir fundamento específico ocupacional/local."
+    },
+    {
+      "id": "sanitario_higiene",
+      "card": 2,
+      "grupo": "Sanitários",
+      "pergunta": "O sanitário está limpo, conservado e dispõe de pia, água, sabonete líquido e toalha descartável.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 9",
+        "Art. 9, parágrafo único"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::9",
+        "rdc-44-2009::artigo::9::paragrafo::unico"
+      ],
+      "frase_positiva": "O sanitário está limpo, conservado e dispõe de pia, água, sabonete líquido e toalha descartável.",
+      "frase_negativa": "O sanitário apresenta falha de higiene, conservação ou insumos para as mãos.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "sanitario"
+    },
+    {
+      "id": "sanitario_lixeira",
+      "card": 2,
+      "grupo": "Sanitários",
+      "pergunta": "O sanitário comum possui lixeira com pedal e tampa.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 9"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::9"
+      ],
+      "frase_positiva": "O sanitário comum possui lixeira com pedal e tampa.",
+      "frase_negativa": "O sanitário comum não possui lixeira com pedal e tampa.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "sanitario_comum"
+    },
+    {
+      "id": "pcd_barras",
+      "card": 2,
+      "grupo": "Sanitário PCD",
+      "pergunta": "Barras de apoio atende às condições de acessibilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Barras de apoio atende às condições de acessibilidade.",
+      "frase_negativa": "Sanitário PCD: barras de apoio requer adequação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "pcd",
+      "pendencia_validacao": "Validar NBR 9050 vigente e incorporação ao licenciamento local. Não exigir tampa ou pedal automaticamente no sanitário PCD."
+    },
+    {
+      "id": "pcd_vaso",
+      "card": 2,
+      "grupo": "Sanitário PCD",
+      "pergunta": "Vaso em altura e condição acessíveis atende às condições de acessibilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Vaso em altura e condição acessíveis atende às condições de acessibilidade.",
+      "frase_negativa": "Sanitário PCD: vaso em altura e condição acessíveis requer adequação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "pcd",
+      "pendencia_validacao": "Validar NBR 9050 vigente e incorporação ao licenciamento local. Não exigir tampa ou pedal automaticamente no sanitário PCD."
+    },
+    {
+      "id": "pcd_emergencia",
+      "card": 2,
+      "grupo": "Sanitário PCD",
+      "pergunta": "Campainha ou dispositivo de emergência atende às condições de acessibilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Campainha ou dispositivo de emergência atende às condições de acessibilidade.",
+      "frase_negativa": "Sanitário PCD: campainha ou dispositivo de emergência requer adequação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "pcd",
+      "pendencia_validacao": "Validar NBR 9050 vigente e incorporação ao licenciamento local. Não exigir tampa ou pedal automaticamente no sanitário PCD."
+    },
+    {
+      "id": "pcd_circulacao",
+      "card": 2,
+      "grupo": "Sanitário PCD",
+      "pergunta": "Espaço para circulação e transferência atende às condições de acessibilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Espaço para circulação e transferência atende às condições de acessibilidade.",
+      "frase_negativa": "Sanitário PCD: espaço para circulação e transferência requer adequação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "pcd",
+      "pendencia_validacao": "Validar NBR 9050 vigente e incorporação ao licenciamento local. Não exigir tampa ou pedal automaticamente no sanitário PCD."
+    },
+    {
+      "id": "pcd_lixeira",
+      "card": 2,
+      "grupo": "Sanitário PCD",
+      "pergunta": "Lixeira acessível adequada ao uso atende às condições de acessibilidade.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Lixeira acessível adequada ao uso atende às condições de acessibilidade.",
+      "frase_negativa": "Sanitário PCD: lixeira acessível adequada ao uso requer adequação.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "4",
+      "condicao": null,
+      "repetir": "pcd",
+      "pendencia_validacao": "Validar NBR 9050 vigente e incorporação ao licenciamento local. Não exigir tampa ou pedal automaticamente no sanitário PCD."
+    },
+    {
+      "id": "thermo",
+      "card": 3,
+      "grupo": "Termolábeis",
+      "pergunta": "O estabelecimento armazena medicamentos termolábeis?",
+      "tipo": "escopo",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "O estabelecimento armazena medicamentos termolábeis.",
+      "frase_negativa": "O estabelecimento não armazena medicamentos termolábeis.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": null
+    },
+    {
+      "id": "cold_equipment_ok",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "O equipamento conserva os medicamentos conforme as condições declaradas pelo fabricante.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 3º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::3"
+      ],
+      "frase_positiva": "O equipamento conserva os medicamentos conforme as condições declaradas pelo fabricante.",
+      "frase_negativa": "O equipamento não assegura a conservação declarada pelo fabricante.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "repetir": "frio"
+    },
+    {
+      "id": "cold_clean",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "O equipamento está higienizado.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 2º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::2"
+      ],
+      "frase_positiva": "O equipamento está higienizado.",
+      "frase_negativa": "O equipamento de refrigeração apresenta falhas de higienização.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "repetir": "frio"
+    },
+    {
+      "id": "cold_air",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "A disposição dos produtos permite circulação de ar compatível com a conservação.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35"
+      ],
+      "frase_positiva": "A disposição dos produtos permite circulação de ar compatível com a conservação.",
+      "frase_negativa": "A disposição dos produtos compromete a circulação de ar necessária à conservação.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "repetir": "frio"
+    },
+    {
+      "id": "cold_corrective",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "O POP define medidas corretivas para desvios de temperatura.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 5º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::5"
+      ],
+      "frase_positiva": "O POP define medidas corretivas para desvios de temperatura.",
+      "frase_negativa": "O POP não define medidas corretivas para desvios de temperatura.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "repetir": "frio"
+    },
+    {
+      "id": "doc_cold_records",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "Foi apresentado o documento: O registro diário de temperatura.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 3º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::3"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O registro diário de temperatura.",
+      "frase_negativa": "Não foi apresentado o documento: O registro diário de temperatura.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "documento": "O registro diário de temperatura",
+      "repetir": "frio"
+    },
+    {
+      "id": "doc_cold_pop",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "Foi apresentado o documento: O POP de monitoramento e conservação.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009",
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 35, § 4º",
+        "Art. 35, § 5º"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::35::paragrafo::4",
+        "rdc-44-2009::artigo::35::paragrafo::5"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O POP de monitoramento e conservação.",
+      "frase_negativa": "Não foi apresentado o documento: O POP de monitoramento e conservação.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "documento": "O POP de monitoramento e conservação",
+      "repetir": "frio"
+    },
+    {
+      "id": "doc_cold_cal",
+      "card": 3,
+      "grupo": "Equipamento e conservação",
+      "pergunta": "Foi apresentado o documento: O registro de manutenção e calibração exigível.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 44/2009"
+      ],
+      "dispositivo": [
+        "Art. 88, inciso V"
+      ],
+      "refs": [
+        "rdc-44-2009::artigo::88::inciso::v"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O registro de manutenção e calibração exigível.",
+      "frase_negativa": "Não foi apresentado o documento: O registro de manutenção e calibração exigível.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "5",
+      "condicao": {
+        "id": "thermo",
+        "eq": "sim"
+      },
+      "documento": "O registro de manutenção e calibração exigível",
+      "repetir": "frio"
+    },
+    {
+      "id": "sngpc_adesao",
+      "card": 4,
+      "grupo": "SNGPC",
+      "pergunta": "O estabelecimento possui adesão ao SNGPC.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 22/2014"
+      ],
+      "dispositivo": [
+        "Art. 3"
+      ],
+      "refs": [
+        "rdc-22-2014::artigo::3"
+      ],
+      "frase_positiva": "O estabelecimento possui adesão ao SNGPC.",
+      "frase_negativa": "O estabelecimento não possui adesão exigível ao SNGPC.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": null
+    },
+    {
+      "id": "doc_sngpc_cert",
+      "card": 4,
+      "grupo": "SNGPC",
+      "pergunta": "Foi apresentado o documento: O Certificado de Escrituração Digital do SNGPC.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 22/2014"
+      ],
+      "dispositivo": [
+        "Art. 3"
+      ],
+      "refs": [
+        "rdc-22-2014::artigo::3"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O Certificado de Escrituração Digital do SNGPC.",
+      "frase_negativa": "Não foi apresentado o documento: O Certificado de Escrituração Digital do SNGPC.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": null,
+      "documento": "O Certificado de Escrituração Digital do SNGPC",
+      "ajuda": "A ausência de apresentação do certificado gera pendência documental. A adesão é avaliada separadamente."
+    },
+    {
+      "id": "sngpc_current",
+      "card": 4,
+      "grupo": "SNGPC",
+      "pergunta": "Foi apresentado o documento: O Certificado de Transmissão Regular do SNGPC.",
+      "tipo": "documento",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 22/2014"
+      ],
+      "dispositivo": [
+        "Art. 10, § 4º"
+      ],
+      "refs": [
+        "rdc-22-2014::artigo::10::paragrafo::4"
+      ],
+      "frase_positiva": "Foi apresentado o documento: O Certificado de Transmissão Regular do SNGPC.",
+      "frase_negativa": "Não foi apresentado o documento: O Certificado de Transmissão Regular do SNGPC.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": true,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": null,
+      "documento": "O Certificado de Transmissão Regular do SNGPC"
+    },
+    {
+      "id": "sngpc_weekly",
+      "card": 4,
+      "grupo": "SNGPC",
+      "pergunta": "A transmissão eletrônica está atualizada, no mínimo, semanalmente.",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 22/2014"
+      ],
+      "dispositivo": [
+        "Art. 10, § 4º"
+      ],
+      "refs": [
+        "rdc-22-2014::artigo::10::paragrafo::4"
+      ],
+      "frase_positiva": "A transmissão eletrônica está atualizada, no mínimo, semanalmente.",
+      "frase_negativa": "A transmissão eletrônica ao SNGPC não está atualizada, no mínimo, semanalmente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": null
+    },
+    {
+      "id": "rx_sample",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Foram verificadas, por amostragem, prescrições de medicamentos com retenção obrigatória de receita?",
+      "tipo": "escopo",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Foram verificadas, por amostragem, prescrições de medicamentos com retenção obrigatória de receita.",
+      "frase_negativa": "Não foi realizada amostragem de prescrições com retenção obrigatória.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": null
+    },
+    {
+      "id": "rx_all",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Todas as prescrições amostradas estavam de acordo com as exigências aplicáveis à respectiva categoria?",
+      "tipo": "check",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [],
+      "dispositivo": [],
+      "refs": [],
+      "frase_positiva": "Todas as prescrições amostradas atenderam às exigências aplicáveis à respectiva categoria.",
+      "frase_negativa": "Foram constatadas inconformidades nas prescrições amostradas.",
+      "gera_irregularidade": false,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "id": "rx_sample",
+        "eq": "sim"
+      }
+    },
+    {
+      "id": "antibiotico_data",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição sem data de emissão",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 6, parágrafo único, inciso IV"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::6::paragrafo::unico::inciso::iv"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição sem data de emissão.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição sem data de emissão",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_paciente",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição sem identificação obrigatória do paciente",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 6, parágrafo único, inciso I"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::6::paragrafo::unico::inciso::i"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição sem identificação obrigatória do paciente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição sem identificação obrigatória do paciente",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_medicamento",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição sem dados obrigatórios do medicamento, posologia ou quantidade",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 6, parágrafo único, inciso II"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::6::paragrafo::unico::inciso::ii"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição sem dados obrigatórios do medicamento, posologia ou quantidade.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição sem dados obrigatórios do medicamento, posologia ou quantidade",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_emitente",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição sem identificação obrigatória do emitente",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 6, parágrafo único, inciso III"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::6::paragrafo::unico::inciso::iii"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição sem identificação obrigatória do emitente.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição sem identificação obrigatória do emitente",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_validade",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição aviada fora do prazo aplicável de 10 dias",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021",
+        "RDC 471/2021",
+        "IN 360/2025",
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 7",
+        "Art. 10, § 1º",
+        "Art. 1, § 2º",
+        "Art. 9"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::7",
+        "rdc-471-2021::artigo::10::paragrafo::1",
+        "in-360-2025::artigo::1::paragrafo::2",
+        "rdc-471-2021::artigo::9"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição aviada fora do prazo aplicável de 10 dias.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição aviada fora do prazo aplicável de 10 dias",
+      "categoria": "antibiotico",
+      "ajuda": "Considerar a hipótese de tratamento prolongado e aquisições sucessivas do art. 9º da RDC 471/2021; não enquadrar apenas pela data sem avaliar a hipótese."
+    },
+    {
+      "id": "antibiotico_associacao",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição simultânea com medicamento sujeito a controle especial, em desacordo com a norma",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 8"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::8"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição simultânea com medicamento sujeito a controle especial, em desacordo com a norma.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição simultânea com medicamento sujeito a controle especial, em desacordo com a norma",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_via",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Retenção incorreta da via da receita física",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 10"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::10"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, retenção incorreta da via da receita física.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Retenção incorreta da via da receita física",
+      "categoria": "antibiotico",
+      "formato": "fisico"
+    },
+    {
+      "id": "antibiotico_rasura",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Prescrição ilegível ou com rasura",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 10, § 2º"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::10::paragrafo::2"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, prescrição ilegível ou com rasura.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Prescrição ilegível ou com rasura",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_quantidade",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Quantidade dispensada incompatível com o tratamento prescrito",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 11"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::11"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, quantidade dispensada incompatível com o tratamento prescrito.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Quantidade dispensada incompatível com o tratamento prescrito",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_anotacao",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Ausência de data de dispensação, quantidade, lote ou rubrica nas vias físicas",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 10, § 3º"
+      ],
+      "refs": [
+        "rdc-471-2021::artigo::10::paragrafo::3"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, ausência de data de dispensação, quantidade, lote ou rubrica nas vias físicas.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Ausência de data de dispensação, quantidade, lote ou rubrica nas vias físicas",
+      "categoria": "antibiotico",
+      "formato": "fisico"
+    },
+    {
+      "id": "antibiotico_foto",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Dispensação baseada apenas em fotografia, sem receita válida",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "Lei 5991/1973",
+        "RDC 471/2021"
+      ],
+      "dispositivo": [
+        "Art. 35, § 2º",
+        "Art. 6, parágrafo único"
+      ],
+      "refs": [
+        "lei-5991-1973::artigo::35::paragrafo::2",
+        "rdc-471-2021::artigo::6::paragrafo::unico"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, dispensação baseada apenas em fotografia, sem receita válida.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
+        "all": [
+          {
+            "id": "rx_sample",
+            "eq": "sim"
+          },
+          {
+            "id": "rx_all",
+            "eq": "nao"
+          },
+          {
+            "id": "rx_categories",
+            "contains": "antibiotico"
+          }
+        ]
+      },
+      "rotulo_opcao": "Dispensação baseada apenas em fotografia, sem receita válida",
+      "categoria": "antibiotico"
+    },
+    {
+      "id": "antibiotico_assinatura",
+      "card": 4,
+      "grupo": "Dispensação e escrituração",
+      "pergunta": "Receita eletrônica sem assinatura avançada ou qualificada válida",
+      "tipo": "achado",
+      "respostas": [
+        "sim",
+        "nao",
+        "nsa"
+      ],
+      "norma": [
+        "Lei 5991/1973"
+      ],
+      "dispositivo": [
+        "Art. 35, § 2º"
+      ],
+      "refs": [
+        "lei-5991-1973::artigo::35::paragrafo::2"
+      ],
+      "frase_positiva": "",
+      "frase_negativa": "Foi constatada, na amostragem de antimicrobianos, receita eletrônica sem assinatura avançada ou qualificada válida.",
+      "gera_irregularidade": true,
+      "gera_documento_pendente": false,
+      "incluir_relatorio": true,
+      "secao_relatorio": "6",
+      "condicao": {
         "all": [
           {
             "id": "rx_sample",
