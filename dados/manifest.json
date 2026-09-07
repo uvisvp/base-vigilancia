@@ -1,50 +1,50 @@
 {
   "versao_esquema": 2,
   "projeto": "Base Vigilância Sanitária",
-  "gerado_em": "2026-09-03T00:54:42.981154+00:00",
+  "gerado_em": "2026-09-07T15:00:02.801432+00:00",
   "bases": {
     "dispositivos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/TA_PRODUTO_SAUDE_SITE.csv",
-      "data_fonte": "Wed, 02 Sep 2026 18:59:59 GMT",
-      "gerado_em": "2026-09-03T00:51:23.477412+00:00",
-      "atualizado_em": "2026-09-03T00:51:23.477412+00:00",
-      "registros": 115533,
-      "fragmentos": 2524,
+      "data_fonte": "Fri, 04 Sep 2026 10:52:57 GMT",
+      "gerado_em": "2026-09-07T14:57:01.515186+00:00",
+      "atualizado_em": "2026-09-07T14:57:01.515186+00:00",
+      "registros": 115531,
+      "fragmentos": 2525,
       "prefixo": 5,
       "maior_fragmento": 862496,
-      "etag_fonte": "\"1a45146-65a84a4585207\""
+      "etag_fonte": "\"1a44f41-65aa61241c794\""
     },
     "afe_ae": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
-      "data_fonte": "Wed, 02 Sep 2026 19:00:38 GMT",
-      "gerado_em": "2026-09-03T00:52:10.240269+00:00",
-      "atualizado_em": "2026-09-03T00:52:10.240269+00:00",
-      "registros": 351159,
+      "data_fonte": "Fri, 04 Sep 2026 10:53:25 GMT",
+      "gerado_em": "2026-09-07T14:57:41.204577+00:00",
+      "atualizado_em": "2026-09-07T14:57:41.204577+00:00",
+      "registros": 351168,
       "fragmentos": 981,
       "prefixo": 3,
       "maior_fragmento": 4523814,
-      "etag_fonte": "\"12a484b4-65a84a6a67b70\""
+      "etag_fonte": "\"12a4b017-65aa613e64924\""
     },
     "medicamentos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/DADOS_ABERTOS_MEDICAMENTOS.csv",
-      "data_fonte": "Wed, 02 Sep 2026 19:00:39 GMT",
-      "gerado_em": "2026-09-03T00:52:18.429196+00:00",
-      "atualizado_em": "2026-09-03T00:52:18.429196+00:00",
+      "data_fonte": "Fri, 04 Sep 2026 10:53:24 GMT",
+      "gerado_em": "2026-09-07T14:57:48.622998+00:00",
+      "atualizado_em": "2026-09-07T14:57:48.622998+00:00",
       "registros": 32704,
       "fragmentos": 437,
       "prefixo": 4,
       "maior_fragmento": 546683,
-      "etag_fonte": "\"7efbf5-65a84a6b7f15d\""
+      "etag_fonte": "\"7f00c9-65aa613da2ce5\""
     },
     "cmed": {
       "status": "ok",
       "fonte": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos/arquivos/xls_conformidade_site_20260811_192510234.xlsx/@@download/file",
-      "data_fonte": "Thu, 03 Sep 2026 00:52:27 GMT",
-      "gerado_em": "2026-09-03T00:52:53.940856+00:00",
-      "atualizado_em": "2026-09-03T00:52:53.940856+00:00",
+      "data_fonte": "Mon, 07 Sep 2026 14:57:52 GMT",
+      "gerado_em": "2026-09-07T14:58:18.901578+00:00",
+      "atualizado_em": "2026-09-07T14:58:18.901578+00:00",
       "registros": 26001,
       "fragmentos": 370,
       "prefixo": 8,
@@ -87,83 +87,83 @@
     "saneantes": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_SANEANTES.CSV",
-      "data_fonte": "Wed, 02 Sep 2026 18:59:50 GMT",
-      "gerado_em": "2026-09-03T00:53:06.527061+00:00",
-      "atualizado_em": "2026-09-03T00:53:06.527061+00:00",
+      "data_fonte": "Fri, 04 Sep 2026 10:52:53 GMT",
+      "gerado_em": "2026-09-07T14:58:30.222325+00:00",
+      "atualizado_em": "2026-09-07T14:58:30.222325+00:00",
       "registros": 28661,
       "fragmentos": 886,
       "prefixo": 4,
       "maior_fragmento": 99901,
-      "etag_fonte": "\"1748ab4-65a84a3c7572f\""
+      "etag_fonte": "\"174b98a-65aa611fe9beb\""
     },
     "cosmeticos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_COSMETICOS.CSV",
-      "data_fonte": "Wed, 02 Sep 2026 19:01:11 GMT",
-      "gerado_em": "2026-09-03T00:53:55.532022+00:00",
-      "atualizado_em": "2026-09-03T00:53:55.532022+00:00",
-      "registros": 1194545,
+      "data_fonte": "Fri, 04 Sep 2026 10:53:49 GMT",
+      "gerado_em": "2026-09-07T14:59:18.311943+00:00",
+      "atualizado_em": "2026-09-07T14:59:18.311943+00:00",
+      "registros": 1195519,
       "fragmentos": 992,
       "prefixo": 3,
-      "maior_fragmento": 1568099,
-      "etag_fonte": "\"d7d15e0-65a84a89c45e8\"",
+      "maior_fragmento": 1568101,
+      "etag_fonte": "\"d7fd42d-65aa6155f1b6b\"",
       "chave": "processo",
       "fragmentacao": "dígitos 6 a 8 do processo normalizado",
-      "ativos": 1003223,
-      "inativos": 191319
+      "ativos": 1004066,
+      "inativos": 191450
     },
     "alimentos": {
       "status": "ok",
       "fonte": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS.CSV",
-      "data_fonte": "Wed, 02 Sep 2026 18:59:59 GMT",
-      "gerado_em": "2026-09-03T00:54:25.651717+00:00",
-      "atualizado_em": "2026-09-03T00:54:25.651717+00:00",
-      "registros": 64351,
-      "fragmentos": 4384,
+      "data_fonte": "Fri, 04 Sep 2026 10:52:57 GMT",
+      "gerado_em": "2026-09-07T14:59:45.319171+00:00",
+      "atualizado_em": "2026-09-07T14:59:45.319171+00:00",
+      "registros": 64604,
+      "fragmentos": 4388,
       "prefixo": 4,
       "maior_fragmento": 1189766,
-      "etag_fonte": "\"1e63bf7-65a84a4582eee\"",
+      "etag_fonte": "\"1e8df52-65aa6123e89cd\"",
       "fonte_resultado": "https://dados.anvisa.gov.br/dados/CONSULTAS/PRODUTOS/TA_CONSULTA_ALIMENTOS_RESULTADO.CSV",
-      "data_fonte_resultado": "Wed, 02 Sep 2026 19:00:06 GMT",
+      "data_fonte_resultado": "Fri, 04 Sep 2026 10:53:03 GMT",
       "chave": "processo",
       "fragmentacao": "dígitos 6 a 9 do processo normalizado",
       "registrados": 49920,
-      "notificados": 14431,
-      "suplementos_identificados": 16239,
-      "ativos": 15454,
+      "notificados": 14684,
+      "suplementos_identificados": 16488,
+      "ativos": 15707,
       "inativos": 48896,
-      "resultados_apresentacao": 64704,
-      "produtos_enriquecidos": 64351,
-      "etag_fonte_resultado": "\"1449a7b-65a84a4c1a71f\""
+      "resultados_apresentacao": 64957,
+      "produtos_enriquecidos": 64604,
+      "etag_fonte_resultado": "\"1480fa1-65aa6129b0ba2\""
     },
     "mapa_bebidas": {
       "status": "ok",
       "fonte": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
       "orgao": "Ministério da Agricultura e Pecuária — MAPA",
       "nome_base": "MAPA — SIPEAGRO — Vinhos e Bebidas — Estabelecimentos",
-      "data_fonte": "Sun, 30 Aug 2026 05:30:12 GMT",
-      "gerado_em": "2026-09-02T23:49:19Z",
-      "atualizado_em": "2026-09-02T23:49:19Z",
-      "registros": 31582,
+      "data_fonte": "Sun, 06 Sep 2026 05:30:16 GMT",
+      "gerado_em": "2026-09-07T14:40:36Z",
+      "atualizado_em": "2026-09-07T14:40:36Z",
+      "registros": 31630,
       "fragmentos": 7,
       "tamanho_lote": 5000,
       "versao_schema": "1.2.0",
-      "sha256": "942cb3495355df468497d9d9909b68cab41a2c2f2734d35e81b689fdcf459e0b",
+      "sha256": "fb79ed93d79587a2d8a2f583f49155f0ed909b237aaf53cae804e56147dcd75c",
       "chave": "numero_registro_mapa",
       "consulta_exata_por_cnpj": false,
       "limitacao_cnpj": "CPF/CNPJ é mascarado na fonte pública do SIPEAGRO; não reconstruir nem inferir.",
       "indices": {
         "registro": {
           "arquivo": "indice_registro.json",
-          "chaves": 12687
+          "chaves": 12700
         },
         "nome": {
           "arquivo": "indice_nome.json",
-          "chaves": 11951
+          "chaves": 11962
         },
         "municipio_uf": {
           "arquivo": "indice_municipio_uf.json",
-          "chaves": 2463
+          "chaves": 2468
         },
         "classificacao": {
           "arquivo": "indice_classificacao.json",
@@ -183,11 +183,11 @@
         }
       },
       "estatisticas": {
-        "identificador_fiscal_mascarado": 31580,
+        "identificador_fiscal_mascarado": 31628,
         "identificador_fiscal_vazio": 0,
         "identificador_fiscal_completo_detectado": 0,
         "registros_mapa_vazios": 0,
-        "registros_mapa_duplicados": 10599
+        "registros_mapa_duplicados": 10611
       },
       "arquivo_manifesto": "mapa/bebidas/manifest.json",
       "arquivo_schema": "mapa/bebidas/schema.json",
@@ -283,8 +283,8 @@
       "status": "ok",
       "fonte": "https://app.powerbi.com/view?r=eyJrIjoiNDU4Y2UxNmEtZjc0Yi00ZTkyLTk3N2EtZTEyZTI5MjdkNzQ2IiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9&pageName=ReportSection",
       "tipo_fonte": "Painel público Power BI da Anvisa",
-      "gerado_em": "2026-09-03T00:54:42.981154+00:00",
-      "atualizado_em": "2026-09-03T00:54:42.981154+00:00",
+      "gerado_em": "2026-09-07T15:00:02.801432+00:00",
+      "atualizado_em": "2026-09-07T15:00:02.801432+00:00",
       "registros": 558,
       "constituintes_unicos": 537,
       "categorias": [
@@ -495,41 +495,41 @@
   },
   "indices": {
     "status": "ok",
-    "gerado_em": "2026-09-03T00:54:39.105308+00:00",
+    "gerado_em": "2026-09-07T14:59:59.492481+00:00",
     "processos": {
       "status": "ok",
       "fragmentacao": "dígitos 6 a 8 do processo normalizado",
-      "chaves": 561890,
-      "referencias": 561902,
+      "chaves": 562035,
+      "referencias": 562047,
       "fragmentos": 1000
     },
     "cnpj_produtos": {
       "status": "ok",
       "prefixo": 3,
       "fragmentacao": "3 primeiros dígitos do CNPJ",
-      "chaves": 10719,
-      "referencias": 110549,
+      "chaves": 10725,
+      "referencias": 110685,
       "fragmentos": 955
     },
     "autorizacoes": {
       "status": "ok",
       "prefixo": 3,
       "observacao": "Índice por número de AFE/AE.",
-      "chaves": 351159,
-      "referencias": 351159,
+      "chaves": 351168,
+      "referencias": 351168,
       "fragmentos": 377
     },
     "regularizacoes_alimentos": {
       "status": "ok",
       "prefixo": 3,
       "fragmentacao": "3 primeiros dígitos do número de registro ou notificação",
-      "chaves": 49139,
-      "referencias": 49139,
+      "chaves": 49275,
+      "referencias": 49275,
       "fragmentos": 275
     },
     "por_base": {
       "dispositivos": {
-        "processos": 115533,
+        "processos": 115531,
         "cnpjs": 0
       },
       "medicamentos": {
@@ -541,8 +541,8 @@
         "cnpjs": 28661
       },
       "alimentos": {
-        "processos": 64351,
-        "cnpjs": 64351
+        "processos": 64604,
+        "cnpjs": 64604
       }
     },
     "produtos_irregulares": {
