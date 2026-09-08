@@ -3,16 +3,11 @@ name: Atualizar base da Anvisa
 on:
   workflow_dispatch:
 
-  schedule:
-    # Segunda-feira às 06:00 no horário de Brasília
-    # GitHub Actions usa UTC: 06:00 BRT = 09:00 UTC
-    - cron: "0 9 * * 1"
-
 permissions:
   contents: write
 
 concurrency:
-  group: atualizar-base-anvisa
+  group: validar-indices-cosmeticos
   cancel-in-progress: false
 
 jobs:
@@ -22,6 +17,9 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          ref: fix-indices-cosmeticos-20260908
+          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -31,28 +29,100 @@ jobs:
       - name: Instalar leitor de planilha
         run: python -m pip install --disable-pip-version-check openpyxl
 
+      - name: Incluir Cosméticos nos índices auxiliares
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          caminho = Path("scripts/gerar_base.py")
+          texto = caminho.read_text(encoding="utf-8")
+
+          if '"cosmeticos": "processo"' not in texto:
+              antigo = '''        "saneantes": "registro",
+                  # Alimentos são armazenados por processo; por isso a referência
+          '''
+              if antigo not in texto:
+                  antigo = '''        "saneantes": "registro",
+                  # Alimentos são armazenados por processo; por isso a referência'''
+              novo = '''        "saneantes": "registro",
+                  # Cosméticos são armazenados e fragmentados pelo processo.
+                  # Incluí-los aqui alimenta tanto indices/processos quanto
+                  # indices/cnpj_produtos pelo mesmo fluxo das demais bases.
+                  "cosmeticos": "processo",
+                  # Alimentos são armazenados por processo; por isso a referência'''
+              if antigo not in texto:
+                  raise SystemExit("Trecho esperado de gerar_indices_produtos não encontrado")
+              texto = texto.replace(antigo, novo, 1)
+              caminho.write_text(texto, encoding="utf-8")
+
+          trecho = caminho.read_text(encoding="utf-8")
+          assert '"cosmeticos": "processo"' in trecho
+          print("Gerador preparado para indexar Cosméticos por processo e CNPJ")
+          PY
+
       - name: Gerar bases principais
         run: python scripts/gerar_base.py
 
       - name: Gerar constituintes de suplementos
         run: python scripts/gerar_suplementos_constituintes.py
 
-      - name: Verificar alterações
-        id: changes
+      - name: Validar índices de Cosméticos
         run: |
-          git add dados/
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
 
-      - name: Salvar atualização
-        if: steps.changes.outputs.changed == 'true'
+          def digitos(v):
+              return re.sub(r"\D", "", str(v or ""))
+
+          testes = [
+              "25351250640201090",
+              "25351448318202151",
+          ]
+
+          for processo in testes:
+              prefixo = processo[5:8]
+              arq_cos = Path("dados/cosmeticos") / f"{prefixo}.json"
+              itens = json.loads(arq_cos.read_text(encoding="utf-8"))
+              achados = [x for x in itens if digitos(x.get("processo")) == processo]
+              assert achados, f"Cosmético não encontrado na base: {processo}"
+              item = achados[0]
+
+              arq_proc = Path("dados/indices/processos") / f"{prefixo}.json"
+              indice_proc = json.loads(arq_proc.read_text(encoding="utf-8"))
+              refs = indice_proc.get(processo, [])
+              assert any(r.get("b") == "cosmeticos" and digitos(r.get("r")) == processo for r in refs), (
+                  f"Processo de Cosméticos ausente do índice: {processo}"
+              )
+
+              cnpj = digitos(item.get("cnpj"))
+              assert len(cnpj) == 14, f"CNPJ inválido no item cosmético {processo}: {cnpj}"
+              arq_cnpj = Path("dados/indices/cnpj_produtos") / f"{cnpj[:3]}.json"
+              indice_cnpj = json.loads(arq_cnpj.read_text(encoding="utf-8"))
+              refs_cnpj = indice_cnpj.get(cnpj, [])
+              assert any(
+                  r.get("b") == "cosmeticos" and digitos(r.get("processo")) == processo
+                  for r in refs_cnpj
+              ), f"Produto cosmético ausente do índice por CNPJ: {processo} / {cnpj}"
+              print("OK", processo, item.get("produto"), cnpj)
+
+          manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
+          por_base = manifesto.get("indices", {}).get("por_base", {})
+          assert por_base.get("cosmeticos", {}).get("processos", 0) > 0
+          assert por_base.get("cosmeticos", {}).get("cnpjs", 0) > 0
+          print("MANIFESTO OK", por_base["cosmeticos"])
+          PY
+
+      - name: Salvar resultado validado na branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dados/
-          git commit -m "Atualiza base da Vigilância"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git add scripts/gerar_base.py dados/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para salvar"
+            exit 0
+          fi
+          git commit -m "Inclui Cosméticos nos índices de processo e CNPJ"
+          git pull --rebase origin fix-indices-cosmeticos-20260908
+          git push origin HEAD:fix-indices-cosmeticos-20260908
