@@ -2965,6 +2965,7 @@ def gerar_indices_produtos():
         "dispositivos": "registro",
         "medicamentos": "registro",
         "saneantes": "registro",
+        "cosmeticos": "processo",
         # Alimentos são armazenados por processo; por isso a referência
         # do índice aponta para o processo, e não para o registro.
         "alimentos": "processo"
