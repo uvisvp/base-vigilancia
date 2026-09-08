@@ -1,28 +1,27 @@
 name: Atualizar base da Anvisa
 
 on:
-  push:
-    branches: [fix-indices-cosmeticos-20260908]
   workflow_dispatch:
+
+  schedule:
+    # Segunda-feira às 06:00 no horário de Brasília
+    # GitHub Actions usa UTC: 06:00 BRT = 09:00 UTC
+    - cron: "0 9 * * 1"
 
 permissions:
   contents: write
 
 concurrency:
-  group: validar-indices-cosmeticos
+  group: atualizar-base-anvisa
   cancel-in-progress: false
 
 jobs:
   atualizar:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
-        with:
-          ref: fix-indices-cosmeticos-20260908
-          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -32,131 +31,28 @@ jobs:
       - name: Instalar leitor de planilha
         run: python -m pip install --disable-pip-version-check openpyxl
 
-      - name: Incluir Cosméticos nos índices auxiliares
+      - name: Gerar bases principais
+        run: python scripts/gerar_base.py
+
+      - name: Gerar constituintes de suplementos
+        run: python scripts/gerar_suplementos_constituintes.py
+
+      - name: Verificar alterações
+        id: changes
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
+          git add dados/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
-          caminho = Path("scripts/gerar_base.py")
-          texto = caminho.read_text(encoding="utf-8")
-
-          if '"cosmeticos": "processo"' not in texto:
-              padrao = r'(?m)^(\s*)"saneantes": "registro",\s*$'
-              def incluir(m):
-                  espacos = m.group(1)
-                  return (
-                      m.group(0)
-                      + "\n"
-                      + espacos
-                      + '"cosmeticos": "processo",'
-                  )
-              texto, quantidade = re.subn(
-                  padrao,
-                  incluir,
-                  texto,
-                  count=1,
-              )
-              if quantidade != 1:
-                  raise SystemExit(
-                      f"Não foi possível alterar gerar_indices_produtos: substituições={quantidade}"
-                  )
-              caminho.write_text(texto, encoding="utf-8")
-
-          assert '"cosmeticos": "processo"' in caminho.read_text(encoding="utf-8")
-          print("Gerador preparado para indexar Cosméticos por processo e CNPJ")
-          PY
-
-      - name: Regenerar somente índices auxiliares
-        run: |
-          python - <<'PY'
-          import importlib.util
-          import json
-          from pathlib import Path
-
-          spec = importlib.util.spec_from_file_location(
-              "gerar_base",
-              "scripts/gerar_base.py",
-          )
-          modulo = importlib.util.module_from_spec(spec)
-          spec.loader.exec_module(modulo)
-
-          indices = modulo.gerar_indices_produtos()
-
-          caminho = Path("dados/manifest.json")
-          manifesto = json.loads(caminho.read_text(encoding="utf-8"))
-          atuais = manifesto.setdefault("indices", {})
-          for chave, valor in indices.items():
-              atuais[chave] = valor
-          caminho.write_text(
-              json.dumps(manifesto, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8",
-          )
-          print("Índices regenerados e manifesto atualizado")
-          PY
-
-      - name: Validar índices de Cosméticos
-        run: |
-          python - <<'PY'
-          import json
-          import re
-          from pathlib import Path
-
-          def digitos(v):
-              return re.sub(r"\D", "", str(v or ""))
-
-          testes = [
-              "25351250640201090",
-              "25351448318202151",
-          ]
-
-          for processo in testes:
-              prefixo = processo[5:8]
-              itens = json.loads(
-                  (Path("dados/cosmeticos") / f"{prefixo}.json").read_text(encoding="utf-8")
-              )
-              achados = [x for x in itens if digitos(x.get("processo")) == processo]
-              assert achados, f"Cosmético não encontrado na base: {processo}"
-              item = achados[0]
-
-              indice_proc = json.loads(
-                  (Path("dados/indices/processos") / f"{prefixo}.json").read_text(encoding="utf-8")
-              )
-              refs = indice_proc.get(processo, [])
-              assert any(
-                  r.get("b") == "cosmeticos" and digitos(r.get("r")) == processo
-                  for r in refs
-              ), f"Processo ausente do índice: {processo}"
-
-              cnpj = digitos(item.get("cnpj"))
-              assert len(cnpj) == 14, f"CNPJ inválido: {processo} / {cnpj}"
-              indice_cnpj = json.loads(
-                  (Path("dados/indices/cnpj_produtos") / f"{cnpj[:3]}.json").read_text(encoding="utf-8")
-              )
-              refs_cnpj = indice_cnpj.get(cnpj, [])
-              assert any(
-                  r.get("b") == "cosmeticos"
-                  and digitos(r.get("processo")) == processo
-                  for r in refs_cnpj
-              ), f"Cosmético ausente do índice por CNPJ: {processo}"
-              print("OK", processo, item.get("produto"), cnpj)
-
-          manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
-          por_base = manifesto.get("indices", {}).get("por_base", {})
-          assert por_base.get("cosmeticos", {}).get("processos", 0) > 0
-          assert por_base.get("cosmeticos", {}).get("cnpjs", 0) > 0
-          print("MANIFESTO OK", por_base["cosmeticos"])
-          PY
-
-      - name: Salvar resultado validado na branch
+      - name: Salvar atualização
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/gerar_base.py dados/indices/ dados/manifest.json
-          if git diff --cached --quiet; then
-            echo "Nenhuma alteração para salvar"
-            exit 0
-          fi
-          git commit -m "Inclui Cosméticos nos índices de processo e CNPJ"
-          git pull --rebase origin fix-indices-cosmeticos-20260908
-          git push origin HEAD:fix-indices-cosmeticos-20260908
+          git add dados/
+          git commit -m "Atualiza base da Vigilância"
+          git pull --rebase origin main
+          git push origin HEAD:main
