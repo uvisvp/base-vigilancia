@@ -36,33 +36,64 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           caminho = Path("scripts/gerar_base.py")
           texto = caminho.read_text(encoding="utf-8")
 
           if '"cosmeticos": "processo"' not in texto:
-              antigo = '''        "saneantes": "registro",
-          # Alimentos são armazenados por processo; por isso a referência'''
-              novo = '''        "saneantes": "registro",
-          # Cosméticos são armazenados e fragmentados pelo processo.
-          # Incluí-los aqui alimenta tanto indices/processos quanto
-          # indices/cnpj_produtos pelo mesmo fluxo das demais bases.
-          "cosmeticos": "processo",
-          # Alimentos são armazenados por processo; por isso a referência'''
-              if antigo not in texto:
-                  raise SystemExit("Trecho esperado de gerar_indices_produtos não encontrado")
-              texto = texto.replace(antigo, novo, 1)
+              padrao = r'(?m)^(\s*)"saneantes": "registro",\s*$'
+              def incluir(m):
+                  espacos = m.group(1)
+                  return (
+                      m.group(0)
+                      + "\n"
+                      + espacos
+                      + '"cosmeticos": "processo",'
+                  )
+              texto, quantidade = re.subn(
+                  padrao,
+                  incluir,
+                  texto,
+                  count=1,
+              )
+              if quantidade != 1:
+                  raise SystemExit(
+                      f"Não foi possível alterar gerar_indices_produtos: substituições={quantidade}"
+                  )
               caminho.write_text(texto, encoding="utf-8")
 
           assert '"cosmeticos": "processo"' in caminho.read_text(encoding="utf-8")
           print("Gerador preparado para indexar Cosméticos por processo e CNPJ")
           PY
 
-      - name: Gerar bases principais
-        run: python scripts/gerar_base.py
+      - name: Regenerar somente índices auxiliares
+        run: |
+          python - <<'PY'
+          import importlib.util
+          import json
+          from pathlib import Path
 
-      - name: Gerar constituintes de suplementos
-        run: python scripts/gerar_suplementos_constituintes.py
+          spec = importlib.util.spec_from_file_location(
+              "gerar_base",
+              "scripts/gerar_base.py",
+          )
+          modulo = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(modulo)
+
+          indices = modulo.gerar_indices_produtos()
+
+          caminho = Path("dados/manifest.json")
+          manifesto = json.loads(caminho.read_text(encoding="utf-8"))
+          atuais = manifesto.setdefault("indices", {})
+          for chave, valor in indices.items():
+              atuais[chave] = valor
+          caminho.write_text(
+              json.dumps(manifesto, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          print("Índices regenerados e manifesto atualizado")
+          PY
 
       - name: Validar índices de Cosméticos
         run: |
@@ -81,20 +112,33 @@ jobs:
 
           for processo in testes:
               prefixo = processo[5:8]
-              itens = json.loads((Path("dados/cosmeticos") / f"{prefixo}.json").read_text(encoding="utf-8"))
+              itens = json.loads(
+                  (Path("dados/cosmeticos") / f"{prefixo}.json").read_text(encoding="utf-8")
+              )
               achados = [x for x in itens if digitos(x.get("processo")) == processo]
               assert achados, f"Cosmético não encontrado na base: {processo}"
               item = achados[0]
 
-              indice_proc = json.loads((Path("dados/indices/processos") / f"{prefixo}.json").read_text(encoding="utf-8"))
+              indice_proc = json.loads(
+                  (Path("dados/indices/processos") / f"{prefixo}.json").read_text(encoding="utf-8")
+              )
               refs = indice_proc.get(processo, [])
-              assert any(r.get("b") == "cosmeticos" and digitos(r.get("r")) == processo for r in refs), f"Processo ausente do índice: {processo}"
+              assert any(
+                  r.get("b") == "cosmeticos" and digitos(r.get("r")) == processo
+                  for r in refs
+              ), f"Processo ausente do índice: {processo}"
 
               cnpj = digitos(item.get("cnpj"))
               assert len(cnpj) == 14, f"CNPJ inválido: {processo} / {cnpj}"
-              indice_cnpj = json.loads((Path("dados/indices/cnpj_produtos") / f"{cnpj[:3]}.json").read_text(encoding="utf-8"))
+              indice_cnpj = json.loads(
+                  (Path("dados/indices/cnpj_produtos") / f"{cnpj[:3]}.json").read_text(encoding="utf-8")
+              )
               refs_cnpj = indice_cnpj.get(cnpj, [])
-              assert any(r.get("b") == "cosmeticos" and digitos(r.get("processo")) == processo for r in refs_cnpj), f"Cosmético ausente do índice por CNPJ: {processo}"
+              assert any(
+                  r.get("b") == "cosmeticos"
+                  and digitos(r.get("processo")) == processo
+                  for r in refs_cnpj
+              ), f"Cosmético ausente do índice por CNPJ: {processo}"
               print("OK", processo, item.get("produto"), cnpj)
 
           manifesto = json.loads(Path("dados/manifest.json").read_text(encoding="utf-8"))
@@ -108,7 +152,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add scripts/gerar_base.py dados/
+          git add scripts/gerar_base.py dados/indices/ dados/manifest.json
           if git diff --cached --quiet; then
             echo "Nenhuma alteração para salvar"
             exit 0
