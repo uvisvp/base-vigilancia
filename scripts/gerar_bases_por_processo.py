@@ -66,11 +66,7 @@ def gerar_medicamentos_processos():
                 if not registro:
                     sem_registro += 1
 
-                item = {
-                    "processo": processo,
-                    "registro": registro,
-                    "produto": produto,
-                }
+                item = {"processo": processo, "registro": registro, "produto": produto}
                 if col_principio:
                     item["principio_ativo"] = gb.texto(linha.get(col_principio, ""))
                 if col_empresa:
@@ -86,8 +82,7 @@ def gerar_medicamentos_processos():
                 if col_situacao:
                     item["situacao"] = gb.texto(linha.get(col_situacao, ""))
 
-                item = gb.limpar_json(item)
-                grupos[gb.prefixo_processo(processo)].append(item)
+                grupos[gb.prefixo_processo(processo)].append(gb.limpar_json(item))
                 total += 1
 
         if total < 1000:
@@ -139,11 +134,7 @@ def gerar_saneantes_processos():
                 if not registro:
                     sem_registro += 1
 
-                item = {
-                    "processo": processo,
-                    "registro": registro,
-                    "produto": produto,
-                }
+                item = {"processo": processo, "registro": registro, "produto": produto}
                 if col_empresa:
                     item["detentor"] = gb.texto(linha.get(col_empresa, ""))
                 if col_cnpj:
@@ -163,8 +154,7 @@ def gerar_saneantes_processos():
                 if col_atualizacao:
                     item["atualizado_em"] = gb.texto(linha.get(col_atualizacao, ""))
 
-                item = gb.limpar_json(item)
-                grupos[gb.prefixo_processo(processo)].append(item)
+                grupos[gb.prefixo_processo(processo)].append(gb.limpar_json(item))
                 total += 1
 
         if total < 10000:
@@ -177,7 +167,59 @@ def gerar_saneantes_processos():
         arquivo.unlink(missing_ok=True)
 
 
-def atualizar_manifesto(novas_bases):
+def reconstruir_indice_processos_completo():
+    """Troca no índice geral as referências incompletas por registro pelas visões completas por processo."""
+    pasta_indice = gb.DADOS / "indices" / "processos"
+    grupos = {}
+
+    for caminho in pasta_indice.glob("*.json"):
+        try:
+            dados = json.loads(caminho.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(dados, dict):
+            continue
+        for processo, refs in dados.items():
+            limpas = [
+                ref for ref in (refs or [])
+                if isinstance(ref, dict) and ref.get("b") not in {"medicamentos", "saneantes", "medicamentos_processos", "saneantes_processos"}
+            ]
+            if limpas:
+                grupos.setdefault(caminho.stem, {})[processo] = limpas
+
+    contagens = {}
+    for base in ("medicamentos_processos", "saneantes_processos"):
+        total = 0
+        for caminho in sorted((gb.DADOS / base).glob("*.json")):
+            itens = json.loads(caminho.read_text(encoding="utf-8"))
+            for item in itens:
+                processo = gb.somente_numeros(item.get("processo", ""))
+                if not processo:
+                    continue
+                prefixo = gb.prefixo_processo(processo)
+                mapa = grupos.setdefault(prefixo, {})
+                refs = mapa.setdefault(processo, [])
+                ref = {"b": base, "r": processo}
+                if ref not in refs:
+                    refs.append(ref)
+                total += 1
+        contagens[base] = total
+
+    gb.gravar_fragmentos(pasta_indice, grupos)
+    chaves = sum(len(mapa) for mapa in grupos.values())
+    referencias = sum(len(refs) for mapa in grupos.values() for refs in mapa.values())
+    print("indice_processos completo:", chaves, "chaves |", referencias, "referências |", contagens)
+    return {
+        "status": "ok",
+        "fragmentacao": "dígitos 6 a 8 do processo normalizado",
+        "chaves": chaves,
+        "referencias": referencias,
+        "fragmentos": len(grupos),
+        "fontes_completas": contagens,
+    }
+
+
+def atualizar_manifesto(novas_bases, indice_processos=None):
     caminho = gb.DADOS / "manifest.json"
     manifesto = {}
     if caminho.exists():
@@ -185,6 +227,14 @@ def atualizar_manifesto(novas_bases):
             manifesto = json.load(f)
 
     manifesto.setdefault("bases", {}).update(novas_bases)
+    if indice_processos:
+        indices = manifesto.setdefault("indices", {})
+        indices["processos"] = indice_processos
+        por_base = indices.setdefault("por_base", {})
+        por_base.setdefault("medicamentos", {})["processos"] = novas_bases["medicamentos_processos"]["registros"]
+        por_base.setdefault("saneantes", {})["processos"] = novas_bases["saneantes_processos"]["registros"]
+        por_base["medicamentos_processos"] = {"processos": novas_bases["medicamentos_processos"]["registros"]}
+        por_base["saneantes_processos"] = {"processos": novas_bases["saneantes_processos"]["registros"]}
     manifesto["atualizado_em"] = datetime.now(timezone.utc).isoformat()
 
     with caminho.open("w", encoding="utf-8") as f:
@@ -197,8 +247,9 @@ def main():
         "medicamentos_processos": gerar_medicamentos_processos(),
         "saneantes_processos": gerar_saneantes_processos(),
     }
-    atualizar_manifesto(novas)
-    print("Visões completas por processo geradas e manifest atualizada.")
+    indice = reconstruir_indice_processos_completo()
+    atualizar_manifesto(novas, indice)
+    print("Visões completas por processo e índice geral atualizados.")
 
 
 if __name__ == "__main__":
