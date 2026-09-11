@@ -37,6 +37,9 @@ jobs:
       - name: Gerar constituintes de suplementos
         run: python scripts/gerar_suplementos_constituintes.py
 
+      - name: Gerar visões completas por processo
+        run: python scripts/gerar_bases_por_processo.py
+
       - name: Verificar alterações
         id: changes
         run: |
