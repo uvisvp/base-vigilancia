@@ -1,0 +1,57 @@
+name: Gerar bases por processo - sparse
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/gerar-processos-sparse-temp.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            scripts
+            dados/manifest.json
+            dados/saneantes_processos
+            dados/medicamentos_processos
+            .github/workflows/gerar-processos-sparse-temp.yml
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gerar visoes completas por processo
+        run: python scripts/gerar_bases_por_processo.py
+      - name: Validar saneante e cobertura
+        run: |
+          python <<'PY'
+          import json,re
+          from pathlib import Path
+          alvo='25351239002201018'
+          data=json.loads(Path('dados/saneantes_processos/239.json').read_text(encoding='utf-8'))
+          hits=[x for x in data if re.sub(r'\D','',str(x.get('processo','')))==alvo]
+          assert hits and any('HTH LIMPA BORDAS' in str(x.get('produto','')).upper() for x in hits), hits[:3]
+          m=json.loads(Path('dados/manifest.json').read_text(encoding='utf-8'))
+          assert m['bases']['saneantes_processos']['processos_sem_registro'] > 100000
+          assert m['bases']['medicamentos_processos']['processos_sem_registro'] > 0
+          print('VALIDADO:',hits[0])
+          print('SANEANTES SEM REGISTRO:',m['bases']['saneantes_processos']['processos_sem_registro'])
+          print('MEDICAMENTOS SEM REGISTRO:',m['bases']['medicamentos_processos']['processos_sem_registro'])
+          PY
+      - name: Publicar
+        run: |
+          rm -f .github/workflows/gerar-processos-sparse-temp.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A dados/ .github/workflows/gerar-processos-sparse-temp.yml
+          git diff --cached --check
+          git commit -m 'Publica saneantes e medicamentos completos por processo'
+          git pull --rebase origin main
+          git push origin HEAD:main
