@@ -1,0 +1,47 @@
+name: Corrigir índice de processos
+
+on:
+  push:
+    paths:
+      - '.github/workflows/corrigir-indice-processos-temp.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  corrigir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependências
+        run: python -m pip install --disable-pip-version-check openpyxl
+      - name: Gerar visões e índice completo por processo
+        run: python scripts/gerar_bases_por_processo.py
+      - name: Validar processo saneante de referência
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p='25351239002201018'
+          frag=json.loads(Path('dados/saneantes_processos/239.json').read_text(encoding='utf-8'))
+          assert any(x.get('processo')==p and x.get('produto')=='HTH LIMPA BORDAS' for x in frag)
+          idx=json.loads(Path('dados/indices/processos/239.json').read_text(encoding='utf-8'))
+          refs=idx.get(p,[])
+          assert {'b':'saneantes_processos','r':p} in refs, refs
+          assert not any(r.get('b')=='saneantes' for r in refs), refs
+          print('PASS:', p, refs)
+          PY
+      - name: Publicar dados corrigidos e remover automação temporária
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/
+          git rm .github/workflows/corrigir-indice-processos-temp.yml
+          git commit -m "Corrige consultas por processo de saneantes e medicamentos"
+          git pull --rebase origin main
+          git push origin HEAD:main
