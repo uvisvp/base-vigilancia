@@ -1,0 +1,19 @@
+name: Diagnosticar processos de produtos Anvisa
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnosticar_processos_produtos.py'
+      - '.github/workflows/diagnosticar-processos-produtos-temporario.yml'
+permissions:
+  contents: read
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar processos e registros nas fontes oficiais
+        run: python scripts/diagnosticar_processos_produtos.py
