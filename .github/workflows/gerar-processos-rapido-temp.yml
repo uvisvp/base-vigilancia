@@ -1,0 +1,48 @@
+name: Gerar saneantes e medicamentos por processo - rapido
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/gerar-processos-rapido-temp.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gerar visoes por processo
+        run: python scripts/gerar_bases_por_processo.py
+      - name: Validar processo informado
+        run: |
+          python <<'PY'
+          import json,re
+          from pathlib import Path
+          alvo='25351239002201018'
+          data=json.loads(Path('dados/saneantes_processos/239.json').read_text(encoding='utf-8'))
+          hits=[x for x in data if re.sub(r'\D','',str(x.get('processo','')))==alvo]
+          assert hits and any('HTH LIMPA BORDAS' in str(x.get('produto','')).upper() for x in hits), hits[:3]
+          manifest=json.loads(Path('dados/manifest.json').read_text(encoding='utf-8'))
+          assert manifest['bases']['saneantes_processos']['processos_sem_registro'] > 100000
+          assert manifest['bases']['medicamentos_processos']['processos_sem_registro'] > 0
+          print('OK:',hits[0])
+          PY
+      - name: Publicar dados
+        run: |
+          rm -f .github/workflows/gerar-processos-rapido-temp.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dados/ .github/workflows/gerar-processos-rapido-temp.yml
+          git diff --cached --check
+          git commit -m 'Publica saneantes e medicamentos completos por processo'
+          git pull --rebase origin main
+          git push origin HEAD:main
