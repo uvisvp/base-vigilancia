@@ -1,4 +1,4 @@
-# execução imediata 2026-09-11
+# execução imediata 2026-09-11 v2
 name: Corrigir índice de processos
 
 on:
@@ -44,5 +44,7 @@ jobs:
           git add dados/
           git rm .github/workflows/corrigir-indice-processos-temp.yml
           git commit -m "Corrige consultas por processo de saneantes e medicamentos"
+          git reset --hard HEAD
+          git clean -fd
           git pull --rebase origin main
           git push origin HEAD:main
