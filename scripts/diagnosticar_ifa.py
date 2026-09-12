@@ -9,8 +9,8 @@ from __future__ import annotations
 import csv
 import io
 import json
-import os
 import re
+import ssl
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -36,7 +36,10 @@ def baixar(nome: str) -> tuple[bytes, dict]:
             "Accept": "text/csv,text/plain,*/*",
         },
     )
-    with urllib.request.urlopen(req, timeout=90) as resp:
+    # O mesmo host oficial da Anvisa já exige este contexto no gerador principal
+    # do projeto em runners GitHub; o diagnóstico mantém o mesmo comportamento.
+    contexto_ssl = ssl._create_unverified_context()
+    with urllib.request.urlopen(req, timeout=90, context=contexto_ssl) as resp:
         body = resp.read()
         meta = {
             "url": url,
