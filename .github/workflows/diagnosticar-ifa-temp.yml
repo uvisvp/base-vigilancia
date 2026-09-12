@@ -1,0 +1,55 @@
+name: Diagnosticar esquema IFA
+
+on:
+  push:
+    branches: [ifa-schema-diagnostico]
+    paths: ['.github/workflows/diagnosticar-ifa-temp.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Baixar e inspecionar CSVs oficiais de IFA
+        run: |
+          python - <<'PY'
+          import csv, io, urllib.request
+          urls = [
+              'https://dados.anvisa.gov.br/dados/TA_EXPORT_IFA.csv',
+              'https://dados.anvisa.gov.br/dados/TA_FABRICANTE_MEDICAMENTO_IFA.CSV',
+          ]
+          for url in urls:
+              print('\n===', url.rsplit('/',1)[-1], '===')
+              req=urllib.request.Request(url, headers={'User-Agent':'Mozilla/5.0'})
+              raw=urllib.request.urlopen(req, timeout=60).read()
+              print('bytes:', len(raw))
+              decoded=None
+              for enc in ('utf-8-sig','utf-8','latin-1'):
+                  try:
+                      decoded=raw.decode(enc)
+                      print('encoding:',enc)
+                      break
+                  except UnicodeDecodeError:
+                      pass
+              sample=decoded[:20000]
+              try:
+                  dialect=csv.Sniffer().sniff(sample, delimiters=';,\t|')
+                  delim=dialect.delimiter
+              except Exception:
+                  delim=';'
+              print('delimiter:',repr(delim))
+              reader=csv.reader(io.StringIO(decoded), delimiter=delim)
+              rows=[]
+              for i,row in enumerate(reader):
+                  rows.append(row)
+                  if i>=3: break
+              for i,row in enumerate(rows):
+                  print('row',i,'cols',len(row),row)
+          PY
