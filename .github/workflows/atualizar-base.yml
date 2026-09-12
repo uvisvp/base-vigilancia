@@ -34,6 +34,9 @@ jobs:
       - name: Gerar bases principais
         run: python scripts/gerar_base.py
 
+      - name: Gerar base pública de IFA
+        run: python scripts/gerar_ifa.py
+
       - name: Gerar constituintes de suplementos
         run: python scripts/gerar_suplementos_constituintes.py
 
