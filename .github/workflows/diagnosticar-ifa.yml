@@ -1,0 +1,43 @@
+name: Diagnosticar fontes IFA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnosticar_ifa.py'
+      - '.github/workflows/diagnosticar-ifa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Inspecionar fontes oficiais de IFA
+        run: python scripts/diagnosticar_ifa.py
+
+      - name: Publicar resumo
+        if: always()
+        run: |
+          if [ -f diagnostico-ifa/RESUMO.md ]; then
+            cat diagnostico-ifa/RESUMO.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-ifa
+          path: diagnostico-ifa/
+          if-no-files-found: error
