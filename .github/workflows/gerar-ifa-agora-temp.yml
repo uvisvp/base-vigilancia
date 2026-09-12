@@ -1,0 +1,50 @@
+name: Gerar base IFA agora
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/gerar-ifa-agora-temp.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Gerar base pública de IFA
+        run: python scripts/gerar_ifa.py
+      - name: Validar saída
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('dados/ifa/manifest.json').read_text(encoding='utf-8'))
+          p=json.loads(Path('dados/ifa/registros.json').read_text(encoding='utf-8'))
+          assert m['status']=='ok'
+          assert m['registros'] > 0
+          assert len(p['registros']) == m['registros']
+          a=p['registros'][0]
+          for k in ('ifa','fabricante_ifa','processo_anvisa','identificador_tipo','identificador'):
+              assert k in a
+          assert a['identificador_tipo']=='processo_anvisa'
+          print('IFA OK:',m['registros'],'registros')
+          PY
+      - name: Publicar dados gerados
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dados/ifa/ dados/manifest.json
+          if git diff --cached --quiet; then
+            echo 'Sem alterações.'
+          else
+            git commit -m 'Atualiza base pública de IFA'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
