@@ -40,7 +40,7 @@ jobs:
       - name: Gerar bases principais
         run: python scripts/gerar_base.py
 
-      - name: Enriquecer AFE/AE com a consulta oficial da Anvisa
+      - name: Enriquecer e validar AFE/AE com a base aberta oficial da Anvisa
         run: python scripts/enriquecer_afe_ae.py
 
       - name: Gerar base pública de IFA
