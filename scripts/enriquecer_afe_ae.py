@@ -15,6 +15,7 @@ import urllib.request
 BASE = Path(__file__).resolve().parent.parent
 DADOS = BASE / "dados"
 PASTA = DADOS / "afe_ae"
+PASTA_ATIVIDADES = DADOS / "afe_ae_atividades"
 
 FONTE = (
     "https://dados.anvisa.gov.br/dados/"
@@ -28,6 +29,38 @@ DICIONARIO = (
 )
 PREFIXO = 3
 TESTES = ("1.40410-4", "7.35065-7", "0086723", "1339472")
+
+CAMPOS_EXPOSTOS = [
+    "cnpj",
+    "razao_social",
+    "nome_fantasia",
+    "autorizacao",
+    "autorizacao_nova",
+    "processo",
+    "tipo",
+    "autorizacao_especial",
+    "situacao",
+    "ativo",
+    "data_autorizacao",
+    "data_publicacao",
+    "data_cancelamento",
+    "classe",
+    "atividade_tipo",
+    "atividade",
+    "municipio",
+    "uf",
+    "cep",
+    "endereco",
+    "bairro",
+    "responsavel_tecnico",
+    "responsavel_legal",
+    "codigo_municipio_ibge",
+    "data_carga_fonte",
+    "fonte_base",
+]
+CAMPOS_FRAGMENTO_PRINCIPAL = [
+    campo for campo in CAMPOS_EXPOSTOS if campo != "atividade"
+]
 
 
 def digitos(valor):
@@ -44,7 +77,11 @@ def txt(valor):
 
 
 def token(valor):
-    s = unicodedata.normalize("NFKD", txt(valor)).encode("ascii", "ignore").decode("ascii")
+    s = (
+        unicodedata.normalize("NFKD", txt(valor))
+        .encode("ascii", "ignore")
+        .decode("ascii")
+    )
     return s.upper()
 
 
@@ -57,6 +94,24 @@ def sim_nao(valor):
     return None
 
 
+def data_iso(v):
+    if not v:
+        return None
+    v = str(v).strip().split(" ")[0]
+    try:
+        return datetime.strptime(v, "%m/%d/%Y").date().isoformat()
+    except ValueError:
+        return None
+
+
+def data_iso_contada(linha, campo_fonte, campo_destino, falhas_datas):
+    bruto = txt(linha.get(campo_fonte))
+    convertido = data_iso(bruto)
+    if bruto and convertido is None:
+        falhas_datas[campo_destino] += 1
+    return convertido
+
+
 def baixar_csv(url, tentativas=4):
     ultimo = None
     for n in range(1, tentativas + 1):
@@ -66,7 +121,12 @@ def baixar_csv(url, tentativas=4):
         )
         contexto_ssl = ssl._create_unverified_context()
         try:
-            tmp = Path(tempfile.mkstemp(prefix="afe_ae_oficial_", suffix=".csv")[1])
+            tmp = Path(
+                tempfile.mkstemp(
+                    prefix="afe_ae_oficial_",
+                    suffix=".csv",
+                )[1]
+            )
             with urllib.request.urlopen(
                 req,
                 timeout=180,
@@ -76,7 +136,12 @@ def baixar_csv(url, tentativas=4):
             if tmp.stat().st_size < 1_000_000:
                 raise RuntimeError("Arquivo AFE/AE oficial pequeno demais.")
             return tmp
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError) as e:
+        except (
+            urllib.error.URLError,
+            urllib.error.HTTPError,
+            TimeoutError,
+            OSError,
+        ) as e:
             ultimo = e
             try:
                 tmp.unlink(missing_ok=True)
@@ -84,7 +149,9 @@ def baixar_csv(url, tentativas=4):
                 pass
             if n < tentativas:
                 time.sleep(10 * n)
-    raise RuntimeError(f"Falha baixando a base oficial AFE/AE: {ultimo!r}")
+    raise RuntimeError(
+        f"Falha baixando a base oficial AFE/AE: {ultimo!r}"
+    )
 
 
 def detectar_configuracao(arquivo):
@@ -100,7 +167,10 @@ def detectar_configuracao(arquivo):
     texto_amostra = amostra.decode(encoding, errors="replace")
     delimitador = ";"
     try:
-        delimitador = csv.Sniffer().sniff(texto_amostra, delimiters=";,|\t").delimiter
+        delimitador = csv.Sniffer().sniff(
+            texto_amostra,
+            delimiters=";,|\t",
+        ).delimiter
     except csv.Error:
         pass
     return encoding, delimitador
@@ -158,21 +228,50 @@ def candidatos(indices, processo, autorizacao, cnpj):
     return [], ""
 
 
-def enriquecer_item(item, linha):
+def enriquecer_item(item, linha, falhas_datas):
     especial = txt(linha.get("ST_AUTORIZACAO_ESPECIAL"))
     ativo = txt(linha.get("ATIVO"))
     eh_especial = sim_nao(especial)
     esta_ativo = sim_nao(ativo)
 
+    datas = {
+        "data_autorizacao": data_iso_contada(
+            linha,
+            "DT_AUTORIZACAO",
+            "data_autorizacao",
+            falhas_datas,
+        ),
+        "data_publicacao": data_iso_contada(
+            linha,
+            "DT_PUBLICACAO",
+            "data_publicacao",
+            falhas_datas,
+        ),
+        "data_cancelamento": data_iso_contada(
+            linha,
+            "DT_CANCELAMENTO",
+            "data_cancelamento",
+            falhas_datas,
+        ),
+        "data_carga_fonte": data_iso_contada(
+            linha,
+            "DT_CARGA_ETL",
+            "data_carga_fonte",
+            falhas_datas,
+        ),
+    }
+
     valores = {
-        "autorizacao_nova": txt(linha.get("NU_AUTORIZACAO_NOVO")),
+        "autorizacao_nova": txt(
+            linha.get("NU_AUTORIZACAO_NOVO")
+        ),
         "autorizacao_especial": especial,
         "ativo": ativo,
-        "data_autorizacao": txt(linha.get("DT_AUTORIZACAO")),
-        "data_publicacao": txt(linha.get("DT_PUBLICACAO")),
-        "data_cancelamento": txt(linha.get("DT_CANCELAMENTO")),
+        **datas,
         "classe": txt(linha.get("TIPO_PRODUTO")),
-        "atividade_tipo": txt(linha.get("CO_TIPO_ATIVIDADES")),
+        "atividade_tipo": txt(
+            linha.get("CO_TIPO_ATIVIDADES")
+        ),
         "atividade": txt(linha.get("ATIVIDADES")),
         "nome_fantasia": txt(linha.get("NO_FANTASIA")),
         "municipio": txt(linha.get("CIDADE")),
@@ -180,10 +279,15 @@ def enriquecer_item(item, linha):
         "cep": txt(linha.get("NU_CEP")),
         "endereco": txt(linha.get("DS_ENDERECO")),
         "bairro": txt(linha.get("BAIRRO")),
-        "responsavel_tecnico": txt(linha.get("REPRESENTANTE_TECNICO")),
-        "responsavel_legal": txt(linha.get("REPRESENTANTE_LEGAL")),
-        "codigo_municipio_ibge": txt(linha.get("CO_MUNICIPIO_IBGE")),
-        "data_carga_fonte": txt(linha.get("DT_CARGA_ETL")),
+        "responsavel_tecnico": txt(
+            linha.get("REPRESENTANTE_TECNICO")
+        ),
+        "responsavel_legal": txt(
+            linha.get("REPRESENTANTE_LEGAL")
+        ),
+        "codigo_municipio_ibge": txt(
+            linha.get("CO_MUNICIPIO_IBGE")
+        ),
     }
 
     if eh_especial is True:
@@ -195,6 +299,9 @@ def enriquecer_item(item, linha):
         valores["situacao"] = "Ativa"
     elif esta_ativo is False:
         valores["situacao"] = "Inativa"
+
+    for campo in datas:
+        item.pop(campo, None)
 
     for campo, valor in valores.items():
         if valor not in ("", None):
@@ -219,6 +326,7 @@ def resumo_teste(registros):
         "data_autorizacao",
         "data_publicacao",
         "data_cancelamento",
+        "data_carga_fonte",
         "classe",
         "atividade",
         "municipio",
@@ -235,27 +343,127 @@ def resumo_teste(registros):
             }
             ids.discard("")
             if alvo in ids:
-                encontrados.append({
-                    campo: item.get(campo)
-                    for campo in campos
-                    if item.get(campo) not in ("", None)
-                })
-        saida.append({"entrada": entrada, "encontrados": encontrados})
+                encontrados.append(
+                    {
+                        campo: item.get(campo)
+                        for campo in campos
+                        if item.get(campo) not in ("", None)
+                    }
+                )
+        saida.append(
+            {
+                "entrada": entrada,
+                "encontrados": encontrados,
+            }
+        )
     return saida
 
 
 def contar(registros, campo):
-    return sum(1 for item in registros if item.get(campo) not in ("", None, [], {}))
+    return sum(
+        1
+        for item in registros
+        if item.get(campo) not in ("", None, [], {})
+    )
+
+
+def chave_atividade(item):
+    return "|".join(
+        (
+            digitos(item.get("cnpj")),
+            digitos(item.get("autorizacao")),
+            digitos(item.get("processo")),
+        )
+    )
+
+
+def gravar_fragmentos(registros):
+    grupos = defaultdict(list)
+    atividades = defaultdict(dict)
+
+    for item in registros:
+        cnpj = digitos(item.get("cnpj"))
+        if len(cnpj) != 14:
+            continue
+
+        prefixo = cnpj[:PREFIXO]
+        atividade = item.pop("atividade", None)
+
+        if atividade not in ("", None):
+            chave = chave_atividade(item)
+            existente = atividades[prefixo].get(chave)
+            if existente is not None and existente != atividade:
+                raise RuntimeError(
+                    "Conflito no fragmento de atividade para "
+                    f"{chave}."
+                )
+            atividades[prefixo][chave] = atividade
+
+        grupos[prefixo].append(item)
+
+    PASTA.mkdir(parents=True, exist_ok=True)
+    PASTA_ATIVIDADES.mkdir(parents=True, exist_ok=True)
+
+    for antigo in PASTA.glob("*.json"):
+        antigo.unlink()
+    for antigo in PASTA_ATIVIDADES.glob("*.json"):
+        antigo.unlink()
+
+    maior_principal = 0
+    for prefixo, itens in grupos.items():
+        caminho = PASTA / f"{prefixo}.json"
+        caminho.write_text(
+            json.dumps(
+                itens,
+                ensure_ascii=False,
+                separators=(",", ":"),
+            ),
+            encoding="utf-8",
+        )
+        maior_principal = max(
+            maior_principal,
+            caminho.stat().st_size,
+        )
+
+    maior_atividade = 0
+    for prefixo, itens in atividades.items():
+        caminho = PASTA_ATIVIDADES / f"{prefixo}.json"
+        caminho.write_text(
+            json.dumps(
+                itens,
+                ensure_ascii=False,
+                separators=(",", ":"),
+            ),
+            encoding="utf-8",
+        )
+        maior_atividade = max(
+            maior_atividade,
+            caminho.stat().st_size,
+        )
+
+    return {
+        "fragmentos_principais": len(grupos),
+        "fragmentos_atividade": len(atividades),
+        "maior_fragmento_principal": maior_principal,
+        "maior_fragmento_atividade": maior_atividade,
+    }
 
 
 def main():
-    registros, exato, proc_cnpj, aut_cnpj, cnpj_idx = carregar_local()
+    (
+        registros,
+        exato,
+        proc_cnpj,
+        aut_cnpj,
+        cnpj_idx,
+    ) = carregar_local()
     if not registros:
         raise RuntimeError("Base afe_ae local ausente.")
 
     arquivo = baixar_csv(FONTE)
     enriquecidos = set()
     metodos = defaultdict(int)
+    falhas_datas = defaultdict(int)
     linhas_fonte = 0
     sem_vinculo = 0
     ambiguos = 0
@@ -269,9 +477,14 @@ def main():
             errors="replace",
             newline="",
         ) as f:
-            leitor = csv.DictReader(f, delimiter=delimitador)
+            leitor = csv.DictReader(
+                f,
+                delimiter=delimitador,
+            )
             if not leitor.fieldnames:
-                raise RuntimeError("CSV oficial AFE/AE sem cabeçalho.")
+                raise RuntimeError(
+                    "CSV oficial AFE/AE sem cabeçalho."
+                )
             campos_observados = list(leitor.fieldnames)
 
             obrigatorios = {
@@ -282,14 +495,23 @@ def main():
                 "ST_AUTORIZACAO_ESPECIAL",
                 "DT_PUBLICACAO",
             }
-            faltantes = sorted(obrigatorios.difference(campos_observados))
+            faltantes = sorted(
+                obrigatorios.difference(
+                    campos_observados
+                )
+            )
             if faltantes:
                 raise RuntimeError(
                     "Base oficial AFE/AE perdeu campos obrigatórios: "
                     + ", ".join(faltantes)
                 )
 
-            indices = (exato, proc_cnpj, aut_cnpj, cnpj_idx)
+            indices = (
+                exato,
+                proc_cnpj,
+                aut_cnpj,
+                cnpj_idx,
+            )
 
             for linha in leitor:
                 linhas_fonte += 1
@@ -299,82 +521,205 @@ def main():
                 if len(c) != 14:
                     continue
 
-                lista, metodo = candidatos(indices, p, a, c)
+                lista, metodo = candidatos(
+                    indices,
+                    p,
+                    a,
+                    c,
+                )
                 if not lista:
                     sem_vinculo += 1
                     continue
 
-                if metodo != "processo+autorizacao+cnpj" and len(lista) != 1:
+                if (
+                    metodo
+                    != "processo+autorizacao+cnpj"
+                    and len(lista) != 1
+                ):
                     ambiguos += 1
                     continue
 
                 metodos[metodo] += len(lista)
                 for idx in lista:
-                    enriquecer_item(registros[idx], linha)
+                    enriquecer_item(
+                        registros[idx],
+                        linha,
+                        falhas_datas,
+                    )
                     enriquecidos.add(idx)
     finally:
         arquivo.unlink(missing_ok=True)
 
-    grupos = defaultdict(list)
-    for item in registros:
-        cnpj = digitos(item.get("cnpj"))
-        if len(cnpj) == 14:
-            grupos[cnpj[:PREFIXO]].append(item)
-
-    for antigo in PASTA.glob("*.json"):
-        antigo.unlink()
-
-    for prefixo, itens in grupos.items():
-        (PASTA / f"{prefixo}.json").write_text(
-            json.dumps(itens, ensure_ascii=False, separators=(",", ":")),
-            encoding="utf-8",
-        )
-
     cobertura = {
         "total_autorizacoes": len(registros),
         "vinculos_enriquecidos": len(enriquecidos),
-        "sem_vinculo_enriquecimento": len(registros) - len(enriquecidos),
+        "sem_vinculo_enriquecimento": (
+            len(registros) - len(enriquecidos)
+        ),
         "com_tipo": contar(registros, "tipo"),
-        "com_situacao": contar(registros, "situacao"),
-        "com_data_publicacao": contar(registros, "data_publicacao"),
-        "com_data_cancelamento": contar(registros, "data_cancelamento"),
-        "com_atividade": contar(registros, "atividade"),
-        "com_classe": contar(registros, "classe"),
-        "com_autorizacao_nova": contar(registros, "autorizacao_nova"),
-        "afe": sum(1 for item in registros if item.get("tipo") == "AFE"),
-        "ae": sum(1 for item in registros if item.get("tipo") == "AE"),
-        "ativas": sum(1 for item in registros if item.get("situacao") == "Ativa"),
-        "inativas": sum(1 for item in registros if item.get("situacao") == "Inativa"),
+        "com_situacao": contar(
+            registros,
+            "situacao",
+        ),
+        "com_data_autorizacao": contar(
+            registros,
+            "data_autorizacao",
+        ),
+        "com_data_publicacao": contar(
+            registros,
+            "data_publicacao",
+        ),
+        "com_data_cancelamento": contar(
+            registros,
+            "data_cancelamento",
+        ),
+        "com_data_carga_fonte": contar(
+            registros,
+            "data_carga_fonte",
+        ),
+        "com_atividade": contar(
+            registros,
+            "atividade",
+        ),
+        "com_classe": contar(
+            registros,
+            "classe",
+        ),
+        "com_autorizacao_nova": contar(
+            registros,
+            "autorizacao_nova",
+        ),
+        "afe": sum(
+            1
+            for item in registros
+            if item.get("tipo") == "AFE"
+        ),
+        "ae": sum(
+            1
+            for item in registros
+            if item.get("tipo") == "AE"
+        ),
+        "ativas": sum(
+            1
+            for item in registros
+            if item.get("situacao") == "Ativa"
+        ),
+        "inativas": sum(
+            1
+            for item in registros
+            if item.get("situacao") == "Inativa"
+        ),
     }
 
     casos = resumo_teste(registros)
-    (DADOS / "afe_ae_casos_teste.json").write_text(
-        json.dumps(casos, ensure_ascii=False, indent=2),
+    (
+        DADOS / "afe_ae_casos_teste.json"
+    ).write_text(
+        json.dumps(
+            casos,
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
+    )
+
+    fragmentacao = gravar_fragmentos(registros)
+
+    falhas_datas_completas = {
+        campo: falhas_datas.get(campo, 0)
+        for campo in (
+            "data_autorizacao",
+            "data_publicacao",
+            "data_cancelamento",
+            "data_carga_fonte",
+        )
+    }
+    total_falhas_datas = sum(
+        falhas_datas_completas.values()
     )
 
     agora = datetime.now(timezone.utc).isoformat()
     schema = {
-        "versao": 2,
+        "versao": 3,
         "gerado_em": agora,
         "fonte_primaria": FONTE,
         "fonte_enriquecimento": FONTE,
         "dicionario_oficial": DICIONARIO,
         "campos_fonte_observados": campos_observados,
+        "campos_expostos": CAMPOS_EXPOSTOS,
+        "campos_fragmento_principal": (
+            CAMPOS_FRAGMENTO_PRINCIPAL
+        ),
+        "fragmento_atividade": {
+            "pasta": "afe_ae_atividades",
+            "campo": "atividade",
+            "fragmentacao": (
+                "3 primeiros dígitos do CNPJ"
+            ),
+            "chave": "cnpj|autorizacao|processo",
+        },
+        "datas": {
+            "formato_saida": "YYYY-MM-DD",
+            "formato_origem_aceito": "MM/DD/YYYY",
+            "campos": [
+                "data_autorizacao",
+                "data_publicacao",
+                "data_cancelamento",
+                "data_carga_fonte",
+            ],
+            "falhas_normalizacao": (
+                falhas_datas_completas
+            ),
+            "total_falhas_normalizacao": (
+                total_falhas_datas
+            ),
+        },
         "mapeamento": {
             "tipo": {
-                "origem": "ST_AUTORIZACAO_ESPECIAL",
-                "regra": "S/Sim = AE; N/Não = AFE, conforme dicionário oficial.",
+                "origem": (
+                    "ST_AUTORIZACAO_ESPECIAL"
+                ),
+                "regra": (
+                    "S/Sim = AE; N/Não = AFE, "
+                    "conforme dicionário oficial."
+                ),
             },
             "situacao": {
                 "origem": "ATIVO",
-                "regra": "Sim = Ativa; Não = Inativa, conforme dicionário oficial.",
+                "regra": (
+                    "Sim = Ativa; Não = Inativa, "
+                    "conforme dicionário oficial."
+                ),
             },
-            "data_publicacao": {"origem": "DT_PUBLICACAO"},
-            "data_cancelamento": {"origem": "DT_CANCELAMENTO"},
-            "autorizacao_nova": {"origem": "NU_AUTORIZACAO_NOVO"},
-            "classe": {"origem": "TIPO_PRODUTO"},
-            "atividade": {"origem": "ATIVIDADES"},
+            "data_autorizacao": {
+                "origem": "DT_AUTORIZACAO",
+                "saida": "ISO 8601 (YYYY-MM-DD)",
+            },
+            "data_publicacao": {
+                "origem": "DT_PUBLICACAO",
+                "saida": "ISO 8601 (YYYY-MM-DD)",
+            },
+            "data_cancelamento": {
+                "origem": "DT_CANCELAMENTO",
+                "saida": "ISO 8601 (YYYY-MM-DD)",
+            },
+            "data_carga_fonte": {
+                "origem": "DT_CARGA_ETL",
+                "saida": "ISO 8601 (YYYY-MM-DD)",
+            },
+            "autorizacao_nova": {
+                "origem": "NU_AUTORIZACAO_NOVO",
+            },
+            "classe": {
+                "origem": "TIPO_PRODUTO",
+            },
+            "atividade": {
+                "origem": "ATIVIDADES",
+                "armazenamento": (
+                    "fragmento separado "
+                    "afe_ae_atividades"
+                ),
+            },
         },
         "campos_nao_disponiveis_nesta_fonte": [
             "resolucao",
@@ -383,34 +728,68 @@ def main():
             "historico_de_eventos",
         ],
         "regra": (
-            "Nenhum tipo AFE/AE, situação ou publicação é inferido pelo formato "
-            "do número. O tipo decorre exclusivamente de ST_AUTORIZACAO_ESPECIAL "
-            "e a situação exclusivamente de ATIVO, ambos documentados pela Anvisa."
+            "Nenhum tipo AFE/AE, situação ou publicação é "
+            "inferido pelo formato do número. O tipo decorre "
+            "exclusivamente de ST_AUTORIZACAO_ESPECIAL e a "
+            "situação exclusivamente de ATIVO, ambos "
+            "documentados pela Anvisa."
         ),
         "linhas_fonte": linhas_fonte,
         "registros_locais": len(registros),
         "vinculos_enriquecidos": len(enriquecidos),
         "linhas_fonte_sem_vinculo": sem_vinculo,
         "vinculos_ambiguos_descartados": ambiguos,
-        "metodos_vinculo": dict(sorted(metodos.items())),
+        "metodos_vinculo": dict(
+            sorted(metodos.items())
+        ),
         "cobertura": cobertura,
+        "fragmentacao": fragmentacao,
         "casos_teste": "afe_ae_casos_teste.json",
     }
 
-    (DADOS / "afe_ae_schema.json").write_text(
-        json.dumps(schema, ensure_ascii=False, indent=2),
+    (
+        DADOS / "afe_ae_schema.json"
+    ).write_text(
+        json.dumps(
+            schema,
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )
 
     manifest_path = DADOS / "manifest.json"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    b = manifest.setdefault("bases", {}).setdefault("afe_ae", {})
+    manifest = json.loads(
+        manifest_path.read_text(encoding="utf-8")
+    )
+    manifest["versao_esquema"] = 3
+
+    b = (
+        manifest.setdefault("bases", {})
+        .setdefault("afe_ae", {})
+    )
     b["fonte_enriquecimento"] = FONTE
     b["dicionario_oficial"] = DICIONARIO
     b["enriquecimento_gerado_em"] = agora
-    b["vinculos_enriquecidos"] = len(enriquecidos)
+    b["vinculos_enriquecidos"] = len(
+        enriquecidos
+    )
     b["schema"] = "afe_ae_schema.json"
     b["casos_teste"] = "afe_ae_casos_teste.json"
+    b["campos_expostos"] = CAMPOS_EXPOSTOS
+    b["campos_fragmento_principal"] = (
+        CAMPOS_FRAGMENTO_PRINCIPAL
+    )
+    b["fragmento_atividade"] = {
+        "pasta": "afe_ae_atividades",
+        "campo": "atividade",
+        "prefixo": PREFIXO,
+        "fragmentacao": (
+            "3 primeiros dígitos do CNPJ"
+        ),
+        "chave": "cnpj|autorizacao|processo",
+        **fragmentacao,
+    }
     b["campos_enriquecimento"] = [
         "autorizacao_nova",
         "tipo",
@@ -418,11 +797,36 @@ def main():
         "data_autorizacao",
         "data_publicacao",
         "data_cancelamento",
+        "data_carga_fonte",
         "classe",
+        "atividade_tipo",
         "atividade",
+        "nome_fantasia",
         "municipio",
         "uf",
+        "cep",
+        "endereco",
+        "bairro",
+        "responsavel_tecnico",
+        "responsavel_legal",
+        "codigo_municipio_ibge",
+        "fonte_base",
     ]
+    b["datas_iso"] = {
+        "formato": "YYYY-MM-DD",
+        "campos": [
+            "data_autorizacao",
+            "data_publicacao",
+            "data_cancelamento",
+            "data_carga_fonte",
+        ],
+        "falhas_normalizacao": (
+            falhas_datas_completas
+        ),
+        "total_falhas_normalizacao": (
+            total_falhas_datas
+        ),
+    }
     b["campos_indisponiveis"] = [
         "resolucao",
         "ato_publicacao",
@@ -430,20 +834,67 @@ def main():
     ]
     b["cobertura_enriquecimento"] = cobertura
     b["regra_enriquecimento"] = (
-        "Sem inferência pelo número: tipo e situação vêm de campos oficiais "
-        "documentados da própria base aberta da Anvisa."
+        "Sem inferência pelo número: tipo e situação vêm "
+        "de campos oficiais documentados da própria base "
+        "aberta da Anvisa."
     )
+    b["maior_fragmento"] = (
+        fragmentacao["maior_fragmento_principal"]
+    )
+
     manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2),
+        json.dumps(
+            manifest,
+            ensure_ascii=False,
+            indent=2,
+        ),
         encoding="utf-8",
     )
 
-    print("AFE/AE enriquecida a partir da base aberta oficial.")
+    print(
+        "AFE/AE enriquecida a partir da base aberta oficial."
+    )
     print("Linhas fonte:", linhas_fonte)
-    print("Registros locais:", len(registros))
-    print("Vínculos enriquecidos:", len(enriquecidos))
-    print("Cobertura:", json.dumps(cobertura, ensure_ascii=False))
-    print("Casos de teste:", json.dumps(casos, ensure_ascii=False))
+    print(
+        "Registros locais:",
+        len(registros),
+    )
+    print(
+        "Vínculos enriquecidos:",
+        len(enriquecidos),
+    )
+    print(
+        "Falhas normalização datas:",
+        json.dumps(
+            falhas_datas_completas,
+            ensure_ascii=False,
+        ),
+    )
+    print(
+        "Total falhas normalização datas:",
+        total_falhas_datas,
+    )
+    print(
+        "Fragmentação:",
+        json.dumps(
+            fragmentacao,
+            ensure_ascii=False,
+        ),
+    )
+    print(
+        "Cobertura:",
+        json.dumps(
+            cobertura,
+            ensure_ascii=False,
+        ),
+    )
+    print(
+        "Casos de teste:",
+        json.dumps(
+            casos,
+            ensure_ascii=False,
+        ),
+    )
 
 
 if __name__ == "__main__":
