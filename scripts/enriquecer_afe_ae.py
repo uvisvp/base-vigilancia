@@ -5,6 +5,7 @@ import csv
 import json
 import re
 import shutil
+import ssl
 import tempfile
 import time
 import unicodedata
@@ -63,9 +64,14 @@ def baixar_csv(url, tentativas=4):
             url,
             headers={"User-Agent": "Mozilla/5.0 base-vigilancia"},
         )
+        contexto_ssl = ssl._create_unverified_context()
         try:
             tmp = Path(tempfile.mkstemp(prefix="afe_ae_oficial_", suffix=".csv")[1])
-            with urllib.request.urlopen(req, timeout=180) as r, tmp.open("wb") as f:
+            with urllib.request.urlopen(
+                req,
+                timeout=180,
+                context=contexto_ssl,
+            ) as r, tmp.open("wb") as f:
                 shutil.copyfileobj(r, f)
             if tmp.stat().st_size < 1_000_000:
                 raise RuntimeError("Arquivo AFE/AE oficial pequeno demais.")
