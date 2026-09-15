@@ -1,6 +1,6 @@
 {
-  "versao": 2,
-  "gerado_em": "2026-09-15T01:47:48.177696+00:00",
+  "versao": 3,
+  "gerado_em": "2026-09-15T02:23:05.454331+00:00",
   "fonte_primaria": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
   "fonte_enriquecimento": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
   "dicionario_oficial": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/Documentacao_e_Dicionario_de_Dados_Certificado_AFE.pdf",
@@ -31,6 +31,84 @@
     "ATIVIDADES",
     "DT_CARGA_ETL"
   ],
+  "campos_expostos": [
+    "cnpj",
+    "razao_social",
+    "nome_fantasia",
+    "autorizacao",
+    "autorizacao_nova",
+    "processo",
+    "tipo",
+    "autorizacao_especial",
+    "situacao",
+    "ativo",
+    "data_autorizacao",
+    "data_publicacao",
+    "data_cancelamento",
+    "classe",
+    "atividade_tipo",
+    "atividade",
+    "municipio",
+    "uf",
+    "cep",
+    "endereco",
+    "bairro",
+    "responsavel_tecnico",
+    "responsavel_legal",
+    "codigo_municipio_ibge",
+    "data_carga_fonte",
+    "fonte_base"
+  ],
+  "campos_fragmento_principal": [
+    "cnpj",
+    "razao_social",
+    "nome_fantasia",
+    "autorizacao",
+    "autorizacao_nova",
+    "processo",
+    "tipo",
+    "autorizacao_especial",
+    "situacao",
+    "ativo",
+    "data_autorizacao",
+    "data_publicacao",
+    "data_cancelamento",
+    "classe",
+    "atividade_tipo",
+    "municipio",
+    "uf",
+    "cep",
+    "endereco",
+    "bairro",
+    "responsavel_tecnico",
+    "responsavel_legal",
+    "codigo_municipio_ibge",
+    "data_carga_fonte",
+    "fonte_base"
+  ],
+  "fragmento_atividade": {
+    "pasta": "afe_ae_atividades",
+    "campo": "atividade",
+    "fragmentacao": "3 primeiros dígitos do CNPJ",
+    "chave": "cnpj|autorizacao|processo"
+  },
+  "datas": {
+    "formato_saida": "YYYY-MM-DD",
+    "formato_origem_aceito": "MM/DD/YYYY",
+    "campos": [
+      "data_autorizacao",
+      "data_publicacao",
+      "data_cancelamento",
+      "data_carga_fonte"
+    ],
+    "falhas_normalizacao": {
+      "data_autorizacao": 0,
+      "data_publicacao": 0,
+      "data_cancelamento": 0,
+      "data_carga_fonte": 0
+    },
+    "total_falhas_normalizacao": 0
+  },
   "mapeamento": {
     "tipo": {
       "origem": "ST_AUTORIZACAO_ESPECIAL",
@@ -40,11 +118,21 @@
       "origem": "ATIVO",
       "regra": "Sim = Ativa; Não = Inativa, conforme dicionário oficial."
     },
+    "data_autorizacao": {
+      "origem": "DT_AUTORIZACAO",
+      "saida": "ISO 8601 (YYYY-MM-DD)"
+    },
     "data_publicacao": {
-      "origem": "DT_PUBLICACAO"
+      "origem": "DT_PUBLICACAO",
+      "saida": "ISO 8601 (YYYY-MM-DD)"
     },
     "data_cancelamento": {
-      "origem": "DT_CANCELAMENTO"
+      "origem": "DT_CANCELAMENTO",
+      "saida": "ISO 8601 (YYYY-MM-DD)"
+    },
+    "data_carga_fonte": {
+      "origem": "DT_CARGA_ETL",
+      "saida": "ISO 8601 (YYYY-MM-DD)"
     },
     "autorizacao_nova": {
       "origem": "NU_AUTORIZACAO_NOVO"
@@ -53,7 +141,8 @@
       "origem": "TIPO_PRODUTO"
     },
     "atividade": {
-      "origem": "ATIVIDADES"
+      "origem": "ATIVIDADES",
+      "armazenamento": "fragmento separado afe_ae_atividades"
     }
   },
   "campos_nao_disponiveis_nesta_fonte": [
@@ -77,8 +166,10 @@
     "sem_vinculo_enriquecimento": 0,
     "com_tipo": 351408,
     "com_situacao": 351408,
+    "com_data_autorizacao": 350763,
     "com_data_publicacao": 351408,
     "com_data_cancelamento": 134815,
+    "com_data_carga_fonte": 351404,
     "com_atividade": 351407,
     "com_classe": 351408,
     "com_autorizacao_nova": 320294,
@@ -86,6 +177,12 @@
     "ae": 23935,
     "ativas": 216593,
     "inativas": 134815
+  },
+  "fragmentacao": {
+    "fragmentos_principais": 981,
+    "fragmentos_atividade": 981,
+    "maior_fragmento_principal": 4214500,
+    "maior_fragmento_atividade": 3623542
   },
   "casos_teste": "afe_ae_casos_teste.json"
 }
