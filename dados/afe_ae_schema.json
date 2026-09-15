@@ -1,0 +1,91 @@
+{
+  "versao": 2,
+  "gerado_em": "2026-09-15T01:47:48.177696+00:00",
+  "fonte_primaria": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
+  "fonte_enriquecimento": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
+  "dicionario_oficial": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/Documentacao_e_Dicionario_de_Dados_Certificado_AFE.pdf",
+  "campos_fonte_observados": [
+    "NU_CNPJ",
+    "NO_RAZAO_SOCIAL",
+    "NU_AUTORIZACAO",
+    "NU_AUTORIZACAO_NOVO",
+    "NU_PROCESSO",
+    "DT_AUTORIZACAO",
+    "ATIVO",
+    "TIPO_PRODUTO",
+    "CO_TIPO_ATIVIDADES",
+    "ST_AUTORIZACAO_ESPECIAL",
+    "DT_CANCELAMENTO",
+    "NO_FANTASIA",
+    "DS_HOMEPAGE",
+    "NU_SAC",
+    "DT_PUBLICACAO",
+    "CIDADE",
+    "UF",
+    "NU_CEP",
+    "DS_ENDERECO",
+    "BAIRRO",
+    "REPRESENTANTE_TECNICO",
+    "REPRESENTANTE_LEGAL",
+    "CO_MUNICIPIO_IBGE",
+    "ATIVIDADES",
+    "DT_CARGA_ETL"
+  ],
+  "mapeamento": {
+    "tipo": {
+      "origem": "ST_AUTORIZACAO_ESPECIAL",
+      "regra": "S/Sim = AE; N/Não = AFE, conforme dicionário oficial."
+    },
+    "situacao": {
+      "origem": "ATIVO",
+      "regra": "Sim = Ativa; Não = Inativa, conforme dicionário oficial."
+    },
+    "data_publicacao": {
+      "origem": "DT_PUBLICACAO"
+    },
+    "data_cancelamento": {
+      "origem": "DT_CANCELAMENTO"
+    },
+    "autorizacao_nova": {
+      "origem": "NU_AUTORIZACAO_NOVO"
+    },
+    "classe": {
+      "origem": "TIPO_PRODUTO"
+    },
+    "atividade": {
+      "origem": "ATIVIDADES"
+    }
+  },
+  "campos_nao_disponiveis_nesta_fonte": [
+    "resolucao",
+    "ato_publicacao",
+    "motivo_situacao_inativa",
+    "historico_de_eventos"
+  ],
+  "regra": "Nenhum tipo AFE/AE, situação ou publicação é inferido pelo formato do número. O tipo decorre exclusivamente de ST_AUTORIZACAO_ESPECIAL e a situação exclusivamente de ATIVO, ambos documentados pela Anvisa.",
+  "linhas_fonte": 351408,
+  "registros_locais": 351408,
+  "vinculos_enriquecidos": 351408,
+  "linhas_fonte_sem_vinculo": 0,
+  "vinculos_ambiguos_descartados": 0,
+  "metodos_vinculo": {
+    "processo+autorizacao+cnpj": 351408
+  },
+  "cobertura": {
+    "total_autorizacoes": 351408,
+    "vinculos_enriquecidos": 351408,
+    "sem_vinculo_enriquecimento": 0,
+    "com_tipo": 351408,
+    "com_situacao": 351408,
+    "com_data_publicacao": 351408,
+    "com_data_cancelamento": 134815,
+    "com_atividade": 351407,
+    "com_classe": 351408,
+    "com_autorizacao_nova": 320294,
+    "afe": 327473,
+    "ae": 23935,
+    "ativas": 216593,
+    "inativas": 134815
+  },
+  "casos_teste": "afe_ae_casos_teste.json"
+}
