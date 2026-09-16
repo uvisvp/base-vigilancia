@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "scripts/atualizar_legislacao_manipulacao.py"
+      - "scripts/validar_legislacao_manipulacao.py"
       - ".github/workflows/atualizar-legislacao-manipulacao.yml"
 
 permissions:
@@ -48,6 +49,9 @@ jobs:
 
       - name: Atualizar RDC 67, RDC 87 e RDC 21 pelo AnvisaLegis
         run: python scripts/atualizar_legislacao_manipulacao.py
+
+      - name: Validar anexos e metadados editoriais
+        run: python scripts/validar_legislacao_manipulacao.py
 
       - name: Resumo
         if: always()
