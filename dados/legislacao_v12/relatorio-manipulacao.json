@@ -1,0 +1,34 @@
+{
+  "gerado_em": "2026-09-16T19:29:22.875598+00:00",
+  "fonte": "AnvisaLegis",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 67-2007",
+      "caracteres": 427582
+    },
+    {
+      "norma": "RDC 87-2008",
+      "caracteres": 7428
+    },
+    {
+      "norma": "RDC 21-2009",
+      "caracteres": 3169
+    }
+  ],
+  "validacao": {
+    "normas_manifest": 26,
+    "rdc67_nos": 4808,
+    "rdc67_anexos": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII"
+    ],
+    "item_2_7_anexo_iii": "rdc-67-2007::anexo-iii::anexo::iii::item::2-7"
+  }
+}

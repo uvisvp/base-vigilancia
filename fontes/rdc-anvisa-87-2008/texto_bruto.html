@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="aui ltr yui3-js-enabled js" dir="ltr" lang="pt-BR" amp>
+    <head>
+    	<title>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 87, de 21/11/2008	</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1e2b4d">
+        <link rel="icon" type="image/png" sizes="32x32" href="/v2/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/v2/img/favicon-16x16.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- 
+		<link rel="apple-touch-icon" sizes="32x32" href="/v2/img/mobile/logo_app32.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="/v2/img/mobile/logo_app96.png" />
+		-->
+		<link rel="apple-touch-icon" sizes="144x144" href="/v2/img/mobile/logo_app144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/v2/img/mobile/logo_app192.png" />
+        
+        <link href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="/v2/css/header.css?20260916" rel="stylesheet" type="text/css">
+		<link href="/v2/css/custom.css?20260916" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/view/css/jquery-ui.css" />
+		<link rel="stylesheet" href="/view/css/styles.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/view/css/style.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/view/css/treeview.css" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/social-media.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/texto-ato.css?20260916" type="text/css" />
+		<!-- CUSTOM ANVISA -->
+		<link rel="stylesheet" href="/v2/css/folha_rosto_anvisa.css?20260916" type="text/css" />
+	</head>
+	<body id="corpo" class="">
+		<div class="container-fluid">
+			<div class="container">
+    			<div class="noprint" style="border-bottom: 1px solid #ccc; padding: 8px 0;">
+                	<nav id="breadcrumbs">
+                        <ul class="breadcrumb breadcrumb-horizontal">
+                        	<li>
+                        		<a href="/action/ActionDatalegis.php?acao=apresentacao&cod_menu=1696&cod_modulo=134" title="Voltar para Home">
+                        			<i class="fas fa-home"></i>
+                        		</a>
+                        	</li>
+                        	<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        	<li class="first">
+                                <a href="/action/ActionDatalegis.php?acao=categorias&cod_modulo=134&menuOpen=true">ATOS GERAIS      DA ANVISA</a>
+                        	</li>
+    					<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        <li class="active last">
+                            <a href="/action/ActionDatalegis.php?acao=abrirLegislacao&cod_modulo=134&cod_menu=1696">BUSCA LIVRE</a>
+                        </li>
+                    	</ul>
+                    </nav>
+                    <a href="javascript:;" id="voltar" class="float-right" onclick="window.close()">
+                    	<i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Voltar
+                    </a>
+				</div>
+    			<div class="noprint container" style="padding: 0 10px; margin: 0; text-align: right; display: flex;">
+            		<div id="barra-icones" class="item">
+            			<ul>
+        				<li>
+            				<a href="javascript:;" onclick="copyTextToClipboard('https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000087&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2008&seq_ato=000&cod_modulo=134&cod_menu=1696', this)" data-toggle="tooltip" data-placement="bottom" title="Copie o link do Ato">
+            					<i class="fas fa-link" aria-hidden="true"></i> <span class="ocultar-mobile">COPIAR LINK</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="tags('00000087','RDC','RDC/DC/ANVISA/MS','2008','000');" title="Cadastre aqui suas Tags para o ATO">
+            					<i class="fas fa-tags" aria-hidden="true"></i> <span class="ocultar-mobile">CRIAR TAGS</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="imprimir();">
+            					<i class="fa fa-print" aria-hidden="true"></i> <span class="ocultar-mobile">IMPRIMIR</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="pdf()">
+            					<i class="fas fa-file-pdf" aria-hidden="true"></i> <span class="ocultar-mobile">PDF</span>
+            				</a>
+        				</li>
+        				<!-- 
+                        -->
+        				<li>
+            				<a id="texto-notas" href="javascript:;" onclick="abrirTodosLinkNota()">
+            					<i class="fas fa-folder-open" aria-hidden="true"></i> <span class="ocultar-mobile">VER NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a id="texto-compilado" href="javascript:;" onclick="fecharTodosLinkNota()" style="text-decoration: underline;">
+            					<i class="fas fa-folder" aria-hidden="true"></i> <span class="ocultar-mobile">FECHAR NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        			</ul>
+    			
+				</div>
+			
+    			<div class="font-settings item item1" style="width: 90px">
+        			<a href="javascript:mudaFonte('mais');" title="Aumentar Texto" style="padding: 0 2px; font-size: 20px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>+
+        			</a>
+        			<i style="padding: 0 2px; margin: -15px 0 5px 0; font-size: 20px; color: #424242;">|</i>
+        			<a href="javascript:mudaFonte('menos');" title="Diminur Texto" style="padding: 0 2px; font-size: 17px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>-
+        			</a>
+        		</div>
+    		
+    		</div>
+            <div class="noprint social-media-share hide" style="display: none;">
+                <a class="share-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000087%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2008%26seq_ato%3D000%26cod_modulo%3D134%26cod_menu%3D1696" target="_blank"></a>
+                <a class="share-twitter" href="http://twitter.com/intent/tweet?text=Resolu√ß√£o da Diretoria Colegiada - RDC n¬∫ 87, de 21/11/2008	&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000087%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2008%26seq_ato%3D000%26cod_modulo%3D134%26cod_menu%3D1696" target="_blank"></a>
+                <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000087%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2008%26seq_ato%3D000%26cod_modulo%3D134%26cod_menu%3D1696" target="_blank"></a>
+                <a class="share-whatsapp" href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000087%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2008%26seq_ato%3D000%26cod_modulo%3D134%26cod_menu%3D1696" target="_blank"></a>
+            </div>
+		<article class="article">
+    		<div id="conteudo">
+				<div class="tab_menor noprint" style="border-bottom: 1px solid #9a9a9a; padding-bottom: 10px; margin: 10px 0;">
+					<div class="row">
+						<div class="col-9">
+    				<strong><span class="ico-situacao alterador status-18" title="Alterador">Alterador</span>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 87, de 21/11/2008	</strong>&nbsp;
+						</div>
+						<div class="col-3 text-right">
+							<a class="btn btn-primary" style="color: white;" onclick="javascript:LinkTexto(&#039;RDC&#039;,&#039;00000087&#039;,&#039;222&#039;,&#039;2008&#039;,&#039;ANVISA/MS&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;)">Ver mais detalhes</a>
+						</div>
+					</div>
+    			</div>
+    			<div class="ato">
+<p style="text-align: center;">MINIST&Eacute;RIO DA SA&Uacute;DE<p style="text-align: center;">AG&Ecirc;NCIA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p style="text-align: center;">DIRETORIA COLEGIADA</p><p style="text-align: center;">RESOLU&Ccedil;&Atilde;O - RDC N&ordm; 87, DE 21 DE NOVEMBRO DE 2008</p><p style="margin-left: 50%;">Altera o Regulamento T&eacute;cnico sobre Boas Pr&aacute;ticas de Manipula&ccedil;&atilde;o em Farm&aacute;cias.</p><p>A Diretoria Colegiada da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, no uso da atribui&ccedil;&atilde;o que lhe confere o inciso IV do art. 11 do Regulamento aprovado pelo Decreto n&ordm; 3.029, de 16 de abril de 1999, e tendo em vista o disposto no inciso II e nos &sect;&sect; 1&ordm; e 3&ordm; do art.54 do Regimento Interno aprovado nos termos do Anexo I da Portaria n&ordm; 354 da ANVISA, de 11 de agosto de 2006, republicada no DOU de 21 de agosto de 2006, em reuni&atilde;o realizada em 23 e 28 de outubro de 2008, considerando a Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 8 de outubro de 2007, publicada no DOU de 9 de outubro de 2007, que aprova o Regulamento T&eacute;cnico sobre Boas Pr&aacute;ticas de Manipula&ccedil;&atilde;o de Prepara&ccedil;&otilde;es Magistrais e Oficinais para Uso Humano em farm&aacute;cias e seus Anexos.adota a seguinte Resolu&ccedil;&atilde;o da Diretoria Colegiada e eu, Diretor-Presidente, determino a sua publica&ccedil;&atilde;o:</p><p>Art. 1&ordm; Os <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">itens 5.17, 5.17.1 e 5.17.2 do Anexo da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>, passam a vigorar com a seguinte reda&ccedil;&atilde;o:</p><p>"ANEXO</p><p>REGULAMENTO T&Eacute;CNICO QUE INSTITUI AS BOAS PR&Aacute;TICAS DE MANIPULA&Ccedil;&Atilde;O EM FARM&Aacute;CIAS (BPMF) ...........................</p><p>5. CONDI&Ccedil;&Otilde;ES GERAIS.....................................................................</p><p>....................</p><p>5.17. Prescri&ccedil;&atilde;o de prepara&ccedil;&otilde;es magistrais."</p><p>5.17.1. Os profissionais legalmente habilitados, respeitando os c&oacute;digos de seus respectivos conselhos profissionais, s&atilde;o os respons&aacute;veis pela prescri&ccedil;&atilde;o das prepara&ccedil;&otilde;es magistrais de que trata este Regulamento T&eacute;cnico e seus Anexos.</p><p>5.17.2 A prescri&ccedil;&atilde;o ou indica&ccedil;&atilde;o, quando realizada pelo farmac&ecirc;utico respons&aacute;vel, tamb&eacute;m deve obedecer aos crit&eacute;rios &eacute;ticos e legais previstos."(NR)</p><p>...........................</p><p>Art. 2&ordm; Incluir o <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">item 5.17.5.1 no anexo da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>, com a seguinte reda&ccedil;&atilde;o :</p><p>"5.17.5.1 Na aus&ecirc;ncia de indica&ccedil;&atilde;o na prescri&ccedil;&atilde;o sobre a dura&ccedil;&atilde;o de tratamento, o farmac&ecirc;utico s&oacute; poder&aacute; efetuar a repeti&ccedil;&atilde;o da receita, ap&oacute;s confirma&ccedil;&atilde;o expressa do profissional prescritor. Manter os registros destas confirma&ccedil;&otilde;es, datados e assinados pelo farmac&ecirc;utico respons&aacute;vel."</p><p>Art. 3&ordm; Os <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">itens 7.3.13, 8.2, 9.1.1, 9.2.3.1, 9.2.4 e 11.2.4 do Anexo I da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>, passam a vigorar com a seguinte reda&ccedil;&atilde;o:</p><p>"ANEXO I</p><p>BOAS PR&Aacute;TICAS DE MANIPULA&Ccedil;&Atilde;O EM FARM&Aacute;CIAS ..........................</p><p>7. MAT&Eacute;RIAS-PRIMAS E MATERIAIS DE EMBALAGEM ...........................</p><p>7.3.13. Devem ser realizados, nas mat&eacute;rias-primas de origem vegetal, os testes para determina&ccedil;&atilde;o dos caracteres organol&eacute;pticos, determina&ccedil;&atilde;o de materiais estranhos, pesquisas de contamina&ccedil;&atilde;o microbiol&oacute;gica (contagem total, fungos e leveduras), umidade e determina&ccedil;&atilde;o de cinzas totais. E ainda, quando aplic&aacute;veis, avalia&ccedil;&atilde;o dos caracteres macrosc&oacute;picos para plantas &iacute;ntegras ou grosseiramente rasuradas; caracteres microsc&oacute;picos para materiais fragmentados ou p&oacute;. Para as mat&eacute;rias-primas l&iacute;quidas de origem vegetal, al&eacute;m dos testes mencionados (quando aplic&aacute;veis), deve ser realizada a determina&ccedil;&atilde;o da densidade." (NR)</p><p>...........................</p><p>8. MANIPULA&Ccedil;&Atilde;O ...........................</p><p>8.2. Os excipientes utilizados na manipula&ccedil;&atilde;o de medicamentos devem ser padronizados pela farm&aacute;cia de acordo com embasamento t&eacute;cnico."(NR)</p><p>...........................</p><p>9. DOS CONTROLES ...........................</p><p>9.1.1. Devem ser realizados, no m&iacute;nimo, os seguintes ensaios, de acordo com a Farmacop&eacute;ia Brasileira ou outro Comp&ecirc;ndio Oficial reconhecido pela ANVISA, em todas as prepara&ccedil;&otilde;es magistrais e oficinais:</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td width="21%"><i><font size="2">Prepara&ccedil;&otilde;es</font></i><font size="2">&nbsp; </font></td>			<td width="79%"><i><font size="2">Ensaios</font></i><font size="2">&nbsp; </font></td>		</tr>		<tr>			<td width="21%"><font size="2"><i>S&oacute;lidas</i>&nbsp; </font></td>			<td width="79%"><font size="2"><i>Descri&ccedil;&atilde;o, aspecto, caracteres organol&eacute;pticos, peso</i>&nbsp;<i>m&eacute;dio.</i>&nbsp; </font></td>		</tr>		<tr>			<td width="21%"><font size="2"><i>Semi-s&oacute;lidas</i>&nbsp; </font></td>			<td width="79%"><font size="2"><i>Descri&ccedil;&atilde;o, aspecto, caracteres organol&eacute;pticos, pH</i>&nbsp;<i>(quando aplic&aacute;vel), peso.</i>&nbsp; </font></td>		</tr>		<tr>			<td width="21%"><font size="2"><i>L&iacute;quidas n&atilde;o-est&eacute;reis</i>&nbsp; </font></td>			<td width="79%"><font size="2"><i>Descri&ccedil;&atilde;o, aspecto, caracteres organol&eacute;pticos,</i>&nbsp;<i>pH(quando aplic&aacute;vel), peso ou volume antes do envase.</i>&nbsp; </font></td>		</tr>	</tbody></table><p>(NR)</p><p>.....................</p><p>9.2.3.1. A farm&aacute;cia deve realizar a an&aacute;lise de no m&iacute;nimo uma f&oacute;rmula a cada dois meses. O n&uacute;mero de unidades para compor a amostra deve ser suficiente para a realiza&ccedil;&atilde;o das an&aacute;lises de que trata o item 9.2.3." (NR)</p><p>9.2.4. As an&aacute;lises das f&oacute;rmulas devem ser realizadas em laborat&oacute;rio anal&iacute;tico pr&oacute;prio ou terceirizado (preferencialmente da Rede Brasileira de Laborat&oacute;rios em Sa&uacute;de - REBLAS)." (NR)</p><p>............................</p><p>11. CONTROLE DE QUALIDADE DO ESTOQUE M&Iacute;NIMO ............................</p><p>11.2.4. No caso das bases gal&ecirc;nicas, a avalia&ccedil;&atilde;o da pureza microbiol&oacute;gica (letra "j" do item 11.2) poder&aacute; ser realizada por meio de monitoramento. Este monitoramento consiste na realiza&ccedil;&atilde;o de an&aacute;lise mensal de pelo menos uma base ou produto acabado que fora feito a partir de base gal&ecirc;nica, devendo ser adotado sistema de rod&iacute;zio considerando o tipo de base, produto e manipulador."(NR)</p><p>Art. 4&ordm; O&nbsp;<a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">item 2.16.1, do Anexo III, da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>, passa a vigorar com a seguinte reda&ccedil;&atilde;o:</p><p>"ANEXO III</p><p>BOAS PR&Aacute;TICAS DE MANIPULA&Ccedil;&Atilde;O DE HORM&Otilde;NIOS, ANTIBI&Oacute;TICOS, CITOST&Aacute;TICOS E SUBST&Acirc;NCIAS SUJEITAS A CONTROLE ESPECIAL ...........................</p><p>2. CONDI&Ccedil;&Otilde;ES GERAIS ...........................</p><p>2.16.1. O monitoramento deve ser realizado por estabelecimento, de forma a serem analisadas no m&iacute;nimo uma amostra a cada tr&ecirc;s meses de uma das classes terap&ecirc;uticas elencadas no item 2.16."(NR)</p><p>...............................</p><p>Art. 5&ordm; Alterar os <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">itens 10.2.2, 11.6.6. 14.3 e 17.32.1 do Anexo VII da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>, que passam a vigorar com a seguinte reda&ccedil;&atilde;o:</p><p>"ANEXO VII</p><p>ROTEIRO DE INSPE&Ccedil;&Atilde;O PARA FARM&Aacute;CIA ....................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td><font size="2"><i>10. DOS CONTROLES</i>&nbsp; </font></td>		</tr>	</tbody></table><p>..........................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td width="16%"><font size="2"><i>10.2.2.</i>&nbsp; </font></td>			<td width="9%"><font size="2"><i>N</i>&nbsp; </font></td>			<td width="49%"><font size="2"><i>&Eacute; realizado o monitoramento do processo, conforme estabelecido no item 9.2.3 e 9.2.3.1 do Anexo I ?</i>&nbsp; </font></td>			<td width="5%"><font size="2"><i>SIM</i>&nbsp; </font></td>			<td width="22%"><font size="2"><i>N&Atilde;O</i>&nbsp; </font></td>		</tr>	</tbody></table><p>(NR)</p><p>................................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td><font size="2"><i>11.MANIPULA&Ccedil;&Atilde;O DO ESTOQUE M&Iacute;NIMO</i>&nbsp; </font></td>		</tr>	</tbody></table><p>............................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td width="16%"><font size="2"><i>11.6.6.</i>&nbsp; </font></td>			<td width="9%"><font size="2"><i>N</i>&nbsp; </font></td>			<td width="48%"><font size="2"><i>No caso das bases gal&ecirc;nicas e de produtos acabados, &eacute;</i>&nbsp;<i>realizado o monitoramento mensal da pureza microbiol&oacute;gica e adotado sistema de rod&iacute;zio considerando o tipo de</i>&nbsp;<i>base, produto e manipulador ?</i>&nbsp; </font></td>			<td width="5%"><font size="2"><i>SIM</i>&nbsp; </font></td>			<td width="22%"><font size="2"><i>N&Atilde;O</i>&nbsp; </font></td>		</tr>	</tbody></table><p>(NR)</p><p>..............................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td><font size="2"><i>14. DISPENSA&Ccedil;&Atilde;O</i>&nbsp; </font></td>		</tr>	</tbody></table><p>............................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td width="15%"><font size="2"><i>14.3</i>&nbsp; </font></td>			<td width="9%"><font size="2"><i>R</i>&nbsp; </font></td>			<td width="49%"><font size="2"><i>A repeti&ccedil;&atilde;o de atendimento de uma mesma receita somente</i>&nbsp;<i>ocorre se houver indica&ccedil;&atilde;o ou confirma&ccedil;&atilde;o expressa do</i>&nbsp;<i>prescritor quanto &agrave; dura&ccedil;&atilde;o do tratamento?</i>&nbsp; </font></td>			<td width="6%"><font size="2"><i>SIM</i>&nbsp; </font></td>			<td width="22%"><font size="2"><i>N&Atilde;O</i>&nbsp; </font></td>		</tr>	</tbody></table><p>(NR)</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td><font size="2"><i>17. </i>MANIPULA&Ccedil;&Atilde;O DE HORM&Otilde;NIOS, ANTIBI&Oacute;TICOS, CITOST&Aacute;TICOS E SUBST&Acirc;NCIAS SUJEITAS A CONTROLE ESPECIAL&nbsp; </font></td>		</tr>	</tbody></table><p>................................</p><table align="center" border="1" cellpadding="4" cellspacing="0" style="width:100%;" width="80%">	<tbody>		<tr>			<td width="16%"><font size="2"><i>17.32.1.</i>&nbsp; </font></td>			<td width="8%"><font size="2"><i>I</i>&nbsp; </font></td>			<td width="49%"><font size="2"><i>O monitoramento obedece a uma periodicidade trimestral</i>&nbsp;<i>para as classes terap&ecirc;uticas elencadas no item anterior?</i>&nbsp; </font></td>			<td width="5%"><font size="2"><i>SIM</i>&nbsp; </font></td>			<td width="22%"><font size="2"><i>N&Atilde;O</i>&nbsp; </font></td>		</tr>	</tbody></table><p>(NR)</p><p>...............................</p><p>Art. 6&ordm; Prorrogar por 90 (noventa) dias, a partir da data de publica&ccedil;&atilde;o desta, o prazo para o atendimento do disposto no <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">item 2.7 do Anexo III da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>.</p><p>Art. 7&ordm; Revogar os <a href="javascript:LinkTexto('RDC','00000067','002','2007','RDC/DC/ANVISA/MS','','','')">itens 9.2.2, 9.2.2.1, 11.3 e 14.3 do Anexo I e o item 11.6.6.1 do Anexo VII da Resolu&ccedil;&atilde;o - RDC n&ordm; 67, de 2007</a>.</p><p>Art.8&ordm; Esta Resolu&ccedil;&atilde;o entra em vigor na data de sua publica&ccedil;&atilde;o.</p><p style="text-align: center;">DIRCEU RAPOSO DE MELLO</p><p style="font-weight: bold;">PUB D.O.U., 24/11/2008 - Se&ccedil;&atilde;o 1</p></p>
+					<p style="font-size: 0.8rem; text-align: center; font-style: italic; color: red;">Este texto n„o substitui a PublicaÁ„o Oficial.</p>
+				</div>
+			</div>
+		</article>
+                    	
+		<form name="formPdf" id="formPdf" action="/action/ActionDatalegis.php?acao=gerarPdfAto&cod_modulo=134&cod_menu=1696" method="post" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formImprimir" id="formImprimir" action="/action/ActionDatalegis.php?acao=imprimirAto&cod_modulo=134&cod_menu=1696" method="get" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formGerarLink" id="formGerarLink" action="/action/ActionDatalegis.php?acao=setGerarLink&cod_modulo=134&cod_menu=1696" method="get" target="_self">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		
+	</div>
+</div>
+		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@1.11/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/view/js/ajax.js"></script> 
+<script type="text/javascript">
+
+	function abreFecha(obj) {
+		if($(obj).is(':visible') ) {
+			$(obj).removeClass('d-block').addClass('d-none');
+		} else {
+			$(obj).removeClass('d-none').addClass('d-block');
+		}
+	}
+	
+	var in_abrir_segundo_nivel = "";
+	var in_abrir_todas_notas = false;
+	
+	function recuperarObjetoPai(obj, nuascendentes) {
+		var objPai = obj;
+	
+		for ( var i = 0; i < nuascendentes; i++) {
+			objPai = objPai.parentNode;
+		}
+	
+		return objPai;
+	}
+	
+	function historico(psLink) {
+		var root;
+		root = window.open(psLink,'Historico','width=360,height=240,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no');
+		root.focus();
+	}
+		
+	function mostra_arquivo(cod, tip, acao, txt, l, a) {
+		var url;
+		var str;
+		if (cod != "") {
+			caminho = "http://www.datalegis.inf.br/datalegis/arquivos/";
+			switch (acao) {
+			case 1: //-- mostra arquivo na tela - apenas imagens
+				document.write("<img src='" + caminho + cod + "." + tip
+						+ "' border='0' width='" + ((l) ? l : "100%")
+						+ "' heigth='" + ((a) ? a : "100%") + "'>");
+				break;
+			case 0: //-- nao mostra arquivo na tela - para todos os tipos
+				document.write("<a href='" + caminho + cod + "." + tip
+						+ "' target='new'>" + txt + "</a>");
+				break;
+			}
+		}
+	}
+
+	function LinkTexto(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, pDesItemFim) {
+		var link = "/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo="
+			+ psSigla + "&numeroAto=" + psNumero + "&seqAto=" + psSeq + "&valorAno=" + psAno + "&orgao=" + psOrgao 
+			+ "&codTipo=" + psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + pDesItemFim
+			+ "&cod_modulo=134&cod_menu=1696";
+		window.open(link, '_blank');		
+	}
+
+	$(function() {
+    	$(document).ajaxStart(function(){
+    		$('#loading').show();
+        })
+        .ajaxStop(function(){
+        	$('#loading').delay(100).hide();
+        	in_abrir_todas_notas = false;
+        });
+
+	});
+
+	$(document).on('click', "a[href*='javascript:LinkNota']", function(e) {
+
+		//e.isImmediatePropagationStopped();
+		e.preventDefault();
+		var objHref = $(this);
+	    var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    
+	    var parameters = parameter.split(",");
+	    
+        var psSigla = parameters[0];
+        var psNumero = parameters[1];
+        var psSeq = parameters[2];
+        var psAno = parameters[3];
+        var psOrgao = parameters[4];
+        var psCodTipo = parameters[5];
+        var psDesItem = parameters[6];
+        var psSeqNota = parameters[7];
+
+        var link = "/action/ActionDatalegis.php?acao=detalharNotaAjax&tipo="+ psSigla+ 
+		"&numeroAto="+ psNumero+ "&seqAto="+ psSeq+ "&valorAno=" +psAno+ 
+		"&orgao="+ psOrgao+ "&codTipo="+ psCodTipo + "&desItem=" + psDesItem + "&seqNota=" + psSeqNota+
+		"&cod_modulo=134&cod_menu=1696";
+		
+        var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+        $(objHref).attr('class', 'ato-'+idAto);
+		var divNota = $(this).siblings('div.'+idAto+':first');
+		
+        if(!$(divNota).length) {		        
+    	  	$.ajax({
+    	        url: link,
+    	        dataType: "text",
+    	        async: true,
+    	        cache: true,
+    	        success: function(html) {
+					$(objHref).parent("em:first").append(html);
+    	        },
+    	        error: function(obj) {
+    	            console.log(obj);
+    	        }
+    	    });
+		} else {
+			$(divNota).toggle();
+		}
+	});
+	
+	function abrirTodosLinkNota() {
+		in_abrir_todas_notas = true;
+		$('div.nota-revogado').show();
+		$('#texto-compilado').css('text-decoration','none');
+		$('#texto-notas').css('text-decoration','underline');
+		var searchLinkNota = "a[href*='javascript:LinkNota']";
+		
+		var linkBase = "/action/ActionDatalegis.php?acao=detalharNotasListaAjax&cod_modulo=134&cod_menu=1696";
+		var linkAjax = '';
+		var registroChamado = 0;
+		var registroChamadoTotal = 0;
+		var registroTotal = $(searchLinkNota).length;
+		var indexInicialChamado = null;
+		
+		$(searchLinkNota).each(function( index ) {
+			if(registroChamado == 0) {
+				linkAjax = '';
+				indexInicialChamado = index;
+			}
+
+			registroChamado++;
+			registroChamadoTotal++;
+			
+			var objHref = $(this);
+			var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    	
+    	    var parameters = parameter.split(",");
+    	    
+            var psSigla = parameters[0];
+            var psNumero = parameters[1];
+            var psSeq = parameters[2];
+            var psAno = parameters[3];
+            var psOrgao = parameters[4];
+            var psCodTipo = parameters[5];
+            var psDesItem = parameters[6];
+            var psSeqNota = parameters[7];
+
+            var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+            var idDivNota = 'ato-'+idAto+'-'+index;
+            $(objHref).attr('class', idDivNota);
+
+            var divNota = $('a.'+idDivNota).siblings('div.'+idAto+':first');
+			
+			if(!$(divNota).length) {
+                linkAjax += "&sgl_tipo[]="+psSigla+"&num_ato[]="+psNumero+"&seq_ato[]="+psSeq+"&vlr_ano[]="+psAno+"&sgl_orgao[]="+psOrgao;
+                linkAjax += "&cod_tipo[]="+psCodTipo+"&des_item[]="+psDesItem+"&seq_nota[]="+psSeqNota+"&index_js[]="+index;
+			}
+			
+            if((registroChamado == 100 || registroChamadoTotal == registroTotal) && linkAjax.length > 0) {
+            	registroChamado = 0;
+                     	
+            	$.ajax({
+        	        url: linkBase,
+        	        type: "POST",
+        	        data: linkAjax,
+        	        dataType: "json",
+        	        async: true,
+        	        cache: true,
+        	        success: function(jsonObj) {        				
+        				$.each(jsonObj, function(index, objNota) {
+        					divNota = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).siblings('div.'+objNota.ID_NOTA+':first');
+        					
+        					if(!$(divNota).length) {
+        						var objetoDestino = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).parent("em:first");
+            					$( "<div/>", {
+            					    "class": "well nota-revogado "+objNota.ID_NOTA,
+            					    html: objNota.NOTAS.join('')
+            					  }).appendTo(objetoDestino);
+        			        } else {
+        			        	$(divNota).show();
+        			        }
+        				});
+        	        },
+        	        error: function(obj) {
+        	            console.log(obj);
+        	        }
+        	    });
+			}
+		});
+	}
+	
+	function fecharTodosLinkNota() {
+		$('#texto-compilado').css('text-decoration','underline');
+		$('#texto-notas').css('text-decoration','none');
+		in_abrir_todas_notas = false;
+		$('div.nota-revogado').hide();
+	}
+	
+	function LinkNota(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psSeqNota) {
+	}
+
+	function gravarArquivo(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psDesItemFim) {
+		var link = "/action/detalhaAto.do?method=gravarAtoPDF&tipo="
+				+ psSigla
+				+ "&numeroAto="
+				+ psNumero
+				+ "&seqAto="
+				+ psSeq
+				+ "&valorAno="
+				+ psAno
+				+ "&orgao="
+				+ psOrgao
+				+ "&codTipo="
+				+ psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + psDesItemFim;
+		root = window.open(link, 'Imprimir', 'width=766,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	function abrirFrame(id, obj){
+		fAscendentes = "";
+	
+		var l_div = obj;
+		if (l_div.getElementsByTagName('div')[0].style.display == "none" || l_div.getElementsByTagName('div')[0].style.display == ""){
+			var l_frame = l_div.getElementsByTagName("iframe")[0];
+			var link = "/action/TematicaAction.php?acao=visualizarTextoAtosVinculados&codigo=" + id + "&word="+fAscendentes;
+	
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px -9px";
+			l_div.getElementsByTagName('div')[0].style.display = "block";
+			l_frame.src = link;
+		}else {
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px 3px";
+			l_div.getElementsByTagName('div')[0].style.display = "none";
+		}
+	}
+	
+	function retira_acentos(palavra) {
+		var com_acento = '·‡„‚‰ÈËÍÎÌÏÓÔÛÚıÙˆ˙˘˚¸Á¡¿√¬ƒ…» ÀÕÃŒœ”“’÷‘⁄Ÿ€‹«';
+		var sem_acento = 'aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC';
+		var nova='';
+	
+		for(var i = 0; i < palavra.length; i++) {
+			var p = com_acento.indexOf(palavra.substr(i,1));
+			
+			if (p > -1) {
+				nova += sem_acento.substr(p,1);
+			}else {
+				nova += palavra.substr(i,1);
+			}
+		}
+		return nova;
+	}
+		
+	function expandir(pObj, nuAscendentes) {
+		l_div = recuperarObjetoPai(pObj, nuAscendentes);
+		l_div_aps = l_div.getElementsByTagName('div')[0];
+	
+		if (l_div_aps.style.display == "" || l_div_aps.style.display == "block") {
+			//setarClassColapse();
+			setarPropriedadeDisplay(l_div_aps, "none");
+			pObj.style.backgroundPosition = "0px 3px";
+		} else {
+			pObj.style.backgroundPosition = "0px -9px";
+			l_div_aps.innerHTML = "<div style='font-size: 8pt; margin-left: 21px;'>Carregando...</div>";
+			setarPropriedadeDisplay(l_div_aps, "block");
+	
+			buscarFilhos('', "");
+		}
+	}
+	
+	function buscarFilhos(filtro, dshierarquia) {
+		var params = null;
+		processarAjax('/action/TematicaAction.php?acao=montarEstruturaTitulos&cotematica=' + l_div.getAttribute("codigo")+
+					  "&notematica="+filtro+"&nivel="+1+"&infiltro="+l_div.getAttribute("inFiltro"), 'POST', params, mostrarFilhos);
+	}
+	
+	function setarPropriedadeDisplay(pObj, pDisplay) {
+		pObj.style.display = pDisplay;
+	}
+	
+	function mostrarFilhos(pRetorno) {
+		var indice = '';
+	
+		l_div_aps.innerHTML = pRetorno;
+		setarPropriedadeDisplay(l_div_aps, "block");
+		
+		if (in_abrir_segundo_nivel == "S"){
+			in_abrir_segundo_nivel = "N";
+	
+			expandir(document.getElementById('treeviewDetalhe00').getElementsByTagName('span')[0], 1);
+		}
+	}
+
+	function pdf() {
+		$('#formPdf #html').val($('div.ato').html());
+		$('#formPdf').submit();
+	}
+
+	function imprimir() {
+		//window.location.href = window.location.href + '&print=S';
+		window.print();
+	}
+
+	function tags(num_ato,sgl_tipo,sgl_orgao,vlr_ano,seq_ato) {
+		var link = "/action/ActionDatalegis.php?acao=visualizarTagsAto&sgl_tipo="+sgl_tipo+
+			"&num_ato="+num_ato+"&seq_ato="+seq_ato+"&vlr_ano="+vlr_ano+"&sgl_orgao="+sgl_orgao+
+			"&cod_modulo=134&cod_menu=1696";
+		root = window.open(link,'Tags','width=640,height=190,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	var tam = 1.125;
+	function mudaFonte(tipo) {
+		if (tipo == 'mais') {
+			if(tam < 2) tam += 0.2;	
+		} else {
+			if(tam > 0.8) tam -= 0.2;
+		}
+
+		$("#conteudo p, #conteudo a, #conteudo span").css('font-size', tam + 'rem');
+		$("#conteudo div").css('font-size', (tam + 0.2) + 'rem');
+	}
+
+	</script>
+<script type="text/javascript" src="/v2/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/chosen.jquery-0.1.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/v2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/v2/js/sistema.js?20260916"></script>
+<script type="text/javascript" async src="/view/js/copytoclipboard.js?20260916"></script>
+<script type="text/javascript" async src="https://cdn.ampproject.org/v0.js"></script>
+<div class="noprint" id="loading" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100vw; height: 100vh; background: black; opacity: 25%; z-index: 5001; padding-top: 20%; display:none;">
+	<center style="z-index: 5002; color: white; font-weight: 400;">
+		<img style="margin-top: -8px" src="../view/img/Loading.gif" alt="loading" /> Carregando...
+	</center>
+</div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" charset="UTF-8"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>
