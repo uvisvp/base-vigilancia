@@ -46,6 +46,9 @@ jobs:
       - name: Gerar base pública de IFA
         run: python scripts/gerar_ifa.py
 
+      - name: Gerar índice leve de nomes para medicamentos e IFA
+        run: python scripts/gerar_indice_nomes_medicamentos.py
+
       - name: Gerar constituintes de suplementos
         run: python scripts/gerar_suplementos_constituintes.py
 
