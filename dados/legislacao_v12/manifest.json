@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-16T19:31:25.532481+00:00",
+  "gerado_em": "2026-09-16T19:34:33.549353+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -559,7 +559,7 @@
         "norma": "RDC 67-2007",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000067&seqAto=002&valorAno=2007&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=1696&cod_modulo=134&pesquisa=true",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000067&seqAto=002&valorAno=2007&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=1696&cod_modulo=134&pesquisa=true",
-        "consultado_em": "2026-09-16T19:31:19.222140+00:00",
+        "consultado_em": "2026-09-16T19:34:27.910463+00:00",
         "data_fonte": "2007-10-08",
         "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
         "sha256_fonte": "f7f61f867f00fc24074c1be64c5a64f2c7d25e67e3996d96da2addedbdf44472",
@@ -573,19 +573,20 @@
           "(Redação dada pela Resolução 21/2009 )",
           "(Incluído pela Resolução 21/2009 )",
           "(Redação dada pela Resolução da Diretoria Colegiada - RDC nº 87, de 21/11/2008 )",
-          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 87, de 21/11/2008 )",
-          "Nota:"
+          "(Revogado pela Resolução da Diretoria Colegiada - RDC nº 87, de 21/11/2008 )"
         ],
         "status_vigencia": "vigente_com_alteracoes",
         "texto": "textos/RDC 67-2007--oficial.txt",
-        "data_processamento": "2026-09-16T19:31:19.222140+00:00",
+        "data_processamento": "2026-09-16T19:34:27.910463+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto integral e anexos obtidos do AnvisaLegis; validação estrutural específica para Farmácia de Manipulação",
         "extracao": {
           "codificacao": "windows-1252",
           "elementos_removidos": 18
-        }
+        },
+        "classificacao_anvisalegis": "Vigente com Alterações",
+        "classificacao_fonte": "AnvisaLegis"
       }
     },
     "RDC 87-2008": {
@@ -596,22 +597,24 @@
         "norma": "RDC 87-2008",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&codTipo=&cod_menu=1696&cod_modulo=134&desItem=&desItemFim=&numeroAto=00000087&orgao=RDC/DC/ANVISA/MS&pesquisa=true&seqAto=000&tipo=RDC&valorAno=2008",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&codTipo=&cod_menu=1696&cod_modulo=134&desItem=&desItemFim=&numeroAto=00000087&orgao=RDC/DC/ANVISA/MS&pesquisa=true&seqAto=000&tipo=RDC&valorAno=2008",
-        "consultado_em": "2026-09-16T19:31:21.712244+00:00",
+        "consultado_em": "2026-09-16T19:34:30.228344+00:00",
         "data_fonte": "2008-11-21",
         "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
         "sha256_fonte": "71ce9c3a8fded22e436022e962b74b2a7af4127d785df4ec9222f7e180c2713d",
         "sha256_texto": "70ba4317bc55eb8fe87e13d8ed907d5d6ca115c92e8bf0c74f51a9f95df1ccb2",
         "alteracoes_encontradas": [],
-        "status_vigencia": "vigente",
+        "status_vigencia": "alterador",
         "texto": "textos/RDC 87-2008--oficial.txt",
-        "data_processamento": "2026-09-16T19:31:21.712244+00:00",
+        "data_processamento": "2026-09-16T19:34:30.228344+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto integral e anexos obtidos do AnvisaLegis; validação estrutural específica para Farmácia de Manipulação",
         "extracao": {
           "codificacao": "windows-1252",
           "elementos_removidos": 18
-        }
+        },
+        "classificacao_anvisalegis": "Alterador",
+        "classificacao_fonte": "AnvisaLegis"
       }
     },
     "RDC 21-2009": {
@@ -622,22 +625,24 @@
         "norma": "RDC 21-2009",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000021&orgao=RDC/DC/ANVISA/MS&seqAto=000&tipo=RDC&valorAno=2009",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000021&orgao=RDC/DC/ANVISA/MS&seqAto=000&tipo=RDC&valorAno=2009",
-        "consultado_em": "2026-09-16T19:31:24.417119+00:00",
+        "consultado_em": "2026-09-16T19:34:32.436441+00:00",
         "data_fonte": "2009-05-20",
         "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
         "sha256_fonte": "71e20a106341df8ed1fd0576c804fb4cea8a38ef5225c708f971a73175c7d981",
         "sha256_texto": "e25514901b9b17d7000384b3a93e0c37f3192c5a43804d9d4729949623eec253",
         "alteracoes_encontradas": [],
-        "status_vigencia": "vigente",
+        "status_vigencia": "alterador",
         "texto": "textos/RDC 21-2009--oficial.txt",
-        "data_processamento": "2026-09-16T19:31:24.417119+00:00",
+        "data_processamento": "2026-09-16T19:34:32.436441+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto integral e anexos obtidos do AnvisaLegis; validação estrutural específica para Farmácia de Manipulação",
         "extracao": {
           "codificacao": "windows-1252",
           "elementos_removidos": 18
-        }
+        },
+        "classificacao_anvisalegis": "Alterador",
+        "classificacao_fonte": "AnvisaLegis"
       }
     }
   },
