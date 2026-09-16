@@ -7,13 +7,9 @@ Escopo deliberadamente restrito:
 - RDC 87/2008
 - RDC 21/2009
 
-O script:
-1. consulta exclusivamente o AnvisaLegis;
-2. preserva uma cópia bruta da fonte;
-3. extrai o texto sem resumir/reordenar;
-4. grava proveniência e hashes;
-5. regenera o banco hierárquico em dados/legislacao_v12;
-6. valida anexos e dispositivos críticos antes de permitir a publicação.
+O script consulta exclusivamente o AnvisaLegis, preserva a fonte bruta, gera
+texto e proveniência, estrutura somente estas três normas e atualiza suas
+entradas no manifest sem reprocessar normas não relacionadas.
 """
 from __future__ import annotations
 
@@ -23,6 +19,7 @@ import json
 import re
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -34,11 +31,9 @@ TEXTOS = BASE / "textos"
 CATALOGO = FONTES / "normas.csv"
 SAIDA = BASE / "dados" / "legislacao_v12"
 
-# Reuso do extrator genérico existente: mesma regra de limpeza e normalização
-# já usada no repositório para as demais fontes legislativas.
 sys.path.insert(0, str(BASE / "scripts"))
 from extrair_textos import extrair_html  # noqa: E402
-from estruturar_legislacao import processar as estruturar_banco  # noqa: E402
+from estruturar_legislacao import estruturar_texto, slug  # noqa: E402
 
 CABECALHOS = {
     "User-Agent": (
@@ -139,18 +134,16 @@ def baixar(url: str) -> requests.Response:
 
 
 def limpar_residuos_portal(texto: str) -> str:
-    """Remove apenas resíduos inequívocos de controles do portal."""
     linhas = []
     for ln in texto.splitlines():
-        t = ln.strip()
-        if t in {"[Input]", "[Button]"}:
+        if ln.strip() in {"[Input]", "[Button]"}:
             continue
         linhas.append(ln)
     return "\n".join(linhas).strip()
 
 
 def alteracoes_encontradas(texto: str) -> list[str]:
-    """Registra marcadores editoriais do próprio texto consolidado, sem inferência."""
+    """Registra marcadores editoriais presentes na própria fonte, sem inferência."""
     padrao = re.compile(
         r"(?:\(?(?:Reda[cç][aã]o dada|Inclu[ií]d[oa]|Revogad[oa]|Alterad[oa])[^\n]{0,260}\)?|"
         r"Nota:\s*[^\n]{0,300})",
@@ -232,6 +225,86 @@ def gravar_norma(n: dict) -> dict:
     return {"norma": n["norma"], "chars": len(texto), "meta": meta}
 
 
+def aplicar_proveniencia(doc: dict, meta: dict) -> None:
+    """Aplica às normas-alvo as mesmas regras do estruturador v12."""
+    if meta.get("sha256_texto") != doc.get("sha256_texto"):
+        raise RuntimeError(f"{meta['norma']}: hash do texto não confere com a proveniência")
+    doc["proveniencia"] = meta
+
+    for no in doc["nos"]:
+        no["status_vigencia"] = (
+            "revogado" if re.search(r"\(Revogad[oa]", no.get("texto", ""), re.I)
+            else meta.get("status_vigencia", "pendente_validacao")
+        )
+        m = re.match(r"^([a-z])\)\s+", no.get("texto", "")) if no.get("tipo") == "bloco" else None
+        if m and no.get("pai") and meta.get("estruturar_alineas"):
+            no.update(
+                tipo="alinea",
+                numero=m.group(1),
+                rotulo=f"Alínea {m.group(1)}",
+                estrutural=True,
+            )
+            no["id"] = no["pai"] + "::alinea::" + m.group(1)
+
+    contagem = Counter(no["id"] for no in doc["nos"])
+    ocorrencias = Counter()
+    for no in doc["nos"]:
+        if contagem[no["id"]] > 1:
+            original = no["id"]
+            ocorrencias[original] += 1
+            no["id"] = original + "::ocorrencia-" + str(ocorrencias[original])
+            no["ambiguidade_na_fonte"] = True
+            no["status_vigencia"] = "pendente_validacao"
+
+    ids = [no["id"] for no in doc["nos"] if no.get("estrutural", True)]
+    repetidos = sorted({x for x in ids if ids.count(x) > 1})
+    doc["validacao"]["ids_estruturais_repetidos"] = repetidos
+    if repetidos:
+        raise RuntimeError(f"{meta['norma']}: IDs estruturais duplicados: {repetidos[:10]}")
+
+
+def estruturar_normas_alvo() -> dict:
+    """Atualiza apenas as três normas, preservando as demais entradas já publicadas."""
+    SAIDA.mkdir(parents=True, exist_ok=True)
+    normas_dir = SAIDA / "normas"
+    normas_dir.mkdir(parents=True, exist_ok=True)
+    manifest_path = SAIDA / "manifest.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    else:
+        manifest = {
+            "schema": "legislacao-hierarquica-v12",
+            "gerado_em": agora(),
+            "normas": {},
+            "curados": 0,
+        }
+
+    manifest.setdefault("schema", "legislacao-hierarquica-v12")
+    manifest.setdefault("normas", {})
+
+    for n in NORMAS:
+        txt = TEXTOS / f"{n['norma']}--oficial.txt"
+        meta_path = txt.with_suffix(".meta.json")
+        texto = txt.read_text(encoding="utf-8")
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        doc = estruturar_texto(n["norma"], texto)
+        aplicar_proveniencia(doc, meta)
+        destino = normas_dir / f"{slug(n['norma'])}.json"
+        destino.write_text(
+            json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+        )
+        manifest["normas"][n["norma"]] = {
+            "arquivo": destino.name,
+            "nos": len(doc["nos"]),
+            "sha256_texto": doc.get("sha256_texto"),
+            "proveniencia": meta,
+        }
+
+    manifest["gerado_em"] = agora()
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return manifest
+
+
 def validar_banco() -> dict:
     manifest = json.loads((SAIDA / "manifest.json").read_text(encoding="utf-8"))
     esperadas = {n["norma"] for n in NORMAS}
@@ -241,7 +314,6 @@ def validar_banco() -> dict:
 
     rdc67 = json.loads((SAIDA / "normas" / "rdc-67-2007.json").read_text(encoding="utf-8"))
     anexos = {x.get("numero") for x in rdc67["nos"] if x.get("tipo") == "anexo"}
-    faltam_anexos = set("IIIIIIIVVVI" for _ in [])  # mantém validação abaixo explícita
     esperados_anexos = {"I", "II", "III", "IV", "V", "VI", "VII"}
     if not esperados_anexos.issubset(anexos):
         raise RuntimeError(
@@ -270,8 +342,8 @@ def main() -> int:
         resultados.append(gravar_norma(n))
         time.sleep(1.0)
 
-    print("Regenerando legislação hierárquica...")
-    estruturar_banco(TEXTOS, SAIDA)
+    print("Estruturando somente as normas de manipulação...")
+    estruturar_normas_alvo()
     validacao = validar_banco()
 
     rel = {
