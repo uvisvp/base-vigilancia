@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "scripts/atualizar_legislacao_manipulacao.py"
+      - "scripts/normalizar_regulamento_tecnico_rdc67.py"
       - "scripts/validar_legislacao_manipulacao.py"
       - ".github/workflows/atualizar-legislacao-manipulacao.yml"
 
@@ -49,6 +50,9 @@ jobs:
 
       - name: Atualizar RDC 67, RDC 87 e RDC 21 pelo AnvisaLegis
         run: python scripts/atualizar_legislacao_manipulacao.py
+
+      - name: Normalizar Regulamento Técnico da RDC 67
+        run: python scripts/normalizar_regulamento_tecnico_rdc67.py
 
       - name: Validar anexos e metadados editoriais
         run: python scripts/validar_legislacao_manipulacao.py
