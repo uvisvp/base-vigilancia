@@ -3,8 +3,8 @@
 """Validação final das RDCs de manipulação já extraídas do AnvisaLegis.
 
 Mantém em `alteracoes_encontradas` somente marcações editoriais explícitas da
-fonte oficial e exige os oito anexos numerados da RDC 67/2007 antes da
-publicação.
+fonte oficial, aplica a classificação regulatória exibida pelo AnvisaLegis e
+exige os oito anexos numerados da RDC 67/2007 antes da publicação.
 """
 from __future__ import annotations
 
@@ -17,6 +17,14 @@ TEXTOS = BASE / "textos"
 SAIDA = BASE / "dados" / "legislacao_v12"
 
 NORMAS = ("RDC 67-2007", "RDC 87-2008", "RDC 21-2009")
+
+# Classificação mostrada pelo próprio AnvisaLegis. Mantemos o valor técnico
+# normalizado para compatibilidade e também o rótulo literal para auditoria.
+CLASSIFICACAO_ANVISALEGIS = {
+    "RDC 67-2007": ("vigente_com_alteracoes", "Vigente com Alterações"),
+    "RDC 87-2008": ("alterador", "Alterador"),
+    "RDC 21-2009": ("alterador", "Alterador"),
+}
 
 
 def marcadores_editoriais(texto: str) -> list[str]:
@@ -51,6 +59,9 @@ def marcadores_editoriais(texto: str) -> list[str]:
             if re.search(r"\bResolu[cç][aã]o\b|\bRDC\b", prox, re.I):
                 s += " " + prox
         s = re.sub(r"\s+", " ", s).strip()
+        # Não grava cabeçalho vazio como se fosse uma alteração identificada.
+        if s.casefold() == "nota:":
+            continue
         chave = s.casefold()
         if chave not in vistos:
             vistos.add(chave)
@@ -64,13 +75,22 @@ def atualizar_proveniencia(norma: str) -> None:
     meta_path = txt_path.with_suffix(".meta.json")
     texto = txt_path.read_text(encoding="utf-8")
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
+
+    status, rotulo = CLASSIFICACAO_ANVISALEGIS[norma]
     meta["alteracoes_encontradas"] = marcadores_editoriais(texto)
+    meta["status_vigencia"] = status
+    meta["classificacao_anvisalegis"] = rotulo
+    meta["classificacao_fonte"] = "AnvisaLegis"
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
     slug = norma.lower().replace(" ", "-")
     doc_path = SAIDA / "normas" / f"{slug}.json"
     doc = json.loads(doc_path.read_text(encoding="utf-8"))
     doc["proveniencia"] = meta
+    for no in doc.get("nos", []):
+        # Preserva marcação de dispositivo explicitamente revogado na fonte.
+        if no.get("status_vigencia") != "revogado":
+            no["status_vigencia"] = status
     doc_path.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     manifest_path = SAIDA / "manifest.json"
@@ -98,6 +118,9 @@ def validar_rdc67() -> dict:
     return {
         "anexos_confirmados": sorted(esperados),
         "item_2_7_anexo_iii": itens_27[0]["id"],
+        "classificacoes_anvisalegis": {
+            norma: rotulo for norma, (_, rotulo) in CLASSIFICACAO_ANVISALEGIS.items()
+        },
     }
 
 
@@ -117,7 +140,7 @@ def main() -> int:
     validacao = validar_rdc67()
     atualizar_relatorio(validacao)
     print(json.dumps(validacao, ensure_ascii=False, indent=2))
-    print("OK: anexos I a VIII e metadados editoriais validados.")
+    print("OK: anexos I a VIII, classificações e metadados editoriais validados.")
     return 0
 
 
