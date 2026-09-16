@@ -13,16 +13,27 @@ permissions:
 
 concurrency:
   group: legislacao-manipulacao
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   atualizar:
     runs-on: ubuntu-latest
     steps:
-      - name: Baixar repositório
+      - name: Baixar somente os arquivos necessários
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            .github/workflows/atualizar-legislacao-manipulacao.yml
+            scripts/
+            textos/
+            dados/legislacao_curada/
+            dados/legislacao_v12/
+            fontes/normas.csv
+            fontes/rdc-anvisa-67-2007/
+            fontes/rdc-anvisa-87-2008/
+            fontes/rdc-anvisa-21-2009/
 
       - name: Preparar Python
         uses: actions/setup-python@v5
