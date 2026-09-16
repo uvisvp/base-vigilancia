@@ -1,7 +1,7 @@
 {
-  "gerado_em": "2026-09-16T19:29:22.875598+00:00",
+  "gerado_em": "2026-09-16T19:31:25.545656+00:00",
   "fonte": "AnvisaLegis",
-  "catalogo_atualizado": true,
+  "catalogo_atualizado": false,
   "normas": [
     {
       "norma": "RDC 67-2007",
@@ -29,6 +29,18 @@
       "VII",
       "VIII"
     ],
-    "item_2_7_anexo_iii": "rdc-67-2007::anexo-iii::anexo::iii::item::2-7"
+    "item_2_7_anexo_iii": "rdc-67-2007::anexo-iii::anexo::iii::item::2-7",
+    "anexos_confirmados": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII"
+    ],
+    "fonte_exclusiva": "AnvisaLegis",
+    "metadados_alteracoes": "somente marcadores editoriais explícitos da fonte"
   }
 }
