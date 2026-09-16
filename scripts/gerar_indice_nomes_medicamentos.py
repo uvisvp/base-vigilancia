@@ -6,6 +6,10 @@ ativo e por cada componente nominal de associações. Assim, uma associação co
 "losartan potássico, hidroclorotiazida" pode ser localizada tanto por "losartan"
 quanto por "hidroclorotiazida", sem carregar a base completa no navegador.
 
+Fragmentos grandes são subdivididos de forma adaptativa. O arquivo das três
+primeiras letras vira um pequeno roteador com prévia; conforme o usuário digita
+mais letras, a Central carrega apenas o ramo necessário.
+
 IFA é mantido em índice próprio. A situação regulatória só é publicada quando a
 fonte de IFA trouxer esse campo; não há inferência de "ativo/inativo".
 
@@ -31,6 +35,12 @@ OUT_MED = Path("dados/indices/nome_medicamentos")
 OUT_IFA = Path("dados/indices/nome_ifas")
 MANIFEST_RAIZ = Path("dados/manifest.json")
 
+# Mantém cada download de busca pequeno. Um roteador com prévia substitui
+# automaticamente qualquer fragmento que ultrapasse este limite.
+LIMITE_FRAGMENTO_BYTES = 450_000
+PREVIEW_MAX = 120
+MAX_PROFUNDIDADE = 32
+
 
 def texto(v: object) -> str:
     return re.sub(r"\s+", " ", str(v or "")).strip()
@@ -42,8 +52,12 @@ def normalizar(v: object) -> str:
     return re.sub(r"[^a-z0-9]+", " ", v.lower()).strip()
 
 
+def compacto(v: object) -> str:
+    return normalizar(v).replace(" ", "")
+
+
 def chave(v: object) -> str:
-    n = normalizar(v).replace(" ", "")
+    n = compacto(v)
     return n[:3] if len(n) >= 3 else n.ljust(3, "_")
 
 
@@ -196,24 +210,138 @@ def deduplicar_e_ordenar(itens: list[dict]) -> list[dict]:
     return final
 
 
+def identidade_resultado(item: dict) -> str:
+    if item.get("tipo") == "ifa":
+        return "|".join([
+            "ifa",
+            item.get("processo_anvisa", ""),
+            item.get("ifa", ""),
+            item.get("fabricante_ifa", ""),
+        ])
+    return "|".join([
+        "med",
+        item.get("registro", ""),
+        item.get("processo", ""),
+        item.get("produto", ""),
+    ])
+
+
+def classe_situacao(item: dict) -> str:
+    s = normalizar(item.get("situacao"))
+    if re.match(r"^(ativo|ativa|valido|valida|vigente)\b", s):
+        return "ativo"
+    if re.match(r"^(inativo|inativa|cancelado|cancelada|caducado|caducada)\b", s):
+        return "inativo"
+    return "outro"
+
+
+def previsualizar(itens: list[dict]) -> list[dict]:
+    """Prévia leve e diversificada para buscas ainda amplas (ex.: só 3 letras)."""
+    buckets: dict[str, list[dict]] = {"ativo": [], "inativo": [], "outro": []}
+    vistos: set[str] = set()
+    for item in itens:
+        ident = identidade_resultado(item)
+        if ident in vistos:
+            continue
+        vistos.add(ident)
+        buckets[classe_situacao(item)].append(item)
+
+    selecionados: list[dict] = []
+    por_classe = max(20, PREVIEW_MAX // 3)
+    for nome in ("ativo", "inativo", "outro"):
+        selecionados.extend(buckets[nome][:por_classe])
+
+    if len(selecionados) < PREVIEW_MAX:
+        usados = {identidade_resultado(x) for x in selecionados}
+        for item in itens:
+            ident = identidade_resultado(item)
+            if ident in usados:
+                continue
+            usados.add(ident)
+            selecionados.append(item)
+            if len(selecionados) >= PREVIEW_MAX:
+                break
+    return selecionados[:PREVIEW_MAX]
+
+
+def serializar(payload: dict) -> str:
+    return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+
+
+def caminho_filhos(arquivo: Path) -> Path:
+    """abc.json -> abc/ ; abc/a.json -> abc/a/."""
+    return arquivo.with_suffix("")
+
+
+def escrever_no(
+    itens: list[dict],
+    arquivo: Path,
+    pasta_raiz: Path,
+    profundidade: int,
+    metricas: dict[str, int],
+) -> None:
+    bruto_folha = serializar({"registros": itens})
+    tamanho_folha = len(bruto_folha.encode("utf-8"))
+
+    if tamanho_folha <= LIMITE_FRAGMENTO_BYTES:
+        arquivo.parent.mkdir(parents=True, exist_ok=True)
+        arquivo.write_text(bruto_folha, encoding="utf-8")
+        metricas["arquivos"] += 1
+        metricas["maior"] = max(metricas["maior"], tamanho_folha)
+        return
+
+    # Se todos os termos terminaram neste ponto (ou atingimos uma salvaguarda),
+    # não gravamos um arquivo gigante: publicamos somente a prévia representativa.
+    grupos: dict[str, list[dict]] = defaultdict(list)
+    if profundidade < MAX_PROFUNDIDADE:
+        for item in itens:
+            termo = compacto(item.get("termo"))
+            if len(termo) > profundidade:
+                grupos[termo[profundidade]].append(item)
+
+    filhos: dict[str, str] = {}
+    base_filhos = caminho_filhos(arquivo)
+
+    for caractere, grupo in sorted(grupos.items()):
+        filho = base_filhos / f"{caractere}.json"
+        filhos[caractere] = filho.relative_to(pasta_raiz).as_posix()
+        escrever_no(grupo, filho, pasta_raiz, profundidade + 1, metricas)
+
+    payload = {
+        "subfragmentado": True,
+        "profundidade": profundidade,
+        "total_registros": len(itens),
+        "registros": previsualizar(itens),
+        "fragmentos": filhos,
+    }
+    bruto = serializar(payload)
+    tamanho = len(bruto.encode("utf-8"))
+    arquivo.parent.mkdir(parents=True, exist_ok=True)
+    arquivo.write_text(bruto, encoding="utf-8")
+    metricas["arquivos"] += 1
+    metricas["roteadores"] += 1
+    metricas["maior"] = max(metricas["maior"], tamanho)
+
+
 def escrever_indice(indice: dict[str, list[dict]], pasta: Path) -> dict[str, int]:
     if pasta.exists():
         shutil.rmtree(pasta)
     pasta.mkdir(parents=True, exist_ok=True)
 
     total = 0
-    maior = 0
+    metricas = {"arquivos": 0, "roteadores": 0, "maior": 0}
     for prefixo in sorted(indice):
         itens = deduplicar_e_ordenar(indice[prefixo])
         total += len(itens)
-        bruto = json.dumps({"registros": itens}, ensure_ascii=False, separators=(",", ":"))
-        maior = max(maior, len(bruto.encode("utf-8")))
-        (pasta / f"{prefixo}.json").write_text(bruto, encoding="utf-8")
+        escrever_no(itens, pasta / f"{prefixo}.json", pasta, 3, metricas)
 
     return {
         "registros_indice": total,
-        "fragmentos": len(indice),
-        "maior_fragmento_bytes": maior,
+        "fragmentos": metricas["arquivos"],
+        "fragmentos_subdivididos": metricas["roteadores"],
+        "maior_fragmento_bytes": metricas["maior"],
+        "limite_fragmento_bytes": LIMITE_FRAGMENTO_BYTES,
+        "preview_max": PREVIEW_MAX,
     }
 
 
@@ -245,10 +373,13 @@ def gerar() -> dict:
     situacao_ifa_disponivel = any(texto(r.get("situacao")) for r in ifas)
 
     comum = {
-        "versao_esquema": 2,
+        "versao_esquema": 3,
         "status": "ok",
         "gerado_em": agora,
-        "fragmentacao": "três primeiras letras normalizadas do termo pesquisável",
+        "fragmentacao": (
+            "três primeiras letras normalizadas; fragmentos acima do limite são "
+            "subdivididos adaptativamente pelas letras seguintes"
+        ),
         "caracteres_minimos": 3,
         "limite_sugerido": 20,
         "listas_portaria344": "dados/controlados_portaria344/listas.json",
@@ -294,10 +425,10 @@ def gerar() -> dict:
     }
 
     (OUT_MED / "manifest.json").write_text(
-        json.dumps(manifest_med, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+        serializar(manifest_med), encoding="utf-8"
     )
     (OUT_IFA / "manifest.json").write_text(
-        json.dumps(manifest_ifa, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+        serializar(manifest_ifa), encoding="utf-8"
     )
 
     raiz = json.loads(MANIFEST_RAIZ.read_text(encoding="utf-8"))
@@ -310,9 +441,7 @@ def gerar() -> dict:
         **manifest_ifa,
         "arquivo_manifesto": "indices/nome_ifas/manifest.json",
     }
-    MANIFEST_RAIZ.write_text(
-        json.dumps(raiz, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
-    )
+    MANIFEST_RAIZ.write_text(serializar(raiz), encoding="utf-8")
 
     resumo_saida = {
         "medicamentos": len(medicamentos),
@@ -321,6 +450,8 @@ def gerar() -> dict:
         "ifas_indice": met_ifa["registros_indice"],
         "fragmentos_medicamentos": met_med["fragmentos"],
         "fragmentos_ifas": met_ifa["fragmentos"],
+        "subdivisoes_medicamentos": met_med["fragmentos_subdivididos"],
+        "subdivisoes_ifas": met_ifa["fragmentos_subdivididos"],
         "maior_fragmento_medicamentos_bytes": met_med["maior_fragmento_bytes"],
         "maior_fragmento_ifas_bytes": met_ifa["maior_fragmento_bytes"],
         "situacao_ifa_disponivel": situacao_ifa_disponivel,
