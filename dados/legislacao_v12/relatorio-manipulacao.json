@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-16T19:34:33.562110+00:00",
+  "gerado_em": "2026-09-16T23:59:27.423264+00:00",
   "fonte": "AnvisaLegis",
   "catalogo_atualizado": false,
   "normas": [
@@ -30,6 +30,14 @@
       "VIII"
     ],
     "item_2_7_anexo_iii": "rdc-67-2007::anexo-iii::anexo::iii::item::2-7",
+    "regulamento_tecnico": {
+      "id": "rdc-67-2007::regulamento-tecnico",
+      "item_5_1": "rdc-67-2007::regulamento-tecnico::item::5-1",
+      "ordem_inicio": 55,
+      "ordem_primeiro_anexo_numerado": 395,
+      "ids_reparentados": 76,
+      "vinculos_artigo_8_remanescentes": 0
+    },
     "anexos_confirmados": [
       "I",
       "II",
@@ -47,5 +55,6 @@
     },
     "fonte_exclusiva": "AnvisaLegis",
     "metadados_alteracoes": "somente marcadores editoriais explícitos da fonte"
-  }
+  },
+  "normalizado_em": "2026-09-16T23:59:27.548517+00:00"
 }
