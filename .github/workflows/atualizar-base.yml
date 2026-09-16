@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "scripts/enriquecer_afe_ae.py"
+      - "scripts/gerar_indice_nomes_medicamentos.py"
       - ".github/workflows/atualizar-base.yml"
 
   schedule:
@@ -46,7 +47,7 @@ jobs:
       - name: Gerar base pública de IFA
         run: python scripts/gerar_ifa.py
 
-      - name: Gerar índice leve de nomes para medicamentos e IFA
+      - name: Gerar índices leves separados de nomes de medicamentos e IFA
         run: python scripts/gerar_indice_nomes_medicamentos.py
 
       - name: Gerar constituintes de suplementos
