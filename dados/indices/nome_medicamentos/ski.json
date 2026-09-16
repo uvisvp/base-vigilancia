@@ -1,1 +1,1 @@
-{"registros":[{"tipo":"medicamento","produto":"SKINCAINE","principio_ativo":"lidocaína, tetracaína","registro":"102980565","processo":"25351223362201936","situacao":"Ativo","classe_terapeutica":"ANESTESICOS LOCAIS","listas_portaria344":[],"termo":"skincaine"}]}
+{"registros":[{"tipo":"medicamento","produto":"SKINCAINE","principio_ativo":"lidocaína, tetracaína","registro":"102980565","processo":"25351223362201936","situacao":"Ativo","classe_terapeutica":"ANESTESICOS LOCAIS","listas_portaria344":[{"lista":"C1","substancia":"Tetracaína"}],"termo":"skincaine"}]}

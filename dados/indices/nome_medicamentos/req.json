@@ -1,1 +1,1 @@
-{"registros":[{"tipo":"medicamento","produto":"REQUIP","principio_ativo":"ropinirol, cloridrato de ropinirol","registro":"101070201","processo":"25351223003200231","situacao":"Inativo","classe_terapeutica":"ANTIPARKINSONIANOS","listas_portaria344":[],"termo":"requip"}]}
+{"registros":[{"tipo":"medicamento","produto":"REQUIP","principio_ativo":"ropinirol, cloridrato de ropinirol","registro":"101070201","processo":"25351223003200231","situacao":"Inativo","classe_terapeutica":"ANTIPARKINSONIANOS","listas_portaria344":[{"lista":"C1","substancia":"Ropinirol"}],"termo":"requip"}]}
