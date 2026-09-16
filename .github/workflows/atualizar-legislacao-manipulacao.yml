@@ -1,0 +1,65 @@
+name: Atualizar legislação de manipulação
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_legislacao_manipulacao.py"
+      - ".github/workflows/atualizar-legislacao-manipulacao.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legislacao-manipulacao
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install --quiet requests beautifulsoup4 pypdf
+
+      - name: Verificar estruturador
+        run: python scripts/estruturar_legislacao.py --autoteste
+
+      - name: Atualizar RDC 67, RDC 87 e RDC 21 pelo AnvisaLegis
+        run: python scripts/atualizar_legislacao_manipulacao.py
+
+      - name: Resumo
+        if: always()
+        run: |
+          if [ -f dados/legislacao_v12/relatorio-manipulacao.json ]; then
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat dados/legislacao_v12/relatorio-manipulacao.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publicar arquivos gerados no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fontes/normas.csv \
+                  fontes/rdc-anvisa-67-2007 \
+                  fontes/rdc-anvisa-87-2008 \
+                  fontes/rdc-anvisa-21-2009 \
+                  textos/ \
+                  dados/legislacao_v12/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para publicar."
+          else
+            git commit -m "Atualiza RDC 67, RDC 87 e RDC 21 pelo AnvisaLegis"
+            git push
+          fi
