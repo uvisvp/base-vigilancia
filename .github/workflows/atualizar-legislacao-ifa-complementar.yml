@@ -1,0 +1,80 @@
+name: Atualizar legislação IFA complementar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_legislacao_ifa_complementar.py"
+      - ".github/workflows/atualizar-legislacao-ifa-complementar.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legislacao-ifa-complementar
+  cancel-in-progress: true
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Baixar arquivos necessários
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            .github/workflows/atualizar-legislacao-ifa-complementar.yml
+            scripts/
+            textos/
+            dados/legislacao_v12/
+            fontes/rdc-anvisa-362-2020/
+            fontes/rdc-anvisa-497-2021/
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install --quiet requests beautifulsoup4 pypdf
+
+      - name: Verificar estruturador
+        run: python scripts/estruturar_legislacao.py --autoteste
+
+      - name: Atualizar RDC 362 e RDC 497
+        run: python scripts/atualizar_legislacao_ifa_complementar.py
+
+      - name: Resumo
+        if: always()
+        run: |
+          if [ -f dados/legislacao_v12/relatorio-legislacao-ifa-complementar.json ]; then
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat dados/legislacao_v12/relatorio-legislacao-ifa-complementar.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publicar arquivos gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fontes/rdc-anvisa-362-2020 \
+                  fontes/rdc-anvisa-497-2021 \
+                  textos/ \
+                  dados/legislacao_v12/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para publicar."
+          else
+            git commit -m "Atualiza RDC 362 e RDC 497 no v12"
+            for tentativa in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push concorrente detectado; sincronizando (tentativa ${tentativa}/3)."
+              git fetch origin main
+              git rebase origin/main
+            done
+            git push origin HEAD:main
+          fi
