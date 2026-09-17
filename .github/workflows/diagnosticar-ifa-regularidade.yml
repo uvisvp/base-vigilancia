@@ -16,18 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Baixar somente arquivos necessários
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            scripts/diagnosticar_ifa_regularidade.py
-          sparse-checkout-cone-mode: false
-          fetch-depth: 1
-
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Baixar script de diagnóstico
+        run: |
+          mkdir -p scripts
+          curl -fsSL "https://raw.githubusercontent.com/uvisvp/base-vigilancia/${GITHUB_SHA}/scripts/diagnosticar_ifa_regularidade.py" -o scripts/diagnosticar_ifa_regularidade.py
 
       - name: Diagnosticar CADIFA e CBPF de IFA
         run: python scripts/diagnosticar_ifa_regularidade.py
