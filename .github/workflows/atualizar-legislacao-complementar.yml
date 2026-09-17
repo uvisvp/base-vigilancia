@@ -1,0 +1,77 @@
+name: Atualizar legislação complementar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_legislacao_complementar.py"
+      - ".github/workflows/atualizar-legislacao-complementar.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legislacao-complementar
+  cancel-in-progress: true
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar somente os arquivos necessários
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            .github/workflows/atualizar-legislacao-complementar.yml
+            scripts/
+            textos/
+            dados/legislacao_v12/
+            fontes/normas.csv
+            fontes/rdc-anvisa-63-2011/
+            fontes/rdc-anvisa-430-2020/
+            fontes/rdc-anvisa-204-2006/
+            fontes/in-anvisa-62-2020/
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install --quiet requests beautifulsoup4 pypdf
+
+      - name: Verificar estruturador
+        run: python scripts/estruturar_legislacao.py --autoteste
+
+      - name: Atualizar normas pelo AnvisaLegis
+        run: python scripts/atualizar_legislacao_complementar.py
+
+      - name: Resumo
+        if: always()
+        run: |
+          if [ -f dados/legislacao_v12/relatorio-legislacao-complementar.json ]; then
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat dados/legislacao_v12/relatorio-legislacao-complementar.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publicar arquivos gerados no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fontes/normas.csv \
+                  fontes/rdc-anvisa-63-2011 \
+                  fontes/rdc-anvisa-430-2020 \
+                  fontes/rdc-anvisa-204-2006 \
+                  fontes/in-anvisa-62-2020 \
+                  textos/ \
+                  dados/legislacao_v12/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para publicar."
+          else
+            git commit -m "Atualiza RDC 63, RDC 430, RDC 204 e IN 62 no v12"
+            git push
+          fi
