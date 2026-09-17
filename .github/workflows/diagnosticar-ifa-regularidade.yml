@@ -1,0 +1,43 @@
+name: Diagnosticar regularidade de IFA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnosticar_ifa_regularidade.py'
+      - '.github/workflows/diagnosticar-ifa-regularidade.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Diagnosticar CADIFA e CBPF de IFA
+        run: python scripts/diagnosticar_ifa_regularidade.py
+
+      - name: Publicar resumo
+        if: always()
+        run: |
+          if [ -f diagnostico-ifa-regularidade/RESUMO.md ]; then
+            cat diagnostico-ifa-regularidade/RESUMO.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-ifa-regularidade
+          path: diagnostico-ifa-regularidade/
+          if-no-files-found: error
