@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import annotations
 
-import csv, hashlib, json, re, sys, time
+import csv, hashlib, io, json, re, sys, time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 BASE=Path(__file__).resolve().parent.parent
 FONTES=BASE/'fontes'; TEXTOS=BASE/'textos'; CATALOGO=FONTES/'normas.csv'; SAIDA=BASE/'dados'/'legislacao_v12'
@@ -16,7 +17,7 @@ from estruturar_legislacao import estruturar_texto, slug
 
 HEAD={
  'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
- 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'Accept':'text/html,application/xhtml+xml,application/pdf,application/xml;q=0.9,*/*;q=0.8',
  'Accept-Language':'pt-BR,pt;q=0.9,en;q=0.7',
  'Accept-Encoding':'identity',
  'Connection':'close',
@@ -29,7 +30,7 @@ NORMAS=[
  {'norma_id':'lei-estadual-sp-15266-2013','norma':'Lei Estadual SP 15266-2013','grupo':'lei-estadual-sp','rotulo':'Lei Estadual SP nº 15.266/2013 — texto atualizado','url':'https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html','data_fonte':'2013-12-26','status_vigencia':'sem_revogacao_expressa_com_alteracoes','status_fonte':'ALESP: sem revogação expressa; há alterações cadastradas','min_chars':25000,'obrig':['LEI N° 15.266','Taxa de Fiscalização','Art. 1']},
  {'norma_id':'rdc-anvisa-359-2020','norma':'RDC 359-2020','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 359/2020','url':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020','data_fonte':'2020-03-27','status_vigencia':'vigente_com_alteracoes','status_fonte':'AnvisaLegis: Vigente com Alterações','min_chars':25000,'obrig':['RDC Nº 359','Dossiê de Insumo Farmacêutico Ativo','CADIFA','Art. 2']},
  {'norma_id':'rdc-anvisa-361-2020','norma':'RDC 361-2020','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 361/2020','url':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020','data_fonte':'2020-03-27','status_vigencia':'alterador','status_fonte':'AnvisaLegis: Alterador; Anvisa informa vigência do marco regulatório','min_chars':10000,'obrig':['RDC Nº 361','Dossiê de Insumo Farmacêutico Ativo','CBPF','CADIFA']},
- {'norma_id':'rdc-anvisa-57-2009','norma':'RDC 57-2009','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 57/2009 — revogada','url':'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.html','data_fonte':'2009-11-17','status_vigencia':'revogada_2021-03-01','status_fonte':'Anvisa: revogada pela RDC 359/2020 a partir de 1º de março de 2021; mantida no v12 para análise de registros legados','min_chars':18000,'obrig':['RDC Nº 57','registro de insumos farmacêuticos ativos','Art. 1','ANEXO']},
+ {'norma_id':'rdc-anvisa-57-2009','norma':'RDC 57-2009','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 57/2009 — revogada','url':'https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.pdf','data_fonte':'2009-11-17','status_vigencia':'revogada_2021-03-01','status_fonte':'Anvisa: revogada pela RDC 359/2020 a partir de 1º de março de 2021; mantida no v12 para análise de registros legados','min_chars':18000,'obrig':['RDC Nº 57','registro de insumos farmacêuticos ativos','Art. 1','ANEXO']},
 ]
 
 def agora(): return datetime.now(timezone.utc).isoformat()
@@ -51,10 +52,7 @@ def baixar(url):
             if i<4: time.sleep(min(2**i,8))
     raise RuntimeError(f'Falha ao baixar {url}: {err}')
 
-def extrair_html(body):
-    soup=BeautifulSoup(body,'html.parser')
-    for x in soup(['script','style','noscript','nav','footer']): x.decompose()
-    txt=soup.get_text('\n')
+def limpar_linhas(txt):
     linhas=[]
     for ln in txt.splitlines():
         ln=re.sub(r'\s+',' ',ln).strip()
@@ -63,6 +61,22 @@ def extrair_html(body):
         ln=re.sub(r'^Artigo\s+(\d+(?:-[A-Z]|[A-Z])?)\s*[º°o]?\s*[-–—]?',r'Art. \1 ',ln,flags=re.I)
         linhas.append(ln)
     return '\n'.join(linhas).strip()
+
+def extrair_html(body):
+    soup=BeautifulSoup(body,'html.parser')
+    for x in soup(['script','style','noscript','nav','footer']): x.decompose()
+    return limpar_linhas(soup.get_text('\n'))
+
+def extrair_pdf(body):
+    reader=PdfReader(io.BytesIO(body))
+    txt='\n'.join((p.extract_text() or '') for p in reader.pages)
+    return limpar_linhas(txt)
+
+def extrair_resposta(r):
+    ctype=(r.headers.get('content-type') or '').lower()
+    if r.url.lower().endswith('.pdf') or 'application/pdf' in ctype or r.content[:4]==b'%PDF':
+        return extrair_pdf(r.content),'pdf'
+    return extrair_html(r.content),'html'
 
 def validar(n,txt):
     if len(txt)<n['min_chars']: raise RuntimeError(f"{n['norma']}: texto curto ({len(txt)})")
@@ -101,17 +115,17 @@ def main():
     man_path=SAIDA/'manifest.json'; man=json.loads(man_path.read_text(encoding='utf-8')) if man_path.exists() else {'schema':'legislacao-hierarquica-v12','normas':{}}
     rel={'schema':'relatorio-legislacao-adicional-v1','gerado_em':agora(),'catalogo_atualizado':cat,'normas':[]}
     for n in NORMAS:
-        print('Baixando',n['norma']); r=baixar(n['url']); txt=extrair_html(r.content); validar(n,txt)
-        pasta=FONTES/n['norma_id']; pasta.mkdir(parents=True,exist_ok=True); (pasta/'texto_bruto.html').write_bytes(r.content)
+        print('Baixando',n['norma']); r=baixar(n['url']); txt,tipo_fonte=extrair_resposta(r); validar(n,txt)
+        pasta=FONTES/n['norma_id']; pasta.mkdir(parents=True,exist_ok=True); (pasta/f'texto_bruto.{tipo_fonte}').write_bytes(r.content)
         txtp=TEXTOS/f"{n['norma']}--oficial.txt"; txtp.write_text(txt,encoding='utf-8')
-        meta={'norma':n['norma'],'fonte_oficial':n['url'],'url_final':r.url,'consultado_em':agora(),'data_fonte':n['data_fonte'],'tipo_data_fonte':'data_do_ato; texto oficial consultado em fonte institucional','sha256_fonte':sha_b(r.content),'sha256_texto':sha_t(txt),'status_vigencia':n['status_vigencia'],'status_fonte':n['status_fonte'],'texto':str(txtp.relative_to(BASE)),'data_processamento':agora(),'schema':'proveniencia-legislativa-v1','estruturar_alineas':True,'escopo_validacao':'texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial'}
+        meta={'norma':n['norma'],'fonte_oficial':n['url'],'url_final':r.url,'consultado_em':agora(),'data_fonte':n['data_fonte'],'tipo_data_fonte':'data_do_ato; texto oficial consultado em fonte institucional','formato_fonte':tipo_fonte,'sha256_fonte':sha_b(r.content),'sha256_texto':sha_t(txt),'status_vigencia':n['status_vigencia'],'status_fonte':n['status_fonte'],'texto':str(txtp.relative_to(BASE)),'data_processamento':agora(),'schema':'proveniencia-legislativa-v1','estruturar_alineas':True,'escopo_validacao':'texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial'}
         txtp.with_suffix('.meta.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
         doc=estruturar_texto(n['norma'],txt); aplicar_meta(doc,meta)
         ids=[x['id'] for x in doc['nos'] if x.get('estrutural',True)]
         if len(ids)!=len(set(ids)): raise RuntimeError(f"{n['norma']}: IDs estruturais repetidos")
         fn=slug(n['norma'])+'.json'; (SAIDA/'normas'/fn).write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding='utf-8')
         man['normas'][n['norma']]={'arquivo':fn,'nos':len(doc['nos']),'sha256_texto':doc['sha256_texto'],'proveniencia':meta}
-        rel['normas'].append({'norma':n['norma'],'arquivo':fn,'nos':len(doc['nos']),'chars':len(txt),'status_vigencia':n['status_vigencia'],'status_fonte':n['status_fonte'],'fonte':n['url']})
+        rel['normas'].append({'norma':n['norma'],'arquivo':fn,'nos':len(doc['nos']),'chars':len(txt),'status_vigencia':n['status_vigencia'],'status_fonte':n['status_fonte'],'fonte':n['url'],'formato_fonte':tipo_fonte})
     man['gerado_em']=agora(); man_path.write_text(json.dumps(man,ensure_ascii=False,indent=2),encoding='utf-8')
     rel['total_normas_manifest']=len(man['normas']); (SAIDA/'relatorio-legislacao-adicional.json').write_text(json.dumps(rel,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(rel,ensure_ascii=False))
