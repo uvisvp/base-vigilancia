@@ -1,0 +1,32 @@
+{
+  "norma": "RDC 204-2006",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006",
+  "consultado_em": "2026-09-17T00:21:35.973799+00:00",
+  "data_fonte": "2006-11-14",
+  "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+  "sha256_fonte": "6614e604911120e7ca7dfb841eed9340f6d414f0b2b6ff60cf9959f2cd1065de",
+  "sha256_texto": "4d40a18c712834195374d8338c5f33bcbe2807b74c44a696c94f4c645772ee77",
+  "alteracoes_encontradas": [
+    "revogadas a",
+    "alterada durante ouso do insumo farmacêutico e durante o seu transporte ou armazenamento.",
+    "alteradas durante o fracionamento.",
+    "Nota: Prazo estabelecido de 180 (cento e oitenta), a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe a",
+    "incluídos nos procedimentos:",
+    "alterados, autorizadospelos responsáveis, devem possibilitar a identificação do dado anterior e estarassinados e datados.",
+    "(Redação dada pela",
+    "alterada durante o fracionamento.",
+    "alterados; a referida experiência e os resultados dos testes de controle dasoperações são avaliados. As dificuldades e os defeitos registrados na operação sãoanalisados para determinar os limites dos parâmetros da mesma. Pode ser realizada umaanálise de tendência para",
+    "Nota: Prazo estabelecido de 180 (cento e oitenta) dias, a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos/RDC 204-2006--oficial.txt",
+  "data_processamento": "2026-09-17T00:21:35.973799+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+  "extracao": {
+    "codificacao": "windows-1252",
+    "elementos_removidos": 18
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "gerado_em": "2026-09-17T00:21:39.066901+00:00",
+  "fonte": "AnvisaLegis",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 63-2011",
+      "caracteres": 22568
+    },
+    {
+      "norma": "RDC 430-2020",
+      "caracteres": 38033
+    },
+    {
+      "norma": "RDC 204-2006",
+      "caracteres": 90058
+    },
+    {
+      "norma": "IN 62-2020",
+      "caracteres": 5619
+    }
+  ],
+  "validacao": {
+    "normas_manifest": 30,
+    "normas_adicionadas": [
+      "IN 62-2020",
+      "RDC 204-2006",
+      "RDC 430-2020",
+      "RDC 63-2011"
+    ],
+    "dispositivos_teste": {
+      "RDC 63-2011": "rdc-63-2011::artigo::35",
+      "RDC 430-2020": "rdc-430-2020::artigo::1",
+      "RDC 204-2006": "rdc-204-2006::regulamento-tecnico::item::7-2",
+      "IN 62-2020": "in-62-2020::artigo::1"
+    }
+  }
+}

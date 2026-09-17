@@ -1,0 +1,948 @@
+Resolução da Diretoria Colegiada - RDC nº 204, de 14/11/2006
+
+
+
+
+
+
+
+FECHAR NOTAS DE ALTERAÇÃO
+
++
+
+|
+
+-
+
+Vigente com Alterações
+Resolução da Diretoria Colegiada - RDC nº 204, de 14/11/2006
+
+Ver mais detalhes
+
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+RESOLUÇÃO - RDC Nº 204, DE 14 DE NOVEMBRO DE 2006
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso daatribuição que lhe confere o
+inciso IV do art. 11
+do Regulamento aprovado pelo
+Decretonº 3.029, de 16 de abril de 1999
+, e tendo em vista o disposto no
+inciso II e nos §§ 1ºe 3º do art. 54
+do Regimento Interno aprovado nos termos do Anexo I da
+Portaria nº 354 da ANVISA, de 11 de agosto de 2006
+, republicada no DOU de 21 de agosto de 2006, emreunião realizada em 6 de novembro de 2006, e
+considerando o disposto na
+Lei nº 6.360, de 23 de setembro de 1976
+e no seuRegulamento, o
+Decreto nº . 79.094, de 5 de janeiro de 1977
+;
+considerando a
+Resolução RDC nº 196, de 29 de junho de 2005
+;
+considerando a
+Lei nº . 9.782, de 26 de janeiro de 1999
+;
+considerando a necessidade de padronizar as ações da Vigilância Sanitária referenteaos Insumos Farmacêuticos a serem utilizados na fabricação de medicamentos e namanipulação de medicamentos;
+considerando ainda que todo o segmento envolvido na distribuição e fracionamento éresponsável solidário pela identidade, eficácia, qualidade e segurança dos InsumosFarmacêuticos;
+adota a seguinte Resolução da Diretoria Colegiada e eu, Diretor-Presidente, determinoa sua publicação:
+Art. 1º - Determinar a todos os estabelecimentos que exerçam as atividades de importar, exportar, distribuir, expedir, armazenar, fracionar e embalar insumos farmacêuticos o cumprimento das diretrizes estabelecidas no Regulamento Técnico de Boas Práticas de Distribuição e Fracionamento de Insumos Farmacêuticos, conforme Anexo da presente Resolução.
+Art. 2º - Instituir como norma de inspeção para os órgãos de vigilância sanitária do SUS o Anexo - Regulamento técnico das Boas Práticas de Distribuição e Fracionamento de Insumos Farmacêuticos.
+Parágrafo único Fica a empresa fracionadora responsável pela qualidade dos Insumos Farmacêuticos fracionados.
+Art. 3º - Os insumos farmacêuticos estéreis não podem ser fracionados.
+Art. 4º - As empresas de que trata esta norma somente podem comercializar com empresasautorizadas pela autoridade sanitária federal e licenciadas pela autoridade sanitáriadas unidades federadas em que se localizam
+Art. 5º - Ficam proibidas a importação e comercialização de insumos farmacêuticos destinados à fabricação de medicamentos que ainda não tiverem a sua eficáciaterapêutica avaliada pela Agência Nacional de Vigilância Sanitária.
+Parágrafo único. Excetuar do disposto no caput deste artigo a utilização com aestrita finalidade de pesquisas e trabalhos médicos e científicos.
+Art. 6º - Fica instituído que as empresas terão um prazo de 180 dias para cumprir os itens do capítulo de validação do anexo I desta Resolução.
+Parágrafo único. Excetua-se do disposto no caput deste artigo o item 13.3.1 do anexo desta Resolução.
+Art. 7º - A inobservância ou desobediência ao disposto na presente Resolução configura infração de natureza sanitária, na forma da
+Lei nº . 6.437, de 20 de agostode 1977
+, sujeitando o infrator às penalidades previstas nesse diploma legal.
+Art. 8º - Ficam revogadas a
+RDC nº . 35 de 25 de fevereiro de 2003
+(DOU 07/03/2003) e a
+RDC Nº 47, de 2 de Junho de 2000
+.
+Art. 9º - Esta Resolução entra em vigor na data de sua publicação.
+DIRCEU RAPOSO DE MELLO
+ANEXO
+REGULAMENTO TÉCNICO DAS BOAS PRÁTICAS DE DISTRIBUIÇÃO E FRACIONAMENTO DE INSUMOS FARMACÊUTICOS
+GLOSSÁRIO
+1. CONSIDERAÇÕES GERAIS
+2. GERENCIAMENTO DA QUALIDADE
+2.1. Princípios
+2.2. Responsabilidades
+2.3. Revisão da Qualidade do Insumo Farmacêutico
+2.4. Auto-inspeções da Qualidade
+3. PESSOAL
+3.1. Generalidades
+3.2. Treinamento
+3.3. Saúde, Higiene, Vestuário e Conduta.
+4. EDIFÍCIOS E INSTALAÇÕES
+4.1. Generalidades
+4.2. Áreas de Armazenamento
+4.3. Área de Fracionamento
+4.4. Área de Controle da Qualidade
+4.5. Áreas de amostragem
+4.6. Áreas Auxiliares
+4.7. Água
+4.8. Sanitização
+4.9. Gerenciamento de Resíduos
+5. EQUIPAMENTOS
+5.1. Generalidades
+5.2. Manutenção e Limpeza de Equipamentos
+5.3. Calibração e verificação dos equipamentos e instrumentos de medição e ensaio
+5.4. Sistemas Computadorizados
+6. DOCUMENTAÇÃO E REGISTROS
+6.1. Generalidades
+6.2. Sistema de Documentação
+6.3. Registros de Limpeza, Sanitização, Manutenção e Uso dos Equipamentos, Salas e Áreas.
+6.4. Especificações de Insumos farmacêuticos, Materiais de Embalagem e de Rotulagem
+6.5. Registros dos Insumos Farmacêuticos Fracionados
+6.6. Registros de Controle da Qualidade
+7. CONTROLE DE MATERIAIS
+7.1. Controles Gerais
+7.2. Qualificação de Fornecedores
+7.3. Recebimento e Quarentena
+7.4. Amostragem de Insumos Farmacêuticos, Materiais de Embalagem e de Rotulagem
+7.5. Armazenamento
+8. FRACIONAMENTO E CONTROLES DE OPERAÇÃO
+9. EMBALAGEM E ROTULAGEM
+10. EXPEDIÇÃO
+11. TRANSPORTE DE INSUMO
+13. VALIDAÇÃO
+13.1. Generalidades
+13.2. Política de Validação
+13.3. Documentação
+13.4. Qualificação
+13.5. Validação de Métodos Analíticos
+13.6. Validação de Limpeza
+13.7. Validação das operações do fracionamento
+13.8. Revalidação
+14. CONTROLE DE MUDANÇA
+15. REPROVAÇÃO
+16. RECLAMAÇÃO, RECOLHIMENTO E DEVOLUÇÃO
+GLOSSÁRIO
+Ajuste
+Operação destinada a fazer com que um instrumento de medida tenha desempenhocompatível com o seu uso, utilizando-se como referência um padrão de trabalho (padrãode controle).
+Ambiente
+Espaço fisicamente determinado e específico para o desenvolvimento de determinada(s)atividade(s), caracterizado por dimensões e instalações diferenciadas. Um ambiente podese constituir de uma sala ou de uma área.
+Amostra de Referência ou Amostra de Retenção Amostra de Insumo Farmacêutico,conservada pelo distribuidor, devidamente identificada.
+Antecâmara
+Espaço fechado com duas ou mais portas, interposto entre duas ou maisáreas de classes de limpeza distintas, com o objetivo de controlar o fluxo de ar entreambas, quando precisarem ser adentradas. A antecâmara é projetada de forma a ser utilizada por pessoas ou materiais.
+Área
+Espaço físico delimitado, onde são realizadas operações sob condições ambientaisespecíficas.
+Áreas Operacionais
+Áreas cujas operações têm contato direto com os Insumos Farmacêuticos.
+Armazenamento
+Procedimento que possibilita o estoque ordenado e racional de materiais.
+Amostra representativa
+Quantidade de amostra estatisticamente calculada, representativa do universo amostrado,tomada para fins de análise.
+BPDF
+Boas Práticas de Distribuição e Fracionamento de Insumos Farmacêuticos.
+Calibração
+Conjunto de operações que estabelecem, sob condições especificadas, a relaçãoentre os valores indicados por um instrumento de medição, sistema, ou valoresapresentados por um material de medida, comparados àqueles obtidos com um padrão dereferência correspondente.
+CAS
+"Chemical Abstracts Service" - Referência Internacional de SubstânciasQuímicas.
+Contaminação
+Introdução indesejada de impurezas de natureza química, microbiológica ou materialestranho na matéria-prima ou insumo farmacêutico durante o fracionamento, amostragem,embalagem, armazenamento ou transporte.
+Contaminação-cruzada
+Contaminação de determinado insumo farmacêutico por outro Insumo Farmacêutico,durante as operações.
+DCB - Denominação Comum Brasileira
+Denominação do fármaco ou princípio farmacologicamente ativo aprovado pelo ÓrgãoFederal responsável pela Vigilância Sanitária.
+DCI - Denominação Comum Internacional
+Denominação do fármaco ou princípio farmacologicamente ativo aprovado pelaOrganização Mundial de Saúde.
+Depósito de material de limpeza
+Sala destinada à guarda de aparelhos, utensílios e materiais utilizados na limpeza.
+Devolução
+Retorno ao fabricante ou ao distribuidor de insumos farmacêutico, por estar emdesacordo com as especificações dos compêndios oficiais ou outros motivos, excluindoexigências comerciais.
+Desvio da qualidade
+Não atendimento aos requisitos da qualidade estabelecidos para Insumos Farmacêuticos.
+Distribuição
+Qualquer atividade de armazenamento, fornecimento e expedição dos InsumosFarmacêuticos excluindo-se a de fornecimento ao público.
+Documentação
+Conjunto de documentos que definem e registram as especificações e as operações dosInsumos Farmacêuticos
+Embalagem Primária
+Recipiente destinado ao acondicionamento e envase de Insumos Farmacêuticos que mantémcontato direto com os mesmos.
+Embalagem Secundária
+Recipiente destinado ao acondicionamento de Insumos Farmacêuticos em sua embalagemprimária, não mantendo contato com os mesmos.
+Empresa
+Pessoa Jurídica que segundo as leis vigentes de comércio, explore a atividadeeconômica com Insumos Farmacêuticos abrangidos por este Regulamento.
+Especificação
+Parâmetros, seus limites documentados e respectivas metodologias a que devem atenderos Insumos Farmacêuticos.
+Estabelecimento
+Unidade da empresa destinada ao comércio atacadista de Insumos Farmacêuticos.
+Fabricante
+Empresa que realiza as operações e processos necessários para a obtenção deInsumos Farmacêuticos.
+Fracionamento
+Processo que visa à divisão em quantidades menores dos Insumos Farmacêuticos,preservando as especificações da qualidade e dados de identificação e rotulagemoriginais englobando as operações de pesagem/medida, embalagem e rotulagem.
+Gerenciamento da qualidade
+O Gerenciamento da Qualidade determina e implementa a "Política daQualidade¿, ou seja, as intenções e direções globais relativas à qualidade,formalmente expressa e autorizada pela administração superior da empresa.
+Gerenciamento de resíduos
+Atividade que engloba as etapas desde a formação dos resíduos até o destino final.
+Impureza
+Qualquer componente não desejável, presente no insumo farmacêutico.
+Insumo farmacêutico
+Droga ou substância aditiva ou complementar de qualquer natureza, destinada ao emprego em medicamento.
+Insumo farmacêutico ativo
+Droga ou substância ativa destinada a emprego em medicamentos.
+Insumo farmacêutico altamente ativo
+Toda substância (fármaco) cuja dose terapêutica possa ser inferior a 5 (cinco) mg,por exemplo: prostaglandinas, imunossupressores, alguns psicotrópicos e algunsentorpecentes.
+Insumo farmacêutico altamente sensibilizante
+Toda substância capaz de desenvolver uma reação sensibilizante em pequenas doses ouem doses cumulativas (penicilinas, cefalosporinas e respectivos derivados).
+Insumo farmacêutico crítico
+Insumo que tem maior probabilidade de ter sua especificação afetada em virtude dascondições do fracionamento.
+Instalação
+Espaço físico delimitado acrescido das máquinas, aparelhos, equipamentos e sistemasauxiliares utilizados para executar os processos.
+Limpeza
+Remoção de sujidades de qualquer superfície, por fricção manual ou auxílio demáquina.
+Lote
+Quantidade definida de Insumos Farmacêuticos, obtidos em um únicoprocesso/operação, cuja característica essencial é a homogeneidade.
+Material
+Termo usado para denotar materiais de laboratório (ex: filtros, vidrarias, reagentes),insumo farmacêutico, material de embalagem e material impresso.
+Material de embalagem
+Invólucro, recipiente ou qualquer forma de acondicionamento, removível ou não,destinado a cobrir, empacotar, envasar, proteger e manter os insumos farmacêuticos.
+Monitoramento ambiental
+Procedimentos estabelecidos que tenham como objetivo a verificação do cumprimento dosparâmetros de limpeza, temperatura, umidade e microbiológico com seus respectivosregistros.
+Número de lote
+Combinação definida de números e/ou letras que identificam um determinado lote,visando assegurar a rastreabilidade do mesmo.
+Operações
+Conjunto de atividades executadas visando atender as BPDF para Insumos Farmacêuticos.
+Ordem de fracionamento
+Documento de referência para o fracionamento de um ou parte de lote de insumofarmacêutico, que contemple as informações preestabelecidas.
+Origem
+País de produção ou industrialização dos Insumos Farmacêuticos.
+Padrão de referência primário
+Uma substância cujo elevado grau de pureza e autenticidade foram demonstrados por meiode testes analíticos.
+Padrão de referência secundário
+Substância da qualidade e de pureza estabelecidas, comparada a um padrão dereferência primário.
+Prazo de validade
+Tempo durante o qual o insumo farmacêutico poderá ser usado, caracterizado comoperíodo de vida útil definido pelo fabricante, fundamentado nos estudos de estabilidadeespecíficos, desde que mantidas as condições de armazenamento e transporteestabelecidas.
+Procedimento Operacional Padrão (POP)
+Descrição pormenorizada de técnicas e operações a serem utilizadas nas atividadesabrangidas por este Regulamento.
+Procedência
+País de embarque dos Insumos Farmacêuticos.
+Qualificação
+Ação de provar e de documentar que os equipamentos ou os sistemas subordinados estãodevidamente instalados e operam corretamente e conduzem aos resultados previstos. Aqualificação é parte da validação, mas as etapas individuais da qualificação nãoconstituem a validação do processo.
+Quarentena
+Retenção temporária dos Insumos Farmacêuticos e materiais de embalagens, isoladosfisicamente ou por outros meios que impeçam a sua utilização, enquanto esperam decisãoquanto à aprovação ou reprovação.
+Rastreabilidade
+Conjunto de informações que permitem o acompanhamento e a revisão das operaçõesefetuadas para cada lote dos Insumos Farmacêuticos.
+Reconciliação
+Procedimento que tem como objetivo fazer uma comparação nas diferentes etapas defracionamento de um lote de insumo farmacêutico, entre a quantidade real de materiais e aquantidade teórica estabelecida.
+Responsável Técnico
+Profissional legalmente habilitado, com inscrição em autarquia profissional,reconhecido pela Autoridade Sanitária para a atividade que a empresa realiza na área deinsumos abrangidos por este Regulamento.
+Rótulo
+Identificação impressa, litografada, pintada, gravada a fogo, a pressão ouauto-adesiva, aplicada diretamente sobre recipientes, embalagens, invólucros ou qualquerprotetor de embalagem externo ou interno, não podendo ser removida ou alterada durante ouso do insumo farmacêutico e durante o seu transporte ou armazenamento.
+Sala
+Ambiente envolto por paredes em todo seu perímetro e uma porta.
+Sistema
+Disposição das partes ou dos elementos de um todo, coordenados entre si, e quefuncionam como estrutura organizada.
+Utensílios
+Objetos que servem de meios ou instrumentos para as operações, adequados para os finsa que se destinam.
+Validação
+Ato documentado que atesta que qualquer procedimento, processo, equipamento, material,operação ou sistema realmente conduza aos resultados esperados.
+1. CONSIDERAÇÕES GERAIS
+1.1. As empresas de que trata esta norma devem ser detentoras de autorização defuncionamento e licença sanitária devidamente atualizada, e suas atividades regularmenteinspecionadas pelas autoridades sanitárias competentes.
+1.2. Este regulamento estabelece os procedimentos e as práticas que as empresas devemaplicar para assegurar que as instalações, métodos, processos, sistemas e controlesusados para importar, exportar, armazenar, distribuir, fracionar e embalar insumosfarmacêuticos sejam adequados para garantir qualidade e permitir seu uso na elaboraçãode medicamentos.
+1.3. As empresas devem garantir que os insumos farmacêuticos sejam adequados para ouso pretendido e que mantenham as características e especificações do fabricante,prevenindo desvios, adotando cuidados na aplicação dos seus procedimentos, em todos ossetores.
+1.4. A política da Qualidade e os conceitos de Boas Práticas de Distribuição eFracionamento estão inter-relacionados, e estão descritos com a finalidade de enfatizarsuas relações e suas importâncias fundamentais para a distribuição e fracionamentodos insumos farmacêuticos.
+1.5. As empresas devem possuir recursos humanos, infraestrutura física, equipamentos eprocedimentos escritos que atendam às recomendações deste regulamento.
+1.6. É de responsabilidade da administração da empresa prever e prover recursoshumanos e materiais necessários à operacionalização das atividades.
+2. GERENCIAMENTO DA QUALIDADE
+2.1. Princípios
+2.1.1. A qualidade deve ser de responsabilidade de todos os colaboradores da empresa.
+2.1.2. A empresa deve estabelecer, documentar, implementar e manter um sistema eficazpara o gerenciamento da qualidade, com a participação ativa da gerência e de todopessoal envolvido nas atividades contempladas nesta norma.
+2.1.3. O sistema para o gerenciamento da qualidade deve abranger a estruturaorganizacional, os Procedimentos, o fracionamento, os recursos e as atividadesnecessárias para assegurar que o insumo farmacêutico esteja em conformidade com asespecificações pretendidas da qualidade. Todas as atividades relacionadas devem serdefinidas e documentadas.
+2.1.4. Deve existir uma Unidade da Qualidade que seja responsável por assegurar que osinsumos farmacêuticos estejam dentro dos padrões da qualidade exigidos e que possam serutilizados para os fins propostos.
+2.1.5. A Unidade da Qualidade deve ser independente do fracionamento compreendendo asresponsabilidades da Garantia da Qualidade (GQ) e do Controle da Qualidade (CQ), que façacumprir as responsabilidades da distribuição e do fracionamento. A Unidade da Qualidadepode ser constituída por um único indivíduo ou grupo ou departamento, dependendo dotamanho e da estrutura da organização.
+2.1.5.1. A unidade da qualidade das empresas que exercem as atividades dedistribuição e armazenamento de insumos farmacêuticos compreende as responsabilidadesda Garantia da Qualidade (GQ) e do Controle da Qualidade (CQ), quando este for realizadopela empresa.
+2.1.6. Os insumos farmacêuticos apenas podem ser liberados por funcionários definidose autorizados pela Unidade da Qualidade.
+2.1.7. Todas as atividades relacionadas à qualidade devem ser registradas.
+2.1.8. Todos os desvios da qualidade devem ser investigados, documentados ejustificados.
+2.1.9. Todas as decisões e medidas tomadas resultantes de um desvio da qualidade devemser registradas, assinadas, datadas e anexadas aos correspondentes registros do lote.
+2.1.10. Nenhum material deve ser utilizado antes da conclusão satisfatória daavaliação pela Unidade da Qualidade.
+2.1.11. Devem existir procedimentos para notificar a Unidade da Qualidade, sempre queocorrer desvios da qualidade incluindo as ações relacionadas.
+2.2. Responsabilidades
+2.2.1. Introdução
+2.2.1.1. Os postos principais do Fracionamento, do Controle da Qualidade e da Unidadeda Qualidade devem ser ocupados por pessoas que trabalhem em período integral na empresa.Pode haver necessidade de delegar algumas funções, entretanto, a responsabilidade nãopode ser delegada.
+2.2.1.2. Os responsáveis pelos setores de Fracionamento, Controle da Qualidade eUnidade da Qualidade devem estar habilitados conforme legislação vigente do respectivoconselho de classe.
+2.2.1.3. Devem existir responsáveis distintos para as atividades de Fracionamento,Controle da Qualidade e Unidade da Qualidade.
+2.2.1.4. Os responsáveis pelo setor de Fracionamento e Unidade da Qualidade devemexercer em conjunto determinadas atividades relativas à qualidade, tais como:
+a) Elaboração e atualização dos procedimentos operacionais padrão e demaisdocumentos;
+b) Monitoramento e o controle do ambiente de fracionamento;
+c) Implementação e monitoramento dos programas de saúde, que devem contemplarhigiene, vestuário e conduta;
+d) Calibração e qualificação de equipamentos e instrumentos envolvidos no processo;
+e) Treinamento, incluindo a aplicação dos princípios das BPDF;
+f) Qualificação de fornecedores;
+g) Aprovação e o monitoramento de empresas prestadoras de serviço;
+h) Elaboração de especificações e monitoramento das condições de armazenamentodos materiais;
+i) Arquivamento de documentos e registros;
+j) Monitoramento do cumprimento das Boas Práticas de Distribuição e Fracionamento deInsumos Farmacêuticos;
+k) Inspeção, investigação e amostragem de modo a monitorar os fatores que possamafetar a qualidade do insumo farmacêutico;
+l) Validação de limpeza e processo de fracionamento de insumos farmacêuticos.
+2.2.2. Responsabilidades da Unidade da Qualidade
+2.2.2.1. A Unidade da Qualidade deve gerenciar todas as atividades relacionadas àqualidade.
+2.2.2.2. As responsabilidades principais da Unidade da Qualidade não devem serdelegadas. Estas responsabilidades devem ser definidas e documentadas contemplando asseguintes atividades:
+a) Liberar ou rejeitar todos os insumos farmacêuticos;
+b) Estabelecer e monitorar um sistema para liberar ou rejeitar insumos farmacêuticos,materiais de embalagem e rotulagem;
+c) Revisar a documentação dos registros de insumos farmacêuticos antes de sualiberação para a expedição;
+d) Certificar-se de que os desvios da qualidade sejam investigados e as açõescorretivas implementadas;
+e) Gerenciar as atividades para a guarda, armazenamento e documentação das amostrasde retenção;
+f) Aprovar todos os procedimentos, especificações e instruções que impactam naqualidade do insumo farmacêutico;
+g) Aprovar o Programa de auto-inspeção e certificar-se de que é executado;
+h) Aprovar as especificações técnicas para contratação de serviços deterceirização;
+i) Aprovar qualquer alteração nas instalações, nos equipamentos, procedimentos eprocessos;
+j) Elaborar plano mestre, protocolos e relatórios de validação e assegurar que sejamfeitas as validações necessárias;
+k) Certificar-se que as reclamações e devoluções relacionadas à qualidade devemser registradas, investigadas e documentadas.
+Quando necessário, as ações corretivas devem ser implementadas;
+l) Executar revisões da qualidade do insumo farmacêutico, conforme descrito item 2.3desta norma;
+m) Aprovar o programa de monitoramento ambiental e certificar-se de que é executado;
+n) Aprovar e promover o Programa de Treinamento e certificar-se que sejam realizadostreinamentos iniciais e contínuos do pessoal;
+o) Determinar e acompanhar o recolhimento de insumo farmacêutico;
+p) Aprovar o programa de calibração, manutenção preventiva e corretiva, e garantirsua correta execução;
+q) Certificar-se de que existe um sistema eficaz de manutenção e calibração deequipamentos;
+r) Autorizar a emissão da Ordem de Fracionamento;
+s) Garantir que instalações e equipamentos estejam qualificados;
+t) Aprovar os procedimentos relacionados aos sistemas computadorizados;
+u) Definir as análises a serem realizadas nos insumos farmacêuticos fracionados paraassegurar que suas especificações não sejam alteradas durante o fracionamento.
+2.2.3. Responsabilidades do Controle da Qualidade
+2.2.3.1. As responsabilidades principais do Controle da Qualidade não podem serdelegadas. Estas responsabilidades devem ser definidas e documentadas descrevendoclaramente estas atividades:
+a) Elaborar, atualizar e revisar:
+I Especificações e métodos analíticos para insumos farmacêuticos e materiais deembalagem;
+II Procedimentos de amostragem;
+III Procedimentos para monitoramento ambiental;
+IV Procedimentos relativos aos padrões de referência;
+V Procedimentos relativos às amostras de referência futura.
+b) Executar análises para aprovação ou reprovação de insumos farmacêuticos emateriais de embalagem;
+c) Emitir laudo analítico de cada lote de material analisado;
+d) Aprovar e monitorar as análises realizadas ou as previstas em contrato deterceirização, conforme legislação vigente;
+e) Participar da investigação das reclamações e devoluções dos insumosfarmacêuticos;
+f) Assegurar a correta identificação dos materiais, instrumentos e equipamentos delaboratório;
+g) Validar as metodologias analíticas não farmacopêicas;
+h) Investigar os resultados fora de especificação, de acordo com procedimentos;
+i) Executar a verificação dos equipamentos e instrumentos do laboratório;
+j) Executar as análises de monitoramento ambiental.
+2.2.4. Responsabilidades do Setor de Fracionamento
+2.2.4.1. As responsabilidades do setor de fracionamento devem ser definidas edocumentadas contemplando as seguintes atividades:
+a) Elaborar os procedimentos operacionais padrão do fracionamento e assegurar quesejam implementados;
+b) Participar da elaboração e revisão do modelo da ordem de fracionamento dosinsumos farmacêuticos e dos procedimentos relacionados;
+c) Assegurar que o processo de fracionamento (pesagem/medida, embalagem, fechamento erotulagem) seja executado de acordo com procedimentos apropriados;
+d) Revisar todos os registros do fracionamento e assegurar de que estejam completos eassinados;
+e) Garantir que todos os desvios do processo de fracionamento sejam registrados eencaminhados à Unidade da Qualidade;
+f) Garantir que as instalações e equipamentos encontrem-se limpos, higienizados edevidamente identificados;
+g) Garantir que as calibrações e os controles de equipamentos necessários sejamexecutados e registrados e que os registros estejam disponíveis;
+h) Propor e avaliar mudanças no processo de fracionamento ou nos equipamentos;
+i) Executar a verificação dos equipamentos e instrumentos e manter os registros;
+j) Controlar e manter registros de monitoramento ambiental.
+2.2.5. Responsabilidades do Setor de Distribuição
+a) Elaborar os procedimentos operacionais padrão da distribuição e assegurar quesejam implementados;
+b) Manter atualizados os dados de distribuição de forma a garantir a rastreabilidadedos insumos farmacêuticos;
+c) Distribuir os insumos farmacêuticos de acordo com os procedimentos apropriados;
+d) Distribuir os lotes de insumos farmacêuticos obedecendo preferencialmente à regra:primeiro que expira é o primeiro que sai;
+e) Garantir que todos os desvios sejam registrados e encaminhados à Unidade daQualidade;
+f) Propor e avaliar mudanças nas operações de distribuição.
+2.2.6. Responsabilidades do Setor de Armazenamento a) Elaborar os procedimentosoperacionais padrão do armazenamento e assegurar que sejam implementados;
+b) Assegurar que os insumos farmacêuticos sejam armazenados de acordo comprocedimentos apropriados e em locais adequados;
+c) Garantir que as instalações encontrem-se limpas e, quando necessário,higienizadas;
+d) Garantir que todos os desvios sejam registrados e encaminhados à Unidade daQualidade;
+e) Propor e avaliar mudanças nas operações de armazenamento;
+f) Manter registro de monitoramento ambiental.
+2.3. Revisão da Qualidade do Insumo Farmacêutico 2.3.1. Revisões regulares daqualidade dos insumos farmacêuticos devem ser conduzidas com o objetivo de verificar aconsistência das operações. Tais revisões devem ser conduzidas e documentadasanualmente incluindo:
+a) Revisão de todos os lotes que não se encontram como estabelecido naespecificação;
+b) Revisão de todos os desvios e investigações relacionadas;
+c) Revisão de mudanças realizadas nas operações de fracionamento ou métodosanalíticos validados;
+d) Revisão de todas as devoluções, reclamações e recolhimentos relacionados àqualidade;
+e) Revisão de ações corretivas.
+2.3.2. Os resultados devem ser analisados e, se necessário, ações corretivas devemser tomadas, registradas, acompanhadas e concluídas.
+2.4. Auto-inspeções da Qualidade
+2.4.1. Tem como finalidade verificar a conformidade das empresas com os princípios deBPDF, desde a aquisição de materiais até a expedição do insumo farmacêutico. Asauto-inspeções devem ser realizadas, no mínimo, anualmente.
+2.4.2. Deve ser elaborado procedimento escrito sobre autoinspeções.
+A auto-inspeção deve englobar:
+a) Pessoal;
+b) Instalações;
+c) Manutenção de prédios e equipamentos;
+d) Armazenamento de materiais;
+e) Distribuição de insumos farmacêuticos;
+f) Equipamentos;
+g) Fracionamento e controles do fracionamento;
+h) Controle da Qualidade;
+i) Documentação;
+j) Higienização e limpeza;
+k) Programas de validação e revalidação;
+l) Calibração e qualificação de instrumentos e equipamentos;
+m) Recolhimento de insumo farmacêutico do mercado;
+n) Gerenciamento das Reclamações;
+o) Controle de rótulos;
+p) Gerenciamento dos resíduos;
+q) Resultados das auto-inspeções anteriores e ações corretivas adotadas.
+2.4.3. O responsável pela Unidade da Qualidade deve nomear uma equipe para conduzir aauto-inspeção, equipe esta que deve ser formada por profissionais qualificados em suasáreas de atuação e familiarizados com as BPDF. Os membros da equipe podem serprofissionais da própria empresa ou especialistas externos.
+2.4.4. A auto-inspeção deve ser documentada e os registros devem conter:
+a) Resultado da auto-inspeção;
+b) Avaliações e conclusões;
+c) Não conformidades detectadas;
+d) Ações corretivas recomendadas e prazos estabelecidos para o atendimento.
+2.4.5. Ações corretivas para as não-conformidades observadas no relatório deauto-inspeção devem ser implementadas e concluídas no prazo determinado.
+3. PESSOAL
+3.1. Generalidades
+3.1.1. O estabelecimento e a manutenção da qualidade do insumo farmacêutico dependemdos funcionários que realizam as atividades de que trata esta norma. Deve haver umnúmero adequado de pessoal qualificado pela instrução, pelo treinamento, e/ou pelaexperiência, para executar, supervisionar e gerenciar as atividades realizadas cominsumos farmacêuticos. As responsabilidades e autoridades individuais devem estarestabelecidas em procedimentos escritos, compreendidas e aplicadas por todos osenvolvidos.
+3.1.2. A empresa deve possuir um organograma. Os funcionários não devem acumularresponsabilidades a fim de evitar que a qualidade dos insumos farmacêuticos seja colocadaem risco. Suas atribuições podem ser delegadas a substitutos designados, desde quepossuam nível de qualificação satisfatório. Não pode haver ausência ou acúmulo nasresponsabilidades do pessoal no que se refere à aplicação das BPDF.
+3.1.3. Todo o pessoal deve conhecer os princípios das BPDF e receber treinamentoinicial e contínuo.
+3.2. Treinamento
+3.2.1. A empresa deve, mediante um programa escrito e definido, promover treinamento detodo pessoal cujas atividades possam interferir na qualidade do insumo farmacêutico.Atenção especial deve ser dada ao treinamento das pessoas envolvidas nas atividades defracionamento e do controle da qualidade.
+3.2.2. Além de treinamento sobre a teoria e a prática das BPDF, o pessoal recémcontratado deve participar do programa de integração e receber treinamento apropriadoquanto às suas atribuições e ser treinado e avaliado continuamente.
+3.2.3. Os programas de treinamento devem contemplar todo pessoal, serem implementadospelos responsáveis e avaliados periodicamente.
+Os registros devem ser mantidos.
+3.2.4. O pessoal que trabalha em áreas onde há risco de contaminação e em áreasonde são manuseados os insumos farmacêuticos altamente ativos, tóxicos, infecciosos ealtamente sensibilizantes deve receber treinamento específico.
+3.3. Saúde, Higiene, Vestuário e Conduta.
+3.3.1. Todos os funcionários devem ser submetidos a exames de saúde para admissão eposteriormente a exames periódicos necessários às atividades desempenhadas, de acordocom legislação específica em vigor.
+3.3.2. Todos os funcionários devem ser treinados nas práticas de higiene pessoal esegurança e cumprir as normas estabelecidas. O treinamento deve incluir situações deconduta em caso de doenças contagiosas ou lesão exposta.
+3.3.3. Todas as pessoas com suspeita ou confirmação de doença infecciosa ou lesãoexposta não podem executar atividades que comprometam a qualidade dos insumosfarmacêuticos. Devem ser excluídas das atividades até que a condição de saúde nãorepresente risco à qualidade e a segurança do insumo farmacêutico.
+3.3.4. Todos os funcionários devem ser instruídos e incentivados a relatar a seusupervisor imediato quaisquer condições fora dos procedimentos estabelecidos que possaminterferir na qualidade dos insumos farmacêuticos.
+3.3.5. Para minimizar o risco de contaminação, os funcionários devem vestir uniformelimpo e apropriado para cada área.
+3.3.6. Todos os uniformes devem estar limpos, higienizados e serem compatíveis com asatividades.
+3.3.7. O fornecimento e higienização dos uniformes são de responsabilidade daempresa.
+3.3.8. Para que seja assegurada a proteção dos funcionários, a empresa devedisponibilizar Equipamento de Proteção Coletiva (EPC) e Equipamento de ProteçãoIndividual (EPI) de acordo com as atividades desenvolvidas.
+3.3.9. É proibido fumar, comer, beber, mascar ou manter plantas, animais, alimentos,bebidas, fumo e medicamentos nas áreas operacionais.
+3.3.10. O acesso às áreas operacionais deve ser restrito a pessoas autorizadas.
+3.3.11. Os visitantes devem ser previamente autorizados, orientados e acompanhados naárea por profissional designado.
+3.3.12. Os procedimentos de higiene pessoal, inclusive o uso de vestimentasapropriadas, devem ser cumpridos por todas as pessoas que entrarem nas áreasoperacionais.
+4. EDIFÍCIOS E INSTALAÇÕES
+4.1. Generalidades
+4.1.1. O projeto dos edifícios e instalações deve minimizar o risco de erros epossibilitar a limpeza e manutenção adequada a fim de evitar a contaminação que possaafetar a qualidade dos insumos farmacêuticos, a preservação do meio ambiente esegurança dos funcionários.
+4.1.2. Os edifícios e as instalações devem ser localizados, construídos, adaptadose mantidos de forma que sejam adequados às operações a serem executadas.
+4.1.3. Os edifícios e as instalações devem ter espaço adequado para a disposiçãoordenada de equipamentos e materiais de modo a evitar a contaminação e facilitar alimpeza.
+4.1.4. As instalações devem ser mantidas em bom estado de conservação, higiene elimpeza. Devem ser asseguradas que as operações de manutenção e reparo nãorepresentem qualquer risco à qualidade dos insumos farmacêuticos.
+4.1.5. Os sistemas de energia elétrica, iluminação, ar, ventilação e exaustão,bem como o controle e monitoramento de temperatura e umidade devem ser adequados aoarmazenamento e fracionamento dos insumos farmacêuticos e ao funcionamento dosequipamentos.
+4.1.6. As tubulações fixas, destinadas à condução de fluídos, devem serdevidamente identificadas, conforme legislação vigente, devendo ser empregados conexõesou adaptadores que não sejam trocados entre si.
+4.1.7. As instalações devem ser projetadas e equipadas de forma a impedir a entradade insetos e outros animais.
+4.2. Áreas de Armazenamento
+4.2.1. As áreas de armazenamento devem ter capacidade suficiente para possibilitar oestoque ordenado dos insumos farmacêuticos e materiais de embalagem, em suas condiçõesde quarentena, aprovado, reprovado, devolvido e recolhido.
+4.2.2. As áreas de armazenamento devem assegurar condições ideais de estocagem.Devem ser limpas, secas e mantidas em temperatura e umidade compatível com os materiaisarmazenados, não permitindo a contaminação cruzada e ambiental. Estas condições devemser monitoradas e registradas e, quando necessário controladas.
+4.2.3. Nas áreas de recebimento e expedição os materiais devem ser protegidos dasvariações climáticas.
+4.2.4. As áreas de recebimento devem ser projetadas e equipadas de forma a permitirque os recipientes de materiais recebidos sejam limpos antes de serem estocados.
+4.2.5. As áreas de armazenamento de insumos farmacêuticos fracionados devem seridentificadas e segregadas.
+4.2.6. Os insumos farmacêuticos e materiais de embalagem em quarentena devem estar emárea restrita e separada na área de armazenamento. Essa área deve ser claramentedemarcada e o acesso somente pode ser efetuado por pessoas autorizadas. Qualquer outrosistema que substitua a quarentena física deve oferecer a mesma segurança, garantindo anão liberação para uso ou comercialização.
+4.2.7. Os insumos farmacêuticos devem ser identificados individualmente quanto ao seustatus a fim de impedir trocas acidentais.
+4.2.8. O armazenamento de materiais devolvidos, reprovados ou recolhidos deve serefetuado em área segregada e identificada.
+4.2.9. Os materiais inflamáveis, explosivos ou outras substâncias perigosas devem serestocados em áreas seguras e protegidas, devidamente segregados e identificados, deacordo com legislação específica vigente.
+4.2.10. O estabelecimento deve dispor de armário resistente e/ou área própriaidentificada, fechada com chave ou outro dispositivo que ofereça segurança na guarda dosInsumos Farmacêuticos sujeitos ao controle especial, bem como suas amostras dereferência e insumos devolvidos, reprovados ou recolhidos.
+4.2.11. O armazenamento de materiais impressos deve ser efetuado de forma segura, comacesso restrito, evitando misturas e desvios; devendo ser manuseado por pessoal designado,seguindo procedimentos definidos e escritos.
+4.2.12. Materiais promocionais não devem ser armazenados na mesma área dearmazenamento dos insumos farmacêuticos.
+4.3. Área de Fracionamento
+4.3.1. O estabelecimento deve possuir salas separadas para o fracionamento dos InsumosFarmacêuticos sólidos, semi-sólidos e líquidos.
+4.3.1.1. O acesso para materiais e pessoal deve ser por antecâmaras independentes.
+Nota:
+Prazo estabelecido de 180 (cento e oitenta), a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe a
+Resolução - RDC nº 72, de 29 de outubro de 2007
+
+4.3.2. As áreas de fracionamento devem ser compatíveis ao volume das operações eprojetadas em espaço segregado.
+4.3.3. As áreas de fracionamento devem permitir o posicionamento lógico e ordenadodos equipamentos e dos materiais, de forma a evitar a ocorrência de contaminação eerros no processo de fracionamento.
+4.3.4. As salas de fracionamento dos insumos farmacêuticos devem ter suasinstalações com sistema de iluminação, ventilação, exaustão, temperatura e umidadeadequadas. Devem ser regularmente monitoradas durante o período de fracionamento e emrepouso, a fim de assegurar o cumprimento das especificações da área.
+4.3.5. O fracionamento de substâncias cáusticas, ácidas e irritantes deve serrealizado em capelas com exaustão adequadas para este fim.
+4.3.6. Nas áreas onde os insumos farmacêuticos e os materiais de embalagem primáriaestiverem expostos ao ambiente, as superfícies interiores devem ser lisas, impermeáveis,laváveis, resistentes, livres de rachaduras e de fácil limpeza, permitindo ahigienização e não devendo liberar partículas.
+4.3.7. As tubulações, luminárias, pontos de ventilação e outras instalaçõesdevem ser projetados e instalados de modo a facilitar a limpeza. Sempre que possível oacesso para manutenção deve estar localizado externamente.
+4.3.8. Os ralos, quando necessários, devem ser de tamanho adequado, sifonados etampados, para evitar os refluxos de líquidos ou gás e mantidos fechados.
+4.3.9. Nas salas de fracionamento não pode haver ralos.
+4.3.10. Os resíduos do fracionamento devem ser acondicionados e descartadosapropriadamente, conforme legislação vigente.
+4.3.11. O fracionamento de insumos farmacêuticos altamente ativos, antibióticos,hormônios, substâncias citotóxicas e altamente sensibilizantes deve ser realizado emsalas dedicadas e segregadas, com sistemas de fluxo de ar completamente independentes,projetados especificamente para este fim, de modo a evitar contaminação cruzada.
+4.3.13. Procedimentos adequados devem ser estabelecidos para evitar a contaminaçãocruzada decorrente da circulação de pessoas e de materiais.
+4.3.14. As atividades de fracionamento de quaisquer materiais não farmacêuticos nãodevem ser realizadas nas mesmas salas e equipamentos usados para fracionamento do insumofarmacêutico.
+4.3.15. Os insumos farmacêuticos que forem utilizados em outras classes de produtospoderão ser fracionados na mesma sala de fracionamento, desde que obedecidos os mesmoscritérios do fracionamento de insumos farmacêuticos e observada a validação delimpeza.
+4.4. Área de Controle da Qualidade
+4.4.1. Os laboratórios de Controle da Qualidade devem ser projetados de forma afacilitar as operações neles realizadas. Devem dispor de espaço suficiente para evitara ocorrência de misturas e de contaminação cruzada.
+4.4.2. O laboratório deve ser projetado considerando a utilização de materiais deconstrução adequados e deve possuir conjunto de dispositivos que assegurem ascondições ambientais para a realização das análises e a proteção da saúde dopessoal.
+4.4.3. Devem existir salas separadas para proteger determinados instrumentos deinterferências elétricas, vibrações, contato excessivo com umidade e outros fatoresexternos.
+4.4.4. Os laboratórios de Controle da Qualidade devem estar separados das demaisáreas operacionais. As áreas onde forem realizados os ensaios físico-químicos emicrobiológicos devem ser separadas e contar com instalações independentes.
+4.4.5. A amostra de referência do insumo farmacêutico fracionado deve ser armazenadaem área adequada, sob a responsabilidade e guarda do Controle da Qualidade, obedecendoàs condições de armazenamento estabelecidas pelo fabricante.
+4.5. Áreas de amostragem
+4.5.1. Toda amostragem deve ser feita em local adequado.
+4.5.2. As áreas destinadas à amostragem dos insumos farmacêuticos, quandolocalizadas em áreas distintas do fracionamento, devem ser projetadas e separadas paraesse fim, possuindo sistema de exaustão independente e adequado, que evite a ocorrênciade contaminação cruzada.
+4.5.2.1. O acesso para materiais e pessoal deve ser por antecâmaras independentes.
+4.5.3. A amostragem de insumos farmacêuticos altamente ativos, antibióticos,hormônios, substâncias citotóxicas e altamente sensibilizantes deve ser realizada emsalas dedicadas e segregadas, com sistemas de fluxo de ar completamente independentes demodo a evitar contaminação cruzada.
+4.6. Áreas Auxiliares
+4.6.1. As salas de descanso e refeitório devem ser separadas das demais áreas.
+4.6.2. Vestiários, lavatórios e sanitários devem ser de fácil acesso e apropriadospara o número de usuários. Os sanitários não devem ter comunicação direta com asáreas operacionais. Devem estar sempre limpos e sanitizados.
+4.6.3. As áreas de manutenção devem estar situadas em locais separados das áreasoperacionais e de controle da qualidade.
+4.6.4. Deve existir um local específico para lavagem dos utensílios do fracionamentoe da amostragem.
+4.7. Água
+4.7.1. As empresas devem ser abastecidas com água potável.
+4.7.2. Quando a empresa possuir caixa d'água esta deve estar devidamente protegidapara evitar a entrada de insetos, aves, roedores ou outros contaminantes.
+4.7.3. Deve haver procedimento escrito para a limpeza periódica da caixa d'água,mantendo-se os registros que comprovem sua realização.
+4.7.4. Devem ser feitos periodicamente testes físico-químicos e microbiológicos,para monitorar a qualidade da água de abastecimento, mantendo-se seus respectivosregistros.
+4.7.5.Quando os resultados dos testes analíticos da água potável estiverem fora doslimites estabelecidos pela legislação vigente, as causas devem ser apuradas e açõescorretivas identificadas e registradas.
+4.7.6. Deve existir água apropriada para as análises realizadas no laboratório decontrole da qualidade.
+4.8. Sanitização
+4.8.1. As instalações devem ser mantidas em condições de limpeza e sanitizaçãoadequadas.
+4.8.2. Devem ser estabelecidos procedimentos escritos, contendo as responsabilidades,as programações de limpeza e sanitização, os métodos, os equipamentos, utensílios eos materiais a serem usados na limpeza das instalações.
+4.8.2.1. Deve existir depósito de material de limpeza.
+4.8.3. Devem ser estabelecidos procedimentos escritos para o uso de raticidas,inseticidas, fungicidas, fumegantes, sanitizantes e agentes de limpeza utilizados paraprevenir a contaminação de equipamentos, utensílios, material de embalagem e rotulageme insumos farmacêuticos.
+4.9. Gerenciamento de Resíduos
+4.9.1. Devem existir procedimentos escritos para o gerenciamento dos resíduos,conforme legislação vigente, devendo ser de conhecimento prévio de todos osfuncionários. Devem ser registrados os controles realizados e sua freqüência.
+4.9.2. Os resíduos devem estar armazenados de maneira segura até a sua destinação.Os recipientes para o material de descarte devem estar identificados. As substânciastóxicas e os materiais inflamáveis devem ser guardados em locais conforme exigido pelaLegislação vigente.
+5. EQUIPAMENTOS
+5.1. Generalidades
+5.1.1. Os equipamentos devem ser projetados, instalados e mantidos de forma que:
+a)sejam apropriados ao uso para o qual se destinam;
+b)facilitem sua manutenção e limpeza;
+c)minimizem o risco de contaminação.
+5.1.2. Os equipamentos devem ser identificados de modo a permitir a sua rastreabilidadequanto ao seu uso, limpeza e manutenção.
+5.1.3. Os equipamentos devem ser qualificados, quando aplicável.
+5.1.4. Equipamentos e/ou instrumentos com defeito, em desuso ou inadequados ao usodevem ser imediatamente identificados, consertados ou retirados das áreas. A manutençãoe os consertos devem ser documentados.
+5.1.5. Os sistemas de controle e monitoramento de temperatura e umidade das áreasoperacionais devem ser mantidos em condições adequadas de limpeza, conservação,manutenção e operação.
+5.2. Manutenção e Limpeza de Equipamentos
+5.2.1. Deve ser estabelecido um Programa de Manutenção de Equipamentos.
+5.2.2. As programações e os procedimentos para a manutenção preventiva e corretivadevem se basear nas especificações dos fabricantes. A manutenção deve ser registrada.
+5.2.3. Serviços de manutenção preventiva e/ou corretiva podem ser terceirizados.
+5.2.4. Devem ser estabelecidos procedimentos escritos de limpeza e sanitização deequipamentos. Os procedimentos devem conter instruções que permitam limpeza de maneirareprodutível e eficaz. Devem estar incluídos nos procedimentos:
+a) Atribuição da responsabilidade para a limpeza e sanitização do equipamento;
+b) Programações da limpeza, incluindo, quando apropriado, sanitização;
+c) Descrição completa dos métodos e dos materiais, incluindo a diluição dosagentes de limpeza utilizados;
+d) Quando apropriadas, instruções para desmontar e remontar cada peça do equipamentopara assegurar a limpeza e sanitização;
+e) Instruções para a liberação de limpeza do equipamento após o fracionamento deum lote;
+f) Instruções para a proteção do equipamento após a limpeza;
+g) Verificação e liberação do equipamento antes do uso;
+h) Estabelecimento do tempo máximo entre a conclusão do processo e a limpeza doequipamento desde que este seja significativo para o procedimento de limpeza;
+i) Estabelecimento do tempo máximo entre a limpeza do equipamento e o próximo usoassim como quais os parâmetros devem ser reavaliados.
+5.2.5. Os utensílios devem ser limpos, armazenados, sanitizados, identificados quantoà condição de limpeza e, quando apropriado, esterilizados para prevenir acontaminação.
+5.2.6. Os equipamentos devem ser limpos entre o fracionamento de insumos farmacêuticospara impedir a contaminação cruzada.
+5.2.7. Devem ser estabelecidos critérios de aceitação para limites de resíduos eseleção de agentes de limpeza.
+5.2.8. O equipamento deve ser identificado de acordo com a sua condição de limpeza.
+5.3. Calibração e verificação dos equipamentos e instrumentos de medição e ensaio
+5.3.1. Os equipamentos e instrumentos utilizados nas operações de pesagem, medida,registros e controles, devem ser submetidos à manutenção e calibração de acordo comprocedimentos escritos.
+5.3.2. As calibrações devem ser executadas por pessoal capacitado, utilizandopadrões rastreáveis e certificados, com procedimentos reconhecidos oficialmente, emfunção da freqüência de uso do equipamento e dos registros das verificações dosmesmos.
+5.3.2.1. os equipamentos e os instrumentos devem ser verificados diariamente, ou antes,de serem utilizados e mantidos seus respectivos registros.
+5.3.3. A etiqueta com data referente à última calibração deve estar afixada noequipamento.
+5.4. Sistemas Computadorizados
+5.4.1. Os sistemas computadorizados devem ter controles suficientes para impedir oacesso, mudanças não autorizadas e omissões de dados.
+5.4.2. Devem existir registros de todas as alterações evidenciando os responsáveis.
+5.4.3. Devem ser estabelecidos procedimentos que previnam a inserção de dadosincorretos no sistema computadorizado.
+5.4.4. Os procedimentos escritos devem estar disponíveis aos responsáveis pelaoperação e pela manutenção de sistemas computadorizados.
+5.4.5. Os incidentes relacionados aos sistemas computadorizados que podem afetar aconfiabilidade dos registros ou dos resultados de teste devem ser registrados einvestigados.
+5.4.6. As mudanças nos sistemas computadorizados devem ser feitas de acordo comprocedimentos para alterações e devem ser formalmente autorizadas, documentadas etestadas. Os registros de todas as mudanças devem ser mantidos, incluindo asmodificações e as melhorias realizadas no sistema.
+5.4.7. Deve haver um sistema alternativo para recuperação de dados no caso de falhasque resultem na perda dos registros.
+5.4.8. Devem ser estabelecidos para todos os sistemas computadorizados meios deassegurar a proteção dos dados.
+5.4.9. Deve existir uma forma segura e atualizada de armazenamento de dados, em meioeletrônico, compatível com tecnologias disponíveis.
+6. DOCUMENTAÇÃO E REGISTROS
+6.1. Generalidades
+6.1.1. A documentação constitui parte essencial do sistema da qualidade e deve estarrelacionada com todos os aspectos das BPDF. Todos os documentos devem estar facilmentedisponíveis.
+6.1.2. Os dados devem ser registrados de modo confiável.
+6.2. Sistema de Documentação
+6.2.1. Toda documentação relacionada às BPDF deve ser elaborada, revisada, aprovada,atualizada e distribuída pelos respectivos responsáveis, de acordo com procedimentosescritos.
+6.2.2. Os documentos devem estar disponíveis em meio eletrônico, impresso ou emoutras formas adequadas.
+6.2.3. Documentos impressos não devem ter rasuras. Registros alterados, autorizadospelos responsáveis, devem possibilitar a identificação do dado anterior e estarassinados e datados.
+6.2.4. O preenchimento dos registros deve ser realizado imediatamente após aexecução das atividades identificando o responsável pela execução.
+6.2.5. A emissão, revisão, substituição, retirada e distribuição dos documentosdevem ser controladas.
+6.2.6. Os documentos originais devem ser revisados e atualizados conforme procedimentosestabelecidos, mantendo o histórico das revisões.
+6.2.7. Deve haver um sistema que impeça o uso inadvertido da versão anterior.
+6.2.8. Documentos e registros devem ser retidos e o período de retenção deve serestabelecido em procedimentos.
+6.2.9. Documentos e registros referentes às operações com insumos farmacêuticosdevem ser arquivados por 1 (um) ano após o vencimento da validade do lote.
+6.2.10. Documentos e registros dos insumos farmacêuticos sujeitos a controle especialdevem ser arquivados conforme legislação vigente.
+6.2.11. Quando as assinaturas eletrônicas forem utilizadas em documentos, essas devemser autênticas e seguras.
+6.3. Registros de Limpeza, Sanitização, Manutenção e Uso dos Equipamentos, Salas eÁreas.
+6.3.1. Os registros de uso, limpeza, sanitização e manutenção dos equipamentos,salas e áreas devem conter a data, hora, o insumo farmacêutico anterior, insumofarmacêutico atual (quando aplicável) e o número do lote de cada insumo farmacêuticofracionado, bem como a identificação da pessoa que executou a limpeza e a manutenção.Os registros devem ser rastreáveis e estarem prontamente disponíveis.
+6.3.2. Os registros de limpeza e sanitização devem estar disponíveis ou anexados àordem de fracionamento.
+6.4. Especificações de Insumos farmacêuticos, Materiais de Embalagem e de Rotulagem
+6.4.1. A especificação dos materiais de embalagem primária e dos materiais impressosdeve possuir uma descrição, incluindo:
+a) Nome e/ou código de referência;
+b) Requisitos quantitativos e qualitativos com os respectivos limites de aceitação;
+c) Modelo do material impresso e d) Condições de armazenamento.
+6.4.2. A especificação dos insumos farmacêuticos deve possuir:
+a) Nome do insumo farmacêutico de acordo com a DCB, DCI ou CAS (obrigatoriamente nestaordem), quando aplicável e seu respectivo código de identificação;
+b) Referência das especificações e metodologias do fabricante;
+c) Requisitos quantitativos e qualitativos com os respectivos limites de aceitação;
+d) Condições de armazenamento;
+e) Estrutura química e fórmula molecular, quando aplicáveis.
+6.4.3. Os materiais de embalagem devem atender às especificações dando ênfase àcompatibilidade dos mesmos com o insumo farmacêutico.
+6.5. Registros dos Insumos Farmacêuticos Fracionados
+6.5.1. A documentação de cada fracionamento deve conter registros de todas asoperações realizadas para permitir a rastreabilidade das informações geradas,incluindo as de controle da qualidade.
+6.5.2. A cada fracionamento deve ser atribuído um código de identificação único eeste deverá constar em todos os registros do insumo farmacêutico fracionado.
+6.5.3. A ordem de fracionamento deve incluir:
+a) Nome do Insumo Farmacêutico;
+b) Quantidade a ser fracionada e efetivamente fracionada;
+c) Data do fracionamento;
+d) Início e término do fracionamento;
+e) Prazo de validade;
+f) Código de identificação do fracionamento;
+g) Nome do fracionador;
+h) Nome do conferente;
+i) Quantidade de todos os materiais de embalagem impressos utilizados, destruídos oudevolvidos ao estoque, a fim de que possa ser feita correta reconciliação;
+j) Número do lote original do fabricante ou número atribuído pela empresa, norecebimento.
+k) Registro das condições de temperatura e umidade;
+l) Amostragem executada no fracionamento;
+m) Rótulo representativo do insumo farmacêutico fracionado;
+n) Qualquer ocorrência relevante observada no fracionamento;
+o) Identificação da sala de fracionamento.
+6.6. Registros de Controle da Qualidade
+6.6.1. Os registros do Controle da Qualidade devem incluir:
+a) Registros das amostras recebidas para teste;
+b) Referência de cada método do teste utilizado;
+c) Todos os dados gerados durante cada teste;
+d) Limites de aceitação estabelecidos;
+e) Identificação do analista e data de execução da análise;
+f) Data e identificação do responsável pela revisão dos registros das análises.
+6.6.2. Os registros de fracionamento e controle da Qualidade devem ser revisados.Qualquer desvio deve ser documentado e investigado.
+A investigação e suas conclusões devem ser documentadas, devendo ser estendida aoutros lotes do mesmo produto e outros produtos que possam estar associados ao desvio,quando necessário.
+6.6.3. Deve ser feito um registro sobre o resultado da investigação, sendo que omesmo deve incluir as conclusões e as providências tomadas.
+7. CONTROLE DE MATERIAIS
+7.1. Controles Gerais
+7.1.1. Devem existir procedimentos escritos que descrevam o recebimento,identificação, armazenamento, quarentena, amostragem, testes, aprovação, reprovação,liberação, descarte e o manuseio de materiais.
+7.2. Qualificação de Fornecedores
+7.2.1. A empresa deve implantar um sistema de qualificação de fornecedores quecontemple critérios para a avaliação de parâmetros de qualidade dos insumosfarmacêuticos, materiais de embalagem e rotulagem.
+7.2.2. O sistema de qualificação de fornecedores deve contemplar:
+a) Toda a cadeia dos insumos farmacêuticos, desde a fabricação até adistribuição;
+b) Comprovação de regularidade de funcionamento perante o órgão sanitáriocompetente;
+c) Comprovação do cumprimento das Boas Práticas pelo órgão sanitário competente;
+d) Critérios para qualificação, desqualificação, requalificação, definidos emprocedimentos;
+e) Níveis de qualificação.
+7.2.3. Os insumos farmacêuticos somente devem ser adquiridos de fornecedores aprovadosconforme sistema de qualificação da empresa.
+7.2.4. A qualificação de fornecedores deve ser documentada e registrada.
+7.3. Recebimento e Quarentena
+7.3.1. Todos os materiais recebidos devem ser submetidos à inspeção de recebimento,para se verificar:
+a) A integridade física da embalagem;
+b) As informações de identificação;
+c) A correspondência entre o pedido e o documento de entrada.
+7.3.2. Todos os materiais devem ser mantidos em quarentena, imediatamente após orecebimento, até que sejam aprovados.
+7.3.3. As avarias nos recipientes ou quaisquer outros problemas que ocorrerem quepossam afetar a qualidade do material devem ser registrados e investigados.
+7.3.4. Se uma única remessa de um mesmo material contiver lotes distintos, cada lotedeve ser levado em consideração, separadamente, para inspeção de recebimento.
+7.3.5. O recebimento dos Insumos Farmacêuticos deve ser realizado por profissionalcapacitado e de acordo com procedimentos estabelecidos.
+7.3.6. A inspeção de recebimento dos insumos farmacêuticos deve ser documentada.
+7.3.7. Os insumos farmacêuticos e materiais de embalagem devem ser adquiridos deacordo com suas respectivas especificações.
+7.3.8. Os insumos farmacêuticos adquiridos do fabricante e/ou fornecedor devem conteras seguintes informações, preferencialmente no rótulo:
+a) Razão Social e C.N.P.J. (quando aplicável) do fabricante;
+b) Razão Social, C.N.P.J. (quando aplicável), endereço e telefone do fornecedor;
+c) Nome do insumo farmacêutico;
+d) Código DCB, DCI ou CAS (obrigatoriamente nesta ordem), quando aplicável;
+e) Número do lote do fabricante;
+f) Número do lote do fornecedor, quando aplicável;
+g) Data de fabricação;
+h) Data de validade;
+i) Quantidade e sua respectiva unidade de medida;
+j) Condições de armazenamento;
+k) Advertências de segurança, quando aplicável.
+7.3.9. Após inspeção de recebimento, a empresa deve identificar os insumosfarmacêuticos com as seguintes informações:
+a) Nome do Insumo Farmacêutico;
+b) Número do lote atribuído pelo fabricante e quando houver também o número do lotedo fornecedor;
+c) Código de identificação interna da empresa, quando houver;
+d) Data de fabricação e o prazo de validade;
+e) Condições de armazenamento e advertência, quando aplicável;
+f) Identificação do fabricante/origem;
+g) Identificação do fornecedor/procedência;
+h) Situação de cada lote (em quarentena, aprovado ou reprovado, devolvido,recolhido).
+7.3.10. Cada lote dos Insumos Farmacêuticos deve ser acompanhado do respectivoCertificado de Análise emitido pelo fabricante e, quando houver, também o do fornecedor,e deve permanecer arquivado durante 1 (um) ano após o término do prazo de validade.
+7.3.11. Os Certificados de Análise devem ter informações claras e conclusivas, comas respectivas especificações e referências analíticas.
+7.3.12. Os Insumos Farmacêuticos, com desvios detectados na inspeção de recebimento,devem ser identificados e segregados enquanto aguardam as providências cabíveis,conforme procedimento aprovado.
+7.3.13. Para os Insumos farmacêuticos transportados em carros tanque, deve serapresentado certificado de limpeza e/ou sanitização incluindo os testes de impurezas eresíduos, emitido pela empresa fornecedora.
+7.3.14. Grandes recipientes de armazenamento e local de descarga devem serapropriadamente identificados.
+7.4. Amostragem de Insumos Farmacêuticos, Materiais de Embalagem e de Rotulagem
+7.4.1. As amostras devem ser representativas do lote do material.
+7.4.2. Para insumos farmacêuticos fracionados, a amostra deve ser representativa dolote de fracionamento.
+7.4.3. O número dos recipientes amostrados e o tamanho de amostra devem ser baseadosem um plano de amostragem. Os planos de amostragem devem ser escritos e referenciados emmetodologias cientÍficas.
+7.4.4. A amostragem deve ser conduzida em locais definidos de forma a impedir acontaminação do material amostrado e assegurar a integridade das amostras após acoleta.
+7.4.5. A amostragem deve ser feita sob condições ambientais adequadas e obedecendo aprocedimentos aprovados.
+7.4.6. Todos os equipamentos utilizados no processo de amostragem e que entrarem emcontato com os materiais devem estar limpos, e, se necessário, sanitizados, esterilizadose guardados em locais apropriados.
+7.4.7. Cada recipiente contendo amostra deve ser identificado e conter as seguintesinformações:
+a) Nome do material amostrado;
+b) Número do lote do fabricante e/ou de recebimento c) Código de identificação dofracionamento, quando houver;
+d) Identificação da pessoa que coletou a amostra;
+e) Data em que a amostra foi coletada;
+f) Data de fabricação e validade.
+7.5. Armazenamento
+7.5.1. Todos os Insumos Farmacêuticos devem ser armazenados sob condiçõesapropriadas, de forma ordenada e preservando a identidade e integridade dos mesmos, deacordo com as condições estabelecidas pelo fabricante ou compêndios oficiais.
+7.5.2. A identificação atribuída ao insumo no recebimento, conforme item 7.3.9 deveser mantida durante o armazenamento.
+7.5.3. Os Insumos Farmacêuticos devem ser estocados em locais identificados, de modo afacilitar a sua localização.
+7.5.4. A rotatividade do estoque deve obedecer preferencialmente à regra: primeiro queexpira, primeiro que sai.
+7.5.5. Para os Insumos Farmacêuticos que exigirem condições especiais dearmazenamento, devem existir registros e controles que comprovem o atendimento a estasexigências.
+7.5.6. Os materiais de limpeza devem ser armazenados em áreas ou locais diferentesdaquelas reservadas aos Insumos Farmacêuticos.
+7.5.7. Os materiais devem ser manuseados e armazenados de forma a prevenir adegradação e a contaminação.
+7.5.8. Os materiais devem ser armazenados afastados do piso e das paredes e comespaçamento apropriado para permitir a limpeza e inspeção.
+7.5.9. Os materiais sujeitos a controle especial, os que apresentam risco de incêndioou explosão e outras substâncias perigosas devem ser estocados em áreas seguras eprotegidas, devidamente segregados e identificados, de acordo com legislação específicavigente.
+7.5.10. Os materiais reprovados devem ser identificados, segregados e controlados deforma a impedir seu uso.
+8. FRACIONAMENTO E CONTROLES DE OPERAÇÃO
+8.1. As operações de fracionamento dos Insumos Farmacêuticos devem ser executadasconforme procedimentos escritos e por pessoal qualificado e treinado, a fim de asseguraras condições necessárias para o correto fracionamento.
+8.2. As embalagens dos Insumos Farmacêuticos devem ser limpas antes de entrar na áreade fracionamento.
+8.3. Devem existir procedimentos escritos para a prevenção de contaminação.
+8.4. O fracionamento deve ser conduzido de acordo com as Ordens de Fracionamento.
+8.5. As Ordens de Fracionamento devem possuir registros das operações realizadas, doscontroles efetuados, das precauções adotadas e das ocorrências durante as operaçõesde fracionamento que possam afetar a qualidade dos insumos farmacêuticos.
+8.6. A ordem de fracionamento deve possuir registros que evidenciem o atendimento aosparâmetros estabelecidos nos procedimentos escritos.
+8.7. As operações de pesagem/medida, embalagem e rotulagem devem ser realizadasseguindo um fluxo operacional contínuo para cada ordem de fracionamento.
+8.8. Devem ser monitoradas, registradas e controladas as condições ambientais naárea de fracionamento, em conformidade com as especificações do insumo farmacêutico.
+8.9. Durante as atividades de fracionamento, todos os funcionários envolvidos devemutilizar EPI's conforme estabelecido nos procedimentos específicos.
+8.10. As salas de fracionamento devem estar identificadas com o nome e número do lotedo insumo em fracionamento.
+8.11. Deve existir um registro de utilização da sala.
+8.12. As superfícies de trabalho, os equipamentos e os utensílios da área defracionamento devem ser limpos e, quando aplicável, sanitizados antes e após cadafracionamento. Estas atividades devem ser devidamente registradas.
+8.13. O fracionamento de Insumos Farmacêuticos sólidos deve ser realizado tomando asprecauções de modo a evitar sua dispersão no ambiente conforme procedimento.
+8.14. Após o fracionamento dos Insumos Farmacêuticos, as embalagens devem serfechadas, de modo a manter os parâmetros da qualidade dos Insumos Farmacêuticos.
+8.15. As embalagens utilizadas para o acondicionamento dos Insumos Farmacêuticosfracionados, devem estar limpas e secas, devendo atender aos parâmetros estabelecidos nosprocedimentos escritos específicos.
+8.16. Não é permitida a reutilização de embalagens para acondicionamento dosInsumos Farmacêuticos fracionados.
+8.17. As reconciliações de insumos farmacêuticos, materiais de embalagem e rotulagemdevem ser feitas e registradas. Qualquer desvio deve ser investigado e registrado.
+8.18. Os Insumos Farmacêuticos fracionados devem ser analisados após cadafracionamento, e só podem ser comercializados após a liberação pela Unidade daQualidade.
+8.19. Após fracionamento os Insumos Farmacêuticos devem ser armazenados conformerequisitos específicos deste Regulamento.
+8.20. O acesso às salas de fracionamento deve ser restrito a pessoas autorizadas.
+8.21. Todo o desvio deve ser documentado e investigado. As ações corretivas devem serimplementadas e registradas.
+9. EMBALAGEM E ROTULAGEM
+9.1. Os materiais de embalagem e rotulagem devem estar conforme as especificaçõesestabelecidas.
+9.2. Deve haver registros para cada lote de material de embalagem e rotulagem contendoinformações que comprovem recebimento, inspeção, análise e aprovação oureprovação.
+9.3. As embalagens primárias utilizadas para os Insumos Farmacêuticos fracionadosdevem possuir mesma especificação do material utilizado pelo fabricante ou do materialindicado pelo mesmo, de forma a manter as características físico-químicas emicrobiológicas dos Insumos Farmacêuticos.
+9.4. Os materiais de rotulagem e embalagem secundária não devem interferir naqualidade do insumo farmacêutico fracionado e devem assegurar proteção adequada contrainfluências externas e eventuais contaminações.
+9.5. Deve existir um sistema de controle e conferência de rótulos, para evitarmistura/troca. Quando este for realizado por meios eletrônicos, deve ser assegurado seuperfeito funcionamento.
+9.6. Todo Insumo Farmacêutico fracionado deve possuir rótulo contendo as seguintes informações:
+a) Nome do insumo farmacêutico
+b) Código DCB, DCI ou CAS, obrigatoriamente nestaordem, quando aplicável;
+c) Prazo de validade e data de fabricação;
+d) Data de fracionamento;
+e) Quantidade e sua respectiva unidade de medida;
+f) Condições de armazenamento;
+g) Advertências de segurança, quando aplicável;
+h) Nome do Fabricante e País de origem;
+i) Procedência;
+j) Nome, C.N.P. J, endereço e telefone do distribuidor /fracionador;
+k) Nome do responsável técnico e inscrição no conselho profissional;
+l) Número de ordem de fracionamento;
+m) Número do lote atribuído pelo fabricante e número do lote dado pela empresa.
+(Redação dada pela
+Resolução 32/2010/RDC/DC/ANVISA/MS
+)
+Redações Anteriores
+9.7. Em caso de utilização de embalagem secundária, identificada de acordo com oitem 9.6, a embalagem primária deve ser identificada no mínimo com o nome do insumofarmacêutico, data de validade, e número de lote.
+9.8. Material de embalagem primário ou secundário fora de uso deve ser identificado,retirado do estoque e registrado o seu destino.
+9.9. Os materiais impressos devem ser armazenados em condições seguras com acessorestrito.
+9.10. Os rótulos obsoletos devem ser destruídos e esse procedimento deverá serregistrado.
+9.11. Devem existir procedimentos para assegurar que toda impressão esteja emconformidade com as especificações.
+9.12. Os rótulos emitidos para um lote devem ser conferidos quanto à identidade e aconformidade. A conferência deve ser registrada.
+9.13. Deve haver procedimentos escritos para promover o uso correto de materiais deembalagem e rotulagem.
+9.14. Devem existir procedimentos de reconciliação entre as quantidades dos rótulosemitidos, usados e inutilizados. Os desvios devem ser registrados, investigados e, quandonecessário, as ações corretivas e preventivas implementadas.
+9.15. As embalagens dos insumos farmacêuticos fracionados devem ser inspecionadasquanto à identificação do insumo e material de embalagem. Deve haver registros.
+9.16. Um rótulo utilizado para identificar o insumo fracionado deve ser anexado naOrdem de Fracionamento.
+10. EXPEDIÇÃO
+10.1. Os insumos farmacêuticos distribuídos não fracionados devem ser expedidos comos rótulos e embalagens originais.
+10.1.1. Os insumos farmacêuticos expedidos devem possuir rótulo contendo as seguintesinformações:
+a) Nome do insumo farmacêutico e DCB, DCI ou CAS, respectivamente nesta ordem, quandoaplicável;
+b) Prazo de validade e data de fabricação;
+c) Quantidade e sua respectiva unidade de medida;
+d) Condições de armazenamento;
+e) Advertências de segurança, quando aplicável;
+f) Nome do fabricante e País de Origem;
+g) Procedência;
+h) Nome, C.N.P. J, endereço e telefone do distribuidor;
+i) Nome do responsável técnico e inscrição no conselho profissional;
+j) Número do lote atribuído pelo fabricante e o número do lote dado pela empresa.
+(Redação dada pela
+Resolução 32/2010/RDC/DC/ANVISA/MS
+)
+
+Redações Anteriores
+10.3. Nas áreas de expedição os materiais devem ser mantidos sob as mesmascondições de armazenagem especificadas no rótulo.
+10.4. Os insumos farmacêuticos devem ser expedidos somente após liberação pelaUnidade da Qualidade.
+10.5. Deve haver um sistema de rastreabilidade implantado que permita a prontaidentificação e localização de cada lote do insumo farmacêutico expedido, de forma aassegurar seu pronto recolhimento.
+10.6. Deve haver procedimento para conferir os dados de expedição com aidentificação dos insumos farmacêuticos a serem expedidos.
+11. TRANSPORTE DE INSUMOS
+11.1. Os insumos farmacêuticos devem ser transportados de acordo com a legislaçãoespecífica em vigor.
+11.2. Os Insumos Farmacêuticos devem ser transportados em condições adequadas quegarantam a manutenção das suas especificações e integridade.
+11.3. As empresas que realizam transporte de insumos farmacêuticos devem possuirautorização de funcionamento e especial, quando for o caso, e licença sanitária paraesta atividade.
+11.4. No caso de transporte realizado por terceiros deve ser firmado contratoestabelecendo as condições de transporte dos insumos farmacêuticos.
+11.5. Deve haver programa de qualificação de transportadores.
+11.6. A empresa distribuidora/fracionadora deve fornecer à transportadora informaçãosobre as condições de transporte dos insumos farmacêuticos.
+11.7. Deve haver procedimento para conferir e avaliar se as condições do veículoatendem às especificações estabelecidas para o transporte dos insumos farmacêuticos,mantendo-se registros.
+12. LABORATÓRIO DE CONTROLE DA QUALIDADE
+12.1. Generalidades
+12.1.1. Os procedimentos dos ensaios devem ser aprovados pela Unidade da Qualidade eestar disponíveis nos laboratórios responsáveis pela execução dos ensaios.
+12.1.2. As especificações, metodologias de análise, farmacopéias, literaturas,manuais dos equipamentos, padrões de referência e outros materiais necessários devemestar à disposição no laboratório de Controle da Qualidade.
+12.1.3. A empresa fracionadora deve possuir laboratório de Controle da Qualidadepróprio e capacitado para a realização das análises físico-químicas emicrobiológicas.
+12.1.4. A empresa distribuidora, que possuir laboratório de controle da qualidade,deve atender às exigências de instalações, equipamentos, procedimentos e pessoaladequados às análises que realizar.
+12.1.5. As instalações do Laboratório de Controle da Qualidade físico-químico e domicrobiológico devem ser em salas separadas.
+12.1.6. Os requisitos mínimos para o Controle da Qualidade são os seguintes:
+a) Os testes devem ser executados de acordo com procedimentos escritos, seguindoespecificações e metodologias adotadas como referência;
+b) As metodologias devem ser validadas;
+c) Os instrumentos devem ser calibrados em intervalos definidos;
+d) Possuir equipamentos e instalações adequadas para a realização dos ensaios;
+e) Pessoal qualificado e treinado;
+f) Procedimentos disponíveis na área para execução das atividades desenvolvidas;
+g) Devem existir registros de modo a demonstrar que todos os procedimentos tenham sidorealmente executados e que quaisquer desvios tenham sido totalmente investigados edocumentados.
+12.1.7. As amostras de retenção devem:
+a) Possuir rótulo contendo identificação do insumo de forma a garantir arastreabilidade;
+b) Serem armazenadas de acordo com as especificações do insumo farmacêutico.
+12.1.7.1. Amostra de retenção de Insumo Farmacêutico deve ser conservada pelo por nomínimo 12 (doze) meses após a data de vencimento do seu prazo de validade.
+12.1.7.2. A quantidade de amostra deve ter pelo menos o dobro da requerida para efetuartodas as análises previstas em códigos oficiais.
+12.1.8. O Controle da Qualidade deve ter disponível no setor, no mínimo:
+a) Especificações;
+b) Procedimentos de amostragem;
+c) Métodos de análise e registros (incluindo folhas analíticas e/ou caderno deanotações);
+d) Boletins e/ou certificados analíticos;
+e) Registros de monitoramento ambiental, onde especificado;
+f) Registros de validação de métodos;
+g) Procedimentos e registros de calibração de instrumentos e manutenção deequipamentos.
+12.1.9. Os reagentes e as soluções padrão devem ser preparados e identificados deacordo com procedimentos escritos e a validade de uso determinada.
+12.1.10. Os padrões primários de referência devem ter sua origem documentada e seremmantidos nas condições de armazenamento recomendadas pelo fabricante.
+12.1.11. Os padrões secundários de referência devem ser corretamente preparados,identificados, analisados, aprovados e armazenados.
+12.1.12. Deve haver água apropriada para as análises realizadas no laboratório decontrole da qualidade.
+12.2. Análises dos Insumos farmacêuticos
+12.2.1. Devem ser realizadas as análises previstas na farmacopéia para verificar aespecificação e a qualidade do insumo farmacêutico.
+12.2.1.1. A empresa deverá realizar as análises no insumo farmacêutico destinado aofracionamento, no recebimento.
+12.2.1.2. Após cada fracionamento, a empresa deverá realizar as análisesestabelecidas pela Unidade da Qualidade para verificar que a especificação do insumofarmacêutico não foi alterada durante o fracionamento.
+12.2.2. As análises devem ser realizadas conforme especificação do fabricante doinsumo farmacêutico, devendo ser utilizada como referência, preferencialmente, aFarmacopéia Brasileira sendo aceitos compêndios internacionais reconhecidos pelaautoridade sanitária, conforme legislação vigente.
+12.2.2.1. Na ausência de monografia oficial e métodos gerais inscritos noscompêndios reconhecidos pela autoridade sanitária, conforme legislação vigente, asanálises devem ser executadas segundo especificações e metodologias fornecidas pelofabricante, desde que devidamente validadas.
+12.2.3. É permitida a terceirização do controle da qualidade apenas nas situaçõesprevistas pela legislação vigente.
+12.3. Certificado de Análise
+12.3.1. A empresa deve obrigatoriamente fornecer o certificado de análise emitido pelolaboratório de controle da qualidade, quando aplicável, e quando solicitado cópia docertificado de análise da empresa fabricante do insumo farmacêutico.
+12.3.1.1. A empresa distribuidora sem fracionamento que não realiza análise deveráfornecer certificado de análise do fabricante.
+12.3.2. A empresa fracionadora de insumos deve especificar claramente em seucertificado de análise os testes que foram efetivamente feitos pela empresa fracionadorae os testes que foram transcritos do certificado de análise terceirizado.
+12.3.3. No certificado de análise do insumo farmacêutico a ser comercializado devemconstar de forma clara e conclusiva:
+a) Nome do insumo farmacêutico e DCB, DCI ou CAS, obrigatoriamente nesta ordem, quandoaplicável;
+b) Nome do fabricante, quando solicitado pelo cliente;
+c) Número do lote atribuído pelo fabricante e número do lote dado pela empresa;
+(Redação dada pela
+Resolução 32/2010/RDC/DC/ANVISA/MS
+)
+
+Redações Anteriores
+d) Número da ordem de fracionamento, quando fracionado;
+e) Data de fabricação;
+f) Data de validade;
+g) Cada teste executado, com os limites de aceitação e os resultados obtidos, ereferências da metodologia analítica utilizada;
+h) Data da emissão do certificado;
+i) Identificação e assinatura por pessoa autorizada da Unidade da Qualidade.
+13. VALIDAÇÃO
+13.1. Generalidades
+Validação é uma evidência documentada de que o processo, operado através deparâmetros estabelecidos, pode efetivamente e reprodutivelmente fracionar um insumofarmacêutico reunindo especificações predeterminadas e atribuições de qualidade.
+Existem três tipos de validação: validações concorrentes ou simultâneas,prospectivas e retrospectivas.
+13.1.1. Validação concorrente ou simultânea
+A validação concorrente é realiza dadurante as operações de rotina. Todos os processos devem ser monitorados de forma maisabrangente possível. A natureza e as especificações dos testes subseqüentes àsoperações estão baseadas na avaliação dos resultados do referido monitoramento.
+13.1.2. Validação prospectiva
+A validação prospectiva é um ato documentado,baseado na execução do protocolo de validação previamente definido, que demonstre queum novo sistema, operação, equipamento ou instrumento, ainda não operacionalizado,satisfaz as especificações funcionais e expectativas de desempenho.
+13.1.2.1. Se ao final do processo de validação os resultados forem aceitáveis, oprocesso é satisfatório. Se os resultados forem insatisfatórios deve-se buscarmodificação no processo até que o mesmo apresente resultados aceitáveis. Esta forma devalidação é essencial para limitar o risco de erros.
+13.1.3. Validação retrospectiva
+A validação retrospectiva é um ato documentado,baseado na revisão e análise de registros históricos, atestando que um sistema,operação, equipamento ou instrumento, já em uso, satisfaz as especificaçõesfuncionais e expectativas de desempenho.
+13.1.3.1. A validação retrospectiva envolve a verificação da experiência passadada operação, assumindo-se que a característica, procedimentos e equipamentos permaneceminalterados; a referida experiência e os resultados dos testes de controle dasoperações são avaliados. As dificuldades e os defeitos registrados na operação sãoanalisados para determinar os limites dos parâmetros da mesma. Pode ser realizada umaanálise de tendência para determinar a extensão na quais os parâmetros da operaçãose encontram dentro da faixa permissível.
+13.1.3.2. A qualificação retrospectiva não é uma medição da Garantia da Qualidadeem si própria, e nunca deve ser aplicada a novas operações ou insumos farmacêuticos.Somente pode ser considerada em circunstâncias especiais, por exemplo, quando osrequisitos de validação são estabelecidos pela primeira vez dentro da empresa. Nestecaso a validação retrospectiva pode ser útil para estabelecer as prioridades doprograma de validação. Caso os resultados da validação retrospectiva sejam positivos,isto indica que o processo não tem necessidade de atenção imediata e pode ser validadode acordo com a programação normal.
+As empresas fracionadoras deverão efetuar:
+a) Validação do processo de fracionamento dos insumos farmacêuticos críticos (porexemplo: higroscópicos, termolábeis, fotossensíveis) em função do tempo deexposição ao ambiente;
+b) Validação do processo de limpeza;
+c) Qualificação de sistemas de ar;
+d) Qualificação de equipamentos;
+e) Qualificação de áreas de fracionamento.
+13.2. Política de Validação
+A política de validação deve definir as operações que são críticas paraassegurar a qualidade do insumo farmacêutico.
+13.3. Documentação
+13.3.1. Plano Mestre de Validação
+13.3.1.1. Deve existir um plano mestre de validação que contenha os seguintestópicos:
+a) Objetivo (e os requisitos prévios);
+b) Apresentação da totalidade das operações, diagrama de blocos ou descritivodestacando operações críticas;
+c) Estrutura organizacional das atividades de validação, evidenciando asresponsabilidades;
+d) Motivo para inclusão ou exclusão de determinada validação;
+e) Sistema de rastreabilidade para referências e revisões;
+f) Indicação de treinamentos necessários para o programa de validação;
+g) Planejamento e cronograma das atividades a serem realizadas;
+h) Referência cruzada a outros documentos;
+i) Periodicidade e critérios para Revalidação;
+j) Relação de equipamentos e instalações que devem ser qualificados;
+k) Previsão de elaboração de relatórios de validação.
+13.3.2. Protocolo de Validação
+Nota:
+
+Prazo estabelecido de 180 (cento e oitenta) dias, a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe
+Resolução - RDC nº 72, de 29 de outubro de 2007
+.
+
+13.3.2.1. Deve ser estabelecido um protocolo de validação que especifique como oprocesso de validação será conduzido. O protocolo deve ser aprovado pela Unidade daQualidade.
+13.3.2.2. O protocolo de validação deve especificar:
+a) Descrição da operação;
+b) Descrição dos equipamentos e instalações;
+c) Variáveis a serem monitoradas;
+d) Amostras a serem coletadas (local, freqüência, quantidade e procedimento deamostragem);
+e) Características/atributos e desempenho a serem monitorados, especificando osmétodos analíticos;
+f) Limites aceitáveis;
+g) Definição de responsabilidades;
+h) Descrição dos métodos utilizados para registro e avaliação dos resultados,incluindo análise estatística;
+i) Pontos críticos da operação;
+j) Critérios de aceitação;
+k) Tipo de validação a ser conduzida;
+l) Treinamentos necessários para o programa de validação.
+13.3.3. Relatório de Validação
+13.3.3.1. O relatório de validação deve fazer referência ao protocolo e serelaborado contemplando resultados obtidos (incluindo a comparação com os critérios deaceitação), desvios, conclusões, mudanças e recomendações.
+13.3.3.2. Qualquer desvio do protocolo de validação deve ser documentado, investigadoe justificado.
+13.3.3.3. O processo de validação é satisfatório quando os resultados sãoaceitáveis. Caso contrário deve-se analisar a origem dos desvios encontrados edeterminar as alterações necessárias, até que o mesmo apresente resultadosaceitáveis.
+13.4. Qualificação
+13.4.1. A qualificação deve ser realizada conduzindo as atividades de:
+a) Qualificação de Projeto (QP): avaliação da proposta do projeto de instalações,equipamentos ou sistemas de acordo com a finalidade pretendida.
+b) Qualificação de Instalação (QI): avaliação da conformidade dos equipamentos,sistemas e utilidades, instalada ou modificada, com o projeto aprovado, com asrecomendações e/ou com os requerimentos do fabricante do equipamento.
+c) Qualificação de Operação (QO): conjunto de operações que estabelece queequipamentos, sistemas e utilidades apresentam desempenho conforme previsto em todas asfaixas operacionais consideradas.
+Todos os equipamentos utilizados na execução dos testes devem ser identificados ecalibrados.
+d) Qualificação de Performance/Desempenho (QD): verificar que os equipamentos,sistemas e utilidades, quando operando em conjunto são capazes de executar com eficáciaa reprodutibilidade, os métodos e as especificações definidas no protocolo.
+13.5. Validação de Métodos Analíticos
+13.5.1. A validação de métodos analíticos deve seguir as diretrizes da legislaçãovigente.
+13.5.2. A validação de métodos analíticos deve ser realizada com equipamentosqualificados e instrumentos calibrados.
+13.5.3. Métodos analíticos diferentes daqueles existentes nos compêndios oficiaisreconhecidos pela autoridade sanitária competente só poderão ser utilizados seestiverem devidamente validados.
+13.5.4. No caso de transferência de metodologias do fabricante para empresasdistribuidoras/fracionadoras a metodologia será considerada validada desde que sejamavaliados os parâmetros previstos em legislação vigente.
+13.6. Validação de Limpeza
+13.6.1. Os processos de limpeza devem ser validados.
+13.6.2. A validação de limpeza deve ser direcionada para situações ou operaçõesdo fracionamento onde a contaminação ou a exposição de materiais coloca em risco aqualidade do insumo farmacêutico.
+13.6.3. O protocolo de validação da limpeza deve contemplar:
+a) Os equipamentos e utensílios a serem limpos;
+b) Procedimentos, materiais e agentes utilizados para limpeza;
+c) Critérios de escolha e limite residual aceitável dos agentes de limpeza, quandoaplicável;
+d) Critérios de aceitação;
+e) Parâmetros monitorados e controlados;
+f) Validação de métodos analíticos, incluindo os limites de detecção equantificação;
+g) Procedimentos de amostragem, incluindo os tipos de amostras a serem obtidas e comodevem ser coletadas e identificadas;
+h) Dados de estudos de recuperação, quando aplicável;
+I) Número mínimo de três ciclos de limpeza a serem realizadas consecutivamente;
+j) Critérios microbiológicos quando aplicável.
+13.6.4. Deve ser definido o método de amostragem para detectar resíduos insolúveis esolúveis. O método de amostragem deve ser adequado para a obtenção de amostrarepresentativa de resíduos encontrados nas superfícies dos equipamentos e utensílios,que entrem em contato com o insumo farmacêutico, após a limpeza.
+13.6.5. Os processos de limpeza devem ser monitorados em intervalos apropriados depoisda validação para assegurar sua efetividade.
+13.6.6. A limpeza dos equipamentos e utensílios deve ser monitorada por testesanalíticos.
+13.6.7. Deve haver procedimentos para determinação do tempo máximo da operaçãocontínua de fracionamento, intervalo entre o final de uma operação de fracionamento e oinício do procedimento de limpeza e determinação da validade da limpeza.
+13.7. Validação das operações do fracionamento
+13.7.1. Para a validação prospectiva e concorrente/simultânea, três lotesconsecutivos do fracionamento devem ser utilizados como referência, mas pode haversituações onde lotes adicionais são requeridos para provar a consistência dofracionamento, dependendo da característica do insumo.
+13.7.2. Os parâmetros críticos do fracionamento devem ser controlados e monitoradosdurante os estudos do processo de validação.
+13.7.3. A validação do fracionamento deve confirmar que as características do insumofarmacêutico não se alteraram.
+13.8. Revalidação
+Repetição do processo de validação, periódica ou que contemple mudançasaprovadas, de modo a garantir que estas não afetem adversamente as características dasoperações nem a qualidade do insumo farmacêutico.
+13.8.1. Revalidação por mudança
+13.8.1.1. A revalidação deve ser realizada porocasião da introdução de quaisquer mudanças, intencionais ou não, que afetem aqualidade do insumo farmacêutico.
+13.8.1.2. A revalidação após as mudanças deve ser realizada de acordo com ocontrole de mudanças.
+13.8.2. Revalidação Periódica
+13.8.2.1. A revalidação periódica deve ser baseadana revisão dos dados históricos gerados durante as operações previstas nesteregulamento, tendo por objetivo verificar se o processo se encontra consistente com aúltima validação.
+13.8.2.2. O intervalo da revalidação periódica deve ser definido e documentado.
+14. CONTROLE DE MUDANÇA
+14.1. Um sistema de controle de mudanças deve ser estabelecido para avaliar todas asmudanças que poderiam afetar o fracionamento e o controle dos insumos farmacêuticos.
+14.1.1. Qualquer proposta de mudança deve ser aprovada pela unidade da qualidade.
+14.1.2. O sistema de controle de mudanças deve assegurar que todas as mudanças sejamformalmente propostas e avaliadas quanto ao impacto sobre a qualidade do produto,justificadas, documentadas e aprovadas/autorizadas.
+14.2. O Controle de Mudança deve contemplar as ações a serem adotadas caso sejaproposta uma mudança de métodos analíticos, utilidades, equipamentos do fracionamentoou ainda de qualquer outra mudança que possa afetar a qualidade do insumo farmacêutico.
+15. REPROVAÇÃO
+15.1. Insumos farmacêuticos, materiais de embalagem e rotulagem, que não se encontramem conformidade com as especificações, devem ser identificados como tal e armazenados deforma a evitar a sua utilização enquanto aguardam destruição ou devolução aosfornecedores, conforme procedimentos escritos.
+15.2. No caso de lotes de insumos farmacêuticos com desvio de qualidade comprovado,baseado em resultados de ensaios realizados pela própria empresa/estabelecimento outerceiro contratado, com a observância dos compêndios oficiais e da legislaçãovigente, a empresa deve comunicar às autoridades sanitárias competentes, conforme alegislação vigente.
+16. RECLAMAÇÃO, RECOLHIMENTO E DEVOLUÇÃO
+16.1. Todas as reclamações relacionadas ao sistema da qualidade, recebidasverbalmente ou escritas referentes a insumos farmacêuticos, devem ser registradas.
+16.2. As causas dos possíveis desvios da qualidade devem ser registradas, investigadase avaliadas de acordo com procedimentos escritos.
+16.3. Os registros da reclamação devem incluir:
+a) Nome do reclamante;
+b) Nome do insumo e número do lote;
+c) Descrição da reclamação;
+d) Data do recebimento da reclamação;
+e) Relato das ações tomadas, assinadas e datadas;
+f) Conclusão com ações corretivas tomadas, se necessário;
+g) Resposta ao reclamante.
+16.4. Os registros das reclamações devem ser mantidos e periodicamente analisadoscriticamente para avaliar tendências e freqüências, a fim de que sejam realizadas asações corretivas cabíveis.
+16.5. Deve haver um procedimento escrito que defina as situações em que o insumofarmacêutico deva ser recolhido.
+16.6. Deve ser designada uma pessoa responsável pelas medidas a serem adotadas e pelacoordenação do recolhimento no mercado.
+16.7. A empresa deve dispor de um sistema capaz de recolher, pronta e eficientemente,do mercado insumos farmacêuticos com desvios da qualidade comprovados.
+16.8. Os insumos farmacêuticos recolhidos devem ser identificados e segregados deforma segura, enquanto aguardam decisão sobre seu destino.
+16.9. A autoridade sanitária competente deve ser imediatamente informada do desvio daqualidade comprovado dos insumos farmacêuticos, do mapa de distribuição do insumo eplanos de recolhimento dos mesmos.
+16.10. Qualquer desvio da qualidade comprovado deve ser comunicado ao fornecedor doinsumo farmacêutico.
+16.11. Deve haver procedimentos escritos para o recebimento, armazenamento einvestigação das causas de devolução dos insumos farmacêuticos.
+16.12. Os insumos farmacêuticos devolvidos devem ser identificados e segregados deforma segura, enquanto aguardam decisão sobre seu destino.
+16.13. Os insumos farmacêuticos devolvidos somente podem ser disponibilizados paravenda, após terem sido analisados e liberados pela Unidade da Qualidade, de acordo comprocedimentos escritos.
+16.14. Os registros dos insumos farmacêuticos devolvidos devem ser mantidos.
+16.15. Todas as decisões e medidas tomadas, resultantes de um de desvio de qualidadeoriginado de uma devolução, devem ser registradas, assinadas e datadas.
+16.16. Os registros da devolução devem incluir:
+a) Nome do cliente;
+b) Nome do insumo, número do lote;
+c) Quantidade devolvida;
+d) Motivo da devolução;
+e) Data do recebimento da devolução;
+f) Destino do insumo devolvido.
+PUB D.O.U., 16/11/2006 - Seção 1
+
+Este texto não substitui a Publicação Oficial.
+
+Carregando...

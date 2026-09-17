@@ -1,0 +1,21 @@
+{
+  "norma": "RDC 63-2011",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000063&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2011",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000063&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2011",
+  "consultado_em": "2026-09-17T00:21:30.707981+00:00",
+  "data_fonte": "2011-11-25",
+  "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+  "sha256_fonte": "14b423f68b32ae446b5d75b496c9035d1ffb9c929450c07a6039d65aa53bd786",
+  "sha256_texto": "bbf3ed28dcf4b5f8967d17885de57d404db7466dac8903235b41252ec0d06bb9",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos/RDC 63-2011--oficial.txt",
+  "data_processamento": "2026-09-17T00:21:30.707981+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+  "extracao": {
+    "codificacao": "windows-1252",
+    "elementos_removidos": 18
+  }
+}

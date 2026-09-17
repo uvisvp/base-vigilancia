@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="aui ltr yui3-js-enabled js" dir="ltr" lang="pt-BR" amp>
+    <head>
+    	<title>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 430, de 08/10/2020</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1e2b4d">
+        <link rel="icon" type="image/png" sizes="32x32" href="/v2/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/v2/img/favicon-16x16.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- 
+		<link rel="apple-touch-icon" sizes="32x32" href="/v2/img/mobile/logo_app32.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="/v2/img/mobile/logo_app96.png" />
+		-->
+		<link rel="apple-touch-icon" sizes="144x144" href="/v2/img/mobile/logo_app144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/v2/img/mobile/logo_app192.png" />
+        
+        <link href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="/v2/css/header.css?20260916" rel="stylesheet" type="text/css">
+		<link href="/v2/css/custom.css?20260916" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/view/css/jquery-ui.css" />
+		<link rel="stylesheet" href="/view/css/styles.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/view/css/style.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/view/css/treeview.css" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/social-media.css?20260916" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/texto-ato.css?20260916" type="text/css" />
+		<!-- CUSTOM ANVISA -->
+		<link rel="stylesheet" href="/v2/css/folha_rosto_anvisa.css?20260916" type="text/css" />
+	</head>
+	<body id="corpo" class="">
+		<div class="container-fluid">
+			<div class="container">
+    			<div class="noprint" style="border-bottom: 1px solid #ccc; padding: 8px 0;">
+                	<nav id="breadcrumbs">
+                        <ul class="breadcrumb breadcrumb-horizontal">
+                        	<li>
+                        		<a href="/action/ActionDatalegis.php?acao=apresentacao&cod_menu=9434&cod_modulo=310" title="Voltar para Home">
+                        			<i class="fas fa-home"></i>
+                        		</a>
+                        	</li>
+                        	<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        	<li class="first">
+                                <a href="/action/ActionDatalegis.php?acao=categorias&cod_modulo=310&menuOpen=true">NORMAS REGULAT”RIAS    DA ANVISA</a>
+                        	</li>
+    					<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        <li class="active last">
+                            <a href="/action/ActionDatalegis.php?acao=abrirLegislacao&cod_modulo=310&cod_menu=9434">Busca de Normas</a>
+                        </li>
+                    	</ul>
+                    </nav>
+                    <a href="javascript:;" id="voltar" class="float-right" onclick="window.close()">
+                    	<i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Voltar
+                    </a>
+				</div>
+    			<div class="noprint container" style="padding: 0 10px; margin: 0; text-align: right; display: flex;">
+            		<div id="barra-icones" class="item">
+            			<ul>
+        				<li>
+            				<a href="javascript:;" onclick="copyTextToClipboard('https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000430&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2020&seq_ato=000&cod_modulo=310&cod_menu=9434', this)" data-toggle="tooltip" data-placement="bottom" title="Copie o link do Ato">
+            					<i class="fas fa-link" aria-hidden="true"></i> <span class="ocultar-mobile">COPIAR LINK</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="tags('00000430','RDC','RDC/DC/ANVISA/MS','2020','000');" title="Cadastre aqui suas Tags para o ATO">
+            					<i class="fas fa-tags" aria-hidden="true"></i> <span class="ocultar-mobile">CRIAR TAGS</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="imprimir();">
+            					<i class="fa fa-print" aria-hidden="true"></i> <span class="ocultar-mobile">IMPRIMIR</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="pdf()">
+            					<i class="fas fa-file-pdf" aria-hidden="true"></i> <span class="ocultar-mobile">PDF</span>
+            				</a>
+        				</li>
+        				<!-- 
+                        -->
+        				<li>
+            				<a id="texto-notas" href="javascript:;" onclick="abrirTodosLinkNota()">
+            					<i class="fas fa-folder-open" aria-hidden="true"></i> <span class="ocultar-mobile">VER NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a id="texto-compilado" href="javascript:;" onclick="fecharTodosLinkNota()" style="text-decoration: underline;">
+            					<i class="fas fa-folder" aria-hidden="true"></i> <span class="ocultar-mobile">FECHAR NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        			</ul>
+    			
+				</div>
+			
+    			<div class="font-settings item item1" style="width: 90px">
+        			<a href="javascript:mudaFonte('mais');" title="Aumentar Texto" style="padding: 0 2px; font-size: 20px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>+
+        			</a>
+        			<i style="padding: 0 2px; margin: -15px 0 5px 0; font-size: 20px; color: #424242;">|</i>
+        			<a href="javascript:mudaFonte('menos');" title="Diminur Texto" style="padding: 0 2px; font-size: 17px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>-
+        			</a>
+        		</div>
+    		
+    		</div>
+            <div class="noprint social-media-share hide" style="display: none;">
+                <a class="share-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000430%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2020%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9434" target="_blank"></a>
+                <a class="share-twitter" href="http://twitter.com/intent/tweet?text=Resolu√ß√£o da Diretoria Colegiada - RDC n¬∫ 430, de 08/10/2020&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000430%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2020%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9434" target="_blank"></a>
+                <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000430%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2020%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9434" target="_blank"></a>
+                <a class="share-whatsapp" href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000430%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2020%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9434" target="_blank"></a>
+            </div>
+		<article class="article">
+    		<div id="conteudo">
+				<div class="tab_menor noprint" style="border-bottom: 1px solid #9a9a9a; padding-bottom: 10px; margin: 10px 0;">
+					<div class="row">
+						<div class="col-9">
+    				<strong><span class="ico-situacao vigente com alteraÁıes status-10" title="Vigente com AlteraÁıes">Vigente com AlteraÁıes</span>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 430, de 08/10/2020</strong>&nbsp;
+						</div>
+						<div class="col-3 text-right">
+							<a class="btn btn-primary" style="color: white;" onclick="javascript:LinkTexto(&#039;RDC&#039;,&#039;00000430&#039;,&#039;222&#039;,&#039;2020&#039;,&#039;ANVISA/MS&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;)">Ver mais detalhes</a>
+						</div>
+					</div>
+    			</div>
+    			<div class="ato">
+<p style="text-align: center;">MINIST&Eacute;RIO DA SA&Uacute;DE<p style="text-align: center;">AG&Ecirc;NCIA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p style="text-align: center;">DIRETORIA COLEGIADA</p><p style="text-align: center;">RESOLU&Ccedil;&Atilde;O DE DIRETORIA COLEGIADA - RDC N&ordm; 430, DE 8 DE OUTUBRO DE 2020</p><p style="text-align: justify; margin-left: 50%;">Disp&otilde;e sobre as Boas Pr&aacute;ticas de Distribui&ccedil;&atilde;o, Armazenagem e de Transporte de Medicamentos.</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','P','0','1')">S&eacute;rie Hist&oacute;rica</a></em></p><p>A Diretoria Colegiada da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, no uso das atribui&ccedil;&otilde;es que lhe confere o <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">art. 15, III e IV, aliado ao art. 7&ordm;, III e IV da Lei n&ordm; 9.782, de 26 de janeiro de 1999</a>, e ao <a href="javascript:LinkTexto('RDC','00000255','000','2018','RDC/DC/ANVISA/MS','X','1','')">art. 53, VI, &sect;&sect; 1&ordm; e 3&ordm; do Regimento Interno aprovado pela Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&deg; 255, de 10 de dezembro de 2018</a>, resolve adotar a seguinte Resolu&ccedil;&atilde;o de Diretoria Colegiada, conforme deliberado em reuni&atilde;o realizada em 7 de outubro de 2020, e eu, Diretor-Presidente Substituto, determino a sua publica&ccedil;&atilde;o.</p><p style="text-align: center;">CAP&Iacute;TULO I</p><p style="text-align: center;">DISPOSI&Ccedil;&Otilde;ES PRELIMINARES</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o I </strong></p><p style="text-align: center;"><strong>Objetivo </strong></p><p>Art. 1&ordm; Esta Resolu&ccedil;&atilde;o possui o objetivo de estabelecer os requisitos de Boas Pr&aacute;ticas de Distribui&ccedil;&atilde;o e Armazenagem e de Boas Pr&aacute;ticas de Transporte de Medicamentos.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o II </strong></p><p style="text-align: center;"><strong>Abrang&ecirc;ncia </strong></p><p>Art. 2&ordm; Esta Resolu&ccedil;&atilde;o se aplica &agrave;s empresas que realizam as atividades de distribui&ccedil;&atilde;o, armazenagem ou transporte de medicamentos e, no que couber, &agrave; armazenagem e ao transporte de produtos a granel.</p><p>Par&aacute;grafo &uacute;nico. Esta Resolu&ccedil;&atilde;o n&atilde;o se aplica &agrave;s atividades de distribui&ccedil;&atilde;o, armazenagem e transporte de mat&eacute;rias-primas, de gases medicinais ou de r&oacute;tulos e embalagens.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o III </strong></p><p style="text-align: center;"><strong>Defini&ccedil;&otilde;es </strong></p><p>Art. 3&ordm; Para efeito desta Resolu&ccedil;&atilde;o s&atilde;o adotadas as seguintes defini&ccedil;&otilde;es:</p><p>I - armazenagem: guarda, manuseio e conserva&ccedil;&atilde;o segura de medicamentos;</p><p>II - armazenagem em tr&acirc;nsito: conjunto de procedimentos, de car&aacute;ter tempor&aacute;rio, relacionados ao tr&acirc;nsito de carga, que envolvem as atividades de recebimento, guarda tempor&aacute;ria, conserva&ccedil;&atilde;o e seguran&ccedil;a de medicamentos;</p><p>III - Boas Pr&aacute;ticas de Armazenagem (BPA): conjunto de a&ccedil;&otilde;es que asseguram a qualidade de um medicamento por meio do controle adequado durante o processo de armazenagem, bem como fornecem ferramentas para proteger o sistema de armazenagem contra medicamentos falsificados, reprovados, ilegalmente importados, roubados, avariados e/ou adulterados;</p><p>IV - Boas Pr&aacute;ticas de Distribui&ccedil;&atilde;o e Armazenagem (BPDA): conjunto de a&ccedil;&otilde;es que asseguram a qualidade de um medicamento por meio do controle adequado durante o processo de distribui&ccedil;&atilde;o e armazenagem, bem como fornecem ferramentas para proteger o sistema de distribui&ccedil;&atilde;o contra medicamentos falsificados, reprovados, ilegalmente importados, roubados, avariados e/ou adulterados;</p><p>V - Boas Pr&aacute;ticas de Transporte (BPT): conjunto de a&ccedil;&otilde;es que asseguram a qualidade de um medicamento por meio do controle adequado durante o transporte e armazenagem em tr&acirc;nsito, bem como fornecem ferramentas para proteger o sistema de transporte contra medicamentos roubados, avariados e/ou adulterados;</p><p>VI - cadeia de frio ou rede de frio: processo englobado pelas atividades de armazenagem, conserva&ccedil;&atilde;o, manuseio, distribui&ccedil;&atilde;o e transporte dos produtos sens&iacute;veis &agrave; temperatura;</p><p>VII - contamina&ccedil;&atilde;o: introdu&ccedil;&atilde;o n&atilde;o desejada de impurezas de natureza qu&iacute;mica ou microbiol&oacute;gica, ou de mat&eacute;ria estranha, em produto a granel ou produto terminado durante as etapas de armazenagem ou transporte;</p><p>VIII - cont&ecirc;iner: ambiente utilizado para armazenamento ou transporte de produtos, podendo ser refrigerado e com a temperatura controlada;</p><p>IX - contrato de terceiriza&ccedil;&atilde;o: documento mutuamente acordado e controlado entre as partes, estabelecendo as atribui&ccedil;&otilde;es e responsabilidades das empresas contratante e contratada;</p><p>X - data de validade: data limite para a utiliza&ccedil;&atilde;o de um medicamento definida pelo fabricante, com base nos seus respectivos testes de estabilidade, mantidas as condi&ccedil;&otilde;es de armazenamento e transporte estabelecidos;</p><p>XI - distribui&ccedil;&atilde;o: conjunto de atividades relacionadas &agrave; movimenta&ccedil;&atilde;o de cargas que inclui o abastecimento, armazenamento e expedi&ccedil;&atilde;o de medicamentos, exclu&iacute;da a de fornecimento direto ao p&uacute;blico;</p><p>XII - distribuidor ou com&eacute;rcio atacadista: compreende o com&eacute;rcio de medicamentos, em quaisquer quantidades, realizadas entre pessoas jur&iacute;dicas ou a profissionais para o exerc&iacute;cio de suas atividades;</p><p>XIII - expedi&ccedil;&atilde;o: conjunto de procedimentos relacionados ao embarque para fins de transporte de medicamentos;</p><p>XIV - lote: quantidade definida de produto processado em um ou mais processos, cuja caracter&iacute;stica essencial &eacute; a homogeneidade;</p><p>XV - manifesto de carga: documento que cont&eacute;m lista de mercadorias que constituem o carregamento do navio, aeronave e demais ve&iacute;culos de transporte;</p><p>XVI - medicamento termol&aacute;bil: medicamento cuja especifica&ccedil;&atilde;o de temperatura m&aacute;xima seja igual ou inferior a 8&deg;C;</p><p>XVII - n&uacute;mero de lote: combina&ccedil;&atilde;o definida de n&uacute;meros e/ ou letras que identifica de forma &uacute;nica um lote em seus r&oacute;tulos, documenta&ccedil;&atilde;o de lote, certificados de an&aacute;lise correspondentes, entre outros;</p><p>XVIII - operador log&iacute;stico (OL): empresa detentora de Autoriza&ccedil;&atilde;o de Funcionamento (AFE) e Autoriza&ccedil;&atilde;o Especial (AE), quando aplic&aacute;vel, capacitada a prestar os servi&ccedil;os de transporte e/ou armazenamento;</p><p>XIX - procedimento operacional padr&atilde;o (POP): procedimento escrito e autorizado que fornece instru&ccedil;&otilde;es para a realiza&ccedil;&atilde;o de opera&ccedil;&otilde;es n&atilde;o necessariamente espec&iacute;ficas a um dado produto ou material, mas de natureza geral (por exemplo, opera&ccedil;&atilde;o, manuten&ccedil;&atilde;o e limpeza de equipamentos, qualifica&ccedil;&atilde;o, limpeza de instala&ccedil;&otilde;es e controle ambiental, amostragem e inspe&ccedil;&atilde;o);</p><p>XX - produto devolvido: produto terminado, expedido e comercializado, devolvido ao detentor do registro ou ao distribuidor;</p><p>XXI - produto a granel: qualquer produto que tenha passado por todas as etapas de produ&ccedil;&atilde;o, sem incluir o processo de embalagem; os produtos est&eacute;reis em sua embalagem prim&aacute;ria s&atilde;o considerados produto a granel;</p><p>XXII - qualifica&ccedil;&atilde;o: conjunto de a&ccedil;&otilde;es realizadas para atestar e documentar que quaisquer instala&ccedil;&otilde;es, sistemas e equipamentos est&atilde;o propriamente instalados e/ou funcionam corretamente e levam aos resultados esperados;</p><p>XXIII - qualifica&ccedil;&atilde;o t&eacute;rmica: verifica&ccedil;&atilde;o documentada de que o equipamento ou a &aacute;rea de temperatura controlada garantem homogeneidade t&eacute;rmica em seu interior;</p><p>XXIV - quarentena: reten&ccedil;&atilde;o tempor&aacute;ria de produtos terminados, isolados fisicamente ou por outros meios que impe&ccedil;am a sua utiliza&ccedil;&atilde;o, enquanto aguardam uma decis&atilde;o sobre sua libera&ccedil;&atilde;o, rejei&ccedil;&atilde;o ou reprocessamento;</p><p>XXV - recebimento: conjunto de atividades relacionadas &agrave; chegada, confer&ecirc;ncia e internaliza&ccedil;&atilde;o em estoque de medicamentos;</p><p>XXVI - recolhimento: a&ccedil;&atilde;o que visa a imediata e eficaz retirada do mercado, de determinado(s) lote(s) de medicamento, com ind&iacute;cios suficientes ou comprova&ccedil;&atilde;o de desvio de qualidade, que possa representar risco &agrave; sa&uacute;de, ou por ocasi&atilde;o de cancelamento de registro, relacionado com a seguran&ccedil;a e efic&aacute;cia do produto, a ser implementada pelo detentor do registro e seus distribuidores;</p><p>XXVII - remessa ou entrega: quantidade de um determinado medicamento fornecida em resposta a uma ordem de compra, podendo uma &uacute;nica remessa incluir um ou mais volumes e materiais pertencentes a mais de um lote;</p><p>XXVIII - sistema ativo de controle: s&atilde;o aqueles com controle ativo de temperatura e/ ou umidade, capazes de se auto ajustar &agrave;s varia&ccedil;&otilde;es da temperatura externa, como por exemplo, os cont&ecirc;ineres refrigerados para transporte a&eacute;reo e mar&iacute;timo e os caminh&otilde;es refrigerados;</p><p>XXIX - sistema passivo de controle: s&atilde;o aqueles sem controle ativo de temperatura e/ou umidade, como por exemplo, cont&ecirc;ineres termicamente isolados, feitos de poliestireno ou poliuretano, com material refrigerante. N&atilde;o s&atilde;o capazes de se auto ajustar &agrave;s varia&ccedil;&otilde;es de temperatura externa, sendo sua capacidade determinada por meio de estudos e previs&otilde;es de temperatura e umidade para a rota em quest&atilde;o;</p><p>XXX - transportador: empresa que realiza o transporte de medicamentos, do remetente para determinado destinat&aacute;rio, podendo executar adicionalmente a armazenagem em tr&acirc;nsito;</p><p>XXXI - devolu&ccedil;&atilde;o: retorno ao fornecedor dos medicamentos incorporados, fiscalmente, ao estoque do cliente e, que desta forma, entraram na cadeia de cust&oacute;dia deste. Estes medicamentos, quando devolvidos &agrave; origem, o s&atilde;o com documento fiscal ou correspondente, distinto do documento de envio.</p><p style="text-align: center;">CAP&Iacute;TULO II</p><p style="text-align: center;">DISPOSI&Ccedil;&Otilde;ES GERAIS</p><p>Art. 4&ordm; Todas as partes envolvidas na produ&ccedil;&atilde;o, armazenagem, distribui&ccedil;&atilde;o e transporte devem se responsabilizar pela qualidade e seguran&ccedil;a dos medicamentos.</p><p>Par&aacute;grafo &uacute;nico. A responsabilidade compartilhada abrange a&ccedil;&otilde;es de recolhimento, independentemente de este ter sido motivado pela autoridade sanit&aacute;ria, pelo detentor do registro, pelo distribuidor ou pelo operador log&iacute;stico.</p><p>Art. 5&ordm; Os princ&iacute;pios de BPA, BPDA e BPT devem ser observados tamb&eacute;m na log&iacute;stica reversa, quando os medicamentos estiverem sendo devolvidos ou recolhidos do mercado.</p><p>Art. 6&ordm; As empresas distribuidoras devem fornecer medicamentos somente &agrave;s empresas licenciadas e autorizadas pela autoridade sanit&aacute;ria competente para as atividades de distribui&ccedil;&atilde;o ou dispensa&ccedil;&atilde;o de medicamentos.</p><p>Par&aacute;grafo &uacute;nico. O fornecimento de medicamentos radiof&aacute;rmacos deve ser realizado por Institui&ccedil;&otilde;es licenciadas pela Autoridade Sanit&aacute;ria, pela Comiss&atilde;o Nacional de Energia Nuclear (CNEN) e demais autoridades competentes.</p><p>Art. 70. O transporte compartilhado com outras categorias de produtos somente &eacute; poss&iacute;vel quando os riscos forem analisados, mitigados e conclu&iacute;dos como aceit&aacute;veis.</p><p>Art. 8&ordm; Os estabelecimentos que exer&ccedil;am as atividades de distribui&ccedil;&atilde;o, armazenagem ou transporte de medicamentos devem dispor de sistema de gest&atilde;o da qualidade capaz de documentar, verificar e assegurar os requisitos espec&iacute;ficos a cada processo que possua impacto na qualidade dos produtos.</p><p style="text-align: center;">CAP&Iacute;TULO III</p><p style="text-align: center;">DISTRIBUI&Ccedil;&Atilde;O, ARMAZENAGEM E TRANSPORTE</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o I </strong></p><p style="text-align: center;"><strong>Organiza&ccedil;&atilde;o e Administra&ccedil;&atilde;o </strong></p><p>Art. 9&ordm; A estrutura organizacional da empresa deve estar descrita em organograma.</p><p>Par&aacute;grafo &uacute;nico. As responsabilidades de todo o pessoal devem estar indicadas nas descri&ccedil;&otilde;es dos cargos.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o II </strong></p><p style="text-align: center;"><strong>Pessoal </strong></p><p>Art. 10. A empresa deve possuir n&uacute;mero apropriado de funcion&aacute;rios com qualifica&ccedil;&otilde;es adequadas garantindo que as responsabilidades atribu&iacute;das individualmente n&atilde;o sejam t&atilde;o extensas a ponto de apresentar riscos &agrave; qualidade do produto.</p><p>Art. 11. Devem ser estabelecidos requisitos relacionados &agrave; sa&uacute;de, higiene e vestu&aacute;rio do pessoal, conforme as atividades a serem realizadas.</p><p>Art. 12. A sistem&aacute;tica para o treinamento dos funcion&aacute;rios cujas atribui&ccedil;&otilde;es possuam impacto no Sistema de Gest&atilde;o da Qualidade deve estar descrita.</p><p>&sect;1&ordm; Os funcion&aacute;rios referidos no caput deste artigo devem receber treinamento inicial e peri&oacute;dico, de acordo com a complexidade da atividade e compat&iacute;vel com a a&ccedil;&atilde;o de treinamento realizada.</p><p>&sect;2&ordm; Os registros que permitam identificar o treinando, a data de execu&ccedil;&atilde;o e a carga hor&aacute;ria, bem como a estrat&eacute;gia utilizada, os assuntos abordados e a avalia&ccedil;&atilde;o da efic&aacute;cia devem ser mantidos.</p><p>&sect;3&ordm; Os requisitos de treinamento relevantes a cada posi&ccedil;&atilde;o de trabalho, expressos pelas pol&iacute;ticas, programas, procedimentos e formul&aacute;rios, devem estar definidos.</p><p>Art. 13. &Eacute; proibido fumar, comer, beber (com exce&ccedil;&atilde;o de &aacute;gua pot&aacute;vel, que deve estar dispon&iacute;vel em um setor espec&iacute;fico), mascar, manter plantas, alimentos, medicamentos pessoais, objetos pessoais ou qualquer objeto estranho ao setor, nas &aacute;reas de armazenagem, armazenagem em tr&acirc;nsito, recebimento e expedi&ccedil;&atilde;o.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o III </strong></p><p style="text-align: center;"><strong>Sistema de Gest&atilde;o da Qualidade </strong></p><p>Art. 14. O Sistema de Gest&atilde;o da Qualidade deve cobrir todos os aspectos que influenciam a qualidade dos medicamentos ou dos servi&ccedil;os prestados.</p><p>Art. 15. Os processos que impactam na qualidade dos medicamentos ou dos servi&ccedil;os prestados devem ser mapeados.</p><p>Par&aacute;grafo &uacute;nico. Os processos identificados no mapeamento devem ser precedidos e governados por procedimentos operacionais padr&atilde;o, com a devida gera&ccedil;&atilde;o de registros.</p><p>Art. 16. As a&ccedil;&otilde;es do Sistema de Gest&atilde;o da Qualidade s&atilde;o de responsabilidade de toda a empresa e devem ser exercidas por todos os seus membros.</p><p>Art. 17. As diverg&ecirc;ncias em rela&ccedil;&atilde;o aos requisitos expressos pelo Sistema de Gest&atilde;o da Qualidade devem ser interpretadas e tratadas como n&atilde;o conformidades.</p><p>Art. 18. A &aacute;rea respons&aacute;vel pelo Sistema de Gest&atilde;o da Qualidade deve possuir autonomia hier&aacute;rquica e recursos necess&aacute;rios para o exerc&iacute;cio das seguintes fun&ccedil;&otilde;es:</p><p>I - garantir a implementa&ccedil;&atilde;o e manuten&ccedil;&atilde;o de um sistema da qualidade;</p><p>II - coordenar a gest&atilde;o documental;</p><p>III - elaborar, revisar e aprovar formalmente os procedimentos operacionais padr&atilde;o;</p><p>IV - adotar e manter programa de auto inspe&ccedil;&otilde;es;</p><p>V - adotar e manter programas de treinamento iniciais e peri&oacute;dicos;</p><p>VI - supervisionar as atividades de recolhimento, incluindo simula&ccedil;&otilde;es de recolhimento;</p><p>VII - receber e investigar as reclama&ccedil;&otilde;es;</p><p>VIII - gerenciar os produtos devolvidos;</p><p>IX - implementar um sistema para controle e gerenciamento de mudan&ccedil;as;</p><p>X - verificar e garantir os requisitos legais de licen&ccedil;a sanit&aacute;ria e autoriza&ccedil;&atilde;o de funcionamento dos integrantes da cadeia de distribui&ccedil;&atilde;o de medicamentos quando do exerc&iacute;cio da atividade de distribui&ccedil;&atilde;o;</p><p>XI - gerenciar a qualifica&ccedil;&atilde;o e calibra&ccedil;&atilde;o de equipamentos e instrumentos;</p><p>XII - registrar, investigar e adotar a&ccedil;&otilde;es corretivas e preventivas para as n&atilde;o conformidades identificadas;</p><p>XIII - gerenciar res&iacute;duos;</p><p>XIV - garantir a integridade e rastreabilidade dos medicamentos e dos dados relativos &agrave;s transa&ccedil;&otilde;es comerciais;</p><p>XV - implementar um programa de manejo de pragas com agentes seguros, regularizados junto aos &oacute;rg&atilde;os competentes e que n&atilde;o ofere&ccedil;am risco de contamina&ccedil;&atilde;o aos produtos armazenados;</p><p>XVI - realizar as comunica&ccedil;&otilde;es previstas aos &oacute;rg&atilde;os sanit&aacute;rios conforme modelos estabelecidos e divulgados por estes e comunicar aos parceiros comerciais e autoridades policiais competentes quando do roubo e da identifica&ccedil;&atilde;o de produtos falsificados ou adulterados; e</p><p>XVII - garantir a destina&ccedil;&atilde;o adequada a produtos falsificados.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o I </strong></p><p style="text-align: center;"><strong>Documenta&ccedil;&atilde;o </strong></p><p>Art. 19. A gest&atilde;o e controle de documentos da qualidade deve dispor as orienta&ccedil;&otilde;es para elabora&ccedil;&atilde;o, revis&atilde;o, aprova&ccedil;&atilde;o, distribui&ccedil;&atilde;o e controle, treinamento, codifica&ccedil;&atilde;o, guarda e obsolesc&ecirc;ncia dos documentos em formato f&iacute;sico ou eletr&ocirc;nico.</p><p>Art. 20. Os procedimentos operacionais padr&atilde;o devem ser seguidos e estar dispon&iacute;veis em seus respectivos locais de trabalho.</p><p>Art. 21. Os procedimentos operacionais padr&atilde;o devem ser mantidos atualizados para que correspondam &agrave; pr&aacute;tica rotineira.</p><p>Art. 22. Os procedimentos operacionais padr&atilde;o devem ser compreens&iacute;veis aos funcion&aacute;rios e n&atilde;o devem apresentar ambiguidades.</p><p>Art. 23. Os registros, manuais ou eletr&ocirc;nicos, devem ser prontamente recuper&aacute;veis, e devem ser armazenados usando medidas de seguran&ccedil;a contra qualquer modifica&ccedil;&atilde;o n&atilde;o autorizada, danos, deteriora&ccedil;&atilde;o ou perda.</p><p>&sect;1&ordm; A corre&ccedil;&atilde;o de um dado registrado deve ser realizada mediante justificativa da necessidade de altera&ccedil;&atilde;o, preservando-se a possibilidade de leitura do dado originalmente gravado.</p><p>&sect;2&ordm; Devem ser mantidos backups para os registros gerados ou armazenados em formato eletr&ocirc;nico.</p><p>Art. 24. Os procedimentos operacionais padr&atilde;o bem como os registros manuais ou eletr&ocirc;nicos devem ser mantidos por no m&iacute;nimo 5 (cinco) anos ap&oacute;s sua obsolesc&ecirc;ncia.</p><p>Par&aacute;grafo &uacute;nico. O acesso a estes documentos deve ser restrito &agrave;s pessoas delegadas pelo Sistema de Gest&atilde;o da Qualidade.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o II </strong></p><p style="text-align: center;"><strong>Reclama&ccedil;&otilde;es</strong></p><p>Art. 25. Deve ser estabelecido e divulgado aos clientes um servi&ccedil;o de atendimento para o recebimento das reclama&ccedil;&otilde;es.</p><p>Art. 26. As reclama&ccedil;&otilde;es relacionadas com a qualidade, autenticidade, legalidade ou integridade dos medicamentos ou aquelas relacionadas a eventos adversos devem ser registradas e investigadas.</p><p>&sect;1&ordm; A responsabilidade pela investiga&ccedil;&atilde;o estende-se proporcionalmente &agrave; participa&ccedil;&atilde;o de cada ente da cadeia na causa ao desvio.</p><p>&sect;2&ordm; A investiga&ccedil;&atilde;o deve classificar as reclama&ccedil;&otilde;es em procedentes ou n&atilde;o procedentes, confirmando ou descartando as n&atilde;o conformidades relacionadas.</p><p>&sect;3&ordm; Cabe &agrave; investiga&ccedil;&atilde;o definir a causa raiz do problema, avaliar os impactos aos clientes e sugerir, se necess&aacute;rio, ao fabricante ou ao detentor do registro, o recolhimento.</p><p>&sect;4&ordm; A investiga&ccedil;&atilde;o deve considerar a possibilidade de que outros lotes do medicamento tenham sido afetados pela mesma causa raiz.</p><p>&sect;5&ordm; A&ccedil;&otilde;es corretivas devem ser definidas, implementadas e monitoradas para as situa&ccedil;&otilde;es onde a reincid&ecirc;ncia da n&atilde;o conformidade represente risco ao paciente.</p><p>Art. 27. As reclama&ccedil;&otilde;es relacionadas aos desvios de qualidade devem ser registradas separadamente daquelas relacionadas &agrave;s atividades de distribui&ccedil;&atilde;o, armazenagem ou transporte.</p><p>Par&aacute;grafo &uacute;nico. As reclama&ccedil;&otilde;es relacionadas aos desvios de qualidade devem ser repassadas ao fabricante ou ao detentor do registro para investiga&ccedil;&atilde;o, e os resultados desta devem ser aditados ao registro inicial.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o III </strong></p><p style="text-align: center;"><strong>Recolhimento</strong></p><p>Art. 28. O recolhimento deve atender &agrave;s disposi&ccedil;&otilde;es desta Resolu&ccedil;&atilde;o, sem preju&iacute;zo das disposi&ccedil;&otilde;es dadas na Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 55 de 17 de mar&ccedil;o de 2005 e suas atualiza&ccedil;&otilde;es.</p><p>Art. 29. Cabe ao detentor do registro a coordena&ccedil;&atilde;o do recolhimento.</p><p>Par&aacute;grafo &uacute;nico. A participa&ccedil;&atilde;o no recolhimento pela distribuidora, armazenadora ou operador log&iacute;stico estende-se proporcionalmente &agrave; contribui&ccedil;&atilde;o de cada um no mapa de distribui&ccedil;&atilde;o e &agrave; causa raiz do recolhimento.</p><p>Art. 30. Os mapas de distribui&ccedil;&atilde;o devem ser prontamente recuper&aacute;veis durante tempo condizente com a validade dos medicamentos distribu&iacute;dos.</p><p>&sect;1&ordm; Os dados cadastrais relativos &agrave;s empresas constantes no mapa de distribui&ccedil;&atilde;o devem estar atualizados e conter informa&ccedil;&otilde;es m&iacute;nimas necess&aacute;rias ao contato postal, telef&ocirc;nico e por correio eletr&ocirc;nico.</p><p>&sect;2&ordm; Deve ser realizada simula&ccedil;&atilde;o de reconcilia&ccedil;&atilde;o entre as unidades distribu&iacute;das e localizadas nos clientes, uma vez ao ano para o pior caso da rede de distribui&ccedil;&atilde;o, com o intuito de testar a efetividade do recolhimento e corrigir poss&iacute;veis falhas.</p><p>Art. 31. O detentor do registro deve ser consultado previamente sobre o recolhimento quando este for realizado por outra empresa da cadeia de distribui&ccedil;&atilde;o.</p><p>Art. 32. Ao fim do recolhimento, deve ser registrado em relat&oacute;rio a avalia&ccedil;&atilde;o da efic&aacute;cia das comunica&ccedil;&otilde;es emitidas e do grau de recupera&ccedil;&atilde;o das unidades distribu&iacute;das.</p><p>Art. 33. Todos os clientes e as autoridades sanit&aacute;rias competentes, de todos os pa&iacute;ses a que determinado medicamento tenha sido distribu&iacute;do, devem ser notificados imediatamente quando da constata&ccedil;&atilde;o da necessidade do recolhimento de determinado lote.</p><p>Par&aacute;grafo &uacute;nico. O respons&aacute;vel pelo recolhimento deve manter registros das notifica&ccedil;&otilde;es e seus comprovantes de recebimento.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o IV </strong></p><p style="text-align: center;"><strong>Devolu&ccedil;&otilde;es </strong></p><p>Art. 34. Antes que um medicamento devolvido seja reintegrado ao estoque comercializ&aacute;vel, no m&iacute;nimo os seguintes fatores devem ser registrados e ponderados pelo sistema de gest&atilde;o da qualidade:</p><p>I - o motivo da devolu&ccedil;&atilde;o;</p><p>II - as condi&ccedil;&otilde;es de armazenagem e transporte empregadas pelo comprador;</p><p>III - a integridade da embalagem secund&aacute;ria original; e</p><p>IV - o prazo de validade.</p><p>Art. 35. A incapacidade em garantir que o medicamento devolvido se mant&eacute;m dentro de seus padr&otilde;es de qualidade deve resultar na rejei&ccedil;&atilde;o da reintegra&ccedil;&atilde;o.</p><p>Art. 36. Os medicamentos objetos de furto, roubo ou outras apropria&ccedil;&otilde;es indevidas, ainda que tenham sido recuperados, devem ser rejeitados.</p><p>&sect;1&ordm; Os medicamentos descritos no caput que tiverem a cadeia de cust&oacute;dia interrompida por roubo, furto ou outra apropria&ccedil;&atilde;o indevida e que n&atilde;o apresentarem dano ou viola&ccedil;&atilde;o da caixa de embarque e dos dispositivos de seguran&ccedil;a presentes no momento do evento e que puderem ser conclu&iacute;dos como adequados do ponto de vista da qualidade, seguran&ccedil;a e efic&aacute;cia por meio de uma an&aacute;lise de risco executada sob a responsabilidade do distribuidor, podem ser reintegrados ao estoque comercial.</p><p>&sect;2&ordm; O disposto no par&aacute;grafo anterior n&atilde;o se aplica aos medicamentos termol&aacute;beis.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o V </strong></p><p style="text-align: center;"><strong>Auto inspe&ccedil;&otilde;es </strong></p><p>Art. 37. Os processos com impacto na Qualidade devem ser auto inspecionados conforme frequ&ecirc;ncia estabelecida e justificada pela empresa.</p><p>Art. 38. As auto inspe&ccedil;&otilde;es devem ser conduzidas por profissional(ais) n&atilde;o vinculado(s) hierarquicamente ao processo ou ao departamento inspecionado.</p><p>Par&aacute;grafo &uacute;nico. Os profissionais a que se refere o caput devem ser capacitados especificamente para a atividade de auto inspe&ccedil;&atilde;o.</p><p>Art. 39. As auto inspe&ccedil;&otilde;es devem ser compiladas em relat&oacute;rios com as seguintes informa&ccedil;&otilde;es m&iacute;nimas:</p><p>I - identifica&ccedil;&atilde;o da equipe de inspetores;</p><p>II - per&iacute;odo;</p><p>III - n&atilde;o conformidades identificadas;</p><p>IV - a&ccedil;&otilde;es corretivas e preventivas elencadas e seus respectivos prazos de conclus&atilde;o e implementa&ccedil;&atilde;o;</p><p>V - a&ccedil;&otilde;es de acompanhamento da ado&ccedil;&atilde;o e monitoramento da efic&aacute;cia das a&ccedil;&otilde;es corretivas e preventivas; e</p><p>VI - avalia&ccedil;&atilde;o e concord&acirc;ncia das chefias de cada departamento afetado e da posi&ccedil;&atilde;o hier&aacute;rquica m&aacute;xima da empresa.</p><p style="text-align: center;"><strong>Subse&ccedil;&atilde;o VI </strong></p><p style="text-align: center;"><strong>Qualifica&ccedil;&otilde;es e Valida&ccedil;&otilde;es</strong></p><p>Art. 40. Equipamentos e sistemas informatizados devem ser qualificados e validados antes do seu uso ou depois de qualquer mudan&ccedil;a considerada significativa.</p><p>Par&aacute;grafo &uacute;nico. A an&aacute;lise de risco pode ser utilizada como ferramenta para dispensa da necessidade de qualifica&ccedil;&atilde;o e valida&ccedil;&atilde;o dos equipamentos que n&atilde;o possuam contribui&ccedil;&atilde;o significativa para com a qualidade.</p><p>Art. 41. Deve existir um programa de manuten&ccedil;&atilde;o preventiva para os equipamentos com impacto na qualidade.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o IV </strong></p><p style="text-align: center;"><strong>Instala&ccedil;&otilde;es de armazenagem </strong></p><p>Art. 42. O exerc&iacute;cio da atividade de armazenagem de medicamentos requer, no m&iacute;nimo:</p><p>I - &aacute;rea de recebimento e expedi&ccedil;&atilde;o de medicamentos separadas entre si;</p><p>II - &aacute;rea de armazenagem geral de medicamentos;</p><p>III - &aacute;rea ou local de armazenagem de medicamentos devolvidos;</p><p>IV - &aacute;rea ou local de armazenagem de medicamentos reprovados, vencidos, recolhidos, suspeitos de falsifica&ccedil;&atilde;o ou falsificados;</p><p>V - &aacute;rea ou local de armazenagem de medicamentos sujeitos ao regime especial de controle, quando aplic&aacute;vel;</p><p>VI - &aacute;rea ou local de armazenagem de medicamentos em quarentena, quando aplic&aacute;vel;</p><p>VII - &aacute;rea de armazenagem de medicamentos com radionucl&iacute;deos, quando aplic&aacute;vel;</p><p>VIII - &aacute;rea de dep&oacute;sito de materiais de limpeza;</p><p>IX - &aacute;rea de administra&ccedil;&atilde;o; e</p><p>X - &aacute;rea de cantinas ou refeit&oacute;rios, quando existentes, e de vesti&aacute;rios, sanit&aacute;rios e lavat&oacute;rios, sem comunica&ccedil;&atilde;o direta com as &aacute;reas de armazenagem.</p><p>&sect;1&ordm; Deve ser adotada a altern&acirc;ncia de hor&aacute;rios, a delimita&ccedil;&atilde;o da &aacute;rea comum, a codifica&ccedil;&atilde;o por cores ou outros procedimentos para a diminui&ccedil;&atilde;o do risco de trocas quando n&atilde;o for poss&iacute;vel a separa&ccedil;&atilde;o requerida no inciso I.</p><p>&sect;2&ordm; Quaisquer &aacute;reas de armazenagem devem ter acesso restrito, no entanto, as &aacute;reas ou locais indicados pelos incisos III, IV, V e VII devem ser separadas das demais e devem possuir controle de acesso diferenciado.</p><p>&sect;3&ordm; A substitui&ccedil;&atilde;o da quarentena f&iacute;sica descrita no inciso VI por sistema informatizado qualificado &eacute; poss&iacute;vel.</p><p>&sect;4&ordm; As &aacute;reas mencionadas devem proteger os produtos das intemp&eacute;ries e de animais.</p><p>Art. 43. As &aacute;reas de armazenagem devem ser dotadas de equipamentos e instrumentos necess&aacute;rios ao controle e ao monitoramento da temperatura e umidade requeridas.</p><p>&sect;1&ordm; O monitoramento deve ser realizado por instrumentos posicionados de acordo com o estudo de qualifica&ccedil;&atilde;o t&eacute;rmica da &aacute;rea.</p><p>&sect;2&ordm; A leitura dos instrumentos, caso realizada de maneira intermitente, deve corresponder aos per&iacute;odos de maior criticidade.</p><p>&sect;3&ordm; O monitoramento deve ser registrado, e os registros devem ser mantidos, por, pelo menos, dois anos ap&oacute;s sua gera&ccedil;&atilde;o.</p><p>&sect;4&ordm; Os instrumentos devem ser calibrados antes de seu primeiro uso e em intervalos definidos e justificados pelo desempenho do instrumento e sensibilidade da medida.</p><p>Art. 44. As instala&ccedil;&otilde;es devem ter dimens&atilde;o compat&iacute;vel com o volume das opera&ccedil;&otilde;es realizadas.</p><p>Art. 45. As instala&ccedil;&otilde;es devem apresentar superf&iacute;cies lisas, sem rachaduras e sem desprendimento de p&oacute;, para facilitar a limpeza e evitar contaminantes.</p><p>Art. 46. As instala&ccedil;&otilde;es devem ser limpas com o aux&iacute;lio de equipamentos e agentes de limpeza aprovados para tal finalidade.</p><p>Par&aacute;grafo &uacute;nico. As opera&ccedil;&otilde;es de limpeza a que se refere o caput devem ser registradas.</p><p>Art. 47. As instala&ccedil;&otilde;es devem ser dotadas de ilumina&ccedil;&atilde;o adequada para permitir que todas as opera&ccedil;&otilde;es sejam realizadas com precis&atilde;o e seguran&ccedil;a.</p><p>Art. 48. As &aacute;reas destinadas &agrave; manuten&ccedil;&atilde;o, quando existentes, devem ser separadas das &aacute;reas de armazenagem.</p><p>Par&aacute;grafo &uacute;nico. Reparos, manuten&ccedil;&otilde;es e calibra&ccedil;&otilde;es efetuados n&atilde;o devem comprometer a qualidade dos medicamentos.</p><p>Se&ccedil;&atilde;o V</p><p>Armazenagem </p><p>Art. 49. Os medicamentos avariados devem ser retirados dos estoques utiliz&aacute;veis e armazenados separadamente como reprovados.</p><p>Art. 50. As condi&ccedil;&otilde;es de armazenagem dos medicamentos devem seguir as especifica&ccedil;&otilde;es do detentor do registro.</p><p>Art. 51. Os medicamentos n&atilde;o devem ser posicionados diretamente no ch&atilde;o ou encostados nas paredes, devem guardar dist&acirc;ncia m&iacute;nima do telhado e n&atilde;o devem estar em locais de incid&ecirc;ncia direta da luz solar.</p><p>Art. 52. Os paletes devem ser de material que permita a limpeza e n&atilde;o constitua fonte de contamina&ccedil;&atilde;o, tais como madeira tratada, alum&iacute;nio ou materiais pl&aacute;sticos.</p><p>Art. 53. A armazenagem deve obedecer a um endere&ccedil;amento l&oacute;gico que evite trocas e forne&ccedil;a a localiza&ccedil;&atilde;o inequ&iacute;voca dos quantitativos armazenados.</p><p>Art. 54. A armazenagem deve obedecer &agrave; configura&ccedil;&atilde;o de carga estabelecida para o medicamento.</p><p>Par&aacute;grafo &uacute;nico. O disposto tamb&eacute;m se aplica durante o transporte, armazenagem em transporte ou quando da guarda por operadores log&iacute;sticos.</p><p>Art. 55. Devem ser realizados invent&aacute;rios peri&oacute;dicos do estoque.</p><p>Par&aacute;grafo &uacute;nico. As discrep&acirc;ncias no invent&aacute;rio devem ser registradas e investigadas para assegurar que n&atilde;o tenham ocorrido misturas, faturamentos incorretos ou furtos.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o VI </strong></p><p style="text-align: center;"><strong>Recebimento e da Expedi&ccedil;&atilde;o </strong></p><p>Art. 56. Cada opera&ccedil;&atilde;o de recebimento deve verificar e registrar:</p><p>I - as condi&ccedil;&otilde;es de transporte e armazenagem aplic&aacute;veis, incluindo requerimentos especiais de temperatura, umidade ou exposi&ccedil;&atilde;o a luz;</p><p>II - os n&uacute;meros de lote, data de validade, e quantidades recebidas frente aos pedidos efetuados e notas fiscais recebidas; e</p><p>III - a integridade da carga.</p><p>Art. 57. As cargas que n&atilde;o cumpram com os requerimentos do recebimento devem ser devolvidas no ato do recebimento ou devem ser postas em quarentena enquanto aguardam sua disposi&ccedil;&atilde;o pela garantia da qualidade.</p><p>Art. 58. O fracionamento de medicamentos a partir de suas embalagens de transporte n&atilde;o deve violar a embalagem secund&aacute;ria.</p><p>Par&aacute;grafo &uacute;nico. A opera&ccedil;&atilde;o de fracionamento deve ser realizada de acordo com ordens de separa&ccedil;&atilde;o espec&iacute;ficas &agrave; quantidade a ser fracionada e deve dispor de registro espec&iacute;fico com confer&ecirc;ncia ao final.</p><p>Art. 59. Os arquivos eletr&ocirc;nicos relacionados &agrave; expedi&ccedil;&atilde;o devem incluir, pelo menos, as seguintes informa&ccedil;&otilde;es:</p><p>I - data da expedi&ccedil;&atilde;o ou recebimento;</p><p>II - raz&atilde;o social, endere&ccedil;o e CNPJ do transportador;</p><p>III - nome completo e documento de identifica&ccedil;&atilde;o do motorista;</p><p>IV - raz&atilde;o social, endere&ccedil;o e CNPJ do destinat&aacute;rio;</p><p>V - descri&ccedil;&atilde;o dos medicamentos, incluindo nome e apresenta&ccedil;&atilde;o;</p><p>VI - quantidade, n&uacute;meros de lote e data de validade;</p><p>VII - condi&ccedil;&otilde;es de transporte e armazenagem aplic&aacute;veis, incluindo a identifica&ccedil;&atilde;o do ve&iacute;culo respons&aacute;vel pelo transporte e n&uacute;mero de s&eacute;rie do instrumento utilizado para monitoramento das condi&ccedil;&otilde;es ambientais, quando aplic&aacute;vel;</p><p>VIII - n&uacute;mero &uacute;nico para permitir a identifica&ccedil;&atilde;o da ordem de entrega; e</p><p>IX - n&uacute;mero da nota fiscal.</p><p>Art. 60. As notas fiscais emitidas devem conter os n&uacute;meros de lote e dados da origem dos medicamentos transacionados.</p><p>Art. 61. O ordenamento da carga nos ve&iacute;culos ou cont&ecirc;ineres deve ser realizado de forma a evitar danos aos medicamentos.</p><p>Par&aacute;grafo &uacute;nico. Os ve&iacute;culos e cont&ecirc;ineres devem ser carregados cuidadosamente e sistematicamente e, quando aplic&aacute;vel, seguir a sequ&ecirc;ncia primeiro que entra, &uacute;ltimo que sai.</p><p>Art. 62. Os cronogramas de entrega e as rotas devem ser estabelecidos de acordo com as necessidades e condi&ccedil;&otilde;es locais.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o VII </strong></p><p style="text-align: center;"><strong>Transporte e Armazenagem em Tr&acirc;nsito</strong></p><p>Art. 63. S&atilde;o obriga&ccedil;&otilde;es dos contratantes dos servi&ccedil;os de transporte de medicamentos:</p><p>I - qualificar os transportadores;</p><p>II - prestar orienta&ccedil;&atilde;o e assist&ecirc;ncia t&eacute;cnica para os casos de acidentes envolvendo os medicamentos sob transporte, juntamente com o Respons&aacute;vel T&eacute;cnico da empresa contratada.</p><p>Art. 64. S&atilde;o obriga&ccedil;&otilde;es das empresas que realizam o transporte de medicamentos:</p><p>I - dispor do manifesto de carga transportada com a previs&atilde;o de desembarque a bordo do ve&iacute;culo transportador;</p><p>II - monitorar as condi&ccedil;&otilde;es de transporte relacionadas &agrave;s especifica&ccedil;&otilde;es de temperatura, acondicionamento, armazenagem e umidade do medicamento utilizando instrumentos calibrados;</p><p>III - aplicar os sistemas passivos ou ativos de controle de temperatura e umidade que sejam necess&aacute;rios &agrave; manuten&ccedil;&atilde;o das condi&ccedil;&otilde;es requeridas pelo registro sanit&aacute;rio ou outras especifica&ccedil;&otilde;es aplic&aacute;veis;</p><p>IV - fornecer ao contratante todos os dados relativos &agrave;s condi&ccedil;&otilde;es de conserva&ccedil;&atilde;o durante o transporte, bem como durante a armazenagem em tr&acirc;nsito;</p><p>V - prover acesso aos medicamentos restritamente a pessoal autorizado e treinado;&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','64','1')">Reda&ccedil;&otilde;es Anteriores</a></em><br>VI - receber e entregar medicamentos somente &agrave;s empresas devidamente autorizadas e licenciadas para as atividades relacionadas.</p><p class="link-revogado" style="border-color: red !important;">&sect;1&ordm; O controle previsto no inciso III pode ser eliminado quando utilizarse de condi&ccedil;&otilde;es de transporte qualificadas para a rota ou condi&ccedil;&otilde;es justi ficadas tecnicamente pelo fabricante.&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','64','2')">Reda&ccedil;&otilde;es Anteriores</a></em><br>&sect;2&ordm;&nbsp;<em class="link-revogado" style="color: red !important;"> (Revogado pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','64','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect;3&ordm; Uma avalia&ccedil;&atilde;o de risco deve ser realizada para se considerar o impacto das vari&aacute;veis do processo de transporte que n&atilde;o sejam continuamente controladas ou monitoradas, bem como para o controle da qualidade dos produtos caso estes sejam transportados em condi&ccedil;&otilde;es diversas daquelas definidas nos registros.&nbsp;<em> (Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;</p><p>&sect;4&ordm; O monitoramento previsto no inciso II do caput deste artigo pode ocorrer de modo peri&oacute;dico em rotas definidas como piores casos ap&oacute;s an&aacute;lise de risco que considere similaridades de rotas, dados climatol&oacute;gicos, tempo, dist&acirc;ncia, sazonalidade, modais de transporte, hor&aacute;rios e outras vari&aacute;veis cr&iacute;ticas para o transporte.&nbsp;<em> (Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;</p><p>&sect;5&ordm; O controle de umidade previsto no inciso III do caput deste artigo pode ser eliminado ap&oacute;s avalia&ccedil;&atilde;o de risco ou quando forem apresentadas justificativas t&eacute;cnicas pelos fabricantes que deem suporte ao transporte em condi&ccedil;&otilde;es diversas daquelas definidas no registro.&nbsp;<em> (Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;</p><p>Art. 65. Os sistemas de transporte utilizados devem dispor de mecanismos que forne&ccedil;am evid&ecirc;ncias de acessos n&atilde;o autorizados.</p><p>Par&aacute;grafo &uacute;nico. &Eacute; vedada &agrave;s empresas transportadoras ou operador log&iacute;stico, quando na atividade de transportador, a viola&ccedil;&atilde;o da carga transportada.</p><p>Art. 66. As diretrizes referentes &agrave;s instala&ccedil;&otilde;es de armazenagem, &agrave; armazenagem e ao recebimento e expedi&ccedil;&atilde;o previstos nesta norma, se aplicam tamb&eacute;m a armazenagem em tr&acirc;nsito.</p><p>Art. 67. Os ve&iacute;culos, equipamentos e cont&ecirc;ineres n&atilde;o devem expor os medicamentos a condi&ccedil;&otilde;es que possam afetar sua estabilidade e a integridade de sua embalagem ou gerar contamina&ccedil;&otilde;es de qualquer natureza.</p><p>Art. 68. Os ve&iacute;culos e cont&ecirc;ineres devem dispor de manuten&ccedil;&atilde;o e limpeza adequadas.</p><p>Art. 69. Os medicamentos recolhidos ou devolvidos, bem como aqueles suspeitos de falsifica&ccedil;&atilde;o, devem ser identificados de forma clara e segura e, quando poss&iacute;vel, devem ser utilizados mecanismos que permitam a segrega&ccedil;&atilde;o durante o transporte.</p><p>Art. 71. Em caso de sinistro, roubo ou furto de medicamentos radiof&aacute;rmacos, a CNEN deve ser comunicada.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o VIII </strong></p><p style="text-align: center;"><strong>Terceiriza&ccedil;&atilde;o </strong></p><p>Art. 72. A terceiriza&ccedil;&atilde;o das atividades reguladas nesta norma deve ser precedida pela aprova&ccedil;&atilde;o do contrato pelo sistema de gest&atilde;o da qualidade.</p><p>&sect;1&ordm; A aprova&ccedil;&atilde;o referida no caput deste artigo resulta da qualifica&ccedil;&atilde;o do prestador do servi&ccedil;o contratado.</p><p>&sect;2&ordm; A qualifica&ccedil;&atilde;o do fornecedor deve ser pautada pela verifica&ccedil;&atilde;o de requisitos espec&iacute;ficos e deve ser registrada.</p><p>&sect;3&ordm; A manuten&ccedil;&atilde;o do status do prestador como qualificado deve ser periodicamente reavaliada por meio de indicadores estabelecidos para tal.</p><p>Art. 73. O contrato entre o contratante e o contratado deve estabelecer as responsabilidades de cada parte.</p><p>Par&aacute;grafo &uacute;nico. O contrato a que se refere o caput deste artigo deve prever que as subcontrata&ccedil;&otilde;es dependem de avalia&ccedil;&atilde;o e aprova&ccedil;&atilde;o pr&eacute;vias pelo contratante original.</p><p>Art. 74. O contratante deve fornecer ao contratado todas as informa&ccedil;&otilde;es necess&aacute;rias para a realiza&ccedil;&atilde;o das opera&ccedil;&otilde;es contratadas de forma correta, de acordo com o registro do medicamento e quaisquer outras exig&ecirc;ncias legais.</p><p>Art. 75. O contratante e o contratado devem ser capazes de atender aos requisitos legais e regulamentares que lhes sejam aplic&aacute;veis.</p><p>Art. 76. O contratado deve possuir instala&ccedil;&otilde;es adequadas e pessoal qualificado, para desempenhar satisfatoriamente o servi&ccedil;o solicitado pelo contratante.</p><p style="text-align: center;"><strong>Se&ccedil;&atilde;o IX</strong></p><p style="text-align: center;"><strong>Medicamentos Termol&aacute;beis </strong></p><p>Art. 77. Deve-se minimizar a exposi&ccedil;&atilde;o &agrave; temperatura ambiente durante o recebimento e a expedi&ccedil;&atilde;o de medicamentos termol&aacute;beis, incluindo, se necess&aacute;rio, a ado&ccedil;&atilde;o de &aacute;reas refrigeradas junto aos espa&ccedil;os de recebimento e expedi&ccedil;&atilde;o.</p><p>Par&aacute;grafo &uacute;nico. O tempo total de exposi&ccedil;&atilde;o dos medicamentos termol&aacute;beis &agrave; temperatura ambiente, durante as opera&ccedil;&otilde;es a que se refere o caput deste artigo, deve ser registrado.</p><p>Art. 78. A armazenagem de medicamentos termol&aacute;beis deve ser feita de acordo com as recomenda&ccedil;&otilde;es do detentor do registro em meio que seja qualific&aacute;vel termicamente.</p><p>Art. 79. Os equipamentos envolvidos na armazenagem de medicamentos termol&aacute;beis devem possuir, al&eacute;m da fonte prim&aacute;ria de energia el&eacute;trica, uma fonte alternativa capaz de efetuar o suprimento imediato de energia, no caso de falhas da fonte prim&aacute;ria.</p><p>Art. 80. Devem ser elaborados planos de conting&ecirc;ncia para proteger os medicamentos termol&aacute;beis em caso de falha de energia el&eacute;trica ou dos equipamentos de armazenamento.</p><p>Art. 81. Alternativas emergenciais de resfriamento, tais como nitrog&ecirc;nio l&iacute;quido ou gelo seco, podem ser aceit&aacute;veis, desde que as condi&ccedil;&otilde;es de conserva&ccedil;&atilde;o estabelecidas pelo detentor do registro sejam mantidas.</p><p>Par&aacute;grafo &uacute;nico. Quando da ado&ccedil;&atilde;o destas alternativas, precau&ccedil;&otilde;es para que n&atilde;o ocorram excurs&otilde;es de temperatura para valores abaixo do m&iacute;nimo especificado devem ser adotadas.</p><p>Art. 82. Na impossibilidade de ado&ccedil;&atilde;o de sistema de barreira para os locais de armazenamento de medicamentos termol&aacute;beis, a movimenta&ccedil;&atilde;o de estoque deve ser planejada antecipadamente para diminuir ao m&aacute;ximo as varia&ccedil;&otilde;es de temperatura.</p><p>Art. 83. O transporte de medicamentos termol&aacute;beis deve ser feito em meio qualific&aacute;vel do ponto de vista t&eacute;rmico.</p><p>Art. 84. O monitoramento e o controle da temperatura durante a armazenagem e o transporte devem ser realizados.</p><p>Art. 85. A disposi&ccedil;&atilde;o e a montagem das cargas para o transporte devem ser orientadas pelo detentor do registro aos distribuidores, transportadores e operadores log&iacute;sticos e devem ser fundamentadas nos estudos de qualifica&ccedil;&atilde;o da cadeia de frio.</p><p>Par&aacute;grafo &uacute;nico. A disposi&ccedil;&atilde;o das cargas deve evitar a exposi&ccedil;&atilde;o direta dos medicamentos aos agentes refrigerantes utilizados para a conserva&ccedil;&atilde;o da temperatura.</p><p style="text-align: center;">CAP&Iacute;TULO IV</p><p style="text-align: center;">DISPOSI&Ccedil;&Otilde;ES FINAIS</p><p>Art. 86. O descumprimento das disposi&ccedil;&otilde;es contidas nesta Resolu&ccedil;&atilde;o constitui infra&ccedil;&atilde;o sanit&aacute;ria, nos termos da Lei n&ordm; 6.437, de 20 de agosto de 1977, sem preju&iacute;zo das responsabilidades civil, administrativa e penal cab&iacute;veis.</p><p>Art. 87. Ficam revogadas:</p><p>I - a <a href="javascript:LinkTexto('RDC','00000304','000','2019','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 304, de 17 de setembro de 2019</a>, publicada no Di&aacute;rio Oficial da Uni&atilde;o de 18 de setembro de 2019; e</p><p>II - a <a href="javascript:LinkTexto('RDC','00000360','000','2020','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 360, de 27 de mar&ccedil;o de 2020</a>, publicada no Di&aacute;rio Oficial da Uni&atilde;o de 31 de mar&ccedil;o de 2020.</p><p>Art. 88. Ficam restauradas:</p><p>I - a <a href="javascript:LinkTexto('POR','00000802','000','1998','SVS/MS','','','')">Portaria n&ordm; 802, de 8 de outubro de 1998</a>, publicada no Di&aacute;rio Oficial da Uni&atilde;o de 9 de outubro de 1998; e</p><p>II - a <a href="javascript:LinkTexto('RDC','00000320','000','2002','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 320, de 22 de novembro de 2002</a>, publicada no Di&aacute;rio Oficial da Uni&atilde;o de 25 de novembro de 2002.</p><p>&sect;1&ordm; Ficam resguardados os direitos de terceiros, no per&iacute;odo compreendido entre 16 de mar&ccedil;o de 2020 e a data imediatamente anterior &agrave; data de publica&ccedil;&atilde;o da presente Resolu&ccedil;&atilde;o, desde que tenham eles agido de boa-f&eacute; e desde que suas atividades tenham sido praticadas de acordo com a <a href="javascript:LinkTexto('RDC','00000304','000','2019','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 304, de 17 de setembro de 2019</a>.</p><p>&sect; 2&ordm; Restar&atilde;o automaticamente revogados, a partir da data de entrada em vigor da presente Resolu&ccedil;&atilde;o, os atos normativos discriminados nos incisos I e II deste artigo.</p><p>Art. 89 - Fica estabelecido o prazo de 3 (tr&ecirc;s) anos a partir da data de entrada em vigor desta Resolu&ccedil;&atilde;o para a aplica&ccedil;&atilde;o do conjunto de a&ccedil;&otilde;es que ser&atilde;o necess&aacute;rias &agrave; implementa&ccedil;&atilde;o do requerido nos incisos II e III do art. 64.&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','89','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect;1&ordm; Fica estabelecido o prazo de 2 (dois) anos a partir da data de entrada em vigor desta Resolu&ccedil;&atilde;o para que todos os elos da cadeia de distribui&ccedil;&atilde;o realizem seus estudos de mapeamento de rotas.&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','89','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect;2&ordm; Ap&oacute;s o prazo estabelecido no &sect;1&ordm; as empresas ter&atilde;o 1 (hum) ano para a implementa&ccedil;&atilde;o das solu&ccedil;&otilde;es aplic&aacute;veis levando em considera&ccedil;&atilde;o os resultados obtidos nos estudos de mapeamento de rotas ou nas an&aacute;lises de risco.&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000653','000','2022','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o 653/2022</a>)</em>&nbsp;&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000430','000','2020','RDC/DC/ANVISA/MS','A','89','3')">Reda&ccedil;&otilde;es Anteriores</a></em><br>&sect;3&ordm; A transitoriedade disposta no caput deste artigo tamb&eacute;m se aplica &agrave; armazenagem em tr&acirc;nsito, por ser esta atividade intr&iacute;nseca e indissoci&aacute;vel do transporte.</p><p>Art. 90. Esta Resolu&ccedil;&atilde;o entra em vigor em 16 de mar&ccedil;o de 2021.</p><p>Par&aacute;grafo &uacute;nico. Excetuam-se do disposto no caput deste artigo os arts. 7&ordm; e 87 e os incisos I e II e o &sect; 1&ordm; do art. 88, os quais tem vig&ecirc;ncia imediata na data de publica&ccedil;&atilde;o desta Resolu&ccedil;&atilde;o.</p><p style="text-align: center;">ANTONIO BARRA TORRES</p><p style="font-weight: bold;">PUB D.O.U., 09/10/2020 - Se&ccedil;&atilde;o 1</p></p>
+					<p style="font-size: 0.8rem; text-align: center; font-style: italic; color: red;">Este texto n„o substitui a PublicaÁ„o Oficial.</p>
+				</div>
+			</div>
+		</article>
+                    	
+		<form name="formPdf" id="formPdf" action="/action/ActionDatalegis.php?acao=gerarPdfAto&cod_modulo=310&cod_menu=9434" method="post" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formImprimir" id="formImprimir" action="/action/ActionDatalegis.php?acao=imprimirAto&cod_modulo=310&cod_menu=9434" method="get" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formGerarLink" id="formGerarLink" action="/action/ActionDatalegis.php?acao=setGerarLink&cod_modulo=310&cod_menu=9434" method="get" target="_self">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		
+	</div>
+</div>
+		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@1.11/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/view/js/ajax.js"></script> 
+<script type="text/javascript">
+
+	function abreFecha(obj) {
+		if($(obj).is(':visible') ) {
+			$(obj).removeClass('d-block').addClass('d-none');
+		} else {
+			$(obj).removeClass('d-none').addClass('d-block');
+		}
+	}
+	
+	var in_abrir_segundo_nivel = "";
+	var in_abrir_todas_notas = false;
+	
+	function recuperarObjetoPai(obj, nuascendentes) {
+		var objPai = obj;
+	
+		for ( var i = 0; i < nuascendentes; i++) {
+			objPai = objPai.parentNode;
+		}
+	
+		return objPai;
+	}
+	
+	function historico(psLink) {
+		var root;
+		root = window.open(psLink,'Historico','width=360,height=240,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no');
+		root.focus();
+	}
+		
+	function mostra_arquivo(cod, tip, acao, txt, l, a) {
+		var url;
+		var str;
+		if (cod != "") {
+			caminho = "http://www.datalegis.inf.br/datalegis/arquivos/";
+			switch (acao) {
+			case 1: //-- mostra arquivo na tela - apenas imagens
+				document.write("<img src='" + caminho + cod + "." + tip
+						+ "' border='0' width='" + ((l) ? l : "100%")
+						+ "' heigth='" + ((a) ? a : "100%") + "'>");
+				break;
+			case 0: //-- nao mostra arquivo na tela - para todos os tipos
+				document.write("<a href='" + caminho + cod + "." + tip
+						+ "' target='new'>" + txt + "</a>");
+				break;
+			}
+		}
+	}
+
+	function LinkTexto(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, pDesItemFim) {
+		var link = "/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo="
+			+ psSigla + "&numeroAto=" + psNumero + "&seqAto=" + psSeq + "&valorAno=" + psAno + "&orgao=" + psOrgao 
+			+ "&codTipo=" + psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + pDesItemFim
+			+ "&cod_modulo=310&cod_menu=9434";
+		window.open(link, '_blank');		
+	}
+
+	$(function() {
+    	$(document).ajaxStart(function(){
+    		$('#loading').show();
+        })
+        .ajaxStop(function(){
+        	$('#loading').delay(100).hide();
+        	in_abrir_todas_notas = false;
+        });
+
+	});
+
+	$(document).on('click', "a[href*='javascript:LinkNota']", function(e) {
+
+		//e.isImmediatePropagationStopped();
+		e.preventDefault();
+		var objHref = $(this);
+	    var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    
+	    var parameters = parameter.split(",");
+	    
+        var psSigla = parameters[0];
+        var psNumero = parameters[1];
+        var psSeq = parameters[2];
+        var psAno = parameters[3];
+        var psOrgao = parameters[4];
+        var psCodTipo = parameters[5];
+        var psDesItem = parameters[6];
+        var psSeqNota = parameters[7];
+
+        var link = "/action/ActionDatalegis.php?acao=detalharNotaAjax&tipo="+ psSigla+ 
+		"&numeroAto="+ psNumero+ "&seqAto="+ psSeq+ "&valorAno=" +psAno+ 
+		"&orgao="+ psOrgao+ "&codTipo="+ psCodTipo + "&desItem=" + psDesItem + "&seqNota=" + psSeqNota+
+		"&cod_modulo=310&cod_menu=9434";
+		
+        var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+        $(objHref).attr('class', 'ato-'+idAto);
+		var divNota = $(this).siblings('div.'+idAto+':first');
+		
+        if(!$(divNota).length) {		        
+    	  	$.ajax({
+    	        url: link,
+    	        dataType: "text",
+    	        async: true,
+    	        cache: true,
+    	        success: function(html) {
+					$(objHref).parent("em:first").append(html);
+    	        },
+    	        error: function(obj) {
+    	            console.log(obj);
+    	        }
+    	    });
+		} else {
+			$(divNota).toggle();
+		}
+	});
+	
+	function abrirTodosLinkNota() {
+		in_abrir_todas_notas = true;
+		$('div.nota-revogado').show();
+		$('#texto-compilado').css('text-decoration','none');
+		$('#texto-notas').css('text-decoration','underline');
+		var searchLinkNota = "a[href*='javascript:LinkNota']";
+		
+		var linkBase = "/action/ActionDatalegis.php?acao=detalharNotasListaAjax&cod_modulo=310&cod_menu=9434";
+		var linkAjax = '';
+		var registroChamado = 0;
+		var registroChamadoTotal = 0;
+		var registroTotal = $(searchLinkNota).length;
+		var indexInicialChamado = null;
+		
+		$(searchLinkNota).each(function( index ) {
+			if(registroChamado == 0) {
+				linkAjax = '';
+				indexInicialChamado = index;
+			}
+
+			registroChamado++;
+			registroChamadoTotal++;
+			
+			var objHref = $(this);
+			var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    	
+    	    var parameters = parameter.split(",");
+    	    
+            var psSigla = parameters[0];
+            var psNumero = parameters[1];
+            var psSeq = parameters[2];
+            var psAno = parameters[3];
+            var psOrgao = parameters[4];
+            var psCodTipo = parameters[5];
+            var psDesItem = parameters[6];
+            var psSeqNota = parameters[7];
+
+            var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+            var idDivNota = 'ato-'+idAto+'-'+index;
+            $(objHref).attr('class', idDivNota);
+
+            var divNota = $('a.'+idDivNota).siblings('div.'+idAto+':first');
+			
+			if(!$(divNota).length) {
+                linkAjax += "&sgl_tipo[]="+psSigla+"&num_ato[]="+psNumero+"&seq_ato[]="+psSeq+"&vlr_ano[]="+psAno+"&sgl_orgao[]="+psOrgao;
+                linkAjax += "&cod_tipo[]="+psCodTipo+"&des_item[]="+psDesItem+"&seq_nota[]="+psSeqNota+"&index_js[]="+index;
+			}
+			
+            if((registroChamado == 100 || registroChamadoTotal == registroTotal) && linkAjax.length > 0) {
+            	registroChamado = 0;
+                     	
+            	$.ajax({
+        	        url: linkBase,
+        	        type: "POST",
+        	        data: linkAjax,
+        	        dataType: "json",
+        	        async: true,
+        	        cache: true,
+        	        success: function(jsonObj) {        				
+        				$.each(jsonObj, function(index, objNota) {
+        					divNota = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).siblings('div.'+objNota.ID_NOTA+':first');
+        					
+        					if(!$(divNota).length) {
+        						var objetoDestino = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).parent("em:first");
+            					$( "<div/>", {
+            					    "class": "well nota-revogado "+objNota.ID_NOTA,
+            					    html: objNota.NOTAS.join('')
+            					  }).appendTo(objetoDestino);
+        			        } else {
+        			        	$(divNota).show();
+        			        }
+        				});
+        	        },
+        	        error: function(obj) {
+        	            console.log(obj);
+        	        }
+        	    });
+			}
+		});
+	}
+	
+	function fecharTodosLinkNota() {
+		$('#texto-compilado').css('text-decoration','underline');
+		$('#texto-notas').css('text-decoration','none');
+		in_abrir_todas_notas = false;
+		$('div.nota-revogado').hide();
+	}
+	
+	function LinkNota(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psSeqNota) {
+	}
+
+	function gravarArquivo(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psDesItemFim) {
+		var link = "/action/detalhaAto.do?method=gravarAtoPDF&tipo="
+				+ psSigla
+				+ "&numeroAto="
+				+ psNumero
+				+ "&seqAto="
+				+ psSeq
+				+ "&valorAno="
+				+ psAno
+				+ "&orgao="
+				+ psOrgao
+				+ "&codTipo="
+				+ psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + psDesItemFim;
+		root = window.open(link, 'Imprimir', 'width=766,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	function abrirFrame(id, obj){
+		fAscendentes = "";
+	
+		var l_div = obj;
+		if (l_div.getElementsByTagName('div')[0].style.display == "none" || l_div.getElementsByTagName('div')[0].style.display == ""){
+			var l_frame = l_div.getElementsByTagName("iframe")[0];
+			var link = "/action/TematicaAction.php?acao=visualizarTextoAtosVinculados&codigo=" + id + "&word="+fAscendentes;
+	
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px -9px";
+			l_div.getElementsByTagName('div')[0].style.display = "block";
+			l_frame.src = link;
+		}else {
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px 3px";
+			l_div.getElementsByTagName('div')[0].style.display = "none";
+		}
+	}
+	
+	function retira_acentos(palavra) {
+		var com_acento = '·‡„‚‰ÈËÍÎÌÏÓÔÛÚıÙˆ˙˘˚¸Á¡¿√¬ƒ…» ÀÕÃŒœ”“’÷‘⁄Ÿ€‹«';
+		var sem_acento = 'aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC';
+		var nova='';
+	
+		for(var i = 0; i < palavra.length; i++) {
+			var p = com_acento.indexOf(palavra.substr(i,1));
+			
+			if (p > -1) {
+				nova += sem_acento.substr(p,1);
+			}else {
+				nova += palavra.substr(i,1);
+			}
+		}
+		return nova;
+	}
+		
+	function expandir(pObj, nuAscendentes) {
+		l_div = recuperarObjetoPai(pObj, nuAscendentes);
+		l_div_aps = l_div.getElementsByTagName('div')[0];
+	
+		if (l_div_aps.style.display == "" || l_div_aps.style.display == "block") {
+			//setarClassColapse();
+			setarPropriedadeDisplay(l_div_aps, "none");
+			pObj.style.backgroundPosition = "0px 3px";
+		} else {
+			pObj.style.backgroundPosition = "0px -9px";
+			l_div_aps.innerHTML = "<div style='font-size: 8pt; margin-left: 21px;'>Carregando...</div>";
+			setarPropriedadeDisplay(l_div_aps, "block");
+	
+			buscarFilhos('', "");
+		}
+	}
+	
+	function buscarFilhos(filtro, dshierarquia) {
+		var params = null;
+		processarAjax('/action/TematicaAction.php?acao=montarEstruturaTitulos&cotematica=' + l_div.getAttribute("codigo")+
+					  "&notematica="+filtro+"&nivel="+1+"&infiltro="+l_div.getAttribute("inFiltro"), 'POST', params, mostrarFilhos);
+	}
+	
+	function setarPropriedadeDisplay(pObj, pDisplay) {
+		pObj.style.display = pDisplay;
+	}
+	
+	function mostrarFilhos(pRetorno) {
+		var indice = '';
+	
+		l_div_aps.innerHTML = pRetorno;
+		setarPropriedadeDisplay(l_div_aps, "block");
+		
+		if (in_abrir_segundo_nivel == "S"){
+			in_abrir_segundo_nivel = "N";
+	
+			expandir(document.getElementById('treeviewDetalhe00').getElementsByTagName('span')[0], 1);
+		}
+	}
+
+	function pdf() {
+		$('#formPdf #html').val($('div.ato').html());
+		$('#formPdf').submit();
+	}
+
+	function imprimir() {
+		//window.location.href = window.location.href + '&print=S';
+		window.print();
+	}
+
+	function tags(num_ato,sgl_tipo,sgl_orgao,vlr_ano,seq_ato) {
+		var link = "/action/ActionDatalegis.php?acao=visualizarTagsAto&sgl_tipo="+sgl_tipo+
+			"&num_ato="+num_ato+"&seq_ato="+seq_ato+"&vlr_ano="+vlr_ano+"&sgl_orgao="+sgl_orgao+
+			"&cod_modulo=310&cod_menu=9434";
+		root = window.open(link,'Tags','width=640,height=190,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	var tam = 1.125;
+	function mudaFonte(tipo) {
+		if (tipo == 'mais') {
+			if(tam < 2) tam += 0.2;	
+		} else {
+			if(tam > 0.8) tam -= 0.2;
+		}
+
+		$("#conteudo p, #conteudo a, #conteudo span").css('font-size', tam + 'rem');
+		$("#conteudo div").css('font-size', (tam + 0.2) + 'rem');
+	}
+
+	</script>
+<script type="text/javascript" src="/v2/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/chosen.jquery-0.1.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/v2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/v2/js/sistema.js?20260916"></script>
+<script type="text/javascript" async src="/view/js/copytoclipboard.js?20260916"></script>
+<script type="text/javascript" async src="https://cdn.ampproject.org/v0.js"></script>
+<div class="noprint" id="loading" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100vw; height: 100vh; background: black; opacity: 25%; z-index: 5001; padding-top: 20%; display:none;">
+	<center style="z-index: 5002; color: white; font-weight: 400;">
+		<img style="margin-top: -8px" src="../view/img/Loading.gif" alt="loading" /> Carregando...
+	</center>
+</div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" charset="UTF-8"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

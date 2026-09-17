@@ -1,0 +1,27 @@
+{
+  "norma": "RDC 430-2020",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&numeroAto=00000430&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&numeroAto=00000430&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+  "consultado_em": "2026-09-17T00:21:33.073638+00:00",
+  "data_fonte": "2020-10-08",
+  "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+  "sha256_fonte": "9ab452012a74aa47bd43c05fe03b0c3a2b42418f519bc1340ed90786379680cb",
+  "sha256_texto": "3c9c0100646bbdefe1411345c456ac1d55e61cec7a1b3d66dbabc3f0d88e944f",
+  "alteracoes_encontradas": [
+    "(Redação dada pela",
+    "(Revogado pela",
+    "(Incluído pela",
+    "revogadas:",
+    "revogados, a partir da data de entrada em vigor da presente Resolução, os atos normativos discriminados nos incisos I e II deste artigo."
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos/RDC 430-2020--oficial.txt",
+  "data_processamento": "2026-09-17T00:21:33.073638+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+  "extracao": {
+    "codificacao": "windows-1252",
+    "elementos_removidos": 18
+  }
+}

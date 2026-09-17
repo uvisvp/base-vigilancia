@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-16T23:59:27.410596+00:00",
+  "gerado_em": "2026-09-17T00:21:39.061416+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -647,6 +647,131 @@
         },
         "classificacao_anvisalegis": "Alterador",
         "classificacao_fonte": "AnvisaLegis"
+      }
+    },
+    "RDC 63-2011": {
+      "arquivo": "rdc-63-2011.json",
+      "nos": 200,
+      "sha256_texto": "bbf3ed28dcf4b5f8967d17885de57d404db7466dac8903235b41252ec0d06bb9",
+      "proveniencia": {
+        "norma": "RDC 63-2011",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000063&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2011",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000063&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2011",
+        "consultado_em": "2026-09-17T00:21:30.707981+00:00",
+        "data_fonte": "2011-11-25",
+        "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+        "sha256_fonte": "14b423f68b32ae446b5d75b496c9035d1ffb9c929450c07a6039d65aa53bd786",
+        "sha256_texto": "bbf3ed28dcf4b5f8967d17885de57d404db7466dac8903235b41252ec0d06bb9",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos/RDC 63-2011--oficial.txt",
+        "data_processamento": "2026-09-17T00:21:30.707981+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+        "extracao": {
+          "codificacao": "windows-1252",
+          "elementos_removidos": 18
+        }
+      }
+    },
+    "RDC 430-2020": {
+      "arquivo": "rdc-430-2020.json",
+      "nos": 349,
+      "sha256_texto": "3c9c0100646bbdefe1411345c456ac1d55e61cec7a1b3d66dbabc3f0d88e944f",
+      "proveniencia": {
+        "norma": "RDC 430-2020",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&numeroAto=00000430&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9434&cod_modulo=310&numeroAto=00000430&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "consultado_em": "2026-09-17T00:21:33.073638+00:00",
+        "data_fonte": "2020-10-08",
+        "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+        "sha256_fonte": "9ab452012a74aa47bd43c05fe03b0c3a2b42418f519bc1340ed90786379680cb",
+        "sha256_texto": "3c9c0100646bbdefe1411345c456ac1d55e61cec7a1b3d66dbabc3f0d88e944f",
+        "alteracoes_encontradas": [
+          "(Redação dada pela",
+          "(Revogado pela",
+          "(Incluído pela",
+          "revogadas:",
+          "revogados, a partir da data de entrada em vigor da presente Resolução, os atos normativos discriminados nos incisos I e II deste artigo."
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos/RDC 430-2020--oficial.txt",
+        "data_processamento": "2026-09-17T00:21:33.073638+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+        "extracao": {
+          "codificacao": "windows-1252",
+          "elementos_removidos": 18
+        }
+      }
+    },
+    "RDC 204-2006": {
+      "arquivo": "rdc-204-2006.json",
+      "nos": 927,
+      "sha256_texto": "4d40a18c712834195374d8338c5f33bcbe2807b74c44a696c94f4c645772ee77",
+      "proveniencia": {
+        "norma": "RDC 204-2006",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006",
+        "consultado_em": "2026-09-17T00:21:35.973799+00:00",
+        "data_fonte": "2006-11-14",
+        "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+        "sha256_fonte": "6614e604911120e7ca7dfb841eed9340f6d414f0b2b6ff60cf9959f2cd1065de",
+        "sha256_texto": "4d40a18c712834195374d8338c5f33bcbe2807b74c44a696c94f4c645772ee77",
+        "alteracoes_encontradas": [
+          "revogadas a",
+          "alterada durante ouso do insumo farmacêutico e durante o seu transporte ou armazenamento.",
+          "alteradas durante o fracionamento.",
+          "Nota: Prazo estabelecido de 180 (cento e oitenta), a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe a",
+          "incluídos nos procedimentos:",
+          "alterados, autorizadospelos responsáveis, devem possibilitar a identificação do dado anterior e estarassinados e datados.",
+          "(Redação dada pela",
+          "alterada durante o fracionamento.",
+          "alterados; a referida experiência e os resultados dos testes de controle dasoperações são avaliados. As dificuldades e os defeitos registrados na operação sãoanalisados para determinar os limites dos parâmetros da mesma. Pode ser realizada umaanálise de tendência para",
+          "Nota: Prazo estabelecido de 180 (cento e oitenta) dias, a contar de 30 de outubro de 2007, para seu cumprimento, conforme dispõe"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos/RDC 204-2006--oficial.txt",
+        "data_processamento": "2026-09-17T00:21:35.973799+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+        "extracao": {
+          "codificacao": "windows-1252",
+          "elementos_removidos": 18
+        }
+      },
+      "regulamento_tecnico": {
+        "id": "rdc-204-2006::regulamento-tecnico",
+        "item_7_2": "rdc-204-2006::regulamento-tecnico::item::7-2"
+      }
+    },
+    "IN 62-2020": {
+      "arquivo": "in-62-2020.json",
+      "nos": 53,
+      "sha256_texto": "b5832fa8c5cb4a50818290d5395071ad4b03c2e89ee4b6fbc1f486992d2412ef",
+      "proveniencia": {
+        "norma": "IN 62-2020",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000062&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2020",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000062&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2020",
+        "consultado_em": "2026-09-17T00:21:38.032345+00:00",
+        "data_fonte": "2020-06-16",
+        "tipo_data_fonte": "data_do_ato; texto consultado no AnvisaLegis",
+        "sha256_fonte": "4946af73b2289bbb40a17c0518ed6e5a406430877495f4b8dcdc51071d653150",
+        "sha256_texto": "b5832fa8c5cb4a50818290d5395071ad4b03c2e89ee4b6fbc1f486992d2412ef",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos/IN 62-2020--oficial.txt",
+        "data_processamento": "2026-09-17T00:21:38.032345+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto integral obtido do AnvisaLegis e estruturado para consulta por dispositivo",
+        "extracao": {
+          "codificacao": "windows-1252",
+          "elementos_removidos": 18
+        }
       }
     }
   },
