@@ -1,6 +1,6 @@
 {
   "schema": "ifa-regularidade-manifest-v1",
-  "gerado_em": "2026-09-17T10:19:00.052829+00:00",
+  "gerado_em": "2026-09-17T11:04:19.771205+00:00",
   "fontes": {
     "cbpf_ifa": {
       "arquivo": "cbpf_ifa.json",
@@ -27,6 +27,23 @@
         "apresentacao": "DS_APRESENTACAO_PRODUTO"
       },
       "status_querydata": 200
+    },
+    "regras_aplicabilidade": {
+      "arquivo": "regras_aplicabilidade.json",
+      "schema": "regularidade-materia-prima-ifa-v1",
+      "sha256": "f6f30bde189d10040e074391614f538997d9f6c5530bcea1b26fffd30040128b",
+      "escopos": [
+        "farmacia_manipulacao",
+        "atacadista_distribuidor_insumos"
+      ],
+      "normas_v12": [
+        "rdc-67-2007",
+        "rdc-204-2006",
+        "in-62-2020",
+        "rdc-359-2020",
+        "rdc-361-2020",
+        "rdc-57-2009"
+      ]
     }
   }
 }
