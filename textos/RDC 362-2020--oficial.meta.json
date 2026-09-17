@@ -1,0 +1,21 @@
+{
+  "norma": "RDC 362-2020",
+  "fonte_oficial": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F04%2F2020&jornal=515&pagina=100",
+  "fonte_texto_utilizada": "https://www.conass.org.br/conass-informa-n-145-2020-publicada-a-rdc-anvisa-n-362-que-dispoe-sobre-os-criterios-para-certificacao-de-boas-praticas-de-fabricacao-e-institui-o-programa-de-inspecao-para-estabelecimento/",
+  "fonte_status": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2022/revisaco-entenda-como-ficaram-as-normas-da-area-de-fiscalizacao/",
+  "nota_fonte_texto": "Espelho institucional do CONASS utilizado para extração técnica do texto integral da RDC 362/2020. A referência normativa oficial permanece o Diário Oficial da União. A Anvisa informa que a RDC 362/2020 foi substituída pela RDC 672/2022.",
+  "url_final": "https://www.conass.org.br/conass-informa-n-145-2020-publicada-a-rdc-anvisa-n-362-que-dispoe-sobre-os-criterios-para-certificacao-de-boas-praticas-de-fabricacao-e-institui-o-programa-de-inspecao-para-estabelecimento/",
+  "consultado_em": "2026-09-17T14:13:36.197174+00:00",
+  "data_fonte": "2020-03-27",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "06ec32e981b333c9e78b8b2b7798fb0af97e4b8d7b981b6bbf7944a1310f148b",
+  "sha256_texto": "e37bc191e87b9cfce938772f95519a525ee882cfbe5e1fedcb0531f34b687d9a",
+  "status_vigencia": "revogada_pela_rdc_672_2022",
+  "status_fonte": "Anvisa: RDC 362/2020 foi substituída pela RDC 672/2022; a RDC 672/2022 revoga expressamente a RDC 362/2020",
+  "texto": "textos/RDC 362-2020--oficial.txt",
+  "data_processamento": "2026-09-17T14:13:36.197706+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+}

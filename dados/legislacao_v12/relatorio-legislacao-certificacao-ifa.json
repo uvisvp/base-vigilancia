@@ -1,0 +1,26 @@
+{
+  "schema": "relatorio-legislacao-certificacao-ifa-v1",
+  "gerado_em": "2026-09-17T14:13:34.095885+00:00",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 362-2020",
+      "arquivo": "rdc-362-2020.json",
+      "nos": 238,
+      "chars": 15568,
+      "status_vigencia": "revogada_pela_rdc_672_2022",
+      "status_fonte": "Anvisa: RDC 362/2020 foi substituída pela RDC 672/2022; a RDC 672/2022 revoga expressamente a RDC 362/2020",
+      "fonte_oficial": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=01%2F04%2F2020&jornal=515&pagina=100"
+    },
+    {
+      "norma": "RDC 497-2021",
+      "arquivo": "rdc-497-2021.json",
+      "nos": 264,
+      "chars": 27880,
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_fonte": "AnvisaLegis: texto consolidado vigente com alterações posteriores",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021"
+    }
+  ],
+  "total_normas_manifest": 39
+}
