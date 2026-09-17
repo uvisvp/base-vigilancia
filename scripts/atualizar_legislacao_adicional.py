@@ -14,7 +14,13 @@ FONTES=BASE/'fontes'; TEXTOS=BASE/'textos'; CATALOGO=FONTES/'normas.csv'; SAIDA=
 sys.path.insert(0,str(BASE/'scripts'))
 from estruturar_legislacao import estruturar_texto, slug
 
-HEAD={'User-Agent':'Mozilla/5.0 base-vigilancia/1.0','Accept-Language':'pt-BR,pt;q=0.9'}
+HEAD={
+ 'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+ 'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'Accept-Language':'pt-BR,pt;q=0.9,en;q=0.7',
+ 'Accept-Encoding':'identity',
+ 'Connection':'close',
+}
 NORMAS=[
  {'norma_id':'rdc-anvisa-22-2014','norma':'RDC 22-2014','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 22/2014','url':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014','data_fonte':'2014-04-29','status_vigencia':'vigente_com_alteracoes','status_fonte':'AnvisaLegis: Vigente com Alterações','min_chars':9000,'obrig':['RDC Nº 22','SNGPC','Art. 1']},
  {'norma_id':'decreto-estadual-sp-69118-2024','norma':'Decreto Estadual SP 69118-2024','grupo':'decreto-estadual-sp','rotulo':'Decreto Estadual SP nº 69.118/2024','url':'https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html','data_fonte':'2024-12-09','status_vigencia':'sem_revogacao_expressa','status_fonte':'ALESP: sem revogação expressa','min_chars':12000,'obrig':['DECRETO N° 69.118','Segurança Contra Incêndios','Art. 1']},
@@ -32,13 +38,17 @@ def sha_t(s): return hashlib.sha256(s.encode()).hexdigest()
 
 def baixar(url):
     err=None
-    for i in range(3):
+    for i in range(5):
         try:
-            r=requests.get(url,headers=HEAD,timeout=90); r.raise_for_status()
+            headers=dict(HEAD)
+            if 'bvsms.saude.gov.br' in url:
+                headers['Referer']='https://bvsms.saude.gov.br/'
+            r=requests.get(url,headers=headers,timeout=(20,120),allow_redirects=True); r.raise_for_status()
             if len(r.content)<500: raise RuntimeError('resposta curta')
             return r
         except Exception as e:
-            err=e; time.sleep(2**i)
+            err=e
+            if i<4: time.sleep(min(2**i,8))
     raise RuntimeError(f'Falha ao baixar {url}: {err}')
 
 def extrair_html(body):
