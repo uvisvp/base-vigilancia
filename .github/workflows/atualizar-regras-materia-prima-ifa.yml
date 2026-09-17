@@ -1,0 +1,64 @@
+name: Atualizar regras matéria-prima e IFA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_regras_regularidade_materia_prima.py"
+      - ".github/workflows/atualizar-regras-materia-prima-ifa.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar regras
+        run: python scripts/atualizar_regras_regularidade_materia_prima.py
+
+      - name: Validar banco
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('dados/ifa_regularidade/regras_aplicabilidade.json')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          assert d['schema']=='regularidade-materia-prima-ifa-v1'
+          assert 'farmacia_manipulacao' in d['escopos']
+          assert 'atacadista_distribuidor_insumos' in d['escopos']
+          assert d['escopos']['farmacia_manipulacao']['quando_principio_ativo']['cadifa']=='condicional_nao_universal'
+          assert d['escopos']['atacadista_distribuidor_insumos']['se_ifa']['cadifa']=='evidencia_regulatoria_condicional'
+          print('Regras válidas:', ', '.join(d['escopos']))
+          PY
+
+      - name: Publicar banco
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/ifa_regularidade/regras_aplicabilidade.json dados/ifa_regularidade/manifest.json
+          if git diff --cached --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "Atualiza regras de regularidade de matéria-prima e IFA"
+            for tentativa in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push concorrente detectado; sincronizando (tentativa ${tentativa}/3)."
+              git fetch origin main
+              git rebase origin/main
+            done
+            git push origin HEAD:main
+          fi
