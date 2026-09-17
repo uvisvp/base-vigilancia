@@ -1,6 +1,6 @@
 {
   "schema": "ifa-regularidade-manifest-v1",
-  "gerado_em": "2026-09-17T10:09:39.175186+00:00",
+  "gerado_em": "2026-09-17T10:19:00.052829+00:00",
   "fontes": {
     "cbpf_ifa": {
       "arquivo": "cbpf_ifa.json",
@@ -8,6 +8,24 @@
       "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiNTU3MDE4OTgtYzc5NS00NGRhLWI0ODMtOWUzN2E2Njc5MzdlIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
       "total": 4493,
       "sha256": "ffca7e86319ad28a362b521bd9a3475ba90a7ef358fb62989cf314193ed6efc8",
+      "status_querydata": 200
+    },
+    "cadifa": {
+      "arquivo": "cadifa.json",
+      "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
+      "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
+      "total": 784,
+      "sha256": "cc2ef6ecff32950c9cb14b96dd79a93b2fc7c779807a0532e2f58af7c89c77a7",
+      "mapa_campos": {
+        "ifa": "NO_INSUMO_MINUSC",
+        "detentor": "NO_RAZAO_SOCIAL_MAISC",
+        "processo": "NU_PROCESSO",
+        "expediente": "NU_EXPEDIENTE",
+        "assunto": "DS_ASSUNTO",
+        "codigo_assunto": "CO_ASSUNTO",
+        "situacao": "DS_SITUACAO_APRESENTACAO",
+        "apresentacao": "DS_APRESENTACAO_PRODUTO"
+      },
       "status_querydata": 200
     }
   }
