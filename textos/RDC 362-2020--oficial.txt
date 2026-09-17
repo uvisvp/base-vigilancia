@@ -1,6 +1,23 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 362, de 27/03/2020
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+REVOGADO
+Resoluçăo da Diretoria Colegiada - RDC nş 362, de 27/03/2020
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
 RESOLUÇÃO DE DIRETORIA COLEGIADA - RDC Nº 362, DE 27 DE MARÇO DE 2020
-(Publicada no DOU nº 63, de 1º de abril de 2020)
 Dispõe sobre os critérios para certificação de Boas Práticas de Fabricação e institui o programa de inspeção para estabelecimentos internacionais fabricantes de insumos farmacêuticos ativos.
+Revogada pela
+Resolução da Diretoria Colegiada - RDC nº 672, de 30/03/2022
 A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV, da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 53, V, §§ 1º e 3º do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC n° 255, de 10 de dezembro de 2018, resolve adotar a seguinte Resolução de Diretoria Colegiada, conforme deliberado em reunião realizada em 25 de março de 2020, e eu, Diretor-Presidente Substituto, determino a sua publicação.
 CAPÍTULO I
 DAS DISPOSIÇÕES INICIAIS
@@ -17,13 +34,7 @@ DOS DOCUMENTOS DE PETICIONAMENTO
 Art. 3º Todas as petições de Certificação de Boas Práticas de Fabricação de que trata esta Resolução devem ser instruídas com os seguintes documentos:
 I - formulário de petição específico para certificação de Boas Práticas de Fabricação de IFA, devidamente preenchido;
 II - certificado ou documento que comprove o cumprimento das Boas Práticas de Fabricação vigente, emitido pela autoridade sanitária do país onde está instalado o estabelecimento produtor (caso o certificado não tenha sido emitido nos idiomas inglês, espanhol ou português, deverá ser enviada uma cópia do certificado original e uma versão traduzida);
-III - arquivo mestre da planta (AMP) da empresa a ser inspecionada, contendo no mínimo:
-informações gerais: tipos de produtos fabricados pela empresa incluindo informações sobre insumos e produtos não farmacêuticos, manipulação e produção de substâncias altamente ativas, sensibilizantes, tóxicas ou perigosas, mencionando como estas são produzidas (se em instalações dedicadas, prédios separados, dentre outras informações relevantes);
-tipo e capacidade dos equipamentos principais utilizados na fabricação dos insumos farmacêuticos solicitados;
-plantas baixas das edificações, em escala ampliada, em cor, com legenda e identificação das áreas;
-fluxograma de produção de cada insumo farmacêutico solicitado;
-diagrama do sistema de água; e
-diagrama do sistema de ar.
+III - arquivo mestre da planta (AMP) da empresa a ser inspecionada, contendo no mínimo: informações gerais: tipos de produtos fabricados pela empresa incluindo informações sobre insumos e produtos não farmacêuticos, manipulação e produção de substâncias altamente ativas, sensibilizantes, tóxicas ou perigosas, mencionando como estas são produzidas (se em instalações dedicadas, prédios separados, dentre outras informações relevantes); tipo e capacidade dos equipamentos principais utilizados na fabricação dos insumos farmacêuticos solicitados; plantas baixas das edificações, em escala ampliada, em cor, com legenda e identificação das áreas; fluxograma de produção de cada insumo farmacêutico solicitado; diagrama do sistema de água; e diagrama do sistema de ar.
 IV - último relatório(s) completo gerado de revisão da qualidade do produto (RQP) ou validação de processo de fabricação para o(s) insumo(s) farmacêutico(s) ativo(s) peticionado(s), quando não estiver disponível a RQP;
 V - lista de todas as inspeções regulatórias conduzidas no estabelecimento objeto da certificação nos últimos 3 (três) anos, com indicação do período de cada inspeção; nome da autoridade responsável pela sua realização; conclusão e detalhes de qualquer ação regulatória decorrente;
 VI - lista de todos os insumos fabricados no estabelecimento objeto da certificação, com indicação daqueles que são ou serão objeto de exportação para o Brasil;
@@ -32,7 +43,7 @@ VIII - quando disponível, cópia do relatório conclusivo de inspeção emitido
 Parágrafo único. O protocolo dos documentos deve atender às disposições das normas vigentes específicas para procedimento de peticionamento.
 Art. 4º Fica facultado ao estabelecimento fabricante objeto da certificação enviar diretamente à Anvisa os documentos de que tratam os incisos III a VIII do art. 3°, desde que devidamente identificados e em aditamento ao processo a que se relaciona.
 § 1º O prazo para o protocolo dos documentos de que trata o caput deste artigo é de até 30 (trinta) dias após a data do protocolo da petição de certificação.
-§ 2º Findo o prazo previsto no § 1º deste artigo, a ausência do protocolo dos documentos de instrução obrigatórios listados no artigo 3º desta Resolução ensejará o indeferimento da petição.
+§ 2º Findo o prazo previsto no §1º deste artigo, a ausência do protocolo dos documentos de instrução obrigatórios listados no artigo 3º desta Resolução ensejará o indeferimento da petição.
 CAPÍTULO III
 DA CERTIFICAÇÃO DE BOAS PRÁTICAS DE FABRICAÇÃO
 Art. 5º A decisão quanto à certificação de que trata esta Resolução dependerá da verificação do efetivo cumprimento dos requisitos preconizados pelas normas vigentes de Boas Práticas de Fabricação (BPF) de IFA, por meio de uma das seguintes medidas:
@@ -48,16 +59,22 @@ Art. 7º A decisão quanto à certificação pelo mecanismo previsto no inciso I
 Art. 8º A certificação pelo mecanismo previsto no inciso III do art. 5º será resultante da eliminação das possibilidades previstas no inciso I e II do referido artigo desta Resolução.
 CAPÍTULO IV
 DO PROGRAMA DE INSPEÇÃO
-Art. 9º A Anvisa poderá, a qualquer momento, realizar inspeção sanitária de rotina ou de investigação de denúncia ou possível irregularidade em qualquer fabricante de IFA utilizado em medicamentos no Brasil, independentemente do processo de Certificação.
+Art. 9 º A Anvisa poderá, a qualquer momento, realizar inspeção sanitária de rotina ou de investigação de denúncia ou possível irregularidade em qualquer fabricante de IFA utilizado em medicamentos no Brasil, independentemente do processo de Certificação.
 § 1º A certificação emitida com base em documentação prevista nos incisos I e II do art. 5º desta Resolução não isenta a empresa de receber a inspeção in loco pela Anvisa, a qualquer tempo, mesmo durante a validade do Certificado de Boas Práticas de Fabricação concedido.
 § 2º A recusa em receber a inspeção da Anvisa, ensejará a abertura de processo administrativo sanitário, podendo ser suspensa a importação, comercialização e uso, assim como, ser determinado o recolhimento dos produtos envolvidos.
 CAPÍTULO V
 DISPOSIÇÕES FINAIS
-Art. 10. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
-Art. 11. Os procedimentos administrativos para concessão da Certificação de Boas Práticas de Fabricação estão estabelecidos na Resolução de Diretoria Colegiada - RDC nº 39, de 14 de agosto de 2013 e suas atualizações.
-Art. 12. Até 1º de março de 2021, somente as petições de CBPF de empresas que tenham solicitado a Carta de Adequação de Dossiê de Insumo Farmacêutico Ativo (CADIFA), nos termos da Resolução de Diretoria Colegiada - RDC nº 359, de 27 de março de 2020 ou registro de IFA em análise na ANVISA, nos termos da Resolução de Diretoria Colegiada - RDC nº 57, de 17 de novembro de 2009, serão atendidas por esta Resolução.
+Art. 10. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº. 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 11. Os procedimentos administrativos para concessão da Certificação de Boas Práticas de Fabricação estão estabelecidos na
+Resolução de Diretoria Colegiada - RDC nº 39, de 14 de agosto de 2013
+e suas atualizações.
+Art. 12. Até 1º de março de 2021, somente as petições de CBPF de empresas que tenham solicitado a Carta de Adequação de Dossiê de Insumo Farmacêutico Ativo (CADIFA), nos termos da
+Resolução de Diretoria Colegiada - RDC nº 359, de 27 de março de 2020
+ou registro de IFA em análise na ANVISA, nos termos da
+Resolução de Diretoria Colegiada - RDC nº 57, de 17 de novembro de 2009
+, serão atendidas por esta Resolução.
 Art. 13. Esta Resolução entra em vigor em 3 de agosto de 2020.
 ANTONIO BARRA TORRES
-Diretor-Presidente Substituto
-Fonte oficial: BVS/MS — https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf
-Situação: revogada pela RDC 672/2022, art. 12.
+PUB D.O.U., 01/04/2020 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.
+Carregando...

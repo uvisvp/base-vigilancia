@@ -1,0 +1,28 @@
+{
+  "schema": "relatorio-legislacao-ifa-certificacao-v1",
+  "gerado_em": "2026-09-17T23:20:43.572396+00:00",
+  "normas": [
+    {
+      "norma": "RDC 672-2022",
+      "arquivo": "rdc-672-2022.json",
+      "nos": 89,
+      "chars": 9508,
+      "status_vigencia": "vigente"
+    },
+    {
+      "norma": "RDC 497-2021",
+      "arquivo": "rdc-497-2021.json",
+      "nos": 264,
+      "chars": 27880,
+      "status_vigencia": "vigente_com_alteracoes"
+    },
+    {
+      "norma": "RDC 362-2020",
+      "arquivo": "rdc-362-2020.json",
+      "nos": 80,
+      "chars": 9741,
+      "status_vigencia": "revogada_2022-05-02"
+    }
+  ],
+  "total_normas_manifest": 40
+}

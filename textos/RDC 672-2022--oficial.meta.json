@@ -1,0 +1,20 @@
+{
+  "norma": "RDC 672-2022",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "fonte_status": null,
+  "nota_fonte_texto": null,
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "consultado_em": "2026-09-17T23:21:03.693931+00:00",
+  "data_fonte": "2022-03-30",
+  "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+  "formato_fonte": "html",
+  "sha256_fonte": "d3f38a83a9676d57719a6b6673f1f819f1a39bf5bf75a87b2923cdfa3b72a216",
+  "sha256_texto": "d4d2aa80a94acad05f1588bd7235051166243fee5709715c3fca06797df2eed0",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis: vigente; art. 12 revoga expressamente a RDC 362/2020",
+  "texto": "textos/RDC 672-2022--oficial.txt",
+  "data_processamento": "2026-09-17T23:21:03.694118+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
+}

@@ -3115,7 +3115,8 @@
       "texto": "Art. 43. Fica revogada a",
       "ordem": 252,
       "ocorrencia": 1,
-      "status_vigencia": "vigente_com_alteracoes"
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_dispositivo": "possivel_revogacao_textual"
     },
     {
       "id": "rdc-497-2021::bloco::b253",
@@ -3178,7 +3179,8 @@
       "ordem": 257,
       "pai": "rdc-497-2021::artigo::44::paragrafo::unico",
       "estrutural": false,
-      "status_vigencia": "vigente_com_alteracoes"
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_dispositivo": "possivel_revogacao_textual"
     },
     {
       "id": "rdc-497-2021::bloco::b258",
@@ -3287,18 +3289,17 @@
     "fonte_status": null,
     "nota_fonte_texto": null,
     "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
-    "consultado_em": "2026-09-17T15:13:34.894442+00:00",
+    "consultado_em": "2026-09-17T23:21:05.778006+00:00",
     "data_fonte": "2021-05-20",
     "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
     "formato_fonte": "html",
     "sha256_fonte": "e5b4b8981610afdd517583fa013dc4ef326aa1e94b84987f0b8433f7f85dab9e",
     "sha256_texto": "d96505593de7a14f4ba90d7314b78fe9eba8c247d8e4e1b2a5e035dfb500db29",
     "status_vigencia": "vigente_com_alteracoes",
-    "status_fonte": "AnvisaLegis: texto consolidado vigente com alterações posteriores",
+    "status_fonte": "AnvisaLegis: vigente com alterações; texto consolidado inclui alterações posteriores",
     "texto": "textos/RDC 497-2021--oficial.txt",
-    "data_processamento": "2026-09-17T15:13:34.894720+00:00",
+    "data_processamento": "2026-09-17T23:21:05.778263+00:00",
     "schema": "proveniencia-legislativa-v1",
-    "estruturar_alineas": true,
-    "escopo_validacao": "texto estruturado para consulta; vigência e alterações registradas segundo as fontes oficiais identificadas na proveniência"
+    "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-17T15:13:34.898832+00:00",
+  "gerado_em": "2026-09-17T23:21:08.172036+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -971,28 +971,27 @@
     },
     "RDC 362-2020": {
       "arquivo": "rdc-362-2020.json",
-      "nos": 63,
-      "sha256_texto": "9feff79d445054748ebe8afd991252fa993aeadf673d9890992c92e19f6ecca5",
+      "nos": 80,
+      "sha256_texto": "d0f0f5c385dac5235ab812e957c09f45d60aa235ff8df13e5009991cc5748b6b",
       "proveniencia": {
         "norma": "RDC 362-2020",
-        "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf",
-        "fonte_texto_utilizada": "https://raw.githubusercontent.com/uvisvp/base-vigilancia/main/fontes/rdc-anvisa-362-2020/texto_oficial_extraido.txt",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000362&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000362&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
-        "nota_fonte_texto": "Cópia textual conferida a partir do PDF oficial da BVS/MS, armazenada no próprio repositório porque a BVS/MS bloqueia o download automatizado pelo runner. A referência normativa oficial permanece a BVS/MS; a revogação é conferida na RDC 672/2022 da Anvisa.",
-        "url_final": "https://raw.githubusercontent.com/uvisvp/base-vigilancia/main/fontes/rdc-anvisa-362-2020/texto_oficial_extraido.txt",
-        "consultado_em": "2026-09-17T15:13:32.773108+00:00",
+        "nota_fonte_texto": "Texto histórico obtido no AnvisaLegis; a revogação é comprovada pelo art. 12 da RDC 672/2022.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000362&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "consultado_em": "2026-09-17T23:21:08.169774+00:00",
         "data_fonte": "2020-03-27",
         "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
         "formato_fonte": "html",
-        "sha256_fonte": "ea023eb309406dcb7af82c6cef6eee9e2354df0a6f8e8054ec827dab084fdaa7",
-        "sha256_texto": "9feff79d445054748ebe8afd991252fa993aeadf673d9890992c92e19f6ecca5",
-        "status_vigencia": "revogada_pela_rdc_672_2022",
-        "status_fonte": "Anvisa: RDC 672/2022, art. 12, revogou expressamente a RDC 362/2020; mantida no v12 para histórico regulatório",
+        "sha256_fonte": "19398eb307d6fe81d127019087e1dd438c8e036f950aa6bd140eeec602b16d82",
+        "sha256_texto": "d0f0f5c385dac5235ab812e957c09f45d60aa235ff8df13e5009991cc5748b6b",
+        "status_vigencia": "revogada_2022-05-02",
+        "status_fonte": "RDC 672/2022, art. 12; revogada com a entrada em vigor da RDC 672 em 2/5/2022",
         "texto": "textos/RDC 362-2020--oficial.txt",
-        "data_processamento": "2026-09-17T15:13:32.773265+00:00",
+        "data_processamento": "2026-09-17T23:21:08.169945+00:00",
         "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "texto estruturado para consulta; vigência e alterações registradas segundo as fontes oficiais identificadas na proveniência"
+        "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
       }
     },
     "RDC 497-2021": {
@@ -1006,19 +1005,43 @@
         "fonte_status": null,
         "nota_fonte_texto": null,
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
-        "consultado_em": "2026-09-17T15:13:34.894442+00:00",
+        "consultado_em": "2026-09-17T23:21:05.778006+00:00",
         "data_fonte": "2021-05-20",
         "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
         "formato_fonte": "html",
         "sha256_fonte": "e5b4b8981610afdd517583fa013dc4ef326aa1e94b84987f0b8433f7f85dab9e",
         "sha256_texto": "d96505593de7a14f4ba90d7314b78fe9eba8c247d8e4e1b2a5e035dfb500db29",
         "status_vigencia": "vigente_com_alteracoes",
-        "status_fonte": "AnvisaLegis: texto consolidado vigente com alterações posteriores",
+        "status_fonte": "AnvisaLegis: vigente com alterações; texto consolidado inclui alterações posteriores",
         "texto": "textos/RDC 497-2021--oficial.txt",
-        "data_processamento": "2026-09-17T15:13:34.894720+00:00",
+        "data_processamento": "2026-09-17T23:21:05.778263+00:00",
         "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "texto estruturado para consulta; vigência e alterações registradas segundo as fontes oficiais identificadas na proveniência"
+        "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
+      }
+    },
+    "RDC 672-2022": {
+      "arquivo": "rdc-672-2022.json",
+      "nos": 89,
+      "sha256_texto": "d4d2aa80a94acad05f1588bd7235051166243fee5709715c3fca06797df2eed0",
+      "proveniencia": {
+        "norma": "RDC 672-2022",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "consultado_em": "2026-09-17T23:21:03.693931+00:00",
+        "data_fonte": "2022-03-30",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "d3f38a83a9676d57719a6b6673f1f819f1a39bf5bf75a87b2923cdfa3b72a216",
+        "sha256_texto": "d4d2aa80a94acad05f1588bd7235051166243fee5709715c3fca06797df2eed0",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis: vigente; art. 12 revoga expressamente a RDC 362/2020",
+        "texto": "textos/RDC 672-2022--oficial.txt",
+        "data_processamento": "2026-09-17T23:21:03.694118+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
       }
     }
   },
