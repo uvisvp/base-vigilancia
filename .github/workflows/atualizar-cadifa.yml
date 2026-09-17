@@ -1,0 +1,55 @@
+name: Atualizar banco CADIFA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_cadifa.py"
+      - "scripts/diagnosticar_ifa_regularidade.py"
+      - ".github/workflows/atualizar-cadifa.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extrair CADIFA
+        run: python scripts/atualizar_cadifa.py
+
+      - name: Validar saída
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('dados/ifa_regularidade/cadifa.json').read_text(encoding='utf-8'))
+          assert d['schema']=='cadifa-v1'
+          assert d['total']>0
+          assert len(d['registros'])==d['total']
+          assert d['mapa_campos'].get('detentor')
+          assert d['mapa_campos'].get('ifa')
+          print('CADIFA:', d['total'], 'registros')
+          print('Mapa:', d['mapa_campos'])
+          PY
+
+      - name: Publicar banco no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/ifa_regularidade/cadifa.json dados/ifa_regularidade/cadifa-descoberta.json dados/ifa_regularidade/manifest.json
+          if git diff --cached --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "Atualiza banco CADIFA"
+            git push
+          fi
