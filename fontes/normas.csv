@@ -95,3 +95,7 @@ rdc-anvisa-87-2008,rdc-anvisa,sim,https://anvisalegis.datalegis.net/action/Actio
 rdc-anvisa-21-2009,rdc-anvisa,sim,https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000021&orgao=RDC/DC/ANVISA/MS&seqAto=000&tipo=RDC&valorAno=2009,RDC Anvisa nº 21/2009,
 rdc-anvisa-204-2006,rdc-anvisa,sim,https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006,RDC Anvisa nº 204/2006 — texto consolidado e Regulamento Técnico,
 in-anvisa-62-2020,in-anvisa,sim,https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000062&orgao=DC%2FANVISA%2FMS&seqAto=000&tipo=INM&valorAno=2020,IN Anvisa nº 62/2020,
+decreto-estadual-sp-69118-2024,decreto-estadual-sp,sim,https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html,Decreto Estadual SP nº 69.118/2024,
+lei-municipal-sp-13478-2002,lei-municipal,sim,https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002,Lei Municipal SP nº 13.478/2002 — texto consolidado,
+lei-federal-10357-2001,lei-federal,sim,https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm,Lei Federal nº 10.357/2001 — texto consolidado,
+lei-estadual-sp-15266-2013,lei-estadual-sp,sim,https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html,Lei Estadual SP nº 15.266/2013 — texto atualizado,

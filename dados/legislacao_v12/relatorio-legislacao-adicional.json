@@ -1,0 +1,53 @@
+{
+  "schema": "relatorio-legislacao-adicional-v1",
+  "gerado_em": "2026-09-17T08:55:34.998810+00:00",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 22-2014",
+      "arquivo": "rdc-22-2014.json",
+      "nos": 201,
+      "chars": 24114,
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_fonte": "AnvisaLegis: Vigente com Alterações",
+      "fonte": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014"
+    },
+    {
+      "norma": "Decreto Estadual SP 69118-2024",
+      "arquivo": "decreto-estadual-sp-69118-2024.json",
+      "nos": 5113,
+      "chars": 139803,
+      "status_vigencia": "sem_revogacao_expressa",
+      "status_fonte": "ALESP: sem revogação expressa",
+      "fonte": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html"
+    },
+    {
+      "norma": "Lei Municipal SP 13478-2002",
+      "arquivo": "lei-municipal-sp-13478-2002.json",
+      "nos": 1723,
+      "chars": 179879,
+      "status_vigencia": "alterada_parcialmente_inconstitucional_parcialmente_revogada",
+      "status_fonte": "Prefeitura de São Paulo: ALTERADO, DECLARADO PARCIALMENTE INCONSTITUCIONAL, REVOGADO(A) PARCIALMENTE",
+      "fonte": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002"
+    },
+    {
+      "norma": "Lei 10357-2001",
+      "arquivo": "lei-10357-2001.json",
+      "nos": 261,
+      "chars": 11970,
+      "status_vigencia": "sem_revogacao_expressa",
+      "status_fonte": "Câmara dos Deputados: não consta revogação expressa; texto consolidado obtido no Planalto",
+      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm"
+    },
+    {
+      "norma": "Lei Estadual SP 15266-2013",
+      "arquivo": "lei-estadual-sp-15266-2013.json",
+      "nos": 2553,
+      "chars": 92566,
+      "status_vigencia": "sem_revogacao_expressa_com_alteracoes",
+      "status_fonte": "ALESP: sem revogação expressa; há alterações cadastradas",
+      "fonte": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html"
+    }
+  ],
+  "total_normas_manifest": 34
+}

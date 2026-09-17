@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="aui ltr yui3-js-enabled js" dir="ltr" lang="pt-BR" amp>
+    <head>
+    	<title>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 22, de 29/04/2014</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1e2b4d">
+        <link rel="icon" type="image/png" sizes="32x32" href="/v2/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/v2/img/favicon-16x16.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- 
+		<link rel="apple-touch-icon" sizes="32x32" href="/v2/img/mobile/logo_app32.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="/v2/img/mobile/logo_app96.png" />
+		-->
+		<link rel="apple-touch-icon" sizes="144x144" href="/v2/img/mobile/logo_app144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/v2/img/mobile/logo_app192.png" />
+        
+        <link href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="/v2/css/header.css?20260917" rel="stylesheet" type="text/css">
+		<link href="/v2/css/custom.css?20260917" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/view/css/jquery-ui.css" />
+		<link rel="stylesheet" href="/view/css/styles.css?20260917" type="text/css" />
+		<link rel="stylesheet" href="/view/css/style.css?20260917" type="text/css" />
+		<link rel="stylesheet" href="/view/css/treeview.css" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/social-media.css?20260917" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/texto-ato.css?20260917" type="text/css" />
+		<!-- CUSTOM ANVISA -->
+		<link rel="stylesheet" href="/v2/css/folha_rosto_anvisa.css?20260917" type="text/css" />
+	</head>
+	<body id="corpo" class="">
+		<div class="container-fluid">
+			<div class="container">
+    			<div class="noprint" style="border-bottom: 1px solid #ccc; padding: 8px 0;">
+                	<nav id="breadcrumbs">
+                        <ul class="breadcrumb breadcrumb-horizontal">
+                        	<li>
+                        		<a href="/action/ActionDatalegis.php?acao=apresentacao&cod_menu=8542&cod_modulo=310" title="Voltar para Home">
+                        			<i class="fas fa-home"></i>
+                        		</a>
+                        	</li>
+                        	<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        	<li class="first">
+                                <a href="/action/ActionDatalegis.php?acao=categorias&cod_modulo=310&menuOpen=true">NORMAS REGULAT”RIAS    DA ANVISA</a>
+                        	</li>
+    					<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        <li class="active last">
+                            <a href="/action/ActionDatalegis.php?acao=recuperarTematicasCollapse&cod_modulo=310&cod_menu=8542">NORMAS POR ANO</a>
+                        </li>
+                    	</ul>
+                    </nav>
+                    <a href="javascript:;" id="voltar" class="float-right" onclick="window.close()">
+                    	<i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Voltar
+                    </a>
+				</div>
+    			<div class="noprint container" style="padding: 0 10px; margin: 0; text-align: right; display: flex;">
+            		<div id="barra-icones" class="item">
+            			<ul>
+        				<li>
+            				<a href="javascript:;" onclick="copyTextToClipboard('https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000022&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2014&seq_ato=000&cod_modulo=310&cod_menu=8542', this)" data-toggle="tooltip" data-placement="bottom" title="Copie o link do Ato">
+            					<i class="fas fa-link" aria-hidden="true"></i> <span class="ocultar-mobile">COPIAR LINK</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="tags('00000022','RDC','RDC/DC/ANVISA/MS','2014','000');" title="Cadastre aqui suas Tags para o ATO">
+            					<i class="fas fa-tags" aria-hidden="true"></i> <span class="ocultar-mobile">CRIAR TAGS</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="imprimir();">
+            					<i class="fa fa-print" aria-hidden="true"></i> <span class="ocultar-mobile">IMPRIMIR</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="pdf()">
+            					<i class="fas fa-file-pdf" aria-hidden="true"></i> <span class="ocultar-mobile">PDF</span>
+            				</a>
+        				</li>
+        				<!-- 
+                        -->
+        				<li>
+            				<a id="texto-notas" href="javascript:;" onclick="abrirTodosLinkNota()">
+            					<i class="fas fa-folder-open" aria-hidden="true"></i> <span class="ocultar-mobile">VER NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a id="texto-compilado" href="javascript:;" onclick="fecharTodosLinkNota()" style="text-decoration: underline;">
+            					<i class="fas fa-folder" aria-hidden="true"></i> <span class="ocultar-mobile">FECHAR NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        			</ul>
+    			
+				</div>
+			
+    			<div class="font-settings item item1" style="width: 90px">
+        			<a href="javascript:mudaFonte('mais');" title="Aumentar Texto" style="padding: 0 2px; font-size: 20px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>+
+        			</a>
+        			<i style="padding: 0 2px; margin: -15px 0 5px 0; font-size: 20px; color: #424242;">|</i>
+        			<a href="javascript:mudaFonte('menos');" title="Diminur Texto" style="padding: 0 2px; font-size: 17px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>-
+        			</a>
+        		</div>
+    		
+    		</div>
+            <div class="noprint social-media-share hide" style="display: none;">
+                <a class="share-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000022%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D8542" target="_blank"></a>
+                <a class="share-twitter" href="http://twitter.com/intent/tweet?text=Resolu√ß√£o da Diretoria Colegiada - RDC n¬∫ 22, de 29/04/2014&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000022%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D8542" target="_blank"></a>
+                <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000022%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D8542" target="_blank"></a>
+                <a class="share-whatsapp" href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000022%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D8542" target="_blank"></a>
+            </div>
+		<article class="article">
+    		<div id="conteudo">
+				<div class="tab_menor noprint" style="border-bottom: 1px solid #9a9a9a; padding-bottom: 10px; margin: 10px 0;">
+					<div class="row">
+						<div class="col-9">
+    				<strong><span class="ico-situacao vigente com alteraÁıes status-10" title="Vigente com AlteraÁıes">Vigente com AlteraÁıes</span>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 22, de 29/04/2014</strong>&nbsp;
+						</div>
+						<div class="col-3 text-right">
+							<a class="btn btn-primary" style="color: white;" onclick="javascript:LinkTexto(&#039;RDC&#039;,&#039;0000022&#039;,&#039;222&#039;,&#039;2014&#039;,&#039;ANVISA/MS&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;)">Ver mais detalhes</a>
+						</div>
+					</div>
+    			</div>
+    			<div class="ato">
+<p style="text-align: center;">MINIST&Eacute;RIO DA SA&Uacute;DE<p style="text-align: center;">AG&Ecirc;NCIA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p style="text-align: center;">DIRETORIA COLEGIADA</p><p style="text-align: center;">RESOLU&Ccedil;&Atilde;O - RDC N&ordm; 22, DE 29 DE ABRIL DE 2014</p><p style="margin-left: 50%;">Disp&otilde;e sobre o Sistema Nacional de Gerenciamento de Produtos Controlados - SNGPC, revoga a <a href="javascript:LinkTexto('RDC','00000027','000','2007','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada n&ordm; 27, de 30 de mar&ccedil;o de 2007</a>, e d&aacute; outras provid&ecirc;ncias.</p><p>A Diretoria Colegiada da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, no uso das atribui&ccedil;&otilde;es que lhe conferem os <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','15.6','')">incisos III</a> e <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','15.8','')">IV, do art. 15</a> da <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">Lei n.&ordm; 9.782, de 26 de janeiro de 1999</a>, o <a href="javascript:LinkTexto('POR','00000354','000','2006','ANVISA/MS','A','54','')">inciso II, e &sect;&sect; 1&deg; e 3&deg; do art. 54 do Regimento Interno</a> aprovado nos termos do Anexo I da <a href="javascript:LinkTexto('POR','00000354','000','2006','ANVISA/MS','','','')">Portaria n&ordm; 354 da ANVISA, de 11 de agosto de 2006</a>, republicada no DOU de 21 de agosto de 2006, e suas atualiza&ccedil;&otilde;es, tendo em vista o disposto nos <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','2.3','')">incisos III, do art. 2&ordm;</a>, <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','7.3','')">III</a> e <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','7.4','')">IV, do art. 7&ordm;</a> da <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">Lei n.&ordm; 9.782, de 1999</a>, e o Programa de Melhoria do Processo de Regulamenta&ccedil;&atilde;o da Ag&ecirc;ncia, institu&iacute;do por meio da <a href="javascript:LinkTexto('POR','00000422','000','2008','ANVISA/MS','','','')">Portaria n&ordm; 422, de 16 de abril de 2008</a>, em reuni&atilde;o realizada em 15 de abril de 2014, adota a seguinte Resolu&ccedil;&atilde;o de Diretoria Colegiada e eu, Diretor-Presidente, determino a sua publica&ccedil;&atilde;o:</p><p>CAP&Iacute;TULO I</p><p>DA ABRANG&Ecirc;NCIA E DOS OBJETIVOS</p><p>Art. 1&ordm; Esta Resolu&ccedil;&atilde;o estabelece a utiliza&ccedil;&atilde;o do Sistema Nacional de Gerenciamento de Produtos Controlados - SNGPC, por farm&aacute;cias e drogarias, como um sistema de informa&ccedil;&atilde;o de vigil&acirc;ncia sanit&aacute;ria para a escritura&ccedil;&atilde;o de dados de produ&ccedil;&atilde;o, manipula&ccedil;&atilde;o, distribui&ccedil;&atilde;o, prescri&ccedil;&atilde;o, dispensa&ccedil;&atilde;o e consumo de medicamentos e insumos farmac&ecirc;uticos.</p><p>Art. 2&ordm; O SNGPC abrange os medicamentos sujeitos ao controle especial a que se refere a <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')">Portaria SVS/MS n&ordm; 344, de 12 de maio de 1998</a>, e os medicamentos antimicrobianos a que se refere a <a href="javascript:LinkTexto('RES','00000020','000','2011','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada RDC n&ordm; 20, de 5 de maio de 2011</a>, ou as que vierem substitu&iacute;-las.</p><p>Art. 3&ordm; Todas as farm&aacute;cias e drogarias devem, obrigatoriamente, utilizar o SNGPC para escritura&ccedil;&atilde;o sanit&aacute;ria dos medicamentos, insumos farmac&ecirc;uticos e prepara&ccedil;&otilde;es e/ou especialidades farmac&ecirc;uticas de que trata esta Resolu&ccedil;&atilde;o.</p><p>Par&aacute;grafo &uacute;nico. As farm&aacute;cias e drogarias de natureza p&uacute;blica e os estabelecimentos de atendimento privativo de unidade hospitalar ou de qualquer outra equivalente de assist&ecirc;ncia m&eacute;dica n&atilde;o est&atilde;o sujeitos a esta Resolu&ccedil;&atilde;o enquanto o m&oacute;dulo espec&iacute;fico do SNGPC n&atilde;o for disponibilizado e implantado no &acirc;mbito do Sistema Nacional de Vigil&acirc;ncia Sanit&aacute;ria.</p><p>Art. 4&ordm; S&atilde;o objetivos do SNGPC:</p><p>I - capturar e analisar os dados provenientes da produ&ccedil;&atilde;o, manipula&ccedil;&atilde;o, distribui&ccedil;&atilde;o, prescri&ccedil;&atilde;o, dispensa&ccedil;&atilde;o, consumo de medicamentos e insumos farmac&ecirc;uticos para gerar informa&ccedil;&otilde;es, em seus diversos detalhamentos;</p><p>II - otimizar as a&ccedil;&otilde;es de controle sobre os procedimentos de escritura&ccedil;&atilde;o de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o;</p><p>III - aprimorar as a&ccedil;&otilde;es de vigil&acirc;ncia sanit&aacute;ria relacionadas ao monitoramento sanit&aacute;rio e farmacoepidemiol&oacute;gico e controle dos medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o;</p><p>IV - contribuir com a produ&ccedil;&atilde;o de conhecimento sobre estudos de utiliza&ccedil;&atilde;o de medicamentos e farmacoepidemiologia; e</p><p>V - subsidiar a gest&atilde;o de riscos associados aos medicamentos e aos insumos farmac&ecirc;uticos na p&oacute;s-comercializa&ccedil;&atilde;o e no p&oacute;s-uso.</p><p>CAP&Iacute;TULO II</p><p>DAS DEFINI&Ccedil;&Otilde;ES</p><p>Art. 5&ordm; Para os efeitos desta Resolu&ccedil;&atilde;o, s&atilde;o adotadas as seguintes defini&ccedil;&otilde;es:</p><p>I - autenticidade: garantia de que os dados ou informa&ccedil;&otilde;es sejam verdadeiros e fidedignos, tanto na origem quanto no destino;</p><p>II - cadastro: identifica&ccedil;&atilde;o e inclus&atilde;o dos dados da empresa no sistema de seguran&ccedil;a da Anvisa para fins de acesso ao peticionamento eletr&ocirc;nico, obten&ccedil;&atilde;o de Autoriza&ccedil;&atilde;o de Funcionamento e demais servi&ccedil;os e sistemas disponibilizados no &acirc;mbito da Anvisa;</p><p>III - cadastro de &oacute;rg&atilde;os de vigil&acirc;ncia sanit&aacute;ria: identifica&ccedil;&atilde;o e inclus&atilde;o dos dados do &oacute;rg&atilde;o de vigil&acirc;ncia e da autoridade sanit&aacute;ria no cadastro de institui&ccedil;&otilde;es da Anvisa;</p><p>IV - credenciamento: o ato de ades&atilde;o do estabelecimento ao SNGPC mediante realiza&ccedil;&atilde;o do invent&aacute;rio inicial e envio pelo farmac&ecirc;utico respons&aacute;vel t&eacute;cnico e recebimento pela base de dados da Anvisa;</p><p>V - Certificado de Escritura&ccedil;&atilde;o Digital: documento emitido pelo SNGPC, ap&oacute;s o credenciamento, que comprova, perante a autoridade sanit&aacute;ria competente, que o estabelecimento est&aacute; apto a efetuar a escritura&ccedil;&atilde;o sanit&aacute;ria;</p><p>VI - Certificado de Transmiss&atilde;o Regular: documento complementar que pode ser solicitado pela autoridade sanit&aacute;ria e pelas distribuidoras &agrave;s farm&aacute;cias e drogarias abrangidas por esta Resolu&ccedil;&atilde;o, com a finalidade de atestar a regularidade na transmiss&atilde;o eletr&ocirc;nica dos dados;</p><p>VII - dado: sequ&ecirc;ncia de s&iacute;mbolos quantificados ou quantific&aacute;veis que s&atilde;o a base para a gera&ccedil;&atilde;o da informa&ccedil;&atilde;o;</p><p>VIII - disponibilidade: facilidade de acesso ou de recupera&ccedil;&atilde;o de dados ou informa&ccedil;&otilde;es;</p><p>IX - escritura&ccedil;&atilde;o sanit&aacute;ria: procedimento de registro da movimenta&ccedil;&atilde;o das entradas e sa&iacute;das de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o no SNGPC;</p><p>X - arquivo XML: arquivo eletr&ocirc;nico padronizado a ser transmitido ao SNGPC;</p><p>XI - estabelecimento: unidade da empresa destinada &agrave; manipula&ccedil;&atilde;o de insumos farmac&ecirc;uticos e dispensa&ccedil;&atilde;o de medicamentos e prepara&ccedil;&otilde;es sujeitos a esta Resolu&ccedil;&atilde;o, caracterizada por ter Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) &uacute;nico cadastrado junto &agrave; Anvisa e &agrave; Receita Federal do Brasil;</p><p>XII - gestor de seguran&ccedil;a: pessoa f&iacute;sica incumbida de administrar e controlar o acesso de usu&aacute;rios ao sistema de seguran&ccedil;a da Anvisa, devendo representar a empresa no &acirc;mbito dos sistemas informatizados da Ag&ecirc;ncia e ser habilitado a efetuar a&ccedil;&otilde;es nos sistemas da Anvisa;</p><p>XIII - gestor do SNGPC: profissional vinculado ao &oacute;rg&atilde;o ou autoridade sanit&aacute;ria em &acirc;mbito federal, estadual, regional, municipal ou do Distrito Federal que administra o cadastro do &oacute;rg&atilde;o e dos profissionais a ele vinculados;</p><p>XIV - inconsist&ecirc;ncia: discord&acirc;ncia de dados identificada durante o registro do invent&aacute;rio ou durante a escritura&ccedil;&atilde;o sanit&aacute;ria, relacionados com o cadastro das empresas, n&uacute;meros de registro dos medicamentos, c&oacute;digos da Denomina&ccedil;&atilde;o Comum Brasileira, dentre outros;</p><p>XV - informa&ccedil;&atilde;o: &eacute; o dado valorado, provido de significado, pass&iacute;vel de an&aacute;lise, compara&ccedil;&atilde;o ou interpreta&ccedil;&atilde;o;</p><p>XVI - instabilidade do SNGPC: problema de natureza operacional caracterizado como falha, interrup&ccedil;&atilde;o ou aus&ecirc;ncia de comunica&ccedil;&atilde;o na transmiss&atilde;o e acesso de dados ou informa&ccedil;&otilde;es;</p><p>XVII - integridade: garantia de n&atilde;o viola&ccedil;&atilde;o dos ativos de informa&ccedil;&atilde;o, na origem, no tr&acirc;nsito ou no destino;</p><p>XVIII - interoperabilidade: possibilidade de ser operado de forma integrada ou conjunta;</p><p>XIX - invent&aacute;rio inicial: declara&ccedil;&atilde;o de todo o estoque de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o, a ser informado por meio de envio de arquivo XML;</p><p>XX - monitoramento farmacoepidemiol&oacute;gico: acompanhamento sistem&aacute;tico de indicadores farmacoepidemiol&oacute;gicos relacionados com o consumo de medicamentos em popula&ccedil;&otilde;es, com a finalidade de subsidiar medidas de interven&ccedil;&atilde;o em sa&uacute;de p&uacute;blica, incluindo educa&ccedil;&atilde;o sanit&aacute;ria, e altera&ccedil;&otilde;es na legisla&ccedil;&atilde;o espec&iacute;fica vigente;</p><p>XXI - monitoramento sanit&aacute;rio: acompanhamento sistem&aacute;tico de indicadores operacionais relativos ao credenciamento de empresas no sistema, reten&ccedil;&atilde;o de receitas, escritura&ccedil;&atilde;o, envio de arquivos eletr&ocirc;nicos e efici&ecirc;ncia do sistema de gerenciamento de dados, com a finalidade de subsidiar, entre outros instrumentos de vigil&acirc;ncia sanit&aacute;ria, a fiscaliza&ccedil;&atilde;o sanit&aacute;ria, compreendendo tr&ecirc;s componentes b&aacute;sicos:</p><p>a) coleta de dados;</p><p>b) an&aacute;lise regular dos dados; e</p><p>c) ampla e peri&oacute;dica dissemina&ccedil;&atilde;o dos dados;</p><p>XXII - movimenta&ccedil;&atilde;o: todas as atividades do estabelecimento relacionadas com a entrada (compra ou transfer&ecirc;ncia) e a sa&iacute;da (venda/dispensa&ccedil;&atilde;o, transforma&ccedil;&atilde;o, transfer&ecirc;ncia ou perda) de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o;</p><p>XXIII - padr&atilde;o de transmiss&atilde;o: documento XML adequado ao Esquema XML do SNGPC;</p><p>XXIV - perda: movimenta&ccedil;&atilde;o representada pelos seguintes casos:</p><p>a) vencimento do prazo de validade;</p><p>b) apreens&atilde;o ou recolhimento pela autoridade sanit&aacute;ria;</p><p>c) roubo ou furto;</p><p>d) avaria;</p><p>e) desvio de qualidade;</p><p>f) exclus&atilde;o da lista atualizada de insumos sujeitos &agrave; presente Resolu&ccedil;&atilde;o;</p><p>g) coleta de amostra para controle da qualidade;</p><p>h) erro ou perda no processo de produ&ccedil;&atilde;o e/ou de manipula&ccedil;&atilde;o;</p><p>i) coleta de amostra para fins de an&aacute;lise fiscal por parte da autoridade sanit&aacute;ria; e</p><p>j) devolu&ccedil;&atilde;o ou recolhimento ao fabricante;</p><p>XXV - respons&aacute;vel legal: pessoa f&iacute;sica designada em estatuto, contrato social ou ata, incumbida de representar, ativa e passivamente, nos atos judiciais e extrajudiciais, o Agente Regulado pessoa jur&iacute;dica;</p><p>XXVI - farmac&ecirc;utico respons&aacute;vel t&eacute;cnico: profissional farmac&ecirc;utico legalmente habilitado e inscrito no Conselho Regional de Farm&aacute;cia, nos termos da lei, incumbido de promover assist&ecirc;ncia t&eacute;cnica &agrave; farm&aacute;cia ou drogaria;</p><p>XXVII - sa&iacute;da: movimenta&ccedil;&atilde;o representada pela venda, perda, transfer&ecirc;ncia e/ou transforma&ccedil;&atilde;o de medicamentos, insumos farmac&ecirc;uticos e produtos manipulados acabados;</p><p>XXVIII - senha: c&oacute;digo eletr&ocirc;nico pessoal, sigiloso e intransfer&iacute;vel cadastrado nos sistemas da Anvisa para fins de identifica&ccedil;&atilde;o e obten&ccedil;&atilde;o de acesso &agrave;s transa&ccedil;&otilde;es e opera&ccedil;&otilde;es em ambiente Internet;</p><p>XXIX - sigilo: condi&ccedil;&atilde;o inerente aos dados e informa&ccedil;&otilde;es que necessitam de medidas especiais de prote&ccedil;&atilde;o contra revela&ccedil;&atilde;o n&atilde;o autorizada;</p><p>XXX - sistema informatizado: aplicativo elaborado para servir como ferramenta tecnol&oacute;gica necess&aacute;ria &agrave; realiza&ccedil;&atilde;o dos atos, procedimentos e opera&ccedil;&otilde;es relacionados com o SNGPC;</p><p>XXXI - transfer&ecirc;ncia: movimenta&ccedil;&atilde;o de medicamentos, insumos farmac&ecirc;uticos e produtos manipulados acabados entre estabelecimentos da mesma rede ou empresa, identificados pelo mesmo n&uacute;mero de raiz referente ao Cadastro Nacional de Pessoas Jur&iacute;dicas - CNPJ.</p><p>CAP&Iacute;TULO III</p><p>DO ACESSO E DO CREDENCIAMENTO</p><p>Art. 6&ordm; O acesso ao SNGPC pressup&otilde;e a realiza&ccedil;&atilde;o e atualiza&ccedil;&atilde;o dos cadastros do estabelecimento, do gestor de seguran&ccedil;a, do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico e do respons&aacute;vel legal junto &agrave; Anvisa.</p><p>Art. 7&ordm; O acesso ao SNGPC &eacute; feito por meio de senha pessoal, sigilosa e intransfer&iacute;vel.</p><p>Par&aacute;grafo &uacute;nico. O uso indevido da senha e os preju&iacute;zos decorrentes da eventual quebra de seu sigilo ser&atilde;o de responsabilidade do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico e do respons&aacute;vel legal do estabelecimento.</p><p>Art. 8&ordm; O credenciamento do estabelecimento no SNGPC efetivar-se-&aacute; com a realiza&ccedil;&atilde;o do invent&aacute;rio inicial pelo farmac&ecirc;utico respons&aacute;vel t&eacute;cnico, mediante acesso ao SNGPC e envio do arquivo XML.</p><p>Art. 9&ordm;. Efetivado o credenciamento no SNGPC, o Certificado de Escritura&ccedil;&atilde;o Digital deve ser impresso e permanecer &agrave; disposi&ccedil;&atilde;o para fins de fiscaliza&ccedil;&atilde;o.</p><p>Par&aacute;grafo &uacute;nico. Sempre que for realizada a substitui&ccedil;&atilde;o do farmac&ecirc;utico respons&aacute;vel pela transmiss&atilde;o de dados ao SNGPC, poder&aacute; ser impresso um novo Certificado de Escritura&ccedil;&atilde;o Digital com os dados atualizados.</p><p>CAP&Iacute;TULO IV</p><p>DA ESCRITURA&Ccedil;&Atilde;O E DO CONTROLE DO ESTOQUE</p><p>Art. 10. Os estabelecimentos devem realizar a escritura&ccedil;&atilde;o de toda e qualquer movimenta&ccedil;&atilde;o e o controle do estoque de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o por meio de sistema informatizado compat&iacute;vel com as especifica&ccedil;&otilde;es e padr&atilde;o de transmiss&atilde;o estabelecidos pela Anvisa, de modo a garantir a interoperabilidade entre os sistemas.</p><p>&sect; 1&ordm; A escritura&ccedil;&atilde;o &eacute; de responsabilidade do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico ou seu substituto legal devidamente cadastrado e associado no SNGPC.</p><p>&sect; 2&ordm; Devem ser escriturados os dados exigidos conforme normas espec&iacute;ficas vigentes para os medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o.</p><p>&sect; 3&ordm; Os dados da escritura&ccedil;&atilde;o sanit&aacute;ria devem ser transmitidos eletronicamente em arquivos no intervalo de, no m&iacute;nimo, 1 (um) e, no m&aacute;ximo, 7 (sete) dias consecutivos, ainda que nenhuma movimenta&ccedil;&atilde;o no estoque do estabelecimento tenha ocorrido no respectivo per&iacute;odo.&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000022','000','2014','RDC/DC/ANVISA/MS','A','0','1')">Veja Tamb&eacute;m</a></em></p><p>&sect; 4&ordm; A transmiss&atilde;o eletr&ocirc;nica deve ser realizada e atualizada, no m&iacute;nimo, uma vez por semana.&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000022','000','2014','RDC/DC/ANVISA/MS','A','0','2')">Veja Tamb&eacute;m</a></em></p><p>&sect; 5&ordm; Para os insumos farmac&ecirc;uticos, deve ser escriturado o n&uacute;mero do lote do fabricante.</p><p>&sect; 6&ordm; A escritura&ccedil;&atilde;o deve ser mantida no sistema informatizado do estabelecimento, para controle e fiscaliza&ccedil;&atilde;o pela autoridade sanit&aacute;ria.</p><p>Art. 11. Na falta de farmac&ecirc;utico substituto, a escritura&ccedil;&atilde;o deve ser obrigatoriamente transmitida ao final dos per&iacute;odos de aus&ecirc;ncias do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico, por meio do envio de arquivos sem movimenta&ccedil;&atilde;o de medicamentos sujeitos a controle especial, conforme <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')">Portaria SVS/MS n&ordm; 344, de 1998</a>, ou a que vier a substitu&iacute;-la.</p><p>Art. 12. A substitui&ccedil;&atilde;o definitiva ou eventual do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico no SNGPC deve ser precedida de finaliza&ccedil;&atilde;o do invent&aacute;rio, de modo que as transmiss&otilde;es da escritura&ccedil;&atilde;o possam ter continuidade pelo substituto ou pelo novo farmac&ecirc;utico respons&aacute;vel t&eacute;cnico.</p><p>&sect; 1&ordm; Na hip&oacute;tese do caput deste artigo, o novo farmac&ecirc;utico respons&aacute;vel t&eacute;cnico ou o substituto deve conferir o invent&aacute;rio previamente finalizado.</p><p>&sect; 2&ordm; Nos casos em que houver diverg&ecirc;ncia entre os dados do invent&aacute;rio finalizado anteriormente e o estoque existente no estabelecimento, o substituto ou o novo farmac&ecirc;utico respons&aacute;vel t&eacute;cnico deve corrigir seu invent&aacute;rio antes de iniciar suas atividades e informar a autoridade sanit&aacute;ria local.</p><p>Art. 13. A transfer&ecirc;ncia de estoque de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o fica permitida nos casos de encerramento, altera&ccedil;&atilde;o das atividades ou jun&ccedil;&atilde;o de estabelecimentos, e deve ser escriturada no SNGPC.</p><p>Par&aacute;grafo &uacute;nico. Na hip&oacute;tese prevista no caput, o estabelecimento que receber os medicamentos e insumos farmac&ecirc;uticos deve escriturar a movimenta&ccedil;&atilde;o de entrada atrav&eacute;s de nota fiscal emitida pelo estabelecimento que encerrou suas atividades.</p><p>Art. 14. O farmac&ecirc;utico respons&aacute;vel t&eacute;cnico deve notificar qualquer inconsist&ecirc;ncia relacionada a medicamentos e insumos farmac&ecirc;uticos por meio de funcionalidade dispon&iacute;vel no ambiente do SNGPC.</p><p>&sect; 1&ordm; Quando houver inconsist&ecirc;ncias que impe&ccedil;am o envio de arquivo XML, as movimenta&ccedil;&otilde;es desta inconsist&ecirc;ncia devem ser escrituradas no sistema informatizado do estabelecimento para controle e fiscaliza&ccedil;&atilde;o pela autoridade sanit&aacute;ria.</p><p>&sect; 2&ordm; Corrigida a inconsist&ecirc;ncia que impede o envio de arquivo XML, as movimenta&ccedil;&otilde;es devem voltar a ser escrituradas no SNGPC.</p><p>Art. 15. O estoque f&iacute;sico dos medicamentos e subst&acirc;ncias sujeitas a controle especial deve ser qualitativa e quantitativamente id&ecirc;ntico ao escriturado no SNGPC, bem como no sistema informatizado do estabelecimento, observando-se o prazo de escritura&ccedil;&atilde;o.</p><p>Art. 16. Todo o estoque movimentado pelo estabelecimento deve estar devidamente escriturado, sendo este comercializ&aacute;vel ou n&atilde;o.</p><p>CAP&Iacute;TULO V</p><p>DO SISTEMA INFORMATIZADO E DO PADR&Atilde;O SNGPC</p><p>Art. 17. O sistema informatizado utilizado pelo estabelecimento deve ser desenvolvido ou adaptado segundo os requisitos e as especifica&ccedil;&otilde;es estabelecidos pela Anvisa.</p><p>Art. 18. O sistema informatizado do estabelecimento, que gera os arquivos XML para envio ao SNGPC, deve ter acesso restrito ao farmac&ecirc;utico respons&aacute;vel t&eacute;cnico ou seu substituto legal devidamente cadastrado e associado no SNGPC.</p><p>&sect; 1&ordm; O farmac&ecirc;utico respons&aacute;vel t&eacute;cnico pode delegar a terceiros, sob sua responsabilidade, o acesso parcial ao sistema informatizado para fins de inser&ccedil;&atilde;o dos dados.</p><p>&sect; 2&ordm; &Eacute; fun&ccedil;&atilde;o do farmac&ecirc;utico respons&aacute;vel t&eacute;cnico a gera&ccedil;&atilde;o e envio dos arquivos XML ao SNGPC.</p><p>Art. 19. O sistema informatizado do estabelecimento deve garantir:</p><p>I - a realiza&ccedil;&atilde;o peri&oacute;dica de c&oacute;pia de seguran&ccedil;a dos dados de escritura&ccedil;&atilde;o, que deve permanecer arquivada no estabelecimento por 2 (dois) anos; e</p><p>II - a gera&ccedil;&atilde;o de relat&oacute;rios atualizados dos estoques e movimenta&ccedil;&otilde;es de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o, com informa&ccedil;&otilde;es necess&aacute;rias para sua confer&ecirc;ncia e rastreabilidade.</p><p>Art. 20. O desenvolvimento, aquisi&ccedil;&atilde;o e manuten&ccedil;&atilde;o do sistema informatizado para fins desta Resolu&ccedil;&atilde;o s&atilde;o de responsabilidade de cada estabelecimento.</p><p>Art. 21. O sistema informatizado utilizado pelo estabelecimento deve assegurar o sigilo, a integridade, a autenticidade e a disponibilidade dos dados e informa&ccedil;&otilde;es, de modo a viabilizar a execu&ccedil;&atilde;o de a&ccedil;&otilde;es de fiscaliza&ccedil;&atilde;o, monitoramento, gerenciamento e controle de riscos pela autoridade sanit&aacute;ria competente, bem como garantir a prote&ccedil;&atilde;o da imagem, da honra e da privacidade das pessoas.</p><p>Par&aacute;grafo &uacute;nico. &Eacute; vedado disponibilizar a terceiros n&atilde;o autorizados dados ou informa&ccedil;&otilde;es relacionadas &agrave; comercializa&ccedil;&atilde;o e uso de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o, capazes de identificar e individualizar padr&otilde;es ou h&aacute;bitos de prescri&ccedil;&atilde;o, dispensa&ccedil;&atilde;o ou consumo desses produtos, salvo nos casos permitidos pela legisla&ccedil;&atilde;o vigente.</p><p>Art. 22. Os requisitos e as especifica&ccedil;&otilde;es dos Padr&otilde;es SNGPC, bem como suas eventuais altera&ccedil;&otilde;es, s&atilde;o aprovados em ato pr&oacute;prio e permanecer&atilde;o dispon&iacute;veis no s&iacute;tio eletr&ocirc;nico da Anvisa para viabilizar o desenvolvimento ou a atualiza&ccedil;&atilde;o dos sistemas informatizados utilizados pelos estabelecimentos.</p><p>Art. 23. A Anvisa disponibiliza ambientes de testes para valida&ccedil;&atilde;o de arquivos enviados ao SNGPC em seu s&iacute;tio eletr&ocirc;nico na internet, de modo a viabilizar o desenvolvimento ou a adapta&ccedil;&atilde;o dos sistemas informatizados de que trata esta Resolu&ccedil;&atilde;o.</p><p>CAP&Iacute;TULO VI</p><p>DA GEST&Atilde;O DO SNGPC E DA FISCALIZA&Ccedil;&Atilde;O PELO SISTEMA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p>Art. 24. As autoridades sanit&aacute;rias da Uni&atilde;o, dos Estados, do Distrito Federal e dos Munic&iacute;pios ter&atilde;o acesso a dados e informa&ccedil;&otilde;es por meio do SNGPC, em seus diversos detalhamentos, acerca da produ&ccedil;&atilde;o, manipula&ccedil;&atilde;o, distribui&ccedil;&atilde;o, prescri&ccedil;&atilde;o, dispensa&ccedil;&atilde;o e consumo de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o, no &acirc;mbito de suas respectivas atribui&ccedil;&otilde;es legais.</p><p>Art. 25. A gest&atilde;o do SNGPC, em &acirc;mbito nacional, &eacute; exercida pela Anvisa.</p><p>Art. 26. Ao gestor nacional do SNGPC cabe, entre outras atribui&ccedil;&otilde;es:</p><p>I - a responsabilidade pela elabora&ccedil;&atilde;o e atualiza&ccedil;&atilde;o do cadastro e libera&ccedil;&atilde;o do acesso ao sistema para os profissionais de vigil&acirc;ncia sanit&aacute;ria no &acirc;mbito federal;</p><p>II - a atribui&ccedil;&atilde;o de acesso com perfil de gestor estadual do SNGPC no &acirc;mbito dos Estados e do Distrito Federal, conforme indica&ccedil;&atilde;o e escolha da autoridade competente da respectiva Unidade da Federa&ccedil;&atilde;o; e</p><p>III - cooperar com a orienta&ccedil;&atilde;o e capacita&ccedil;&atilde;o de profissionais de vigil&acirc;ncia sanit&aacute;ria e do setor regulado acerca dos procedimentos para operacionaliza&ccedil;&atilde;o do SNGPC e do uso de informa&ccedil;&atilde;o para a tomada de decis&atilde;o e a&ccedil;&atilde;o.</p><p>Art. 27. Ao gestor estadual, distrital e regional do SNGPC cabe, entre outras atribui&ccedil;&otilde;es:</p><p>I - a responsabilidade pela elabora&ccedil;&atilde;o e atualiza&ccedil;&atilde;o do cadastro e libera&ccedil;&atilde;o do acesso ao sistema para os profissionais de vigil&acirc;ncia sanit&aacute;ria no &acirc;mbito do respectivo Estado, Regional ou do Distrito Federal;</p><p>II - a atribui&ccedil;&atilde;o de acesso com perfil de gestor municipal do SNGPC no &acirc;mbito dos Munic&iacute;pios ou &aacute;reas administrativas do respectivo Estado, Regional e Distrito Federal, conforme indica&ccedil;&atilde;o e escolha da autoridade competente de cada munic&iacute;pio ou &aacute;rea administrativa;</p><p>e III - cooperar com a orienta&ccedil;&atilde;o e capacita&ccedil;&atilde;o de profissionais de vigil&acirc;ncia sanit&aacute;ria e do setor regulado dos munic&iacute;pios ou &aacute;reas administrativas sob sua jurisdi&ccedil;&atilde;o acerca dos procedimentos para operacionaliza&ccedil;&atilde;o do SNGPC e do uso de informa&ccedil;&atilde;o para a tomada de decis&atilde;o e a&ccedil;&atilde;o.</p><p>Art. 28. Ao gestor municipal do SNGPC cabe, entre outras atribui&ccedil;&otilde;es:</p><p>I - a responsabilidade pela elabora&ccedil;&atilde;o e atualiza&ccedil;&atilde;o do cadastro e libera&ccedil;&atilde;o do acesso ao sistema para os profissionais de vigil&acirc;ncia sanit&aacute;ria no &acirc;mbito do munic&iacute;pio; e</p><p>II - cooperar com a orienta&ccedil;&atilde;o e capacita&ccedil;&atilde;o de profissionais de vigil&acirc;ncia sanit&aacute;ria e do setor regulado acerca dos procedimentos para operacionaliza&ccedil;&atilde;o do SNGPC e do uso de informa&ccedil;&atilde;o para a tomada de decis&atilde;o e a&ccedil;&atilde;o.</p><p>Art. 29. A responsabilidade pela atualiza&ccedil;&atilde;o dos dados referentes aos gestores do SNGPC, no &acirc;mbito nacional, estadual, regional, do Distrito Federal ou municipal, junto &agrave;s inst&acirc;ncias respons&aacute;veis pela atribui&ccedil;&atilde;o de acesso ao sistema com perfil de gestor fica a cargo das respectivas autoridades sanit&aacute;rias.</p><p>Art. 30. O acesso ao SNGPC pelos profissionais de vigil&acirc;ncia sanit&aacute;ria dar-se-&aacute; mediante libera&ccedil;&atilde;o de acesso pelo gestor do SNGPC do respectivo Estado, Regional, Distrito Federal ou Munic&iacute;pio e abrange os dados e informa&ccedil;&otilde;es relativos ao seu &acirc;mbito de atua&ccedil;&atilde;o.</p><p>Art. 31. Os dados e informa&ccedil;&otilde;es t&eacute;cnicas e operacionais obtidos por meio do SNGPC devem receber tratamento sigiloso, salvo para impossibilitar a ocorr&ecirc;ncia de circunst&acirc;ncias de risco &agrave; sa&uacute;de da popula&ccedil;&atilde;o.</p><p>Art. 32. Compete &agrave; autoridade sanit&aacute;ria dos Estados, do Distrito Federal e dos Munic&iacute;pios a fiscaliza&ccedil;&atilde;o dos estabelecimentos quanto ao cumprimento desta Resolu&ccedil;&atilde;o.</p><p>Par&aacute;grafo &uacute;nico. A Anvisa poder&aacute; prestar coopera&ccedil;&atilde;o t&eacute;cnica e financeira aos Estados, ao Distrito Federal e aos Munic&iacute;pios, bem como atuar em circunst&acirc;ncias especiais de risco &agrave; sa&uacute;de, observada a autonomia federativa e a diretriz constitucional da descentraliza&ccedil;&atilde;o das a&ccedil;&otilde;es no &acirc;mbito do Sistema &Uacute;nico de Sa&uacute;de - SUS.</p><p>Art. 33. N&atilde;o dever&aacute; ser objeto de autua&ccedil;&atilde;o a falta de regularidade na transmiss&atilde;o das movimenta&ccedil;&otilde;es e emiss&atilde;o de relat&oacute;rios quando o motivo for estritamente instabilidade operacional do pr&oacute;prio SNGPC.</p><p>Art. 34. Configurada infra&ccedil;&atilde;o por inobserv&acirc;ncia de preceitos legais, a autoridade sanit&aacute;ria deve tomar medidas necess&aacute;rias dentro de sua compet&ecirc;ncia e poder&aacute; comunicar o fato ao Conselho Profissional competente e acompanhar seu desdobramento.</p><p>CAP&Iacute;TULO VII</p><p>DAS DISPOSI&Ccedil;&Otilde;ES FINAIS</p><p>Art. 35. A escritura&ccedil;&atilde;o de medicamentos e insumos farmac&ecirc;uticos sujeitos a esta Resolu&ccedil;&atilde;o substitui a escritura&ccedil;&atilde;o realizada por meio de livro de registro ou sistema informatizado previamente autorizado pela autoridade sanit&aacute;ria competente, estabelecidos na<a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')"> Portaria SVS/MS n&ordm; 344, de 1998</a>, e na <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS','','','')">Portaria SVS/MS n&ordm; 6, de 29 de janeiro de 1999</a>, ou as que vierem substitu&iacute;-las.</p><p>&sect; 1&ordm; Fica excepcionalmente admitida a ado&ccedil;&atilde;o de rotinas n&atilde;o informatizadas pelo SNGPC, mediante manuten&ccedil;&atilde;o do livro de registro, em munic&iacute;pios desprovidos de acesso &agrave; internet, condicionada &agrave; autoriza&ccedil;&atilde;o pela autoridade sanit&aacute;ria local.</p><p>&sect; 2&ordm; Para os fins do disposto no &sect; 1&ordm;, cabe &agrave; autoridade sanit&aacute;ria local comunicar o fato &agrave; &aacute;rea t&eacute;cnica da Anvisa respons&aacute;vel pela gest&atilde;o do SNGPC.</p><p>&sect; 3&ordm; Fica excepcionalmente admitida a ado&ccedil;&atilde;o de rotinas n&atilde;o informatizadas pelo SNGPC, mantendo-se a escritura&ccedil;&atilde;o no sistema informatizado do estabelecimento, nos casos de apresenta&ccedil;&otilde;es comerciais fracion&aacute;veis e para os medicamentos ou insumos farmac&ecirc;uticos com inconsist&ecirc;ncia.</p><p>Art. 36. Os estabelecimentos dever&atilde;o manter a escritura&ccedil;&atilde;o sanit&aacute;ria atualizada conforme os prazos estabelecidos nesta Resolu&ccedil;&atilde;o, para o fim de obten&ccedil;&atilde;o do Certificado de Transmiss&atilde;o Regular.</p><p>Par&aacute;grafo &uacute;nico. Durante a inspe&ccedil;&atilde;o sanit&aacute;ria local, caso seja verificada diverg&ecirc;ncia entre o estoque f&iacute;sico e o estoque no SNGPC, dever&aacute; ser considerada a exist&ecirc;ncia de arquivos n&atilde;o enviados e/ou n&atilde;o validados no prazo previsto pelo &sect; 4&ordm; do art. 10.</p><p>Art. 37. Fica estabelecida a interface entre o SNGPC e o Sistema Nacional de Controle de Medicamentos - SNCM para os medicamentos sujeitos a esta Resolu&ccedil;&atilde;o.</p><p>Art. 38. A &aacute;rea t&eacute;cnica competente da Anvisa adotar&aacute; medidas ou procedimentos para os casos n&atilde;o previstos nesta Resolu&ccedil;&atilde;o.</p><p>Art. 39. Sem preju&iacute;zo de outras comina&ccedil;&otilde;es legais, inclusive penais, de que sejam pass&iacute;veis os respons&aacute;veis t&eacute;cnicos e legais, a empresa responder&aacute; administrativa e civilmente por infra&ccedil;&atilde;o sanit&aacute;ria resultante da inobserv&acirc;ncia desta Resolu&ccedil;&atilde;o e demais normas complementares, nos termos da <a href="javascript:LinkTexto('LEI','00006437','000','1977','NI','','','')">Lei n&ordm; 6.437, de 20 de agosto de 1977</a>.</p><p>Art. 40. Ficam revogadas a <a href="javascript:LinkTexto('RDC','00000027','000','2007','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o de Diretoria Colegiada n&ordm; 27, de 30 de mar&ccedil;o de 2007</a>, a <a href="javascript:LinkTexto('INM','00000007','000','2007','ANVISA/MS','','','')">Instru&ccedil;&atilde;o Normativa n&ordm; 7, de 24 de abril de 2007</a>, e a <a href="javascript:LinkTexto('INM','00000011','001','2007','DC/ANVISA/MS','','','')">Instru&ccedil;&atilde;o Normativa n&ordm; 11, de 31 de outubro de 2007</a>.</p><p>Art. 41. Esta Resolu&ccedil;&atilde;o entra em vigor na data de sua publica&ccedil;&atilde;o.</p><p>DIRCEU BR&Aacute;S APARECIDO BARBANO</p><p style="font-weight: bold;">PUB D.O.U., 30/04/2014 - Se&ccedil;&atilde;o 1</p></p>
+					<p style="font-size: 0.8rem; text-align: center; font-style: italic; color: red;">Este texto n„o substitui a PublicaÁ„o Oficial.</p>
+				</div>
+			</div>
+		</article>
+                    	
+		<form name="formPdf" id="formPdf" action="/action/ActionDatalegis.php?acao=gerarPdfAto&cod_modulo=310&cod_menu=8542" method="post" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formImprimir" id="formImprimir" action="/action/ActionDatalegis.php?acao=imprimirAto&cod_modulo=310&cod_menu=8542" method="get" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formGerarLink" id="formGerarLink" action="/action/ActionDatalegis.php?acao=setGerarLink&cod_modulo=310&cod_menu=8542" method="get" target="_self">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		
+	</div>
+</div>
+		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@1.11/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/view/js/ajax.js"></script> 
+<script type="text/javascript">
+
+	function abreFecha(obj) {
+		if($(obj).is(':visible') ) {
+			$(obj).removeClass('d-block').addClass('d-none');
+		} else {
+			$(obj).removeClass('d-none').addClass('d-block');
+		}
+	}
+	
+	var in_abrir_segundo_nivel = "";
+	var in_abrir_todas_notas = false;
+	
+	function recuperarObjetoPai(obj, nuascendentes) {
+		var objPai = obj;
+	
+		for ( var i = 0; i < nuascendentes; i++) {
+			objPai = objPai.parentNode;
+		}
+	
+		return objPai;
+	}
+	
+	function historico(psLink) {
+		var root;
+		root = window.open(psLink,'Historico','width=360,height=240,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no');
+		root.focus();
+	}
+		
+	function mostra_arquivo(cod, tip, acao, txt, l, a) {
+		var url;
+		var str;
+		if (cod != "") {
+			caminho = "http://www.datalegis.inf.br/datalegis/arquivos/";
+			switch (acao) {
+			case 1: //-- mostra arquivo na tela - apenas imagens
+				document.write("<img src='" + caminho + cod + "." + tip
+						+ "' border='0' width='" + ((l) ? l : "100%")
+						+ "' heigth='" + ((a) ? a : "100%") + "'>");
+				break;
+			case 0: //-- nao mostra arquivo na tela - para todos os tipos
+				document.write("<a href='" + caminho + cod + "." + tip
+						+ "' target='new'>" + txt + "</a>");
+				break;
+			}
+		}
+	}
+
+	function LinkTexto(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, pDesItemFim) {
+		var link = "/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo="
+			+ psSigla + "&numeroAto=" + psNumero + "&seqAto=" + psSeq + "&valorAno=" + psAno + "&orgao=" + psOrgao 
+			+ "&codTipo=" + psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + pDesItemFim
+			+ "&cod_modulo=310&cod_menu=8542";
+		window.open(link, '_blank');		
+	}
+
+	$(function() {
+    	$(document).ajaxStart(function(){
+    		$('#loading').show();
+        })
+        .ajaxStop(function(){
+        	$('#loading').delay(100).hide();
+        	in_abrir_todas_notas = false;
+        });
+
+	});
+
+	$(document).on('click', "a[href*='javascript:LinkNota']", function(e) {
+
+		//e.isImmediatePropagationStopped();
+		e.preventDefault();
+		var objHref = $(this);
+	    var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    
+	    var parameters = parameter.split(",");
+	    
+        var psSigla = parameters[0];
+        var psNumero = parameters[1];
+        var psSeq = parameters[2];
+        var psAno = parameters[3];
+        var psOrgao = parameters[4];
+        var psCodTipo = parameters[5];
+        var psDesItem = parameters[6];
+        var psSeqNota = parameters[7];
+
+        var link = "/action/ActionDatalegis.php?acao=detalharNotaAjax&tipo="+ psSigla+ 
+		"&numeroAto="+ psNumero+ "&seqAto="+ psSeq+ "&valorAno=" +psAno+ 
+		"&orgao="+ psOrgao+ "&codTipo="+ psCodTipo + "&desItem=" + psDesItem + "&seqNota=" + psSeqNota+
+		"&cod_modulo=310&cod_menu=8542";
+		
+        var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+        $(objHref).attr('class', 'ato-'+idAto);
+		var divNota = $(this).siblings('div.'+idAto+':first');
+		
+        if(!$(divNota).length) {		        
+    	  	$.ajax({
+    	        url: link,
+    	        dataType: "text",
+    	        async: true,
+    	        cache: true,
+    	        success: function(html) {
+					$(objHref).parent("em:first").append(html);
+    	        },
+    	        error: function(obj) {
+    	            console.log(obj);
+    	        }
+    	    });
+		} else {
+			$(divNota).toggle();
+		}
+	});
+	
+	function abrirTodosLinkNota() {
+		in_abrir_todas_notas = true;
+		$('div.nota-revogado').show();
+		$('#texto-compilado').css('text-decoration','none');
+		$('#texto-notas').css('text-decoration','underline');
+		var searchLinkNota = "a[href*='javascript:LinkNota']";
+		
+		var linkBase = "/action/ActionDatalegis.php?acao=detalharNotasListaAjax&cod_modulo=310&cod_menu=8542";
+		var linkAjax = '';
+		var registroChamado = 0;
+		var registroChamadoTotal = 0;
+		var registroTotal = $(searchLinkNota).length;
+		var indexInicialChamado = null;
+		
+		$(searchLinkNota).each(function( index ) {
+			if(registroChamado == 0) {
+				linkAjax = '';
+				indexInicialChamado = index;
+			}
+
+			registroChamado++;
+			registroChamadoTotal++;
+			
+			var objHref = $(this);
+			var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    	
+    	    var parameters = parameter.split(",");
+    	    
+            var psSigla = parameters[0];
+            var psNumero = parameters[1];
+            var psSeq = parameters[2];
+            var psAno = parameters[3];
+            var psOrgao = parameters[4];
+            var psCodTipo = parameters[5];
+            var psDesItem = parameters[6];
+            var psSeqNota = parameters[7];
+
+            var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+            var idDivNota = 'ato-'+idAto+'-'+index;
+            $(objHref).attr('class', idDivNota);
+
+            var divNota = $('a.'+idDivNota).siblings('div.'+idAto+':first');
+			
+			if(!$(divNota).length) {
+                linkAjax += "&sgl_tipo[]="+psSigla+"&num_ato[]="+psNumero+"&seq_ato[]="+psSeq+"&vlr_ano[]="+psAno+"&sgl_orgao[]="+psOrgao;
+                linkAjax += "&cod_tipo[]="+psCodTipo+"&des_item[]="+psDesItem+"&seq_nota[]="+psSeqNota+"&index_js[]="+index;
+			}
+			
+            if((registroChamado == 100 || registroChamadoTotal == registroTotal) && linkAjax.length > 0) {
+            	registroChamado = 0;
+                     	
+            	$.ajax({
+        	        url: linkBase,
+        	        type: "POST",
+        	        data: linkAjax,
+        	        dataType: "json",
+        	        async: true,
+        	        cache: true,
+        	        success: function(jsonObj) {        				
+        				$.each(jsonObj, function(index, objNota) {
+        					divNota = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).siblings('div.'+objNota.ID_NOTA+':first');
+        					
+        					if(!$(divNota).length) {
+        						var objetoDestino = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).parent("em:first");
+            					$( "<div/>", {
+            					    "class": "well nota-revogado "+objNota.ID_NOTA,
+            					    html: objNota.NOTAS.join('')
+            					  }).appendTo(objetoDestino);
+        			        } else {
+        			        	$(divNota).show();
+        			        }
+        				});
+        	        },
+        	        error: function(obj) {
+        	            console.log(obj);
+        	        }
+        	    });
+			}
+		});
+	}
+	
+	function fecharTodosLinkNota() {
+		$('#texto-compilado').css('text-decoration','underline');
+		$('#texto-notas').css('text-decoration','none');
+		in_abrir_todas_notas = false;
+		$('div.nota-revogado').hide();
+	}
+	
+	function LinkNota(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psSeqNota) {
+	}
+
+	function gravarArquivo(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psDesItemFim) {
+		var link = "/action/detalhaAto.do?method=gravarAtoPDF&tipo="
+				+ psSigla
+				+ "&numeroAto="
+				+ psNumero
+				+ "&seqAto="
+				+ psSeq
+				+ "&valorAno="
+				+ psAno
+				+ "&orgao="
+				+ psOrgao
+				+ "&codTipo="
+				+ psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + psDesItemFim;
+		root = window.open(link, 'Imprimir', 'width=766,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	function abrirFrame(id, obj){
+		fAscendentes = "";
+	
+		var l_div = obj;
+		if (l_div.getElementsByTagName('div')[0].style.display == "none" || l_div.getElementsByTagName('div')[0].style.display == ""){
+			var l_frame = l_div.getElementsByTagName("iframe")[0];
+			var link = "/action/TematicaAction.php?acao=visualizarTextoAtosVinculados&codigo=" + id + "&word="+fAscendentes;
+	
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px -9px";
+			l_div.getElementsByTagName('div')[0].style.display = "block";
+			l_frame.src = link;
+		}else {
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px 3px";
+			l_div.getElementsByTagName('div')[0].style.display = "none";
+		}
+	}
+	
+	function retira_acentos(palavra) {
+		var com_acento = '·‡„‚‰ÈËÍÎÌÏÓÔÛÚıÙˆ˙˘˚¸Á¡¿√¬ƒ…» ÀÕÃŒœ”“’÷‘⁄Ÿ€‹«';
+		var sem_acento = 'aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC';
+		var nova='';
+	
+		for(var i = 0; i < palavra.length; i++) {
+			var p = com_acento.indexOf(palavra.substr(i,1));
+			
+			if (p > -1) {
+				nova += sem_acento.substr(p,1);
+			}else {
+				nova += palavra.substr(i,1);
+			}
+		}
+		return nova;
+	}
+		
+	function expandir(pObj, nuAscendentes) {
+		l_div = recuperarObjetoPai(pObj, nuAscendentes);
+		l_div_aps = l_div.getElementsByTagName('div')[0];
+	
+		if (l_div_aps.style.display == "" || l_div_aps.style.display == "block") {
+			//setarClassColapse();
+			setarPropriedadeDisplay(l_div_aps, "none");
+			pObj.style.backgroundPosition = "0px 3px";
+		} else {
+			pObj.style.backgroundPosition = "0px -9px";
+			l_div_aps.innerHTML = "<div style='font-size: 8pt; margin-left: 21px;'>Carregando...</div>";
+			setarPropriedadeDisplay(l_div_aps, "block");
+	
+			buscarFilhos('', "");
+		}
+	}
+	
+	function buscarFilhos(filtro, dshierarquia) {
+		var params = null;
+		processarAjax('/action/TematicaAction.php?acao=montarEstruturaTitulos&cotematica=' + l_div.getAttribute("codigo")+
+					  "&notematica="+filtro+"&nivel="+1+"&infiltro="+l_div.getAttribute("inFiltro"), 'POST', params, mostrarFilhos);
+	}
+	
+	function setarPropriedadeDisplay(pObj, pDisplay) {
+		pObj.style.display = pDisplay;
+	}
+	
+	function mostrarFilhos(pRetorno) {
+		var indice = '';
+	
+		l_div_aps.innerHTML = pRetorno;
+		setarPropriedadeDisplay(l_div_aps, "block");
+		
+		if (in_abrir_segundo_nivel == "S"){
+			in_abrir_segundo_nivel = "N";
+	
+			expandir(document.getElementById('treeviewDetalhe00').getElementsByTagName('span')[0], 1);
+		}
+	}
+
+	function pdf() {
+		$('#formPdf #html').val($('div.ato').html());
+		$('#formPdf').submit();
+	}
+
+	function imprimir() {
+		//window.location.href = window.location.href + '&print=S';
+		window.print();
+	}
+
+	function tags(num_ato,sgl_tipo,sgl_orgao,vlr_ano,seq_ato) {
+		var link = "/action/ActionDatalegis.php?acao=visualizarTagsAto&sgl_tipo="+sgl_tipo+
+			"&num_ato="+num_ato+"&seq_ato="+seq_ato+"&vlr_ano="+vlr_ano+"&sgl_orgao="+sgl_orgao+
+			"&cod_modulo=310&cod_menu=8542";
+		root = window.open(link,'Tags','width=640,height=190,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	var tam = 1.125;
+	function mudaFonte(tipo) {
+		if (tipo == 'mais') {
+			if(tam < 2) tam += 0.2;	
+		} else {
+			if(tam > 0.8) tam -= 0.2;
+		}
+
+		$("#conteudo p, #conteudo a, #conteudo span").css('font-size', tam + 'rem');
+		$("#conteudo div").css('font-size', (tam + 0.2) + 'rem');
+	}
+
+	</script>
+<script type="text/javascript" src="/v2/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/chosen.jquery-0.1.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/v2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/v2/js/sistema.js?20260917"></script>
+<script type="text/javascript" async src="/view/js/copytoclipboard.js?20260917"></script>
+<script type="text/javascript" async src="https://cdn.ampproject.org/v0.js"></script>
+<div class="noprint" id="loading" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100vw; height: 100vh; background: black; opacity: 25%; z-index: 5001; padding-top: 20%; display:none;">
+	<center style="z-index: 5002; color: white; font-weight: 400;">
+		<img style="margin-top: -8px" src="../view/img/Loading.gif" alt="loading" /> Carregando...
+	</center>
+</div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" charset="UTF-8"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

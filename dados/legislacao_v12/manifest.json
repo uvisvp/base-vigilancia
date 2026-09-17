@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-17T00:21:39.061416+00:00",
+  "gerado_em": "2026-09-17T08:55:46.122119+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -281,23 +281,24 @@
     },
     "RDC 22-2014": {
       "arquivo": "rdc-22-2014.json",
-      "nos": 145,
-      "sha256_texto": "d545a0b431cbeeb52068d9ded2fb14749943da2fd1a066280847fcd5f5debf1a",
+      "nos": 201,
+      "sha256_texto": "3d78c0cd40aa71309944d3a84505bcceb2b84fbebe22a7511b11876d9379f33f",
       "proveniencia": {
         "norma": "RDC 22-2014",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
-        "consultado_em": "2026-09-06T00:56:39.304877+00:00",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+        "consultado_em": "2026-09-17T08:55:38.229422+00:00",
         "data_fonte": "2014-04-29",
-        "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
-        "sha256_fonte": "93017301a9de7ed9141b1e3a041aa7b91588756efc8a437d4324f412d651c0f2",
-        "sha256_texto": "d545a0b431cbeeb52068d9ded2fb14749943da2fd1a066280847fcd5f5debf1a",
-        "alteracoes_encontradas": [],
-        "status_vigencia": "vigente",
-        "texto": "textos\\RDC 22-2014--oficial.txt",
-        "data_processamento": "2026-09-06T00:58:23.591952+00:00",
+        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "sha256_fonte": "31d37f2b02f859ae84d34b1145ea1a33dac708bd317461032ee32f5537d2dc53",
+        "sha256_texto": "3d78c0cd40aa71309944d3a84505bcceb2b84fbebe22a7511b11876d9379f33f",
+        "status_vigencia": "vigente_com_alteracoes",
+        "status_fonte": "AnvisaLegis: Vigente com Alterações",
+        "texto": "textos/RDC 22-2014--oficial.txt",
+        "data_processamento": "2026-09-17T08:55:38.229656+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
       }
     },
     "RDC 222-2018": {
@@ -772,6 +773,94 @@
           "codificacao": "windows-1252",
           "elementos_removidos": 18
         }
+      }
+    },
+    "Decreto Estadual SP 69118-2024": {
+      "arquivo": "decreto-estadual-sp-69118-2024.json",
+      "nos": 5113,
+      "sha256_texto": "3958020ba8516f31055dcb45c748f7b705a2cea93abb5877e9bca3852b5ab7df",
+      "proveniencia": {
+        "norma": "Decreto Estadual SP 69118-2024",
+        "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+        "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+        "consultado_em": "2026-09-17T08:55:41.741399+00:00",
+        "data_fonte": "2024-12-09",
+        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "sha256_fonte": "bdc8f96bda85713b42b5134d04c02039077f3cb6b88e80958d2dff9cfd14a9f0",
+        "sha256_texto": "3958020ba8516f31055dcb45c748f7b705a2cea93abb5877e9bca3852b5ab7df",
+        "status_vigencia": "sem_revogacao_expressa",
+        "status_fonte": "ALESP: sem revogação expressa",
+        "texto": "textos/Decreto Estadual SP 69118-2024--oficial.txt",
+        "data_processamento": "2026-09-17T08:55:41.742588+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+      }
+    },
+    "Lei Municipal SP 13478-2002": {
+      "arquivo": "lei-municipal-sp-13478-2002.json",
+      "nos": 1723,
+      "sha256_texto": "6e0033ec693dad5998e8860766c7f2f119a45c2793f6a3b2552feb0a97812191",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 13478-2002",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+        "url_final": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+        "consultado_em": "2026-09-17T08:55:43.326422+00:00",
+        "data_fonte": "2002-12-30",
+        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "sha256_fonte": "569748fe961bfe24af2b14cd19802753605f7e6930a5b89f1d4f2afcb8f3af0a",
+        "sha256_texto": "6e0033ec693dad5998e8860766c7f2f119a45c2793f6a3b2552feb0a97812191",
+        "status_vigencia": "alterada_parcialmente_inconstitucional_parcialmente_revogada",
+        "status_fonte": "Prefeitura de São Paulo: ALTERADO, DECLARADO PARCIALMENTE INCONSTITUCIONAL, REVOGADO(A) PARCIALMENTE",
+        "texto": "textos/Lei Municipal SP 13478-2002--oficial.txt",
+        "data_processamento": "2026-09-17T08:55:43.327083+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+      }
+    },
+    "Lei 10357-2001": {
+      "arquivo": "lei-10357-2001.json",
+      "nos": 261,
+      "sha256_texto": "a0e13ea7905d85ef973b91669165109ecb4020b9ddc7ec73958bd06e500fd143",
+      "proveniencia": {
+        "norma": "Lei 10357-2001",
+        "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+        "url_final": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+        "consultado_em": "2026-09-17T08:55:44.443716+00:00",
+        "data_fonte": "2001-12-27",
+        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "sha256_fonte": "740e34953e55967d33bd55085fdbda60736ef4ca1b88f670d69f0fffec8b46f6",
+        "sha256_texto": "a0e13ea7905d85ef973b91669165109ecb4020b9ddc7ec73958bd06e500fd143",
+        "status_vigencia": "sem_revogacao_expressa",
+        "status_fonte": "Câmara dos Deputados: não consta revogação expressa; texto consolidado obtido no Planalto",
+        "texto": "textos/Lei 10357-2001--oficial.txt",
+        "data_processamento": "2026-09-17T08:55:44.443859+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+      }
+    },
+    "Lei Estadual SP 15266-2013": {
+      "arquivo": "lei-estadual-sp-15266-2013.json",
+      "nos": 2553,
+      "sha256_texto": "7b05ab8661599a96308536eac93e39eebd3bc60c2e558e38d978c7efb0b4ba00",
+      "proveniencia": {
+        "norma": "Lei Estadual SP 15266-2013",
+        "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+        "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+        "consultado_em": "2026-09-17T08:55:46.060961+00:00",
+        "data_fonte": "2013-12-26",
+        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "sha256_fonte": "36950ce5ed8d1dfbacd22d36d10ff52407355ecff7a720e756260c454779d3e9",
+        "sha256_texto": "7b05ab8661599a96308536eac93e39eebd3bc60c2e558e38d978c7efb0b4ba00",
+        "status_vigencia": "sem_revogacao_expressa_com_alteracoes",
+        "status_fonte": "ALESP: sem revogação expressa; há alterações cadastradas",
+        "texto": "textos/Lei Estadual SP 15266-2013--oficial.txt",
+        "data_processamento": "2026-09-17T08:55:46.061401+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
       }
     }
   },

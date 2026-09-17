@@ -1,13 +1,52 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 22, de 29/04/2014
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+Vigente com Alteraçőes
+Resoluçăo da Diretoria Colegiada - RDC nş 22, de 29/04/2014
+Ver mais detalhes
 MINISTÉRIO DA SAÚDE
 AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
 DIRETORIA COLEGIADA
 RESOLUÇÃO - RDC Nº 22, DE 29 DE ABRIL DE 2014
-Dispõe sobre o Sistema Nacional de Gerenciamento de Produtos Controlados - SNGPC, revoga a Resolução de Diretoria Colegiada nº 27, de 30 de março de 2007, e dá outras providências.
-A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe conferem os incisos III e IV, do art. 15 da Lei n.º 9.782, de 26 de janeiro de 1999, o inciso II, e §§ 1° e 3° do art. 54 do Regimento Interno aprovado nos termos do Anexo I da Portaria nº 354 da ANVISA, de 11 de agosto de 2006, republicada no DOU de 21 de agosto de 2006, e suas atualizações, tendo em vista o disposto nos incisos III, do art. 2º, III e IV, do art. 7º da Lei n.º 9.782, de 1999, e o Programa de Melhoria do Processo de Regulamentação da Agência, instituído por meio da Portaria nº 422, de 16 de abril de 2008, em reunião realizada em 15 de abril de 2014, adota a seguinte Resolução de Diretoria Colegiada e eu, Diretor-Presidente, determino a sua publicação:
+Dispõe sobre o Sistema Nacional de Gerenciamento de Produtos Controlados - SNGPC, revoga a
+Resolução de Diretoria Colegiada nº 27, de 30 de março de 2007
+, e dá outras providências.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe conferem os
+incisos III
+e
+IV, do art. 15
+da
+Lei n.º 9.782, de 26 de janeiro de 1999
+, o
+inciso II, e §§ 1° e 3° do art. 54 do Regimento Interno
+aprovado nos termos do Anexo I da
+Portaria nº 354 da ANVISA, de 11 de agosto de 2006
+, republicada no DOU de 21 de agosto de 2006, e suas atualizações, tendo em vista o disposto nos
+incisos III, do art. 2º
+,
+III
+e
+IV, do art. 7º
+da
+Lei n.º 9.782, de 1999
+, e o Programa de Melhoria do Processo de Regulamentação da Agência, instituído por meio da
+Portaria nº 422, de 16 de abril de 2008
+, em reunião realizada em 15 de abril de 2014, adota a seguinte Resolução de Diretoria Colegiada e eu, Diretor-Presidente, determino a sua publicação:
 CAPÍTULO I
 DA ABRANGÊNCIA E DOS OBJETIVOS
 Art. 1º Esta Resolução estabelece a utilização do Sistema Nacional de Gerenciamento de Produtos Controlados - SNGPC, por farmácias e drogarias, como um sistema de informação de vigilância sanitária para a escrituração de dados de produção, manipulação, distribuição, prescrição, dispensação e consumo de medicamentos e insumos farmacêuticos.
-Art. 2º O SNGPC abrange os medicamentos sujeitos ao controle especial a que se refere a Portaria SVS/MS nº 344, de 12 de maio de 1998, e os medicamentos antimicrobianos a que se refere a Resolução de Diretoria Colegiada RDC nº 20, de 5 de maio de 2011, ou as que vierem substituí-las.
+Art. 2º O SNGPC abrange os medicamentos sujeitos ao controle especial a que se refere a
+Portaria SVS/MS nº 344, de 12 de maio de 1998
+, e os medicamentos antimicrobianos a que se refere a
+Resolução de Diretoria Colegiada RDC nº 20, de 5 de maio de 2011
+, ou as que vierem substituí-las.
 Art. 3º Todas as farmácias e drogarias devem, obrigatoriamente, utilizar o SNGPC para escrituração sanitária dos medicamentos, insumos farmacêuticos e preparações e/ou especialidades farmacêuticas de que trata esta Resolução.
 Parágrafo único. As farmácias e drogarias de natureza pública e os estabelecimentos de atendimento privativo de unidade hospitalar ou de qualquer outra equivalente de assistência médica não estão sujeitos a esta Resolução enquanto o módulo específico do SNGPC não for disponibilizado e implantado no âmbito do Sistema Nacional de Vigilância Sanitária.
 Art. 4º São objetivos do SNGPC:
@@ -77,10 +116,14 @@ Art. 10. Os estabelecimentos devem realizar a escrituração de toda e qualquer 
 § 1º A escrituração é de responsabilidade do farmacêutico responsável técnico ou seu substituto legal devidamente cadastrado e associado no SNGPC.
 § 2º Devem ser escriturados os dados exigidos conforme normas específicas vigentes para os medicamentos e insumos farmacêuticos sujeitos a esta Resolução.
 § 3º Os dados da escrituração sanitária devem ser transmitidos eletronicamente em arquivos no intervalo de, no mínimo, 1 (um) e, no máximo, 7 (sete) dias consecutivos, ainda que nenhuma movimentação no estoque do estabelecimento tenha ocorrido no respectivo período.
+Veja Também
 § 4º A transmissão eletrônica deve ser realizada e atualizada, no mínimo, uma vez por semana.
+Veja Também
 § 5º Para os insumos farmacêuticos, deve ser escriturado o número do lote do fabricante.
 § 6º A escrituração deve ser mantida no sistema informatizado do estabelecimento, para controle e fiscalização pela autoridade sanitária.
-Art. 11. Na falta de farmacêutico substituto, a escrituração deve ser obrigatoriamente transmitida ao final dos períodos de ausências do farmacêutico responsável técnico, por meio do envio de arquivos sem movimentação de medicamentos sujeitos a controle especial, conforme Portaria SVS/MS nº 344, de 1998, ou a que vier a substituí-la.
+Art. 11. Na falta de farmacêutico substituto, a escrituração deve ser obrigatoriamente transmitida ao final dos períodos de ausências do farmacêutico responsável técnico, por meio do envio de arquivos sem movimentação de medicamentos sujeitos a controle especial, conforme
+Portaria SVS/MS nº 344, de 1998
+, ou a que vier a substituí-la.
 Art. 12. A substituição definitiva ou eventual do farmacêutico responsável técnico no SNGPC deve ser precedida de finalização do inventário, de modo que as transmissões da escrituração possam ter continuidade pelo substituto ou pelo novo farmacêutico responsável técnico.
 § 1º Na hipótese do caput deste artigo, o novo farmacêutico responsável técnico ou o substituto deve conferir o inventário previamente finalizado.
 § 2º Nos casos em que houver divergência entre os dados do inventário finalizado anteriormente e o estoque existente no estabelecimento, o substituto ou o novo farmacêutico responsável técnico deve corrigir seu inventário antes de iniciar suas atividades e informar a autoridade sanitária local.
@@ -129,7 +172,11 @@ Art. 33. Não deverá ser objeto de autuação a falta de regularidade na transm
 Art. 34. Configurada infração por inobservância de preceitos legais, a autoridade sanitária deve tomar medidas necessárias dentro de sua competência e poderá comunicar o fato ao Conselho Profissional competente e acompanhar seu desdobramento.
 CAPÍTULO VII
 DAS DISPOSIÇÕES FINAIS
-Art. 35. A escrituração de medicamentos e insumos farmacêuticos sujeitos a esta Resolução substitui a escrituração realizada por meio de livro de registro ou sistema informatizado previamente autorizado pela autoridade sanitária competente, estabelecidos na Portaria SVS/MS nº 344, de 1998, e na Portaria SVS/MS nº 6, de 29 de janeiro de 1999, ou as que vierem substituí-las.
+Art. 35. A escrituração de medicamentos e insumos farmacêuticos sujeitos a esta Resolução substitui a escrituração realizada por meio de livro de registro ou sistema informatizado previamente autorizado pela autoridade sanitária competente, estabelecidos na
+Portaria SVS/MS nº 344, de 1998
+, e na
+Portaria SVS/MS nº 6, de 29 de janeiro de 1999
+, ou as que vierem substituí-las.
 § 1º Fica excepcionalmente admitida a adoção de rotinas não informatizadas pelo SNGPC, mediante manutenção do livro de registro, em municípios desprovidos de acesso à internet, condicionada à autorização pela autoridade sanitária local.
 § 2º Para os fins do disposto no § 1º, cabe à autoridade sanitária local comunicar o fato à área técnica da Anvisa responsável pela gestão do SNGPC.
 § 3º Fica excepcionalmente admitida a adoção de rotinas não informatizadas pelo SNGPC, mantendo-se a escrituração no sistema informatizado do estabelecimento, nos casos de apresentações comerciais fracionáveis e para os medicamentos ou insumos farmacêuticos com inconsistência.
@@ -137,9 +184,18 @@ Art. 36. Os estabelecimentos deverão manter a escrituração sanitária atualiz
 Parágrafo único. Durante a inspeção sanitária local, caso seja verificada divergência entre o estoque físico e o estoque no SNGPC, deverá ser considerada a existência de arquivos não enviados e/ou não validados no prazo previsto pelo § 4º do art. 10.
 Art. 37. Fica estabelecida a interface entre o SNGPC e o Sistema Nacional de Controle de Medicamentos - SNCM para os medicamentos sujeitos a esta Resolução.
 Art. 38. A área técnica competente da Anvisa adotará medidas ou procedimentos para os casos não previstos nesta Resolução.
-Art. 39. Sem prejuízo de outras cominações legais, inclusive penais, de que sejam passíveis os responsáveis técnicos e legais, a empresa responderá administrativa e civilmente por infração sanitária resultante da inobservância desta Resolução e demais normas complementares, nos termos da Lei nº 6.437, de 20 de agosto de 1977.
-Art. 40. Ficam revogadas a Resolução de Diretoria Colegiada nº 27, de 30 de março de 2007, a Instrução Normativa nº 7, de 24 de abril de 2007, e a Instrução Normativa nº 11, de 31 de outubro de 2007.
+Art. 39. Sem prejuízo de outras cominações legais, inclusive penais, de que sejam passíveis os responsáveis técnicos e legais, a empresa responderá administrativa e civilmente por infração sanitária resultante da inobservância desta Resolução e demais normas complementares, nos termos da
+Lei nº 6.437, de 20 de agosto de 1977
+.
+Art. 40. Ficam revogadas a
+Resolução de Diretoria Colegiada nº 27, de 30 de março de 2007
+, a
+Instrução Normativa nº 7, de 24 de abril de 2007
+, e a
+Instrução Normativa nº 11, de 31 de outubro de 2007
+.
 Art. 41. Esta Resolução entra em vigor na data de sua publicação.
 DIRCEU BRÁS APARECIDO BARBANO
 PUB D.O.U., 30/04/2014 - Seção 1
-Este texto não substitui a Publicação Oficial.
+Este texto năo substitui a Publicaçăo Oficial.
+Carregando...
