@@ -16,8 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Baixar repositório
+      - name: Baixar somente arquivos necessários
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/diagnosticar_ifa_regularidade.py
+          sparse-checkout-cone-mode: false
+          fetch-depth: 1
 
       - name: Preparar Python
         uses: actions/setup-python@v5
