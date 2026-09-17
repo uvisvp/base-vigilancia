@@ -1,0 +1,105 @@
+{
+  "schema": "alertas-sanitarios-manifest-v1",
+  "status": "ok",
+  "fonte": "https://consultas.anvisa.gov.br/api/consulta/alertasSanitarios",
+  "rota_oficial": "https://consultas.anvisa.gov.br/#/alertas-sanitarios/",
+  "gerado_em": "2026-09-16T17:45:53.214434+00:00",
+  "versao_gerador": "2026-08-31-alertas-completo-v2",
+  "total_alertas": 5146,
+  "cobertura": {
+    "com_registro": 4226,
+    "com_cnpj": 3490,
+    "com_lote_serie_modelo": 3754
+  },
+  "campos_alerta": [
+    "_versao_parser",
+    "id_alerta",
+    "numero_alerta",
+    "tipo_alerta",
+    "area",
+    "tipo_produto",
+    "data_publicacao",
+    "data_atualizacao",
+    "titulo",
+    "resumo",
+    "identificacao_produto",
+    "descricao_produto",
+    "problema",
+    "acao",
+    "motivacao",
+    "fabricante",
+    "recomendacoes",
+    "informacoes_complementares",
+    "registros",
+    "cnpjs",
+    "identificadores",
+    "outras_publicacoes",
+    "anexos",
+    "url_oficial"
+  ],
+  "campos_busca_ano": [
+    "a",
+    "i",
+    "d",
+    "t",
+    "area",
+    "tipo_produto",
+    "registros",
+    "cnpjs"
+  ],
+  "campos_referencia_indice": ["a", "i", "d", "t"],
+  "estrutura": {
+    "alertas": {
+      "pasta": "alertas/",
+      "padrao": "alertas/{prefixo_3}.json",
+      "fragmentacao": "3 primeiros dígitos de numero_alerta após zfill(5)",
+      "conteudo": "registros completos dos alertas"
+    },
+    "busca_ano": {
+      "pasta": "busca/",
+      "padrao": "busca/{ano}.json",
+      "fragmentacao": "ano de data_publicacao; sem_data quando indisponível",
+      "conteudo": "referências compactas para descoberta por período"
+    },
+    "indice_registro": {
+      "pasta": "indices/registros/",
+      "padrao": "indices/registros/{prefixo_3}.json",
+      "fragmentacao": "3 primeiros dígitos do registro normalizado",
+      "chave": "registro Anvisa normalizado apenas com dígitos"
+    },
+    "indice_cnpj": {
+      "pasta": "indices/cnpj/",
+      "padrao": "indices/cnpj/{prefixo_3}.json",
+      "fragmentacao": "3 primeiros dígitos do CNPJ normalizado",
+      "chave": "CNPJ normalizado com 14 dígitos"
+    },
+    "indice_lote_serie_modelo": {
+      "pasta": "indices/lotes_series_modelos/",
+      "padrao": "indices/lotes_series_modelos/{prefixo_2}.json",
+      "fragmentacao": "2 primeiros caracteres da chave normalizada A-Z0-9",
+      "chave": "lote, série ou modelo extraído do texto do alerta"
+    }
+  },
+  "semantica": {
+    "a": "numero_alerta",
+    "i": "id_alerta",
+    "d": "data_publicacao",
+    "t": "titulo",
+    "identificadores": "lista de objetos {tipo, valor, chave}, em que tipo pode ser lote, serie ou modelo"
+  },
+  "qualidade_dados": {
+    "registros": "Extraídos do texto por contexto de registro ou regularização Anvisa. Ausência não prova inexistência de registro relacionado ao alerta.",
+    "cnpjs": "Extraídos quando aparecem no texto no formato NN.NNN.NNN/NNNN-NN. Ausência não prova inexistência de empresa relacionada.",
+    "identificadores": "Lotes, séries e modelos são extraídos por rótulos contextuais do texto. Devem ser usados como evidência de correspondência, não como identidade automática isolada.",
+    "fabricante": "Campo textual da fonte; pode conter fabricante, distribuidor ou ambos. Não usar como chave única sem normalização e confirmação por outra base.",
+    "registro_como_chave": "Chave preferencial para cruzar alertas com bases de produtos quando presente.",
+    "cnpj_como_chave": "Chave preferencial para cruzar alertas com AFE/AE e dados cadastrais de empresa quando presente."
+  },
+  "regras_cruzamento": {
+    "forte": ["registro", "cnpj"],
+    "moderada": ["lote", "serie", "modelo"],
+    "contextual": ["titulo", "descricao_produto", "fabricante", "problema", "acao", "motivacao"],
+    "nao_concluir_por_ausencia": true
+  },
+  "observacao": "Versão completa sem cópia local dos PDFs anexos. Este manifest é recriado automaticamente pelo pipeline de Alertas Sanitários em cada atualização."
+}
