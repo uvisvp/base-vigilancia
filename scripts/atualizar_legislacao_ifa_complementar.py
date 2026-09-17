@@ -36,9 +36,10 @@ NORMAS = [
         "norma_id": "rdc-anvisa-362-2020",
         "norma": "RDC 362-2020",
         "rotulo": "RDC Anvisa nº 362/2020 — revogada",
-        "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf",
+        "url": "https://cvs.saude.sp.gov.br/zip/U_RS-MS-ANVISA-RDC-362_270320.pdf",
         "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf",
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "nota_fonte_texto": "Espelho institucional do Centro de Vigilância Sanitária do Estado de São Paulo utilizado para extração técnica. A referência normativa oficial permanece BVS/MS; a revogação é conferida na RDC 672/2022 da Anvisa.",
         "data_fonte": "2020-03-27",
         "status_vigencia": "revogada_pela_rdc_672_2022",
         "status_fonte": "Anvisa: RDC 672/2022, art. 12, revogou expressamente a RDC 362/2020; mantida no v12 para histórico regulatório",
@@ -150,6 +151,7 @@ def main() -> int:
             "fonte_oficial": n["fonte_oficial"],
             "fonte_texto_utilizada": n["url"],
             "fonte_status": n.get("fonte_status"),
+            "nota_fonte_texto": n.get("nota_fonte_texto"),
             "url_final": r.url,
             "consultado_em": agora(),
             "data_fonte": n["data_fonte"],
@@ -197,6 +199,7 @@ def main() -> int:
             "status_vigencia": n["status_vigencia"],
             "status_fonte": n["status_fonte"],
             "fonte_oficial": n["fonte_oficial"],
+            "fonte_texto_utilizada": n["url"],
             "formato_fonte": formato,
         })
 
