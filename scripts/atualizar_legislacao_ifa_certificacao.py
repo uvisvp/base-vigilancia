@@ -17,10 +17,9 @@ NORMAS=[
   'data_fonte':'2021-05-20','status_vigencia':'vigente_com_alteracoes','status_fonte':'AnvisaLegis: vigente com alterações; texto consolidado inclui alterações posteriores',
   'min_chars':18000,'obrig':['RDC Nº 497','Certificação de Boas Práticas','Art. 28','Insumos Farmacêuticos Ativos']},
  {'norma_id':'rdc-anvisa-362-2020','norma':'RDC 362-2020','grupo':'rdc-anvisa','rotulo':'RDC Anvisa nº 362/2020 — revogada',
-  'url':'https://cvs.saude.sp.gov.br/zip/U_RS-MS-ANVISA-RDC-362_270320.pdf',
-  'fonte_normativa_oficial':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000362&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020',
+  'url':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000362&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020',
   'fonte_status':'https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022',
-  'nota_fonte_texto':'Espelho do DOU preservado pelo Centro de Vigilância Sanitária/SP; a revogação é comprovada pelo art. 12 da RDC 672/2022.',
+  'nota_fonte_texto':'Texto histórico obtido no AnvisaLegis; a revogação é comprovada pelo art. 12 da RDC 672/2022.',
   'data_fonte':'2020-03-27','status_vigencia':'revogada_2022-05-02','status_fonte':'RDC 672/2022, art. 12; revogada com a entrada em vigor da RDC 672 em 2/5/2022',
   'min_chars':5000,'obrig':['RDC Nº 362','insumos farmacêuticos ativos','Art. 1']},
 ]
