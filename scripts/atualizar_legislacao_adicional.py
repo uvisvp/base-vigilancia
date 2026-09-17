@@ -152,17 +152,40 @@ def normalizar_rt_rdc57(doc):
     titulo = next((n for n in nos if int(n.get('ordem',0)) > ordem_inicio and str(n.get('texto','')).strip().upper().startswith('REGULAMENTO TÉCNICO PARA REGISTRO DE INSUMOS FARMACÊUTICOS ATIVOS')), None)
     if not titulo:
         raise RuntimeError('RDC 57-2009: título do Regulamento Técnico não localizado')
+
     remover = {marcador.get('id'), titulo.get('id')}
     nos = [n for n in nos if n.get('id') not in remover]
-    for no in nos:
+
+    # O estruturador genérico ainda considera o Art. 6 como contexto quando
+    # encontra o ANEXO sem número. Além disso, um inciso do item 2.1 pode ficar
+    # "aberto" e virar pai indevido dos itens seguintes. No Regulamento Técnico
+    # da RDC 57, os itens numerados devem ficar diretamente sob a raiz estável.
+    item_atual = None
+    for no in sorted(nos, key=lambda x: int(x.get('ordem', 0))):
         if int(no.get('ordem',0)) <= ordem_inicio:
             continue
-        nid = str(no.get('id') or '')
+        tipo = str(no.get('tipo') or '')
+        numero = str(no.get('numero') or '')
+
+        if tipo == 'item':
+            no['id'] = root + '::item::' + slug(numero)
+            no['pai'] = root
+            item_atual = no['id']
+            continue
+
+        if tipo in {'inciso', 'paragrafo'}:
+            pai_novo = item_atual or root
+            no['id'] = pai_novo + '::' + slug(tipo) + '::' + slug(numero)
+            no['pai'] = pai_novo
+            continue
+
         pai = str(no.get('pai') or '')
+        nid = str(no.get('id') or '')
+        if pai == old_parent or pai.startswith(old_parent + '::') or pai.startswith(root + '::'):
+            no['pai'] = item_atual or root
         if nid.startswith(old_parent + '::'):
             no['id'] = root + nid[len(old_parent):]
-        if pai == old_parent or pai.startswith(old_parent + '::'):
-            no['pai'] = root + pai[len(old_parent):]
+
     nos.append({
         'id':root,'norma':'RDC 57-2009','anexo':None,'tipo':'regulamento_tecnico','numero':'geral',
         'rotulo':'Regulamento Técnico','texto':str(titulo.get('texto') or '').strip(),'ordem':ordem_inicio,
@@ -170,21 +193,33 @@ def normalizar_rt_rdc57(doc):
     })
     nos.sort(key=lambda n:(int(n.get('ordem',0)), str(n.get('id',''))))
     doc['nos'] = nos
+
     ids = [n['id'] for n in nos if n.get('estrutural', True)]
     rep = sorted({x for x in ids if ids.count(x) > 1})
     if rep:
         raise RuntimeError(f'RDC 57-2009: IDs duplicados após normalização: {rep[:10]}')
+
     exigidos = [root + '::item::4-1', root + '::item::6-6']
     falt = [x for x in exigidos if not any(n.get('id') == x for n in nos)]
     if falt:
         raise RuntimeError(f'RDC 57-2009: itens estruturais não encontrados: {falt}')
+
+    presos = [
+        n.get('id') for n in nos
+        if int(n.get('ordem',0)) > ordem_inicio
+        and (
+            str(n.get('id','')).startswith(old_parent + '::')
+            or str(n.get('pai','')).startswith(old_parent)
+        )
+    ]
+    if presos:
+        raise RuntimeError('RDC 57-2009: dispositivos ainda vinculados ao Art. 6: ' + ', '.join(str(x) for x in presos[:10]))
+
     doc.setdefault('validacao', {})['regulamento_tecnico'] = {
         'id': root,
         'itens_confirmados': exigidos,
-        'vinculo_artigo_6_remanescente': sum(1 for n in nos if int(n.get('ordem',0)) > ordem_inicio and (str(n.get('id','')).startswith(old_parent+'::') or str(n.get('pai','')).startswith(old_parent+'::'))),
+        'vinculo_artigo_6_remanescente': 0,
     }
-    if doc['validacao']['regulamento_tecnico']['vinculo_artigo_6_remanescente']:
-        raise RuntimeError('RDC 57-2009: dispositivos do Regulamento Técnico ainda vinculados ao Art. 6')
     return doc
 
 
