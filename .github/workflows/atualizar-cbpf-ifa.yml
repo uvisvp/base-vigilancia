@@ -1,0 +1,53 @@
+name: Atualizar banco CBPF de IFA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_cbpf_ifa.py"
+      - ".github/workflows/atualizar-cbpf-ifa.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Extrair CBPF de IFA
+        run: python scripts/atualizar_cbpf_ifa.py
+
+      - name: Validar saída
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('dados/ifa_regularidade/cbpf_ifa.json')
+          d=json.loads(p.read_text(encoding='utf-8'))
+          assert d['schema']=='cbpf-ifa-v1'
+          assert d['total_ifa']>0
+          assert len(d['registros'])==d['total_ifa']
+          assert all('escopo_ifa' in r for r in d['registros'])
+          print('CBPF IFA:', d['total_ifa'], 'registros')
+          PY
+
+      - name: Publicar banco no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/ifa_regularidade/cbpf_ifa.json dados/ifa_regularidade/manifest.json
+          if git diff --cached --quiet; then
+            echo "Sem alterações."
+          else
+            git commit -m "Atualiza banco CBPF de IFA"
+            git push
+          fi
