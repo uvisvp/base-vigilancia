@@ -21510,18 +21510,22 @@
   "proveniencia": {
     "norma": "Lei Municipal SP 13478-2002",
     "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+    "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+    "fonte_status": null,
+    "nota_fonte_texto": null,
     "url_final": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
-    "consultado_em": "2026-09-17T08:55:43.326422+00:00",
+    "consultado_em": "2026-09-17T12:03:07.490544+00:00",
     "data_fonte": "2002-12-30",
-    "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+    "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+    "formato_fonte": "html",
     "sha256_fonte": "569748fe961bfe24af2b14cd19802753605f7e6930a5b89f1d4f2afcb8f3af0a",
     "sha256_texto": "6e0033ec693dad5998e8860766c7f2f119a45c2793f6a3b2552feb0a97812191",
     "status_vigencia": "alterada_parcialmente_inconstitucional_parcialmente_revogada",
     "status_fonte": "Prefeitura de São Paulo: ALTERADO, DECLARADO PARCIALMENTE INCONSTITUCIONAL, REVOGADO(A) PARCIALMENTE",
     "texto": "textos/Lei Municipal SP 13478-2002--oficial.txt",
-    "data_processamento": "2026-09-17T08:55:43.327083+00:00",
+    "data_processamento": "2026-09-17T12:03:07.491213+00:00",
     "schema": "proveniencia-legislativa-v1",
     "estruturar_alineas": true,
-    "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+    "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
   }
 }

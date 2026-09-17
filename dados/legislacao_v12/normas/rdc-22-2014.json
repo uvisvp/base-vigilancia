@@ -2473,18 +2473,22 @@
   "proveniencia": {
     "norma": "RDC 22-2014",
     "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+    "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+    "fonte_status": null,
+    "nota_fonte_texto": null,
     "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
-    "consultado_em": "2026-09-17T08:55:38.229422+00:00",
+    "consultado_em": "2026-09-17T12:02:59.701729+00:00",
     "data_fonte": "2014-04-29",
-    "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+    "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+    "formato_fonte": "html",
     "sha256_fonte": "31d37f2b02f859ae84d34b1145ea1a33dac708bd317461032ee32f5537d2dc53",
     "sha256_texto": "3d78c0cd40aa71309944d3a84505bcceb2b84fbebe22a7511b11876d9379f33f",
     "status_vigencia": "vigente_com_alteracoes",
     "status_fonte": "AnvisaLegis: Vigente com Alterações",
     "texto": "textos/RDC 22-2014--oficial.txt",
-    "data_processamento": "2026-09-17T08:55:38.229656+00:00",
+    "data_processamento": "2026-09-17T12:02:59.701969+00:00",
     "schema": "proveniencia-legislativa-v1",
     "estruturar_alineas": true,
-    "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+    "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
   }
 }

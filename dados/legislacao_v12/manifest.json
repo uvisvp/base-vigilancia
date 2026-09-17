@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-17T08:55:46.122119+00:00",
+  "gerado_em": "2026-09-17T12:03:14.868409+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -286,19 +286,23 @@
       "proveniencia": {
         "norma": "RDC 22-2014",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
-        "consultado_em": "2026-09-17T08:55:38.229422+00:00",
+        "consultado_em": "2026-09-17T12:02:59.701729+00:00",
         "data_fonte": "2014-04-29",
-        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
         "sha256_fonte": "31d37f2b02f859ae84d34b1145ea1a33dac708bd317461032ee32f5537d2dc53",
         "sha256_texto": "3d78c0cd40aa71309944d3a84505bcceb2b84fbebe22a7511b11876d9379f33f",
         "status_vigencia": "vigente_com_alteracoes",
         "status_fonte": "AnvisaLegis: Vigente com Alterações",
         "texto": "textos/RDC 22-2014--oficial.txt",
-        "data_processamento": "2026-09-17T08:55:38.229656+00:00",
+        "data_processamento": "2026-09-17T12:02:59.701969+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
       }
     },
     "RDC 222-2018": {
@@ -782,19 +786,23 @@
       "proveniencia": {
         "norma": "Decreto Estadual SP 69118-2024",
         "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+        "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
         "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
-        "consultado_em": "2026-09-17T08:55:41.741399+00:00",
+        "consultado_em": "2026-09-17T12:03:05.665629+00:00",
         "data_fonte": "2024-12-09",
-        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-        "sha256_fonte": "bdc8f96bda85713b42b5134d04c02039077f3cb6b88e80958d2dff9cfd14a9f0",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "818ae64298ad4436fb910523bb00a777be0a88e639207b799a23a1b246b235d5",
         "sha256_texto": "3958020ba8516f31055dcb45c748f7b705a2cea93abb5877e9bca3852b5ab7df",
         "status_vigencia": "sem_revogacao_expressa",
         "status_fonte": "ALESP: sem revogação expressa",
         "texto": "textos/Decreto Estadual SP 69118-2024--oficial.txt",
-        "data_processamento": "2026-09-17T08:55:41.742588+00:00",
+        "data_processamento": "2026-09-17T12:03:05.666840+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
       }
     },
     "Lei Municipal SP 13478-2002": {
@@ -804,19 +812,23 @@
       "proveniencia": {
         "norma": "Lei Municipal SP 13478-2002",
         "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
         "url_final": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
-        "consultado_em": "2026-09-17T08:55:43.326422+00:00",
+        "consultado_em": "2026-09-17T12:03:07.490544+00:00",
         "data_fonte": "2002-12-30",
-        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
         "sha256_fonte": "569748fe961bfe24af2b14cd19802753605f7e6930a5b89f1d4f2afcb8f3af0a",
         "sha256_texto": "6e0033ec693dad5998e8860766c7f2f119a45c2793f6a3b2552feb0a97812191",
         "status_vigencia": "alterada_parcialmente_inconstitucional_parcialmente_revogada",
         "status_fonte": "Prefeitura de São Paulo: ALTERADO, DECLARADO PARCIALMENTE INCONSTITUCIONAL, REVOGADO(A) PARCIALMENTE",
         "texto": "textos/Lei Municipal SP 13478-2002--oficial.txt",
-        "data_processamento": "2026-09-17T08:55:43.327083+00:00",
+        "data_processamento": "2026-09-17T12:03:07.491213+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
       }
     },
     "Lei 10357-2001": {
@@ -826,19 +838,23 @@
       "proveniencia": {
         "norma": "Lei 10357-2001",
         "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+        "fonte_texto_utilizada": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
         "url_final": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
-        "consultado_em": "2026-09-17T08:55:44.443716+00:00",
+        "consultado_em": "2026-09-17T12:03:08.595742+00:00",
         "data_fonte": "2001-12-27",
-        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-        "sha256_fonte": "740e34953e55967d33bd55085fdbda60736ef4ca1b88f670d69f0fffec8b46f6",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "6d76e9b40409872f75ddf5dcb098f262aa7f5daf9b6977f9c04085c0e474d318",
         "sha256_texto": "a0e13ea7905d85ef973b91669165109ecb4020b9ddc7ec73958bd06e500fd143",
         "status_vigencia": "sem_revogacao_expressa",
         "status_fonte": "Câmara dos Deputados: não consta revogação expressa; texto consolidado obtido no Planalto",
         "texto": "textos/Lei 10357-2001--oficial.txt",
-        "data_processamento": "2026-09-17T08:55:44.443859+00:00",
+        "data_processamento": "2026-09-17T12:03:08.595933+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
       }
     },
     "Lei Estadual SP 15266-2013": {
@@ -848,19 +864,109 @@
       "proveniencia": {
         "norma": "Lei Estadual SP 15266-2013",
         "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+        "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
         "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
-        "consultado_em": "2026-09-17T08:55:46.060961+00:00",
+        "consultado_em": "2026-09-17T12:03:10.114135+00:00",
         "data_fonte": "2013-12-26",
-        "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-        "sha256_fonte": "36950ce5ed8d1dfbacd22d36d10ff52407355ecff7a720e756260c454779d3e9",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "66933b3d6bf8dc631e057af0a16b7c27523250b2163e8b8bb460ed3014de2f29",
         "sha256_texto": "7b05ab8661599a96308536eac93e39eebd3bc60c2e558e38d978c7efb0b4ba00",
         "status_vigencia": "sem_revogacao_expressa_com_alteracoes",
         "status_fonte": "ALESP: sem revogação expressa; há alterações cadastradas",
         "texto": "textos/Lei Estadual SP 15266-2013--oficial.txt",
-        "data_processamento": "2026-09-17T08:55:46.061401+00:00",
+        "data_processamento": "2026-09-17T12:03:10.114587+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+      }
+    },
+    "RDC 359-2020": {
+      "arquivo": "rdc-359-2020.json",
+      "nos": 1241,
+      "sha256_texto": "9907e8e92d964ca33dffab7f0f635d793e10297ac4cf97488e8c7577bfb49e8f",
+      "proveniencia": {
+        "norma": "RDC 359-2020",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "consultado_em": "2026-09-17T12:03:11.745467+00:00",
+        "data_fonte": "2020-03-27",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "8fa11f431fc1e21ed0db191253a70b011962f29a8162548168dfe3a3833e75c9",
+        "sha256_texto": "9907e8e92d964ca33dffab7f0f635d793e10297ac4cf97488e8c7577bfb49e8f",
+        "status_vigencia": "vigente_com_alteracoes",
+        "status_fonte": "AnvisaLegis: Vigente com Alterações",
+        "texto": "textos/RDC 359-2020--oficial.txt",
+        "data_processamento": "2026-09-17T12:03:11.745836+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+      }
+    },
+    "RDC 361-2020": {
+      "arquivo": "rdc-361-2020.json",
+      "nos": 487,
+      "sha256_texto": "4cb5377f2c0451a0c4dd38f32c061a7222933397713f69c257b2d93029541648",
+      "proveniencia": {
+        "norma": "RDC 361-2020",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "fonte_status": null,
+        "nota_fonte_texto": null,
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+        "consultado_em": "2026-09-17T12:03:13.574926+00:00",
+        "data_fonte": "2020-03-27",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "0753666b6c113bbfeaf694d90272039cef2974be1362502cc9a9ab43af65d353",
+        "sha256_texto": "4cb5377f2c0451a0c4dd38f32c061a7222933397713f69c257b2d93029541648",
+        "status_vigencia": "alterador",
+        "status_fonte": "AnvisaLegis: Alterador; Anvisa informa vigência do marco regulatório",
+        "texto": "textos/RDC 361-2020--oficial.txt",
+        "data_processamento": "2026-09-17T12:03:13.575213+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+      }
+    },
+    "RDC 57-2009": {
+      "arquivo": "rdc-57-2009.json",
+      "nos": 282,
+      "sha256_texto": "09894193b190cf6956adf3eefb0038ebeaa839c3c9b44a29a319da01ec81d77d",
+      "proveniencia": {
+        "norma": "RDC 57-2009",
+        "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.html",
+        "fonte_texto_utilizada": "https://portal.crfsp.org.br/113-juridico/legislacao/1804-resolucao-rdc-no-57-de-18-de-novembro-de-2009.html",
+        "fonte_status": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/registro-de-ifa-rdc-57-2009-revogada",
+        "nota_fonte_texto": "Espelho institucional do CRF-SP utilizado para extração técnica do texto completo, inclusive o Regulamento Técnico. A referência normativa oficial permanece BVS/MS; a situação regulatória é conferida na Anvisa.",
+        "url_final": "https://portal.crfsp.org.br/113-juridico/legislacao/1804-resolucao-rdc-no-57-de-18-de-novembro-de-2009.html",
+        "consultado_em": "2026-09-17T12:03:14.862156+00:00",
+        "data_fonte": "2009-11-17",
+        "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+        "formato_fonte": "html",
+        "sha256_fonte": "07fae4cfed8f3458f5a9d4c73d270ec7a81837ef81da67beadcecbfba22cb865",
+        "sha256_texto": "09894193b190cf6956adf3eefb0038ebeaa839c3c9b44a29a319da01ec81d77d",
+        "status_vigencia": "revogada_2021-03-01",
+        "status_fonte": "Anvisa: revogada pela RDC 359/2020 a partir de 1º de março de 2021; mantida no v12 para análise de registros legados",
+        "texto": "textos/RDC 57-2009--oficial.txt",
+        "data_processamento": "2026-09-17T12:03:14.862427+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": false,
+        "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+      },
+      "regulamento_tecnico": {
+        "id": "rdc-57-2009::regulamento-tecnico",
+        "itens_confirmados": [
+          "rdc-57-2009::regulamento-tecnico::item::4-1",
+          "rdc-57-2009::regulamento-tecnico::item::6-6"
+        ],
+        "vinculo_artigo_6_remanescente": 0
       }
     }
   },

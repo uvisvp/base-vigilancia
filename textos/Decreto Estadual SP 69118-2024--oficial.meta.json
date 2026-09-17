@@ -1,17 +1,21 @@
 {
   "norma": "Decreto Estadual SP 69118-2024",
   "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+  "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+  "fonte_status": null,
+  "nota_fonte_texto": null,
   "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
-  "consultado_em": "2026-09-17T08:55:41.741399+00:00",
+  "consultado_em": "2026-09-17T12:03:05.665629+00:00",
   "data_fonte": "2024-12-09",
-  "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-  "sha256_fonte": "bdc8f96bda85713b42b5134d04c02039077f3cb6b88e80958d2dff9cfd14a9f0",
+  "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+  "formato_fonte": "html",
+  "sha256_fonte": "818ae64298ad4436fb910523bb00a777be0a88e639207b799a23a1b246b235d5",
   "sha256_texto": "3958020ba8516f31055dcb45c748f7b705a2cea93abb5877e9bca3852b5ab7df",
   "status_vigencia": "sem_revogacao_expressa",
   "status_fonte": "ALESP: sem revogação expressa",
   "texto": "textos/Decreto Estadual SP 69118-2024--oficial.txt",
-  "data_processamento": "2026-09-17T08:55:41.742588+00:00",
+  "data_processamento": "2026-09-17T12:03:05.666840+00:00",
   "schema": "proveniencia-legislativa-v1",
   "estruturar_alineas": true,
-  "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+  "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
 }

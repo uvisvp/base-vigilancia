@@ -1,6 +1,6 @@
 {
   "schema": "relatorio-legislacao-adicional-v1",
-  "gerado_em": "2026-09-17T08:55:34.998810+00:00",
+  "gerado_em": "2026-09-17T12:02:57.734763+00:00",
   "catalogo_atualizado": true,
   "normas": [
     {
@@ -10,7 +10,9 @@
       "chars": 24114,
       "status_vigencia": "vigente_com_alteracoes",
       "status_fonte": "AnvisaLegis: Vigente com Alterações",
-      "fonte": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014"
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+      "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000022&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2014",
+      "formato_fonte": "html"
     },
     {
       "norma": "Decreto Estadual SP 69118-2024",
@@ -19,7 +21,9 @@
       "chars": 139803,
       "status_vigencia": "sem_revogacao_expressa",
       "status_fonte": "ALESP: sem revogação expressa",
-      "fonte": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html"
+      "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+      "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2024/decreto-69118-09.12.2024.html",
+      "formato_fonte": "html"
     },
     {
       "norma": "Lei Municipal SP 13478-2002",
@@ -28,7 +32,9 @@
       "chars": 179879,
       "status_vigencia": "alterada_parcialmente_inconstitucional_parcialmente_revogada",
       "status_fonte": "Prefeitura de São Paulo: ALTERADO, DECLARADO PARCIALMENTE INCONSTITUCIONAL, REVOGADO(A) PARCIALMENTE",
-      "fonte": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002"
+      "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+      "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/lei-13478-de-30-de-dezembro-de-2002",
+      "formato_fonte": "html"
     },
     {
       "norma": "Lei 10357-2001",
@@ -37,7 +43,9 @@
       "chars": 11970,
       "status_vigencia": "sem_revogacao_expressa",
       "status_fonte": "Câmara dos Deputados: não consta revogação expressa; texto consolidado obtido no Planalto",
-      "fonte": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm"
+      "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+      "fonte_texto_utilizada": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+      "formato_fonte": "html"
     },
     {
       "norma": "Lei Estadual SP 15266-2013",
@@ -46,8 +54,43 @@
       "chars": 92566,
       "status_vigencia": "sem_revogacao_expressa_com_alteracoes",
       "status_fonte": "ALESP: sem revogação expressa; há alterações cadastradas",
-      "fonte": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html"
+      "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+      "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+      "formato_fonte": "html"
+    },
+    {
+      "norma": "RDC 359-2020",
+      "arquivo": "rdc-359-2020.json",
+      "nos": 1241,
+      "chars": 75017,
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_fonte": "AnvisaLegis: Vigente com Alterações",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+      "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+      "formato_fonte": "html"
+    },
+    {
+      "norma": "RDC 361-2020",
+      "arquivo": "rdc-361-2020.json",
+      "nos": 487,
+      "chars": 47385,
+      "status_vigencia": "alterador",
+      "status_fonte": "AnvisaLegis: Alterador; Anvisa informa vigência do marco regulatório",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+      "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&cod_menu=8542&cod_modulo=310&desItem=&desItemFim=&nomeTitulo=codigos&numeroAto=00000361&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+      "formato_fonte": "html"
+    },
+    {
+      "norma": "RDC 57-2009",
+      "arquivo": "rdc-57-2009.json",
+      "nos": 282,
+      "chars": 24255,
+      "status_vigencia": "revogada_2021-03-01",
+      "status_fonte": "Anvisa: revogada pela RDC 359/2020 a partir de 1º de março de 2021; mantida no v12 para análise de registros legados",
+      "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.html",
+      "fonte_texto_utilizada": "https://portal.crfsp.org.br/113-juridico/legislacao/1804-resolucao-rdc-no-57-de-18-de-novembro-de-2009.html",
+      "formato_fonte": "html"
     }
   ],
-  "total_normas_manifest": 34
+  "total_normas_manifest": 37
 }

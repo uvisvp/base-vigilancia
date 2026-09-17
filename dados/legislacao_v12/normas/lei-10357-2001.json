@@ -3324,18 +3324,22 @@
   "proveniencia": {
     "norma": "Lei 10357-2001",
     "fonte_oficial": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+    "fonte_texto_utilizada": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
+    "fonte_status": null,
+    "nota_fonte_texto": null,
     "url_final": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10357.htm",
-    "consultado_em": "2026-09-17T08:55:44.443716+00:00",
+    "consultado_em": "2026-09-17T12:03:08.595742+00:00",
     "data_fonte": "2001-12-27",
-    "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-    "sha256_fonte": "740e34953e55967d33bd55085fdbda60736ef4ca1b88f670d69f0fffec8b46f6",
+    "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+    "formato_fonte": "html",
+    "sha256_fonte": "6d76e9b40409872f75ddf5dcb098f262aa7f5daf9b6977f9c04085c0e474d318",
     "sha256_texto": "a0e13ea7905d85ef973b91669165109ecb4020b9ddc7ec73958bd06e500fd143",
     "status_vigencia": "sem_revogacao_expressa",
     "status_fonte": "Câmara dos Deputados: não consta revogação expressa; texto consolidado obtido no Planalto",
     "texto": "textos/Lei 10357-2001--oficial.txt",
-    "data_processamento": "2026-09-17T08:55:44.443859+00:00",
+    "data_processamento": "2026-09-17T12:03:08.595933+00:00",
     "schema": "proveniencia-legislativa-v1",
     "estruturar_alineas": true,
-    "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+    "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
   }
 }

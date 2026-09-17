@@ -1,17 +1,21 @@
 {
   "norma": "Lei Estadual SP 15266-2013",
   "fonte_oficial": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+  "fonte_texto_utilizada": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
+  "fonte_status": null,
+  "nota_fonte_texto": null,
   "url_final": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/lei-15266-26.12.2013.html",
-  "consultado_em": "2026-09-17T08:55:46.060961+00:00",
+  "consultado_em": "2026-09-17T12:03:10.114135+00:00",
   "data_fonte": "2013-12-26",
-  "tipo_data_fonte": "data_do_ato; texto oficial consultado em fonte institucional",
-  "sha256_fonte": "36950ce5ed8d1dfbacd22d36d10ff52407355ecff7a720e756260c454779d3e9",
+  "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+  "formato_fonte": "html",
+  "sha256_fonte": "66933b3d6bf8dc631e057af0a16b7c27523250b2163e8b8bb460ed3014de2f29",
   "sha256_texto": "7b05ab8661599a96308536eac93e39eebd3bc60c2e558e38d978c7efb0b4ba00",
   "status_vigencia": "sem_revogacao_expressa_com_alteracoes",
   "status_fonte": "ALESP: sem revogação expressa; há alterações cadastradas",
   "texto": "textos/Lei Estadual SP 15266-2013--oficial.txt",
-  "data_processamento": "2026-09-17T08:55:46.061401+00:00",
+  "data_processamento": "2026-09-17T12:03:10.114587+00:00",
   "schema": "proveniencia-legislativa-v1",
   "estruturar_alineas": true,
-  "escopo_validacao": "texto oficial estruturado para consulta; alterações/revogações específicas seguem as marcações da fonte oficial"
+  "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
 }

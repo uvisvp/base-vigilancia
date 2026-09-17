@@ -1,0 +1,21 @@
+{
+  "norma": "RDC 57-2009",
+  "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.html",
+  "fonte_texto_utilizada": "https://portal.crfsp.org.br/113-juridico/legislacao/1804-resolucao-rdc-no-57-de-18-de-novembro-de-2009.html",
+  "fonte_status": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/registro-de-ifa-rdc-57-2009-revogada",
+  "nota_fonte_texto": "Espelho institucional do CRF-SP utilizado para extração técnica do texto completo, inclusive o Regulamento Técnico. A referência normativa oficial permanece BVS/MS; a situação regulatória é conferida na Anvisa.",
+  "url_final": "https://portal.crfsp.org.br/113-juridico/legislacao/1804-resolucao-rdc-no-57-de-18-de-novembro-de-2009.html",
+  "consultado_em": "2026-09-17T12:03:14.862156+00:00",
+  "data_fonte": "2009-11-17",
+  "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+  "formato_fonte": "html",
+  "sha256_fonte": "07fae4cfed8f3458f5a9d4c73d270ec7a81837ef81da67beadcecbfba22cb865",
+  "sha256_texto": "09894193b190cf6956adf3eefb0038ebeaa839c3c9b44a29a319da01ec81d77d",
+  "status_vigencia": "revogada_2021-03-01",
+  "status_fonte": "Anvisa: revogada pela RDC 359/2020 a partir de 1º de março de 2021; mantida no v12 para análise de registros legados",
+  "texto": "textos/RDC 57-2009--oficial.txt",
+  "data_processamento": "2026-09-17T12:03:14.862427+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": false,
+  "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+}

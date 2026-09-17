@@ -1,0 +1,21 @@
+{
+  "norma": "RDC 359-2020",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+  "fonte_status": null,
+  "nota_fonte_texto": null,
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000359&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2020",
+  "consultado_em": "2026-09-17T12:03:11.745467+00:00",
+  "data_fonte": "2020-03-27",
+  "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
+  "formato_fonte": "html",
+  "sha256_fonte": "8fa11f431fc1e21ed0db191253a70b011962f29a8162548168dfe3a3833e75c9",
+  "sha256_texto": "9907e8e92d964ca33dffab7f0f635d793e10297ac4cf97488e8c7577bfb49e8f",
+  "status_vigencia": "vigente_com_alteracoes",
+  "status_fonte": "AnvisaLegis: Vigente com Alterações",
+  "texto": "textos/RDC 359-2020--oficial.txt",
+  "data_processamento": "2026-09-17T12:03:11.745836+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "texto estruturado para consulta; alterações/revogações específicas seguem as marcações e fontes oficiais identificadas na proveniência"
+}
