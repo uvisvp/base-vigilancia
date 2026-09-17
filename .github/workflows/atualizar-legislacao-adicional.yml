@@ -46,7 +46,7 @@ jobs:
           python-version: "3.12"
 
       - name: Instalar dependências
-        run: pip install --quiet requests beautifulsoup4 pypdf
+        run: pip install --quiet requests beautifulsoup4 pypdf fonttools
 
       - name: Verificar estruturador
         run: python scripts/estruturar_legislacao.py --autoteste
