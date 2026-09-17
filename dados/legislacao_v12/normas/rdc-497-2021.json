@@ -3284,21 +3284,21 @@
     "norma": "RDC 497-2021",
     "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
     "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
-    "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
-    "nota_fonte_texto": "Texto consolidado do AnvisaLegis. O texto consultado contém alterações posteriores, incluindo RDC 850/2024, RDC 982/2025 e RDC 1.032/2026.",
+    "fonte_status": null,
+    "nota_fonte_texto": null,
     "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
-    "consultado_em": "2026-09-17T14:13:38.919655+00:00",
+    "consultado_em": "2026-09-17T15:13:34.894442+00:00",
     "data_fonte": "2021-05-20",
-    "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+    "tipo_data_fonte": "data_do_ato; texto consultado em fonte institucional identificada na proveniência",
     "formato_fonte": "html",
     "sha256_fonte": "e5b4b8981610afdd517583fa013dc4ef326aa1e94b84987f0b8433f7f85dab9e",
     "sha256_texto": "d96505593de7a14f4ba90d7314b78fe9eba8c247d8e4e1b2a5e035dfb500db29",
     "status_vigencia": "vigente_com_alteracoes",
     "status_fonte": "AnvisaLegis: texto consolidado vigente com alterações posteriores",
     "texto": "textos/RDC 497-2021--oficial.txt",
-    "data_processamento": "2026-09-17T14:13:38.919885+00:00",
+    "data_processamento": "2026-09-17T15:13:34.894720+00:00",
     "schema": "proveniencia-legislativa-v1",
     "estruturar_alineas": true,
-    "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+    "escopo_validacao": "texto estruturado para consulta; vigência e alterações registradas segundo as fontes oficiais identificadas na proveniência"
   }
 }

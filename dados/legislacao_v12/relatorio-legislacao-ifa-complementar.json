@@ -1,0 +1,29 @@
+{
+  "schema": "relatorio-legislacao-ifa-complementar-v1",
+  "gerado_em": "2026-09-17T15:13:32.657784+00:00",
+  "normas": [
+    {
+      "norma": "RDC 362-2020",
+      "arquivo": "rdc-362-2020.json",
+      "nos": 63,
+      "chars": 9471,
+      "status_vigencia": "revogada_pela_rdc_672_2022",
+      "status_fonte": "Anvisa: RDC 672/2022, art. 12, revogou expressamente a RDC 362/2020; mantida no v12 para histórico regulatório",
+      "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf",
+      "fonte_texto_utilizada": "https://raw.githubusercontent.com/uvisvp/base-vigilancia/main/fontes/rdc-anvisa-362-2020/texto_oficial_extraido.txt",
+      "formato_fonte": "html"
+    },
+    {
+      "norma": "RDC 497-2021",
+      "arquivo": "rdc-497-2021.json",
+      "nos": 264,
+      "chars": 27880,
+      "status_vigencia": "vigente_com_alteracoes",
+      "status_fonte": "AnvisaLegis: texto consolidado vigente com alterações posteriores",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
+      "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000497&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2021",
+      "formato_fonte": "html"
+    }
+  ],
+  "total_normas_manifest": 39
+}
