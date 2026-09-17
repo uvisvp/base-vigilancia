@@ -36,10 +36,10 @@ NORMAS = [
         "norma_id": "rdc-anvisa-362-2020",
         "norma": "RDC 362-2020",
         "rotulo": "RDC Anvisa nº 362/2020 — revogada",
-        "url": "https://cvs.saude.sp.gov.br/zip/U_RS-MS-ANVISA-RDC-362_270320.pdf",
+        "url": "https://raw.githubusercontent.com/uvisvp/base-vigilancia/main/fontes/rdc-anvisa-362-2020/texto_oficial_extraido.txt",
         "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/RDC_362_2020_.pdf",
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000672&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
-        "nota_fonte_texto": "Espelho institucional do Centro de Vigilância Sanitária do Estado de São Paulo utilizado para extração técnica. A referência normativa oficial permanece BVS/MS; a revogação é conferida na RDC 672/2022 da Anvisa.",
+        "nota_fonte_texto": "Cópia textual conferida a partir do PDF oficial da BVS/MS, armazenada no próprio repositório porque a BVS/MS bloqueia o download automatizado pelo runner. A referência normativa oficial permanece a BVS/MS; a revogação é conferida na RDC 672/2022 da Anvisa.",
         "data_fonte": "2020-03-27",
         "status_vigencia": "revogada_pela_rdc_672_2022",
         "status_fonte": "Anvisa: RDC 672/2022, art. 12, revogou expressamente a RDC 362/2020; mantida no v12 para histórico regulatório",
@@ -141,7 +141,8 @@ def main() -> int:
 
         pasta = FONTES / n["norma_id"]
         pasta.mkdir(parents=True, exist_ok=True)
-        (pasta / f"texto_bruto.{formato}").write_bytes(r.content)
+        if "raw.githubusercontent.com" not in n["url"]:
+            (pasta / f"texto_bruto.{formato}").write_bytes(r.content)
 
         txt_path = TEXTOS / f"{n['norma']}--oficial.txt"
         txt_path.write_text(txt, encoding="utf-8")
