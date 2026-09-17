@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -49,5 +51,13 @@ jobs:
             echo "Sem alterações."
           else
             git commit -m "Atualiza banco CBPF de IFA"
-            git push
+            for tentativa in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push concorrente detectado; sincronizando (tentativa ${tentativa}/3)."
+              git fetch origin main
+              git rebase origin/main
+            done
+            git push origin HEAD:main
           fi
