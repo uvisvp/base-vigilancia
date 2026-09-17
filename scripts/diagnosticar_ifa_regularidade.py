@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 """Diagnóstico não destrutivo dos painéis oficiais CADIFA e CBPF de IFA.
 
-Descobre o link Power BI do Painel CADIFA a partir da página oficial da Anvisa,
-inspeciona também o painel oficial de empresas certificadas em Insumos
-Farmacêuticos e registra entidades/campos do modelo sem publicar banco.
+Descobre painéis Power BI a partir de páginas oficiais da Anvisa, inspeciona o
+modelo de dados e identifica o painel CADIFA pelos campos publicados. Também
+inspeciona o painel oficial de certificados de boas práticas.
 """
 from __future__ import annotations
 
+from collections import deque
 from pathlib import Path
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urljoin, urlparse, urlunparse, unquote
 import gzip
 import html as htmlmod
 import json
@@ -21,10 +22,11 @@ import uuid
 OUT = Path("diagnostico-ifa-regularidade")
 OUT.mkdir(exist_ok=True)
 
-CADIFA_FONTE = (
-    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/"
-    "anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo"
-)
+CADIFA_FONTES = [
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
+    "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/cadifa",
+    "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos",
+]
 CBPF_IFA_PAINEL = (
     "https://app.powerbi.com/view?"
     "r=eyJrIjoiNTU3MDE4OTgtYzc5NS00NGRhLWI0ODMtOWUzN2E2Njc5MzdlIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9"
@@ -46,6 +48,7 @@ def abrir(url: str, headers: dict | None = None) -> tuple[str, dict]:
             corpo = gzip.decompress(corpo)
         return corpo.decode("utf-8", errors="replace"), {
             "status": getattr(resp, "status", None),
+            "url_final": resp.geturl(),
             "etag": resp.headers.get("ETag"),
             "last_modified": resp.headers.get("Last-Modified"),
             "content_type": resp.headers.get("Content-Type"),
@@ -124,23 +127,68 @@ def extrair_entidades(obj):
     return encontrados
 
 
-def achar_powerbi_cadifa() -> tuple[str, dict]:
-    texto, meta = abrir(CADIFA_FONTE)
-    texto = htmlmod.unescape(texto).replace("\\u0026", "&")
-    urls = re.findall(r'https?://app\.powerbi\.com/view\?[^"\'<>\s]+', texto, flags=re.I)
-    limpas = []
-    for u in urls:
-        u = u.rstrip(".,);]")
-        if u not in limpas:
-            limpas.append(u)
-    if not limpas:
-        # Links Plone podem vir com &amp; ou redirecionadores; procura hrefs de modo mais amplo.
-        hrefs = re.findall(r'href=["\']([^"\']+)["\']', texto, flags=re.I)
-        limpas = [htmlmod.unescape(x) for x in hrefs if "powerbi.com" in x.lower()]
-    if not limpas:
-        raise RuntimeError("Link Power BI do Painel CADIFA não localizado na página oficial")
-    # O primeiro painel referido no texto é o de CADIFAs emitidas; o segundo é a fila de notificações.
-    return limpas[0], {**meta, "links_powerbi_encontrados": limpas}
+def normalizar_html(texto: str) -> str:
+    for _ in range(2):
+        texto = htmlmod.unescape(texto)
+        texto = texto.replace("\\u0026", "&").replace("\\/", "/")
+    return texto
+
+
+def extrair_urls(texto: str, base: str) -> list[str]:
+    texto = normalizar_html(texto)
+    candidatos = []
+    candidatos += re.findall(r'https?://[^"\'<>\s]+', texto, flags=re.I)
+    candidatos += re.findall(r'href=["\']([^"\']+)["\']', texto, flags=re.I)
+    candidatos += re.findall(r'(?:url|href)\s*[:=]\s*["\']([^"\']+)["\']', texto, flags=re.I)
+    saida = []
+    for bruto in candidatos:
+        u = unquote(htmlmod.unescape(bruto)).strip().rstrip(".,);]}")
+        if not u or u.startswith(("#", "javascript:", "mailto:")):
+            continue
+        u = urljoin(base, u)
+        if u not in saida:
+            saida.append(u)
+    return saida
+
+
+def eh_anvisa(url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower()
+    return host in {"www.gov.br", "gov.br"} and "/anvisa/" in url.lower()
+
+
+def interessante_cadifa(url: str) -> bool:
+    s = unquote(url).lower()
+    return any(x in s for x in ("cadifa", "insumo", "farmaceut", "painel", "powerbi", "publicacoes-de-insumos"))
+
+
+def descobrir_powerbi_cadifa() -> tuple[list[str], dict]:
+    fila = deque((u, 0) for u in CADIFA_FONTES)
+    visitados = set()
+    powerbis = []
+    paginas = []
+    erros = []
+
+    while fila and len(visitados) < 35:
+        url, nivel = fila.popleft()
+        if url in visitados or nivel > 2:
+            continue
+        visitados.add(url)
+        try:
+            texto, meta = abrir(url)
+        except Exception as exc:
+            erros.append({"url": url, "erro": f"{type(exc).__name__}: {exc}"})
+            continue
+        links = extrair_urls(texto, meta.get("url_final") or url)
+        paginas.append({"url": url, "url_final": meta.get("url_final"), "nivel": nivel, "links": len(links)})
+        for link in links:
+            if "app.powerbi.com" in link.lower():
+                if link not in powerbis:
+                    powerbis.append(link)
+                continue
+            if nivel < 2 and eh_anvisa(link) and interessante_cadifa(link) and link not in visitados:
+                fila.append((link, nivel + 1))
+
+    return powerbis, {"visitados": sorted(visitados), "paginas": paginas, "erros": erros}
 
 
 def diagnosticar_painel(nome: str, pagina: str, fonte_oficial: str) -> dict:
@@ -168,17 +216,46 @@ def diagnosticar_painel(nome: str, pagina: str, fonte_oficial: str) -> dict:
     }
 
 
+def pontuar_cadifa(diag: dict) -> int:
+    palavras = " ".join(
+        [e.get("entidade", "") + " " + " ".join(e.get("campos", [])) for e in diag.get("entidades", [])]
+    ).lower()
+    pontos = 0
+    for termo, peso in (("cadifa", 5), ("detentor", 4), ("insumo", 3), ("ifa", 3), ("revis", 3), ("carta", 2), ("válid", 2), ("valid", 2)):
+        if termo in palavras:
+            pontos += peso
+    if "notifica" in palavras or "pós-registro" in palavras or "pos-registro" in palavras:
+        pontos -= 4
+    return pontos
+
+
 def main():
     resultado = {"fontes": {}, "erros": []}
 
     try:
-        cadifa_url, meta_cadifa = achar_powerbi_cadifa()
+        urls, meta_descoberta = descobrir_powerbi_cadifa()
         resultado["fontes"]["cadifa_descoberta"] = {
-            "fonte": CADIFA_FONTE,
-            "painel": cadifa_url,
-            "meta": meta_cadifa,
+            "fontes": CADIFA_FONTES,
+            "paineis_encontrados": urls,
+            "meta": meta_descoberta,
         }
-        resultado["fontes"]["cadifa"] = diagnosticar_painel("cadifa", cadifa_url, CADIFA_FONTE)
+        candidatos = []
+        for i, url in enumerate(urls, 1):
+            try:
+                diag = diagnosticar_painel(f"cadifa_candidato_{i}", url, CADIFA_FONTES[0])
+                diag["pontuacao_cadifa"] = pontuar_cadifa(diag)
+                candidatos.append(diag)
+            except Exception as exc:
+                resultado["erros"].append({"fonte": f"cadifa_candidato_{i}", "url": url, "erro": f"{type(exc).__name__}: {exc}"})
+        if candidatos:
+            candidatos.sort(key=lambda x: x.get("pontuacao_cadifa", 0), reverse=True)
+            resultado["fontes"]["cadifa_candidatos"] = candidatos
+            if candidatos[0].get("pontuacao_cadifa", 0) >= 5:
+                resultado["fontes"]["cadifa"] = candidatos[0]
+            else:
+                resultado["erros"].append({"fonte": "cadifa", "erro": "Painéis encontrados, mas nenhum modelo apresentou campos suficientes para identificação segura como Painel CADIFA"})
+        else:
+            resultado["erros"].append({"fonte": "cadifa", "erro": "Nenhum Power BI foi localizado seguindo apenas páginas oficiais da Anvisa"})
     except Exception as exc:
         resultado["erros"].append({"fonte": "cadifa", "erro": f"{type(exc).__name__}: {exc}"})
 
@@ -198,6 +275,11 @@ def main():
         for ent in item["entidades"]:
             linhas += [f"- **{ent['entidade']}**: " + " | ".join(ent["campos"])]
         linhas.append("")
+    descoberta = resultado["fontes"].get("cadifa_descoberta", {})
+    linhas += ["## Descoberta CADIFA", "", f"Power BIs encontrados: **{len(descoberta.get('paineis_encontrados', []))}**", ""]
+    for u in descoberta.get("paineis_encontrados", []):
+        linhas.append(f"- `{u}`")
+    linhas.append("")
     if resultado["erros"]:
         linhas += ["## Erros", "", "```json", json.dumps(resultado["erros"], ensure_ascii=False, indent=2), "```", ""]
     (OUT / "RESUMO.md").write_text("\n".join(linhas), encoding="utf-8")
