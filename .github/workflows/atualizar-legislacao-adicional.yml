@@ -36,6 +36,9 @@ jobs:
             fontes/lei-municipal-sp-13478-2002/
             fontes/lei-federal-10357-2001/
             fontes/lei-estadual-sp-15266-2013/
+            fontes/rdc-anvisa-359-2020/
+            fontes/rdc-anvisa-361-2020/
+            fontes/rdc-anvisa-57-2009/
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -70,11 +73,22 @@ jobs:
                   fontes/lei-municipal-sp-13478-2002 \
                   fontes/lei-federal-10357-2001 \
                   fontes/lei-estadual-sp-15266-2013 \
+                  fontes/rdc-anvisa-359-2020 \
+                  fontes/rdc-anvisa-361-2020 \
+                  fontes/rdc-anvisa-57-2009 \
                   textos/ \
                   dados/legislacao_v12/
           if git diff --cached --quiet; then
             echo "Nenhuma alteração para publicar."
           else
             git commit -m "Atualiza legislação adicional no v12"
-            git push
+            for tentativa in 1 2 3; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push concorrente detectado; sincronizando (tentativa ${tentativa}/3)."
+              git fetch origin main
+              git rebase origin/main
+            done
+            git push origin HEAD:main
           fi
