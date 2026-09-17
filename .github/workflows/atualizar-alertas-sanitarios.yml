@@ -30,6 +30,9 @@ jobs:
       - name: Gerar base completa de alertas
         run: python scripts/gerar_alertas_sanitarios.py
 
+      - name: Gerar manifest próprio de Alertas Sanitários
+        run: python scripts/gerar_manifest_alertas_sanitarios.py
+
       - name: Verificar alterações
         id: changes
         run: |
