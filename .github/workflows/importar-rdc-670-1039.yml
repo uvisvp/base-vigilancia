@@ -1,4 +1,4 @@
-name: Importar RDC 670-2022 e 1039-2026
+name: Importar RDC 670-2022 e 1039-2026 oficial
 
 on:
   workflow_dispatch:
