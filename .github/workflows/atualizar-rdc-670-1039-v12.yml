@@ -1,0 +1,67 @@
+name: Atualizar RDC 670 e 1039 no v12
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atualizar_legislacao_rdc_670_1039.py"
+      - ".github/workflows/atualizar-rdc-670-1039-v12.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legislacao-rdc-670-1039
+  cancel-in-progress: true
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests beautifulsoup4 pypdf
+      - run: python scripts/estruturar_legislacao.py --autoteste
+      - name: Baixar, estruturar e incorporar as duas RDC
+        run: python scripts/atualizar_legislacao_rdc_670_1039.py
+      - name: Validar nós essenciais
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          base=Path("dados/legislacao_v12")
+          testes={
+            "rdc-670-2022.json":["rdc-670-2022::artigo::7","rdc-670-2022::artigo::8"],
+            "rdc-1039-2026.json":["rdc-1039-2026::artigo::1","rdc-1039-2026::artigo::2"],
+          }
+          for arq,ids in testes.items():
+            p=base/"normas"/arq
+            d=json.loads(p.read_text(encoding="utf-8"))
+            mapa={n["id"]:n for n in d["nos"]}
+            for i in ids:
+              assert i in mapa, (arq,i)
+              assert mapa[i].get("texto"), (arq,i,"sem texto")
+          m=json.loads((base/"manifest.json").read_text(encoding="utf-8"))
+          assert "RDC 670-2022" in m["normas"]
+          assert "RDC 1039-2026" in m["normas"]
+          print("OK: normas hierárquicas e nós essenciais resolvíveis")
+          PY
+      - name: Publicar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fontes/normas.csv fontes/rdc-anvisa-670-2022 fontes/rdc-anvisa-1039-2026 textos/ dados/legislacao_v12/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publica RDC 670/2022 e RDC 1039/2026 no v12"
+          for tentativa in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          git push origin HEAD:main
