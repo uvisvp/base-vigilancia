@@ -1,4 +1,4 @@
-name: Atualizar RDC 670 e 1039 no v12
+name: Atualizar RDC 670 e 1039 no v12 - executar
 
 on:
   workflow_dispatch:
