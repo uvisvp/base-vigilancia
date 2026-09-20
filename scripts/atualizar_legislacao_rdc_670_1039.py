@@ -218,9 +218,39 @@ def main() -> int:
         for no in doc.get("nos", []):
             no["status_vigencia"] = n["status_vigencia"]
 
+        # O estruturador v12 já diferencia artigos repetidos por ::ocorrencia-N.
+        # Parágrafos/incisos/itens ligados a essas ocorrências também precisam herdar
+        # um identificador único. Quando a fonte oficial repete um dispositivo (por
+        # exemplo, texto original + redação alterada), desambiguamos somente os IDs
+        # duplicados, preservando o primeiro ID canônico para o resolvedor do app.
+        vistos = {}
+        remap = {}
+        for no in doc.get("nos", []):
+            if not no.get("estrutural", True):
+                continue
+            oid = no["id"]
+            vistos[oid] = vistos.get(oid, 0) + 1
+            if vistos[oid] > 1:
+                novo_id = f"{oid}::ocorrencia-{vistos[oid]}"
+                remap[(oid, vistos[oid])] = novo_id
+                no["id"] = novo_id
+                no["ocorrencia_id"] = vistos[oid]
+                no["id_repetido_na_fonte"] = True
+
+        # Reaponta pais para a ocorrência estrutural imediatamente anterior quando
+        # necessário. O primeiro dispositivo mantém o ID canônico.
+        ultimo = {}
+        for no in doc.get("nos", []):
+            pai = no.get("pai")
+            if pai:
+                no["pai"] = ultimo.get(pai, pai)
+            if no.get("estrutural", True):
+                base = no["id"].split("::ocorrencia-")[0]
+                ultimo[base] = no["id"]
+
         ids = [x["id"] for x in doc.get("nos", []) if x.get("estrutural", True)]
         if len(ids) != len(set(ids)):
-            raise RuntimeError(f"{n['norma']}: IDs estruturais repetidos")
+            raise RuntimeError(f"{n['norma']}: IDs estruturais repetidos após desambiguação")
 
         arquivo = slug(n["norma"]) + ".json"
         (SAIDA / "normas" / arquivo).write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
