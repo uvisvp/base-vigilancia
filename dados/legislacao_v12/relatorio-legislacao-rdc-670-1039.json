@@ -1,0 +1,26 @@
+{
+  "schema": "relatorio-legislacao-rdc-670-1039-v1",
+  "gerado_em": "2026-09-20T17:48:16.445417+00:00",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 670-2022",
+      "arquivo": "rdc-670-2022.json",
+      "nos": 84,
+      "chars": 8593,
+      "status_vigencia": "vigente",
+      "status_fonte": "AnvisaLegis",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022"
+    },
+    {
+      "norma": "RDC 1039-2026",
+      "arquivo": "rdc-1039-2026.json",
+      "nos": 265,
+      "chars": 37225,
+      "status_vigencia": "vigente",
+      "status_fonte": "AnvisaLegis",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026"
+    }
+  ],
+  "total_normas_manifest": 42
+}

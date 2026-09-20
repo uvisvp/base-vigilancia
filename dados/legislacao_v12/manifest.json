@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-17T23:21:08.172036+00:00",
+  "gerado_em": "2026-09-20T17:48:19.501070+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -1042,6 +1042,58 @@
         "data_processamento": "2026-09-17T23:21:03.694118+00:00",
         "schema": "proveniencia-legislativa-v1",
         "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
+      }
+    },
+    "RDC 670-2022": {
+      "arquivo": "rdc-670-2022.json",
+      "nos": 84,
+      "sha256_texto": "75dda0d79924dfefaebcd049537129ee55fff785e33c687c10b4be67f19ff41b",
+      "proveniencia": {
+        "norma": "RDC 670-2022",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "consultado_em": "2026-09-20T17:48:18.137013+00:00",
+        "data_fonte": "2022-03-30",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "a531cd4cb4b39f013506188fd913cdbd7324aed34766b13ac6bff419c23aac99",
+        "sha256_texto": "75dda0d79924dfefaebcd049537129ee55fff785e33c687c10b4be67f19ff41b",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 670-2022--oficial.txt",
+        "data_processamento": "2026-09-20T17:48:18.137160+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 1039-2026": {
+      "arquivo": "rdc-1039-2026.json",
+      "nos": 265,
+      "sha256_texto": "131affac5ac997efd3dd3104655d048282cb90c62592216a71c5a379bb4d38c6",
+      "proveniencia": {
+        "norma": "RDC 1039-2026",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
+        "consultado_em": "2026-09-20T17:48:19.497059+00:00",
+        "data_fonte": "2026-08-26",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "f59703d15c257b0954ec56383cfdd73d1cfe6368a4565f090d3617d2acb23b22",
+        "sha256_texto": "131affac5ac997efd3dd3104655d048282cb90c62592216a71c5a379bb4d38c6",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 1039-2026--oficial.txt",
+        "data_processamento": "2026-09-20T17:48:19.497246+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
       }
     }
   },
