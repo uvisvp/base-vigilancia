@@ -1,0 +1,55 @@
+name: Importar RDC 670-2022 e 1039-2026
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/importar-rdc-670-1039.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet beautifulsoup4 pypdf requests
+      - name: Preparar catálogo das duas RDC
+        run: |
+          python - <<'PY'
+          import csv
+          ids={"rdc-anvisa-670-2022","rdc-anvisa-1039-2026"}
+          with open("fontes/normas.csv",encoding="utf-8",newline="") as f:
+              r=csv.DictReader(f); rows=[x for x in r if x["norma_id"] in ids]; fields=r.fieldnames
+          assert len(rows)==2, rows
+          with open("/tmp/normas-duas.csv","w",encoding="utf-8",newline="") as f:
+              w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+          PY
+      - name: Baixar exclusivamente do AnvisaLegis
+        run: |
+          python scripts/baixar_normas.py --catalogo /tmp/normas-duas.csv --destino fontes --relatorio /tmp/relatorio-download --forcar --falhar-se-houver-erro
+      - name: Extrair no padrão do banco
+        run: |
+          python scripts/extrair_textos.py --entrada fontes --saida textos --relatorio /tmp/relatorio-extracao
+      - name: Validar e publicar
+        run: |
+          test -s "textos/RDC 670-2022--oficial.txt"
+          test -s "textos/RDC 670-2022--oficial.meta.json"
+          test -s "textos/RDC 1039-2026--oficial.txt"
+          test -s "textos/RDC 1039-2026--oficial.meta.json"
+          grep -q "Art. 7" "textos/RDC 670-2022--oficial.txt"
+          grep -q "Art. 4" "textos/RDC 1039-2026--oficial.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "fontes/rdc-anvisa-670-2022" "fontes/rdc-anvisa-1039-2026" \
+                  "textos/RDC 670-2022--oficial.txt" "textos/RDC 670-2022--oficial.meta.json" \
+                  "textos/RDC 1039-2026--oficial.txt" "textos/RDC 1039-2026--oficial.meta.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "Importa RDC 670/2022 e RDC 1039/2026 do AnvisaLegis"
+            git pull --rebase origin main
+            git push origin main
+          fi
