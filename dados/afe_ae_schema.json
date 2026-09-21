@@ -1,6 +1,6 @@
 {
   "versao": 3,
-  "gerado_em": "2026-09-16T18:32:22.573893+00:00",
+  "gerado_em": "2026-09-21T15:53:29.756038+00:00",
   "fonte_primaria": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
   "fonte_enriquecimento": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/TA_CONSULTA_FUNCIONAMENTO_EMPRESA_NACIONAL.CSV",
   "dicionario_oficial": "https://dados.anvisa.gov.br/dados/CONSULTAS/EMPRESA_FISCALIZACAO_PRODUTO/Documentacao_e_Dicionario_de_Dados_Certificado_AFE.pdf",
@@ -152,37 +152,37 @@
     "historico_de_eventos"
   ],
   "regra": "Nenhum tipo AFE/AE, situação ou publicação é inferido pelo formato do número. O tipo decorre exclusivamente de ST_AUTORIZACAO_ESPECIAL e a situação exclusivamente de ATIVO, ambos documentados pela Anvisa.",
-  "linhas_fonte": 351522,
-  "registros_locais": 351522,
-  "vinculos_enriquecidos": 351522,
+  "linhas_fonte": 351699,
+  "registros_locais": 351699,
+  "vinculos_enriquecidos": 351699,
   "linhas_fonte_sem_vinculo": 0,
   "vinculos_ambiguos_descartados": 0,
   "metodos_vinculo": {
-    "processo+autorizacao+cnpj": 351522
+    "processo+autorizacao+cnpj": 351699
   },
   "cobertura": {
-    "total_autorizacoes": 351522,
-    "vinculos_enriquecidos": 351522,
+    "total_autorizacoes": 351699,
+    "vinculos_enriquecidos": 351699,
     "sem_vinculo_enriquecimento": 0,
-    "com_tipo": 351522,
-    "com_situacao": 351522,
-    "com_data_autorizacao": 350877,
-    "com_data_publicacao": 351522,
-    "com_data_cancelamento": 134825,
-    "com_data_carga_fonte": 351518,
-    "com_atividade": 351521,
-    "com_classe": 351522,
-    "com_autorizacao_nova": 320408,
-    "afe": 327584,
-    "ae": 23938,
-    "ativas": 216697,
-    "inativas": 134825
+    "com_tipo": 351699,
+    "com_situacao": 351699,
+    "com_data_autorizacao": 351054,
+    "com_data_publicacao": 351699,
+    "com_data_cancelamento": 134874,
+    "com_data_carga_fonte": 351695,
+    "com_atividade": 351698,
+    "com_classe": 351699,
+    "com_autorizacao_nova": 320584,
+    "afe": 327749,
+    "ae": 23950,
+    "ativas": 216825,
+    "inativas": 134874
   },
   "fragmentacao": {
     "fragmentos_principais": 981,
     "fragmentos_atividade": 981,
-    "maior_fragmento_principal": 4216342,
-    "maior_fragmento_atividade": 3625235
+    "maior_fragmento_principal": 4229223,
+    "maior_fragmento_atividade": 3637492
   },
   "casos_teste": "afe_ae_casos_teste.json"
 }
