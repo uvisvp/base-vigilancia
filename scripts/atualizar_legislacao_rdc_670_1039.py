@@ -42,6 +42,21 @@ HEAD = {
 
 NORMAS = [
     {
+        "norma_id": "rdc-anvisa-653-2022",
+        "norma": "RDC 653-2022",
+        "grupo": "rdc-anvisa",
+        "rotulo": "RDC Anvisa nº 653/2022",
+        "url": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9428&cod_modulo=310&link=S&numeroAto=00000653&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_normativa_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9428&cod_modulo=310&link=S&numeroAto=00000653&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9428&cod_modulo=310&link=S&numeroAto=00000653&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "data_fonte": "2022-03-24",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "min_chars": 1200,
+        "obrig": ["RDC", "653", "Art. 1", "Art. 2", "Art. 3"],
+    },
+    {
         "norma_id": "rdc-anvisa-670-2022",
         "norma": "RDC 670-2022",
         "grupo": "rdc-anvisa",
