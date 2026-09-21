@@ -16,10 +16,10 @@
   "norma_base": "Portaria SVS/MS 344/1998 - Anexo I",
   "norma_fonte": "RDC Anvisa 1.036/2026",
   "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&codTipo=&cod_menu=1696&cod_modulo=134&desItem=&desItemFim=&numeroAto=00001036&orgao=RDC%2FDC%2FANVISA%2FMS&pesquisa=true&seqAto=000&tipo=RDC&valorAno=2026",
-  "data_fonte": "Mon, 14 Sep 2026 15:56:44 GMT",
-  "gerado_em": "2026-09-14T15:56:45.159471+00:00",
+  "data_fonte": "Mon, 21 Sep 2026 15:56:33 GMT",
+  "gerado_em": "2026-09-21T15:56:33.564146+00:00",
   "listas": 9,
   "substancias": 476,
   "adendos": 101,
-  "sha256": "99d4a5177366b0e2361b2203e6981548adc2b9ffc330066319bd538ea7efef68"
+  "sha256": "cc71766f95b069fb3525e5d67fd0e9edf49e346c1a1562db80992f5d092c47d3"
 }
