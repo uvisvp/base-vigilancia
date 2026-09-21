@@ -1,6 +1,6 @@
 {
   "schema": "cadifa-v1",
-  "gerado_em": "2026-09-17T10:19:00.052829+00:00",
+  "gerado_em": "2026-09-21T16:03:38.950856+00:00",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
   "pagina_oficial_cadifa": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/cadifa",
   "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
@@ -30,7 +30,7 @@
     "numero_cadifa_explicito",
     "revisao_cadifa_explicita"
   ],
-  "total": 784,
+  "total": 785,
   "registros": [
     {
       "DS_APRESENTACAO_PRODUTO": "001",
@@ -2158,6 +2158,24 @@
     },
     {
       "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351145024202502",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "1110664257",
+      "NO_INSUMO_MINUSC": "cloridrato do ácido aminolevulínico",
+      "NO_RAZAO_SOCIAL_MAISC": "Heraeus Precious Metals Gmbh & Co. Kg",
+      "ifa": "cloridrato do ácido aminolevulínico",
+      "detentor": "Heraeus Precious Metals Gmbh & Co. Kg",
+      "processo": "25351145024202502",
+      "expediente": "1110664257",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
       "NU_PROCESSO": "25351146725202216",
       "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "DS_SITUACAO_APRESENTACAO": "Deferida",
@@ -2709,6 +2727,24 @@
       "detentor": "Optimus Drugs Private Limited",
       "processo": "25351183937202438",
       "expediente": "0465330240",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351184842202351",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "0301582238",
+      "NO_INSUMO_MINUSC": "cetoprofeno",
+      "NO_RAZAO_SOCIAL_MAISC": "Bec Chemicals Private Limited",
+      "ifa": "cetoprofeno",
+      "detentor": "Bec Chemicals Private Limited",
+      "processo": "25351184842202351",
+      "expediente": "0301582238",
       "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "codigo_assunto": "11637",
       "situacao": "Deferida",
@@ -10528,24 +10564,6 @@
     },
     {
       "DS_APRESENTACAO_PRODUTO": "001.1",
-      "NU_PROCESSO": "25351145024202502",
-      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
-      "DS_SITUACAO_APRESENTACAO": "Deferida",
-      "CO_ASSUNTO": "11637",
-      "NU_EXPEDIENTE": "1110664257",
-      "NO_INSUMO_MINUSC": "cloridrato do ácido aminolevulínico",
-      "NO_RAZAO_SOCIAL_MAISC": "Heraeus Deutschland Gmbh & Co. Kg",
-      "ifa": "cloridrato do ácido aminolevulínico",
-      "detentor": "Heraeus Deutschland Gmbh & Co. Kg",
-      "processo": "25351145024202502",
-      "expediente": "1110664257",
-      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
-      "codigo_assunto": "11637",
-      "situacao": "Deferida",
-      "apresentacao": "001.1"
-    },
-    {
-      "DS_APRESENTACAO_PRODUTO": "001.1",
       "NU_PROCESSO": "25351145158202272",
       "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "DS_SITUACAO_APRESENTACAO": "Deferida",
@@ -14145,5 +14163,5 @@
       "apresentacao": "006"
     }
   ],
-  "sha256_conteudo": "cc2ef6ecff32950c9cb14b96dd79a93b2fc7c779807a0532e2f58af7c89c77a7"
+  "sha256_conteudo": "5f8cab4aa84fcf6d4cf5658442230a01368847668e0085df0b625f94f3c41425"
 }
