@@ -39,6 +39,7 @@ jobs:
           from pathlib import Path
           base=Path("dados/legislacao_v12")
           testes={
+            "rdc-653-2022.json":["rdc-653-2022::artigo::1","rdc-653-2022::artigo::2","rdc-653-2022::artigo::3"],
             "rdc-670-2022.json":["rdc-670-2022::artigo::7","rdc-670-2022::artigo::8"],
             "rdc-1039-2026.json":["rdc-1039-2026::artigo::1","rdc-1039-2026::artigo::2"],
           }
@@ -50,6 +51,7 @@ jobs:
               assert i in mapa, (arq,i)
               assert mapa[i].get("texto"), (arq,i,"sem texto")
           m=json.loads((base/"manifest.json").read_text(encoding="utf-8"))
+          assert "RDC 653-2022" in m["normas"]
           assert "RDC 670-2022" in m["normas"]
           assert "RDC 1039-2026" in m["normas"]
           print("OK: normas hierárquicas e nós essenciais resolvíveis")
@@ -58,9 +60,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fontes/normas.csv fontes/rdc-anvisa-670-2022 fontes/rdc-anvisa-1039-2026 textos/ dados/legislacao_v12/
+          git add fontes/normas.csv fontes/rdc-anvisa-653-2022 fontes/rdc-anvisa-670-2022 fontes/rdc-anvisa-1039-2026 textos/ dados/legislacao_v12/
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Publica RDC 670/2022 e RDC 1039/2026 no v12"
+          git commit -m "Publica RDC 653/2022, RDC 670/2022 e RDC 1039/2026 no v12"
           for tentativa in 1 2 3; do
             if git push origin HEAD:main; then exit 0; fi
             git fetch origin main
