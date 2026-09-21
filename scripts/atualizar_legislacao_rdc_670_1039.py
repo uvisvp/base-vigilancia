@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Inclui no banco legislativo v12 normas de certificação relacionadas a IFA.
+"""Atualiza normas complementares no banco legislativo hierárquico v12.
 
 - RDC 362/2020: norma histórica, revogada pela RDC 672/2022.
 - RDC 497/2021: procedimentos administrativos de CBPF/CBPDA, vigente com alterações.
