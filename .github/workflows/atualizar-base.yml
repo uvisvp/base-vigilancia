@@ -50,6 +50,9 @@ jobs:
       - name: Gerar índices leves separados de nomes de medicamentos e IFA
         run: python scripts/gerar_indice_nomes_medicamentos.py
 
+      - name: Gerar índices de nomes de alimentos e de apresentações por registro
+        run: python scripts/gerar_indices_apoio.py
+
       - name: Gerar constituintes de suplementos
         run: python scripts/gerar_suplementos_constituintes.py
 
