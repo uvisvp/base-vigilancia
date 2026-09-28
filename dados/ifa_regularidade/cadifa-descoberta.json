@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-09-21T16:03:38.950856+00:00",
+  "gerado_em": "2026-09-28T17:59:33.214575+00:00",
   "painel_escolhido": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
   "pontuacao": 11,
   "entidade": "TA_DADOS_CADIFA",
@@ -41,10 +41,10 @@
       "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/seminario-cadifa-2025-principais-itens-de-exigencia-e-modulo-3/@@display-file/file",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/cadifa",
-      "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx/view",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-mudanca-do-detentor-da-cadifa-form-871-manual-f-anvisa-011-v-00/@@download/file",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-2-ifa.doc/view",
+      "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx/view",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc/view",
       "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-parlatorio-coifa-rev00.docx/view",
@@ -96,7 +96,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/manual-cadifa-de-procedimentos-administrativos-confira-a-nova-versao",
         "url_final": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/manual-cadifa-de-procedimentos-administrativos-confira-a-nova-versao",
         "nivel": 1,
-        "links": 105
+        "links": 106
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2023/saiba-como-agendar-reunioes-com-a-area-de-insumos-farmaceuticos-da-anvisa",
@@ -126,7 +126,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx",
         "nivel": 1,
-        "links": 99
+        "links": 3
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx/view",
@@ -160,15 +160,15 @@
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/schematic-representation-of-difa-submission/view",
-        "url_final": "http://www.gov.br/anvisa/en/regulation-of-products/active-pharmaceutical-ingredients/other-documents/schematic-representation-of-difa-submission",
+        "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/schematic-representation-of-difa-submission",
         "nivel": 1,
-        "links": 50
+        "links": 3
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/sugestao-de-nome/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/sugestao-de-nome",
         "nivel": 1,
-        "links": 99
+        "links": 3
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/seminario-cadifa-2025-atualizacoes-relacionadas-a-cadifa.pdf/@@display-file/file",
@@ -181,12 +181,6 @@
         "url_final": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/seminario-cadifa-2025-principais-itens-de-exigencia-e-modulo-3/@@display-file/file",
         "nivel": 1,
         "links": 7
-      },
-      {
-        "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc/view",
-        "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc",
-        "nivel": 1,
-        "links": 99
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-2-ifa.doc/view",
@@ -210,7 +204,7 @@
         "url": "https://www.gov.br/anvisa/search?origem=keyword&SearchableText=cadifa",
         "url_final": "https://www.gov.br/anvisa/search?origem=keyword&SearchableText=cadifa",
         "nivel": 2,
-        "links": 20
+        "links": 19
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/lista-de-peticoes-relacionadas-a-cadifa",
@@ -234,7 +228,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/perguntas-e-respostas-ifa-rdc-359-2020.pdf",
         "url_final": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/perguntas-e-respostas-ifa-rdc-359-2020.pdf",
         "nivel": 2,
-        "links": 96
+        "links": 99
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/perguntas-e-respostas-ifa-rdc-359-2020.pdf/@@display-file/file",
@@ -243,8 +237,8 @@
         "links": 39
       },
       {
-        "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx",
-        "url_final": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-cadastro-dhn.docx",
+        "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx",
+        "url_final": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx",
         "nivel": 2,
         "links": 99
       },
@@ -259,6 +253,10 @@
       {
         "url": "https://www.gov.br/anvisa/search?origem=keyword&SearchableText=insumo farmacêutico ativo",
         "erro": "InvalidURL: URL can't contain control characters. '/anvisa/search?origem=keyword&SearchableText=insumo farmacêutico ativo' (found at least ' ')"
+      },
+      {
+        "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc/view",
+        "erro": "URLError: <urlopen error [Errno 101] Network is unreachable>"
       },
       {
         "url": "https://www.gov.br/anvisa/search?origem=keyword&SearchableText=área de insumos farmacêuticos",
