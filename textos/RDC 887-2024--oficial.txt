@@ -1,0 +1,338 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 887, de 11/07/2024
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+Vigente
+Resoluçăo da Diretoria Colegiada - RDC nş 887, de 11/07/2024
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+RESOLUÇÃO - RDC Nº 887, DE 11 DE JULHO DE 2024
+Dispõe sobre as boas práticas de distribuição, armazenagem, transporte e dispensação de gases medicinais, e dá outras providências.
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o
+art. 15, III e IV
+,
+aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999
+, e ao
+art. 187, VI, § 1º do Regimento Interno
+aprovado pela
+Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021
+, resolve adotar a seguinte Resolução, conforme deliberado em reunião realizada em 10 de julho de 2024, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DISPOSIÇÕES INICIAIS
+Seção I
+Objetivo
+Art. 1º Esta Resolução estabelece requisitos de boas práticas relacionadas às atividades de distribuição, armazenagem, transporte e dispensação de gases medicinais, gases liquefeitos medicinais e líquidos criogênicos medicinais, em tanques ou cilindros, denominados em conjunto como "Gases Medicinais".
+Seção II
+Abrangência
+Art. 2º Esta Resolução aplica-se às empresas que realizam atividades de distribuição, armazenagem e transporte de Gases Medicinais, incluindo a atividade de dispensação para pessoas físicas.
+§ 1º Nenhuma das atividades citadas no caput pode alterar as características de segurança, qualidade e identidade do produto, estando as empresas que realizam tais atividades, restritas a exercer ações comerciais com Gases Medicinais, a granel ou em cilindros, previamente liberados por empresas fabricantes ou envasadoras.
+§ 2º As características de identidade e qualidade dos produtos distribuídos, transportados ou armazenados devem ser preservadas e rastreáveis de acordo com os certificados de análise e liberação expedidos pelos fabricantes e/ou envasadores.
+§ 3º O envase de gases medicinais, em qualquer estado físico, define o início de fabricação de um novo lote, desta forma a unidade que realize qualquer envase deve cumprir com a norma vigente de Boas Práticas de Fabricação de Gases Medicinais.
+Seção III
+Definições
+Art. 3º Para efeitos desta Resolução, são adotadas as seguintes definições:
+I - armazenagem: guarda, manuseio e conservação segura de Gases Medicinais, sem alterar as características de segurança, qualidade e identidade dos produtos;
+II - atenção farmacêutica: conceito de prática profissional para prevenir, detectar e permitir o acompanhamento ou a avaliação da eficácia do tratamento prescrito por profissional habilitado;
+III - assistência domiciliar: conjunto de atividades de caráter ambulatorial, programadas e continuadas, desenvolvidas em domicílio;
+IV - cliente: pessoa jurídica contratante dos serviços de distribuição, armazenagem ou transporte de Gases Medicinais;
+V - devolução: ato de retorno dos produtos de que trata esta Resolução para as empresas que realizam as atividades de distribuição e fornecimento;
+VI - distribuição: conjunto de atividades relacionadas à movimentação de cargas que inclui o abastecimento, armazenamento e expedição de Gases Medicinais, sem alteração das características de qualidade e identidade do produto entregue, excluída a atividade de fornecimento direto ao público;
+VII - dispensação: ato de fornecimento de gases medicinais ao usuário final, a título remunerado ou não;
+VIII - envase ou enchimento: operação referente ao acondicionamento de gases medicinais em cilindros ou tanques criogênicos móveis, incluindo caminhões- tanque;
+IX - expedição: conjunto de procedimentos relacionados ao embarque para fins de transporte de Gases Medicinais ao cliente;
+X - fracionamento: ato de abastecimento sequencial de tanques em clientes a partir de um lote de Gás Medicinal a granel, sem alteração das características de qualidade, identidade e estado físico do lote anteriormente produzido ou envasado pelo fabricante;
+XI - Sistema de Gestão da Qualidade: ações sistemáticas para assegurar que um produto cumpre com seus requisitos de qualidade;
+XII - Gás Medicinal: gás, ou mistura de gases, destinado a tratar e prevenir doenças em humanos; ou administrado a humanos para fins de diagnóstico médico, restaurar, corrigir ou modificar funções fisiológicas;
+XIII - Gás Não Medicinal ou Gás Industrial: gases para uso em atividades industriais, podendo ou não apresentar mesma qualidade ou especificação dos Gases Medicinais, mas não sendo considerado um medicamento;
+XIV - Gás Liquefeito Medicinal: Gás na pressão de vapor que permanece parcialmente liquefeito em temperatura acima de - 50 °C (menos cinquenta graus Celsius);
+XV - Gás Medicinal a Granel: Gás destinado ao uso medicinal que tenha completado todo o processamento de fabricação e liberação, excluída a etapa de embalagem final;
+XVI - Líquido Criogênico Medicinal: Gás Medicinal refrigerado, na forma líquida, com ponto de ebulição menor ou igual a -150°C (menos cento e cinquenta graus Celsius), na pressão absoluta de 101,3 kPa (cento e um e três décimos de quilo Pascal);
+XVII - produto devolvido: produto terminado, expedido e comercializado, com posterior devolução ao fornecedor;
+XVIII - produto retornado: produto terminado, inicialmente expedido, com posterior retorno ao fornecedor, após etapa de fracionamento, podendo integrar um novo lote de gás medicinal por empresas fabricantes ou envasadoras;
+XIX - recepção: conjunto de atividades relacionadas ao recebimento, à conferência e à conciliação em estoque de Gases medicinais a granel ou de cilindros de Gases medicinais;
+XX - tanque criogênico domiciliar: reservatório criogênico móvel para utilização em tratamentos de usuário em assistência domiciliar, devidamente identificado e qualificado para o armazenamento do tipo de produto nele contido;
+XXI - tanque criogênico móvel: recipiente móvel com isolamento térmico destinado à armazenagem de gases liquefeitos ou criogênicos.
+XXII - transportador: empresa que realiza atividade de transporte de Gases medicinais em cilindros ou a granel, incluindo o fracionamento, o retorno ou a devolução de cilindros e tanques, sem alteração das características de qualidade e identidade; e
+XXIII - usuário final: paciente para o qual o Gás Medicinal é prescrito.
+CAPÍTULO II
+DISPOSIÇÕES GERAIS
+Art. 4º Todas as empresas envolvidas nas atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais devem se responsabilizar pela qualidade e segurança destes medicamentos.
+Parágrafo único. A responsabilidade compartilhada abrange ações para manutenção da qualidade dos produtos, rastreabilidade e ações de recolhimento, independentemente de terem sido motivadas pela autoridade sanitária, ou pelas empresas envolvidas.
+Art. 5º As empresas envolvidas nas atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais somente devem receber ou adquirir produtos de empresas licenciadas e autorizadas pela autoridade sanitária competente.
+Art. 6º As empresas envolvidas na atividade de distribuição somente devem expedir Gases medicinais para empresas licenciadas e autorizadas pelas autoridades sanitárias competentes.
+Parágrafo único. Devido as características de constituição das instituições, o disposto no caput deste artigo não se aplica ao fornecimento de Gases medicinais para estabelecimentos assistenciais de saúde, públicos ou privados, bem como a outros estabelecimentos de saúde que visem à dispensação de Gases medicinais em suas instalações.
+Art. 7º As empresas envolvidas com atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais podem comercializar gases não medicinais, desde que suas instalações apresentem segregação física entre Gases medicinais e não medicinais, permitindo ainda a separação dos diferentes gases, assim como de recipientes cheios e vazios.
+Parágrafo único. As empresas que realizam atividades de distribuição de Gases Medicinais podem exercer atividades de venda de produtos para saúde, desde que atendam aos requisitos sanitários para esta atividade.
+Art. 8º Os estabelecimentos que exerçam atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais devem dispor de:
+I - Sistema de Gestão da Qualidade capaz de documentar, manter a rastreabilidade, verificar e assegurar os requisitos específicos de cada operação executada;
+II - locais, instalações e veículos adequados e em número suficiente para manter a qualidade dos produtos e a pontualidade das suas entregas;
+III - pessoal qualificado e em número suficiente para as operações em horário compatível com o funcionamento da empresa;
+IV - procedimentos para gerenciamento de recolhimentos que definam as responsabilidades cabíveis à empresa, bem como, para os demais integrantes da cadeia de distribuição; e
+V - procedimento de gerenciamento de resíduos.
+Art. 9º As empresas envolvidas nas atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais devem possuir Autorização de Funcionamento de Empresas (AFE) e Autorização Especial (AE), quando aplicável, emitidas pela Anvisa para as atividades executadas, conforme disposto na
+Lei nº 6.360, de 1976
+e na
+Lei nº 9.782, de 1999
+.
+§ 1º Dada a especificidade de Gases medicinais, a classe de Gases Medicinais deverá constar como distinta da classe de medicamentos na AFE, quando a empresa realizar a atividade com esse tipo de produto.
+§ 2º Os critérios para o peticionamento de AFE para a atividade de dispensar Gases Medicinais estão estabelecidos na
+Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019
+, ou norma que a suceda.
+§ 3º Os critérios para o peticionamento de AFE e AE para importar, exportar, distribuir, armazenar e transportar Gases Medicinais estão estabelecidos na
+Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014
+, ou norma que a suceda.
+Art. 10. Os produtos que originalmente apresentam lacre, somente podem ter este dispositivo removido pelo cliente ou usuário final.
+Parágrafo único. Qualquer violação do lacre aplicado pelo fabricante ou envasador do gás medicinal, previamente a sua entrega ao cliente ou usuário final do produto, deve ser objeto de investigação devidamente documentada por todas as empresas envolvidas na cadeia de distribuição.
+Art. 11. As empresas que realizem atividades de produção ou envase de Gases Medicinais conjuntamente com as atividades de distribuição, armazenagem, transporte e/ou dispensação, devem obrigatoriamente cumprir com as Boas Práticas inerentes a cada atividade, conforme legislações específicas.
+CAPÍTULO III
+DISTRIBUIÇÃO, ARMAZENAGEM, TRANSPORTE E DISPENSAÇÃO
+Seção I
+Responsabilidade, Organização e Administração
+Art. 12. A estrutura organizacional da empresa deve estar descrita em organograma.
+Parágrafo único. As responsabilidades de todo o pessoal devem estar indicadas nas descrições dos cargos.
+Art. 13. A responsabilidade técnica do estabelecimento deve ser atribuída ao profissional legalmente habilitado por seu respectivo Conselho de Classe.
+Parágrafo único. A responsabilidade técnica do estabelecimento que executa a atividade de dispensação deve ser atribuída ao profissional farmacêutico, nos termos da
+Lei Federal nº 13.021, de 08 de agosto de 2014
+e suas atualizações.
+Seção II
+Pessoal
+Art. 14. A empresa deve possuir número apropriado de funcionários com qualificações adequadas garantindo que as responsabilidades atribuídas individualmente não sejam tão extensas a ponto de apresentar riscos à qualidade do produto.
+Art. 15. Devem ser estabelecidos requisitos relacionados à saúde, higiene e vestuário do pessoal, conforme as atividades a serem realizadas.
+Art. 16. A sistemática para o treinamento dos funcionários cujas atribuições possuam impacto no Sistema de Gestão da Qualidade, ou na Assistência Domiciliar, deve estar descrita.
+§ 1º Os funcionários a que se refere o caput deste artigo devem receber treinamento inicial, periódico e contínuo de acordo com a complexidade da atividade e compatível com a ação de treinamento realizada, inclusive relativo à atualização da legislação, segurança do trabalho, limpeza, além de necessidades identificadas pelo Sistema de Gestão da Qualidade e derivadas da adoção de novos procedimentos.
+§ 2º No caso de dispensação de Gases medicinais para usuários finais, o treinamento deve incluir instruções e atividades referentes aos cuidados de assistência domiciliar.
+§ 3º Os requisitos de treinamento referentes à cada posição de trabalho, expressos em programas e procedimentos de qualidade, devem estar definidos na forma de matriz de treinamento ou currículo.
+§ 4º Os registros que permitam identificar o treinando, a data de execução e a carga horária, bem como a estratégia utilizada, os assuntos abordados e a avaliação da eficácia devem ser mantidos.
+Art. 17. É proibido fumar, comer, beber (com exceção de água potável, que deve estar disponível em local específico) manter plantas, alimentos, medicamentos pessoais ou qualquer objeto estranho ao setor, nas áreas de recepção, armazenagem, expedição e devolução de produtos.
+Seção III
+Sistema de Gestão da Qualidade
+Art. 18. O Sistema de Gestão da Qualidade deve cobrir todos os aspectos que influenciam a qualidade dos Gases medicinais e dos serviços prestados, bem como contemplar um plano de contingência, em caso de desabastecimento.
+§ 1º As ações do Sistema de Gestão da Qualidade são de responsabilidade de toda a empresa e devem ser exercidas por todos os seus membros, lideradas por um departamento de Sistema de Gestão da Qualidade com estrutura organizacional definida.
+§ 2º O Sistema de Gestão da Qualidade deve ser documentado, dispondo de procedimentos operacionais e registros apropriados.
+Art. 19. O Sistema de Gestão da Qualidade deve possuir autonomia hierárquica e recursos necessários para exercício das seguintes funções:
+I - garantir a implementação e manutenção de um sistema da qualidade;
+II - coordenar a gestão documental;
+III - elaborar, revisar e aprovar formalmente os procedimentos operacionais padrão;
+IV - adotar e manter programa de autoinspeções;
+V - adotar e manter programas de treinamentos iniciais e periódicos;
+VI - supervisionar as atividades de recolhimento, incluindo simulações de recolhimento;
+VII - receber e investigar reclamações;
+VIII - gerenciar produtos devolvidos e produtos retornados;
+IX - implementar um sistema para controle e gerenciamento de mudanças;
+X - verificar e garantir os requisitos legais de licença sanitária e autorização de funcionamento dos integrantes da cadeia de distribuição de Gases medicinais quando pertinente;
+XI - gerenciar a qualificação e calibração de equipamentos e instrumentos;
+XII - registrar, investigar e adotar ações corretivas e preventivas para as não conformidades identificadas;
+XIII - gerenciar resíduos;
+XIV - garantir a integridade e rastreabilidade dos Gases medicinais e dos dados relativos às transações comerciais;
+XV - implementar um programa de manejo de pragas com agentes seguros, regularizados junto aos órgãos competentes e que não ofereçam risco de contaminação aos produtos armazenados;
+XVI - realizar as comunicações previstas aos órgãos sanitários conforme modelos estabelecidos e divulgados por estes e comunicar aos parceiros comerciais e autoridades policiais competentes quando do roubo e da identificação de produtos falsificados ou adulterados; e
+XVII - garantir a destinação adequada a produtos falsificados.
+Seção IV
+Documentação
+Art. 20. A gestão e controle de documentos da qualidade deve dispor de orientações detalhadas para elaboração, revisão, aprovação, distribuição e controle, treinamento, codificação, guarda e obsolescência dos documentos em formato físico ou eletrônico.
+Art. 21. Os procedimentos operacionais padrão devem ser compreensíveis pelos funcionários, instruir todas as atividades relacionadas ao setor e não devem apresentar ambiguidades.
+Art. 22. Os procedimentos operacionais padrão devem ser seguidos e estar disponíveis por meio físico ou eletrônico em seus respectivos locais de trabalho.
+Art. 23. Os procedimentos operacionais padrão devem ser mantidos atualizados para que correspondam à prática e à rotina adotadas para as atividades previstas nesta Resolução.
+Art. 24. Devem ser mantidos registros das ações efetuadas, de tal forma que todas as atividades significativas referentes a armazenagem, distribuição, transporte e/ou dispensação de Gases Medicinais possam ser rastreadas.
+Parágrafo único. Todos os registros de que trata o caput deste artigo devem ser mantidos por pelo menos um ano, contados do vencimento do prazo de validade do produto terminado armazenado, distribuído, transportado ou dispensado.
+Art. 25. Os registros manuais ou eletrônicos devem ser prontamente recuperáveis, e devem ser armazenados de modo seguro, de forma a evitar qualquer modificação não autorizada, danos, deterioração ou perda.
+§ 1º A correção de um dado registrado deve ser realizada mediante justificativa da necessidade de alteração, preservando-se a possibilidade de leitura do dado originalmente gravado.
+§ 2º Devem ser mantidos backups para os registros gerados ou armazenados em formato eletrônico.
+§ 3º O acesso aos computadores relacionados a gestão e controle de documentos deve ser restringido por uso de senhas individuais ou outros meios seguros.
+§ 4º O acesso às versões obsoletas dos procedimentos operacionais deve ser restrito a pessoas delegadas pelo Sistema de Gestão da Qualidade.
+Seção V
+Reclamações
+Art. 26. Deve ser estabelecido e divulgado aos clientes e usuários finais um serviço de atendimento para o recebimento de reclamações.
+Art. 27. As reclamações relacionadas com a qualidade, autenticidade, legalidade ou integridade dos Gases medicinais ou aquelas relacionadas a eventos adversos devem ser registradas e investigadas.
+§ 1º A responsabilidade pela investigação estende-se proporcionalmente à participação de cada ente da cadeia na causa do desvio das características e dos eventos previstos no caput deste artigo.
+§ 2º A investigação deve classificar as reclamações em procedentes ou não procedentes, mediante análise e investigação da causa-raiz, confirmando ou descartando as não conformidades relacionadas.
+§ 3º Cabe à investigação definir a causa raiz do problema, avaliar os impactos aos clientes e sugerir, se necessário, ao fabricante ou ao detentor do registro, o recolhimento.
+§ 4º A investigação deve considerar a possibilidade de que outros lotes do Gás medicinal tenham sido afetados pela mesma causa raiz.
+§ 5º Ações corretivas devem ser definidas, implementadas e monitoradas para as situações nas quais a reincidência da não conformidade represente risco ao paciente.
+Art. 28. Deve haver procedimento escrito que descreva as ações a serem adotadas em caso de reclamação relacionada a desvio de qualidade, inclusive nos casos em que se faça necessário o recolhimento de produtos.
+Art. 29. Os registros de reclamações devem ser regularmente revisados com a finalidade de detectar quaisquer indícios de problemas específicos ou recorrentes.
+Art. 30. As reclamações relacionadas aos desvios de qualidade devem ser registradas separadamente daquelas relacionadas às atividades de distribuição, armazenagem e transporte ou dispensação.
+Parágrafo único. As reclamações relacionadas aos desvios de qualidade devem ser repassadas ao fabricante ou ao detentor do registro para investigação, e os resultados desta devem ser aditados ao registro inicial.
+Art. 31. A apuração de reclamações sobre possíveis falsificações ou cargas roubadas ou furtadas devem ser priorizadas.
+Seção VI
+Recolhimento
+Art. 32. As empresas envolvidas nas atividades de distribuição, armazenamento, transporte e dispensação de Gases Medicinais devem atender ao disposto na
+Resolução da Diretoria Colegiada - RDC nº 625, de 8 de março de 2022
+, ou outra que lhe vier a substituir, referente a procedimentos de recolhimento de medicamentos.
+Art. 33. A empresa deve possuir procedimento escrito que estabeleça a ação de recolhimento e defina as respectivas responsabilidades ao longo da cadeia de distribuição, de forma a assegurar que o fabricante ou envasador seja capaz de cumprir o plano de recolhimento ou suas simulações.
+Art. 34. Os mapas de distribuição devem ser prontamente recuperáveis durante tempo condizente com a validade dos Gases medicinais distribuídos ou dispensados.
+§ 1º Os dados cadastrais relativos às empresas constantes no mapa de distribuição devem estar atualizados e conter informações mínimas necessárias ao contato postal, telefônico e por correio eletrônico.
+§ 2º Deve ser realizada, a cada 2 (dois) anos uma simulação de recolhimento para comparação entre as unidades distribuídas e localizadas nos clientes, tanto para Gases medicinais a granel, quanto para Gases medicinais em cilindro, com o intuito de testar a efetividade do recolhimento e corrigir falhas.
+§ 3º O fabricante ou envasador deverá ser informado previamente sobre o recolhimento, quando este for instituído por outra empresa da cadeia de distribuição.
+§ 4º Nos processos de recolhimentos, todos os clientes e usuários finais relacionados, bem como as autoridades sanitárias competentes, devem ser notificados imediatamente.
+§ 5º Nos casos de recolhimento, a empresa deverá providenciar a pronta substituição do lote recolhido.
+Art. 35. As distribuidoras, armazenadoras, transportadoras e dispensadoras de Gases medicinais, durante o recolhimento de determinado produto, devem mantê-lo exatamente como recolhido, para posterior investigação pela empresa fabricante ou envasadora, excetuando-se nas situações em que o risco de manutenção extrapole a segurança aceitável das atividades.
+Parágrafo único. Os lotes de Gases medicinais em cilindros, tanque criogênico domiciliar e/ou móvel, quando transportados como lotes em recolhimento, devem ser devidamente identificados, não necessitando de delimitação física própria na carroceria do veículo.
+Art. 36. Ao fim do recolhimento, deve ser registrado em relatório a avaliação da eficácia das comunicações emitidas e do grau de recuperação das unidades distribuídas.
+Seção VII
+Devoluções
+Art. 37. Deve ser estabelecido procedimento para o gerenciamento de produtos devolvidos por clientes e usuários finais.
+§ 1º As devoluções somente serão aceitáveis para produtos vendidos lacrados, não sendo aplicável à distribuição de Gás Medicinal a Granel.
+§ 2º É considerado como produto retornado, o gás medicinal fruto de fracionamento que constitui um novo lote.
+§ 3º Gases Medicinais objeto de furto ou roubo, que tenham sido recuperados, não devem ser tratados como os demais medicamentos devolvidos, devendo ser enviados ao fabricante, para descarte ou reprocessamento.
+Art. 38. Antes que um Gás medicinal devolvido seja reintegrado ao estoque comercializável, no mínimo os seguintes fatores devem ser registrados e ponderados pelo sistema de gestão da qualidade:
+I - o motivo da devolução;
+II - as condições de armazenagem e transporte empregadas pelo comprador;
+III - a integridade da embalagem secundária original; e
+IV - o prazo de validade.
+Art. 39. A incapacidade em garantir que o Gás medicinal devolvido se mantém dentro de seus padrões de qualidade deve resultar na rejeição da reintegração.
+Art. 40. As distribuidoras, armazenadoras, transportadoras e dispensadoras de Gases Medicinais são responsáveis por garantir que as operações de devolução sejam realizadas preservando a integridade, identidade e qualidade dos Gases Medicinais, sendo aceitável somente a revenda de cilindros devolvidos com lacre original, dentro do prazo de validade e proporcional às suas possíveis prescrições.
+Art. 41. Em caso suspeita de alteração, adulteração, fraude, falsificação, roubo ou furto, as empresas envolvidas na distribuição, armazenagem, transporte e dispensação distribuição, armazenagem, transporte e dispensação devem imediatamente notificar a autoridade sanitária competente e o fabricante ou envasador do gás medicinal.
+§ 1º Devem ser estabelecidos procedimentos com diretrizes para rastreamento de Gases Medicinais falsificados, alterados, adulterados, fraudados ou objeto de roubo ou furto, assim como para acompanhamento das respectivas publicações relacionadas, oriundas da autoridade sanitária competente.
+§ 2º Os Gases medicinais objetos de furto, roubo ou outras apropriações indevidas, ainda que tenham sido recuperados, devem ser rejeitados.
+Seção VIII
+Autoinspeções
+Art. 42. Deve ser estabelecido procedimento para o gerenciamento do programa de autoinspeções.
+Parágrafo único. Todos os processos com impacto no Sistema de Gestão da Qualidade devem ser inspecionados com uma periodicidade de até 2 (dois) anos.
+Art. 43. As autoinspeções devem ser conduzidas por profissional(ais) não vinculado(s) hierarquicamente ao processo ou ao departamento inspecionado.
+Parágrafo único. Os profissionais a que se refere o caput devem ser capacitados especificamente para a atividade de autoinspeção.
+Art. 44. Os dados das autoinspeções devem ser compilados em relatórios com as seguintes informações mínimas:
+I - identificação da equipe de inspetores;
+II - período da autoinspeção;
+III - não conformidades identificadas;
+IV - ações corretivas e preventivas elencadas e seus respectivos prazos de conclusão e implementação; e
+V - ações de acompanhamento da adoção e monitoramento da eficácia das ações corretivas e preventivas; e
+VI - avaliação e concordância das chefias de cada departamento afetado e da posição hierárquica máxima da empresa.
+Seção IX
+Qualificações e Validações
+Art. 45. Equipamentos, processos e sistemas informatizados que possam influenciar na qualidade dos Gases Medicinais distribuídos, armazenados ou transportados devem ser qualificados e validados antes de seu uso.
+§ 1º Estudos de requalificação ou revalidação devem ser executados quando as conclusões dos controles de mudança indicarem tais necessidades.
+§ 2º A execução dos estudos para o controle de mudanças deve ser orientada por ferramenta de análise de risco, reconhecida por referências bibliográficas, envolvendo diferentes áreas da empresa, podendo incluir posições e organogramas da matriz ou de filiais.
+§ 3º Sistemas informatizados não passíveis de configuração podem ser dispensados de validação, com base em análise de risco, devidamente instruída por referência específica aos sistemas computadorizados.
+§ 4º Arquivos gerados por sistemas informatizados não configuráveis devem apresentar análise de risco, devidamente instruída por referência específica aos sistemas computadorizados, indicando a necessidade ou não de proteção/validação.
+Art. 46. Os instrumentos de medição que possam ter impacto na qualidade do gás medicinal armazenado ou transportado devem ser calibrados, com frequência justificada pela empresa.
+Art. 47. Deve existir programa de manutenção preventiva para todos os equipamentos com impacto na qualidade.
+Seção X
+Rastreabilidade dos Lotes e Cilindros
+Art. 48. Devem existir procedimentos e sistemas de registro adequados para garantir a rastreabilidade e a integridade dos dados relativos às transações comerciais referentes a lotes e cilindros, capazes de assegurar o histórico de distribuição e dispensação até o ponto de consumo.
+Art. 49. Para a atividade de fracionamento, deve haver histórico das entregas relacionadas a cada lote.
+Art. 50. As notas fiscais para Gases medicinais devem conter os números de lote e a quantidade comercializada.
+Art. 51. As quantidades a granel remanescentes em tanques de distribuição e transporte podem ser reintegradas em tanques de empresas fabricantes ou envasadoras, desde que sejam observadas as premissas de boas práticas de fabricação de Gases Medicinais.
+CAPÍTULO IV
+REQUISITOS ESPECÍFICOS PARA ARMAZENAGEM, DISTRIBUIÇÃO E DISPENSAÇÃO
+Seção I
+Instalações e Estocagem
+Art. 52. O exercício das atividades de armazenagem, distribuição e dispensação de Gases Medicinais requerem, no mínimo:
+I - área de recebimento, conferência e integração ao estoque;
+II - área de armazenagem geral de Gases medicinais;
+III - área de armazenagem para Gases medicinais recolhidos e devolvidos, com delimitação separada e acesso restrito;
+IV - área de armazenagem para Gases medicinais sujeitos a controle especial, separada e com acesso restrito, quando pertinente;
+V - área de expedição de Gases medicinais;
+VI - área de administração; e
+VII - área de cantinas ou refeitórios, vestiários, sanitários e lavatórios, quando pertinente, sem comunicação direta com as áreas de armazenagem.
+Art. 53. As empresas que realizam atividades de distribuição, armazenagem e dispensação de Gases Medicinais devem dispor de área de tamanho adequado e proporcional ao volume das operações realizadas, permitindo as segregações específicas para tanques e cilindros de Gases Medicinais e não medicinais.
+Art. 54. As áreas de armazenamento de cilindros e tanques criogênicos móveis devem ser projetadas respeitando as necessidades de ambiente ventilado necessárias à segurança, cobertas e protegidas das condições adversas do tempo.
+Parágrafo único. Deve haver procedimento para o controle de pragas, utilizando produtos ou técnicas seguras, que não representem risco de contaminação dos Gases Medicinais.
+Art. 55. Os espaços circundantes devem ser pavimentados.
+Art. 56. As instalações devem ser mantidas em bom estado de conservação e limpeza.
+Art. 57. Itens avariados ou danificados devem ser retirados do estoque e armazenados separadamente.
+Art. 58. Devem ser realizados inventários periódicos do estoque e investigadas as discrepâncias encontradas.
+Seção II
+Recepção e Expedição
+Art. 59. O Recebimento e a Expedição devem ser realizados em áreas separadas.
+Parágrafo único. Quando a separação física não for possível, devem ser adotados procedimentos para que não exista risco de troca de produtos.
+Art. 60. As áreas de recebimento devem ser projetadas e equipadas de modo a permitir, se necessário, que as cargas sejam limpas e conferidas antes da Armazenagem.
+Art. 61. Deve ser estabelecido procedimento para as atividades de recebimento e expedição de produtos, devendo ser verificados:
+I - as condições de transporte, como segregação de Gases medicinais de Não Medicinais;
+II - os números de lote, data de validade e as quantidades descritas na nota fiscal;
+III - a integridade da carga; e
+IV - a limpeza do caminhão.
+Parágrafo único. As cargas que não cumpram com os requisitos de recebimento devem ser classificadas como em quarentena, enquanto aguardam avaliação e liberação pelo sistema de gestão da qualidade.
+Art. 62. Cada operação de expedição deve ser registrada, a fim de garantir a rastreabilidade dos dados do transportador, do ciente ou usuário final e dos Gases medicinais comercializados.
+Art. 63. As empresas que realizam atividades de distribuição e armazenagem, quando passam a envasar caminhões-tanque, tanques criogênicos móveis e/ou cilindros, caracterizam-se como envasadoras e devem atender as normativas que tratam de Boas Práticas de Fabricação de Gases medicinais.
+CAPÍTULO V
+REQUISITOS ESPECÍFICOS PARA TRANSPORTE
+Art. 64. O transporte de Gases medicinais se caracteriza como movimentação exclusiva de lote(s) de um produto previamente aprovado por uma empresa fabricante ou envasadora.
+Art. 65. São obrigações dos transportadores de Gases Medicinais:
+I - registrar as informações relativas às operações de transporte, armazenagem temporária e recepção de Gases Medicinais por seus veículos;
+II - transportar Gases Medicinais segregados de Gases Não Medicinais e em condições ambientais que cumpram com as especificações dos fabricantes;
+III - estabelecer instruções quanto às condições de conservação durante o transporte, bem como a armazenagem temporária; e
+IV - receber Gases Medicinais exclusivamente de empresas devidamente autorizadas e licenciadas pelos órgãos de vigilância sanitária.
+Art. 66. São obrigações dos contratantes dos serviços de transporte:
+I - informar as condições de transporte necessárias ao transportador, de modo a garantir a manutenção da identidade e qualidade dos gases transportados;
+II - disponibilizar documentos que comprovem a regularidade dos Gases medicinais ao transportadores; e
+III - prestar orientação e assistência técnica em casos de acidentes que envolvam Gases medicinais em transporte.
+Art. 67. Em caso de sinistro, roubo ou furto, o transportador deve comunicar imediatamente o ocorrido ao contratante e à autoridade sanitária competente, sem prejuízo de outras providências cabíveis.
+Art. 68. Os cilindros e tanques móveis devem ser entregues aos clientes e usuários finais em estado limpo e compatível com o ambiente e o uso pretendidos.
+Parágrafo único. Devem ser cumpridas as exigências previstas em rótulo, sem prejuízo à segurança dos produtos.
+Art. 69. Todo o sistema de conexão, incluindo possíveis bombas de transferência e mangueiras flexíveis, deve ser purgado com evidência de remoção atestada previamente ao abastecimento de tanques criogênicos fixos ou móveis.
+Art. 70. As transferências somente se darão em rotina para tanques recebedores com pressão positiva e com gás residual de mesma qualidade do abastecido.
+Art. 71. Devem existir procedimentos para a operação e a manutenção de todos os veículos ou equipamentos envolvidos no processo de transporte e distribuição, incluindo limpeza e precauções de segurança.
+Art. 72. Caso sejam realizados testes de controle de qualidade por funcionários de empresas transportadoras em pontos de descarga, devem ser utilizados equipamentos calibrados.
+§ 1º Acordos de qualidade entre fabricantes e envasadoras devem definir cláusulas de responsabilidades individuais pelos lotes.
+§ 2º Os dados de controle de qualidade obtidos pela empresa de transporte nas análises devem obrigatoriamente estar disponíveis para as empresas contratantes, de maneira íntegra e passíveis de serem auditados.
+Art. 73. Quando incumbidas do enchimento de tanques criogênicos fixos ou estacionários, as transportadoras devem assegurar a existência de válvula de retenção adequadamente instalada no veículo transportador ou no tanque criogênico recebedor.
+Parágrafo único. É vedado o enchimento de tanque sem ao menos uma válvula de retenção no circuito tanque móvel/tanque estacionário.
+CAPÍTULO VI
+DISPENSAÇÃO DE GASES MEDICINAIS
+Art. 74. O enchimento ou a troca de cilindros ou tanques criogênicos domiciliares somente pode ser realizado após autorização do usuário final ou pessoa responsável pela assistência domiciliar.
+Art. 75. A dispensação de Gases Medicinais deve obedecer à prescrição médica.
+Art. 76. A dispensação de Gases Medicinais deve obedecer aos preceitos de controle sanitário de medicamentos, mesmo quando destinada a atividades não terapêuticas, de diagnóstico e profiláticas.
+Art. 77. A atenção farmacêutica em dispensação de Gases Medicinais deve considerar também aspectos de segurança.
+CAPÍTULO VII
+COMÉRCIO ENTRE DISTRIBUIDORAS
+Art. 78. É permitida a comercialização de Gases Medicinais entre Distribuidoras, desde que ambas possuam AFE/AE emitidas pela Anvisa para a atividade de distribuição.
+Parágrafo único. Quando a comercialização de que trata o caput deste artigo se referir a Gases Medicinais a granel, devem ser também cumpridas as boas práticas de fabricação, conforme resolução vigente.
+CAPÍTULO II
+DISPOSIÇÕES FINAIS
+Art. 79. As empresas que realizam as atividades de distribuição, armazenagem, transporte e dispensação de Gases Medicinais, caso detectem uma possível utilização de cilindro de gás industrial como medicinal, devem manter o cilindro isolado, bem como identificado, e notificar a vigilância sanitária local para as devidas providências.
+Parágrafo único. No caso da identificação de cilindros incompatíveis com normas técnicas de segurança de Gases medicinais, as empresas de que trata o caput deste artigo devem mantê-los isolados e encaminhá-los para destruição, sem reaproveitamento.
+Art. 80. A distribuição, armazenamento, transporte e dispensação de Gases Medicinais sujeitos a controle especial devem atender ainda aos controles dispostos na
+Portaria SVS/MS nº 344, de 12 de maio de 1998
+, e suas atualizações.
+Art. 81. Para empresas abrangidas por esta Resolução, não se aplicam a
+Resolução da Diretoria Colegiada - RDC nº 430, de 7 de outubro de 2020
+.
+Art. 82. O descumprimento do disposto nesta Resolução constitui infração sanitária, nos termos da
+Lei nº 6.437, de 20 de agosto de 1977
+, ou sua atualização, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 83. É permitido ao agente regulado exercer atividades de distribuição e dispensação no mesmo estabelecimento.
+Art. 84. A
+Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014
+, passa a vigorar com as seguintes alterações:
+"
+Art. 8-A
+º As distribuidoras, armazenadoras e transportadoras de gases medicinais deverão seguir o disposto nesta Resolução e na
+Resolução da Diretoria Colegiada - RDC nº 887, de 11 de julho de 2024
+, e atualizações." (NR)
+"
+Art. 22
+. ................................................................................. ..............................
+.................................................................................................. .............................
+Parágrafo único. A ampliação e redução de classes de produtos somente é permitida entre cosméticos, produtos de higiene pessoal e perfumes e entre medicamentos, insumos farmacêuticos e gases medicinais." (NR).
+Art. 85. A
+Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019
+, passa a vigorar com as seguintes alterações:
+"Art. 7-A O exercício das atividades de dispensação de gases medicinais, sujeitos ou não a controle especial devem atender aos requisitos e condições estabelecidos na Resolução de Diretoria Colegiada, que estabelece os requisitos de Boas Práticas relacionadas às atividades de distribuição, armazenagem, transporte e dispensação de Gases Medicinais, gases liquefeitos medicinais e líquidos criogênicos medicinais, em tanques ou cilindros, denominados em conjunto como "Gases Medicinais". (NR) "
+Art. 10
+. .................................................................................... ...........................
+.................................................................................................... ...........................
+§ 2º ............................................................................................ ..........................
+................................................................................................... ............................
+VII. manipulação de insumos farmacêuticos sujeitos a controle especial;
+VIII. manipulação de medicamentos estéreis;
+IX. dispensação de gases medicinais não sujeitos a controle especial; ou
+X. dispensação de gases medicinais sujeitos a controle especial;" (NR)
+Art. 86. A atividade de dispensação de gases medicinais, caso não seja realizada com a dispensação de outros medicamentos, poderá ser realizada no mesmo estabelecimento em que é realizada a distribuição de gases medicinais.
+Parágrafo único. Aos estabelecimentos que dispensam somente gases medicinais, não se aplica o
+§3º do art.29-F da Resolução da Diretoria Colegiada - RDC n° 16, de 1° de abril de 2014
+.
+Art. 87. Esta Resolução entra em vigor 24 meses após sua publicação.
+ANTONIO BARRAS TORRES
+Diretor-Presidente
+PUB D.O.U., 12/07/2024 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.
+Carregando...

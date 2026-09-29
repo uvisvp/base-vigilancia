@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-26T03:55:41.584525+00:00",
+  "gerado_em": "2026-09-29T23:13:22.748274+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -1117,6 +1117,84 @@
         "status_fonte": "AnvisaLegis",
         "texto": "textos/RDC 653-2022--oficial.txt",
         "data_processamento": "2026-09-26T03:55:38.410925+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 197-2017": {
+      "arquivo": "rdc-197-2017.json",
+      "nos": 154,
+      "sha256_texto": "09bb79e575ea60f2cc4781b296fa5d837dcf8965a194e6bb16b45fe6d5642476",
+      "proveniencia": {
+        "norma": "RDC 197-2017",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "consultado_em": "2026-09-29T23:13:19.541437+00:00",
+        "data_fonte": "2017-12-26",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "99892b454a7adfc2efdee0ac33719cef8b6738d457c2defaaff15a1d468e3f4f",
+        "sha256_texto": "09bb79e575ea60f2cc4781b296fa5d837dcf8965a194e6bb16b45fe6d5642476",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 197-2017--oficial.txt",
+        "data_processamento": "2026-09-29T23:13:19.541558+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 887-2024": {
+      "arquivo": "rdc-887-2024.json",
+      "nos": 338,
+      "sha256_texto": "67ccdf3d9672150d279e74c55c14c67c7e33eb6ebbbd1f57699fb64b085fd4aa",
+      "proveniencia": {
+        "norma": "RDC 887-2024",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "consultado_em": "2026-09-29T23:13:21.130899+00:00",
+        "data_fonte": "2024-07-11",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "6b15395763277e9443860117bf2f2f1b02202874705c531d4fb63d3569fcc503",
+        "sha256_texto": "67ccdf3d9672150d279e74c55c14c67c7e33eb6ebbbd1f57699fb64b085fd4aa",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 887-2024--oficial.txt",
+        "data_processamento": "2026-09-29T23:13:21.131088+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 870-2024": {
+      "arquivo": "rdc-870-2024.json",
+      "nos": 467,
+      "sha256_texto": "172a62a373c4fb964654787b793707b57c8e60dfdba45e5464ea4b3cc6c4f91e",
+      "proveniencia": {
+        "norma": "RDC 870-2024",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "consultado_em": "2026-09-29T23:13:22.738475+00:00",
+        "data_fonte": "2024-05-17",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "2e7b8c722d8eb875b0e1fd3d7999e787e01ce70a0b4ae133eae1bf92ebc7794e",
+        "sha256_texto": "172a62a373c4fb964654787b793707b57c8e60dfdba45e5464ea4b3cc6c4f91e",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 870-2024--oficial.txt",
+        "data_processamento": "2026-09-29T23:13:22.738725+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
