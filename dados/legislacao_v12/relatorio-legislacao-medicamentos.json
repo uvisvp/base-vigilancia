@@ -1,13 +1,13 @@
 {
   "schema": "relatorio-legislacao-medicamentos-v1",
-  "gerado_em": "2026-09-29T23:13:17.692255+00:00",
-  "catalogo_atualizado": true,
+  "gerado_em": "2026-09-30T01:02:18.552097+00:00",
+  "catalogo_atualizado": false,
   "normas": [
     {
       "norma": "RDC 197-2017",
       "arquivo": "rdc-197-2017.json",
-      "nos": 154,
-      "chars": 12445,
+      "nos": 139,
+      "chars": 12439,
       "status_vigencia": "vigente",
       "status_fonte": "AnvisaLegis",
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017"
@@ -15,8 +15,8 @@
     {
       "norma": "RDC 887-2024",
       "arquivo": "rdc-887-2024.json",
-      "nos": 338,
-      "chars": 39508,
+      "nos": 298,
+      "chars": 39488,
       "status_vigencia": "vigente",
       "status_fonte": "AnvisaLegis",
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024"
@@ -24,8 +24,8 @@
     {
       "norma": "RDC 870-2024",
       "arquivo": "rdc-870-2024.json",
-      "nos": 467,
-      "chars": 48934,
+      "nos": 393,
+      "chars": 48899,
       "status_vigencia": "vigente",
       "status_fonte": "AnvisaLegis",
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024"

@@ -8,23 +8,14 @@ FECHAR NOTAS DE ALTERAÇĂO
 +
 |
 -
-Vigente
-Resoluçăo da Diretoria Colegiada - RDC nş 887, de 11/07/2024
+VigenteResoluçăo da Diretoria Colegiada - RDC nş 887, de 11/07/2024
 Ver mais detalhes
 MINISTÉRIO DA SAÚDE
 AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
 DIRETORIA COLEGIADA
 RESOLUÇÃO - RDC Nº 887, DE 11 DE JULHO DE 2024
 Dispõe sobre as boas práticas de distribuição, armazenagem, transporte e dispensação de gases medicinais, e dá outras providências.
-A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o
-art. 15, III e IV
-,
-aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999
-, e ao
-art. 187, VI, § 1º do Regimento Interno
-aprovado pela
-Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021
-, resolve adotar a seguinte Resolução, conforme deliberado em reunião realizada em 10 de julho de 2024, e eu, Diretor-Presidente, determino a sua publicação.
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 187, VI, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve adotar a seguinte Resolução, conforme deliberado em reunião realizada em 10 de julho de 2024, e eu, Diretor-Presidente, determino a sua publicação.
 CAPÍTULO I
 DISPOSIÇÕES INICIAIS
 Seção I
@@ -77,18 +68,10 @@ II - locais, instalações e veículos adequados e em número suficiente para ma
 III - pessoal qualificado e em número suficiente para as operações em horário compatível com o funcionamento da empresa;
 IV - procedimentos para gerenciamento de recolhimentos que definam as responsabilidades cabíveis à empresa, bem como, para os demais integrantes da cadeia de distribuição; e
 V - procedimento de gerenciamento de resíduos.
-Art. 9º As empresas envolvidas nas atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais devem possuir Autorização de Funcionamento de Empresas (AFE) e Autorização Especial (AE), quando aplicável, emitidas pela Anvisa para as atividades executadas, conforme disposto na
-Lei nº 6.360, de 1976
-e na
-Lei nº 9.782, de 1999
-.
+Art. 9º As empresas envolvidas nas atividades de distribuição, armazenagem, transporte e dispensação de Gases medicinais devem possuir Autorização de Funcionamento de Empresas (AFE) e Autorização Especial (AE), quando aplicável, emitidas pela Anvisa para as atividades executadas, conforme disposto na Lei nº 6.360, de 1976 e na Lei nº 9.782, de 1999.
 § 1º Dada a especificidade de Gases medicinais, a classe de Gases Medicinais deverá constar como distinta da classe de medicamentos na AFE, quando a empresa realizar a atividade com esse tipo de produto.
-§ 2º Os critérios para o peticionamento de AFE para a atividade de dispensar Gases Medicinais estão estabelecidos na
-Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019
-, ou norma que a suceda.
-§ 3º Os critérios para o peticionamento de AFE e AE para importar, exportar, distribuir, armazenar e transportar Gases Medicinais estão estabelecidos na
-Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014
-, ou norma que a suceda.
+§ 2º Os critérios para o peticionamento de AFE para a atividade de dispensar Gases Medicinais estão estabelecidos na Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019, ou norma que a suceda.
+§ 3º Os critérios para o peticionamento de AFE e AE para importar, exportar, distribuir, armazenar e transportar Gases Medicinais estão estabelecidos na Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014, ou norma que a suceda.
 Art. 10. Os produtos que originalmente apresentam lacre, somente podem ter este dispositivo removido pelo cliente ou usuário final.
 Parágrafo único. Qualquer violação do lacre aplicado pelo fabricante ou envasador do gás medicinal, previamente a sua entrega ao cliente ou usuário final do produto, deve ser objeto de investigação devidamente documentada por todas as empresas envolvidas na cadeia de distribuição.
 Art. 11. As empresas que realizem atividades de produção ou envase de Gases Medicinais conjuntamente com as atividades de distribuição, armazenagem, transporte e/ou dispensação, devem obrigatoriamente cumprir com as Boas Práticas inerentes a cada atividade, conforme legislações específicas.
@@ -99,9 +82,7 @@ Responsabilidade, Organização e Administração
 Art. 12. A estrutura organizacional da empresa deve estar descrita em organograma.
 Parágrafo único. As responsabilidades de todo o pessoal devem estar indicadas nas descrições dos cargos.
 Art. 13. A responsabilidade técnica do estabelecimento deve ser atribuída ao profissional legalmente habilitado por seu respectivo Conselho de Classe.
-Parágrafo único. A responsabilidade técnica do estabelecimento que executa a atividade de dispensação deve ser atribuída ao profissional farmacêutico, nos termos da
-Lei Federal nº 13.021, de 08 de agosto de 2014
-e suas atualizações.
+Parágrafo único. A responsabilidade técnica do estabelecimento que executa a atividade de dispensação deve ser atribuída ao profissional farmacêutico, nos termos da Lei Federal nº 13.021, de 08 de agosto de 2014 e suas atualizações.
 Seção II
 Pessoal
 Art. 14. A empresa deve possuir número apropriado de funcionários com qualificações adequadas garantindo que as responsabilidades atribuídas individualmente não sejam tão extensas a ponto de apresentar riscos à qualidade do produto.
@@ -164,9 +145,7 @@ Parágrafo único. As reclamações relacionadas aos desvios de qualidade devem 
 Art. 31. A apuração de reclamações sobre possíveis falsificações ou cargas roubadas ou furtadas devem ser priorizadas.
 Seção VI
 Recolhimento
-Art. 32. As empresas envolvidas nas atividades de distribuição, armazenamento, transporte e dispensação de Gases Medicinais devem atender ao disposto na
-Resolução da Diretoria Colegiada - RDC nº 625, de 8 de março de 2022
-, ou outra que lhe vier a substituir, referente a procedimentos de recolhimento de medicamentos.
+Art. 32. As empresas envolvidas nas atividades de distribuição, armazenamento, transporte e dispensação de Gases Medicinais devem atender ao disposto na Resolução da Diretoria Colegiada - RDC nº 625, de 8 de março de 2022, ou outra que lhe vier a substituir, referente a procedimentos de recolhimento de medicamentos.
 Art. 33. A empresa deve possuir procedimento escrito que estabeleça a ação de recolhimento e defina as respectivas responsabilidades ao longo da cadeia de distribuição, de forma a assegurar que o fabricante ou envasador seja capaz de cumprir o plano de recolhimento ou suas simulações.
 Art. 34. Os mapas de distribuição devem ser prontamente recuperáveis durante tempo condizente com a validade dos Gases medicinais distribuídos ou dispensados.
 § 1º Os dados cadastrais relativos às empresas constantes no mapa de distribuição devem estar atualizados e conter informações mínimas necessárias ao contato postal, telefônico e por correio eletrônico.
@@ -290,35 +269,18 @@ CAPÍTULO II
 DISPOSIÇÕES FINAIS
 Art. 79. As empresas que realizam as atividades de distribuição, armazenagem, transporte e dispensação de Gases Medicinais, caso detectem uma possível utilização de cilindro de gás industrial como medicinal, devem manter o cilindro isolado, bem como identificado, e notificar a vigilância sanitária local para as devidas providências.
 Parágrafo único. No caso da identificação de cilindros incompatíveis com normas técnicas de segurança de Gases medicinais, as empresas de que trata o caput deste artigo devem mantê-los isolados e encaminhá-los para destruição, sem reaproveitamento.
-Art. 80. A distribuição, armazenamento, transporte e dispensação de Gases Medicinais sujeitos a controle especial devem atender ainda aos controles dispostos na
-Portaria SVS/MS nº 344, de 12 de maio de 1998
-, e suas atualizações.
-Art. 81. Para empresas abrangidas por esta Resolução, não se aplicam a
-Resolução da Diretoria Colegiada - RDC nº 430, de 7 de outubro de 2020
-.
-Art. 82. O descumprimento do disposto nesta Resolução constitui infração sanitária, nos termos da
-Lei nº 6.437, de 20 de agosto de 1977
-, ou sua atualização, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 80. A distribuição, armazenamento, transporte e dispensação de Gases Medicinais sujeitos a controle especial devem atender ainda aos controles dispostos na Portaria SVS/MS nº 344, de 12 de maio de 1998, e suas atualizações.
+Art. 81. Para empresas abrangidas por esta Resolução, não se aplicam a Resolução da Diretoria Colegiada - RDC nº 430, de 7 de outubro de 2020.
+Art. 82. O descumprimento do disposto nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, ou sua atualização, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
 Art. 83. É permitido ao agente regulado exercer atividades de distribuição e dispensação no mesmo estabelecimento.
-Art. 84. A
-Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014
-, passa a vigorar com as seguintes alterações:
-"
-Art. 8-A
-º As distribuidoras, armazenadoras e transportadoras de gases medicinais deverão seguir o disposto nesta Resolução e na
-Resolução da Diretoria Colegiada - RDC nº 887, de 11 de julho de 2024
-, e atualizações." (NR)
-"
-Art. 22
-. ................................................................................. ..............................
+Art. 84. A Resolução da Diretoria Colegiada - RDC nº 16, de 1º de abril de 2014, passa a vigorar com as seguintes alterações:
+"Art. 8-Aº As distribuidoras, armazenadoras e transportadoras de gases medicinais deverão seguir o disposto nesta Resolução e na Resolução da Diretoria Colegiada - RDC nº 887, de 11 de julho de 2024, e atualizações." (NR)
+"Art. 22. ................................................................................. ..............................
 .................................................................................................. .............................
 Parágrafo único. A ampliação e redução de classes de produtos somente é permitida entre cosméticos, produtos de higiene pessoal e perfumes e entre medicamentos, insumos farmacêuticos e gases medicinais." (NR).
-Art. 85. A
-Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019
-, passa a vigorar com as seguintes alterações:
+Art. 85. A Resolução da Diretoria Colegiada - RDC nº 275, de 9 de abril de 2019, passa a vigorar com as seguintes alterações:
 "Art. 7-A O exercício das atividades de dispensação de gases medicinais, sujeitos ou não a controle especial devem atender aos requisitos e condições estabelecidos na Resolução de Diretoria Colegiada, que estabelece os requisitos de Boas Práticas relacionadas às atividades de distribuição, armazenagem, transporte e dispensação de Gases Medicinais, gases liquefeitos medicinais e líquidos criogênicos medicinais, em tanques ou cilindros, denominados em conjunto como "Gases Medicinais". (NR) "
-Art. 10
-. .................................................................................... ...........................
+Art. 10. .................................................................................... ...........................
 .................................................................................................... ...........................
 § 2º ............................................................................................ ..........................
 ................................................................................................... ............................
@@ -327,9 +289,7 @@ VIII. manipulação de medicamentos estéreis;
 IX. dispensação de gases medicinais não sujeitos a controle especial; ou
 X. dispensação de gases medicinais sujeitos a controle especial;" (NR)
 Art. 86. A atividade de dispensação de gases medicinais, caso não seja realizada com a dispensação de outros medicamentos, poderá ser realizada no mesmo estabelecimento em que é realizada a distribuição de gases medicinais.
-Parágrafo único. Aos estabelecimentos que dispensam somente gases medicinais, não se aplica o
-§3º do art.29-F da Resolução da Diretoria Colegiada - RDC n° 16, de 1° de abril de 2014
-.
+Parágrafo único. Aos estabelecimentos que dispensam somente gases medicinais, não se aplica o §3º do art.29-F da Resolução da Diretoria Colegiada - RDC n° 16, de 1° de abril de 2014.
 Art. 87. Esta Resolução entra em vigor 24 meses após sua publicação.
 ANTONIO BARRAS TORRES
 Diretor-Presidente

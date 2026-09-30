@@ -101,6 +101,11 @@ def extrair(r):
     soup = BeautifulSoup(r.content, "html.parser")
     for x in soup(["script", "style", "noscript", "nav", "footer"]):
         x.decompose()
+    # Links e marcações dentro do parágrafo (ex.: “art. 15, III e IV” da Lei 9.782
+    # no preâmbulo) viravam linhas próprias e eram lidos como artigos da norma.
+    for x in soup.find_all(["a", "span", "b", "i", "strong", "em", "u", "font", "sup", "sub"]):
+        x.unwrap()
+    soup.smooth()
     return limpar_linhas(soup.get_text("\n")), "html"
 
 

@@ -10,22 +10,13 @@ FECHAR NOTAS DE ALTERAÇĂO
 -
 Resoluçăo da Diretoria Colegiada Anvisa nş 1.041, de 26/08/2026
 Resoluçăo da Diretoria Colegiada Anvisa nş 1.031, de 26/06/2026
-Vigente com Alterações
-Resoluçăo da Diretoria Colegiada - RDC nş 870, de 17/05/2024
+Vigente com AlteraçõesResoluçăo da Diretoria Colegiada - RDC nş 870, de 17/05/2024
 Ver mais detalhes
 MINISTÉRIO DA SAÚDE
 AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
 DIRETORIA COLEGIADA
 RESOLUÇÃO DA DIRETORIA COLEGIADA ANVISA - RDC Nº 870, DE 17 DE MAIO DE 2024
-A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o
-art. 15, III e IV
-, aliado ao
-art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999
-, e ao
-art. 187, VI, § 1º
-do Regimento Interno aprovado pela
-Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021
-, resolve adotar a seguinte Resolução, conforme deliberado em reunião realizada em 15 de maio de 2024, e eu, Diretor-Presidente, determino a sua publicação.
+A DIRETORIA COLEGIADA DA AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 187, VI, § 1º do Regimento Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve adotar a seguinte Resolução, conforme deliberado em reunião realizada em 15 de maio de 2024, e eu, Diretor-Presidente, determino a sua publicação.
 CAPÍTULO I
 DISPOSIÇÕES INICIAIS
 Seção I
@@ -39,11 +30,7 @@ Art. 3º Para os fins desta Resolução, são adotadas as seguintes definições
 I- mudança de implementação imediata: mudança pós-registro para a qual a Anvisa concede autorização prévia para sua imediata implementação pela empresa mediante a inclusão, no HMP ou na petição protocolada individualmente, de todas as provas satisfatórias requeridas para a modificação, conforme disposto nesta Resolução;
 II- apresentação comercial: cada uma das opções em que o gás medicinal é disponibilizado no mercado, considerando as características de volume, concentração, acondicionamento e forma farmacêutica;
 III- caminhão-tanque: veículo contendo um recipiente de grande porte afixado para o transporte de líquidos criogênicos;
-IV- Certificado de Boas Práticas de Fabricação (CBPF) de gases medicinais: documento emitido pela Anvisa atestando que determinado estabelecimento cumpre com as Boas Práticas de Fabricação de gases medicinais dispostas na
-Resolução da Diretoria Colegiada - RDC nº 658, de 30 de março de 2022
-, e
-Instrução Normativa - IN nº 129, de 30 de março de 2022
-, ou outra(s) que vier(em) a lhe(s) substituir;
+IV- Certificado de Boas Práticas de Fabricação (CBPF) de gases medicinais: documento emitido pela Anvisa atestando que determinado estabelecimento cumpre com as Boas Práticas de Fabricação de gases medicinais dispostas na Resolução da Diretoria Colegiada - RDC nº 658, de 30 de março de 2022, e Instrução Normativa - IN nº 129, de 30 de março de 2022, ou outra(s) que vier(em) a lhe(s) substituir;
 V- cilindro: recipiente transportável e pressurizado com capacidade medida em volume de água que não exceda 150 litros;
 VI- empresa notificadora: empresa responsável pela notificação do gás medicinal;
 VII- empresa detentora do registro: empresa responsável pelo registro do gás medicinal;
@@ -53,11 +40,7 @@ X- gás: substância ou mistura de substâncias cuja pressão de vapor situa-se 
 XI- gás componente: cada um dos gases que compõem o gás medicinal;
 XII- gás liquefeito: gás na pressão de vapor que permanece parcialmente liquefeito em temperatura acima de -50 °C;
 XIII- gás medicinal: gás ou mistura de gases destinados a tratar ou prevenir doenças em humanos ou administrados a humanos para fins de diagnóstico médico ou para restaurar, corrigir ou modificar funções fisiológicas;
-XIV- gás medicinal sujeito à notificação: gás medicinal constante na lista de gases medicinais sujeitos à notificação, instituída pela
-Instrução Normativa Anvisa- IN nº 301, de 17 de maio de 2024
-, ou outra que vier a lhe substituir, com monografia na Farmacopeia Brasileira ou compêndio admitido pela Anvisa, conforme
-Resolução da Diretoria Colegiada - RDC nº 511, de 27 de maio de 2021
-, ou outra que vier a lhe substituir, que dispõem sobre a admissibilidade de códigos farmacêuticos estrangeiros;
+XIV- gás medicinal sujeito à notificação: gás medicinal constante na lista de gases medicinais sujeitos à notificação, instituída pela Instrução Normativa Anvisa- IN nº 301, de 17 de maio de 2024, ou outra que vier a lhe substituir, com monografia na Farmacopeia Brasileira ou compêndio admitido pela Anvisa, conforme Resolução da Diretoria Colegiada - RDC nº 511, de 27 de maio de 2021, ou outra que vier a lhe substituir, que dispõem sobre a admissibilidade de códigos farmacêuticos estrangeiros;
 XV- gás medicinal sujeito ao registro: gás medicinal enquadrado como medicamento não relacionado na lista de gases medicinais sujeitos à notificação;
 XVI- gás ou líquido criogênico: gás altamente refrigerado em equilíbrio de fase (líquido e sua pressão de vapor) e com ponto de ebulição menor ou igual a -150 °C na pressão absoluta de 101,3 kPa;
 XVII- Histórico de Mudanças do Produto (HMP): formulário no qual deverão ser registradas informações a respeito do histórico anual do gás medicinal registrado;
@@ -86,37 +69,25 @@ Art. 9º A Anvisa poderá, a seu critério e mediante justificativa técnica, re
 Art. 10. O relatório de ensaios clínicos para fins de registro, quando solicitado, deve conter também as seguintes informações:
 I- referências bibliográficas, quando disponíveis; e
 II- todas as informações clínicas disponíveis, favoráveis e desfavoráveis ao gás medicinal em estudo.
-Art. 11. Todos os estudos clínicos conduzidos em território nacional para fins de registro devem seguir a
-Resolução da Diretoria Colegiada - RDC nº 9, de 20 de fevereiro de 2015
-, ou outra que vier a lhe substituir, que dispõem sobre o regulamento para a realização de ensaios clínicos com medicamentos no Brasil.
+Art. 11. Todos os estudos clínicos conduzidos em território nacional para fins de registro devem seguir a Resolução da Diretoria Colegiada - RDC nº 9, de 20 de fevereiro de 2015, ou outra que vier a lhe substituir, que dispõem sobre o regulamento para a realização de ensaios clínicos com medicamentos no Brasil.
 Parágrafo único. A aprovação prévia do desenvolvimento clínico conduzido em território nacional é obrigatória para a utilização dos resultados para fins de registro.
 Art. 12. A empresa deverá requerer à Farmacopeia Brasileira a inclusão dos componentes do gás medicinal que ainda não estejam presentes na lista da Denominação Comum Brasileira (DCB).
-Art. 13. Todos os documentos referentes a petições de registro, renovação de registro e mudanças pós-registro devem ser encaminhados de acordo com a
-RDC nº 25, de 16 de junho de 2011
-, ou outra que vier a lhe substituir, que dispõem sobre os procedimentos gerais para utilização dos serviços de protocolo de documentos no âmbito da Anvisa.
+Art. 13. Todos os documentos referentes a petições de registro, renovação de registro e mudanças pós-registro devem ser encaminhados de acordo com a RDC nº 25, de 16 de junho de 2011, ou outra que vier a lhe substituir, que dispõem sobre os procedimentos gerais para utilização dos serviços de protocolo de documentos no âmbito da Anvisa.
 Parágrafo único. Quando a submissão da petição não ocorrer por meio eletrônico, uma cópia de todos os documentos em arquivo eletrônico que permita cópia e busca textual deve ser anexada à petição.
 CAPÍTULO III
 NOTIFICAÇÃO DE GASES MEDICINAIS ENQUADRADOS COMO MEDICAMENTOS
-Art. 14. A lista de gases medicinais enquadrados como medicamentos sujeitos à notificação, suas indicações, contraindicações, precauções, reações adversas, interações medicamentosas e linhas de produção constam no Anexo da
-Instrução Normativa Anvisa- IN nº 301, de 17 de maio de 2024
-, ou outra que vier a lhe substituir.
+Art. 14. A lista de gases medicinais enquadrados como medicamentos sujeitos à notificação, suas indicações, contraindicações, precauções, reações adversas, interações medicamentosas e linhas de produção constam no Anexo da Instrução Normativa Anvisa- IN nº 301, de 17 de maio de 2024, ou outra que vier a lhe substituir.
 Art. 15. A notificação de gases medicinais enquadrados como medicamentos, mediante procedimento eletrônico, deve ser realizada em sistema disponível no sítio eletrônico da Anvisa.
 Art. 16. Apenas as empresas que atendam ao disposto nos artigos 5º ou 6º desta Resolução podem notificar, fabricar ou envasar gases medicinais.
 Art. 17. A notificação está sujeita à Taxa de Fiscalização de Vigilância Sanitária (TFVS) correspondente à isenção de registro de medicamento.
-Art. 18. A notificação deve ser realizada obedecendo integralmente às informações padronizadas no Anexo da
-IN nº 301, de 2024
-, ou outra que vier a lhe substituir, e instruída com as seguintes informações:
+Art. 18. A notificação deve ser realizada obedecendo integralmente às informações padronizadas no Anexo da IN nº 301, de 2024, ou outra que vier a lhe substituir, e instruída com as seguintes informações:
 I- descrição das apresentações;
 II- nome comercial (se houver);
 III- fabricante(s);
 IV- envasador(as);
 V- referência farmacopeica utilizada no controle de qualidade; e
-VI- Relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a
-Resolução da Diretoria Colegiada - RDC nº 318, de 6 de novembro de 2019
-, ou outra que vier a lhe substituir, que estabelece os critérios para a realização de estudos de estabilidade de insumos farmacêuticos ativos e medicamentos, exceto biológicos;
-VII- layout dos rótulos ou folhetos informativos contendo as informações constantes no Anexo I desta
-Resolução e IN nº 301, de 2024
-, ou outra que vier a lhe substituir.
+VI- Relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a Resolução da Diretoria Colegiada - RDC nº 318, de 6 de novembro de 2019, ou outra que vier a lhe substituir, que estabelece os critérios para a realização de estudos de estabilidade de insumos farmacêuticos ativos e medicamentos, exceto biológicos;
+VII- layout dos rótulos ou folhetos informativos contendo as informações constantes no Anexo I desta Resolução e IN nº 301, de 2024, ou outra que vier a lhe substituir.
 § 1º Para cada gás medicinal na sua respectiva forma farmacêutica produzido pela empresa deve haver uma notificação.
 § 2º A empresa deve realizar nova notificação sempre que houver inclusões ou alterações em quaisquer informações prestadas por meio do procedimento eletrônico de notificação.
 § 3º Alternativamente, em substituição ao exigido no inciso VI do caput deste artigo, pode ser apresentado o racional técnico baseado em dados de literatura técnico-científica que contemple as informações de estabilidade utilizadas para a definição do prazo de validade proposto para o gás medicinal.
@@ -128,29 +99,21 @@ Art. 19. A manutenção da regularização dos gases medicinais enquadrados como
 Art. 20. As informações apresentadas na notificação, bem como o conteúdo de toda a documentação apresentada, são de responsabilidade da empresa que realizou a notificação e serão objeto de controle sanitário pela Anvisa, inclusive em inspeções.
 Parágrafo único. Caso seja constatada irregularidade na notificação do gás medicinal, a Anvisa efetuará seu cancelamento ou determinará a suspensão cautelar da fabricação do gás medicinal, a depender da gravidade da irregularidade, sem prejuízo das demais sanções administrativas e penais a que a empresa esteja sujeita.
 Art. 21. Os gases medicinais notificados devem ser comercializados com rotulagem ou folheto informativo em conformidade com o disposto no Anexo I desta Resolução, ficando dispensados da apresentação de texto de bula.
-Art. 22. As misturas contendo gases medicinais previamente notificados pela empresa e elaboradas sob solicitação de serviços de saúde estão isentas de nova notificação desde que sejam fabricadas conforme as Boas Práticas de Fabricação de gases medicinais dispostas na
-Resolução da Diretoria Colegiada - RDC nº 658, de 2022
-e na
-Instrução Normativa - IN nº 129, de 2022
-, ou outra(s) que vier(em) a lhe(s) substituir.
+Art. 22. As misturas contendo gases medicinais previamente notificados pela empresa e elaboradas sob solicitação de serviços de saúde estão isentas de nova notificação desde que sejam fabricadas conforme as Boas Práticas de Fabricação de gases medicinais dispostas na Resolução da Diretoria Colegiada - RDC nº 658, de 2022 e na Instrução Normativa - IN nº 129, de 2022, ou outra(s) que vier(em) a lhe(s) substituir.
 Parágrafo único. Os rótulos das misturas de gases medicinais elaboradas sob solicitação de serviços de saúde devem apresentar a razão social, CNPJ e endereço do serviço de saúde no qual a mistura de gases medicinais será utilizada.
 Art. 23. As solicitações de inclusão, exclusão ou alteração de informações na lista de gases medicinais sujeitos à notificação devem ser protocoladas na Anvisa por meio de assunto de petição específico e devem ser instruídas conforme disposto no Anexo II desta Resolução.
 Parágrafo único. A Anvisa poderá solicitar, a seu critério, bibliografia complementar que auxilie na decisão de inclusão, alteração ou exclusão de informações solicitadas.
 Art. 24. A Anvisa disponibilizará em seu endereço eletrônico para consulta a relação dos gases medicinais notificados.
 CAPÍTULO IV
 REGISTRO DE GASES MEDICINAIS ENQUADRADOS COMO MEDICAMENTOS
-Art. 25. Estão sujeitos ao registro todos os gases medicinais enquadrados como medicamentos e não relacionados na lista de gases medicinais sujeitos à notificação instituída pela
-Instrução Normativa Anvisa - IN nº 301, de 2024
-, ou outra que vier a lhe substituir.
+Art. 25. Estão sujeitos ao registro todos os gases medicinais enquadrados como medicamentos e não relacionados na lista de gases medicinais sujeitos à notificação instituída pela Instrução Normativa Anvisa - IN nº 301, de 2024, ou outra que vier a lhe substituir.
 Seção I
 Documentação de Registro
 Art. 26. A empresa deve protocolar uma petição para cada gás medicinal, apresentando os seguintes documentos:
 I- índice dos documentos que compõem a petição;
 II- formulário de Petição, devidamente preenchido e assinado;
 III- comprovante de pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS) e respectiva Guia de Recolhimento da União (GRU), ou comprovante de isenção, quando for o caso;
-IV- layout de texto de bula conforme
-Resolução da Diretoria Colegiada - RDC nº 47, de 8 de setembro de 2009
-, ou outra que vier a lhe substituir, que estabelecem regras para elaboração, harmonização, atualização, publicação e disponibilização de bulas de medicamentos para pacientes e para profissionais de saúde;
+IV- layout de texto de bula conforme Resolução da Diretoria Colegiada - RDC nº 47, de 8 de setembro de 2009, ou outra que vier a lhe substituir, que estabelecem regras para elaboração, harmonização, atualização, publicação e disponibilização de bulas de medicamentos para pacientes e para profissionais de saúde;
 V- layout dos rótulos contendo as informações constantes no Anexo III desta Resolução;
 VI- documentação técnica de qualidade; e
 VII- documentação técnica de segurança e eficácia.
@@ -171,9 +134,7 @@ c) características físico-químicas dos gases componentes: fórmula estrutural
 d) descrição do processo de obtenção dos gases componentes: fluxograma do processo de obtenção, incluindo as nomenclaturas, as fórmulas moleculares e as estruturas químicas dos materiais de partida e intermediários; e relação dos solventes, catalisadores e reagentes utilizados, identificando os pontos críticos do processo e os pontos de controle;
 e) controle de qualidade dos gases componentes: especificações, descrição dos métodos analíticos e laudo de análise emitido pelo fabricante do gás medicinal, acompanhados de referência farmacopeia ou, na sua ausência, de relatórios de validação de método analítico;
 f) controle de qualidade do gás medicinal: especificações, descrição dos métodos analíticos e laudo de análise acompanhados de referência farmacopeica ou, na sua ausência, de relatórios de validação de método analítico; e
-g) relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a
-Resolução da Diretoria Colegiada - RDC nº 318, de 2019
-, ou outra que vier a lhe substituir.
+g) relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a Resolução da Diretoria Colegiada - RDC nº 318, de 2019, ou outra que vier a lhe substituir.
 II- sobre a produção do gás medicinal:
 a) nomes e responsabilidades das empresas, incluindo terceirizadas, envolvidas na produção e controle de qualidade do gás medicinal;
 b) fluxograma com as etapas do processo de fabricação mostrando onde os materiais entram no processo, identificando os pontos críticos do processo e os pontos de controle, testes intermediários e controle do produto final;
@@ -201,11 +162,7 @@ Art. 30. Para efeito de renovação do registro do gás medicinal na Anvisa, a e
 I- formulário de Petição, devidamente preenchido e assinado;
 II- comprovante de pagamento da Taxa de Fiscalização de Vigilância Sanitária (TFVS) e respectiva Guia de Recolhimento da União (GRU), ou comprovante de isenção, quando for o caso; e
 III- comprovante de comercialização do gás medicinal durante pelo menos o tempo correspondente aos dois terços finais do período de validade do registro expirado.
-Parágrafo único. Os prazos e procedimentos para o peticionamento da renovação do registro de gases medicinais enquadrados como medicamentos estão estabelecidos pela
-Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004
-, e
-Resolução da Diretoria Colegiada - RDC nº 317, de 22 de outubro de 2019
-, ou outra que vier a lhe substituir, que dispõem sobre a revalidação do registro e os prazos de validade e a documentação necessária para a manutenção da regularização de medicamentos.
+Parágrafo único. Os prazos e procedimentos para o peticionamento da renovação do registro de gases medicinais enquadrados como medicamentos estão estabelecidos pela Resolução da Diretoria Colegiada - RDC nº 250, de 20 de outubro de 2004, e Resolução da Diretoria Colegiada - RDC nº 317, de 22 de outubro de 2019, ou outra que vier a lhe substituir, que dispõem sobre a revalidação do registro e os prazos de validade e a documentação necessária para a manutenção da regularização de medicamentos.
 CAPÍTULO VI
 PÓS-REGISTRO DE GASES MEDICINAIS ENQUADRADOS COMO MEDICAMENTOS
 Art. 31. Todas as petições de mudanças pós-registro de gases medicinais enquadrados como medicamentos devem ser acompanhadas dos seguintes documentos:
@@ -256,9 +213,7 @@ Inclusão de Novo Acondicionamento
 Art. 41. A petição de inclusão de novo acondicionamento deve ser acompanhada dos seguintes documentos:
 I- caracterização do(s) novo(s) recipiente(s) e válvula(s), com descrição, desenho detalhado, materiais componentes e especificações;
 II- quadro comparativo entre as características do(s) recipiente(s) e válvula(s) aprovado(s) e proposto(s); e
-III- relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a
-Resolução da Diretoria Colegiada - RDC nº 318, de 2019
-, ou outra que vier a lhe substituir.
+III- relatórios de estudos de estabilidade realizados com, no mínimo, 3 (três) lotes do gás medicinal e conduzidos conforme a Resolução da Diretoria Colegiada - RDC nº 318, de 2019, ou outra que vier a lhe substituir.
 Parágrafo único: Alternativamente, em substituição ao exigido no Inciso III do caput deste artigo, pode ser apresentado o racional técnico baseado em dados de literatura técnico-científica que contemple as informações de estabilidade utilizadas para a definição do prazo de validade proposto para o gás medicinal.
 Seção VI
 Inclusão de Nova Apresentação Comercial
@@ -324,56 +279,31 @@ Parágrafo único. O protocolo do HMP deve ser realizado exclusivamente via peti
 CAPÍTULO VII
 RÓTULOS E BULAS DE GASES MEDICINAIS ENQUADRADOS COMO MEDICAMENTOS
 Art. 56. Os rótulos dos recipientes que contenham os gases medicinais notificados devem apresentar as informações constantes no Anexo I desta Resolução, sem prejuízo de outras informações de segurança.
-Parágrafo único. As informações estabelecidas no Anexo da
-Instrução Normativa Anvisa - IN nº 301, de 2024
-, com exceção das indicações terapêuticas, e as informações de manuseio e armazenamento, dispostas no Anexo I desta Resolução, podem ser complementadas pela empresa conforme características do gás medicinal e recipiente utilizado.
+Parágrafo único. As informações estabelecidas no Anexo da Instrução Normativa Anvisa - IN nº 301, de 2024, com exceção das indicações terapêuticas, e as informações de manuseio e armazenamento, dispostas no Anexo I desta Resolução, podem ser complementadas pela empresa conforme características do gás medicinal e recipiente utilizado.
 Art. 57. Os rótulos dos recipientes que contenham os gases medicinais registrados devem apresentar as informações constantes no Anexo III desta Resolução, sem prejuízo de outras informações de segurança.
 Art. 58. As empresas deverão disponibilizar as informações constantes do Anexo I e Anexo III desta Resolução em meio eletrônico.
 Art. 59. Os caminhões-tanque e os tanques criogênicos fixos de serviços de saúde estão isentos da obrigatoriedade de exibição de rótulo conforme disposto nesta Resolução.
-Art. 60. Os gases medicinais registrados devem, obrigatoriamente, ser acompanhados de bula elaborada e disponibilizada de acordo com a
-Resolução da Diretoria Colegiada - RDC nº 47, de 2009
-, ou outra que vier a lhe substituir.
+Art. 60. Os gases medicinais registrados devem, obrigatoriamente, ser acompanhados de bula elaborada e disponibilizada de acordo com a Resolução da Diretoria Colegiada - RDC nº 47, de 2009, ou outra que vier a lhe substituir.
 Parágrafo único. Os gases medicinais notificados estão isentos da apresentação de bula.
-Art. 61. As alterações de texto de bula e de layout de rotulagem dos gases medicinais registrados devem seguir, respectivamente, o disposto na
-Resolução da Diretoria Colegiada - RDC nº 47, de 2009
-, e na
-Resolução da Diretoria Colegiada - RDC nº 768, de 12 de dezembro de 2022
-, ou outra que vier a lhes substituir.
+Art. 61. As alterações de texto de bula e de layout de rotulagem dos gases medicinais registrados devem seguir, respectivamente, o disposto na Resolução da Diretoria Colegiada - RDC nº 47, de 2009, e na Resolução da Diretoria Colegiada - RDC nº 768, de 12 de dezembro de 2022, ou outra que vier a lhes substituir.
 CAPÍTULO VIII
 DISPOSIÇÕES FINAIS E TRANSITÓRIAS
-Art. 62. As obrigatoriedades referentes à farmacovigilância a que ficam sujeitos os detentores de registro e notificação de gases medicinais enquadrados como medicamentos são tratadas na
-Resolução da Diretoria Colegiada - RDC nº 406, de 22 de junho de 2020
-, ou outra que vier a lhe substituir, que dispõe sobre as Boas Práticas de Farmacovigilância para Detentores de Registro de Medicamento de uso humano.
-Art. 63. Fica concedido o prazo até 31 de março de 2027 para que as empresas realizem a notificação ou solicitem o registro dos gases medicinais enquadrados como medicamentos que produzam.
-(Redação dada pela
-Resolução da Diretoria Colegiada Anvisa nº 1.041, de 26/08/2026, republicada no DOU nº 165, de 01/09/2026
-)
+Art. 62. As obrigatoriedades referentes à farmacovigilância a que ficam sujeitos os detentores de registro e notificação de gases medicinais enquadrados como medicamentos são tratadas na Resolução da Diretoria Colegiada - RDC nº 406, de 22 de junho de 2020, ou outra que vier a lhe substituir, que dispõe sobre as Boas Práticas de Farmacovigilância para Detentores de Registro de Medicamento de uso humano.
+Art. 63. Fica concedido o prazo até 31 de março de 2027 para que as empresas realizem a notificação ou solicitem o registro dos gases medicinais enquadrados como medicamentos que produzam. (Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.041, de 26/08/2026, republicada no DOU nº 165, de 01/09/2026)
 Redações Anteriores
-Art. 64. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da
-Lei nº 6.437, de 20 de agosto de 1977
-, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 64. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
 Art. 65. Ficam revogadas:
-I- a
-Resolução da Diretoria Colegiada - RDC nº 70, de 01 de outubro de 2008
-, publicada no Diário Oficial da União n° 195, de 2 de outubro de 2008, Seção 1, pág. 40;
-II- a
-Resolução da Diretoria Colegiada - RDC nº 68, de 16 de dezembro de 2011
-, publicada no Diário Oficial da União n° 244, de 21 de dezembro de 2011, Seção 1, pág. 78; e
-III- a
-Resolução da Diretoria Colegiada - RDC nº 25, de 25 de junho de 2015
-, publicada no Diário Oficial da União n° 120, de 26 de junho de 2015, Seção 1, pág. 26.
+I- a Resolução da Diretoria Colegiada - RDC nº 70, de 01 de outubro de 2008, publicada no Diário Oficial da União n° 195, de 2 de outubro de 2008, Seção 1, pág. 40;
+II- a Resolução da Diretoria Colegiada - RDC nº 68, de 16 de dezembro de 2011, publicada no Diário Oficial da União n° 244, de 21 de dezembro de 2011, Seção 1, pág. 78; e
+III- a Resolução da Diretoria Colegiada - RDC nº 25, de 25 de junho de 2015, publicada no Diário Oficial da União n° 120, de 26 de junho de 2015, Seção 1, pág. 26.
 Art. 66. Esta Resolução entra em vigor em 1º de julho de 2024.
 ANTONIO BARRA TORRES
 Diretor-Presidente
 ANEXO I
 ROTULAGEM OU FOLHETO INFORMATIVO DE GASES MEDICINAIS ENQUADRADOS COMO MEDICAMENTOS SUJEITOS À NOTIFICAÇÃO
-(Redação dada pela
-Resolução da Diretoria Colegiada Anvisa nº 1.031, de 26/06/2026
-)
+(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.031, de 26/06/2026)
 Redações Anteriores
-Nome do gás medicinal (preencher conforme
-Instrução Normativa Anvisa- IN nº 301, de 2024
-, ou outra que vier a lhe substituir).
+Nome do gás medicinal (preencher conforme Instrução Normativa Anvisa- IN nº 301, de 2024, ou outra que vier a lhe substituir).
 Nome comercial do gás medicinal (se houver).
 Composição do gás medicinal.
 Quantidade (em metros cúbicos ou quilogramas).
@@ -381,9 +311,7 @@ Via de administração.
 Número de Lote.
 Data de Envase.
 Prazo de Validade.
-Indicações, contraindicações, precauções, reações adversas e interações medicamentosas (preencher conforme
-Instrução Normativa Anvisa - IN nº 301, de 2024
-, ou outra que vier a lhe substituir).
+Indicações, contraindicações, precauções, reações adversas e interações medicamentosas (preencher conforme Instrução Normativa Anvisa - IN nº 301, de 2024, ou outra que vier a lhe substituir).
 "Posologia e administração: A concentração, o fluxo e o tempo de administração dos gases medicinais devem ser determinados pelo profissional de saúde habilitado de acordo com o procedimento realizado e o estado de saúde do paciente. Na administração dos gases medicinais por inalação deve-se assegurar quantidade adequada de oxigênio na mistura de acordo com o procedimento realizado e o estado de saúde do paciente, a fim de evitar asfixia. Para uso domiciliar, o paciente deve receber treinamento completo sobre o uso do gás medicinal e equipamentos."
 "Manuseio e Armazenamento: Armazenar os cilindros fixados na posição vertical em área limpa, bem ventilada, protegidos da chuva, de substâncias inflamáveis, de choques, de quedas, de altas temperaturas e de fontes de ignição. Manusear os cilindros com as mãos limpas e não utilizar óleo ou graxa para conectar ou desemperrar os dispositivos ao cilindro pois há risco de combustão espontânea destes materiais com gases comburentes sob alta pressão e concentração. Não manusear os cilindros segurando-os por sua válvula. Não arrastar ou rolar os cilindros pelo chão. Não submeter os cilindros a pancadas mecânicas ou equipamentos energizados. Quando os cilindros forem instalados em sistemas centralizados, utilizar válvula de retenção na linha de saída para impedir o retorno do gás medicinal para o cilindro. Verificar a identificação do gás medicinal, pressão e compatibilidade dos dispositivos antes de fazer a ligação do cilindro ao sistema." (apenas para gases medicinais comercializados em cilindros)
 "Informe ao seu médico ou cirurgião-dentista o aparecimento de reações indesejáveis pelo uso do gás medicinal. Informe também à empresa através do seu serviço de atendimento."
@@ -431,9 +359,7 @@ Justificativa técnica para a exclusão ou alteração
 Referências bibliográficas acompanhadas de cópias.
 ANEXO III
 ROTULAGEM DE GASES MEDICINAIS ENQUADRADADOS COMO MEDICAMENTOS SUJEITOS AO REGISTRO
-(Redação dada pela
-Resolução da Diretoria Colegiada Anvisa nº 1.031, de 26/06/2026
-)
+(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.031, de 26/06/2026)
 Redações Anteriores
 Nome do gás medicinal.
 Nome comercial do gás medicinal (se houver).
