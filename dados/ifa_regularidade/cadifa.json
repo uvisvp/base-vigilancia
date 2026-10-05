@@ -1,6 +1,6 @@
 {
   "schema": "cadifa-v1",
-  "gerado_em": "2026-09-28T17:59:33.214575+00:00",
+  "gerado_em": "2026-10-05T18:54:36.059267+00:00",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
   "pagina_oficial_cadifa": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/cadifa",
   "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
@@ -30,7 +30,7 @@
     "numero_cadifa_explicito",
     "revisao_cadifa_explicita"
   ],
-  "total": 820,
+  "total": 824,
   "registros": [
     {
       "DS_APRESENTACAO_PRODUTO": "001",
@@ -4228,6 +4228,24 @@
     },
     {
       "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351265518202332",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "0430141238",
+      "NO_INSUMO_MINUSC": "pitavastatina cálcica pentaidratada",
+      "NO_RAZAO_SOCIAL_MAISC": "Kolon Life Science, Inc.",
+      "ifa": "pitavastatina cálcica pentaidratada",
+      "detentor": "Kolon Life Science, Inc.",
+      "processo": "25351265518202332",
+      "expediente": "0430141238",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
       "NU_PROCESSO": "25351266164202424",
       "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "DS_SITUACAO_APRESENTACAO": "Deferida",
@@ -4858,6 +4876,24 @@
     },
     {
       "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351325434202365",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "0525092234",
+      "NO_INSUMO_MINUSC": "cloridrato de duloxetina",
+      "NO_RAZAO_SOCIAL_MAISC": "Alembic Pharmaceuticals Limited",
+      "ifa": "cloridrato de duloxetina",
+      "detentor": "Alembic Pharmaceuticals Limited",
+      "processo": "25351325434202365",
+      "expediente": "0525092234",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
       "NU_PROCESSO": "25351331626202220",
       "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "DS_SITUACAO_APRESENTACAO": "Deferida",
@@ -5391,6 +5427,24 @@
       "detentor": "Bdr Lifesciences Private Limited",
       "processo": "25351368762202437",
       "expediente": "0928025241",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351370849202474",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "0944991246",
+      "NO_INSUMO_MINUSC": "hemifumarato de bisoprolol",
+      "NO_RAZAO_SOCIAL_MAISC": "Harman Finochem Limited",
+      "ifa": "hemifumarato de bisoprolol",
+      "detentor": "Harman Finochem Limited",
+      "processo": "25351370849202474",
+      "expediente": "0944991246",
       "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "codigo_assunto": "11637",
       "situacao": "Deferida",
@@ -6633,6 +6687,24 @@
       "detentor": "Dr Reddys Farmacêutica Do Brasil Ltda",
       "processo": "25351420035202498",
       "expediente": "1377874249",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351423008202477",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "1401504248",
+      "NO_INSUMO_MINUSC": "dimesilato de lisdexanfetamina",
+      "NO_RAZAO_SOCIAL_MAISC": "Chr. Olesen Synthesis A/S",
+      "ifa": "dimesilato de lisdexanfetamina",
+      "detentor": "Chr. Olesen Synthesis A/S",
+      "processo": "25351423008202477",
+      "expediente": "1401504248",
       "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "codigo_assunto": "11637",
       "situacao": "Deferida",
@@ -14793,5 +14865,5 @@
       "apresentacao": "006"
     }
   ],
-  "sha256_conteudo": "d5ab4269ae5b481bbd65e6dcc254ed9f8fb910a879e076a07a5f13ca01fcc949"
+  "sha256_conteudo": "3b645c03f92bbdba65601d720fe5ac3b1145711c231a42b4d00cd7e190cb1f20"
 }

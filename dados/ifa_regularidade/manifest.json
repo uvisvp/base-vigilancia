@@ -1,6 +1,6 @@
 {
   "schema": "ifa-regularidade-manifest-v1",
-  "gerado_em": "2026-09-28T17:59:33.214575+00:00",
+  "gerado_em": "2026-10-05T18:54:36.059267+00:00",
   "fontes": {
     "cbpf_ifa": {
       "arquivo": "cbpf_ifa.json",
@@ -14,8 +14,8 @@
       "arquivo": "cadifa.json",
       "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
       "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
-      "total": 820,
-      "sha256": "d5ab4269ae5b481bbd65e6dcc254ed9f8fb910a879e076a07a5f13ca01fcc949",
+      "total": 824,
+      "sha256": "3b645c03f92bbdba65601d720fe5ac3b1145711c231a42b4d00cd7e190cb1f20",
       "mapa_campos": {
         "ifa": "NO_INSUMO_MINUSC",
         "detentor": "NO_RAZAO_SOCIAL_MAISC",
