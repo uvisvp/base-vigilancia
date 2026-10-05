@@ -5,12 +5,12 @@
   "fonte": "Portal de Dados Abertos do MAPA / SIPEAGRO",
   "url_fonte": "https://dados.agricultura.gov.br/dataset/52a01565-72d6-410e-b21b-64035831a7be/resource/8ef7a4fc-f9d9-495b-b3ae-a2ffe931ff82/download/sipeagrovinhosebebidas.csv",
   "arquivo_origem": "sipeagrovinhosebebidas.csv",
-  "data_fonte": "Sun, 27 Sep 2026 05:30:15 GMT",
-  "data_download": "2026-09-28T17:15:20Z",
-  "data_processamento": "2026-09-28T17:15:20Z",
-  "quantidade_registros": 31780,
+  "data_fonte": "Sun, 04 Oct 2026 05:30:18 GMT",
+  "data_download": "2026-10-05T17:41:46Z",
+  "data_processamento": "2026-10-05T17:41:46Z",
+  "quantidade_registros": 31829,
   "versao_schema": "1.2.0",
-  "sha256": "dafbc9da1c42b5509dde29ad13c0ee9eb5283593c0c44cb5eff8dae696afbe3a",
+  "sha256": "36569fbf9c95846e562fddc069b925d4f977577328d1a726b9ae469d651ee930",
   "campos_origem": [
     "UF",
     "MUNICIPIO",
@@ -54,22 +54,22 @@
       },
       {
         "arquivo": "lotes/0006.json",
-        "quantidade": 1780
+        "quantidade": 1829
       }
     ]
   },
   "indices": {
     "registro": {
       "arquivo": "indice_registro.json",
-      "chaves": 12750
+      "chaves": 12765
     },
     "nome": {
       "arquivo": "indice_nome.json",
-      "chaves": 12001
+      "chaves": 12015
     },
     "municipio_uf": {
       "arquivo": "indice_municipio_uf.json",
-      "chaves": 2470
+      "chaves": 2471
     },
     "classificacao": {
       "arquivo": "indice_classificacao.json",
@@ -89,11 +89,11 @@
     }
   },
   "estatisticas": {
-    "identificador_fiscal_mascarado": 31778,
+    "identificador_fiscal_mascarado": 31827,
     "identificador_fiscal_vazio": 0,
     "identificador_fiscal_completo_detectado": 0,
     "registros_mapa_vazios": 0,
-    "registros_mapa_duplicados": 10655
+    "registros_mapa_duplicados": 10669
   },
   "observacao": "Este recurso contém dados de estabelecimentos de Vinhos e Bebidas. Não são inferidos produtos, marcas ou outros campos ausentes da fonte."
 }
