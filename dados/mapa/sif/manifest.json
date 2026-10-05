@@ -7,31 +7,31 @@
       "nome": "Estabelecimentos Registrados no SIF",
       "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/97277e92-264a-4dc0-9aea-f87b8ea93798/download/sigsifestabelecimentosregistradosnosif.csv",
       "arquivo_origem": "sigsifestabelecimentosregistradosnosif.csv",
-      "data_fonte": "Wed, 02 Sep 2026 06:02:11 GMT",
-      "sha256": "6a9b944ac34f9872b00b32338d5b5f4969c724167d6e2006ec2f71b372538c5a",
+      "data_fonte": "Fri, 02 Oct 2026 06:02:14 GMT",
+      "sha256": "0e3dcf58e379144f716dc62cabde3ec403544b3da9aa1874baad3ad61e51dfac",
       "encoding_detectado": "utf-8-sig",
       "separador_detectado": ";",
-      "quantidade_registros": 24174
+      "quantidade_registros": 36639
     },
     {
       "nome": "Relatório de Estabelecimentos",
       "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/7d02af92-e3cf-4ae4-af8a-0dad334ffdfa/download/sigsifrelatorioestabelecimentos.csv",
       "arquivo_origem": "sigsifrelatorioestabelecimentos.csv",
-      "data_fonte": "Wed, 02 Sep 2026 06:00:12 GMT",
-      "sha256": "1ad31078aa28573e47544510c31b8c9b819922c7615bb6b03179e7503a142efe",
+      "data_fonte": "Fri, 02 Oct 2026 06:10:33 GMT",
+      "sha256": "6219ba51e22e02ae723d505ab52c7670c4a5d954c5974ddec47a4abcf743ee40",
       "encoding_detectado": "utf-8-sig",
       "separador_detectado": ";",
-      "quantidade_registros": 3318
+      "quantidade_registros": 3182
     }
   ],
-  "data_download": "2026-09-03T00:15:13Z",
-  "data_processamento": "2026-09-03T00:15:13Z",
-  "quantidade_registros": 24174,
+  "data_download": "2026-10-05T17:58:50Z",
+  "data_processamento": "2026-10-05T17:58:50Z",
+  "quantidade_registros": 36639,
   "versao_schema": "1.0.1",
-  "sha256_conjunto": "7bd4174158b8e514c71b20f48b59cf90999d2075827892b03d19af8e991aa5f5",
+  "sha256_conjunto": "378c04f57464fbc6a8c6caeba573e6bd2be50c2ce89a2469e8412d51f9b3fc7f",
   "identificador_principal": "numero_sif",
   "campo_identificador_fiscal_origem": "CPF_CNPJ",
-  "duplicados_numero_sif_na_fonte_principal": 1025,
+  "duplicados_numero_sif_na_fonte_principal": 1181,
   "fragmentacao": {
     "tamanho_lote": 5000,
     "fragmentos": [
@@ -53,26 +53,38 @@
       },
       {
         "arquivo": "lotes/0004.json",
-        "quantidade": 4174
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0005.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0006.json",
+        "quantidade": 5000
+      },
+      {
+        "arquivo": "lotes/0007.json",
+        "quantidade": 1639
       }
     ]
   },
   "indices": {
     "sif": {
       "arquivo": "indice_sif.json",
-      "chaves": 3147
+      "chaves": 3143
     },
     "cnpj": {
       "arquivo": "indice_cnpj.json",
-      "chaves": 2880
+      "chaves": 2881
     },
     "nome": {
       "arquivo": "indice_nome.json",
-      "chaves": 3742
+      "chaves": 3736
     },
     "municipio_uf": {
       "arquivo": "indice_municipio_uf.json",
-      "chaves": 1493
+      "chaves": 1489
     },
     "situacao": {
       "arquivo": "indice_situacao.json",
@@ -84,24 +96,24 @@
     },
     "categoria": {
       "arquivo": "indice_categoria.json",
-      "chaves": 18
+      "chaves": 19
     },
     "classe": {
       "arquivo": "indice_classe.json",
-      "chaves": 69
+      "chaves": 60
     }
   },
   "estatisticas": {
-    "fonte_principal_registros": 24174,
-    "fonte_relatorio_registros": 3318,
+    "fonte_principal_registros": 36639,
+    "fonte_relatorio_registros": 3182,
     "relatorio_sem_sif": 0,
     "principal_sem_sif": 0,
-    "cnpj_valido": 23881,
+    "cnpj_valido": 36349,
     "cnpj_invalido": 0,
     "sem_cnpj": 0,
-    "sif_com_classificacao_complementar": 24138,
-    "sif_sem_classificacao_complementar": 36,
-    "sif_com_multiplas_classificacoes": 3326
+    "sif_com_classificacao_complementar": 36568,
+    "sif_sem_classificacao_complementar": 71,
+    "sif_com_multiplas_classificacoes": 315
   },
   "observacao": "Base cadastral principal enriquecida com todas as classificações Área/Categoria/Classe disponíveis no relatório complementar por SIF. Resultado vazio significa apenas 'não localizado nesta base'."
 }
