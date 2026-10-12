@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-05T18:54:36.059267+00:00",
+  "gerado_em": "2026-10-12T19:24:35.897730+00:00",
   "painel_escolhido": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
   "pontuacao": 11,
   "entidade": "TA_DADOS_CADIFA",
@@ -78,7 +78,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos",
         "url_final": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos",
         "nivel": 0,
-        "links": 114
+        "links": 185
       },
       {
         "url": "https://www.gov.br/anvisa/search?origem=keyword&SearchableText=Cadifa",
@@ -132,13 +132,13 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-cadifa.docx",
         "nivel": 1,
-        "links": 97
+        "links": 100
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-parlatorio-coifa-rev00.docx/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-parlatorio-coifa-rev00.docx",
         "nivel": 1,
-        "links": 100
+        "links": 97
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-mudanca-do-detentor-da-cadifa-form-871-manual-f-anvisa-011-v-00/@@download/file",
@@ -150,7 +150,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/lista-de-peticoes-relacionadas-a-cadifa/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/lista-de-peticoes-relacionadas-a-cadifa",
         "nivel": 1,
-        "links": 100
+        "links": 97
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/representacao-esquematica-de-submissao-do-difa/view",
@@ -186,13 +186,13 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc",
         "nivel": 1,
-        "links": 100
+        "links": 97
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-2-ifa.doc/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-2-ifa.doc",
         "nivel": 1,
-        "links": 100
+        "links": 97
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/medicamentos/publicacoes-de-insumos-farmaceuticos/os-58_2019.pdf/@@display-file/file",

@@ -1,6 +1,6 @@
 {
   "schema": "cadifa-v1",
-  "gerado_em": "2026-10-05T18:54:36.059267+00:00",
+  "gerado_em": "2026-10-12T19:24:35.897730+00:00",
   "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-publica-paineis-sobre-carta-de-adequacao-de-dossie-de-insumo-farmaceutico-ativo",
   "pagina_oficial_cadifa": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/cadifa",
   "painel_oficial": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
@@ -30,7 +30,7 @@
     "numero_cadifa_explicito",
     "revisao_cadifa_explicita"
   ],
-  "total": 824,
+  "total": 825,
   "registros": [
     {
       "DS_APRESENTACAO_PRODUTO": "001",
@@ -3609,6 +3609,24 @@
       "detentor": "Changzhou Pharmaceutical Factory",
       "processo": "25351229152202508",
       "expediente": "1588396258",
+      "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "codigo_assunto": "11637",
+      "situacao": "Deferida",
+      "apresentacao": "001"
+    },
+    {
+      "DS_APRESENTACAO_PRODUTO": "001",
+      "NU_PROCESSO": "25351230892202317",
+      "DS_ASSUNTO": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
+      "DS_SITUACAO_APRESENTACAO": "Deferida",
+      "CO_ASSUNTO": "11637",
+      "NU_EXPEDIENTE": "0375772235",
+      "NO_INSUMO_MINUSC": "dipirona monoidratada",
+      "NO_RAZAO_SOCIAL_MAISC": "Euroapi Germany Gmbh",
+      "ifa": "dipirona monoidratada",
+      "detentor": "Euroapi Germany Gmbh",
+      "processo": "25351230892202317",
+      "expediente": "0375772235",
       "assunto": "CADIFA - Solicitação de CADIFA Associada | Associated CADIFA Application",
       "codigo_assunto": "11637",
       "situacao": "Deferida",
@@ -14865,5 +14883,5 @@
       "apresentacao": "006"
     }
   ],
-  "sha256_conteudo": "3b645c03f92bbdba65601d720fe5ac3b1145711c231a42b4d00cd7e190cb1f20"
+  "sha256_conteudo": "3d5fcec870d0acae4c20cfd4e8cdaf1f57eabcdc85e7d0b121ddf3b588a5fdd0"
 }
