@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-09-26T03:55:41.584525+00:00",
+  "gerado_em": "2026-10-16T21:23:41.352009+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -1120,6 +1120,246 @@
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 197-2017": {
+      "arquivo": "rdc-197-2017.json",
+      "nos": 139,
+      "sha256_texto": "ac55a5f387c18d3e513b90659afdf5bdfd0f058a8d7c388910bf2e77b1c82ab4",
+      "proveniencia": {
+        "norma": "RDC 197-2017",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000197&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2017",
+        "consultado_em": "2026-09-30T01:02:20.436644+00:00",
+        "data_fonte": "2017-12-26",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "99892b454a7adfc2efdee0ac33719cef8b6738d457c2defaaff15a1d468e3f4f",
+        "sha256_texto": "ac55a5f387c18d3e513b90659afdf5bdfd0f058a8d7c388910bf2e77b1c82ab4",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 197-2017--oficial.txt",
+        "data_processamento": "2026-09-30T01:02:20.436919+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 887-2024": {
+      "arquivo": "rdc-887-2024.json",
+      "nos": 298,
+      "sha256_texto": "2e1bb4bed566e6fa369df63bb9d405f8a08e5ed8ea42a3218738d45febb1265f",
+      "proveniencia": {
+        "norma": "RDC 887-2024",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000887&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "consultado_em": "2026-09-30T01:02:22.191744+00:00",
+        "data_fonte": "2024-07-11",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "6b15395763277e9443860117bf2f2f1b02202874705c531d4fb63d3569fcc503",
+        "sha256_texto": "2e1bb4bed566e6fa369df63bb9d405f8a08e5ed8ea42a3218738d45febb1265f",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 887-2024--oficial.txt",
+        "data_processamento": "2026-09-30T01:02:22.192148+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "RDC 870-2024": {
+      "arquivo": "rdc-870-2024.json",
+      "nos": 393,
+      "sha256_texto": "e46cf16bd85c6dc0adf2d28b355a6cbc3414b8ac4a211ed356ab75f421c38ada",
+      "proveniencia": {
+        "norma": "RDC 870-2024",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000870&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2024",
+        "consultado_em": "2026-09-30T01:02:23.888893+00:00",
+        "data_fonte": "2024-05-17",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "2e7b8c722d8eb875b0e1fd3d7999e787e01ce70a0b4ae133eae1bf92ebc7794e",
+        "sha256_texto": "e46cf16bd85c6dc0adf2d28b355a6cbc3414b8ac4a211ed356ab75f421c38ada",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 870-2024--oficial.txt",
+        "data_processamento": "2026-09-30T01:02:23.889378+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
+      }
+    },
+    "Portaria SMS SP 1101-2015": {
+      "arquivo": "portaria-sms-sp-1101-2015.json",
+      "nos": 198,
+      "sha256_texto": "d279db9cf24820c94c89fa2db29359ecb93252677bce96f97e18f3ddfdaf53bf",
+      "proveniencia": {
+        "norma": "Portaria SMS SP 1101-2015",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/",
+        "fonte_texto_utilizada": "PDF do Catálogo de Legislação Municipal (legislacao.prefeitura.sp.gov.br) enviado pela equipe em 16/10/2026",
+        "nota_fonte_texto": "PDF do Catálogo de Legislação Municipal (legislacao.prefeitura.sp.gov.br) enviado pela equipe em 16/10/2026",
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2015-06-19",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "pdf",
+        "sha256_texto": "d279db9cf24820c94c89fa2db29359ecb93252677bce96f97e18f3ddfdaf53bf",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Portaria SMS SP 1101-2015--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 11383-1993": {
+      "arquivo": "lei-municipal-sp-11383-1993.json",
+      "nos": 17,
+      "sha256_texto": "c9279828cdba4353a668a6bc2496be76872f735035c19834474d600835e1354f",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 11383-1993",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-11383-de-28-de-junho-de-1993",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-11383-de-28-de-junho-de-1993",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "1993-06-28",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "c9279828cdba4353a668a6bc2496be76872f735035c19834474d600835e1354f",
+        "alteracoes_encontradas": [
+          "Incluído pela Lei nº 15.527/2012",
+          "Incluído pela Lei nº 15.681/2013",
+          "Redação dada pela Lei nº 15.681/2013"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\Lei Municipal SP 11383-1993--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 15681-2013": {
+      "arquivo": "lei-municipal-sp-15681-2013.json",
+      "nos": 7,
+      "sha256_texto": "24f64f22e4aace8fd7f8d14fd59f7eabd30253ce28ed941b5d9973a24f0176b8",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 15681-2013",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-15681-de-04-de-janeiro-de-2013",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-15681-de-04-de-janeiro-de-2013",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2013-01-04",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "24f64f22e4aace8fd7f8d14fd59f7eabd30253ce28ed941b5d9973a24f0176b8",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Lei Municipal SP 15681-2013--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 17105-2019": {
+      "arquivo": "lei-municipal-sp-17105-2019.json",
+      "nos": 10,
+      "sha256_texto": "bea2046b085772f68fcfbd1c0af78636f278bb411ccbc9d7b3f7ef84792c8a3e",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 17105-2019",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2019-06-03",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "bea2046b085772f68fcfbd1c0af78636f278bb411ccbc9d7b3f7ef84792c8a3e",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Lei Municipal SP 17105-2019--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 13993-2005": {
+      "arquivo": "lei-municipal-sp-13993-2005.json",
+      "nos": 9,
+      "sha256_texto": "cd2c05dc8c757a77d88abf5390d39c3d53c7a6469781319c2dd06981546ff974",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 13993-2005",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2005-06-10",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "cd2c05dc8c757a77d88abf5390d39c3d53c7a6469781319c2dd06981546ff974",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Lei Municipal SP 13993-2005--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 16059-2014": {
+      "arquivo": "lei-municipal-sp-16059-2014.json",
+      "nos": 9,
+      "sha256_texto": "bb2a71f4bcf0ffa346de1a03f1119b2eed71de736be6c5ba88cc04fb857b466b",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 16059-2014",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-16059-de-13-de-agosto-de-2014",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-16059-de-13-de-agosto-de-2014",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2014-08-13",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "bb2a71f4bcf0ffa346de1a03f1119b2eed71de736be6c5ba88cc04fb857b466b",
+        "alteracoes_encontradas": [],
+        "status_vigencia": "vigente",
+        "texto": "textos\\Lei Municipal SP 16059-2014--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Lei Municipal SP 13945-2005": {
+      "arquivo": "lei-municipal-sp-13945-2005.json",
+      "nos": 16,
+      "sha256_texto": "68404d62838494cc42a24836ee077ffba3ff3408d97d55156bf9a2f73228fcef",
+      "proveniencia": {
+        "norma": "Lei Municipal SP 13945-2005",
+        "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+        "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+        "nota_fonte_texto": null,
+        "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+        "data_fonte": "2005-01-07",
+        "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+        "formato_fonte": "html",
+        "sha256_texto": "68404d62838494cc42a24836ee077ffba3ff3408d97d55156bf9a2f73228fcef",
+        "alteracoes_encontradas": [
+          "Incluído pela Lei nº 14.621/2007",
+          "Redação dada pela Lei nº 14.621/2007",
+          "Redação dada pela Lei nº 15.283/2010"
+        ],
+        "status_vigencia": "vigente_com_alteracoes",
+        "texto": "textos\\Lei Municipal SP 13945-2005--oficial.txt",
+        "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
       }
     }
   },

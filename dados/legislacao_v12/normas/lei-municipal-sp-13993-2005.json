@@ -1,0 +1,127 @@
+{
+ "schema": "legislacao-hierarquica-v12",
+ "norma": "Lei Municipal SP 13993-2005",
+ "sha256_texto": "cd2c05dc8c757a77d88abf5390d39c3d53c7a6469781319c2dd06981546ff974",
+ "nos": [
+  {
+   "id": "lei-municipal-sp-13993-2005::ementa::1",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "ementa",
+   "numero": "1",
+   "rotulo": "Ementa e preâmbulo",
+   "texto": "LEI Nº 13.993, DE 10 DE JUNHO DE 2005\n(Projeto de Lei nº 075/05, do Vereador Russomanno - PP)\nDispõe sobre a obrigatoriedade de colocação de indicação de profundidade nas bordas das piscinas, e dá outras providências.\nJOSÉ SERRA, Prefeito do Município de São Paulo, no uso das atribuições que lhe são conferidas por lei, faz saber que a Câmara Municipal, em sessão de 11 de maio de 2005, decretou e eu promulgo a seguinte lei:",
+   "ordem": 1,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::1",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "1",
+   "rotulo": "Art. 1",
+   "texto": "Art. 1º É obrigatória, no Município de São Paulo, a colocação de indicação de profundidade nas bordas externas das piscinas públicas, bem como das piscinas privadas de uso coletivo instaladas nos clubes, sociedades esportivas e congêneres.",
+   "ordem": 2,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::2",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "2",
+   "rotulo": "Art. 2",
+   "texto": "Art. 2º As indicações de que trata a presente lei deverão constituir-se na colocação de adesivos ou pintura, nas bordas externas da piscina, com material antiderrapante e impermeável, de fácil visualização e com dimensões compatíveis com a mesma.",
+   "ordem": 3,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::3",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "3",
+   "rotulo": "Art. 3",
+   "texto": "Art. 3º Os indicadores de profundidade deverão estar dispostos nos pontos de menor profundidade, na mediana e de maior profundidade da piscina.",
+   "ordem": 4,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::4",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "4",
+   "rotulo": "Art. 4",
+   "texto": "Art. 4º As piscinas referidas no art. 1º deverão estar adaptadas aos dispositivos desta lei no prazo de 60 (sessenta) dias a contar de sua publicação.",
+   "ordem": 5,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::5",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "5",
+   "rotulo": "Art. 5",
+   "texto": "Art. 5º A inobservância do disposto nesta lei implicará ao infrator a imposição de multa no valor de R$ 200,00 (duzentos reais), dobrada em caso de reincidência, devendo este valor ser reajustado anualmente pela variação do Índice de Preços ao Consumidor Amplo - IPCA, apurado pelo Instituto Brasileiro de Geografia e Estatística - IBGE, acumulada no exercício anterior, sendo que, no caso de extinção deste índice, será adotado outro criado por legislação federal e que reflita a perda do poder aquisitivo da moeda.",
+   "ordem": 6,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::6",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "6",
+   "rotulo": "Art. 6",
+   "texto": "Art. 6º O Poder Executivo regulamentará esta lei no prazo de 30 (trinta) dias a contar de sua publicação.",
+   "ordem": 7,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::7",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "7",
+   "rotulo": "Art. 7",
+   "texto": "Art. 7º As despesas com a execução desta lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.",
+   "ordem": 8,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-13993-2005::artigo::8",
+   "norma": "Lei Municipal SP 13993-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "8",
+   "rotulo": "Art. 8",
+   "texto": "Art. 8º Esta lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
+   "ordem": 9,
+   "status_vigencia": "vigente"
+  }
+ ],
+ "validacao": {
+  "ids_estruturais_repetidos": [],
+  "artigos_repetidos_na_fonte": {}
+ },
+ "proveniencia": {
+  "norma": "Lei Municipal SP 13993-2005",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2005-06-10",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "cd2c05dc8c757a77d88abf5390d39c3d53c7a6469781319c2dd06981546ff974",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei Municipal SP 13993-2005--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+ }
+}

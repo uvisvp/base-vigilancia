@@ -1,0 +1,105 @@
+{
+ "schema": "legislacao-hierarquica-v12",
+ "norma": "Lei Municipal SP 15681-2013",
+ "sha256_texto": "24f64f22e4aace8fd7f8d14fd59f7eabd30253ce28ed941b5d9973a24f0176b8",
+ "nos": [
+  {
+   "id": "lei-municipal-sp-15681-2013::ementa::1",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": null,
+   "tipo": "ementa",
+   "numero": "1",
+   "rotulo": "Ementa e preâmbulo",
+   "texto": "LEI Nº 15.681 DE 04 DE JANEIRO DE 2013\n(Projeto de Lei nº 195/12 do Vereador Donato - PT)\nAltera a Lei nº 11.383, de 17 de junho de 1993, e dá outras providências.\nJosé Américo, Presidente da Câmara Municipal de São Paulo, faz saber que a Câmara Municipal de São Paulo, de acordo com o § 7º do artigo 42 da Lei Orgânica do Município de São Paulo, promulga a seguinte lei:",
+   "ordem": 1,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::artigo::1",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "1",
+   "rotulo": "Art. 1",
+   "texto": "Art. 1º Os arts. 1º, 2º e 2º-A, da Lei nº 11.383, de 17 de junho de 1993, com a redação dada pela Lei nº 15.527, de 14 de fevereiro de 2012, passam a vigorar com a seguinte redação:\n“Art. 1º As entidades de iniciação e prática de atividades físicas e esportivas somente poderão funcionar sob a supervisão e responsabilidade técnica de um profissional de educação física devidamente habilitado, ou técnicos credenciados pelas federações estaduais específicas.”\n“Art. 2º Os estabelecimentos a que se refere o art. 1º deverão exigir dos interessados:\na) para a prática de atividades físicas e esportivas no âmbito das entidades federativas e confederativas, a realização de exame médico prévio, renovável semestralmente;\nb) para a prática de atividades físicas e esportivas amadoras, a resposta ao Questionário de Prontidão para Atividade Física (PAR-Q) que consta do Anexo I desta lei, renovável anualmente.\n§ 1º Na hipótese do item “a”, a efetivação da inscrição ficará condicionada à apresentação do atestado médico que autoriza a prática da modalidade específica.\n§ 2º A realização do exame médico deverá ser anotada nos registros do esportista federado, a ela anexando-se o atestado médico.\n§ 3º No ato da inscrição em entidade federativa, os menores de idade deverão apresentar, além do exame médico, a autorização de seus pais ou responsáveis para a prática de atividades físicas, que poderá ser pessoal ou por escrito.\n§ 4º Na hipótese do item “b”, dos interessados que responderem positivamente a qualquer das perguntas do PAR-Q será exigida a assinatura do Termo de Responsabilidade para Prática de Atividade Física que consta do Anexo II desta lei.\n§ 5º A resposta ao PAR-Q será exigida para os interessados na prática de atividades físicas e esportivas amadoras com idade entre 15 e 69 anos, devendo os demais apresentar atestado médico na forma do § 1º.”\n“Art. 2º A - No atestado médico deverá constar, obrigatoriamente, o nome completo do médico, seu número no Conselho Regional de Medicina - CRM e eventuais observações relativas às especificidades de cada caso concreto.\nParágrafo único. A entidade responsável pela inscrição deverá aceitar atestado assinado por médico de confiança do interessado, quando apresentado por este.”",
+   "ordem": 2,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::artigo::2",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "2",
+   "rotulo": "Art. 2",
+   "texto": "Art. 2º Fica acrescido o art. 2º-C à Lei nº 11.383, de 17 de junho de 1993, com a redação dada pela Lei nº 15.527, de 14 de fevereiro de 2012, com a seguinte redação:\n“Art. 2º C - Os estabelecimentos a que se refere o art. 1º deverão apor, em tamanho e local que permitam boa visibilidade, placa com os seguintes dizeres:\nAntes de iniciar a prática de atividades físicas ou esportivas, verifique se você não tem contraindicação.”",
+   "ordem": 3,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::artigo::3",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "3",
+   "rotulo": "Art. 3",
+   "texto": "Art. 3º As despesas decorrentes da execução desta lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.",
+   "ordem": 4,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::artigo::4",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "4",
+   "rotulo": "Art. 4",
+   "texto": "Art. 4º Esta lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
+   "ordem": 5,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::anexo-i::bloco::1",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": "I",
+   "tipo": "bloco",
+   "numero": "1",
+   "rotulo": "Anexo I",
+   "texto": "Questionário de Prontidão para Atividade Física (PAR-Q)\nEste questionário tem objetivo de identificar a necessidade de avaliação por um médico antes do início da atividade física. Caso você responda “sim” a uma ou mais perguntas, converse com seu médico ANTES de aumentar seu nível atual de atividade física. Mencione este questionário e as perguntas às quais você respondeu “sim”. Por favor, assinale “sim” ou “não” às seguintes perguntas:\n1) Algum médico já disse que você possui algum problema de coração e que só deveria realizar atividade física supervisionado por profissionais de saúde?\n( ) sim ( ) não\n2) Você sente dores no peito quando pratica atividade física?\n( ) sim ( ) não\n3) No último mês, você sentiu dores no peito quando pratica atividade física?\n( ) sim ( ) não\n4) Você apresenta desequilíbrio devido a tontura e/ou perda de consciência?\n( ) sim ( ) não\n5) Você possui algum problema ósseo ou articular que poderia ser piorado pela atividade física?\n( ) sim ( ) não\n6) Você toma atualmente algum medicamento para pressão arterial e/ou problema de coração?\n( ) sim ( ) não\n7) Sabe de alguma outra razão pela qual você não deve praticar atividade física?\n( ) sim ( ) não\nData, nome completo e assinatura:___________________________________________",
+   "ordem": 6,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-15681-2013::anexo-ii::bloco::1",
+   "norma": "Lei Municipal SP 15681-2013",
+   "anexo": "II",
+   "tipo": "bloco",
+   "numero": "1",
+   "rotulo": "Anexo II",
+   "texto": "Termo de Responsabilidade para Prática de Atividade Física\nEstou ciente de que é recomendável conversar com um médico antes de aumentar meu nível atual de atividade física, por ter respondido “sim” a uma ou mais perguntas do Questionário de Prontidão para Atividade Física (PAR-Q). Assumo plena responsabilidade por qualquer atividade física praticada sem o atendimento a essa recomendação.\nData, nome completo e assinatura:___________________________________________\nEste texto não substitui o original publicado no Diário Oficial da Cidade de São Paulo",
+   "ordem": 7,
+   "status_vigencia": "vigente"
+  }
+ ],
+ "validacao": {
+  "ids_estruturais_repetidos": [],
+  "artigos_repetidos_na_fonte": {}
+ },
+ "proveniencia": {
+  "norma": "Lei Municipal SP 15681-2013",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-15681-de-04-de-janeiro-de-2013",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-15681-de-04-de-janeiro-de-2013",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2013-01-04",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "24f64f22e4aace8fd7f8d14fd59f7eabd30253ce28ed941b5d9973a24f0176b8",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei Municipal SP 15681-2013--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+ }
+}

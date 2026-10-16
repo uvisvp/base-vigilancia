@@ -1,0 +1,17 @@
+{
+  "norma": "Portaria SMS SP 1101-2015",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/",
+  "fonte_texto_utilizada": "PDF do Catálogo de Legislação Municipal (legislacao.prefeitura.sp.gov.br) enviado pela equipe em 16/10/2026",
+  "nota_fonte_texto": "PDF do Catálogo de Legislação Municipal (legislacao.prefeitura.sp.gov.br) enviado pela equipe em 16/10/2026",
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2015-06-19",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "pdf",
+  "sha256_texto": "d279db9cf24820c94c89fa2db29359ecb93252677bce96f97e18f3ddfdaf53bf",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Portaria SMS SP 1101-2015--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+}

@@ -1,0 +1,17 @@
+{
+  "norma": "Lei Municipal SP 13993-2005",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13993-de-10-de-junho-de-2005",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2005-06-10",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "cd2c05dc8c757a77d88abf5390d39c3d53c7a6469781319c2dd06981546ff974",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei Municipal SP 13993-2005--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+}

@@ -1,0 +1,17 @@
+{
+  "norma": "Lei Municipal SP 17105-2019",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2019-06-03",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "bea2046b085772f68fcfbd1c0af78636f278bb411ccbc9d7b3f7ef84792c8a3e",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei Municipal SP 17105-2019--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+}
