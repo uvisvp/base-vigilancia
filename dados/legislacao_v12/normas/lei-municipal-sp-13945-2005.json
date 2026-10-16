@@ -1,0 +1,221 @@
+{
+ "schema": "legislacao-hierarquica-v12",
+ "norma": "Lei Municipal SP 13945-2005",
+ "sha256_texto": "68404d62838494cc42a24836ee077ffba3ff3408d97d55156bf9a2f73228fcef",
+ "nos": [
+  {
+   "id": "lei-municipal-sp-13945-2005::ementa::1",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "ementa",
+   "numero": "1",
+   "rotulo": "Ementa e preâmbulo",
+   "texto": "LEI Nº 13.945, DE 7 DE JANEIRO DE 2005\n(Projeto de Lei nº 412/02, do Vereador William Woo - PSDB)\nDispõe sobre a obrigatoriedade da manutenção de aparelho desfibrilador externo automático em locais que designa e que tenham concentração/circulação média diária de 1500 ou mais pessoas, e dá outras providências.\nJOSÉ SERRA, Prefeito do Município de São Paulo, no uso das atribuições que lhe são conferidas por lei, faz saber que a Câmara Municipal, nos termos do disposto no inciso I do artigo 84 do seu Regimento Interno, decretou e eu promulgo a seguinte lei:",
+   "ordem": 1,
+   "status_vigencia": "vigente_com_alteracoes"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::1",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "1",
+   "rotulo": "Art. 1",
+   "texto": "Art. 1º Os aeroportos, shopping centers, centros empresariais, estádios de futebol, hotéis, hipermercados e supermercados, casas de espetáculos e locais de trabalho com concentração acima de 1.000 (mil) pessoas ou circulação média diária de 3.000 (três mil) ou mais pessoas, os clubes e academias com mais de 1.000 (mil) sócios, as instituições financeiras e de ensino, os parques, velórios e cemitérios, com concentração ou circulação média diária de 1.500 (mil e quinhentas) ou mais pessoas, ficam obrigados a manter, em suas dependências, aparelho desfibrilador externo automático.",
+   "ordem": 2,
+   "status_vigencia": "vigente_com_alteracoes",
+   "alteracao": "Redação dada pela Lei nº 15.283/2010"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::1::paragrafo::1",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "paragrafo",
+   "numero": "1",
+   "rotulo": "§ 1º do art. 1",
+   "texto": "§ 1º. Com a finalidade de estabelecer os parâmetros de conduta a serem seguidos na utilização do desfibrilador externo automático, a capacitação deverá ser promovida por meio de curso ministrado de acordo com as recomendações do Conselho Nacional de Ressuscitação.",
+   "ordem": 3,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::1",
+   "alteracao": "Redação dada pela Lei nº 14.621/2007"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::1::paragrafo::2",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "paragrafo",
+   "numero": "2",
+   "rotulo": "§ 2º do art. 1",
+   "texto": "§ 2º. Os estabelecimentos e órgãos públicos abrangidos pelo disposto no \"caput\" deste artigo deverão promover a capacitação de todos os integrantes da Comissão Interna de Prevenção de Acidentes - CIPA, de todo o efetivo da Brigada de Incêndio e da Brigada de Emergência, além de mais dois funcionários por turno, por aparelho.",
+   "ordem": 4,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::1",
+   "alteracao": "Incluído pela Lei nº 14.621/2007"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::1::paragrafo::3",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "paragrafo",
+   "numero": "3",
+   "rotulo": "§ 3º do art. 1",
+   "texto": "§ 3º. Os estabelecimentos que contarem com serviço médico em suas dependências deverão manter responsável técnico médico presente durante todo o período de funcionamento.",
+   "ordem": 5,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::1",
+   "alteracao": "Incluído pela Lei nº 14.621/2007"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "2",
+   "rotulo": "Art. 2",
+   "texto": "Art. 2º Os desfibriladores externos automáticos deverão preencher os requisitos gerais de:",
+   "ordem": 6,
+   "status_vigencia": "vigente_com_alteracoes"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2::inciso::i",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "inciso",
+   "numero": "I",
+   "rotulo": "Inciso I",
+   "texto": "I - facilidade de operação, de modo que o equipamento possa ser utilizado pela população em geral, devidamente treinada;",
+   "ordem": 7,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::2"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2::inciso::ii",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "inciso",
+   "numero": "II",
+   "rotulo": "Inciso II",
+   "texto": "II - segurança, a fim de proteger, tanto o operador quanto a pessoa acometida de problemas cardíacos, devendo os mesmos ter garantia de que a liberação do choque somente ocorrerá em vítimas em fibrilação ventricular, garantia esta que tenha demonstração baseada em evidenciação científica, realizada com base em testes de sensibilidade e especificidade;",
+   "ordem": 8,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::2"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2::inciso::iii",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "inciso",
+   "numero": "III",
+   "rotulo": "Inciso III",
+   "texto": "III - portabilidade, permitindo seu acondicionamento em automóveis e kits de primeiros socorros transportados por socorristas em meio a multidões ou através de locais de acesso complicado ou limitado;",
+   "ordem": 9,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::2"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2::inciso::iv",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "inciso",
+   "numero": "IV",
+   "rotulo": "Inciso IV",
+   "texto": "IV - durabilidade, para que o equipamento se mantenha em prontas e corretas condições de uso em locais não-protegidos e sujeito a choques ou quedas;",
+   "ordem": 10,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::2"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::2::inciso::v",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "inciso",
+   "numero": "V",
+   "rotulo": "Inciso V",
+   "texto": "V - manutenção mínima, de sorte que o sistema de baterias dispense recargas freqüentes, dependentes de inspeção constante, contando, para isso, com dispositivos autocapazes de monitorizar a situação das baterias e dos componentes eletrônicos e, assim, alertar o usuário sobre a necessidade de quaisquer reparos.",
+   "ordem": 11,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::2"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::3",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "3",
+   "rotulo": "Art. 3",
+   "texto": "Art. 3º O descumprimento ao disposto na presente lei implicará na imposição de multa de R$ 2.000,00 (dois mil reais), renovada semanalmente até a constatação de que cessou o ato de infração.",
+   "ordem": 12,
+   "status_vigencia": "vigente_com_alteracoes"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::3::paragrafo::unico",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "paragrafo",
+   "numero": "unico",
+   "rotulo": "Parágrafo único do art. 3",
+   "texto": "Parágrafo único. A multa prevista no \"caput\" deste artigo será atualizada anualmente pela variação do Índice de Preços ao Consumidor Amplo - IPCA, apurado pelo Instituto Brasileiro de Geografia e Estatística - IBGE, acumulada no exercício anterior, sendo que, no caso de extinção deste índice, será adotado outro índice criado por legislação federal e que reflita a perda do poder aquisitivo da moeda.",
+   "ordem": 13,
+   "status_vigencia": "vigente_com_alteracoes",
+   "pai": "lei-municipal-sp-13945-2005::artigo::3"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::4",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "4",
+   "rotulo": "Art. 4",
+   "texto": "Art. 4º O Poder Público Municipal regulamentará esta lei no prazo de 90 (noventa) dias.",
+   "ordem": 14,
+   "status_vigencia": "vigente_com_alteracoes"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::5",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "5",
+   "rotulo": "Art. 5",
+   "texto": "Art. 5º As despesas decorrentes da execução desta lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.",
+   "ordem": 15,
+   "status_vigencia": "vigente_com_alteracoes"
+  },
+  {
+   "id": "lei-municipal-sp-13945-2005::artigo::6",
+   "norma": "Lei Municipal SP 13945-2005",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "6",
+   "rotulo": "Art. 6",
+   "texto": "Art. 6º Esta lei entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
+   "ordem": 16,
+   "status_vigencia": "vigente_com_alteracoes"
+  }
+ ],
+ "validacao": {
+  "ids_estruturais_repetidos": [],
+  "artigos_repetidos_na_fonte": {}
+ },
+ "proveniencia": {
+  "norma": "Lei Municipal SP 13945-2005",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2005-01-07",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "68404d62838494cc42a24836ee077ffba3ff3408d97d55156bf9a2f73228fcef",
+  "alteracoes_encontradas": [
+   "Incluído pela Lei nº 14.621/2007",
+   "Redação dada pela Lei nº 14.621/2007",
+   "Redação dada pela Lei nº 15.283/2010"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\Lei Municipal SP 13945-2005--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+ }
+}

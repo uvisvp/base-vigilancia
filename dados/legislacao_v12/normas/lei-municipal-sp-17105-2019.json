@@ -1,0 +1,139 @@
+{
+ "schema": "legislacao-hierarquica-v12",
+ "norma": "Lei Municipal SP 17105-2019",
+ "sha256_texto": "bea2046b085772f68fcfbd1c0af78636f278bb411ccbc9d7b3f7ef84792c8a3e",
+ "nos": [
+  {
+   "id": "lei-municipal-sp-17105-2019::ementa::1",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "ementa",
+   "numero": "1",
+   "rotulo": "Ementa e preâmbulo",
+   "texto": "LEI Nº 17.105 DE 3 DE JUNHO DE 2019\n(PROJETO DE LEI Nº 246/14)\nVEREADORES CORONEL TELHADA – PP, AURÉLIO NOMURA – PSDB, CLAUDINHO DE SOUZA – PSDB, GILSON BARRETO – PSDB, MÁRIO COVAS NETO – PODEMOS E PATRÍCIA BEZERRA – PSDB)\nDispõe sobre a prevenção de acidentes relacionados ao sistema hidráulico das piscinas no âmbito do Município de São Paulo.\nEduardo Tuma, Presidente da Câmara Municipal de São Paulo, faz saber que a Câmara Municipal de São Paulo, de acordo com o § 7º do artigo 42 da Lei Orgânica do Município de São Paulo, promulga a seguinte lei:",
+   "ordem": 1,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::1",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "1",
+   "rotulo": "Art. 1",
+   "texto": "Art. 1º Esta lei disciplina a prevenção de acidentes relacionados ao sistema hidráulico de piscinas no âmbito do Município de São Paulo.",
+   "ordem": 2,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::1::paragrafo::unico",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "paragrafo",
+   "numero": "unico",
+   "rotulo": "Parágrafo único do art. 1",
+   "texto": "Parágrafo único. Para os fins dessa lei, entende-se por piscina o conjunto de instalações destinadas a atividades aquáticas, compreendendo o tanque e os demais componentes relacionados com seu uso e funcionamento.",
+   "ordem": 3,
+   "status_vigencia": "vigente",
+   "pai": "lei-municipal-sp-17105-2019::artigo::1"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::2",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "2",
+   "rotulo": "Art. 2",
+   "texto": "Art. 2º Estão sujeitas ao disposto nesta lei as piscinas públicas ou de uso coletivo localizadas em clubes, hotéis, motéis, academias, escolas, hospitais, parques, associações, fundações e templos religiosos, centros de reabilitação, centros educacionais, centros esportivos e nas demais entidades de natureza privada ou pública em que haja uso coletivo e seleção dos usuários por critérios como de associação, matrícula, hospedagem ou intervenção, bem como em locais que sirvam de locação para festas e/ou eventos particulares.",
+   "ordem": 4,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::3",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "3",
+   "rotulo": "Art. 3",
+   "texto": "Art. 3º O sistema hidráulico da piscina deverá estar de acordo com o disposto na NBR nº 10.339 da Associação Brasileira de Normas Técnicas – ABNT ou em outra que venha a substituí-la nessa finalidade.",
+   "ordem": 5,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::4",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "4",
+   "rotulo": "Art. 4",
+   "texto": "Art. 4º A piscina construída cujo sistema hidráulico esteja em desacordo com o disposto na lei deverá ser adequada no prazo de 180 (cento e oitenta) dias, contados da data da publicação.",
+   "ordem": 6,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::5",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "5",
+   "rotulo": "Art. 5",
+   "texto": "Art. 5º O descumprimento do disposto nesta lei sujeitará os infratores às penalidades previstas no Código Sanitário do Município de São Paulo – Lei nº 13.725, de 9 de janeiro de 2004.",
+   "ordem": 7,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::6",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "6",
+   "rotulo": "Art. 6",
+   "texto": "Art. 6º Os estabelecimento públicos já existentes que possuam piscinas deverão se adequar gradualmente aos termos desta lei, observado o disposto na Lei Complementar Federal nº 101, de 4 de maio de 2000.",
+   "ordem": 8,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::7",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "7",
+   "rotulo": "Art. 7",
+   "texto": "Art. 7º As despesas decorrentes da execução desta lei correrão por conta das dotações orçamentárias próprias, suplementadas se necessário.",
+   "ordem": 9,
+   "status_vigencia": "vigente"
+  },
+  {
+   "id": "lei-municipal-sp-17105-2019::artigo::8",
+   "norma": "Lei Municipal SP 17105-2019",
+   "anexo": null,
+   "tipo": "artigo",
+   "numero": "8",
+   "rotulo": "Art. 8",
+   "texto": "Art. 8º Esta lei entrará em vigor na data de sua publicação, revogadas as disposições em contrário.",
+   "ordem": 10,
+   "status_vigencia": "vigente"
+  }
+ ],
+ "validacao": {
+  "ids_estruturais_repetidos": [],
+  "artigos_repetidos_na_fonte": {}
+ },
+ "proveniencia": {
+  "norma": "Lei Municipal SP 17105-2019",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-17105-de-3-de-junho-de-2019",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2019-06-03",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "bea2046b085772f68fcfbd1c0af78636f278bb411ccbc9d7b3f7ef84792c8a3e",
+  "alteracoes_encontradas": [],
+  "status_vigencia": "vigente",
+  "texto": "textos\\Lei Municipal SP 17105-2019--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+ }
+}

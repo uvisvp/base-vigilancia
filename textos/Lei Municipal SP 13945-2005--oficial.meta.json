@@ -1,0 +1,21 @@
+{
+  "norma": "Lei Municipal SP 13945-2005",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/leis/lei-13945-de-07-de-janeiro-de-2005",
+  "nota_fonte_texto": null,
+  "consultado_em": "2026-10-16T21:23:41.352009+00:00",
+  "data_fonte": "2005-01-07",
+  "tipo_data_fonte": "data_do_ato; texto consolidado do Catálogo de Legislação Municipal",
+  "formato_fonte": "html",
+  "sha256_texto": "68404d62838494cc42a24836ee077ffba3ff3408d97d55156bf9a2f73228fcef",
+  "alteracoes_encontradas": [
+    "Incluído pela Lei nº 14.621/2007",
+    "Redação dada pela Lei nº 14.621/2007",
+    "Redação dada pela Lei nº 15.283/2010"
+  ],
+  "status_vigencia": "vigente_com_alteracoes",
+  "texto": "textos\\Lei Municipal SP 13945-2005--oficial.txt",
+  "data_processamento": "2026-10-16T21:23:41.352009+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
+}
