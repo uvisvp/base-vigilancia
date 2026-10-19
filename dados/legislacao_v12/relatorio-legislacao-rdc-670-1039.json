@@ -1,6 +1,6 @@
 {
   "schema": "relatorio-legislacao-rdc-670-1039-v1",
-  "gerado_em": "2026-10-16T23:14:44.565762+00:00",
+  "gerado_em": "2026-10-19T12:37:41.419791+00:00",
   "catalogo_atualizado": false,
   "normas": [
     {
@@ -31,5 +31,5 @@
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026"
     }
   ],
-  "total_normas_manifest": 53
+  "total_normas_manifest": 66
 }
