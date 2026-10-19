@@ -1,0 +1,169 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 504, de 27/05/2021
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+VigenteResoluçăo da Diretoria Colegiada - RDC nş 504, de 27/05/2021
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+RESOLUÇÃO RDC Nº 504, DE 27 DE MAIO DE 2021
+Dispõe sobre as Boas Práticas para o transporte de material biológico humano.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das competências que lhe conferem os arts. 7º, inciso III, e 15, incisos III e IV, da Lei nº 9.782, de 26 de janeiro de 1999, e considerando o disposto no art. 53, inciso VI e §§ 1º e 3º, do Regimento Interno, aprovado pela Resolução de Diretoria Colegiada - RDC n° 255, de 10 de dezembro de 2018, resolve adotar a seguinte Resolução de Diretoria Colegiada, conforme deliberado em reunião realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DAS DISPOSIÇÕES GERAIS
+Seção I
+Objetivo e Abrangência
+Art. 1º Esta Resolução possui o objetivo de definir e estabelecer padrões sanitários para o transporte de material biológico de origem humana em suas diferentes modalidades e formas, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte, para garantir a segurança, minimizar os riscos sanitários e preservar a integridade do material transportado.
+Art. 2º Esta Resolução se aplica a todo remetente, transportador, destinatário e demais envolvidos no processo de transporte de material biológico humano, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Parágrafo único. O disposto nesta Resolução se aplica, no que couber, aos procedimentos de importação e exportação de material biológico humano, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Seção II
+Definições
+Art. 3° Para efeito desta Resolução são adotadas as seguintes definições:
+I - acondicionamento de material biológico humano: procedimento de embalagem de material biológico humano com a finalidade de transporte, visando à proteção do material, das pessoas e do ambiente durante todas as etapas do transporte até o seu destino final;
+II - Categoria A: material biológico infeccioso cuja exposição ao mesmo pode causar incapacidade permanente ou enfermidade mortal, pondo em risco a vida humana ou de outros animais sinalizada como UN 2814 ou UN 2900 se afetar somente animais;
+III - Categoria B: material biológico infeccioso que não se inclui na categoria A, classificado como "substância biológica de Categoria B" UN 3373, inserindo-se neste grupo amostras de pacientes que se suspeita ou se saiba conter agentes infecciosos causadores de doenças em humanos;
+IV - Categoria Espécime Humana de Risco Mínimo: adaptado do inglês "Exempt Human Specimen", inclui materiais biológicos provenientes de indivíduos sadios que foram submetidos a juízo profissional baseado em história clínica, sintomas e características individuais, bem como nas condições endêmicas locais que asseguram a probabilidade mínima do material biológico conter microorganismos patogênicos, mesmo que estes materiais não tenham sido submetidos previamente a testes para marcadores de doenças transmissíveis pelo sangue, seguindo as diretrizes da Organização Mundial de Saúde (OMS);
+V - classificação de risco biológico: nível de risco frente à exposição a agentes biológicos, determinado pela patogenia, modo, relativa facilidade de transmissão por meio de materiais biológicos e reversibilidade da doença pela disponibilidade de tratamentos e preventivos conhecidos e eficazes;
+VI - destinatário: qualquer pessoa jurídica, de natureza pública ou privada, responsável pelo recebimento do material biológico humano transportado;
+VII - embalagem primária: embalagem que está em contato direto com o material biológico a ser transportado, constituindo recipiente, envoltório ou qualquer outra forma de proteção, removível ou não, que se destina a envasar, manter, conter, cobrir ou empacotar o material biológico a ser transportado, também chamada de embalagem interna;
+VIII - embalagem secundária: embalagem intermediária, colocada entre a embalagem primária e a embalagem terciária, com fins de conter a embalagem primária;
+IX - embalagem terciária: embalagem externa, utilizada exclusivamente para a proteção da carga nas operações de movimentação (embarque, desembarque e transporte) e armazenagem;
+X - etiqueta: identificação afixada sobre o rótulo, sem rasuras e que não comprometa as informações originais do rótulo;
+XI - material absorvente: material colocado entre a embalagem primária e a secundária em quantidade suficiente para conter todo o conteúdo do material biológico presente na embalagem primária garantindo a integridade da embalagem terciária;
+XII - material biológico humano: tecido ou fluido constituinte do organismo humano, tais como excrementos, fluidos corporais, células, tecidos, órgãos ou outros fluidos de origem humana ou isolados a partir destes;
+XIII - material refrigerante: material ou substância capaz de conservar o material biológico em uma faixa de temperatura, previamente especificada, durante o processo de transporte;
+XIV - modo de transporte: mecanismo, alternativa ou tipo de veículo de transporte utilizado no deslocamento do material biológico humano;
+XV - remetente: qualquer pessoa jurídica, de natureza pública ou privada, também chamado expedidor ou embarcador, responsável pela preparação e envio do material biológico humano a um destinatário, por meio de um modo de transporte;
+XVI - rotulagem: procedimento de rotular, marcar e etiquetar as embalagens destinadas ao transporte de material biológico humano;
+XVII - rótulo: corresponde à identificação impressa ou litografada e aos dizeres pintados ou gravados a fogo, pressão ou autoadesivos, aplicados diretamente sobre recipientes, embalagens, invólucros, envoltórios, cartuchos e qualquer outro protetor de embalagem, não podendo ser removido ou alterado durante o transporte e armazenamento;
+XVIII - supervisor técnico: profissional capacitado e designado para desempenhar as atividades de implantação, execução e monitoramento dos processos de transporte de material biológico;
+XIX - transportador: pessoa física ou jurídica que efetua o transporte de material biológico humano proveniente de remetente para destinatário determinado incluindo os transportadores comerciais, públicos ou privados e os de carga própria; e
+XX - validação: conjunto de ações utilizadas para provar que procedimentos operacionais, processos, atividades ou sistemas produzem o resultado esperado com exercícios conduzidos de acordo com protocolos previamente definidos e aprovados, com descrição de testes e critérios de aceitação.
+CAPÍTULO II
+DISPOSIÇÕES INICIAIS
+Art. 4º O transporte de material biológico humano fica submetido às regras e procedimentos estabelecidos nesta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 5º As operações de transporte devem ser registradas e padronizadas por meio de instruções escritas atualizadas.
+Parágrafo único. Instruções escritas e padronizadas devem estar disponíveis a todo o pessoal envolvido no processo de transporte e ser revisadas anualmente e/ou sempre que ocorrer alteração nos procedimentos.
+Art. 6º Quaisquer não conformidades durante o processo de transporte devem ser investigadas e registradas, incluindo-se, no que couber, as medidas corretivas e preventivas adotadas.
+Art. 7º O transporte de material biológico humano pode ser realizado de forma terceirizada, mediante instrumento escrito que comprove a terceirização, obedecendo às especificações do material biológico humano a ser transportado.
+§ 1° O prestador de serviço terceirizado deve ser legalmente constituído e estar licenciado junto ao órgão de vigilância sanitária local competente, nos termos desta Resolução e das normas de vigilância sanitária federais, estaduais e municipais pertinentes.
+§ 2° O prestador de serviço terceirizado deve possuir infraestrutura, conhecimento e treinamento adequado de pessoal, sob a supervisão técnica de profissional comprovadamente capacitado para desempenhar satisfatoriamente o serviço solicitado pelo contratante e atender aos requisitos técnicos e legais estabelecidos nesta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material biológico e modo de transporte.
+§ 3° O instrumento escrito que comprove a terceirização deve ser mantido à disposição das autoridades de vigilância sanitária competentes pelas partes envolvidas no respectivo instrumento bilateral.
+§ 4° A terceirização de atividade de transporte de material biológico não exime o serviço de saúde remetente do cumprimento dos requisitos técnicos e legais estabelecidos na legislação vigente, respondendo solidariamente com o contratado perante as autoridades sanitárias quanto aos aspectos técnicos, operacionais e legais inerentes às atividades que lhe competem.
+§ 5° Na hipótese de transporte de material biológico humano, realizado por transportadores ou instituições governamentais, mediante acordos autorizados ou estabelecidos entre o Ministério da Saúde ou órgão ou entidade relacionado, tais como órgãos de segurança pública e Forças Armadas, em que não é exigido o licenciamento sanitário, o processo de transporte pode ser avaliado pelas autoridades de vigilância sanitária local competentes, caso necessário.
+Art. 8º Todos os documentos e registros das atividades referentes ao transporte de material biológico devem estar disponíveis para fornecimento aos órgãos de vigilância sanitária, sempre que solicitado.
+Parágrafo único. No caso de atividade terceirizada, deve constar expressamente no instrumento escrito que comprove a terceirização quais documentos e registros devem ficar sob a guarda de cada parte envolvida.
+Art. 9° O pessoal diretamente envolvido em cada etapa do processo de transporte deve receber o regular treinamento específico, compatível com a função desempenhada e a natureza do material transportado, e sempre que ocorrer alteração nos procedimentos, devendo a efetividade deste treinamento ser periodicamente avaliada.
+§ 1° As responsabilidades pela elaboração, execução e avaliação dos treinamentos devem estar definidas no instrumento escrito que comprove a terceirização, de acordo com as diretrizes técnicas definidas pelo contratante, mantendo-se os registros documentais.
+§ 2° Sempre que ocorrer alteração nos procedimentos, deve-se certificar que a equipe está apta para executar as orientações definidas.
+§ 3° O disposto no caput e nos §§ 1° e 2° não se aplica ao transporte de tecidos, células e órgãos para finalidade de transplante por transportadores ou instituições governamentais, mediante acordo autorizado ou estabelecido com o Ministério da Saúde ou órgão ou instituição integrante do Sistema Nacional de Transplante, cabendo ao remetente, neste caso, atender o disposto no art. 29 desta Resolução.
+CAPÍTULO III
+EMBALAGEM E ACONDICIONAMENTO
+Art. 10. O material biológico humano a ser transportado deve ser acondicionado de forma a preservar a sua integridade e estabilidade, bem como a segurança do pessoal envolvido, durante o processo de transporte.
+Art. 11. A etapa de acondicionamento do material biológico deve ser validada, devendo-se considerar o tipo de material biológico e a finalidade do transporte, com aprovação de supervisor técnico responsável pelo acondicionamento do material biológico a ser transportado.
+§ 1° Caso seja necessário controle de temperatura, este parâmetro deve ser considerado no processo de validação de transporte, de forma a garantir conservação das características biológicas pelo tempo de transporte previsto, com estimativa de margem de atrasos.
+§ 2° Quaisquer mudanças nas operações de embalagem e acondicionamento e nas características técnicas definidas na validação serão avaliadas pelo supervisor técnico quanto à necessidade de revalidação, mantendo-se os registros documentais.
+Art. 12. O sistema de embalagens deve ser empregado conforme as especificidades do material biológico transportado.
+Parágrafo único. As embalagens de que trata o caput devem ser utilizadas exclusivamente para finalidade de transporte e constituídas de material apropriado, conforme o disposto nesta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte e, subsidiariamente, nas instruções do fabricante das embalagens.
+Art. 13. Para o material biológico humano classificado como substância infecciosa Categoria A UN 2814 devem ser aplicadas as disposições normativas vigentes referentes à instrução de embalagem PI 620, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 14. Para o material biológico humano classificado como substância biológica Categoria B UN 3373 devem ser aplicadas as disposições normativas vigentes referentes à instrução de embalagem PI 650, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 15. Para a Categoria Espécime Humana de Risco Mínimo, devem ser aplicados os seguintes requisitos mínimos relacionados, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte:
+I - embalagem primária, dotada de dispositivo que garanta vedação à prova de vazamento e impermeável para amostras líquidas, e no caso de amostras sólidas ou semisólidas, recipiente resistente dotado de mecanismo de fechamento que impeça o extravasamento do material;
+II - embalagem terciária rígida, resistente, de tamanho adequado ao material biológico transportado, e dotada de dispositivo de fechamento, observando-se que materiais laváveis e resistentes a desinfetantes podem ser reutilizáveis; e
+III - embalagem secundária de material resistente de forma a conter a embalagem primária, à prova de vazamento.
+Parágrafo único. Para as amostras biológicas transportadas em embalagem interna frágil, passível de quebra, furo ou rachadura, é necessário que se observem os seguintes aspectos:
+I - a (s) embalagem (ns) primária (s) deve (m) estar disposta (s) de maneira a evitar choques entre si e/ou com a embalagem que a (s) envolve (m), de forma a manter a integridade do material transportado; e
+II - para amostras líquidas, deve ser utilizado material absorvente integrando o sistema de embalagens de forma a absorver todo o conteúdo da (s) embalagem (ns) primária (s) no caso de extravasamento de material.
+Art. 16. Para o material biológico humano que não se enquadre nas classificações dos arts. 13, 14 e 15 e que sejam sabidamente isentos de agentes infecciosos, ou que tenham sido submetidos a processos de neutralização/inativação, que sejam materiais biológicos secos coletados em dispositivos específicos, sangue e componentes para transfusão, células, tecidos e órgãos para transplante, deve-se aplicar, para os procedimentos de embalagem, o disposto no art. 15, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 17. Para classificação do material biológico humano a ser transportado deve-se utilizar o diagrama de classificação de risco aplicado ao transporte de material biológico humano de acordo com as diretrizes da Organização Mundial de Saúde (OMS), em conformidade com o Anexo desta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 18. No caso da utilização de mecanismos de sobre-embalagem para acondicionamento de embalagens, deve-se garantir que cada embalagem seja corretamente rotulada e sinalizada, de acordo com o determinado nesta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Art. 19. Somente embalagens constituídas de materiais passíveis de limpeza, secagem e desinfecção ou esterilização, caso sejam tecnicamente justificáveis, poderão ser reutilizadas, mediante protocolos definidos e com a manutenção dos registros dos procedimentos realizados.
+CAPÍTULO IV
+ROTULAGEM
+Art. 20. A rotulagem deve estar de acordo com o tipo, classificação de risco e requisitos de conservação do material biológico humano transportado.
+Art. 21. As informações contidas no rótulo e na etiqueta devem ser legíveis, compreensíveis e devem ser expressas em língua portuguesa com tinta indelével, à prova dágua e sobre um fundo de cor contrastante, com dimensões proporcionais ao tamanho da embalagem, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+Parágrafo único. No caso de importação de material biológico, as informações expressas em língua portuguesa ou língua inglesa.
+Art. 22. O rótulo e a etiqueta devem permanecer firmemente aderidos às embalagens, não podendo ser rasurados, adulterados ou cobertos por etiquetas, marcas ou partes da embalagem.
+Art. 23. A embalagem terciária deve conter, no mínimo, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte:
+I - identificação do remetente e do destinatário, além de endereços completos e telefones de contato;
+II - identificação apropriada do material biológico;
+III- etiqueta e marcação referente ao tipo de material biológico transportado, quando aplicável;
+IV- frases de advertências, quando aplicável;
+V- sinalização de modo e sentido de abertura, quando aplicável;
+VI- marcação de embalagem homologada, quando aplicável; e
+VII- contatos telefônicos, disponíveis 24 (vinte e quatro) horas, para casos de acidentes e incidentes.
+§1° O material biológico humano infectante classificado como Categoria A ou Categoria B deverá ser transportado em embalagens rotuladas de acordo com normas específicas para transporte aéreo, terrestre e aquaviário vigentes.
+§2° Todo material biológico humano classificado como Categoria A deve conter na embalagem terciária de transporte a etiqueta de risco biológico de acordo com normas específicas para transporte aéreo, terrestre e aquaviário vigentes.
+Art. 24. Para o transporte que contenha gelo seco, nitrogênio líquido, líquido criogênico, gás não inflamável ou outro material de conservação e preservação que ofereça riscos durante o processo de transporte, a embalagem e sinalização deve estar de acordo com as normas vigentes específicas ao transporte de material considerado perigoso.
+Art. 25. Quando se tratar de material biológico humano que não possa ser submetido à radiação (raios-X), tal característica deve ser claramente indicada na embalagem terciária.
+CAPÍTULO V
+RESPONSABILIDADES
+Art. 26. As responsabilidades do remetente, transportador e destinatário devem ser definidas e documentadas instrumento escrito abrangendo, na etapa do processo de transporte que lhe couber:
+I - providências relacionadas à documentação de expedição necessária ao transporte do material biológico;
+II - adoção de medidas de biossegurança;
+III - garantia das condições necessárias de conservação e estabilidade do material biológico;
+IV - elaboração das instruções escritas de acordo com as atividades desenvolvidas por cada parte; e
+V - a definição da logística a ser utilizada e o mecanismo de comunicação entre as partes envolvidas.
+Parágrafo único. Para o transporte internacional de material biológico humano, a responsabilidade pela documentação a ser obtida cabe ao importador/exportador.
+Seção I
+Remetente
+Art. 27. O remetente deve se certificar do cumprimento das exigências previstas nesta Resolução, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte, para o transporte de material biológico humano, com a devida antecedência em relação à respectiva remessa aérea, terrestre ou aquaviária.
+Art. 28. O remetente é responsável pelo acondicionamento seguro do material a ser transportado de acordo com o seu tipo e classificação.
+Parágrafo único. Deve ser registrada a identificação do profissional que acondicionou o material biológico para transporte.
+Art. 29. O remetente deve fornecer, aos envolvidos no processo de transporte, as informações técnicas referentes ao material transportado, incluindo procedimentos e cuidados com o material, risco biológico e procedimentos de emergência a serem adotados em caso de acidente ou fato que exponha o transportador, a população ou o ambiente ao material biológico humano.
+§ 1° Na hipótese em que o remetente utilizar no seu processo de transporte o serviço de empresa de transporte de passageiros e cargas rodoviário, ferroviário, aquaviário ou operadores aéreos, que não estejam sujeitos ao licenciamento sanitário, ficará sob a responsabilidade do remetente a verificação das condições técnicas em que esta parte do processo será realizada e o monitoramento da entrega e chegada do material ao seu destino final, mediante instrumento escrito que comprove a terceirização, sem prejuízo do disposto em outras normas vigentes específicas a cada material e modo de transporte.
+§ 2° A autoridade sanitária competente poderá avaliar, quando julgar necessário, as condições técnicas sanitárias do transporte de material biológico humano referido no § 1° deste artigo.
+Art. 30. O remetente deve dar conhecimento ao destinatário sobre informações específicas referentes ao transporte, a data e a hora prevista para a chegada ao destino, quando couber, conforme estabelecido em instrumento escrito que comprove a relação entre as partes, de modo que a carga possa ser prontamente recebida.
+Seção II
+Transportador
+Art. 31. O transportador deve garantir a infraestrutura necessária ao processo de transporte de material biológico humano, considerando-se o respectivo tipo e classificação de risco.
+Art. 32. Durante o transporte de material biológico humano, o transportador deve portar documento que permita a rastreabilidade da expedição/carga transportada.
+Art. 33. O transportador deve verificar as condições da embalagem e da documentação no ato do recebimento do material para transporte de material biológico humano e entrar em contato com o remetente, no caso de constatação de qualquer não conformidade na embalagem e/ou documentação, para a tomada de medidas corretivas cabíveis em tempo hábil para o transporte.
+Art. 34. O veículo transportador deve contar com condições adequadas de higiene e limpeza, bem como dispor de mecanismo que assegure a integridade da embalagem terciária e do material biológico transportado.
+Seção III
+Destinatário
+Art. 35. O destinatário deve garantir a abertura das embalagens em local apropriado e de modo seguro, de acordo com a classificação de risco do material biológico humano, bem como a manutenção da integridade deste material biológico de acordo com suas especificidades.
+Art. 36. O destinatário deve conferir e registrar as condições de recebimento do material biológico, comunicando ao remetente a sua chegada e as não conformidades observadas.
+Parágrafo único. Deve ser registrada a identificação do profissional responsável pelo recebimento da embalagem contendo o material biológico humano transportado.
+Seção IV
+Biossegurança
+Art. 37. O transporte de material biológico humano deve obedecer às normas de biossegurança e de saúde do trabalhador, de forma a prevenir riscos de exposição direta dos profissionais envolvidos, dos transportadores, da população e do ambiente ao material biológico humano.
+Art. 38. O pessoal envolvido no processo de transporte deve dispor de Equipamentos de Proteção Coletiva (EPC) e Equipamentos de Proteção Individual (EPI), de acordo com o risco envolvido nas atividades de manipulação do material biológico.
+Art. 39. O transportador deve realizar e manter registros atualizados do treinamento do pessoal envolvido no processo de transporte para a correta utilização dos equipamentos necessários em situações de emergência, acidente ou avaria.
+Art. 40. Todo o pessoal envolvido no processo de transporte sob risco de exposição direta ao material biológico humano deve ser vacinado de acordo com as normas de saúde do trabalhador.
+Parágrafo único. Para fins desta Resolução, considera-se profissional sob risco de exposição direta ao material biológico humano aquele que tenha entre suas atribuições a possibilidade de manipulação do conteúdo interno da carga transportada.
+Art. 41. Em caso de acidente, avaria ou outro fato que exponha o transportador, a população ou ambiente ao risco do material biológico humano durante o trânsito, o transportador deve adotar as seguintes providências:
+I- informar as autoridades locais competentes sobre o fato;
+II- comunicar ao remetente e ao destinatário o ocorrido;
+III - dar destino aos resíduos gerados de acordo com as informações fornecidas pelo remetente e demais medidas de proteção à população e ao meio ambiente, quando couber; e
+IV- documentar, registrar e arquivar as medidas adotadas.
+CAPÍTULO VI
+DISPOSIÇÕES FINAIS
+Art. 42. A documentação relacionada ao envio, transporte e recebimento do material biológico humano deve ser arquivada por, no mínimo, 5 (cinco) anos ou de acordo com legislação específica para cada tipo de material biológico humano.
+Art. 43. Além das disposições desta Resolução, o transporte de material biológico humano deverá ser realizado em conformidade com a legislação aplicável de outros órgãos e entidades, incluindo-se:
+I- Ministério da Infraestrutura;
+II - Agência Nacional de Transportes Terrestres (ANTT), no caso de transporte terrestre;
+III - Agência Nacional de Aviação Civil (ANAC), no caso de transporte aéreo; e
+IV - Agência Nacional de Transportes Aquaviários (ANTAQ), no caso de transporte aquaviário.
+Art. 44. Os novos transportadores de material biológico e aqueles que pretendam reiniciar suas atividades devem atender às exigências desta Resolução, a partir de sua vigência, previamente ao início seu funcionamento.
+Art. 45. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 46. Os casos omissos ou excepcionais verificados na aplicação desta norma serão apreciados pela autoridade de vigilância sanitária competente nos termos da legislação vigente.
+Art. 47. Ficam revogadas:
+I - a Resolução de Diretoria Colegiada - RDC nº 66, de 21 de dezembro de 2009, publicada no Diário Oficial da União de 23 de dezembro de 2009;
+II - a Resolução de Diretoria Colegiada - RDC nº 20, de 10 de abril de 2014, publicada no Diário Oficial da União de 11 de abril de 2014; e
+III - a Resolução de Diretoria Colegiada - RDC nº 30, de 23 de maio de 2014, publicada no Diário Oficial da União de 26 de maio de 2014.
+Art. 48. Esta Resolução de Diretoria Colegiada entra em vigor em 1º de julho de 2021.
+ANTONIO BARRA TORRES
+ANEXO
+CLASSIFICAÇÃO DE RISCO APLICADO AO TRANSPORTE DE MATERIAL BIOLÓGICO HUMANO
+Adaptado:
+1. OMS - Organização Mundial de Saúde - Guia sobre regulamentação relativa ao Transporte de Substâncias Infecciosas 2013 - 2014.
+PUB D.O.U., 31/05/2021 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

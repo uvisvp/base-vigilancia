@@ -1,0 +1,323 @@
+INSTRUÇÃO NORMATIVA - IN N° 92, DE 27 DE MAIO DE 2021 (*)
+Dispõe sobre requisitos sanitários para a garantia da qualidade e da segurança de sistemas de mamografia, e dá outras providências.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 53, VII, §§ 1º e 3º, do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC nº 255, de 10 de dezembro de 2018, resolve adotar a seguinte Instrução Normativa, conforme deliberado em reunião realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DISPOSIÇÕES INICIAIS
+Art. 1º Esta Instrução Normativa estabelece requisitos sanitários para a garantia da qualidade e da segurança de sistemas de mamografia, bem como a relação mínima de testes de aceitação e de controle de qualidade que devem ser realizados pelos serviços de saúde, determinando respectivas periodicidades, tolerâncias e níveis de restrição, conforme Anexo I desta Instrução Normativa.
+Parágrafo único. O rol de testes do Anexo I desta Instrução Normativa deve ser complementado pelos testes de aceitação e de controle de qualidade estabelecidos pelo fabricante do sistema avaliado e pelas demais normativas aplicáveis.
+Seção I
+Características dos equipamentos
+Art. 2º Todo equipamento de mamografia deve possuir:
+I - blindagem no cabeçote de modo a garantir nível mínimo de radiação de fuga, restringida à taxa de kerma no ar de 1 mGy/h (um miligray por hora) a 1 (um) metro do ponto focal, quando operado em condições de ensaio de fuga, comprovada com certificado de adequação emitido pelo fabricante na instalação do tubo de raios X;
+II - o requisito de que trata o inciso I deste artigo aplica-se à radiação de fuga através do sistema de colimação;
+III - filtração total permanente mínima do feixe útil de radiação equivalente a 0,03 mm (três centésimos de milímetro) de molibdênio, para combinação alvo/filtro Mo/Mo; 0,025 mm (vinte e cinco milésimos de milímetro) de ródio, para a combinação alvo/filtro Mo/Rh ou Rh/Rh; 0,06 mm (seis centésimos de milímetro) de molibdênio, para combinação alvo/filtro W/Mo; 0,05 mm (cinco centésimos de milímetro) de ródio, para combinação alvo/filtro W/Rh;
+IV - dispositivo para manter compressão firme na mama para assegurar espessura uniforme na porção radiografada, de modo que:
+a) a placa de compressão produza atenuação de, no máximo, o equivalente a 2 mm (dois milímetros) de Polimetil-Meta-Acrilato (PMMA), comprovada com certificado de adequação emitido pelo fabricante na instalação do tubo de raios X; e
+b) o sistema automático garanta força de compressão do dispositivo entre 150 (cento e cinquenta) e 200 (duzentos) Newtons (N), indicando o valor da compressão.
+V - suporte de receptor de imagem com transmissão menor que 1 µGy (um microgray) por exposição a 5 cm (cinco centímetros), sem a presença da mama, para valores máximos de kVp e mAs empregados, comprovada com certificado de adequação emitido pelo fabricante na instalação do tubo de raios X;
+VI - tubo de raios X projetado especificamente para mamografia;
+VII - gerador de alta frequência;
+VIII - controle automático de exposição;
+IX - distância do ponto focal até o receptor de imagem não inferior a 50 cm (cinquenta centímetros);
+X - tamanho nominal do ponto focal não superior a 0,4 mm (quatro décimos de milímetro); e
+XI - sistema para indicar a espessura da mama comprimida, para equipamentos comercializados após a publicação desta Instrução Normativa.
+Art. 3º O painel de controle deve possuir indicação clara de quando se utiliza o controle automático de exposição.
+Art. 4º No painel de controle do equipamento, a terminologia e os valores dos parâmetros de operação devem estar exibidos em linguagem ou simbologia internacionalmente aceita, compreensível para o usuário.
+Art. 5º A emissão de raios X, enquanto durar a exposição, deve ser indicada por sinal sonoro e luminoso no painel de controle do equipamento.
+Seção II
+Requisitos de desempenho e aceitação
+Art. 6º São condições dos procedimentos e equipamentos de mamografia que inabilitam seu uso:
+I - equipamento sem sistema de colimação ou sistema sem funcionar;
+II - equipamento sem filtração adicional;
+III - equipamento sem indicação no painel de controle dos parâmetros básicos (Tensão (kVp), Corrente (mA) e Tempo (s) ou o produto corrente x tempo (mAs));
+IV - equipamento sem sistema automático de compressão;
+V - equipamento sem bandeja de compressão, com bandeja danificada ou sem fixação;
+VI - equipamento sem controle automático de exposição (CAE) ou com CAE sem funcionar;
+VII - equipamento com distância do ponto focal até o receptor de imagem menor que 50 cm (cinquenta centímetros);
+VIII - suporte de receptor de imagem (bucky) sem grade antidifusora, exceto sistemas de magnificação;
+IX - revelação manual;
+X - mais de 1 (um) equipamento instalado na mesma sala;
+XI - utilizar negatoscópios que não sejam específicos para mamografia, quando o serviço realizar diagnóstico e laudos por meio de filme;
+XII - utilizar monitor para diagnóstico e laudos que não seja específico para mamografia; e
+XIII - utilizar processadora não específica e exclusiva para mamografia convencional, quando o serviço utilizar essa modalidade.
+Art. 7º Os testes de controle de qualidade devem ser realizados com as respectivas periodicidades, tolerâncias e níveis de restrição estabelecidos no Anexo I desta Instrução Normativa, e em conformidade com as demais normativas aplicáveis.
+§ 1º Para serviços de mamografia em unidades itinerantes, os testes do Anexo I desta Instrução Normativa devem ser realizados, no mínimo, semestralmente, com exceção dos testes de menor período, que devem ser realizados conforme estabelecido no Anexo I desta Instrução Normativa.
+§ 2º A avaliação diária da qualidade da imagem pode ser realizada por profissionais do próprio serviço, desde que treinados e legalmente habilitados para tais funções.
+CAPÍTULO II
+DISPOSIÇÕES FINAIS
+Art. 8º Fica revogada a Instrução Normativa - IN nº 54, de 20 de dezembro de 2019, publicada no Diário Oficial da União nº 249, de 26 de dezembro de 2019, Seção 1, pág. 128.
+Art. 9º Esta Instrução Normativa entra em vigor na data de sua publicação.
+ANTONIO BARRA TORRES
+Diretor-Presidente
+ANEXO I
+TESTES DE ACEITAÇÃO E DE CONTROLE DE QUALIDADE PARA SERVIÇOS DE MAMOGRAFIA
+APLICABILIDADE*
+TESTES
+PERIODICIDADE
+TOLERÂNCIA
+NÍVEL DE RESTRIÇÃO
+C
+Sensitometria da processadora
+Teste de aceitação, diário ou após reparos
+Linha de Base (LB)
+Base + véu
+≤ 0,21 DO
+Base + véu
+≤ LB + 0,02 DO
+Densidade média
+≤ LB + 0,10 DO
+Diferença de densidades
+≤ LB + 0,10 DO
+Base + véu > 0,25 DO
+Base + véu > LB + 0,03 DO
+Densidade média > LB + 0,15 DO
+Diferença de densidades > LB + 0,15 DO
+C
+Temperatura do sistema de processamento
+Teste de aceitação, diário ou após reparos
+Conforme recomendação do fabricante
+-
+G
+Qualidade da imagem (Avaliada com ferramenta de teste específica para mamografia)
+Teste de aceitação, diário ou após reparos
+Fibra
+≤ 0,75 mm;
+Microcalcificação
+≤ 0,32 mm;
+Massa
+≤ 0,75 mm.
+Não cumprir os requisitos
+C/CR
+Integridade dos chassis e cassetes
+Teste de aceitação e anual
+Chassis e cassetes íntegros
+-
+G
+Valor representativo de dose glandular média
+Teste de aceitação, anual ou após reparos
+Anexo II desta Instrução Normativa
+-
+G
+Exatidão do indicador da tensão do tubo
+Teste de aceitação, anual ou após reparos
+≤ 5% do valor nominal
+> 10% do valor nominal
+G
+Reprodutibilidade da tensão do tubo
+Teste de aceitação, anual ou após reparos
+coeficiente de variação
+≤ 0,05
+coeficiente de variação > 0,1
+G
+Tempo máximo de exposição (para um simulador de 4,5 cm de PMMA)
+Teste de aceitação, anual ou após reparos
+Contato: t
+≤ 1,5 s
+Magnificação: t
+≤ 2,0 s
+Contato: t > 2,0 s
+Magnificação: t > 3,0 s
+G
+Reprodutibilidade do controle automático de exposição (CAE)
+Teste de aceitação, anual ou após reparos
+≤ 15% do valor médio, ou conforme especificação do fabricante
+> 30% do valor médio
+G
+Compensação do CAE para diferentes espessuras
+Teste de aceitação, anual ou após reparos
+≤ 15%
+> 30%
+G
+Rendimento do tubo
+Teste de aceitação, anual ou após reparos
+7 x f (mGy/s), medido a 28 kV
+Onde f é igual a:
+1 para Mo/Mo;
+0,86 para Mo/Rh;
+0,41 para W/Mo;
+0,38 para W/Rh;
+0,58 para Rh/Rh.
+-
+G
+Camada Semirredutora (CSR)
+Teste de aceitação, anual ou após reparos
+(kVp/100)+0,03
+≤ CSR(mmAl)
+≤ (kVp/100) + c
+onde c é igual a:
+0,12 para Mo/Mo;
+0,19 para Mo/Rh;
+0,22 para Rh/Rh;
+0,30 para W/Rh;
+0,32 para W/Ag;
+0,25 para W/Al.
+CSR(mmAl)
+≤ (kVp/100)
+G
+Resolução espacial
+Teste de aceitação, anual ou após reparos
+Conforme especificação do fabricante.
+Para mamografia convencional: ≥ 12 pl/mm
+Para mamografia convencional: < 10 pl/mm
+G
+Exatidão do sistema de colimação
+Teste de aceitação, anual ou após reparos
+≤ 2% da distância foco-receptor de imagem
+> 4% da distância foco-receptor de imagem
+G
+Sistema de compressão automático
+Teste de aceitação, anual ou após reparos
+150 N*
+≤ Força de compressão
+≤ 200 N
+> 300 N ou < 70 N
+G
+Alinhamento da bandeja de compressão
+Teste de aceitação, anual ou após reparos
+≤ 5 mm
+> 10 mm
+G
+Indicação da espessura da mama comprimida
+Teste de aceitação, anual ou após reparos
+≤ 5 mm
+> 10 mm
+C
+Contato tela-filme
+Teste de aceitação, anual ou após reparos
+Sem perda de uniformidade
+-
+G
+Artefatos na imagem
+Teste de aceitação, anual ou após reparos
+Imagens sem artefatos
+-
+C
+Vedação da câmara escura
+Teste de aceitação, anual ou após reparos
+Sem entrada de luz externa
+Velando filme
+CR/DR
+Uniformidade da imagem
+Teste de aceitação, anual ou após reparos
+Desvio máximo da Razão Sinal Ruido (RSR) das ROIs individuais em relação ao valor médio da RSR
+≤ 15%, para placas de mesmo tamanho.
+> 25%
+CR
+Diferença de sensibilidade entre as placas de fósforo de mesmo tamanho
+Teste de aceitação, anual ou após reparos
+O mAs da exposição de qualquer placa de fósforo não deve diferir mais que 10% da média de todas as placas de mesmo tamanho.
+A RSR de qualquer placa de fósforo não deve diferir mais que 15% da RSR médio de todas as placas de mesmo tamanho.
+Diferença de mAs > 15%
+CR/DR
+Razão contraste ruído (CNR)
+Teste de aceitação, anual ou após reparos
+Anexo III desta Instrução Normativa
+-
+CR/DR
+Efetividade do ciclo de apagamento
+Teste de aceitação, anual ou após reparos
+Ausência de imagem residual
+-
+G
+Integridade dos acessórios e equipamentos de proteção individual
+Teste de aceitação, anual ou após reparos
+Íntegros
+-
+C
+Luminância do negatoscópio para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≥ 3000 cd/m2
+≤ 2500 cd/m2
+CR/DR
+Luminância dos monitores para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≥ 350 cd/m2
+-
+G
+Uniformidade da Luminância dos monitores e negatoscópios para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≤ 20%
+-
+G
+Iluminância da sala de laudos
+Teste de aceitação, anual ou após reparos
+≤ 50 lx
+> 100 lx
+G
+Levantamento Radiométrico
+Teste de aceitação, quadrienal ou após modificações nas salas, equipamentos ou procedimentos
+Área Livre:
+≤ 0,5 mSv/ano;
+Área Controlada:
+≤ 5,0 mSv/ano.
+Área Livre: > 1,0 mSv / ano;
+Área controlada: > 10,0 mSv / ano.
+G
+Radiação de fuga do cabeçote
+Teste de aceitação, quadrienal ou após modificações no equipamento
+≤ 1,0 mGy/h a 1m
+> 2,0 mGy/h a 1m
+C: Mamografia Convencional; CR: Mamografia CR; DR: Mamografia DR; G: Geral.
+*Para fins de avaliação da força de compressão deve ser considerado 9,8 N = 1 kgf
+Observação: Os testes de qualidade dos receptores de imagem devem ser realizados para todos os dispositivos disponíveis.
+ANEXO II
+DOSE GLANDULAR MÉDIA (DGM) PARA MAMOGRAFIA
+Espessura (cm)
+DGM (mGy)
+PMMA
+Mama equivalente
+Referência
+Tolerância
+2
+2,1
+0,6
+< 1,0
+3
+3,2
+1,0
+< 1,5
+4
+4,5
+1,6
+< 2,0
+4,5
+5,3
+2,0
+< 2,5
+5
+6
+2,4
+< 3,0
+6
+7,5
+3,6
+< 4,5
+ANEXO III - RAZÃO CONTRASTE RUÍDO (CNR)
+Espessura de PMMA (cm)
+Níveis de tolerância de CNRrel (%)
+Níveis de restrição CNRrel (%)
+2
+≥ 115
+< 105
+3
+≥ 110
+< 100
+4
+≥ 105
+< 95
+4,5
+≥ 103
+< 93
+5
+≥ 100
+< 90
+6
+≥ 95
+< 85
+7
+≥ 90
+< 80
+(*) Republicada por ter saído com incorreção no original, publicado no Diário Oficial da União nº 101, de 31 de maio de 2021, Seção 1, pág. 152.
+PUB D.O.U., 31/05/2021 - Seção 1
+REP., 07/07/2022 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

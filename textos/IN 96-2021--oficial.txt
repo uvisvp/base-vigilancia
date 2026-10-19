@@ -1,0 +1,66 @@
+INSTRUÇÃO NORMATIVA - IN N° 96, DE 27 DE MAIO DE 2021 (*)
+Dispõe sobre requisitos sanitários para a garantia da qualidade e da segurança em sistemas de ultrassom diagnóstico ou terapêutico, e dá outras providências.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 53, VII, §§ 1º e 3º, do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC nº 255, de 10 de dezembro de 2018, resolve adotar a seguinte Instrução Normativa, conforme deliberado em reunião realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DISPOSIÇÕES INICIAIS
+Art. 1º Esta Instrução Normativa estabelece requisitos sanitários para a garantia da qualidade e da segurança nos sistemas de ultrassom diagnóstico ou terapêutico, bem como a relação de testes de aceitação e de controle de qualidade que devem ser realizados pelos serviços de saúde, determinando as respectivas periodicidades e tolerâncias, conforme o Anexo desta Instrução Normativa.
+Parágrafo único. O rol de testes do Anexo desta Instrução Normativa deve ser complementado pelos testes de aceitação e de controle de qualidade estabelecidos pelo fabricante do sistema avaliado.
+Art. 2º Os testes de controle de qualidade do equipamento de ultrassom terapêutico devem ser realizados conforme estabelecido pelo fabricante do equipamento.
+CAPÍTULO II
+DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+Art. 3º Os serviços de saúde abrangidos por esta Instrução Normativa dispõe do prazo de até o dia 26 de dezembro de 2021 para se adequarem ao disposto nesta Instrução Normativa.
+Art. 4º Fica revogada a Instrução Normativa - IN nº 58, de 20 de dezembro de 2019, publicada no Diário Oficial da União n° 249, de 26 de dezembro de 2019, Seção 1, pág. 132.
+Art. 5º Esta Instrução Normativa entra em vigor na data de sua publicação.
+ANTONIO BARRA TORRES
+Diretor-Presidente
+ANEXO
+TESTES DE ACEITAÇÃO E DE CONTROLE DE QUALIDADE PARA OS SERVIÇOS DE ULTRASSONOGRAFIA
+TESTES
+PERIODICIDADE
+TOLERÂNCIA
+Uniformidade da imagem
+Aceitação, anual e quando houver reparos
+< 4dB do valor de referência
+Zona morta
+Aceitação, anual e quando houver reparos
+< 7mm para frequência < 3MHz
+< 5mm para 3MHz < frequência < 7MHz
+< 3mm para frequência > 7MHz
+Profundidade de penetração
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante.
+Desvio < 6 mm do valor de referência
+Zona focal
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante
+Exatidão da medida da distância vertical
+Aceitação, anual e quando houver reparos
+< 1,5 mm ou < 1,5% do valor nominal (valor real)
+Exatidão da medida da distância horizontal
+Aceitação, anual e quando houver reparos
+< 2 mm ou < 2% do valor nominal (valor real)
+Resolução axial
+Aceitação, anual e quando houver reparos
+< 2mm para transdutores com frequência < 4MHz
+< 1mm para transdutores com frequência > 4 MHz
+Resolução lateral
+Aceitação, anual e quando houver reparos
+< 4 mm para transdutores com frequência < 3,5 MHz
+< 3 mm para transdutores com frequência > 3,5 MHz e < 5 MHz
+< 1,5 mm para transdutores com frequência > 5 MHz
+Visualização de objetos anecoicos
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante do equipamento e do simulador
+Limiar de sensibilidade a baixo contraste
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante do equipamento e do simulador
+Acurácia da velocidade e da magnitude em modo Doppler (quando aplicável)
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante do equipamento e do simulador
+Sensibilidade do modo Doppler (quando aplicável)
+Aceitação, anual e quando houver reparos
+Segundo especificações do fabricante do equipamento e do simulador
+(*) Republicada por ter saído com incorreção no original, publicado no Diário Oficial da União nº 101, de 31 de maio de 2021, Seção 1, pág. 162.
+PUB D.O.U., 31/05/2021 - Seção 1
+REP., 06/07/2022 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

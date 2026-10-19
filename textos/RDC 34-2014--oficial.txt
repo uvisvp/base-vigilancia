@@ -1,0 +1,1728 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 34, de 11/06/2014
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+Vigente com AlteraçõesResoluçăo da Diretoria Colegiada - RDC nş 34, de 11/06/2014
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+RESOLUÇÃO - RDC N° 34, DE 11 DE JUNHO DE 2014
+Dispõe sobre as Boas Práticas no Ciclo do Sangue.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso da atribuição que lhe conferem os incisos III e IV, do art. 15, da Lei nº 9.782, de 26 de janeiro de 1999, inciso V e §§ 1º e 3º do art. 5º do Regimento Interno aprovado nos termos do Anexo I da Portaria nº 650 da ANVISA, de 29 de maio de 2014, publicada no DOU de 02 de junho de 2014, tendo em vista o disposto nos incisos III, do art. 2º, III e IV, do art. 7º da Lei nº 9.782, de 1999, e o Programa de Melhoria do Processo de Regulamentação da Agência, instituído por Portaria nº 422, de 16 de abril de 2008, em reunião realizada em 29 de maio de 2014, adota a seguinte Resolução da Diretoria Colegiada e eu, Diretor-Presidente, determino a sua publicação:
+Art. 1º Fica aprovado o Regulamento Sanitário que estabelece os requisitos de boas práticas para serviços de hemoterapia que desenvolvam atividades relacionadas ao ciclo produtivo do sangue e para serviços de saúde que realizem procedimentos transfusionais, incluindo captação de doadores, coleta, processamento, testagem, controle de qualidade e proteção ao doador e ao receptor, armazenamento, distribuição, transporte e transfusão em todo o território nacional, nos termos desta Resolução.
+CAPÍTULO I
+DAS DISPOSIÇÕES INICIAIS
+Seção I
+Objetivo
+Art. 2° Esta Resolução possui o objetivo de estabelecer os requisitos de boas práticas a serem cumpridas pelos serviços de hemoterapia que desenvolvam atividades relacionadas ao ciclo produtivo do sangue e componentes e serviços de saúde que realizem procedimentos transfusionais, a fim de que seja garantida a qualidade dos processos e produtos, a redução dos riscos sanitários e a segurança transfusional.
+Seção II
+Abrangência
+Art. 3° Esta Resolução se aplica a todos os estabelecimentos que desenvolvam atividades relacionadas ao ciclo produtivo do sangue e componentes e serviços de saúde que realizem procedimentos transfusionais em todo território nacional.
+Seção III
+Definições
+Art. 4º Para efeito desta Resolução são adotadas as seguintes definições:
+I - aférese: processo que consiste na obtenção de determinado componente sanguíneo de doador único, utilizando equipamento específico (máquina de aférese), com retorno dos hemocomponentes remanescentes à corrente sanguínea;
+II - aférese terapêutica: remoção de determinado hemocomponente, com finalidade terapêutica, com retorno dos hemocomponentes remanescentes à corrente sanguínea do paciente;
+III - área: ambiente aberto, não delimitado por paredes ou outro obstáculo, em uma ou mais das faces, onde são realizadas atividades específicas;
+IV - ambiente: espaço fisicamente delimitado e especializado para o desenvolvimento de atividade(s), caracterizado por dimensões e instalações diferenciadas;
+V - calibração: conjunto de operações que estabelece, sob condições especificadas, a relação entre os valores indicados por um instrumento de medição ou sistema de medição ou valores representados por uma medida materializada ou um material de referência, e os valores correspondentes das grandezas estabelecidos por padrões;
+VI - ciclo produtivo do sangue: etapas do ciclo do sangue que correspondem a processo sistemático, destinado à produção de hemocomponentes, que abrange as atividades de captação e seleção do doador, triagem clínico-epidemiológica, coleta de sangue, triagem laboratorial das amostras de sangue, processamento, armazenamento, transporte e distribuição de sangue e componentes, compatibilizados ou não, de acordo com a legislação vigente;
+VII - ciclo do sangue: processo sistemático que abrange as atividades de captação e seleção do doador, triagem clínico- epidemiológica, coleta de sangue, triagem laboratorial das amostras de sangue, processamento, armazenamento, transporte e distribuição e procedimentos transfusionais e de hemovigilância;
+VIII - concentrado de granulócitos: suspensões de granulócitos em plasma, obtidas por aférese de doador único;
+IX - concentrado de hemácias: eritrócitos que permanecem na bolsa depois que esta é centrifugada e o plasma extraído para uma bolsa-satélite;
+X - concentrado de hemácias lavadas: concentrados de hemácias obtidos após lavagens com solução compatível e estéril;
+XI - concentrado de hemácias com camada leucoplaquetária removida: concentrados de hemácias que devem ser preparados por um método que, através da remoção da camada leucoplaquetária, reduza o número de leucócitos no componente final a menos de 1,2 x 109;
+XII - concentrado de hemácias desleucocitado: concentrados de hemácias obtidos pela remoção de leucócitos através de filtros para este fim. Um concentrado de hemácias desleucocitado deve conter menos que 5 x 106 leucócitos por unidade;
+XIII - concentrado de hemácias congeladas: concentrados de hemácias conservadas em temperaturas iguais ou inferiores a 65ºC negativos, na presença de um agente crioprotetor;
+XIV - concentrado de hemácias rejuvenescidas: concentrados de hemácias modificados por método que restabeleça os níveis normais de 2,3-difosfoglicerato (2,3 DPG) e adenosina trifosfato (ATP);
+XV - concentrado de plaquetas: suspensão de plaquetas em plasma, preparado mediante dupla centrifugação de uma unidade de sangue total ou por aférese de doador único;
+XVI - concentrado de plaquetas desleucocitado: concentrado de plaquetas obtidas pela remoção de leucócitos através de filtros para este fim. Deve conter menos que 5 x 106 leucócitos por pool ou 0,83 x 106 por unidade;
+XVII - controle de qualidade: técnicas e atividades operacionais utilizadas para monitorar o cumprimento dos requisitos da qualidade especificados;
+XVIII - crioprecipitado: fração de plasma insolúvel em frio, obtida a partir do plasma fresco congelado, contendo glicoproteínas de alto peso molecular, principalmente fator VIII, fator de Von Willebrand, fator XIII e fibrinogênio;
+XIX - doação autóloga: coleta prévia de uma bolsa de sangue de uma pessoa para uso próprio em procedimentos transfusionais programados;
+XX - distribuição: fornecimento de sangue e componentes por um serviço de hemoterapia para estoque/armazenamento, compatibilizados ou não, para fins transfusionais ou industriais;
+XXI - embalagem: invólucro, recipiente ou qualquer forma de acondicionamento, removível ou não, destinado a cobrir, empacotar, envasar, proteger ou manter, especificamente ou não, amostras biológicas, sangue e hemocomponentes de que trata esta Resolução;
+XXII - etiqueta: identificação afixada sobre o rótulo da bolsa de sangue e componentes, equipamentos e instrumentos;
+XXIII - evento adverso: ocorrência adversa associada aos processos do ciclo do sangue que pode resultar em risco para a saúde do receptor ou do doador, que tenha ou não como consequência uma reação adversa;
+XXIV - fracionamento industrial: processo pelo qual o plasma é separado em frações protéicas para posterior purificação até obtenção de produtos farmacêuticos;
+XXV - gestão da qualidade: conjunto de procedimentos adotados com o objetivo de garantir que os processos e produtos estejam dentro dos padrões de qualidade exigidos, para que possam atingir os fins propostos;
+XXVI - hemocomponentes: produtos oriundos do sangue total ou do plasma, obtidos por meio de processamento físico;
+XXVII - hemocomponentes especiais: hemocomponentes oriundos do sangue total ou do plasma, obtidos por meio de processos físicos, utilizados em outros procedimentos terapêuticos que não a transfusão;
+XXVIII - hemocomponentes irradiados: hemocomponentes submetidos a procedimentos de irradiação que garantam dose mínima definida sobre o plano médio da unidade irradiada;
+XXIX - hemoderivados: produtos oriundos do sangue total ou do plasma, obtidos por meio de processamento físico-químico ou biotecnológico;
+XXX - hemovigilância: conjunto de procedimentos de vigilância que abrange todo o ciclo do sangue, com o objetivo de obter e disponibilizar informações sobre eventos adversos ocorridos nas suas diferentes etapas, para prevenir seu aparecimento ou recorrência, melhorar a qualidade dos processos e produtos e aumentar a segurança do doador e receptor;
+XXXI - instrumento: todo dispositivo utilizado para realização de medição e aferição, não considerado equipamento, tais como pipeta, termômetro, tensiômetro, dentre outros;
+XXXII - lote: quantidade definida de um produto com homogeneidade, produzido em um único processo ou série de processos;
+XXXIII - manutenção corretiva: reparos de defeitos funcionais ocorridos durante a utilização de equipamento e instrumento;
+XXXIV - manutenção preventiva: manutenção sistemática que visa manter equipamentos e instrumentos dentro de condições normais de utilização, com o objetivo de prevenir a ocorrência de defeitos por desgaste ou envelhecimento de seus componentes;
+XXXV - materiais e insumos: designação genérica do conjunto dos itens utilizados em um processo para geração de um produto ou serviço;
+XXXVI - Notivisa: Sistema de Notificações em Vigilância Sanitária que permite a notificação "on-line" de queixas técnicas e eventos adversos relativos a produtos sob vigilância sanitária, tais como sangue e hemocomponentes, medicamentos, vacinas, equipamentos, kits para diagnósticos e saneantes, dentre outros;
+XXXVII - pessoa capacitada: aquela que possui treinamento e experiência necessários para preencher os requisitos de determinada função;
+XXXVIII - pessoa habilitada: pessoa que possui as qualificações exigidas por leis e regulamentos específicos para execução de determinada atividade;
+XXXIX - plasma fresco congelado (PFC): plasma separado de uma unidade de sangue total por centrifugação, ou obtido por aférese, congelado completamente em até 8 (oito) horas ou entre 8 (oito) a 24 (vinte e quatro) horas;
+XL - plasma comum (plasma não-fresco, plasma normal ou plasma simples): plasma cujo congelamento não se deu dentro das especificações técnicas assinaladas no inciso anterior, ou ainda pode resultar da transformação de um plasma fresco congelado, cujo período de validade expirou;
+XLI - plasma isento do crioprecipitado: plasma do qual foi retirado, em sistema fechado, o crioprecipitado;
+XLII - procedimentos operacionais padrão (POP): procedimentos escritos e autorizados, introduzidos nas rotinas de trabalho, que fornecem instruções detalhadas para a realização de atividades específicas;
+XLIII - protocolo: conjunto de regras escritas definidas para a realização de determinado procedimento;
+XLIV - qualificação: operações documentadas de acordo com um plano de testes predeterminados e critérios de aceitação definidos, garantindo que fornecedores, insumos, equipamentos e instrumentos atendam a requisitos especificados;
+XLV - rastreabilidade: capacidade de recuperação do histórico, por meio de registros, de um conjunto de procedimentos envolvidos em determinado processo, incluindo os agentes executores;
+XLVI - registro: documento que apresenta os resultados ou a prova da realização de uma atividade;
+XLVII - reação adversa: efeito ou resposta indesejada à doação ou ao uso terapêutico do sangue ou componente que ocorra durante ou após a doação e transfusão e a elas relacionadas. Em relação ao doador, será sinônimo de reação à doação e, em relação ao receptor, será sinônimo de reação transfusional;
+XLVIII - responsável técnico: profissional de nível superior, inscrito no respectivo conselho de classe, designado para orientar e supervisionar a realização de determinada atividade ou o funcionamento de um serviço, o qual responde pelo cumprimento dos dispositivos técnicos e legais pertinentes;
+XLIX - retrovigilância: parte da hemovigilância que trata da investigação retrospectiva relacionada à rastreabilidade das bolsas de doações anteriores de um doador que apresentou soroconversão/viragem de um marcador ou relacionada a um receptor de sangue que veio a apresentar marcador reagente/positivo para uma doença transmissível. Termo também aplicável em casos de detecção de positividade em análises microbiológicas de componentes sanguíneos e investigação de quadros infecciosos bacterianos em receptores, sem manifestação imediata, mas potencialmente imputados à transfusão;
+L - rótulo: identificação impressa ou com os dizeres gravados, autoadesivos, aplicados diretamente sobre recipientes, embalagens, invólucros, envoltórios, cartuchos e qualquer outro protetor de embalagem, não podendo ser removida ou alterada;
+LI - sala: ambiente envolto por paredes em todo o seu perímetro, com pelo menos uma porta;
+LII - sistema/circuito fechado: recipiente ou conjunto de recipientes que permite a coleta do sangue e componentes, bem como sua preparação, sem alteração da esterilidade, abrangendo os sistemas fisicamente fechados e os funcionalmente fechados, a exemplo da conexão estéril;
+LIII - soroconversão/viragem de um marcador: resultado da viragem sorológica ou positividade detectada para marcador de infecções transmissíveis pelo sangue identificado na triagem laboratorial de doador que em doação anterior teve resultado não reagente/ negativo para o mesmo marcador;
+LIV - termo de consentimento livre e esclarecido: documento que expressa a anuência do candidato à doação de sangue, livre de dependência, subordinação ou intimidação, após explicação completa e pormenorizada sobre a natureza da doação, seus objetivos, métodos, utilização prevista, potenciais riscos e o incômodo que esta possa acarretar, autorizando sua participação voluntária na doação e a destinação do sangue doado;
+LV - validação: evidência documentada de que um procedimento, processo, sistema ou método realmente conduz aos resultados esperados;
+LVI - vigilância sanitária competente: órgão de vigilância sanitária da União, Estado, Distrito Federal ou município com responsabilidade pelas ações em serviços de hemoterapia.
+LVII - vigilância em saúde: processo contínuo e sistemático de avaliação sobre eventos relacionados à saúde, visando o planejamento e a implementação de medidas de saúde pública para a proteção da saúde da população, a prevenção e controle de riscos, agravos e doenças, bem como para a promoção da saúde, compreendendo ações de vigilância epidemiológica, ambiental, trabalhador e sanitária.
+CAPÍTULO II
+DO REGULAMENTO SANITÁRIO
+Seção I
+Disposições gerais
+Art. 5º Todo serviço de hemoterapia deve solicitar licença sanitária inicial para o desenvolvimento de quaisquer atividades do ciclo do sangue, bem como sua renovação anual, de acordo com o disposto nesta Resolução e nos requisitos definidos pelo órgão de vigilância sanitária local competente.
+Parágrafo único. Sangue e componentes obtidos nos serviços de hemoterapia são produtos biológicos para uso terapêutico, sob regime de vigilância sanitária, dispensados de registro na Agência Nacional de Vigilância Sanitária - Anvisa.
+Art. 6º O serviço de hemoterapia deve estar sob responsabilidade técnica de profissional médico, especialista em hemoterapia ou hematologia, ou qualificado por órgão competente devidamente reconhecido para este fim pelo Sistema Estadual de Sangue, que responderá pelas atividades executadas pelo serviço.
+Parágrafo único. O serviço de hemoterapia deve possuir ainda, nos respectivos setores do ciclo do sangue, designação de supervisão técnica de acordo com a habilitação e registro profissional no respectivo conselho de classe, além de mecanismos que garantam a supervisão das atividades durante todo o período de funcionamento do setor.
+Art. 7º As atividades referentes ao ciclo do sangue devem ser realizadas por profissionais de saúde em número suficiente, habilitados e capacitados para a realização das atividades, de acordo com a legislação vigente.
+§ 1º O serviço de hemoterapia deve garantir programa de capacitação e constante atualização técnica de todo o pessoal envolvido nos procedimentos, mantendo os respectivos registros, bem como cumprir as determinações legais referentes à saúde dos trabalhadores e instruções de biossegurança.
+§ 2º O serviço de hemoterapia deve disponibilizar equipamentos de proteção individual (EPI) e coletiva (EPC) de acordo com o estabelecido pelo mapeamento de riscos elaborado para cada setor do serviço, com sua respectiva identificação.
+Art. 8º O serviço de hemoterapia deve possuir projeto arquitetônico aprovado pelo órgão de vigilância sanitária competente.
+§ 1º A estrutura física do serviço de hemoterapia deve apresentar ambientes e fluxo compatíveis com as atividades desenvolvidas, observando aquelas que requeiram salas ou áreas exclusivas, de forma a minimizar o risco de ocorrência de erros, otimizar as atividades realizadas e possibilitar a adequada limpeza e manutenção, de acordo com a legislação vigente.
+§ 2º A estrutura física do serviço de hemoterapia deve ser projetada, construída e mantida de modo a garantir sua integridade frente a efeitos do tempo, variações climáticas, utilização de agentes de limpeza, possíveis infiltrações, bem como dispor de processos definidos para controle de pragas, incluindo dispositivos contra entrada de animais sinantrópicos.
+§ 3º O serviço de hemoterapia deve assegurar atendimento às legislações vigentes relacionadas à biossegurança, à saúde do trabalhador, à segurança predial e ao gerenciamento de resíduos.
+§ 4º O fornecimento de energia elétrica, a iluminação e a climatização devem estar garantidos, direta ou indiretamente, de forma a permitir o conforto das pessoas envolvidas, o desenvolvimento das atividades do ciclo do sangue, a conservação de materiais, insumos e produtos e o funcionamento dos equipamentos.
+§ 5º O serviço de hemoterapia deve dispor de fonte de energia de emergência com capacidade compatível com as atividades e equipamentos críticos.
+Art. 9° Todo serviço de hemoterapia que realize atividades do ciclo do sangue deve ter um sistema de gestão da qualidade que inclua a definição da estrutura organizacional e das responsabilidades, a padronização de todos os processos e procedimentos, o tratamento de não conformidades, a adoção de medidas corretivas e preventivas e a qualificação de insumos, produtos e serviços e seus fornecedores, visando à implementação do gerenciamento da qualidade.
+Parágrafo único. O serviço de hemoterapia deve realizar validação de processos considerados críticos para a garantia da qualidade dos produtos e serviços antes da sua introdução e revalidá-los sempre que forem alterados.
+Art. 10. Os profissionais responsáveis devem assegurar que todos os procedimentos técnicos, administrativos, de gerenciamento de resíduos, de limpeza e desinfecção sejam executados em conformidade com os preceitos legais e critérios técnicos cientificamente comprovados, os quais devem estar descritos em procedimentos operacionais padrão (POP) e documentados nos registros dos respectivos setores de atividades.
+§ 1º As instruções e POP para a limpeza de área física e equipamentos devem definir, no mínimo, o pessoal autorizado a executar os procedimentos de limpeza, os requisitos específicos de cada equipamento e superfície, a periodicidade e os materiais e insumos a serem utilizados na higienização e desinfecção, com os respectivos procedimentos de manipulação dos produtos de acordo com as instruções do fabricante.
+§ 2º Os POP devem ser elaborados pelas áreas competentes, estar aprovados pelos supervisores técnicos dos setores e pelo responsável técnico do serviço de hemoterapia ou conforme definido oficialmente pela política de qualidade da instituição.
+§ 3º Os POP devem ser implantados por meio de treinamento do pessoal envolvido, mantidos nos respectivos setores, para consulta, e ainda avaliados anualmente e sempre que ocorrerem alterações nos procedimentos.
+§ 4º As áreas técnicas devem dispor de instruções e POP que definam medidas de biossegurança.
+Art. 11. O serviço de hemoterapia deve possuir equipamentos suficientes e compatíveis com as atividades realizadas, devidamente identificados, bem como estabelecer programa que inclua qualificação, calibração, manutenção preventiva e corretiva dos equipamentos e instrumentos, mantendo os respectivos cronogramas e registros.
+Parágrafo único. Os equipamentos com quaisquer defeitos não deverão ser utilizados, sendo claramente identificados como tal até a sua manutenção corretiva ou remoção definitiva da área de trabalho.
+Art. 12. Todos os materiais e insumos que entram diretamente em contato com o sangue e componentes devem ser estéreis, apirogênicos e descartáveis.
+Art. 13. Todos os materiais, equipamentos, insumos e reagentes utilizados para a coleta, preservação, processamento, testagem, armazenamento e utilização de sangue e componentes devem ser registrados ou autorizados junto à Anvisa e utilizados rigorosamente segundo instruções do fabricante.
+Parágrafo único. Não conformidades observadas em materiais, equipamentos, insumos e reagentes de que trata o caput deste artigo, e que indiquem comprometimento na qualidade e segurança, devem ser notificadas à Anvisa.
+Art. 14. O serviço de hemoterapia deve garantir o correto armazenamento dos materiais, insumos e reagentes, de forma a assegurar a manutenção da integridade, de acordo com as instruções do fabricante, com as Boas Práticas de Armazenamento e com a legislação pertinente.
+§ 1º O serviço de hemoterapia deve estabelecer procedimentos escritos contemplando critérios de aceitação para o recebimento e de liberação para uso, garantindo a rastreabilidade de lote e validade de todos os materiais e insumos considerados críticos.
+§ 2º Todos os insumos e reagentes cujo fabricante permita manipulação ou aliquotagem devem ser rotulados após serem submetidos a tais procedimentos, de forma a garantir sua identificação, data de manipulação, data de validade e responsável pela manipulação.
+Art. 15. Todas as atividades desenvolvidas pelo serviço de hemoterapia devem ser registradas e documentadas de forma a garantir a rastreabilidade dos processos e produtos, desde a obtenção até o destino final, incluindo a identificação do profissional que realizou o procedimento.
+§ 1º O serviço de hemoterapia deve desenvolver mecanismos para gerenciamento de documentação. Os documentos devem ser legíveis, compreensíveis, invioláveis, datados e assinados por pessoal autorizado, devendo, no caso de correção, permitir a leitura da informação original.
+§ 2º Todos os registros devem ter sua integridade garantida e permanecer arquivados pelo período mínimo de 20 (vinte) anos, de forma tal que sejam disponibilizados e recuperados sempre que necessário.
+§ 3º O serviço de hemoterapia fica obrigado a informar, quando solicitado, os dados de seus registros, incluindo os de cadastro, de produção e dos eventos adversos do ciclo do sangue, à vigilância sanitária competente.
+Art. 16. O serviço de hemoterapia que utilizar sistema informatizado deve possuir cópias de segurança em local distinto dos arquivos ativos, controle de acesso, garantia de inviolabilidade e confidencialidade das informações e possibilidade de identificar o profissional responsável pelas atividades envolvidas.
+§ 1º Os softwares devem ser testados, antes de sua utilização, sempre que houver mudanças quanto aos aspectos operacionais relacionados às atividades do ciclo do sangue e verificados regularmente.
+§ 2º O serviço deve estabelecer procedimentos validados e documentados para a realização das atividades de rotina na ocorrência de falhas operacionais no sistema informatizado.
+§ 3º Os requisitos definidos neste artigo se aplicam também aos sistemas de informação dos equipamentos utilizados nos processos automatizados.
+Art. 17. As atividades passíveis de terceirização devem ser acordadas e controladas entre as partes, e formalizadas mediante instrumento contratual específico que não elida ou minore a responsabilidade do contratante pelo atendimento dos requisitos sanitários estabelecidos por esta Resolução e demais legislações aplicáveis.
+Art. 18. O descarte de sangue total, componentes e amostras laboratoriais devem estar de acordo com as legislações vigentes.
+§ 1º O serviço de hemoterapia deve implementar Plano de Gerenciamento de Resíduos de Serviços de Saúde (PGRSS) que contemple os aspectos referentes à geração, segregação, acondicionamento, coleta, armazenamento, transporte, tratamento e disposição final dos resíduos gerados, bem como as ações de proteção de saúde pública e meio ambiente.
+§ 2º O serviço de hemoterapia deve desenvolver programa de capacitação e educação continuada envolvendo todos os profissionais, inclusive os colaboradores de empresas contratadas (terceirizadas), no gerenciamento de resíduos de serviços de saúde (RSS).
+§ 3º Quando o serviço de hemoterapia realizar tratamento interno dos resíduos, este deve ser realizado em sala específica, equipamentos qualificados e com procedimentos validados.
+§ 4º No caso de terceirização, a empresa contratada para transporte, tratamento e destinação final deve estar regularizada junto aos órgãos de vigilância ambiental.
+Seção II
+Seleção de doadores de sangue
+Art. 19. Todo serviço de hemoterapia que realize coleta de sangue deve elaborar e implementar um programa de captação de doadores, segundo critérios de seleção documentados que assegurem a proteção do doador e potencial receptor, com a participação de profissionais capacitados para esta atividade.
+Art. 20. A doação de sangue deve ser voluntária, anônima, altruísta e não remunerada, direta ou indiretamente, preservando-se o sigilo das informações prestadas.
+Art. 21. Para doação de sangue, o candidato deve apresentar documento de identificação, com fotografia, emitido por órgão oficial.
+Art. 22. Todo candidato à doação deve ter um registro no serviço de hemoterapia.
+§ 1º Devem constar no registro a que se refere o caput deste artigo, no mínimo, os seguintes dados:
+I - nome completo, sexo e data de nascimento;
+II - número e órgão expedidor do documento de identificação com foto;
+III - nacionalidade/naturalidade;
+IV - filiação;
+V - ocupação habitual;
+VI - endereço e telefone para contato;
+VII- número do registro do candidato no serviço de hemoterapia ou no programa de doação de sangue; e
+VIII - data do comparecimento.
+§ 2º O serviço de hemoterapia deve possuir mecanismo para identificação do candidato bloqueado em doações anteriores e este candidato deverá ser encaminhado para a devida orientação médica, quando for o caso.
+Art. 23. O candidato à doação de sangue deve ser informado sobre as condições básicas e desconfortos associados à doação, devendo ser avisado sobre a realização de testes laboratoriais de triagem para doenças infecciosas transmitidas pelo sangue e sobre fatores que podem aumentar os riscos aos receptores, bem como sobre a importância de suas respostas na triagem clínica.
+Art. 24. A cada doação, o candidato deve ser avaliado quanto aos seus antecedentes e ao seu estado de saúde atual, por meio de entrevista individual, realizada por profissional de saúde de nível superior devidamente capacitado, sob supervisão médica, em sala que garanta a privacidade e o sigilo das informações, para determinar se a coleta pode ser realizada sem causar-lhe prejuízo e para que a transfusão dos hemocomponentes obtidos a partir desta doação não venha a causar problemas aos receptores.
+Parágrafo único. A doação autóloga deve ser realizada somente mediante solicitação do médico assistente do paciente doador e aprovação do médico hemoterapeuta.
+Art. 25. O serviço de hemoterapia deve cumprir os parâmetros para seleção de doadores estabelecidos pelo Ministério da Saúde, em legislação vigente, visando tanto à proteção do doador quanto a do receptor, bem como para a qualidade dos produtos, baseados nos seguintes requisitos:
+I - os limites mínimos e máximos de idade, levando-se em consideração a necessidade de avaliação médica, devidamente documentada, para indivíduos acima de 70 (setenta) anos de idade e abaixo de 16 (dezesseis) anos de idade completos, com avaliação dos riscos e benefícios que justifique a necessidade da doação, registrando- a na ficha do doador;
+II - O limite de idade para a primeira doação de sangue é de 60 (sessenta) anos.
+III - o intervalo mínimo entre duas doações de sangue total é de 2 (dois) meses para homens e de 3 (três) meses para mulheres, e a frequência máxima admitida entre as doações é de 4 (quatro) doações anuais para o homem e de 3 (três) doações anuais para a mulher, exceto em circunstâncias especiais que devem ser avaliadas e aprovadas pelo médico responsável;
+IV - para a doação por aférese:
+a) O intervalo mínimo entre duas plasmaféreses em um doador é de 48 (quarenta e oito) horas, podendo um mesmo doador realizar, no máximo, 4 (quatro) doações em um período de 2 (dois) meses;
+b) Após a quarta doação efetuada no período de 2 (dois) meses de que trata a alínea "a", deve haver um intervalo de 2 (dois) meses até a doação subsequente, sendo o número máximo de doações de plasma por aférese, por doador, de até 12 (doze) doações ao ano;
+c) O intervalo mínimo entre duas plaquetaféreses em um doador é de 48 (quarenta e oito) horas, podendo um mesmo doador realizar, no máximo, 4 (quatro) doações por mês e no máximo um total de 24 (vinte e quatro) vezes por ano;
+d) se um doador de plaquetas por aférese doar uma unidade de sangue total, ou se a perda de hemácias durante o procedimento for superior a 200 mL, deve-se manter um intervalo de pelo menos 1 (um) mês, antes que um novo procedimento seja realizado;
+e) para a coleta de múltiplos componentes por aférese, o intervalo mínimo e a frequência máxima de doações são os mesmos requeridos para doação de sangue total, exceto para doação de duas unidades de concentrados de hemácias, cujo intervalo mínimo entre doações é de 4 (quatro) meses para homens e 6 (seis) meses para mulheres; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+V - a frequência cardíaca não deve ser menor que 50 (cinquenta) nem maior que 100 (cem) batimentos por minuto com pulsação normal, salvo casos devidamente justificados e registrados, após avaliação médica;
+VI - a pressão sistólica não deve ser maior que 180 (cento e oitenta) mmHg e a pressão diastólica não deve ser maior que 100 (cem) mmHg, salvo casos devidamente justificados e registrados, após avaliação médica;.
+VII - o peso mínimo do candidato à doação de sangue é de 50 (cinquenta) kg, salvo casos devidamente justificados e registrados, após avaliação médica, considerando os requisitos de produção de hemocomponentes com volume abaixo de 300 mL;
+VIII - os valores dos níveis de hemoglobina (Hb) ou hematócrito (Ht) mínimos aceitáveis para mulheres é de Hb=12,5g/dl ou Ht =38%, e para homens é de Hb=13,0g/dl ou Ht=39%, com utilização de métodos validados e equipamentos qualificados, com avaliação regular e frequente dos resultados;
+IX - com relação à proteção de doadoras gestantes, no pósparto ou aborto deve-se proceder à inaptidão temporária por até 12 (doze) semanas após o parto ou abortamento;
+X - mulheres em período de lactação não devem doar sangue, a menos que o parto tenha ocorrido há mais de 12 (doze) meses;
+XI - A doação de sangue por gestantes poderá ser realizada após avaliação médica em situações devidamente justificadas e registradas, de acordo com os parâmetros definidos Ministério da Saúde;
+XII - a menstruação não é contraindicação para a doação, exceto casos de alterações após avaliação médica;
+XIII - o candidato à doação deve ser informado sobre atividades laborais e práticas esportivas que causem riscos para si e para outros, devendo-se somente aceitar para a coleta de sangue indivíduos que disponham de período de interrupção da atividade por 12 (doze) horas após a doação;
+XIV - deve-se avaliar a situação do doador quanto ao período de jejum e alimentação;
+XV - a ingestão de bebida alcoólica torna o indivíduo inapto à doação por 12 (doze) horas após o consumo, sendo o alcoolismo crônico motivo de inaptidão definitiva;
+XVI - a temperatura corporal do doador não deve ser superior a 37°C, devendo-se, ainda, avaliar antecedentes de estados febris, de acordo com definição do Ministério da Saúde;
+XVII - com relação às doenças, episódios alérgicos, tratamentos e procedimentos cirúrgicos, devem ser avaliados os antecedentes e a história clínica do doador para proceder à inaptidão temporária ou definitiva à doação;
+XVIII - quanto ao uso de medicamentos, soros e vacinas, a história terapêutica do doador deve ser avaliada, uma vez que o motivo da indicação pode levar a inaptidão do candidato à doação;
+XIX - quanto ao tratamento farmacológico, cada medicamento deve ser avaliado individualmente e em conjunto segundo elementos de farmacocinética e farmacodinâmica, considerando o prejuízo na terapêutica ao doador, influência e segurança ao receptor, bem como interferência na realização de testes laboratoriais no sangue do doador;
+XX - a transfusão de sangue ou componentes e o uso de hemoderivados causam inaptidão por um período de 12 (doze) meses após a realização do procedimento;
+XXI - quanto ao histórico de cirurgias e procedimentos invasivos, o candidato deve ser considerado inapto por tempo variável de acordo com o porte do procedimento e a evolução clínica, mediante avaliação médica;
+XXII - o candidato com antecedente clínico, laboratorial, ou história atual de infecção pelos vírus HBV, HCV, HIV ou HTLV, ou que tenha sido o único doador de sangue de um paciente que tenha soroconvertido para os referidos marcadores de infecção na ausência de qualquer outra causa provável para a infecção, deve ser considerado definitivamente inapto para a doação de sangue;
+XXIII - caso o candidato tenha histórico de hepatite viral depois dos 11 (onze) anos de idade, somente nos casos com comprovação laboratorial de infecção aguda de hepatite A à época do diagnóstico clínico, o doador poderá ser considerado apto após avaliação médica;
+XXIV - deve-se considerar inapto temporário, por 12 (doze) meses após a cura, o candidato a doador que teve alguma Doença Sexualmente Transmissível (DST), sendo que o histórico de reinfecção por qualquer DST determina a inaptidão definitiva;
+XXV - com relação ao risco de malária transfusional deve-se proceder a seleção de doadores de acordo com a localidade de triagem e a incidência loco-regional (municipal) de malária, segundo Índice Parasitário Anual (IPA) fornecido pelo órgão oficial, observando- se as seguintes situações:
+a) nas áreas endêmicas, considera-se inapto o candidato que atenda a pelo menos 1 (um) dos seguintes requisitos:
+1. tenha tido malária nos 12 (doze) meses que antecedem a doação;
+2. tenha apresentado sinais e sintomas de malária nos últimos 30 (trinta) dias; ou
+3. tenha se deslocado ou seja procedente de área de alto risco (IPA maior que 49,9) há menos de 30 (trinta) dias;
+b) nas áreas não endêmicas, considera-se inapto o candidato que tenha se deslocado ou seja procedente de municípios localizados em áreas endêmicas há menos de 30 (trinta) dias;
+c) o candidato procedente de municípios localizados em áreas endêmicas, após 30 (trinta) dias até 12 (doze) meses do deslocamento, deve ser submetido a testes de detecção do plasmódio ou de antígenos plasmodiais para se determinar a aptidão, a depender do resultado negativo/não reagente;
+d) o candidato procedente de municípios localizados em áreas endêmicas, após 12 (doze) meses do deslocamento, considera-se apto à doação sem a necessidade de realização dos testes laboratoriais;
+e) o candidato que tenha manifestado a doença malárica pode doar sangue após 12 (doze) meses do tratamento e comprovação de cura;
+f) deve ser considerado definitivamente inapto o candidato que teve infecção por Plasmodium malariae (Febre Quartã);
+XXVI - para Doença de Chagas, o candidato com diagnóstico clínico ou laboratorial deve ser considerado definitivamente inapto, bem como o candidato com antecedente histórico de contato domiciliar com Triatomíneo;
+XXVII - com relação ao uso de drogas ilícitas, devem ser observados os seguintes parâmetros:
+a) a história atual ou pregressa e sinais de uso de drogas injetáveis é causa de inaptidão definitiva à doação;
+b) o uso de anabolizantes injetáveis sem prescrição médica é causa de inaptidão temporária à doação por um período de 12 (doze) meses, contados a partir da data da última utilização;
+c) o uso de drogas ilícitas com compartilhamento de dispositivos que possam ocasionar lesões de mucosa é causa de inaptidão temporária à doação por um período de 12 (doze) meses, contados a partir da data da última utilização; e
+d) no caso de uso de drogas ilícitas administradas por outras vias, deve ser avaliado o comportamento individual do candidato com relação ao grau de dependência e à exposição a situações de risco acrescido de transmissão de infecções por transfusão, com especial atenção às práticas sexuais de risco;
+XXVIII - o candidato que tenha feito piercing, tatuagem ou maquiagem definitiva sem condições de avaliação quanto à segurança do procedimento realizado, deve ser considerado temporariamente inapto por um período de 12 (doze) meses após a realização do procedimento;
+XXIX - o candidato que tenha realizado os procedimentos de que trata o inciso XXVIII em estabelecimentos regularizados pela vigilância sanitária deve ser considerado inapto por período de 6 (seis) meses após realização do procedimento, excetuando-se o caso de piercing na região oral e genital, no qual o candidato será considerado inapto por 12 (doze) meses após a sua retirada;
+XXX - os contatos sexuais que envolvam riscos de contrair infecções transmissíveis pelo sangue devem ser avaliados e os candidatos nestas condições devem ser considerados inaptos temporariamente por um período de 12 (doze) meses após a prática sexual de risco, incluindo-se:
+a) indivíduos que tenham feito sexo em troca de dinheiro ou de drogas ou seus respectivos parceiros sexuais;
+b) indivíduos que tenham feito sexo com um ou mais parceiros ocasionais ou desconhecidos ou seus respectivos parceiros sexuais;
+c) indivíduos que tenham sido vítima de violência sexual ou seus respectivos parceiros sexuais;
+d) (Revogada pela Resolução da Diretoria Colegiada - RDC nº 399, de 07/07/2020)
+e) indivíduos que tenham tido relação sexual com pessoa portadora de infecção pelo HIV, hepatite B, hepatite C ou outra infecção de transmissão sexual e sanguínea ou as parceiras sexuais destes;
+f) indivíduos que sejam parceiros sexuais de pacientes em programa de terapia renal substitutiva e de pacientes com história de transfusão de hemocomponentes ou hemoderivados (transplantes); e
+g) indivíduos que possuam histórico de encarceramento ou de confinamento obrigatório não domiciliar superior a 72 (setenta e duas) horas, ou seus parceiros sexuais;
+XXXI - O candidato que tenha sofrido acidente com material biológico em que tenha ocorrido contato de mucosa e/ou pele não íntegra deve ser considerado temporariamente inapto por um período de 12 (doze) meses após o acidente.
+XXXII - Em situações de emergência em saúde pública, surtos epidêmicos, avanços tecnológicos e estudos científicos pertinentes, a vigilância sanitária competente, em cooperação com o Ministério da Saúde, pode inserir, adequar e modificar critérios técnicos para seleção de doadores com vistas à eliminação ou diminuição dos riscos sanitários.
+XXXIII - Outras situações e condições na triagem de doador não descritas em legislações vigentes que afetem a segurança do doador ou do receptor e a qualidade do produto devem ser devidamente registradas e avaliadas pelo responsável técnico do serviço de hemoterapia.
+Art. 26. A ficha de triagem clínica deve ser padronizada, contemplar os requisitos de seleção, a data da entrevista e a identificação do candidato à doação e do profissional que realizou a triagem clínica.
+Art. 27. O candidato à doação só será considerado apto após avaliação de todos os requisitos estabelecidos para seleção de doadores e assinatura do Termo de Consentimento Livre e Esclarecido, de acordo com os critérios estabelecidos pelo Ministério da Saúde.
+Parágrafo único. A triagem clínica informatizada deve possuir sistema que garanta a segurança e rastreabilidade da informação, que correlacione a identificação e a assinatura do candidato no Termo de Consentimento Livre e Esclarecido à ficha de triagem informatizada.
+Art. 28. No caso de inaptidão, o doador deve ser informado sobre a causa e, quando necessário, encaminhado ao serviço de referência, de acordo com listagem pré-estabelecida, mantendo-se os registros na ficha de triagem.
+Parágrafo único. O serviço de hemoterapia deve possuir mecanismo que permita bloquear e readmitir, se for o caso, os doadores considerados inaptos na triagem clínica.
+Art. 29. O serviço de hemoterapia pode oferecer ao doador a oportunidade de se auto-excluir, de forma confidencial.
+Art. 30. Os registros do serviço de hemoterapia devem assegurar a relação entre a doação, os produtos, os materiais e os equipamentos ligados a ela, a fim de que seja garantida a rastreabilidade.
+Seção III
+Coleta de sangue total e hemocomponentes por aférese
+Art. 31. A sala de coleta deve ser organizada de forma a evitar erros relativos ao manejo de bolsas, amostras e etiquetas.
+§ 1° O sistema de coleta deve ser verificado antes do uso para garantir que não esteja danificado ou contaminado e seja adequado à coleta pretendida.
+§ 2° O ambiente destinado à coleta deve ter a temperatura mantida a 22 ± 2ºC, com os respectivos registros de monitoramento e controle.
+Art. 32. Antes do início da coleta, a identidade do doador deve ser verificada e confrontada com o material de coleta (bolsa plástica e tubos de amostra).
+Art. 33. O volume total de sangue a ser coletado deve ser determinado e registrado pelo triador baseado no peso do doador e na relação entre o volume de sangue total e de anticoagulante da bolsa plástica.
+§ 1º O volume de sangue total a ser coletado é de 8 (oito) mL/kg de peso para as mulheres e de 9 (nove) mL/kg de peso para os homens.
+§ 2º O volume admitido por doação é de 450 (quatrocentos e cinquenta) ml ± 10% ml, não devendo exceder mais de 525 (quinhentos e vinte e cinco) mL de sangue total coletado, considerandose o volume da amostra extraído para a realização dos exames laboratoriais.
+Art. 34. A coleta de sangue deve ser realizada em condições assépticas, mediante uma só punção venosa, em bolsas plásticas, mantendo o sistema fechado, realizada por profissionais de saúde capacitados, sob supervisão de médico ou enfermeiro.
+§ 1° A higienização da pele do braço do doador deve ser realizada em duas etapas de antissepsia, com produtos registrados na Anvisa para utilização em serviços de saúde.
+§ 2º Se for necessária a realização de mais de uma punção, deve ser utilizada nova bolsa de coleta.
+§ 3º As amostras para os testes laboratoriais devem ser coletadas a cada doação, no momento da coleta.
+§ 4º O tempo de coleta deve ser registrado, não devendo ser superior a 15 (quinze) minutos com processos de homogeneização do sangue coletado e anticoagulante da bolsa plástica.
+Art. 35. Durante o horário de coleta, o serviço de hemoterapia deve garantir a assistência médica, devidamente formalizada, para atuar em caso de eventos adversos à doação.
+Parágrafo único. O serviço de hemoterapia deve ter procedimentos escritos para detecção, registro, comunicação e notificação dos eventos adversos à doação.
+Art. 36. O serviço de hemoterapia deve manter registros detalhados de qualquer intercorrência relacionada à doação, incluindo coletas interrompidas, desistência de doadores e eventos adversos.
+Art. 37. A identificação das bolsas, principal e satélites, e dos tubos para testes laboratoriais deve ser feita por sistema numérico ou alfanumérico e, preferencialmente, por código de barras, de forma a garantir a correspondência com o respectivo doador, e deve conter, no mínimo, as seguintes informações:
+I - identificação do serviço coletor;
+II - identificação do doador;
+III - data da coleta; e
+IV - identificação do profissional que realizou o procedimento.
+Art. 38. O nome do doador não deve constar da etiqueta das bolsas de sangue e componentes, com exceção daquelas destinadas à transfusão autóloga.
+Art. 39. Após a coleta, o sangue total deve ser estocado em temperatura entre 2º e 6º C, exceto quando destinado à preparação de concentrado de plaquetas, devendo, neste caso, ser mantido entre 20º e 24ºC até o momento da separação das plaquetas, observado preferencialmente o tempo máximo de 8 (oito) horas, não excedendo 24 (vinte e quatro) horas, contadas a partir do fim da coleta.
+Parágrafo único. O serviço deve estabelecer procedimentos para que o sangue total seja mantido e transportado da coleta até o processamento de forma a manter sua integridade, as características do produto e garantir a segurança das pessoas envolvidas.
+Art. 40. Após a coleta de sangue, o serviço de hemoterapia deve orientar o doador quanto aos cuidados pós-doação.
+Art. 41. Após a doação, deve ser disponibilizada forma de hidratação oral ao doador, devendo o mesmo permanecer por um período de observação no serviço de hemoterapia antes de ser liberado.
+Art. 42. O serviço de hemoterapia deve possuir profissional devidamente treinado, medicamentos, dispositivos e equipamentos necessários para a assistência médica ao doador que apresente eventos adversos, assim como ambiente privativo para o seu atendimento.
+§ 1º O serviço de hemoterapia deve ter documento que defina referência de serviço de saúde para atendimento de urgências ou emergências.
+§ 2º O serviço de hemoterapia deve manter registros de todas as informações relativas às reações adversas à doação, bem como à conduta e aos tratamentos instituídos.
+Art. 43. O serviço de hemoterapia deve acordar com o órgão de vigilância sanitária local competente o envio prévio da programação de coletas externas para aprovação da infraestrutura pretendida.
+§ 1º A infraestrutura física destinada à coleta externa, móvel ou provisoriamente definida, bem como os procedimentos realizados, devem atender às exigências aplicadas para a coleta interna.
+§ 2º O quantitativo de profissionais da equipe deve ser compatível com o número de doadores esperado, sendo obrigatória a presença de pelo menos 1(um) médico e 1(um) enfermeiro durante os procedimentos.
+§ 3º O manuseio de resíduos e a higienização da área de coleta externa deverão obedecer a normas específicas e legislação vigente.
+Art. 44. As unidades de sangue total coletadas em locais diferentes daqueles em que serão processadas (coletas externas e unidades de coleta) devem ser transportadas atendendo as legislações de transporte de material biológico vigentes, à temperatura de 1 a 10ºC, se não se destinarem à preparação de plaquetas.
+§ 1º A temperatura, o acondicionamento e o intervalo de tempo para o transporte devem ser validados, por meio de verificação da estabilidade de temperatura interna das caixas térmicas, no período de tempo previsto para a coleta externa, previamente e sempre que houver alterações no processo ou nos equipamentos, mantendo-se os registros das respectivas validações.
+§ 2º As caixas térmicas utilizadas para o transporte das bolsas devem ser resistentes a impactos e permitir a higienização e a manutenção da temperatura adequada para a conservação do sangue total, a qual deve ser monitorada, no mínimo, no envio e no recebimento do produto.
+Art. 45. A coleta de hemocomponentes por aférese deve cumprir as mesmas exigências para a coleta de sangue total, sendo que as coletas de granulócitos, linfócitos e células progenitoras hematopoiéticas por aférese devem ser precedidas de uma avaliação médica.
+§ 1º O procedimento de coleta por aférese deve ser realizado em área física específica.
+§ 2º O procedimento de coleta por aférese deve ser realizado sob a responsabilidade de um médico hemoterapeuta.
+§ 3º O volume máximo de sangue extracorpóreo no procedimento de aférese deve ser especificado, não devendo exceder a 15% da volemia do doador, excluindo o volume do anticoagulante.
+§ 4º Os doadores de aférese devem ser submetidos aos mesmos testes de qualificação do doador de sangue total, além dos testes específicos para cada tipo de hemocomponente coletado.
+§ 5º Os testes de triagem laboratorial para infecções transmissíveis pelo sangue devem ser realizados em amostra colhida no mesmo dia do procedimento, com exceção da coleta de granulócitos, linfócitos e células progenitoras hematopoiéticas, cujos testes podem ser realizados em amostras colhidas até 72 (setenta e duas) horas antes da doação.
+§ 6º O serviço de hemoterapia que realize qualquer procedimento de aférese deve manter registros de todas as atividades realizadas e dos parâmetros avaliados, de acordo com o determinado pelo Ministério da Saúde, incluindo-se:
+I - identidade do doador;
+II - tipo e volume de hemocomponente(s) produzido(s);
+III - anticoagulante empregado;
+IV - duração da coleta;
+V - drogas administradas e respectivas doses;
+VI - os dados técnicos de rastreabilidade dos insumos utilizados, tais como marca/fabricante, lote, data de fabricação e validade; e
+VII - as reações adversas ocorridas durante a coleta e o tratamento aplicado.
+§ 7º O termo de consentimento para a doação por aférese deve esclarecer sobre o procedimento de coleta, a finalidade do material coletado, as possíveis complicações e riscos para o doador, inclusive os casos de uso de medicações mobilizadoras e agentes hemossedimentantes.
+Art. 46. O serviço de hemoterapia que realizar coleta de sangue autólogo deve ter procedimentos escritos com definição de critérios para aceitação e rejeição de doadores com registros para os testes imuno-hematológicos e os marcadores de infecções transmissíveis pelo sangue definidos pelo Ministério da Saúde.
+§ 1º As bolsas de hemocomponentes autólogos com resultados reagentes para os marcadores testados devem ser identificadas com etiqueta indicando o marcador reagente/positivo, e, nestes casos, a aceitação da transfusão autóloga deve estar explícita e com as assinaturas do médico assistente e do médico do serviço de hemoterapia.
+§ 2º As bolsas de hemocomponentes autólogos devem ser armazenadas de forma segregada e ser utilizadas exclusivamente para transfusão autóloga.
+Seção IV
+Processamento de sangue e componentes
+Art. 47. Toda bolsa de sangue total coletada, desde que tecnicamente satisfatória, pode ser processada para a obtenção de hemocomponentes eritrocitários, plasmáticos e/ou plaquetários.
+§ 1º São componentes eritrocitários:
+I - concentrado de hemácias;
+II - concentrado de hemácias lavadas;
+III - concentrado de hemácias com camada leucoplaquetária removida;
+IV - concentrado de hemácias desleucocitado;
+V - concentrado de hemácias congeladas; e
+VI - hemácias rejuvenescidas.
+§ 2º São componentes plasmáticos:
+I - plasma fresco congelado;
+II - plasma comum (plasma não-fresco, plasma normal ou plasma simples);
+III - plasma isento do crioprecipitado; e
+IV - crioprecipitado;
+§ 3º São componentes plaquetários:
+I - concentrado de plaquetas obtido de sangue total;
+II - concentrado de plaquetas obtido por aférese; e
+III - concentrado de plaquetas desleucocitado.
+Art. 48. Os hemocomponentes devem ser obtidos por centrifugação refrigerada do sangue total ou por coleta seletiva de hemocomponentes em máquina de aférese, com processos validados e equipamentos qualificados, de acordo com os critérios técnicos definidos pelo Ministério da Saúde e pelas boas práticas aplicadas ao ciclo produtivo do sangue.
+§ 1º Todo o processo para a obtenção de hemocomponentes deve ser realizado em sistema fechado, utilizando-se bolsas plásticas coletoras para esta finalidade.
+§ 2º A utilização de dispositivos para conexão estéril é considerada processamento em sistema fechado desde que seja realizado em conformidade com as instruções do fabricante dos dispositivos e com procedimentos validados.
+Art. 49. Caso seja necessária realização de procedimentos especiais dos hemocomponentes que envolvam a abertura e a manipulação do sistema fechado, deve-se utilizar área ou equipamento que garanta a manutenção da esterilidade do produto, materiais e soluções utilizadas.
+§ 1º Os hemocomponentes produzidos em sistema aberto deverão ser mantidos sob refrigeração (2°C a 6°C) e utilizados em até 24 (vinte e quatro) horas, exceto os hemocomponentes plaquetários, que devem ser utilizados em até 4 (quatro) horas da produção.
+§ 2º Deve ser realizada certificação e qualificação periódica de áreas e equipamentos, bem como sua manutenção preventiva e corretiva.
+Art. 50. A estrutura física destinada à produção de hemocomponentes deve estar de acordo com as legislações vigentes sobre projetos físicos de estabelecimentos assistenciais de saúde, contendo, de acordo com a atividade a ser exercida, uma área/sala de préestocagem, sala para processamento de hemocomponentes, sala para liberação e rotulagem, sala para procedimentos especiais, claramente identificadas e utilizadas exclusivamente para esta finalidade.
+§ 1º Pisos, paredes, tetos e bancadas nas áreas de produção devem ser livres de rachaduras, com materiais de acabamentos que tornem as superfícies monolíticas e resistentes à lavagem, sem tubulações e fios aparentes ou ser protegidas em toda a sua extensão por um material resistente a impactos, a agentes de limpeza e ao uso de desinfetantes, de acordo com legislação vigente.
+§ 2º O acesso às áreas de produção deve ser restrito aos funcionários autorizados.
+Art. 51. As instalações, áreas de trabalho e equipamentos utilizados para o preparo de hemocomponentes devem ser mantidos em condições higiênico-sanitárias satisfatórias, com protocolos estabelecidos que incluam a periodicidade dos procedimentos de limpeza e desinfecção e com os respectivos registros.
+Art. 52. Os ambientes destinados ao processamento de sangue e componentes devem ter a temperatura mantida a 22 ± 2ºC, com os respectivos registros de monitoramento e controle.
+Art. 53. O serviço de hemoterapia que realize processamento de sangue proveniente de coletas externas ou de outros serviços deve avaliar as bolsas recebidas e observar, dentre outros aspectos, sua integridade física e a manutenção da temperatura exigida para o transporte.
+Art. 54. As bolsas de sangue total com volume inferior a 300 (trezentos) mL devem ser desprezadas, exceto quando sejam produzidas em bolsas específicas para esta finalidade ou manipuladas em sistema estéril, mediante processo validado, de forma a não violar o sistema de conexões da bolsa, mantendo a relação volume de sangue e anticoagulante recomendada pelo fabricante.
+Art. 55. Na obtenção dos hemocomponentes, o tubo conectado às bolsas deve ser preenchido com uma alíquota do produto suficiente para a realização dos testes pré-transfusionais.
+Art. 56. Os hemocomponentes eritrocitários produzidos devem ser armazenados a 4 ± 2ºC, com validade a depender da solução preservante contida na bolsa.
+§ 1º O concentrado de hemácias congeladas deve ser armazenado a 65ºC negativos ou a temperatura inferior, com validade de 10 (dez) anos a contar da data da doação.
+§ 2º Os hemocomponentes eritrocitários que tiverem identificação de Hemoglobina S positiva não devem ser desleucocitados.
+Art. 57. O plasma fresco congelado (PFC) deve ser totalmente congelado, mediante processo validado, no prazo ideal de 8 (oito) horas e no máximo em 24 (vinte e quatro) horas após a coleta.
+§ 1º O tempo máximo para separação do plasma do sangue total, após ter sido coletado, é de:
+I - 6 (seis) horas;
+II - 18 (dezoito) horas, quando a unidade de sangue total for mantida em temperatura de 2 a 6 oC; ou
+III - 22 (vinte duas) horas, quando o sangue total for rapidamente resfriado em sistema validado na temperatura de 22 ± 2ºC, respectivamente.
+§ 2º Quando utilizada técnica de congelamento por banho de imersão em álcool e gelo seco, a bolsa plástica deve ser protegida para evitar possíveis alterações químicas, derrames e contaminação.
+§ 3º O volume de uma unidade de PFC deve ser igual ou superior a 150 (cento e cinquenta) mL.
+§ 4º O tubo coletor da bolsa deve ter uma extensão mínima de 15 (quinze) cm, com duas soldaduras, uma proximal e uma distal, totalmente preenchidas.
+§ 5º Caso o armazenamento do PFC se dê em temperatura entre 18°C e 30°C negativos, a validade do produto é de 12 (doze) meses, e se armazenado a 30ºC negativos ou a temperatura inferior, terá validade de 24 (vinte e quatro) meses.
+§ 6º O PFC excedente do uso terapêutico, considerado material de partida para fracionamento industrial, deverá ser armazenado a temperatura igual ou inferior a 20ºC negativos.
+Art. 58. O plasma isento de crioprecipitado deve ser preparado em sistema fechado, armazenado a 18ºC negativos ou a temperatura inferior, com validade de 12 (doze) meses.
+Art. 59. O crioprecipitado deve ser produzido e utilizado segundo determinações do Ministério da Saúde e armazenado a 30ºC negativo ou a temperatura inferior, com validade de 24 (vinte e quatro) meses, ou entre 18º e 30ºC negativos, com validade de 12 (doze) meses a partir da data da coleta.
+Art. 60. A produção de concentrados de plaquetas por sangue total poderá ser realizada até 24 (vinte e quatro) horas após a coleta se o sangue total for mantido em temperatura de 22 ± 2 ºC.
+§ 1º O concentrado de plaquetas deve ser armazenado em ambiente com temperatura controlada de 22 ± 2ºC, sob agitação constante, com validade de 3 (três) a 5 (cinco) dias, dependendo do tipo de plastificante da bolsa de conservação.
+§ 2º Os mesmos critérios de conservação e validade se aplicam aos hemocomponentes plaquetários produzidos por aférese.
+§ 3º O concentrado de plaquetas desleucocitado, quando preparado em sistema aberto, tem validade de 4 (quatro) horas que deve estar devidamente identificada.
+§ 4º O concentrado de plaquetas desleucocitado preparado em sistema fechado conserva sua validade original.
+Art. 61. O concentrado de granulócitos deve ser obtido por procedimento de aférese em doador único e armazenado a 22 ± 2ºC, com validade de 24 (vinte e quatro) horas.
+Art. 62. A irradiação de hemocomponentes deve ser feita em irradiador de células ou em acelerador linear usado para tratamento de radioterapia, sob supervisão de profissional qualificado e com processo validado periodicamente.
+§ 1º O tempo de exposição deve ser configurado de forma a garantir que todo o sangue e os componentes recebam a dose mínima de 25 Gy (2.500 cGy) sobre o plano médio da unidade irradiada, sem que nenhuma parte receba mais do que a dose de 50 Gy (5.000 cGy) e menos que 15 Gy (1.500 cGy).
+§ 2º O serviço de hemoterapia deve realizar e documentar o controle de qualidade da fonte radioativa do equipamento, no mínimo, anualmente.
+§ 3º O serviço de hemoterapia deve estabelecer procedimentos escritos que garantam a identificação e a segregação dos hemocomponentes irradiados, mantendo os respectivos registros das atividades realizadas.
+§ 4º Os produtos irradiados devem ser mantidos permanentemente rotulados com a inscrição: IRRADIADOS.
+§ 5º Os hemocomponentes irradiados devem ser conservados em temperaturas de acordo com as estabelecidas para os hemocomponentes originais.
+§ 6º O serviço de hemoterapia que terceirize a irradiação de hemocomponentes deve assegurar que os serviços terceirizados sejam regularizados junto ao órgão de vigilância sanitária competente e os procedimentos sejam realizados conforme a legislação vigente.
+Art. 63. A produção de hemocomponentes especiais para uso autólogo deverá ser realizada de acordo com as instruções dos fabricantes de equipamentos, insumos e conjuntos de reagentes devidamente registrados/autorizados pela Anvisa, com processos validados.
+Parágrafo único. É vedada aos serviços de hemoterapia a produção de hemocomponentes especiais para uso alogênico, conforme determinação do Ministério da Saúde.
+Seção V
+Controle de qualidade dos hemocomponentes
+Art. 64. Todo serviço de hemoterapia que produza hemocomponentes deve realizar controle de qualidade sistemático de todos os tipos de hemocomponentes produzidos, em laboratório específico de controle de qualidade.
+Parágrafo único. O serviço de hemoterapia que terceirizar o controle de qualidade de hemocomponentes deve assegurar que os serviços terceirizados sejam regularizados junto ao órgão de vigilância sanitária competente e que os procedimentos sejam realizados conforme a legislação vigente.
+Art. 65. Os protocolos do controle de qualidade devem conter o tipo de controle a ser realizado em cada hemocomponente, a amostragem e os parâmetros mínimos exigidos nesta Resolução, sem prejuízo do disposto pelo Ministério da Saúde.
+Parágrafo único. O método utilizado para a realização do controle de qualidade não deve comprometer a integridade do produto, a menos que este seja desprezado após ser utilizado como controle de qualidade.
+Art. 66. O controle de qualidade dos concentrados de hemácias e dos concentrados de plaquetas deve ser realizado em, pelo menos, 1% da produção ou 10 (dez) unidades / mês, o que for maior, sendo realizados os testes em amostras individuais de unidades produzidas.
+Parágrafo único. Na avaliação de contaminação microbiológica, todos os casos positivos devem ser devidamente investigados e adotados as medidas corretivas e preventivas, mantendo-se os respectivos registros.
+Art. 67. O controle de qualidade do plasma e do crioprecipitado deve ser feito em, no mínimo, 4 ( quatro) unidades / mês ou 1% da produção, o que for maior, exceto o parâmetro volume, que deverá ser avaliado em todas as unidades produzidas.
+§ 1° Os testes de controle de qualidade do plasma devem ser realizados em amostras individuais ou em amostras agrupadas de unidades produzidas com até 30 (trinta) dias de armazenamento, de acordo com a amostragem de que trata o caput deste artigo, devendo realizar, no mínimo, a determinação da atividade coagulante do fator VIII (Fator VIII: C) ou da atividade do Fator V ou do tempo de tromboplastina parcialmente ativada (TTPa), sendo obrigatória, no caso de produção de plasma para produção de hemoderivados, a determinação do Fator VIII: C.
+§ 2° Para o controle de qualidade do plasma, os testes de contagem de células residuais devem ser realizados após a produção, antes do congelamento do plasma, em amostras individuais ou em amostras agrupadas de unidades produzidas conforme amostragem que trata o caput deste artigo.
+Art. 68. Cada item verificado pelo controle de qualidade deve apresentar um percentual de conformidade igual ou superior a 75%, exceto para a produção de concentrado de plaquetas por aférese e contagem de leucócitos em componentes celulares desleucocitados, cuja conformidade deve ser igual ou superior a 90%.
+Art. 69. Os resultados do controle de qualidade devem ser sistematicamente analisados, revisados e as ações corretivas devem ser adotadas para as não conformidades observadas, mantendo-se os respectivos registros.
+Seção VI
+Exames de qualificação no sangue do doador
+Art. 70. Os testes de qualificação na amostra de sangue do doador devem ser realizados em laboratórios específicos para esta finalidade, com monitoramento e controle da temperatura mantida a 22 ± 2ºC.
+Parágrafo único. O serviço de hemoterapia poderá definir variações neste intervalo de temperatura, desde que tecnicamente justificadas e de acordo com as instruções dos fabricantes dos reagentes e equipamentos utilizados.
+Art. 71. Os testes laboratoriais devem ser realizados em amostra colhida no ato da doação de sangue, em tubo padronizado de acordo com o método e equipamento utilizado, identificado de forma a correlacionar amostra ao respectivo doador, inclusive os recebidos de outros serviços.
+Art. 72. Os conjuntos de reagentes utilizados na realização dos testes laboratoriais devem ser registrados ou autorizados pela Anvisa, armazenados e utilizados segundo as especificações do fabricante e ordenados de acordo com o prazo de validade.
+§ 1° A produção e utilização de reagentes produzidos no serviço de hemoterapia (in house) para realização de testes imunohematológicos dependerá de autorização expressa da Anvisa.
+§ 2° A autorização para a utilização de testes imuno-hematológicos produzidos no serviço de hemoterapia (in house) deverá ser normatizada em regulamento específico.
+§ 3° A autorização da Anvisa a que se refere o caput não se aplica aos reagentes de controle de qualidade interno (CQI), que, quando produzidos pelo serviço de hemoterapia, devem ser obtidos por meio de processos validados, bem como soros raros, para os quais se devem estabelecer protocolos de produção.
+§ 4° Os reagentes devem ser estocados em refrigeradores apropriados, os quais devem conservar apenas reagentes e amostras laboratoriais.
+Art. 73. Os testes laboratoriais de qualificação no sangue do doador devem ser realizados seguindo as instruções dos fabricantes de insumos, reagentes, materiais e equipamentos.
+Parágrafo único. Qualquer manipulação de reagentes ou outros insumos inerentes ao procedimento metodológico deve ser realizada de acordo com as recomendações dos fabricantes, mediante processo devidamente validado, devendo estabelecer rótulo contendo, no mínimo, identificação do procedimento, data do preparo, data de validade estabelecida e profissional responsável pelo procedimento.
+Art. 74. Os protocolos dos ensaios laboratoriais devem conter, no mínimo, a identificação do(s) teste(s) utilizado(s), nome do fabricante do conjunto diagnóstico/reagentes, número do lote e prazo de validade e a identificação do responsável pela execução do (s) ensaio(s).
+Art. 75. O serviço de hemoterapia que realize os exames de qualificação do doador deve estabelecer protocolo que contenha os critérios para aceitação e rejeição das amostras e liberação de resultados dos testes.
+Art. 76. Todos os resultados e interpretação dos testes laboratoriais devem ser registrados e disponibilizados de forma a assegurar a não identificação do doador, garantindo o sigilo das informações.
+Art. 77. As amostras devem ser transportadas de forma que garanta a sua integridade e a segurança para o pessoal envolvido em todo o processo.
+Art. 78. O serviço de hemoterapia que terceirize os testes laboratoriais deve assegurar que os laboratórios terceirizados sejam regularizados junto ao órgão de vigilância sanitária competente, atendam às especificidades da triagem laboratorial de doadores, possuam programa de controle de qualidade laboratorial e cumpram os requisitos sanitários estabelecidos por esta Resolução e demais legislações vigentes.
+Parágrafo único. O instrumento contratual que formalize a prestação de serviço deverá prever as responsabilidades envolvidas no processo de transporte das amostras, incluindo, dentre outras, as condições de envio, de conservação e recebimento das amostras, de forma que sejam transportadas em segurança e em tempo hábil à realização dos testes.
+Art. 79. Na ausência do interfaceamento com sistema informatizado ou outra forma eletrônica de verificação, devidamente validada, os resultados devem ser conferidos por mais de uma pessoa antes de serem liberados, mantidos os respectivos registros.
+Art. 80. O serviço de hemoterapia deve realizar nas amostras de doações autólogas os mesmos testes imuno-hematológicos e para marcadores de infecções transmissíveis pelo sangue realizados nas doações alogênicas.
+Art. 81. Os testes imuno-hematológicos em amostras de doadores devem ser realizados em áreas distintas das dos receptores, devidamente identificadas.
+Art. 82. Os testes imuno-hematológicos para qualificação do doador devem ser realizados a cada doação, independentemente dos resultados de doações anteriores, segundo critérios estabelecidos pelo Ministério da Saúde, sendo obrigatórios:
+I - tipagem ABO;
+II - tipagem RhD; e
+III - pesquisa de anticorpos anti-eritrocitários irregulares (PAI).
+Parágrafo único. Nos protocolos do serviço de hemoterapia, devem constar outros testes realizados nas amostras de sangue dos doadores, tais como fenotipagem para outros antígenos de sistemas eritrocitários adicionais, testes de hemolisina, investigação de subgrupos de A1 e B e a identificação de anticorpos irregulares.
+Art. 83. Para a tipagem ABO, é obrigatória a realização de provas direta e reversa.
+Parágrafo único. O serviço de hemoterapia deve estabelecer procedimentos para resolução das discrepâncias na tipagem ABO direta e reversa e tipagem RhD, comparando com resultados anteriores.
+Art. 84. O controle da tipagem RhD deve ser sempre efetuado em paralelo, utilizando-se soro-controle do mesmo fabricante.
+§ 1º No caso de utilização de antissoros anti-D produzidos em meio salino, sem interferentes protéicos, o uso do soro-controle na reação é dispensável.
+§ 2º Se a reação com o soro-controle de RhD for positiva, o hemocomponente só deve ser rotulado e liberado para uso após a resolução do problema.
+Art. 85. Quando a reação para a presença do antígeno RhD resultar negativa, deve ser efetuada a pesquisa do antígeno D-fraco, utilizando-se um ou mais antissoros anti RhD, sendo obrigatória a utilização de pelo menos 1(um) deles com anticorpo da classe IgG.
+Parágrafo único. Caso a pesquisa do antígeno D-fraco resulte positiva, a bolsa de sangue ou hemocomponente deve ser etiquetada como "RhD positivo".
+Art. 86. O hemocomponente cuja pesquisa de anticorpos antieritrocitários irregulares resultar positiva deve ser etiquetado como tal.
+Art. 87. A investigação de hemoglobina S deve ser realizada em todos os doadores de sangue, pelo menos na primeira doação.
+Parágrafo único. Os hemocomponentes eritrocitários de doadores com presença de hemoglobina S devem ser etiquetados como tal.
+Art. 88. Os hemocomponentes não devem ser etiquetados e liberados para utilização antes de serem resolvidas quaisquer discrepâncias nos resultados dos testes imuno-hematológicos, mantendose os registros das condutas adotadas.
+Art. 89. A cada doação devem ser realizados obrigatoriamente testes laboratoriais de triagem de alta sensibilidade, para detecção de marcadores para as seguintes doenças infecciosas transmissíveis pelo sangue, independentemente dos resultados de doações anteriores, segundo critérios determinados nesta Resolução e nas demais normas do Ministério da Saúde:
+I - Sífilis: 1 (um) teste para detecção de anticorpo antitreponêmico ou não-treponêmico;
+II - Doença de Chagas: 1 (um) teste para detecção de anticorpo anti-T Cruzi;
+III - Hepatite B (HBV): 3 (três) testes em paralelo: 1 (um) teste para detecção do antígeno de superfície do vírus da hepatite B (HBsAg), 1 (um) teste para detecção de anticorpo contra o capsídeo do vírus da hepatite B (anti-HBc), com pesquisa de IgG ou IgG + IgM e 1(um) teste para detecção de ácido nucléico do vírus HBV por técnica de biologia molecular; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+IV - Hepatite C: 2 (dois) testes em paralelo: 1 (um) teste para detecção de anticorpo anti-HCV ou para detecção combinada de antígeno/anticorpo; e 1(um) teste para detecção de ácido nucléico do vírus HCV por técnica de biologia molecular;
+V - HIV 1 e 2: 2 (dois) testes em paralelo: 1 (um) teste para detecção de anticorpo anti-HIV (que inclua a detecção do grupo O) ou 1(um) teste para detecção combinada de antígeno/anticorpo (que inclua a detecção do grupo O); e 1(um) teste para detecção de ácido nucléico do vírus HIV por técnica de biologia molecular; e
+VI - HTLV I/II: 1 (um) teste para detecção de anticorpo anti- HTLV I/II.
+§ 1º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+§ 2º Nas regiões endêmicas de malária com transmissão ativa, deve ser realizada a detecção de plasmódio ou antígenos plasmodiais.
+§ 3º A detecção do Citomegalovírus (CMV) deve ser realizada em todas as unidades de sangue destinadas a pacientes nas situações previstas pelo Ministério da Saúde.
+Art. 90. Os testes laboratoriais para detecção de marcadores para doenças infecciosas transmissíveis pelo sangue devem ser realizados com fluxos e processos de trabalho específicos e utilizando conjuntos de reagentes próprios para tal finalidade.
+§ 1º Os dados e cálculos desenvolvidos para se chegar à conclusão sobre o resultado dos testes de acordo com as instruções do fabricante do conjunto diagnóstico devem estar devidamente registrados e disponíveis.
+§ 2º No caso de utilização de metodologias de biologia molecular, a depender do método utilizado, o laboratório deve ter áreas ou salas exclusivas, construídas de forma a permitir o fluxo adequado dos materiais, amostras biológicas e profissionais, atendendo aos requisitos exigidos pelas normas vigentes.
+§ 3º Em casos de novas tecnologias que utilizem biologia molecular para as quais não seja necessária a estrutura física definida pela legislação vigente, o serviço de hemoterapia deve apresentar, ao órgão de vigilância sanitária local, declaração do projetista e do responsável técnico do serviço justificando que, embora o projeto atenda parcialmente às normas vigentes, a tecnologia utilizada garante a segurança e qualidade das atividades desenvolvidas.
+Art. 91. Os testes laboratoriais para detecção de marcadores para doenças infecciosas transmissíveis pelo sangue devem ser realizados em amostra colhida em tubo primário, desde a coleta até a fase de pipetagem no equipamento, inclusive os recebidos de outros serviços.
+Art. 92. Os testes em pool de amostras de sangue de doadores somente serão realizados no caso da incorporação de tecnologias que tenham aplicação comprovada, validada pelo fabricante quanto ao número de amostras para emprego em pool e após o registro na Anvisa.
+Art. 93. O sangue total e os hemocomponentes somente devem ser liberados para transfusão após a obtenção de todos os resultados finais dos testes não reagentes ou negativos.
+Art. 94. Nos casos de resultados reagentes/positivos ou inconclusivos nos testes sorológicos de triagem, o serviço de hemoterapia deve repetir os testes iniciais em duplicata, na mesma amostra da doação.
+§ 1º Caso a repetição resulte em não reagente/negativo nas duas amostras do teste em duplicata, as bolsas referentes poderão ser liberadas.
+§ 2º Por medida de segurança, devem-se estabelecer procedimentos escritos com critérios para avaliação dos resultados dos testes desta rotina, no intuito de investigar as possíveis causas de discrepância do primeiro teste e medidas corretivas a serem aplicadas.
+§ 3º Caso pelo menos um dos resultados da repetição em duplicata seja reagente/positivo ou inconclusivo, as bolsas deverão ser bloqueadas e descartadas e o doador deve ser convocado para coleta de nova amostra para realização dos testes confirmatórios.
+Art. 95. No caso do uso de testes de biologia molecular, somente podem ser liberadas as bolsas com resultados não reagentes/ negativos tanto para os testes sorológicos quanto para os testes de biologia molecular.
+§ 1º No caso do uso de testes de biologia molecular em pool, o grupo de amostras que apresentar resultado positivo ou inconclusivo deverá ser desmembrado e suas amostras testadas individualmente para identificação da doação e do(s) agente(s) infeccioso(s) em questão.
+§ 2º As bolsas cujas amostras individuais sejam positivas ou inconclusivas nos testes de biologia molecular ou que tenham resultados discrepantes com os testes sorológicos devem ser descartadas, e o doador deve ser convocado para coleta de nova amostra para realização dos testes confirmatórios.
+§ 3º As amostras de doadores com resultado negativo do teste de biologia molecular em pool para detecção do vírus HBV e teste sorológico HBsAg positivo ou inconclusivo serão testadas individualmente pelo teste de biologia molecular. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Art. 96. Não é obrigatória a realização dos testes confirmatórios para a definição de diagnóstico pelo serviço de hemoterapia.
+§ 1º Os testes confirmatórios podem ser realizados pelo próprio serviço de hemoterapia ou por laboratório de referência.
+§ 2º Em ambas as situações descritas no § 1º, o doador deve ser chamado pelo serviço de hemoterapia que realizou a coleta do seu sangue para as devidas orientações de acordo com o resultado obtido e, se for o caso, encaminhado para um serviço de saúde para acompanhamento.
+§ 3º O serviço de hemoterapia que não realize os testes confirmatórios deve possuir um termo de compromisso formal ou equivalente com serviço de referência para a realização destes testes laboratoriais, de maneira que sejam garantidos os critérios definidos nesta Resolução e nas demais normas do Ministério da Saúde.
+Art. 97. O serviço de hemoterapia deve registrar os procedimentos para a resolução de resultados discrepantes ou inconclusivos na triagem laboratorial.
+Art. 98. O serviço de hemoterapia deve manter plasmateca ou soroteca de cada doação, com as amostras devidamente identificadas e registradas e armazenadas em temperatura igual ou inferior a 20ºC negativos, por período mínimo de 6 (seis) meses.
+Art. 99. O serviço de hemoterapia deve ter mecanismo que permita bloquear os doadores considerados inaptos na triagem laboratorial, mantendo os registros desses doadores.
+§ 1º O serviço de hemoterapia deve dispor de mecanismo seguro de convocação do doador considerado inapto na triagem laboratorial, para esclarecimento, repetição dos testes e encaminhamento aos serviços de saúde de referência.
+§ 2º O serviço de hemoterapia deve informar à autoridade de vigilância em saúde competente sobre os doadores com resultados reagentes/positivos dos testes de triagem laboratoriais que não tenham comparecido à convocação para realização de novos testes, conforme padronização definida entre as instâncias competentes e o serviço de hemoterapia.
+Art. 100. O serviço de hemoterapia ou o serviço de referência responsável pela confirmação do diagnóstico deve notificar oficialmente à vigilância em saúde competente os casos de infecções transmissíveis pelo sangue de notificação compulsória.
+Art. 101. Quando os testes de triagem laboratorial resultarem reagente/positivo ou inconclusivo para HIV 1 e 2, HBV, HCV, HTLV I/II, em um doador de sangue que em doações prévias apresentava resultado não reagente/negativo (soroconversão), o serviço de hemoterapia responsável pela produção dos hemocomponentes deve proceder à investigação de retrovigilância.
+§ 1º O serviço de hemoterapia deve realizar na mesma amostra de doador com suspeita de soroconversão testes de confirmação dos resultados iniciais, salvo quando o resultado inicial for obtido por metodologia de biologia molecular, de acordo com o definido pelo Ministério da Saúde.
+§ 2º Mesmo na hipótese de suspeita de soroconversão, devese, antes dos procedimentos de confirmação dos resultados iniciais, proceder à identificação e bloqueio dos hemocomponentes armazenados/ estocados referentes a esta doação no próprio ou em outro serviço.
+§ 3º Na hipótese de resultados reagentes ou inconclusivos na confirmação dos testes iniciais, o serviço de hemoterapia deve obrigatoriamente:
+I - identificar a data da última doação não reagente e o destino dos hemocomponentes;
+II - no caso dos marcadores HIV, HCV, HBV (HBsAg), HTLV I/II, proceder à investigação dos receptores das doações realizadas nos 6 (seis) meses anteriores a última doação não reagente/ negativa;
+III - nos casos de resultados de testes de biologia molecular positivos para HCV, HIV e/ou HBV com teste de triagem sorológica não reagente, realizar a investigação de retrovigilância da última doação com triagem laboratorial negativa e todas as doações realizadas até 3 (três) meses antes desta; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+IV - no caso do marcador Anti-HBc (HBV), investigar os receptores para última doação não reagente/negativa se esta tiver ocorrido em até 12 (doze) meses;
+V - descartar os hemocomponentes armazenados/estocados oriundos dessa doação; e
+VI - caso a(s) unidade(s) de plasma tenha(m) sido enviada(s) para o fracionamento industrial, comunicar à indústria, à Anvisa e ao Ministério da Saúde.
+§ 4º O serviço de hemoterapia pode realizar testes de biologia molecular para o agente infeccioso que estiver sendo investigado, na amostra da doação anterior à doação reagente/positiva, utilizando uma amostra da plasmateca/soroteca ou da unidade de plasma armazenada, procedendo à investigação de retrovigilância até a conclusão final.
+§ 5º A investigação dos receptores deve ser feita pelo serviço de saúde que realizou a respectiva transfusão e acompanhada pelo serviço de hemoterapia responsável pela produção do hemocomponente.
+§ 6º O resultado da investigação de retrovigilância deve ser comunicado ao serviço que transfundiu o(s) hemocomponente(s) ou ao médico responsável pelo paciente.
+§ 7º O serviço de hemoterapia que realizou a coleta de sangue no doador a que se refere o caput deste artigo deve convocálo para coleta de nova amostra, independentemente dos resultados de confirmação de testes na amostra inicial, para medidas e orientações de acordo com o definido nesta Resolução e outras legislações vigentes.
+Art. 102. As responsabilidades pelos procedimentos de retrovigilância devem estar estabelecidas em contrato, convênio ou termo de compromisso e firmadas entre o serviço de hemoterapia que produziu os hemocomponentes e o serviço que os recebeu e transfundiu, não elidindo ou minorando as responsabilidades pelo atendimento dos requisitos sanitários estabelecidos por esta Resolução e demais instrumentos normativos aplicáveis.
+Art. 103. Caso a indústria fracionadora de plasma excedente detecte resultados positivos/reagentes nos testes de unidades de plasma, esta deve comunicar ao Ministério da Saúde, à Anvisa e ao serviço de hemoterapia para que o processo de retrovigilância seja desencadeado.
+Art. 104. O serviço de hemoterapia deve comunicar ao órgão de vigilância sanitária competente os casos instaurados de retrovigilância para acompanhamento e apoio nas investigações.
+Parágrafo único. O órgão de vigilância sanitária competente deve encaminhar à Anvisa relatório consolidado dos casos confirmados para produção de relatório nacional.
+Seção VII
+Controle de qualidade de reagentes e testes laboratoriais
+Art. 105. O serviço de hemoterapia que execute testes laboratoriais deve realizar Controle de Qualidade Interno (CQI), utilizando amostras de controles adicionais aos fornecidos pelo fabricante do reagente em uso e de acordo com um plano de procedimentos previamente elaborado e validado, contendo as especificações dos critérios de aceitação.
+§ 1º As amostras controle devem ser monitoradas diariamente de acordo com o definido pelo Ministério da Saúde.
+§ 2º Caso os controles sejam produzidos pelo próprio serviço de hemoterapia, estes devem ser caracterizados e validados previamente, mantendo-se os registros.
+§ 3º Os resultados do CQI devem ser analisados criticamente e, quando estiverem fora dos critérios predefinidos, devem ser adotadas ações corretivo-preventivas para evitar resultados incorretos, mantendo-se os registros dos resultados, das não conformidades e das medidas adotadas.
+§ 4º O supervisor técnico ou pessoa por ele designada deve monitorar os resultados do CQI.
+Art. 106. O serviço de hemoterapia que realize testes laboratoriais deve participar regularmente de programas de avaliação externa da qualidade (AEQ) para todos os testes realizados, a fim de assegurar a exatidão e a confiabilidade dos resultados obtidos.
+Parágrafo único. Os resultados de desempenho do serviço de hemoterapia na avaliação externa da qualidade devem ser analisados criticamente, mantendo-se os registros das e das medidas corretivopreventivas adotadas.
+Art. 107. O serviço de hemoterapia deve realizar controles de qualidade de cada lote e remessa dos reagentes e conjuntos diagnósticos antes da sua utilização na rotina de trabalho, de acordo com o preconizado pelo Ministério da Saúde e as boas práticas vigentes, mantendo os registros dos procedimentos executados, dos resultados, das não conformidades e das ações corretivo- preventivas.
+Seção VIII
+Liberação e rotulagem das bolsas de sangue e hemocomponentes
+Art. 108. As bolsas de sangue e hemocomponentes somente devem ser liberadas após a conclusão de todos os testes imunohematológicos e de triagem para marcadores de infecções transmissíveis pelo sangue, com resultados não reagentes/ negativos.
+Art. 109. Os rótulos e etiquetas afixados nas unidades de hemocomponentes (bolsas principal e satélites) devem ser impressos, legíveis e firmemente aderidos, não devendo ser rasurados ou adulterados.
+Parágrafo único. O serviço de hemoterapia deve dispor de mecanismo capaz de rastrear de forma rápida o número do lote e a data de validade original da bolsa plástica de cada hemocomponente produzido.
+Art. 110. O controle da etiquetagem e rotulagem de cada unidade de hemocomponente deve ser realizado por duas pessoas, exceto quando for utilizada verificação eletrônica por código de barras ou outra forma eletrônica devidamente validada.
+Parágrafo único. Os registros devem atestar quais pessoas foram responsáveis pela liberação de hemocomponentes.
+Art. 111. A identificação das bolsas de hemocomponentes deve permitir a rastreabilidade desde a sua obtenção até o término do ato transfusional ou a produção de hemoderivados e insumos.
+Art. 112. A etiqueta das bolsas de hemocomponentes liberados deve conter:
+I - nome e endereço do serviço coletor;
+II - data da coleta;
+III - nome e volume aproximado do hemocomponente;
+IV - identificação com sistema numérico ou alfanumérico que permita rastreabilidade da bolsa e da doação;
+V - nome do anticoagulante ou outra solução preservadora, exceto nos componentes obtidos por aférese;
+VI - temperatura adequada para a conservação;
+VII - data do vencimento do produto e horário de vencimento, no caso de hemocomponentes no qual é estabelecido tempo de armazenamento em horas;
+VIII - grupo ABO, RhD e o resultado da pesquisa de anticorpos irregulares;
+IX - resultado dos testes não reagentes para triagem de infecções transmissíveis pelo sangue;
+X - a inscrição: "não adicionar medicamentos"; e
+XI - a identificação de hemocomponente irradiado e/ou CMV reagente, quando for o caso.
+Parágrafo único. As unidades de baixo volume devem ser rotuladas como tal.
+Art. 113. A etiqueta dos hemocomponentes liberados em forma de pool (concentrados de plaquetas e crioprecipitado), além das especificações já descritas no item anterior, deve conter:
+I - nome do serviço responsável pela preparação do pool;
+II - indicação de que se trata de um pool e o número do pool;
+III - grupo ABO e RhD das unidades do pool, volume aproximado, data e horário de vencimento; e
+IV - se o pool é CMV negativo.
+Parágrafo único. O serviço de hemoterapia que preparou o pool deve ter sistema que permita a rastreabilidade de todas as unidades que o compõem.
+Art. 114. A etiqueta da unidade de doação autóloga deverá conter, além das informações exigidas para os hemocomponentes alogênicos, no mínimo, as seguintes informações:
+I - nome completo do doador-paciente;
+II - nome da unidade de assistência à saúde de origem e número de registro do doador-paciente no serviço de hemoterapia;
+III - a inscrição: "Doação Autóloga"; e
+IV - indicação de resultados reagentes dos testes de triagem para marcadores de infecções transmissíveis pelo sangue, quando for o caso.
+Art. 115. No caso de hemocomponentes rejuvenescidos, as etiquetas das bolsas devem informar o uso de soluções utilizadas e respectiva data de validade.
+Seção IX
+Armazenamento e conservação de sangue e hemocomponentes
+Art. 116. O serviço de hemoterapia deve garantir infraestrutura adequada à conservação das unidades de hemocomponentes, de acordo com a temperatura e prazo de validade, desde a sua obtenção até a transfusão, ou o envio do plasma excedente para fracionamento industrial, cumprindo o estabelecido nesta Resolução e nas determinações do Ministério da Saúde.
+Parágrafo único. A sala destinada ao armazenamento e conservação de hemocomponentes deve ter a temperatura mantida a 22 ± 2ºC, com os respectivos registros de monitoramento e controle.
+Art. 117. As bolsas de hemocomponentes liberadas e não liberadas devem ser armazenadas de forma segregada, em áreas e/ou equipamentos distintos, devidamente identificados para evitar a utilização inadvertida de produtos não liberados.
+Parágrafo único. O serviço de hemoterapia deve possuir uma área separada para o armazenamento de sangue e hemocomponentes que tenham sido rejeitados.
+Art. 118. As câmaras de refrigeração e de congelamento para conservação de sangue, hemocomponentes e hemoderivados (equipamentos da cadeia de frio) devem ser apropriadas para esta finalidade e de uso exclusivo.
+Parágrafo único. O armazenamento de sangue, hemocomponentes e hemoderivados deve ser realizado em áreas específicas e com a respectiva identificação.
+Art. 119. O serviço de hemoterapia deve ter mecanismos para registro, monitoramento e controle da temperatura dos equipamentos da cadeia de frio, utilizando termômetro de máxima e mínima com registro manual ou, preferencialmente, utilizando dispositivo de registro contínuo.
+§ 1º Na ausência de dispositivo de registro contínuo, a verificação deve ser realizada de 4 (quatro) em 4 (quatro) horas, exceto se comprovado que o equipamento se mantém fechado por longos períodos, permitindo-se nestas situações especiais a verificação, no máximo, a cada 12 (doze) horas, sendo obrigatória a instalação de um termômetro de registro de temperatura máxima e mínima.
+§ 2º Os equipamentos devem ser dotados de um sistema de alarme sonoro e visual que indique a ocorrência de temperaturas fora do limite de conservação definido para cada hemocomponente.
+§ 3º Havendo acionamento do sistema de alarme, ações devem ser tomadas por pessoal autorizado, com o propósito de restabelecer as condições preconizadas de armazenamento.
+§ 4º O serviço de hemoterapia deve estabelecer procedimentos para a verificação periódica das condições gerais de funcionamento das câmaras de refrigeração e de congelamento, de acordo com as instruções do fabricante dos equipamentos, mantendo-se os registros.
+§ 5º Os registros devem ser sistematicamente analisados por pessoal autorizado e as ações corretivas devem ser adotadas para as não conformidades observadas.
+Art. 120. O serviço de hemoterapia deve ter plano de contingência escrito e disponível para casos de interrupção de fornecimento de energia e eventuais problemas na cadeia de frio.
+Seção X
+Distribuição de hemocomponentes
+Art. 121. A área destinada à distribuição deve ser de fácil acesso, de modo a proporcionar um fluxo de transporte de hemocomponentes de maneira segura e organizada.
+Art. 122. O serviço de hemoterapia que distribua hemocomponentes para estoque em outros serviços deve estabelecer, em contrato ou documento similar, os requisitos necessários para o fornecimento, incluindo o compartilhamento de responsabilidades relacionadas aos procedimentos de transporte, conservação, armazenamento, uso de hemocomponentes e descarte dos resíduos, dentre outros.
+§ 1º O processo de transporte de hemocomponentes deve ser validado de acordo com os requisitos estabelecidos nesta Resolução, nas legislações de transporte de material biológico e determinações do Ministério da Saúde.
+§ 2º O transporte de unidade de concentrado de hemácias, submetida ou não a procedimentos especiais, realizados em sistema fechado, deve ser realizado à temperatura de 1°C até 10°C.
+§ 3º O transporte de unidade de concentrado de plaquetas deve ser realizado à temperatura de 20°C até 24°C.
+§ 4º A unidade de concentrado de granulócitos deve ser transportada à temperatura de 20°C a 24°C.
+§ 5º A unidade de plasma fresco congelado e o crioprecipitado devem ser transportados de maneira que mantenham temperatura igual ou inferior à temperatura de armazenamento.
+§ 6º O transporte de unidade de hemocomponente criopreservado deve ser feito de forma a manter a temperatura de armazenamento.
+Art. 123. A solicitação por escrito para fornecimento de hemocomponentes deve conter nome legível, assinatura e número de inscrição no Conselho Regional de Medicina do médico responsável pelo serviço de hemoterapia solicitante.
+Parágrafo único. O serviço que fornece hemocomponentes deve registrar em documento escrito as condições nas quais estão sendo entregues os hemocomponentes, contendo dados referentes à integridade das unidades, à temperatura de conservação e à forma como deverão ser transportadas.
+Art. 124. O envio de hemocomponentes para serviços de saúde que não disponham de serviço de hemoterapia deve ser liberado mediante a realização das provas pré-transfusionais pelo serviço de hemoterapia que o assiste, de acordo com os requisitos definidos na Seção XII, no que couber.
+§ 1º O serviço de saúde que receber o hemocomponente compatibilizado deve estar regularizado junto ao órgão de vigilância sanitária competente e comprovar o cumprimento das exigências desta Resolução e das determinações do Ministério da Saúde.
+§ 2º O envio de hemocomponentes de que trata este artigo deve estar previsto em contrato, convênio ou termo de compromisso observando-se os requisitos descritos no art. 123 desta Resolução.
+Art. 125. O serviço que forneça hemocomponentes somente deverá reintegrar ao seu estoque produtos devolvidos quando as condições de transporte e armazenamento forem conhecidas e a integridade e qualidade do produto forem garantidas, de acordo com as determinações do Ministério da Saúde.
+Art. 126. O envio de plasma excedente para produção de hemoderivados deve ser realizado mediante a concessão de autorização emitida pelos órgãos que compõem o Sistema Nacional de Sangue, Componentes e Derivados (Sinasan), segundo os critérios definidos pelo Ministério da Saúde.
+§ 1º As condições de transporte e acondicionamento, relativas à capacidade máxima de bolsas por embalagem, empilhamento e sistema de monitoramento e controle da temperatura devem ser validadas a fim de garantir a integridade do produto.
+§ 2º A empresa transportadora deve estar regularizada junto à Anvisa, de acordo com as legislações vigentes.
+Art. 127. O envio de bolsas de sangue e hemocomponentes para finalidades não terapêuticas tais como pesquisa, produção de reagentes e painéis de controle de qualidade, entre outros, devem estar de acordo com as diretrizes e autorização do Ministério da Saúde, sem prejuízo do disposto em normas específicas para o transporte de material biológico.
+Parágrafo único. O envio de sangue e hemocomponentes citado no caput deste artigo devem ser formalizados mediante instrumento contratual, garantindo-se a manutenção da rastreabilidade, no mínimo, quanto à finalidade do envio, identificação da bolsa enviada e a instituição de destino.
+Seção XI
+Terapia transfusional
+Art. 128. Toda transfusão deve ser solicitada por um médico e realizada por profissional de saúde habilitado e capacitado, sob supervisão médica.
+§ 1º As requisições de transfusões devem ser feitas em formulário padronizado, contendo, no mínimo, as seguintes informações:
+I - nome completo do receptor, sem abreviaturas;
+II - nome da mãe, se possível;
+III - sexo, data de nascimento e peso (quando indicado);
+IV - número do prontuário ou registro do receptor;
+V - identificação do serviço de saúde, localização intrahospitalar e número do leito, no caso de receptor internado;
+VI - diagnóstico e indicação da transfusão;
+VII - resultados dos testes laboratoriais que justifiquem a indicação do hemocomponente;
+VIII - modalidade da transfusão (programada, rotina, urgência, emergência);
+IX - hemocomponente solicitado, com o respectivo volume ou quantidade;
+X - data da requisição,
+XI - nome, assinatura e número de inscrição no Conselho Regional de Medicina do médico solicitante; e
+XII - antecedentes transfusionais e gestacionais e reações à transfusão.
+§ 2º O serviço de hemoterapia não deve aceitar requisições incompletas, rasuradas ou ilegíveis.
+Art. 129. O serviço de hemoterapia deve realizar testes imuno- hematológicos pré-transfusionais segundo os critérios estabelecidos pelo Ministério da Saúde.
+§ 1º São testes imuno-hematológicos pré-transfusionais obrigatórios para transfusão de hemocomponentes eritrocitários e granulóciticos:
+I - retipagem ABO do sangue do doador;
+II - retipagem Rh(D) do sangue do doador classificado como Rh(D) negativo, não sendo necessária a repetição de pesquisa de D "fraco";
+III - tipagem ABO (direta e reversa), determinação do fator Rh(D), incluindo pesquisa de D "fraco" e pesquisa de anticorpos irregulares (PAI) no sangue do receptor; e.
+IV - prova de compatibilidade, entre as hemácias do doador e o soro ou plasma do receptor.
+§ 2º São testes imuno-hematológicos pré-transfusionais obrigatórios para transfusão de hemocomponentes plaquetários:
+I - tipagem ABO (direta e reversa) no sangue do receptor; e
+II - determinação do fator RhD e pesquisa de anticorpos irregulares (PAI) no sangue do receptor.
+§ 3º São testes imuno-hematológicos pré-transfusionais obrigatórios para transfusão de hemocomponentes plasmáticos e crioprecipitado:
+I - tipagem ABO (direta e reversa) no sangue do receptor; e
+II - determinação do fator RhD no sangue do receptor.
+§ 4º Nas transfusões de sangue e hemocomponentes autólogos estocados previamente à internação, devem ser realizados no paciente-doador os mesmos testes pré-transfusionais exigidos para receptores de hemocomponentes alogênicos, com exceção dos testes de compatibilidade.
+Art. 130. Os testes pré-transfusionais devem ser realizados em área especifica para esta finalidade, com monitoramento e controle da temperatura do ambiente (22 ± 2ºC).
+Art. 131. A coleta de amostras de receptores para os testes pré-transfusionais deve ser realizada por profissionais de saúde devidamente treinados para esta atividade, mediante a requisição de transfusão.
+Parágrafo único. No caso de transfusões em outros serviços, os procedimentos de coleta e envio de amostras devem estar definidos em protocolos do serviço de hemoterapia responsável pelos testes prétransfusionais.
+Art. 132. Os tubos com as amostras devem ser rotulados no momento da coleta com o nome completo do receptor sem abreviaturas, o número de identificação ou localização no serviço, data da coleta e identificação da pessoa que realizou a coleta da amostra.
+Art. 133. As bolsas de sangue total e hemocomponentes destinados à transfusão devem ser armazenadas em equipamentos apropriados para a finalidade, de acordo com a temperatura de conservação requerida para cada hemocomponente, de forma ordenada e racional.
+§ 1° Os reagentes devem ser estocados em refrigeradores apropriados, os quais devem conservar apenas reagentes e amostras laboratoriais, salvo para serviços de hemoterapia com pequeno número de transfusões, pequeno o bastante de modo que o armazenamento conjunto com hemocomponentes não comprometa a conservação dos mesmos.
+§ 2° Nas situações previstas no § 1º, as amostras, os reagentes e hemocomponentes devem ser armazenados de forma segregada, em áreas distintas e devidamente identificadas.
+§ 3º As amostras do soro ou plasma do receptor e os segmentos das bolsas devem ser mantidos, de 2°C a 6°C, no mínimo, por (72 horas) para realização de testes pré-transfusionais e eventuais repetições.
+Art. 134. O laboratório que realiza testes pré-transfusionais deve seguir os mesmos critérios para o controle de qualidade dos reagentes e dos testes laboratoriais (CQI, AEQ e controle de qualidade dos lotes) aplicados aos laboratórios de triagem do doador.
+Art. 135. O serviço deve estabelecer procedimentos para resolução das discrepâncias na tipagem ABO, RhD e também com resultados anteriores.
+Art. 136. O serviço de hemoterapia deve estabelecer protocolos para transfusões incompatíveis e transfusões de emergência de acordo com as determinações do Ministério da Saúde.
+§ 1º A transfusão de concentrado de hemácias incompatível somente deve ser realizada mediante justificativa em documento escrito, assinado pelo médico hemoterapeuta e/ou pelo médico-assistente do receptor, com consentimento escrito do receptor ou seu responsável legal, de acordo com o definido pelo Ministério da Saúde.
+§ 2º A liberação de hemocomponentes para transfusões caracterizadas como "emergência", sem que os testes pré- transfusionais estejam concluídos, deve obedecer aos critérios definidos em protocolo do serviço de hemoterapia, segundo determinações do Ministério da Saúde.
+Art. 137. A etiqueta de liberação da bolsa (cartão de transfusão) de sangue para transfusão deve conter as seguintes informações:
+I - nome completo e identificação numérica/alfanumérica do receptor (número de registro e localização);
+II - grupo ABO e tipo RhD do receptor;
+III - número de identificação, grupo ABO e tipo RhD do hemocomponente a ser transfundido;
+IV - conclusão da prova de compatibilidade;
+V - data do envio do hemocomponente; e
+VI - nome do responsável pela realização dos testes prétransfusionais e pela liberação.
+Parágrafo único. A etiqueta a que se refere o caput deve estar afixada à bolsa, de modo que permaneça até o término do procedimento de transfusão, não obstruindo as informações originais da bolsa.
+Art. 138. O transporte de amostra de pacientes e de bolsas de hemocomponentes para transfusão deve ser realizado obedecendo às normas de biossegurança e demais legislações vigentes.
+Parágrafo único. As amostras de pacientes para realização dos testes pré-transfusionais, bem como hemocomponentes compatibilizados para transfusão, devem ser transportadas por pessoas treinadas, em recipientes rígidos, com fechamento seguro e em condições de conservação que garantam a segurança e integridade do produto.
+Art. 139. Nas transfusões ambulatoriais, devem ser cumpridas as mesmas exigências estabelecidas para as transfusões em pacientes internados, inclusive área específica no âmbito da instituição assistencial.
+Art. 140. O serviço de hemoterapia deve estabelecer protocolos, de acordo com as determinações do Ministério da Saúde, para realização de:
+I - transfusão de neonatos e crianças com até 4 (quatro) meses de vida;
+II - transfusão intrauterina;
+III - transfusão autóloga pré, peri e/ou pós-operatória;
+IV - transfusão domiciliar;
+V - transfusão de substituição (exsanguineotransfusão);
+VI - aférese terapêutica;
+VII - sangria terapêutica;
+VIII - transfusão de pacientes aloimunizados;
+IX - transfusão maciça; e
+X - aquecimento de sangue.
+§ 1º Para transfusões domiciliares, o serviço deve dispor de medicamentos, materiais e equipamentos necessários para realização das atividades e atender às eventuais situações de emergência, sendo o ato transfusional realizado na presença de um médico, o qual será responsável por todos os procedimentos do ato transfusional.
+§ 2º O procedimento de aférese com fins terapêuticos deve ser realizado em área específica, mediante solicitação escrita do médico do paciente e em concordância com o médico hemoterapeuta.
+§ 3º Os registros dos procedimentos de aférese terapêutica devem conter:
+I - identificação do paciente;
+II - diagnóstico;
+III - método empregado nos procedimentos;
+IV - tipo de procedimento terapêutico;
+V - volume sanguíneo extracorpóreo;
+VI - tipo e quantidade do hemocomponente removido ou tratado;
+VII - tipo e quantidade dos líquidos utilizados;
+VIII - reação adversa ocorrida e conduta a ser adotada.
+Art. 141. O serviço de hemoterapia deve manter ficha do receptor com os registros de todas as transfusões, contendo, no mínimo, as seguintes informações:
+I - data do procedimento;
+II - todos os resultados dos testes pré-transfusionais;
+III - tipos e identificação de unidades transfundidas;
+IV - data da transfusão; e
+V - ocorrências de reações adversas à transfusão.
+Art. 142. Antes do início da transfusão, é obrigatória a confirmação da identificação do receptor, do rótulo da bolsa, dos dados da etiqueta de liberação, validade do produto, realização de inspeção visual da bolsa e a verificação dos sinais vitais.
+Art. 143. A transfusão deve ser monitorada durante todo o seu transcurso e o tempo máximo de infusão não deve ultrapassar 4 (quatro) horas, sendo obrigatório, no mínimo, o uso de dispositivo de filtro capaz de reter coágulos e agregados.
+Parágrafo único. A transfusão deve ser acompanhada pelo profissional que a instalou durante os 10 (dez) primeiros minutos à beira do leito.
+Art. 144. O serviço de saúde que realiza procedimento transfusional deve manter, no prontuário do receptor, os seguintes registros relativos à transfusão:
+I - data;
+II - horário de início e término;
+III - sinais vitais no início e no término;
+IV - origem e identificação das bolsas dos hemocomponentes transfundidos;
+V - identificação do profissional que a realizou; e
+VI - registro de reações adversas, quando for o caso.
+Art. 145. Todos os serviços de saúde que realizem procedimentos transfusionais e possuam serviço de hemoterapia devem constituir comitê transfusional do qual faça parte um representante do serviço de hemoterapia.
+Parágrafo único. O serviço de saúde que realize transfusão mas não possua serviço de hemoterapia deverá participar das atividades do comitê transfusional relacionado ao serviço de hemoterapia que o assiste ou constituir o seu próprio comitê.
+Seção XII
+Eventos adversos ao ciclo do sangue
+Art. 146. Todo evento adverso do ciclo do sangue, da doação à transfusão, deve ser investigado, registrado e ter ações corretivas e preventivas executadas pelo serviço onde ocorreu.
+§ 1º Os profissionais de saúde responsáveis pelas diferentes etapas do ciclo do sangue, da doação à transfusão, devem ser capacitados para a detecção e investigação de eventos adversos, inclusive sinais ou sintomas relacionados a possíveis reações adversas à doação e à transfusão, e sobre as condutas a serem adotadas.
+§ 2º Os registros dos eventos adversos e das ações corretivas e preventivas executadas devem ser realizadas de acordo com as legislações de Vigipos vigente ou diretrizes específicas do sistema nacional de hemovigilância.
+§ 3º A notificação do evento adverso, quando necessária, deve ser feita, pelo serviço onde houve a ocorrência, ao sistema nacional de vigilância sanitária, de acordo com as legislações de Vigipos vigente ou diretrizes específicas do Sistema Nacional de Hemovigilância.
+Art. 147. Todo serviço de saúde que realize transfusão deve ter procedimentos escritos para detecção, tratamento, prevenção e notificação dos eventos adversos à transfusão, cabendo ao serviço de hemoterapia fornecedor de hemocomponentes a elaboração e orientação de tais procedimentos.
+§ 1º O serviço de saúde onde ocorreu a transfusão é o responsável pela investigação e notificação do evento adverso ocorrido em suas dependências.
+§ 2º No caso em que haja necessidade de interveniência do serviço de hemoterapia produtor ou fornecedor do hemocomponente, este serviço de hemoterapia deverá se articular com o serviço de saúde que realizou a transfusão, com vistas às medidas cabíveis e conclusão do ciclo investigativo.
+Art. 148. Para os serviços de saúde que não possuam agência transfusional, as atividades de capacitação e de hemovigilância deverão ser realizadas pelo serviço de hemoterapia fornecedor dos hemocomponentes ou conforme definido em contrato, convênio ou termo de compromisso formal estabelecido.
+CAPÍTULO III
+DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+Art. 149. Os procedimentos técnicos para a execução das atividades hemoterápicas e o uso clínico do sangue e hemocomponentes de acordo com os padrões sanitários definidos por esta Resolução, serão normatizados pelo Ministério da Saúde.
+Art. 150. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+Art. 151. O serviço de hemoterapia deverá ser inspecionado pelo órgão de vigilância sanitária competente, que estabelecerá a periodicidade e o método de inspeção destinado a avaliar o cumprimento da legislação vigente, adotando as medidas cabíveis em decorrência da detecção de não conformidades durante o curso da inspeção.
+§ 1º Independentemente dos métodos de inspeção empregados pelo órgão de vigilância sanitária competente, deverão ser utilizados instrumentos baseados na legislação vigente, federal e local, contendo, no mínimo, os itens contidos no roteiro de inspeção sanitária para serviços de hemoterapia constante do Anexo desta Resolução.
+§ 2º Os órgãos de vigilância sanitária estaduais, do Distrito Federal e dos municípios devem informar periodicamente à Anvisa a situação sanitária dos serviços de hemoterapia, por meio de mecanismos e instrumentos definidos pelo Sistema Nacional de Vigilância Sanitária.
+§ 3º O órgão de vigilância sanitária competente deve, sempre que necessário, realizar análises fiscais sobre produtos submetidos à vigilância sanitária para apuração de infração ou verificação de ocorrência de desvio quanto à qualidade, segurança e eficácia, de acordo com a legislação vigente.
+Art. 152. Ficam revogadas as Resoluções RDC nº 57, de 16 de dezembro de 2010, publicada no DOU de 17 de dezembro de 2010, e RDC nº 51, de 07 de novembro de 2013, publicada no DOU de 13 de novembro de 2013.
+Art. 153. Esta Resolução entra em vigor na data de sua publicação.
+DIRCEU BRÁS APARECIDO BARBANO
+ANEXO
+ROTEIRO DE INSPEÇÃO EM SERVIÇOS DE HEMOTERAPIA
+MÓDULO I
+INFORMAÇOES GERAIS
+Período da Inspeção: ___/___/______ a ___/___/______
+Tipo de serviço:
+( ) HC ( ) HR ( ) NH ( ) UC fixa ) UC móvel ( ) UCT ( ) CTLD ( ) AT
+Objetivo da Inspeção:
+( ) Licença Inicial
+( ) Seguimento/Monitoramento
+( ) Denúncia
+( ) Renovação de Licença
+Última inspeção: ____/_____/____
+1. Identificação do Serviço
+Razão social:
+Nome fantasia:
+CNPJ:
+Endereço:
+Município: Estado: CEP:
+Fax:( ) Telefone:( )
+e - mail:
+Natureza do Serviço:
+( ) Público ( ) Privado ( ) Privado – SUS ( ) Filantrópico-SUS
+CNES n°: OUTROS:
+Licença Sanitária n°: Data de validade: ____/____/____
+2. Recursos humanos Nível Sim Não
+2.1. Responsabilidade técnica e administrativa
+2.1.1. Médico responsável técnico
+______________________________________________________
+III
+2.1.2. Médico responsável técnico substituto
+______________________________________________________
+INF
+2.1.3. Responsável Administrativo:
+______________________________________________________
+INF
+2.2. Pessoal Nível Sim Não
+2.2.1. Programa de Capacitação de Recursos Humanos com acompanhamento e avaliação. II
+2.2.2. Programa de Imunização contra Hepatite B. III
+2.2.3. Programa de Controle Médico de Saúde Ocupacional (PCMSO) elaborado de acordo com o Programa de Prevenção de Riscos Ambientais (PPRA). II
+2.2.4. Registro e notificação de acidente de trabalho. II
+Observações:
+3. Atividades realizadas Nível Sim Não
+3.1. Captação de doadores INF
+3.2. Coleta de sangue
+3.2.1. Interna
+3.2.2. Externa
+3.3. Processamento de sangue
+3.4. Testes imuno-hematológicos do doador
+3.5. Testes imuno-hematológicos do receptor
+3.6. Testes para marcadores de doenças infecciosas no sangue do doador
+3.7. Armazenamento de sangue e componentes
+3.8. Distribuição de sangue e componentes
+3.9. Transporte de sangue e componentes
+3.10. Transfusão de sangue
+3.11. Procedimentos Especiais Sim Não
+3.11.1. Transfusão de Substituição 3.11.1.1. Recém-nascidos (exsangüíneo-transfusão)
+3.11.1.2. Adultos
+3.11.2. Programas de transfusão autóloga 3.11.2.1. Pré-depósito
+3.11.2.2. Hemodiluição intra-operatória
+3.11.2.3. Recuperação intra-operatória do sangue (máquina salvadora de células)
+3.11.3. Transfusões Especiais 3.11.3.1. Transfusão intra-uterina
+3.11.3.2. Suporte hemoterápico em transplante de órgãos (medula óssea e órgãos sólidos)
+3.11.3.3. Transfusão Domiciliar
+3.11.3.4. Outras
+3.11.4. Métodos de Biologia Molecular 3.11.4.1. Imuno-hematologia (genotipagem)
+3.11.4.2. HLA (Antígenos Leucocitários Humanos)
+3.11.4.3. Outros (pesquisa)
+3.11.5. Aféreses 3.11.5.1. Não terapêutica
+3.11.5.2. Terapêutica
+3.11.5.3. Obtenção de produtos especiais (exemplo: Células - Tronco)
+3.11.6. Fenotipagem para outros antígenos eritrocitários 3.11.6.1. Cadastro de doadores fenotipados
+3.11.6.2. Cadastro de doadores com fenótipos raros
+3.11.7. Irradiação de hemocomponentes
+3.11.8. Atendimento à pacientes 3.11.8.1. Coagulopatas
+3.11.8.2. Hemoglobinopatas
+3.11.8.3. Oncohematológicos
+3.11.8.4. Outros
+3.11.9. Doação Autóloga
+3.11.10. Sangria Terapêutica
+4. Terceirização Nível Sim Não
+4.1. Serviços realizados por terceiros INF
+4.1.1. Imuno-hematologia de doador
+4.1.2. Imuno-hematologia de receptor
+4.1.3. Sorologia
+4.1.4. Biologia Molecular
+4.1.5. Processamento
+4.1.6. Irradiação de hemocomponentes
+4.1.7. Transporte de hemocomponentes
+4.1.8. Resíduos (coleta e tratamento)
+4.1.9. Manutenção/calibração de equipamentos
+4.1.10. Serviços Gerais
+4.1.11. Outros
+Observação:
+Nível Sim Não
+4.2. Prestação de Serviços a Terceiros INF
+4.2.1. Imuno-hematologia de doador
+4.2.2. Imuno-hematologia de receptor
+4.2.3. Sorologia
+4.2.4. Biologia Molecular
+4.2.5. Processamento
+4.2.6. Irradiação de hemocomponentes
+4.2.7. Transporte de hemocomponentes
+4.2.8. Outros
+Observação:
+5. Registros Nível Sim Não
+5.1. Sistema de codificação desde a coleta até a liberação, que garanta rastreabilidade do produto (hemocomponentes) e do pessoal técnico responsável pelas atividades (registros informatizados ou manuais). III
+5.2. Documentação que envolve cada doação e transfusão é arquivada de forma a manter a sua integridade pelo período proposto na legislação vigente (20 anos). III
+5.3. Informatizados INF
+5.3.1. Sistemas de segurança dos dados e informações. III
+5.3.2. Os softwares são testados, quanto aos processos operacionais do ciclo do sangue, antes de sua utilização e quando houver mudanças. III
+5.3.3. Procedimentos de contingências para casos de falhas operacionais do sistema de informação – substituição provisória por registros manuais. III
+5.3.4. Treinamento para utilização do sistema informatizado. II
+5.4. Manuais INF
+5.4.1. Dados e informações legíveis e seguros. III
+Observações:
+6. Estrutura Física Nível Sim Não
+6.1. Projeto arquitetônico aprovado pelo órgão competente. I
+6.2. Edificação correspondente à planta arquitetônica aprovada pelo órgão competente. I
+6.3. Ambientes, salas e setores identificados e ou sinalizados de acordo com as normas de biossegurança e de saúde do trabalhador. I
+6.4. O material de revestimento de pisos, paredes, bancadas e tetos atendem as exigências legais. II
+6.5. Proteção contra entrada de animais sinantrópicos (ex.: insetos e roedores) e processos definidos para controle de pragas. II
+6.6. Bom estado de conservação, manutenção e limpeza. II
+Observações:
+7. Equipamentos e dispositivos Nível Sim Não
+7.1. Sistema emergencial de energia elétrica (grupo gerador de emergência com capacidade de acordo com a carga instalada). III
+7.1.1 Procedimentos escritos com definição de plano de contingência em casos de corte de energia elétrica. II
+7.2. Equipamentos de combate a incêndio dentro do prazo de validade (programa de prevenção e combate a incêndios). I
+7.3. Equipamentos críticos com identificação única que permita sua completa rastreabilidade nos processos. I
+7.4. Realiza/registra qualificação dos equipamentos. II
+7.5. Realiza/registra manutenção corretiva e preventiva dos equipamentos. II
+7.5.1. Contrato e cronograma de manutenção preventiva dos equipamentos. II
+7.6. Realiza/registra calibração/aferição periódica de equipamentos que medem ou dependem de parâmetros físicos. III
+7.7. Os equipamentos com defeitos claramente identificados e/ou removidos da área de trabalho. I
+Observações:
+8. Biossegurança
+Nome do responsável:
+Formação profissional:
+Contato:
+8. Biossegurança Nível Sim Não
+8.1. POPs ou instruções escritas contemplam medidas de biossegurança. II
+8.2. Treinamento periódico da equipe envolvida em procedimentos técnicos em biossegurança, inclusive da equipe terceirizada. II
+8.3. EPIs e EPCs de acordo com as legislações vigentes. II
+8.4. Procedimentos de limpeza diária, desinfecção e esterilização, quando aplicável, das superfícies, instalações, equipamentos, e materiais. III
+8.4.1. Procedimentos escritos de acordo com as instruções dos fabricantes de saneantes regularizados juntos à ANVISA. II
+8.5. Insumos (saneantes, antissépticos, soluções, outros) cujo fabricante permita manipulação, aliquotagem ou dispensação estão rotulados de forma a garantir sua identificação, data da manipulação, data de validade e responsável pela manipulação. I
+Observações:
+9. Gerenciamento de Resíduos
+Nome do responsável:
+Formação profissional:
+Contato:
+9. Gerenciamento de Resíduos Nível Sim Não
+9.1. Plano de Gerenciamento de Resíduos de Serviços de Saúde (PGRSS), aprovado pelos órgãos competentes. II
+9.2. Treinamento de equipe envolvida no manejo de resíduos de serviços de saúde inclusive da equipe terceirizada. II
+9.3. Infraestrutura compatível para manejo de resíduos de serviços de saúde (área física específica, equipamentos e materiais). II
+9.4.Transporte, tratamento e destinação final dos resíduos realizados por empresa contratada, regularizada junto aos órgãos de vigilância sanitária e ambiental. I
+Observações:
+10. Hemovigilância/Retrovigilância
+Nome do responsável:
+Formação profissional:
+Contato:
+10.1. Hemovigilância Nível Sim Não
+10.1.1 Registro no prontuário do paciente e na ficha de transfusão todas as informações relativas à reação transfusional e condutas adotadas. III
+10.1.2. Procedimentos estabelecidos, com respectivos registros, para resolução em casos de reações transfusionais, que inclua a detecção, tratamento, prevenção e notificação das reações transfusionais. II
+10.1.3. Capacitação de profissionais para detecção e condutas frente a eventos adversos à transfusão. II
+10.1.4. Notifica eventos adversos no NOTIVISA. I
+10.2. Retrovigilância Nível Sim Não
+10.2.1. Procedimentos estabelecidos para investigação de retrovigilância. II
+10.2.2. Documento formal (contrato ou similar) que defina responsabilidades no processo de investigação entre o fornecedor de hemocomponentes e serviço o transfusional. II
+10.2.3. Convoca o doador sob investigação para coleta de 2° amostra e no caso de soroconversão confirmada atualiza o seu registro de forma a bloqueá-lo para doações futuras. III
+10.2.4. Comunicação do processo de investigação instaurado a VISA competente. I
+Observações:
+11. Gestão de Qualidade
+Nome do responsável:
+Formação profissional:
+Contato:
+11. Gestão de Qualidade Nível Sim Não
+11.1. Pessoal qualificado/capacitado. II
+11.2. Estrutura organizacional com responsabilidade definida para cada setor do serviço. I
+11.3. POP técnicos e administrativos elaborados de acordo com as normas técnicas vigentes (datados e assinados pelo Responsável Técnico e supervisor da área ou por responsável definido pela política de qualidade). I
+11.4. Auditoria interna. I
+11.5. Documentos de fácil leitura, legíveis, com conteúdo único e claramente definido, originais, aprovados, datados e assinados por pessoal apropriado e autorizado. II
+11.6. Avaliação sistemática de todos os procedimentos adotados pelo serviço, principalmente no caso de alteração do processo. II
+11.6.1. Treinamento sistemático de pessoal para toda e qualquer alteração de atividade. III
+11.7. Procedimentos estabelecidos e registrados para tratamento de não conformidades e medidas corretivas. II
+11.8. Procedimentos estabelecidos e registrados para lidar com as reclamações. I
+11.9. Procedimentos estabelecidos e registrados em casos de produtos não conformes. II
+11.9.1. Procedimentos para identificar e notificar ao Sistema Nacional de Vigilância Sanitária não conformidades relacionadas à qualidade e segurança de produtos. I
+11.10. Procedimento estabelecido para a qualificação de fornecedores. II
+11.11. Validação de processos considerados críticos para a garantia da qualidade dos produtos e serviços, antes de sua introdução e sempre que alterados. III
+Observações:
+12. Depósito de materiais, insumos e reagentes
+Nome do responsável:
+Formação profissional:
+Contato:
+12. Depósito de materiais e insumos Nível Sim Não
+12.1. Área (s) específica (s) destinada (s) ao armazenamento dos produtos e insumos dentro do serviço de hemoterapia. INF
+12.2. Área em bom estado de conservação, organização e higiene, sistema de controle de temperatura, umidade e de ventilação do ambiente. III
+12.3. Mecanismos de prevenção e combate de animais sinantrópicos (ex.: insetos e roedores). II
+12.4. POP atualizado e disponível. II
+12.4.1. Atividades executadas conforme POP. III
+12.5. Controle de entrada e saída de material, realizado de acordo com legislações e normas técnicas vigentes, devidamente registradas. Parâmetro: prazo de validade. II
+12.6. Ordenamento e racionalidade no armazenamento dos materiais Parâmetros: condições de conservação, prazo de validade. II
+12.7. Bolsas plásticas para coleta de sangue, insumos termolábeis, fotossensíveis e outros produtos críticos armazenados na temperatura especificada pelo fabricante e não expostas ao sol. III
+12.8. Insumos registrados e/ou autorizados pelo órgão de saúde competente, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+12.9. Inspeção dos produtos e insumos no recebimento, a fim de comprovar se os mesmos estão dentro das especificações estabelecidas. II
+Observações:
+ROTEIRO DE INSPEÇÃO EM SERVIÇOS DE HEMOTERAPIA
+MÓDULO II
+CAPTAÇÃO, RECEPÇÃO/REGISTRO, TRIAGEM CLÍNICA E COLETA
+1. Captação de Doadores
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+1.1. Recursos Humanos Nível Sim Não
+1.1.1. Pessoal qualificado/capacitado. II
+1.1.2. Supervisão técnica por profissional de nível superior capacitado II
+1.2. Captação de doadores Nível Sim Não
+1.2.1. Programa de captação de doadores. II
+1.2.2. POP atualizado e disponível. II
+1.2.3. Atividades executadas conforme POP. II
+Observações:
+2. Recepção/ Registro de Doadores
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+2.1. Recursos Humanos Nível Sim Não
+2.1.1. Pessoal qualificado/capacitado. II
+2.2. Infra-estrutura/Procedimentos Nível Sim Não
+2.2.1. Área e fluxo de acordo com a legislação vigente (área física específica, sanitários e sala de espera). I
+2.2.2. POP atualizado e disponível. II
+2.2.2.1. Atividades executadas conforme POP. III
+2.2.3. Cadastro de doadores com identificação completa (nome completo; sexo; data de nascimento; número e órgão expedidor do documento de identificação com foto, nacionalidade/naturalidade, filiação, ocupação habitual, endereço e telefone de contato, nº. de registro de candidato no serviço de hemoterapia ou no programa de doação, data do comparecimento do candidato no serviço). II
+2.2.4. Candidatos à doação são informados sobre as condições básicas e desconfortos associados à doação, doenças transmissíveis pelo sangue e a importância das respostas do doador na triagem clínica. II
+2.2.5. Manutenção dos registros de doadores de forma segura, confiável e sigilosa. III
+2.2.6. Mecanismo de registros e identificação do candidato bloqueado em triagens anteriores. III
+2.2.7. Procedimentos estabelecidos para convocação de doador inapto e/ou encaminhamento a serviços de referência com os devidos esclarecimentos. II
+Observações:
+3. Triagem Hematológica
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+3.1. Recursos Humanos Nível Sim Não
+3.1.1. Pessoal qualificado/capacitado. II
+3.2. Infra-estrutura/Procedimentos
+3.2.1. Sala/área* física conforme legislação vigente (sala ou área específica, fluxo, iluminação, ventilação).
+*Área de triagem hematológica pode estar contida na sala de triagem clínica (RDC 50).
+I
+3.2.2. POP atualizado e disponível. II
+3.2.2.1. Atividades executadas conforme POP. III
+3.2.3. Técnica usada: __________________________________________
+Mulheres (Hb12,5g/dl ou Ht38)* Homens (Hb13,0g/dl ou Ht39)*
+*valores mínimos
+INF
+3.2.4. Equipamentos qualificados e em conformidade com as técnicas utilizadas. II
+3.2.5. Mecanismo de avaliação e controle frequente dos resultados. II
+3.2.6. Registro dos resultados dos procedimentos realizados. III
+8
+4. Triagem Clínica
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+4.1. Recursos Humanos Nível Sim Não
+4.1.1. Pessoal qualificado/capacitado. II
+4.1.2. Atividade realizada por profissional da saúde de nível superior sob supervisão médica. II
+4.2. Infra-estrutura/Procedimentos Nível Sim Não
+4.2.1. Sala que garanta privacidade do doador e sigilo das informações. II
+4.2.2. POP atualizado e disponível. II
+4.2.2.1. Atividades executadas conforme POP. III
+4.2.3. Ficha de triagem clínica do doador padronizada com registros de aferição de (pulso, pressão arterial, hematócrito/hemoglobina, temperatura e peso do candidato a doador) e demais critérios de seleção de doadores, com data e identificação do candidato e do profissional que realizou a triagem. III
+4.2.3.1. Ficha de triagem clínica do doador preenchida a cada nova doação III
+4.2.4. Registro, na ficha de triagem clínica do doador, da causa da inaptidão e do encaminhamento ao serviço de referência, quando necessário. II
+4.2.5. Equipamentos em conformidade com a técnica utilizada. II
+4.2.6. Termo de consentimento de doação livre e esclarecido, com a devida assinatura do doador constando informações sobre: riscos do processo de doação, cuidados durante e após a coleta, orientações sobre reações adversas à doação, o destino do sangue doado (transfusão, pesquisa, produção de hemoderivados, reagentes e outros), os testes realizados e a possibilidade de falsos resultados, incorporação em cadastro de doadores, possibilidade de busca ativa pelos órgãos de vigilância em saúde. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Redações Anteriores I
+4.2.6.1. No caso de utilização de sistema informatizado, garante correlação com do Termo de Consentimento Livre e Esclarecido. I
+4.2.7. Procedimento confidencial de auto-exclusão. INF
+4.2.8. Mecanismo de bloqueio e readmissão de doadores considerados inaptos na triagem clínica. III
+Observações:
+5. Coleta de Sangue
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+5.1. Recursos Humanos Nível Sim Não
+5.1.1. Pessoal qualificado/capacitado. II
+5.1.2. Coleta de sangue sob supervisão de médico ou de enfermeiro. II
+5.2. Infra-estrutura/Procedimentos Nível Sim Não
+5.2.1. Sala adequada para coleta (limpeza, climatização, iluminação, fluxo). II
+5.2.2. Controle e registro da temperatura do ambiente (22 2ºC). II
+5.2.3. POP atualizado e disponível. II
+5.2.3.1. Atividades executadas conforme POP. III
+5.2.4. Técnica de higienização do braço do doador contempla duas etapas de antissepsia (antissépticos registrados na ANVISA como produtos para saúde). III
+5.2.5. Volume adequado de coleta (450 mL 50 mL - 8 mL/kg peso para mulheres e 9 mL/kg peso para homens) determinado e registrado pelo triador, não devendo exceder a 525 mL de sangue total coletado. III
+5.2.6. Coleta de bolsa com 300 a 404 mL de sangue total identificada como unidade de sangue total de baixo volume. II
+5.2.7. Procedimento definido para homogeneização da bolsa de sangue durante a coleta. II
+5.2.8. Registro do tempo de coleta (tempo máximo de 15min). III
+5.2.9. Tubo coletor selado ao fim da coleta garantindo a esterilidade do sistema. Permite-se o fechamento com dois nós no tubo até o momento do processamento onde deverá ser obrigatoriamente selado. II
+5.2.10. Insumos utilizados registrados e/ou autorizados pela ANVISA, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+5.2.11. Equipamentos qualificados e em conformidade com técnicas utilizadas. II
+5.2.11.1. Equipamentos devidamente identificados com mecanismos que relacionem o equipamento a cada coleta realizada. I
+5.2.12. São corretamente identificadas e inter-relacionadas a ficha do doador, a unidade de sangue coletada e as amostras para testes laboratoriais (correspondência entre código de barras ou etiquetas impressas). III
+5.2.13. Amostras para as provas laboratoriais colhidas e rotuladas no momento da coleta contendo identificação da instituição coletora, data da coleta, identificação numérica ou alfa numérica do doador/doação, identificação do coletor. III
+5.2.14. Etiquetas firmemente aderidas sobre o rótulo original da bolsa plástica contendo identificação da instituição coletora, data da coleta, identificação numérica ou alfa numérica do doador/doação, identificação do coletor. II
+5.2.15. Armazenamento de sangue total para o processamento (20 a 24°C para a produção de plaquetas ou 2° e 6°C, quando não se produz plaquetas). III
+5.3. Cuidados com o Doador
+5.3.1. Assistência médica, devidamente formalizada, durante o horário de coleta para casos de eventos adversos à doação. III
+5.3.2. Procedimentos escritos para detecção, investigação, registro de reação adversa ocorrida durante e/ou após a coleta na ficha de triagem do doador. II
+5.3.3. Procedimentos para atendimento das reações adversas do doador estabelecidos em área privativa com equipamentos e medicamentos disponíveis (Portaria GM/MS n.º 2048, de 5 de novembro de 2002).* III
+* A recuperação de doadores pode ser feita em sala exclusiva, área contida na sala de coleta ou na sala de triagem clínica com garantia de privacidade do doador (RDC 50).
+5.3.3.1. Registros de treinamento da equipe profissional para atendimento em situações de emergências. II
+5.3.4. Serviço de referência para atendimento de urgências ou emergências. II
+5.3.5. O doador recebe orientação quanto aos cuidados a serem tomados após a doação. II
+5.3.6. Oferece hidratação oral ao doador após a coleta. I
+Observações:
+5.4. Coleta Externa Móvel (itens para verificação além dos exigidos para coleta de sangue de doadores) Nível Sim Não
+5.4.1. Infraestrutura aprovada pela vigilância sanitária competente. I
+5.4.2. Registros referentes à informação da programação de coleta externa a Vigilância Sanitária competente. I
+5.4.3. Presença de médico e enfermeiro durante a coleta externa. II
+5.4.4. Local adequado para armazenamento temporário das bolsas de sangue com controle de temperatura. III
+5.4.5. Validação do processo de transporte das bolsas coletadas que atendam aos parâmetros de acondicionamento, tempo previsto e controle de temperatura (1 a 10°C, exceto para produção de plaquetas, se produzirem, de 20 a 24°C). II
+5.4.6. Monitoramento de temperatura no processo de transporte no envio e recebimento do sangue total. III
+5.4.7. Manejo dos resíduos gerados durante a coleta e higienização da área de coleta. II
+Observações:
+6. Coleta de Sangue por Aférese
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+6.1. Recursos Humanos Nível Sim Não
+6.1.1. Pessoal qualificado/capacitado. II
+6.1.2. Médico hemoterapêuta responsável pela coleta de sangue por aférese. III
+6.2. Aspectos Gerais Nível Sim Não
+6.2.1. Área* física conforme legislação vigente (área específica, fluxo iluminação, ventilação).
+* Área para coleta por aférese pode estar contida na sala de coleta de sangue total
+II
+6.2.2 POP atualizado e disponível. II
+6.2.2.1. Atividades executadas conforme POP. III
+6.2.3. Critérios de seleção de doadores são os mesmos estabelecidos para doadores de sangue total, inclusive exames laboratoriais para infecções transmissíveis pelo sangue em amostras colhidas no mesmo dia da coleta (24 horas), exceto para coleta de Granulócitos, Linfócitos, Cel. Progenitora Hematopoiética (amostras colhidas até 72 horas). III
+6.2.4. Termo de consentimento livre e esclarecido, por escrito (relata o procedimento, possíveis complicações e risco ao doador - riscos relacionados ao uso de medicações, mobilizadores e de agentes hemossedimentantes, se couber). II
+6.2.5. Assistência médica, devidamente formalizada, durante o horário de coleta para casos de eventos adversos à doação. III
+6.2.6. Volume sanguíneo extracorpóreo não superior a 15 da volemia do doador. II
+6.2.7. Procedimentos para atendimento das reações adversas do doador estabelecidos em área privativa com equipamentos e medicamentos disponíveis (Portaria GM/MS n.º 2048, de 5 de novembro de 2002). III
+6.2.8. Procedimento de aférese registrado com: identificação do doador, anticoagulante empregado, tipo e volume de hemocomponente coletado, duração da coleta, drogas e doses administradas, reações adversas ocorridas e o tratamento aplicado, marca, lote, data de fabricação e validade dos insumos utilizados. III
+6.3. Plaquetaférese
+6.3.1. Intervalo mínimo entre duas plaquetaféreses é de 48 horas, no máximo 4 vezes ao mês e 24 vezes ao ano. Entre doação de sangue total e plaquetáferese o intervalo mínimo de 1 (um) mês. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Redações Anteriores III
+6.3.2. Contagem de plaquetas do doador, no mínimo, de 150.000 plaquetas/L no dia da coleta por aférese ou três dias que antecede. III
+6.4. Leucaférese
+6.4.1. Coleta realizada somente se a contagem de leucócitos do doador for superior a 5.000 leucócitos/L. III
+6.4.2. Realizada contagem de granulócitos em todos os concentrados de granulócitos coletados. II
+6.4.3. Protocolos específicos para coleta de leucócitos por aférese (granulócitos) com especificação dos agentes mobilizadores (G-CSF e/ou corticosteróides) e agentes hemossedimentantes. II
+6.5. Plasmaférese
+6.5.1. Plasmaférese para fins industriais (serviço público e mediante autorização do Ministério da Saúde). I
+6.5.2. Intervalo mínimo de doação é de 48 h, no máximo 4 vezes em dois meses, sendo obrigatório neste caso um intervalo de pelo menos (2) dois meses antes da próxima doação. O número máximo de doações anual é de 12 vezes ao ano. III
+6.5.3. Dosagem de proteínas séricas e de IgG e IgM monitoradas em intervalos de 4 meses em doadores freqüentes. II
+6.5.4. Volume máximo por coleta não superior a 600 mL (10 mL/Kg). III
+6.6. Coleta de múltiplos componentes
+6.6.1. Para coleta de concentrados de hemácias e concentrados de plaquetas, o doador tem peso superior a 60 kg, hemoglobina de 13 g/dL, contagem de plaquetas igual ou superior a 150.000 plaquetas/L e o volume coletado é inferior a 9 mL/kg para homens e 8 mL/Kg para mulheres. III
+6.6.2. Coleta de duas unidades de concentrado de hemácias o doador tem peso superior a 70 kg e hemoglobina superior a 14g/dL. III
+6.6.3. Intervalo mínimo entre as doações é de 4 meses para os homens e de 6 meses para as mulheres. III
+Observações:
+7. Coleta de Sangue para Uso Autólogo
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+7.1. Recursos Humanos Nível Sim Não
+7.1.1. Pessoal qualificado/capacitado. II
+7.1.2. Médico responsável pelo programa de transfusão autóloga pré-operatória e de recuperação intraoperatória do serviço de hemoterapia. III
+7.2. Infra-estrutura/Procedimentos Nível Sim Não
+7.2.1. Procedimento de doação autóloga pré-operatória aprovada pelo médico hemoterapeuta e médico assistente do doador/paciente (solicitação de doação). III
+7.2.2. POP atualizado e disponível. II
+7.2.2.1. Atividades executadas conforme POP. III
+7.2.3. Termo de consentimento informado para realização da coleta assinado pelo doador-paciente ou por seu responsável. III
+7.2.4. Protocolo de procedimento com definição de critérios para aceitação e rejeição de doadores autólogos. II
+7.2.5. Doações autólogas submetidas aos mesmos testes imuno-hematológicos e para detecção de infecções transmissíveis pelo sangue e realizados nas doações alogênicas. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Redações Anteriores III
+7.2.6. Protocolo de procedimentos para unidades autólogas com testes reagentes: etiqueta de identificação do marcador reagente/positivo e documento de autorização assinado pelo médico assistente e medico hemoterapeuta. II
+7.2.7. A unidade está rotulada como “doação autóloga”, segregado das demais bolsas de doações alogênicas e somente utilizadas para este fim. III
+Observações:
+GUIA PARA INSPEÇÃO EM SERVIÇOS DE HEMOTERAPIA
+MÓDULO III
+TRIAGEM LABORATORIAL
+1. Testes Sorológicos
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+1.1. Prestação de serviços para terceiros ( ) Sim ( ) Não
+1.1.1. Listar instituições:
+1.1.2 Terceirização Nível Sim Não
+Contrato, convênio ou termo de compromisso para realização de testes laboratoriais, contemplando as determinações da legislação vigente, inclusive, as responsabilidades pelo transporte e a necessidade de regularização dos serviços envolvidos junto à vigilância sanitária. II
+1.2. Infraestrutura Nível Sim Não
+1.2.1. Estrutura física conforme legislação. II
+1.2.2. Equipamentos qualificados e em conformidade com técnicas e conjuntos de reagentes (Kits) utilizados. III
+1.2.3. Calibração de pipetas e termômetros dentro do prazo de validade. II
+1.2.4. Controle e registro da temperatura do laboratório (22 2ºC - mudança na definição do intervalo deve ser tecnicamente justificada). II
+Observações:
+1.3. Recursos Humanos Nível Sim Não
+1.3.1. Pessoal qualificado/capacitado. II
+1.3.2. Supervisão técnica por profissional de nível superior habilitado. II
+Observações:
+1.4. Procedimentos realizados Nível Sim Não
+1.4.1. POP atualizado e disponível. II
+1.4.1.1. Atividades executadas conforme POP. III
+1.4.2. Identificação dos tubos com amostras de doadores para a realização dos testes sorológicos, inclusive dos recebidos de outros serviços. III
+1.4.2.1. Utiliza tubos primários padronizados desde a coleta até a fase de pipetagem no equipamento automatizado, incluindo os recebidos de outros serviços. II
+1.4.3. Amostras de doadores transportadas de forma segura a fim de manter integridade da amostra e segurança do pessoal envolvido. II
+1.4.4. Testes sorológicos de acordo com a legislação vigente:
+1.4.4.1. (Um) teste Anti-HIV 1, 2* ou 1 (Um) teste combinado AgAc **
+Métodos:___________________________________________________________
+* Incluindo pesquisa do grupo O; ** AgAntígeno; Ac Anticorpo.
+III
+1.4.4.2. Anti-HTVL I/II
+Método(s):__________________________________________________________
+III
+1.4.4.3. Anti-HCV (Ac ou combinado AgAc)
+Método(s): _________________________________________________________
+__________________________________________________________________
+III
+1.4.4.4. HBsAg
+Método(s):_________________________________________________________
+__________________________________________________________________
+III
+1.4.4.5. Anti-HBc (IgG ou IgG IgM)
+Método(s): _________________________________________________________
+III
+1.4.4.6. Doença de Chagas (Anti-T. cruzi)
+Método(s):__________________________________________________________
+__________________________________________________________________
+III
+1.4.4.7. Sífilis (treponêmicos ou não-treponêmicos)
+Método(s):_________________________________________________________
+_________________________________________________________________
+III
+1.4.4.8. Malária*** (detecção de plasmódio ou antígenos plasmodiais)
+Método(s):__________________________________________________________
+__________________________________________________________________
+*** Em zona endêmica com transmissão ativa
+III
+1.4.4.9. Citomegalovírus****
+Método(s):_________________________________________________________
+III
+****Transplantes de CPH e de órgãos com sorologia não reagente, recém-nascidos com peso inferior 1200g de mães CMV (-), transfusão intra-uterina.
+Outros: ____________________________________________________________ INF
+1.4.5. Protocolos dos ensaios contendo identificação dos testes, nome do fabricante do reagente/kit, número do lote, prazo de validade e identificação do responsável pela execução do(s) ensaio(s). III
+1.4.6. Registra as medidas adotadas no caso de resultados discordantes nos testes para HIV, HCV ou HBV. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Redações Anteriores III
+1.4.7. Ensaios realizados rigorosamente de acordo com o manual de instrução do fabricante do reagente/kit. III
+1.4.8. Realiza/ registra a repetição dos testes sorológicos em duplicata quando os resultados iniciais foram reagentes ou inconclusivos. III
+1.4.8.1. Quando todos os testes da repetição em duplicata resultarem em não reagente, há procedimentos escritos com critérios para avaliação dos resultados da placa no intuito de investigar as possíveis causas e medidas corretivas a serem aplicadas. II
+1.4.9. Realiza os testes confirmatórios. INF
+1.4.9.1. Caso não realiza os testes confirmatórios encaminha as amostras ou doador para serviços de referência, recebe os resultados dos testes confirmatórios e comunica ao doador e encaminha a serviços de referência (se couber). I
+1.4.10. Realiza/registra procedimentos quando os resultados inconclusivos/indeterminados. III
+1.4.11. Plasmateca e/ou Soroteca identificadas, registradas e armazenadas por pelo menos seis (6) meses após a doação em temperatura de 20°C negativos ou inferior. II
+1.4.12. Realiza/registra CQI – Controle de Qualidade Interno. III
+1.4.12.1. Caso o próprio serviço prepare as amostras utilizadas no CQI, esta é caracterizada e produzida mediante processo validado de acordo com o definido pelo Ministério da Saúde. III
+1.4.12.2. Procedimentos escritos com definição do mecanismo de monitoramento e especificações dos critérios de aceitação. Utiliza pelo menos 1 controle de qualidade interno positivo por marcador. II
+1.4.12.3. Adota/registra medidas corretivas quando identificadas não conformidades nos resultados do CQI. III
+1.4.13. Participa de AEQ – Avaliação Externa da Qualidade.
+Programa: ________________________________________________________
+II
+1.4.13.1. O teste da amostra do painel de controle de qualidade externo é realizado nas mesmas condições e procedimentos adotados na rotina laboratorial. II
+1.4.13.2. Analisa resultados discrepantes e adota/registra medidas corretivas quando identificadas não conformidades. III
+1.4.14. Insumos utilizados registrados e/ou autorizados pela ANVISA, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+1.4.15. Reagentes aliquotados ou manipulados segundo determinação do fabricante com rótulo de identificação, data do preparo, data de validade e profissional responsável pelo procedimento. III
+1.4.16. Os conjuntos de reagentes (kits) são apropriados para triagem laboratorial em serviços de hemoterapia (conforme expresso nas especificações da bula ou pela observação da sensibilidade que deve ser próxima de 100). III
+1.4.17. Armazenamento de reagentes e amostras em áreas específicas e identificadas, podendo ser em compartimentos diferentes no mesmo equipamento refrigerador. II
+1.4.17.1. Sistema ordenado, de acordo com o prazo de validade, para o acondicionamento dos reagentes em uso. II
+1.4.18. Controle de qualidade lote a lote e por remessa dos reagentes, antes do uso, a fim de comprovar se os mesmos estão dentro do padrão estabelecido pelo fabricante e que não foram alterados durante o transporte, verificando-se pelo menos: aspecto visual dos reagentes, identificação dos reagentes, integridade da embalagem, instruções de uso do fabricante (bula), critérios de acondicionamento e transporte, validade do lote e realização de testes em no mínimo 06 amostras conhecidas reativas e não reativas. III
+1.4.19. Relatório/resultado emitido por equipamento (processo automatizado) ou mapa de trabalho (manual) com a descrição dos cálculos desenvolvidos para avaliação dos resultados dos testes realizados e os critérios para aceitação e liberação de resultados. III
+1.4.20. Resultados dos ensaios sorológicos interfaceados ao sistema informatizado. INF
+1.4.20.1. Na ausência do interfaceamento, ou outra forma eletrônica devidamente validada, os resultados são conferidos por mais de uma pessoa para liberação. III
+1.4.21. Mecanismo para bloqueio de doadores inaptos na triagem laboratorial. III
+1.4.22. Registros de comunicação/informação à Vigilância em Saúde sobre doadores com resultados reagentes/positivos na 2ª amostra e aqueles que não tenham comparecido para coleta de 2ª amostra. II
+1.4.23. Registros da notificação à Vigilância em Saúde dos casos de diagnósticos confirmados para marcadores de infecções transmissíveis pelo sangue de notificação compulsória. II
+1.4.24. Procedimentos estabelecidos e escritos para o manejo dos resíduos produzidos. III
+Observações:
+2. Testes de Biologia Molecular
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+2.1. Prestação de serviços para terceiros ( ) Sim ( ) Não
+2.1.1. Listar instituições:
+2.2. Testes realizados por terceiros ( ) Sim ( ) Não
+Neste caso, avaliar os itens de controle referentes aos procedimentos realizados (2.4.1, 2.4.1.1, 2.4.2, 2.4.3)
+2.2.1. Listar instituições:
+2.3. Terceirização Nível Sim Não
+Contrato, convênio ou termo de compromisso para realização de testes laboratoriais, contemplando as determinações da legislação vigente, inclusive, as responsabilidades pelo transporte das amostras, os mecanismos de envio dos resultados e a necessidade de regularização dos serviços envolvidos junto à vigilância sanitária. II
+2.2. Infraestrutura Nível Sim Não
+2.2.1. Sistema automatizado. INF
+2.2.2. Sistema semi-automatizado. INF
+2.2.3. No caso de metodologias de biologia molecular em plataformas fechadas, que dispensem as estruturas físicas definidas em legislação, há memorial descritivo com declaração do responsável pelo projeto e pelo responsável técnico do serviço que a conformação garante segurança e qualidade dos procedimentos. II
+2.2.4. Protocolos e registros de limpeza das áreas de trabalho de acordo com as instruções do fabricante e nas Boas Práticas Laboratoriais III
+2.2.5. No caso de utilização de radiação por meio de luz ultravioleta, em sala com possibilidade de circulação de pessoas, apresenta dispositivo de sinalização que indique o acionamento do procedimento. II
+2.2.6. Equipamentos qualificados e em conformidade com técnicas e conjuntos de reagentes (Kits) utilizados. III
+2.2.7. Registros de manutenções e/ou calibrações dos equipamentos. III
+2.2.8. Controle e registro da temperatura do laboratório (22 2ºC – mudança na definição do intervalo deve ser tecnicamente justificada). II
+Observações:
+2.3. Recursos Humanos Nível Sim Não
+2.3.1. Pessoal qualificado/capacitado II
+2.3.2. Supervisão técnica por profissional de nível superior habilitado e capacitado II
+Observações:
+2.4. Procedimentos realizados Nível Sim Não
+2.4.1. POP atualizado e disponível. II
+2.4.1.1. Atividades executadas conforme POP. III
+2.4.2. Padronização e identificação dos tubos com as amostras para a realização dos testes, inclusive dos recebidos de outros serviços. III
+2.4.3. Amostras de doadores transportadas de forma segura a fim de manter integridade da amostra e segurança do pessoal envolvido. II
+2.4.4. Testes de acordo com a legislação vigente:
+2.4.4.1. Teste de ácido nucléico (NAT) para HIV em doadores de sangue
+Fabricante:____________________________________________________
+III
+INF
+2.4.4.2. Teste de ácido nucléico (NAT) para HVC em doadores de sangue
+Fabricante:____________________________________________________
+III
+INF
+2.4.4.3. Teste de ácido nucléico (NAT) para HBV (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Fabricante:____________________________________________________
+INF
+Outros:____________________________________________________________ INF
+____________________________________________________________________________________________________________________________________
+2.4.5. Protocolos dos ensaios contendo identificação dos testes, nome do fabricante do reagente/kit, número do lote, prazo de validade e identificação do responsável pela execução do(s) ensaio(s). III
+2.4.6. Ensaios realizados rigorosamente de acordo com o manual de instrução do fabricante do reagente/kit. III
+2.4.7. No caso de amostras positivas ou inválidas em pool, realiza/registra os testes nas amostras individuais com identificação/ discriminação dos marcadores envolvidos. III
+2.4.8. Plasmateca e/ou Soroteca identificadas, registradas e armazenadas por pelo menos seis meses após a doação, em volume suficiente e em temperatura de 20°C negativos ou inferior. II
+2.4.9. Realiza/registra CQI – Controle de Qualidade Interno. III
+2.4.9.1. Caso o próprio serviço prepare as amostras do CQI, este é realizado mediante processo validado. III
+2.4.9.2. As alíquotas das amostras testes armazenadas a -20°C e descongeladas apenas uma vez. II
+2.4.9.3. Protocolos de condutas/validação da corrida, mediante resultados do CQI. III
+2.4.10. Participa de AEQ – Avaliação Externa da Qualidade.
+Programa: ________________________________________________________
+II
+2.4.10.1. As amostras dos painéis são utilizadas nas mesmas condições e com os mesmos procedimentos adotados na rotina. II
+2.4.10.2. Adota/registra medidas corretivas quando identificadas não conformidades. III
+2.4.11. Insumos utilizados registrados e/ou autorizados pela ANVISA, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+2.4.12. Os calibradores e as sondas (primers) HIV, HCV e/ou HBV em uso, referentes ao mesmo lote que o conjunto reagente. III
+2.4.13. Os conjuntos diagnósticos (kits) são apropriados para triagem laboratorial em doadores de sangue (conforme expresso nas especificações da bula). III
+2.4.14. Armazenamento de reagentes e amostras em áreas específicas e identificadas de acordo com instruções do fabricante. II
+2.4.14.1. Sistema ordenado, de acordo com o prazo de validade, para o acondicionamento dos reagentes em uso. II
+2.4.15. Controle de qualidade por lote e remessa dos conjuntos de reagentes, antes do uso, a fim de comprovar se os mesmos estão dentro do padrão estabelecido pelo fabricante e que não foram alterados durante o transporte. II
+2.4.16. Resultados dos ensaios interfaceados ao sistema informatizado do serviço de hemoterapia ou adoção de mecanismo seguro de intercâmbio de dados. III
+2.4.17. Na ausência do interfaceamento, ou outra forma eletrônica devidamente validada, os resultados são conferidos por mais de uma pessoa para liberação. III
+2.4.18. Procedimentos escritos detalhando os critérios para aceitação e liberação da corrida de testes. II
+2.4.19. Mecanismo estabelecido e escrito para casos de resultados discordantes nos testes de detecção de ácido nucleico e testes sorológicos. III
+2.4.20. Mecanismo para bloqueio de doadores inaptos na triagem laboratorial. III
+Observações:
+3. Testes Imuno-hematológicos do Doador
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+3.1. Prestação de serviços para terceiros ( ) Sim ( ) Não
+3.1.1. Listar instituições:
+3.1.2 Terceirização Nível Sim Não
+Contrato, convênio ou termo de compromisso para realização de testes laboratoriais, contemplando as determinações da legislação vigente, inclusive, as responsabilidades pelo transporte e a necessidade de regularização dos serviços envolvidos junto à vigilância sanitária. II
+3.1. Infraestrutura Nível Sim Não
+3.1.1. Estrutura física conforme legislação. II
+3.1.2. Equipamentos qualificados e em conformidade com técnicas e conjuntos de reagentes (Kits) utilizados. III
+3.1.3. Calibração de pipetas e termômetros dentro do prazo de validade. II
+3.1.4. Controle e registro da temperatura do ambiente (22 2ºC - mudança na definição do intervalo deve ser tecnicamente justificada). II
+Observações:
+3.2. Recursos Humanos Nível Sim Não
+3.2.1. Pessoal qualificado/capacitado. II
+3.2.2. Supervisão técnica por profissional de nível superior habilitado. II
+Observações:
+3.3. Procedimentos realizados Nível Sim Não
+3.3.1. POP atualizado e disponível. II
+3.3.1.1. Atividades executadas conforme POP. III
+3.3.2. Identificação dos tubos primários padronizados com amostras de doadores para a realização dos testes, inclusive dos recebidos de outros serviços. III
+3.3.3. Amostras de doadores transportadas de forma segura a fim de manter integridade da amostra e segurança do pessoal envolvido. II
+3.3.4. Realiza/registra tipagem ABO direta a cada doação: uso de reagente anti-A, e anti-B (e Anti-AB, se policlonal).
+Método:_______________________________________________
+III
+3.3.5. Realiza/registra tipagem ABO reversa a cada doação (suspensão de hemácias A1, B e, opcionalmente A2 e O).
+Método:________________________________________________
+III
+3.3.6. Realiza/registra a determinação do tipo RhD a cada doação.
+Método:________________________________________________
+III
+3.3.6.1. Utilizam na rotina os soros para anti-RhD e controle de Rh do mesmo fabricante. III
+Caso resultado do soro controle for positiva considera-se inválida a tipagem RhD*.
+Método:________________________________________________
+* No caso de utilização de reagente anti-D produzido em meio salino, sem interferentes proteicos, não é obrigatório o uso de soro controle (verificar instruções do fabricante).
+3.3.6.2. Realiza/registra pesquisa de D fraco.
+Método: _________________________________________________________
+III
+3.3.7. Realiza/registra procedimento de resolução de discrepâncias ABO e/ou Rh(D) III
+3.3.8. Realiza/registra Pesquisa de Anticorpos Antieritrocitários Irregulares (PAI) a cada doação.
+Método: ___________________________________________
+III
+3.3.8.1. Realiza/registra Identificação de Anticorpos Irregulares (IAI).
+Método:__________________________________________
+INF
+3.3.9. Realiza/registra pesquisa de hemoglobina S na primeira doação, de acordo com a legislação vigente. III
+3.3.10. Protocolos e registros dos ensaios (dados brutos, resultados, interpretações) realizados contendo identificação dos testes, nome do fabricante do reagente/kit, número do lote, prazo de validade e identificação do responsável pela execução do(s) ensaio(s). III
+3.3.11. Ensaios realizados rigorosamente de acordo com instrução do fabricante do reagente/kit. III
+3.3.12. Insumos utilizados registrados e/ou autorizados pela ANVISA, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+3.3.13. Reagentes aliquotados ou manipulados segundo determinação do fabricante com rótulo de identificação, data do preparo, data de validade e profissional responsável pelo procedimento, devidamente validado e registrado. II
+3.3.14. Utiliza reagente produzido na unidade e/ou pelo hemocentro coordenador mediante autorização da ANVISA. III
+3.3.15. Armazenamento de reagentes e amostras em áreas específicas e identificadas, podendo ser em compartimentos diferentes no mesmo equipamento refrigerador. II
+3.3.15.1 Sistema ordenado, de acordo com o prazo de validade, para o acondicionamento dos reagentes em uso. II
+3.3.16. Controle de qualidade lote a lote e por remessa dos reagentes utilizados, antes do uso, a fim de comprovar se os mesmos estão dentro do padrão estabelecido pelo fabricante e que não foram alterados durante o transporte, verificando-se pelo menos: aspecto visual dos reagentes, identificação dos reagentes, integridade da embalagem, instruções de uso do fabricante (bula), critérios de acondicionamento e transporte, validade do lote e realização de testes laboratoriais de controle de qualidade de reagentes. III
+3.3.17. Realiza/registra CQI – Controle de Qualidade Interno. III
+3.3.17.1. Caso o próprio serviço prepare as amostras utilizadas no CQI, esta é caracterizada e produzida mediante processo validado de acordo com o definido pelo Ministério da Saúde. III
+3.3.17.2. Procedimentos escritos com definição do mecanismo de monitoramento sistemático e especificações dos critérios de aceitação. II
+3.3.17.3. Adota/registra medidas corretivas quando identificadas não conformidades nos resultados do CQI. III
+3.3.18. Participa de AEQ – Avaliação Externa da Qualidade.
+Programa: _____________________________________________
+II
+3.3.18.1. O teste da amostra do painel de controle de qualidade externo é realizado nas mesmas condições e procedimentos adotados na rotina laboratorial. II
+3.3.18.2. Adota/registra medidas corretivas quando identificadas não conformidades. III
+3.3.19. Resultados dos testes imuno-hematológicos interfaceados ao sistema informatizado do serviço. INF
+3.3.19.1. Na ausência do interfaceamento, ou outra forma eletrônica devidamente validada, os resultados são conferidos por mais de uma pessoa para liberação. III
+3.3.20. Procedimentos estabelecidos e escritos para o manejo dos resíduos produzidos. III
+Observações:
+GUIA PARA INSPEÇÃO EM SERVIÇOS DE HEMOTERAPIA
+MÓDULO IV
+PROCESSAMENTO, ROTULAGEM, ARMAZENAMENTO E DISTRIBUIÇÃO
+1. Processamento de Hemocomponentes
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+1.1. Recursos Humanos Nível Sim Não NA
+1.1.1. Pessoal qualificado/capacitado. II
+1.1.2. Supervisão técnica por profissional de nível superior habilitado. II
+Observações:
+1.2. Dados de Produção Média mensal
+1.2.1. Sangue Total
+1.2.2. Concentrado de Hemácias
+1.2.3. Concentrado de Hemácias Lavadas
+1.2.4. Concentrado de Hemácias com camada leucoplaquetária removida
+1.2.5. Concentrado de Hemácias Desleucocitado
+1.2.6. Concentrado de Hemácias Rejuvenescidas
+1.2.6. Concentrado de Granulócitos
+1.2.7. Concentrados de Plaquetas por aférese
+1.2.8. Concentrado de Plaquetas randômicas
+1.2.9. Concentrado de Plaquetas Desleucocitado
+1.2.10. Crioprecipitado
+1.2.11. Plasma Fresco Congelado
+1.2.12. Plasma isento de crio
+1.2.13. Plasmaférese para indústria fracionadora
+1.2.14. Outros
+1.3. Dados de Descarte
+Hemocomponente Vencimento Armazenamento inadequado Ruptura de bolsas Sorologia por doação Outros
+1.3.1. Concentrado de hemácias
+1.3.2. Concentrado de plaquetas
+1.3.3. Crioprecipitado
+1.3.4. Plasma fresco congelado
+1.3.5. Plasma isento de crio
+1.3.6. Plasma comum
+1.4. Infraestrutura Nível Sim Não NA
+1.4.1. Área física conforme legislação vigente. II
+1.4.2. Protocolos de limpeza e desinfecção das instalações, áreas de trabalho e equipamentos. II
+1.4.3. Equipamentos qualificados, suficientes e de acordo com técnicas utilizadas (centrífuga refrigerada, extrator automático, dispositivo de conexão estéril). III
+1.4.3.1. Cabine de segurança biológica (câmara de fluxo laminar), outro equipamento ou área que garanta a esterilidade do produto, materiais e soluções utilizadas para procedimentos que requeiram abertura do sistema. III
+1.4.3.2. Registro da certificação e qualificação das áreas ou equipamentos utilizados. II
+1.4.4. Controle e monitoramento da temperatura das áreas e salas destinadas ao processamento (222ºC). III
+Observações:
+1.5. Procedimentos Nível Sim Não NA
+1.5.1. POP atualizado e disponível. II
+1.5.1.1. Atividades executadas conforme POP. III
+1.5.2. Processamento realizado por centrifugação refrigerada e em sistema fechado. III
+1.5.3. Segmento das bolsas de sangue selados hermeticamente (seladoras dielétricas apropriadas). III
+1.5.4. Processamento de sangue validado por tipo de hemocomponente produzido. III
+1.5.5. Equipamentos (centrífugas e extratores) devidamente identificados com mecanismos que relacionem o equipamento a cada remessa. I
+1.5.6. Mecanismo que permita rastreabilidade das unidades que compõe os hemocomponentes produzidos em pool. III
+1.5.7. Registro da avaliação das bolsas de sangue total provenientes da coleta externa. II
+1.5.8. Sangue total coletado processado em no máximo 35 dias (CPDA-1) ou 21 dias (ACD, CPD e CP2D), armazenado em 4 2 oC. II
+1.5.9. Registros de produção com descrição da entrada de sangue total e os hemocomponentes produzidos e descartados. II
+1.5.10. Mecanismos de controle sistemático da produção (controle em processo), incluindo avaliação de produtos intermediários e final (avaliação de volume e macroscópica) durante o processamento e medidas para lidar com os desvios. II
+1.6. Processamento de Concentrados de Hemácias Nível Sim Não NA
+1.6.1. Concentrado de Hemácias Lavadas com solução compatível e estéril em quantidade suficiente (1 a 3 litros). III
+1.6.2. Tubo conectado à bolsa preenchido com alíquota de hemácias para posterior realização de provas de compatibilidade. III
+Observações:
+1.7. Processamento de Plasma Nível Sim Não NA
+1.7.1. Plasma Fresco Congelado (PFC)
+PFC 8hs ( )
+PFC 24 hs ( )
+Finalidade: Terapêutica ( ) Industrial ( ) INF
+1.7.1.1. O congelamento do plasma fresco é concluído em até 8 horas e, no máximo, em 24 horas após a coleta, mediante processo validado. III
+1.7.1.2. Bolsas de PFC dispostas e organizadas de forma a garantir congelamento efetivo e uniforme no tempo e temperatura determinada. II
+1.7.1.3. O tubo coletor (macarrão, espaguete) fixado à bolsa, com extensão mínima de 15 cm, duas soldaduras (uma proximal e outra distal) totalmente preenchidas. II
+1.7.2. Produção de crioprecipitado
+Finalidade: Terapêutica ( ) Industrial ( )
+INF
+1.7.3. Plasma Isento de Crioprecipitado INF
+1.7.4. Plasma Comum*
+* Somente para finalidade industrial.
+INF
+Observações:
+1.8. Processamento de Concentrado de Plaquetas Nível Sim Não NA
+1.8.1. Concentrado de plaquetas randômicas (sangue total)
+Método: Centrifugação do Plasma Rico em Plaquetas ( )
+Centrifugação da Camada Leucoplaquetária – Buffy Coat ( )
+INF
+1.8.2. Produção de Pool de Plaquetas. INF
+1.8.2.1. Mecanismo que permita rastreabilidade das unidades que compõe o pool. III
+1.8.3. Temperatura de pré-processamento do sangue total para produção de plaquetas na faixa de 22 2ºC. II
+1.8.4. Tempo entre a coleta e processamento de plaquetas está de acordo com normas vigentes (não exceder 24 horas). III
+1.8.5. Avaliação macroscópica do concentrado de plaquetas sem agregados visuais (grumos). III
+Observações:
+2. Irradiação de Hemocomponentes
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+2.1. Recursos Humanos Nível Sim Não NA
+2.1.1. Pessoal qualificado/capacitado. II
+2.1.2. Supervisão técnica por profissional de nível superior habilitado. II
+2.2. ProcedimentosUHum Nível Sim Não NA
+2.2.1. Irradiador de Células ( ) Acelerador Linear/Radioterapia ( ) INF
+2.2.2. Equipamento devidamente qualificado. III
+2.2.3. Caso o processo de irradiação seja terceirizado, serviço prestador deste serviço é regularizado junto ao órgão de vigilância sanitária. III
+2.2.4. POP atualizado e disponível. II
+2.2.4.1. Atividades executadas de acordo com o POP. III
+2.2.5. Dose mínima sobre o plano médio da unidade irradiada - 25 Gy (2.500 cGy) - uma dose inferior em nenhum ponto de 15 Gy (1.500 cGy) nem superior a 50 Gy (5.000 cGy). III
+2.2.6. Processo de irradiação validado. II
+2.2.7. Registro da calibração do sistema dosimétrico. II
+2.2.8. Registro de controle da fonte radioativa anualmente. III
+2.2.9. Concentrado de hemácias irradiadas produzido até 14 dias após a coleta. A irradiação após 14 dias tem validade de 48 horas e mediante justificativa. III
+Observações:
+3. Rotulagem e Liberação
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+3.1 Infraestrutura e Procedimentos Nível Sim Não NA
+3.1.1. Área física/sala conforme legislação vigente. I
+3.1.2. POP atualizado e disponível. II
+3.1.2.1. Atividades executadas conforme descritos no POP. III
+3.2. Rotulagem
+3.2.1. Etiquetas aderidas firmemente à bolsa e com impressão legível e em tinta indelével. III
+3.2.2. Etiqueta apresenta todas as informações necessárias: nome e endereço do serviço coletor, data da coleta, volume e tipo de hemocomponente, identificação numérica e/ou alfa numérica do doador e da doação, nome e quantidade de anticoagulante (exceto em hemocomponente obtidos por aférese), temperatura de conservação, validade do produto; tipagem sanguínea ABO e Rh; PAI; resultados de testes não reagentes/negativos para doenças transmissíveis pelo sangue; CMV negativo se forem o caso; soluções utilizadas/validade em caso de hemocomponentes rejuvenescidos; inscrição “Não adicionar medicamentos”; resultado da pesquisa de Hemoglobina S para componentes eritrocitários. III
+3.2.3. Etiqueta da unidade de doação autóloga, além das especificações anteriores contém: nome e sobrenome do doador/paciente, identificação do serviço de saúde de origem, número de registro do doador/paciente no serviço de hemoterapia, identificação de “Doação Autóloga”, indicação de resultados reagentes/positivos para marcadores de infecções transmissíveis pelo sangue, quando couber. III
+3.2.4. Etiqueta dos produtos liberados em forma de pool (crio e plaquetas), além das especificações anteriores, contém também: indicação de que se trata de pool e o número do pool, identificação da instituição que preparou o pool, tipagem sanguínea ABO e Rh das unidades do pool, data e horário de validade do pool, volume do pool. III
+3.2.5. Etiqueta da unidade de hemácias rejuvenescidas, além das especificações anteriores, informa as soluções utilizadas e data de validade. III
+3.2.6. Unidades irradiadas identificadas e rotuladas com a inscrição: IRRADIADOS. III
+3.2.7. Concentrado de hemácias produzido a partir de sangue total com 300 a 405 mL rotulado como “Unidade de Baixo Volume de Concentrado de Hemácias”. I
+3.2.8. Rastreabilidade do número do lote e a data de validade original da bolsa plástica presentes no rótulo de forma rápida. II
+3.3. Liberação de Hemocomponentes
+3.3.1. Liberação dos produtos conferida por mais de uma pessoa, a menos que seja usada a tecnologia de códigos de barras ou outra forma eletrônica de identificação devidamente validada. III
+3.3.1.1. Nos casos em que a liberação seja feita em sistema informatizado, deverá ser verificada a segurança do sistema (permissões de acesso restrito, bloqueio de componentes impróprios, etc). III
+3.3.2. Registros devem atestar quais pessoas foram responsáveis pela liberação de hemocomponentes. II
+Observações:
+4. Armazenamento de Sangue e Hemocomponentes
+*Esta parte se aplica a todos os serviços de hemoterapia que armazenam hemocomponentes, inclusive os realizam procedimentos transfusionais. Neste último caso, deve-se complementar com o Modulo V.
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+4.1. Infraestrutura Nível Sim Não NA
+4.1.1. Área/Sala conforme legislação vigente. II
+4.1.2. Controle e registro da temperatura do ambiente (222ºC). II
+4.1.3. Equipamentos qualificados, suficientes, de acordo com o uso pretendido e de uso exclusivo para o armazenamento de hemocomponentes e/ou hemoderivados. III
+4.1.4. Armazenamento de hemocomponentes e hemoderivados em áreas distintas, devidamente identificadas. I
+4.1.5. Refrigeradores com sistema de alarme sonoro e visual, temperatura controlada e registrada, mantida a 42ºC, conforme legislação vigente. III
+4.1.6. Congeladores com sistema de alarme sonoro e visual, temperatura controlada e registrada, mantida a 20ºC negativos ou 18°C negativos e registrada, conforme legislação vigente. III
+4.1.7. Procedimentos definidos para ações visando o restabelecimento das condições preconizadas de armazenamento, em casos de acionamento de alarmes. II
+4.1.8. Na falta de dispositivos de monitoramento de temperatura com registro contínuo, possui mecanismo de controle manual com verificações registradas (de 4 em 4h se uso freqüente; de 12 em 12h quando se mantenha fechado por longos períodos, com termômetro de máxima e mínima) . II
+4.2. Procedimentos Nível Sim Não NA
+4.2.1. POP atualizado e disponível. II
+4.2.1.1. Atividades executadas conforme descrito no POP. III
+4.2.2. Armazenamento de sangue e hemocomponentes não liberados e liberados em áreas ou equipamentos distintos, de forma ordenada e racional. III
+4.2.3. Procedimentos estabelecidos e escritos para o manejo dos hemocomponentes que tenham sido rejeitados. II
+4.2.4. Área separada para armazenamento de sangue e/ou hemocomponentes rejeitados. II
+4.2.5. Organização do estoque dos hemocomponentes de acordo com o prazo de validade. III
+4.2.6. Plano de contingência escrito e facilmente disponível para situações de falta de energia ou defeitos na cadeia de frio. III
+4.3. Armazenamento de Componentes Eritrocitários Nível Sim Não NA
+4.3.1. Prazo de validade de acordo com anticoagulante/solução preservadora utilizada (CPDA1 – 35 dias; ACD, CPD, CP2D – 21 dias; Solução aditiva – 42 dias). III
+4.3.2. Armazenamento de concentrado de hemácias a 2ºC a 6ºC. III
+4.3.3. Para produtos preparados em circuito aberto (lavagem e/ou aliquotagem, outros), prazo de validade, no máximo de 24 horas, mantidos de 2ºC a 6ºC, com registro do horário de preparação. III
+4.3.4. Concentrados de hemácias congeladas armazenados a - 65ºC ou inferior, com validade de 10 anos. III
+4.4. Armazenamento de Componentes Plasmáticos
+4.4.1. Armazenamento de PFC e Crio para fins transfusionais: 18°C negativos ou inferior, por 12 meses; 30°C ou inferior por 24 meses. III
+4.4.2. Armazenamento de PFC para fins industriais: 20°C negativos ou inferior, por 12 meses. III
+4.4.3. Plasma comum armazenado à temperatura de 20°C negativos ou inferior, por 5 anos. III
+4.4.4. Plasma isento de crioprecipitado armazenado à temperatura de 18ºC negativos ou inferior, com validade de 12 (doze) meses. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Redações Anteriores III
+4.5. Armazenamento de Componentes Plaquetários
+4.5.1. Temperatura de armazenamento de 22 2ºC, em agitação constante, com validade de acordo com o plastificante da bolsa (3 a 5 dias) III
+4.5.2. Para produtos preparados em circuito aberto, prazo de validade, no máximo de 4 horas, mantidos a 22 2ºC, com registro do horário de preparação. III
+4.6. Armazenamento de Granulócitos
+4.6.1. O concentrado de granulócitos armazenado a 222ºC, com validade de 24 horas. III
+4.7. Armazenamento de Componentes Irradiados
+4.7.1. Hemocomponentes irradiados armazenados segregados de outros hemocomponentes. III
+4.7.2. Concentrado de hemácias irradiadas armazenado até 28 dias depois da irradiação considerando a validade do hemocomponente inicial. Concentrado de plaqueta e de granulócitos irradiados com as datas de validade original. III
+Observações:
+5. Distribuição de Sangue e Hemocomponentes*
+*Esta parte se aplica a serviços de hemoterapia unicamente distribuidores, bem como serviços de hemoterapia que realizam procedimentos transfusionais. Neste último caso, deve-se complementar com o Modulo V.
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+5.1. Recursos Humanos Nível Sim Não NA
+5.1.1. Pessoal qualificado/capacitado. II
+5.4. Distribuição de sangue e hemocomponentes
+( ) Distribuição de hemocomponentes para estoque em outros serviços de hemoterapia.
+( ) Distribuição de hemocomponentes para transfusão mediante a realização das provas pré-transfusionais.
+Nível
+INF
+Sim Não NA
+5.4.1. POP atualizado e disponível. II
+5.4.1.1. Atividades executadas conforme descrito no POP. III
+5.4.2. Distribuição mediante solicitação, por escrito, do médico do serviço de hemoterapia da instituição contratante (contendo nome legível e CRM). I
+5.4.3. Contrato, convênio ou termo de compromisso para distribuição de hemocomponentes, contemplando as determinações da legislação vigente, inclusive, as responsabilidades pelo transporte e a necessidade de regularização dos serviços envolvidos junto à vigilância sanitária. II
+5.4.4. Realiza/registra saída do sangue e/ou hemocomponentes com identificação dos locais de destino, verificação de integridade das unidades e a temperatura de conservação conforme legislação vigente. III
+5.4.5. Registros da validação dos processos de acondicionamento e transporte de hemocomponentes (incluindo capacidade máxima de bolsas por embalagem, sistema de monitoramento da temperatura por tempo pré-determinado). II
+5.4.6. Registros dos controles de temperatura dos hemocomponentes durante o transporte: sangue total e concentrado de hemácias (1 a 10°C, concentrados de plaquetas e granulócitos (20 a 24°C), hemocomponentes congelados (temperatura de armazenamento). III
+5.4.7. Documentação para transporte de hemocomponentes contendo: nome, endereço e telefone de contato do serviço remetente e do destinatário, lista com identificação dos hemocomponentes transportados, condições de conservação, data e hora da saída e identificação do transportador. II
+5.4.8. Reintegra hemocomponentes não utilizados. INF
+5.4.8.1. Procedimentos estabelecidos para reintegração de hemocomponentes, sendo condições indispensáveis: não abertura do sistema, temperatura controlada de acordo com a especificação do III
+hemocomponente em todo tempo fora do serviço, documentação especificando a trajetória da bolsa, presença de amostra de concentrado de hemácias suficiente para realizar testes.
+5.4.9. Envia hemocomponentes para uso não terapêutico (pesquisa, produção de reagentes, outros) com autorização do Ministério da Saúde, mediante contrato ou outro termo equivalente e informando, no mínimo: finalidade do envio, número da bolsa enviada e a instituição de destino (avaliar mecanismo de rastreabilidade). I
+5.4.10. Envio de plasma excedente do uso terapêutico para produção de hemoderivados mediante autorização do Ministério da Saúde. I
+5.4.10.1. Processo validado de transporte de plasma excedente do uso terapêutico para produção de hemoderivados realizado por empresa de transporte do insumo regularizada junto a Anvisa. III
+Observações:
+6. Controle de Qualidade dos Hemocomponentes
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+6.1. Recursos Humanos Nível Sim Não NA
+6.1.1. Pessoal qualificado/capacitado. II
+6.1.2. Supervisão técnica por profissional de nível superior habilitado. II
+6.2. Infraestrutura Nível Sim Não NA
+6.2.1. Área física conforme legislação. II
+6.2.2. Equipamentos qualificados, suficientes e em conformidade com técnicas utilizadas. III
+6.2.3. Controle e registro da temperatura do ambiente (22 2ºC). III
+6.3. Procedimentos Nível Sim Não NA
+6.3.1. POP atualizado e disponível. II
+6.3.1.1. Atividades executadas conforme POP. III
+6.3.2. Se terceirizado, o prestador está regularizado junto à vigilância sanitária. I
+6.3.3. Plano de amostragem (protocolo escrito) definido para o controle de qualidade dos hemocomponentes - tipo de controle, periodicidade, amostragem, os critérios de aceitação e parâmetros mínimos (conformidade igual ou maior que 75de cada item controlado em todos os hemocomponentes, exceção do conc. hemácias por aférese e contagem de leucócitos em componentes celulares desleucocitados que devem ser de 90). III
+6.3.4. Realiza controle de qualidade dos hemocomponentes produzidos, conforme preconizado. III
+6.3.5. Método utilizado que não comprometa a integridade do produto, a menos que o hemocomponente analisado não seja utilizado para transfusão após utilização como controle de qualidade. II
+6.3.5.1. Registros das ações realizadas para identificação do agente em casos de contaminação microbiológica, sua provável fonte e medidas adotadas. III
+6.3.6. Avaliação sistemática dos resultados do controle de qualidade das amostras de hemocomponentes avaliados, e registro das ações corretivas e preventivas adotadas. II
+Observações:
+6.4. Controle de qualidade dos Hemocomponentes Sim Não NA
+6.4.1. Concentrado de Hemácias (CH)
+Amostragem: 1 ou 10 unidade/mês, em amostra individual.
+6.4.1.1. Hemoglobina: 45g / unidade
+6.4.1.2. Hematócrito: 50 a 80 (*)
+6.4.1.3. Grau de hemólise: 0,8 da massa eritrocitária (no último dia de armazenamento).
+6.4.1.4. Microbiológico negativo
+(*) O hematócrito esperado depende do tipo de solução preservativa utilizada na bolsa, sendo de 50 a 70 para os concentrados de hemácias com soluções aditivas e de 65 a 80para com CPDA-1.
+6.4.2. Concentrado de Plaquetas (CP) obtido por sangue total
+Amostragem: 1% ou 10 unidade/mês, em amostra individual..
+6.4.2.1. Conteúdo total de plaquetas: 5,5x1010/unidade
+6.4.2.2. Volume: 40 a 70mL
+6.4.2.3. pH: 6,4 (último dia de armazenamento)
+6.4.2.4. N° de Leucócitos:
+A partir do plasma rico em plaquetas: 2,0x108/unid
+A partir de camada leucocitária: 0,5x108/unid
+6.4.2.5. Microbiológico negativo
+6.4.3. Concentrado de Plaquetas por Aférese
+Amostragem: 1% ou 10 unidade/mês, em amostra individual.
+6.4.3.1. Conteúdo de plaquetas: 3x1011/unid (simples)
+6.4.3.2. Conteúdo de plaquetas: 6x1011/unid (dupla)
+6.4.3.3. pH: 6,4 (último dia de armazenamento)
+6.4.3.4. Volume: 200 mL (deve ser garantido volume mínimo de 40 mL de plasma ou solução aditiva, por 5,5x1010 plaquetas/bolsa).
+6.4.3.5. N° de Leucócitos: 5,0x106/unidade.
+6.4.3.6. Microbiológico negativo
+6.4.4. Concentrado de granulócitos por aférese
+Amostragem: Todas as unidades produzidas, em amostra individual.
+6.4.4.1. Volume: 500 mL
+6.4.4.2. Conteúdo de granulócitos: 1,0 x 1010/unidade
+6.4.5. Concentrado de Plaquetas
+Desleucocitadas
+Amostragem: 1% ou 10 unidade/mês, em amostra individual.
+6.4.5.1. Conteúdo de plaquetas: 5,5x1010 plaquetas/unid.
+6.4.5.2. Leucócitos residuais: <5x106/ pool
+6.4.5.3. Leucócitos residuais: <0,83x106/unidade
+6.4.5.4. pH: >6,4 se a desleucocitação for realizada no pré- armazenamento (no último dia de armazenamento).
+6.4.5.5. Microbiológico negativo
+6.4.6. Plasma Fresco Congelado (PFC 8h e PFC 24h) 6.4.6.1. Volume: 150 mL*
+6.4.6.2. Fator VIII C: 0,7UI/mL (70 atividade)1,2,3,4 ou TTPA: até o valor do pool controle
+Amostragem: 1% ou 4 unidades/mês 203,4
+ou Fator V: 0,7 UI/mL (70 de atividade)2,3,4
+* Volume: avaliado em todas as amostras produzidas.
+1. Fator VIII:C obrigatório quando fornecer PFC à indústria
+2.Fator VIII:C e Fator V podem ser realizados em pools de até 10 amostras de bolsas de plasma, com um
+mínimo de 4 (quatro) pools mensais
+3. A análise deve ser feita utilizando amostras de PFC e PFC24
+conjuntamente e em proporção definida pelo serviço baseado na produção,
+4. As análises devem ser realizadas em unidades com até 30 dias de armazenamento.
+6.4.6.3. Hemácias residuais: 6x106/mL (antes do congelamento).
+6.4.6.4. Leucócitos residuais: < 0,1x106/mL (antes do congelamento).
+6.4.6.5. Plaquetas residuais<: 50x106/mL (antes do congelamento)
+6.4.7. Plasma Comum
+(plasma não-fresco, plasma normal ou plasma simples)
+Amostragem: todas as unidades produzidas.
+Volume: 150 mL
+6.4.8. Plasma isento de crioprecipitado
+Amostragem: todas as unidades produzidas.
+Volume: 140 mL
+6.4.9. Crioprecipitado 6.4.9.1. Volume: 10 a 40 mL*
+Amostragem: 1 ou 4 unidades/mês, em unidades com 30 dias de armazenamento e em amostra individual.
+6.4.9.2. Fibrinogênio: 150mg/unidade
+*Volume todas as unidades produzidas
+6.4.10. Concentrado de Hemácias
+Desleucocitadas
+6.4.10.1. Hemoglobina: 40g/unidade
+6.4.10.2. Leucócitos residuais: 5x106/unidade
+Amostragem: 1 ou 10 unidade/mês, em amostra individual. 6.4.10.3. Hemólise: 0,8% da massa eritrocitária
+6.4.10.4. Microbiológico negativo
+6.4.11. Concentrado de Plaquetas
+Desleucocitadas
+6.4.11.1. Contagem: 5,5x1010 plaquetas/unidade
+6.4.11.2. Contagem de Leucócitos: 5x106/unidade (pool)
+Amostragem: 1 ou 10 unidade/mês, em amostra individual.
+6.4.11.3. Contagem de Leucócitos: 0,83x106/unidade
+6.4.11.4. pH: 6,4 se a desleucocitação for realizada no pré- armazenamento (no último dia de armazenamento).
+6.4.11.5. Microbiológico negativo
+6.4.12. Concentrado de Hemácias Lavadas 6.4.12.1. Hemoglobina: 40g / unidade
+Amostragem: 1 ou 10 unidade/mês, em amostra individual.
+*Proteína residual avaliado em
+6.4.12.2. Hematócrito: 50 a 75
+6.4.12.3. Hemólise: 0,8 de massa eritrocitária
+6.4.12.4. Recuperação: 80% da massa eritrocitária
+todas as unidades produzidas. 6.4.12.5. Proteína residual: 0,5 g/unidade*
+6.4.12.6. Microbiológico negativo
+6.4.13. Concentrado de hemácias com camada leucoplaquetária removida 6.4.13.1. Hemoglobina: 43g/unidade
+6.4.13.2. Hematócrito: 50 a 80* da massa eritrocitária
+6.4.13.3. Hemólise: 0,8 da massa eritrocitária (no último dia de armazenamento)
+Amostragem: 1ou 10 unidade/mês, em amostra individual.
+6.4.13.4. Leucócitos: 1,2 x 109 / unidade
+6.4.13.5. Microbiológico negativo
+*O hematócrito esperado depende do tipo de solução preservativa utilizada na bolsa, sendo de 50 a 70% para os concentrados de hemácias com soluções aditivas e de 65 a 80% para com CPDA-1
+6.4.14. Concentrado de Hemácias congeladas 6.4.14.1. Volume: 185 mL
+6.4.14.2. Hemoglobina no sobrenadante: 0,2 g/unidade
+Amostragem: 1 ou 10 unidade/mês, em amostra individual.*
+6.4.14.3. Hemoglobina: 36 g/unidade
+6.4.14.4. Hematócrito: 50 a 75 (dependendo da concentração de glicerol utilizada na técnica).
+*Volume, hemoglobina no sobrenadante, hemoglobina e hematócrito avaliados em todas as unidades produzidas.
+6.4.14.5. Recuperação: 80 da massa eritrocitária.
+6.4.14.6. Osmolaridade: 340 mOsm/L
+6.4.14.7. Contagem de leucócitos: 0,1 x 109 / unidade.
+6.4.14.8. Microbiológico negativo
+GUIA PARA INSPEÇÃO EM SERVIÇOS DE HEMOTERAPIA
+MÓDULO V
+AGÊNCIA TRANSFUSIONAL, TERAPIA TRANSFUSIONAL E OUTROS PROCEDIMENTOS TERAPÊUTICOS
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+1. Atividades avaliadas Nível Sim Não
+1.1. Testes Laboratoriais Pré-Transfusionais INF
+1.2. Distribuição de hemocomponentes compatibilizados
+1.3. Distribuição de hemocomponentes compatibilizados a outros serviços
+1.4. Transfusão hospitalar (em leito de internação)
+1.5. Transfusão ambulatorial
+2. Recursos Humanos Nível Sim Não
+2.1. Pessoal qualificado/capacitado II
+2.2. Supervisão técnica por profissional de nível superior habilitado. II
+Observações:
+3. Infraestrutura da Agência Transfusional Nível Sim Não
+3.1. Área física conforme legislação vigente*
+* Para transfusões ambulatoriais, área física específica e de acordo com as normas técnicas definidas para transfusões em pacientes internados.
+II
+3.2. Equipamentos qualificados e em conformidade com as técnicas utilizadas. III
+3.3. Calibração de pipetas e termômetros dentro do prazo de validade. II
+3.4. Insumos utilizados registrados e/ou autorizados pela ANVISA, dentro do prazo de validade e armazenados de acordo com a especificação do fabricante. III
+3.5. Armazenamento de hemocomponentes, reagentes e amostras em equipamento específico para esse fim, com monitoramento de temperatura, de forma ordenada, racional e em áreas separadas devidamente identificadas. 1,2 III
+1. No caso de serviços de pequeno porte (poucas transfusões por mês), se armazena concentrados de hemácias no mesmo equipamento, o armazenamento é feito de forma segregada.
+2. Para a avaliação da cadeia de frio da AT devem-se aplicar os itens de controle referentes ao armazenamento do Módulo IV.
+3.6. Controle e registro da temperatura do ambiente (22 2ºC) - qualquer alteração neste intervalo deve ser tecnicamente justificada. II
+Observações:
+4. Procedimentos Gerais Nível Sim Não
+4.1. POP atualizado e disponível. II
+4.1.1 Atividades executadas de acordo com o POP. III
+4.2. A requisição de transfusão contém: Identificação do receptor (nome completo, identificação do serviço de saúde, nome da mãe (se possível), sexo, peso (se indicado), data de nascimento, prontuário do paciente ou registro do III
+receptor, no do leito e localização intra hospitalar (se receptor internado), hemocomponente solicitado, quantidade ou volume solicitado, indicação
+(tipos de transfusões, diagnóstico, resultados laboratoriais que justificam a indicação) antecedentes transfusionais, data da requisição, assinatura e n° de inscrição no CRM do médico solicitante.
+4.3. PFC e o CRIO descongelados, quando em banho-maria, em temperatura que não exceda a 37°C, com a bolsa protegida de forma que não entre em contato com a água e transfundida até, no máximo, 24h se armazenado a 4 2°C. III
+4.4. Transporte e acondicionamento de hemocomponentes compatibilizados para transfusão e amostras de pacientes para testes pré-transfusionais em recipientes rígidos, fechamento seguro e por pessoal treinado. II
+4.5. Registros das atividades do Comitê Transfusional. II
+4.6. A ficha ou registro do receptor no serviço de hemoterapia contém registros de todos os resultados dos testes pré-transfusionais, data e identificação de hemocomponentes transfundidos, antecedentes de reações adversas à transfusão. III
+4.7. Testes Pré-Transfusionais
+4.7.1. Realiza inspeção visual da bolsa de sangue (coloração, integridade do sistema fechado, hemólise ou coágulos, data de validade) antes da seleção de hemocomponentes. III
+4.7.2. Coleta de amostras de pacientes realizada por profissional da saúde devidamente treinado para esta atividade, mediante protocolos definidos pelo serviço de hemoterapia. II
+4.7.2.1. Identificação do tubo da amostra no momento da coleta: nome completo do receptor, número de identificação ou localização no serviço de saúde, data da coleta e identificação da pessoa que realizou a coleta. III
+4.7.3. Guarda de alíquotas do soro ou plasma do receptor e segmentos (tubos) das bolsas transfundidas, em temperatura de 2 a 6°C, por pelo menos 3 dias (72 h) em equipamento/área especifica e identificada. III
+4.7.4. Tipagem ABO direta do receptor.
+Método:
+III
+4.7.5. Tipagem ABO reversa do receptor.
+Método:
+III
+4.7.6. Determinação do fator RhD na amostra do receptor.
+Método:
+III
+4.7.6.1. Em caso de receptor RhD negativo, pesquisa de D fraco ou transfunde hemocomponente Rh negativo. III
+4.7.6.2. Utilizam na rotina os soros para anti-RhD e controle de RhD do mesmo fabricante*. Caso resultado do soro controle for positiva considera inválida a tipagem.
+Método:________________________________________________
+* No caso de utilização de reagente anti-D produzido em meio salino, sem interferentes proteicos, não é obrigatório o uso de soro controle.
+III
+4.7.7. Retipificação ABO (direta) e RhD* no sangue do doador de hemocomponente eritrocitários (sangue total, concentrados de Hemácias e Granulócitos).
+Método: ________________________________________________
+* Repetição da tipagem RhD somente deve ser realizada em bolsas rotuladas como "RhD negativo”
+III
+4.7.8. Pesquisa anticorpos irregulares (PAI) na amostra de receptores.
+Método:
+III
+4.7.8.1. Identifica anticorpos irregulares (IAI) conforme protocolo aprovado.
+Método:
+INF
+4.7.9. Adota/registra procedimento para resolução de discrepância ABO, RhD, com resultados anteriores e outras. III
+4.7.10. Realiza prova de compatibilidade para hemocomponentes eritrocitários (exceto em transfusões autólogas) e granulocíticos. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 075, de 02/05/2016)
+Método:
+III
+4.7.11. Ensaios realizados rigorosamente de acordo com instrução do fabricante do reagente/kit. III
+4.7.12. Protocolos e registros dos ensaios (dados brutos, resultados, interpretações) realizados contendo identificação dos testes, nome do fabricante do reagente/kit, número do lote, prazo de validade e identificação do responsável pela execução do(s) ensaio(s). III
+4.7.13. Reagentes/soluções aliquotadas ou manipuladas segundo determinação do fabricante com rótulo de identificação, data do preparo, data de validade e profissional responsável pelo procedimento, devidamente validado e registrado. III
+4.7.14. Realiza/registra CQI – Controle de Qualidade Interno. III
+4.7.14.1. Caso o próprio serviço prepare as amostras utilizadas no CQI, essas são caracterizadas e produzidas mediante processo validado, de acordo com o definido pelo Ministério da Saúde. III
+4.7.14.2. Adota/registra medidas corretivas quando identificadas não conformidades nos resultados do CQI. II
+4.7.15. Participa de AEQ – Avaliação Externa da Qualidade
+Programa: _____________________________________________
+II
+4.7.15.1. O teste da amostra do painel de controle de qualidade externo é realizado nas mesmas condições e procedimentos adotados na rotina laboratorial. II
+4.7.15.2. Adota/registra medidas corretivas quando identificadas não conformidades. III
+4.7.16. Controle de qualidade de reagentes, incluindo inspeção visual, lote a lote e por remessa de reagentes em uso a fim de comprovar se os mesmos estão dentro do padrão estabelecido pelo fabricante. III
+4.8. Ato transfusional
+4.8.1. Procedimento realizado sob supervisão médica. III
+4.8.2. Pessoal qualificado/capacitado. II
+4.8.3. Etiqueta de liberação da bolsa de sangue para transfusão (cartão de transfusão) contendo: identificação numérica/alfanumérica do receptor (nome completo, número de registro e localização – hospital, enfermaria, leito), grupo ABO e tipo RhD do receptor; nº. de identificação do hemocomponente com grupo ABO e tipo RhD; conclusão do teste de compatibilidade; data e nome do responsável pela realização dos testes pré – transfusionais e sua liberação para uso, data do envio do hemocomponente para transfusão, além das instruções ao ato transfusional. III
+4.8.4. Etiqueta afixada à bolsa até o término da transfusão sem obstruir informações da bolsa. II
+4.8.5. Confirmam antes do início da transfusão: identificação do paciente; dados do rótulo de identificação e etiqueta de liberação da bolsa; validade do produto e a integridade da bolsa (inspeção visual). III
+4.8.6. Condições adequadas de armazenamento dos hemocomponentes antes da transfusão. II
+4.8.7. Durante a transfusão: acompanhamento de médico ou profissional habilitado e capacitado à beira do leito durante os primeiros 10 minutos. III
+4.8.8. Monitoramento periódico do paciente durante o transcurso do ato transfusional. II
+4.8.9. Tempo máximo de infusão de unidades de sangue e hemocomponentes até 4 (quatro) horas. III
+4.8.10. Registra em prontuário do paciente: os sinais vitais (temperatura, PA e pulso) no início e no final da transfusão, a data da transfusão, a hora de início e término da transfusão, a origem e os números das bolsas dos hemocomponentes transfundidos, identificação do profissional que realizou o procedimento transfusional, reações adversas, quando couber. III
+4.8.11. Protocolos de controle das indicações de uso e do descarte de hemocomponentes. II
+4.8.12. Arquiva todos os registros pertinentes à transfusão conforme legislação vigente. III
+4.9. Procedimentos de testes pré–transfusionais em RN até 4 meses Nível Sim Não NA
+4.9.1. Protocolo de transfusão de neonatos e crianças até 4 meses de vida. II
+4.9.2. Tipagem ABO (direta) e RhD. III
+4.9.3. Caso ocorra presença de anti-A e Anti-B no soro ou plasma do neonato, transfunde conc. hemácias O. III
+4.9.4. Pesquisa de anticorpos irregulares na amostra pré-transfusional inicial, empregando soro da mãe ou eluato do neonato. III
+4.9.5. Realiza transfusão em RN abaixo de 1.200g com produtos leucorreduzidos ou não reagentes para CMV. III
+Observações:
+5. Procedimentos especiais em transfusão Nível Sim Não NA
+5.1. Protocolo definido e escrito com as indicações e procedimentos para aquecimento de hemocomponentes. II
+5.2. Protocolo para liberação de hemácias em situações de urgência/emergência. II
+5.2.1. Termo de responsabilidade assinado pelo médico responsável pelo paciente no qual afirme expressamente o conhecimento do risco envolvido e concorde com o procedimento. II
+5.2.2. Rótulo com indicação de hemocomponentes liberados sem a realização de testes pré transfusionais. II
+5.3. Protocolo para liberação de sangue incompatível. II
+5.3.1. Termo de responsabilidade assinado pelo médico hemoterapeuta e/ou pelo médico assistente do paciente quando possível pelo próprio II
+paciente ou responsável legal deste, em concordância com o procedimento e os riscos envolvidos. Justificativa por escrito caso o paciente ou o seu responsável não possam assinar o termo.
+5.4. Protocolo definido e escrito com as indicações e procedimentos para transfusão maciça. II
+5.5. Protocolo definido e escrito com as indicações e procedimentos para transfusão intrauterina. II
+5.6. Protocolo definido e escrito com as indicações e procedimentos para transfusão em pacientes aloimunizados (anticorpos específicos para antígenos eritrocitários ou do sistema HLA/HPA). II
+5.6.1. Procedimento realizado mediante solicitação do médico assistente e avaliação e aprovação do médico responsável pelo serviço. III
+5.7. Protocolo definido e escrito com as indicações e procedimentos para transfusão de substituição adulta e em recém-nascido (exsanguineotransfusão) II
+5.7.1. Procedimento realizado mediante solicitação do médico assistente e avaliação e aprovação do médico do serviço. III
+5.8. Transfusão autóloga
+5.8.1. Médico do serviço de hemoterapia responsável pelo programa de transfusão autóloga. IIi
+5.8.2. Protocolo de transfusão autóloga pré, peri e/ou pós-operatória. II
+5.8.2.1. Unidade obtida no Pré-operatório (hemodiluição normovolêmica): usada no doador/paciente até 24 h depois da coleta se armazenadas a 4+-2°C ou até 8h se armazenado entre 20 e 24°C. III
+5.8.2.2. Recuperação intraoperatória por meio de equipamentos específicos para tal finalidade, sangue recuperado usado somente pelo paciente e até 4 h da coleta. II
+5.9. Transfusão domiciliar INF
+5.9.1. Procedimento realizado na presença de médico durante o ato transfusional. III
+5.9.2. Protocolo definido e escrito com as indicações e procedimentos para transfusão domiciliar. II
+5.9.2.1. Atividades executadas de acordo com o POP. III
+5.9.3. Medicamentos, materiais e equipamentos disponíveis para situações de emergência. III
+5.9.4. Registro dos procedimentos realizados. II
+5.10. Sangria Terapêutica
+5.10.1. Protocolo definido e escrito com as indicações e procedimentos para sangria terapêutica. II
+5.10.2. Procedimento realizado mediante solicitação do médico assistente e avaliação e aprovação do médico do serviço. III
+Observações:
+6. Aférese terapêutica
+Nome do responsável:
+Formação profissional:
+Registro no conselho de classe:
+Contato:
+6.1. Recursos Humanos Nível Sim Não NA
+6.1.1. Pessoal qualificado/capacitado. II
+6.1.2. Procedimentos realizados sob responsabilidade de médico hemoterapeuta. II
+6.2. Procedimentos Nível Sim Não NA
+6.2.1. Protocolo definido e escrito com as indicações e procedimentos/metodologia empregada para aférese terapêutica. II
+6.2.2. Procedimento realizado mediante solicitação do médico do paciente e concordância com o hemoterapeuta. III
+6.2.3. Registro do procedimento: identificação do paciente, diagnóstico, tipo de procedimento terapêutico, método empregado, volume sanguíneo extracorpóreo, e tipo e quantidade do componente removido ou tratado, tipo e quantidade dos líquidos utilizados, medicação administrada e qualquer reação adversa ocorrida. III
+Observações
+PUB D.O.U., 16/06/2014 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.
