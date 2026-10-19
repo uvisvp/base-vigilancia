@@ -7,8 +7,6 @@ Transporte de material biológico humano (transportadora):
   - RDC 504/2021 (boas práticas para o transporte de material biológico humano);
   - RDC 34/2014 (boas práticas no ciclo do sangue; vigente com alterações — seção
     de transporte de hemocomponentes);
-  - RDC 707/2022 (boas práticas em tecidos humanos para uso terapêutico; inclui o
-    transporte de tecidos);
   - Resolução ANTT 5.998/2022 (texto da Resolução, consolidado com as Resoluções
     6.016/2023 e 6.056/2024; as Instruções Complementares ficam como fonte citada);
   - Portaria SMS 266/2025 (licenciamento sanitário no Município de São Paulo;
@@ -19,12 +17,16 @@ Serviços de diagnóstico por imagem:
     radiologia intervencionista — hemodinâmica), IN 92/2021 (mamografia), IN 93/2021
     (tomografia computadorizada), IN 96/2021 (ultrassom), IN 97/2021 (ressonância
     magnética);
-  - RDC 36/2013 (segurança do paciente em serviços de saúde).
+  - RDC 36/2013 (segurança do paciente em serviços de saúde);
+  - Portaria de Consolidação GM/MS 5/2017 (Programa Nacional de Qualidade em Mamografia,
+    arts. 206 a 224; Anexo IV — sangue e hemocomponentes).
+RDC e IN só do AnvisaLegis (texto consolidado). A RDC 707/2022 (tecidos) ficou de fora
+porque o AnvisaLegis não abriu o ato ("sendo processado"); o transporte de tecidos
+segue a RDC 504/2021 (a própria RDC 707, art. 158, remete a ela).
 
 Texto oficial do AnvisaLegis (consolidado; as “redações anteriores” ficam só como
-link na página e não entram), do ANTTlegis, do Catálogo de Legislação Municipal e,
-para a RDC 707/2022, do PDF do DOU arquivado pela SES-SP (o AnvisaLegis não abriu o
-ato). Estruturação pelo motor v12 (estruturar_legislacao.estruturar_texto), com
+link na página e não entram), do ANTTlegis e do Catálogo de Legislação Municipal.
+Estruturação pelo motor v12 (estruturar_legislacao.estruturar_texto), com
 desambiguação de IDs repetidos como em atualizar_legislacao_rdc_670_1039.py.
 Não reprocessa as demais normas do banco.
 Uso: python scripts/incluir_normas_transporte_imagem.py [norma ...]"""
@@ -78,15 +80,11 @@ def inm(num, ano, data, assunto):
 ANTT = ("https://anttlegis.datalegis.inf.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00005998"
         "&sgl_tipo=RES&sgl_orgao=DG/ANTT/MI&vlr_ano=2022&seq_ato=000")
 SMS266 = "https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-da-saude-sms-266-de-6-de-maio-de-2025"
-R707_DOU = "https://ses.sp.bvs.br/wp-content/uploads/2022/07/U_RS-MS-ANVISA-RDC-707_010722.pdf"
 
 NORMAS = [
     # ---- transporte de material biológico humano
     rdc(504, 2021, "2021-05-27", ["504", "Art. 1", "Art. 23", "Art. 34", "Art. 42"]),
     rdc(34, 2014, "2014-06-11", ["34", "Art. 1", "transporte"], status="vigente_com_alteracoes", min_chars=50000),
-    dict(rdc(707, 2022, "2022-07-01", ["707", "Art. 1", "transporte"], min_chars=20000,
-             nota="Texto do DOU (Seção 1, 06/07/2022) arquivado pela SES-SP; o AnvisaLegis não abriu o ato na data da inclusão."),
-         url=R707_DOU, fonte_status=anvisalegis("RDC", 707, 2022, "RDC/DC/ANVISA/MS"), status_fonte="DOU (cópia SES-SP)"),
     {"norma_id": "resolucao-antt-5998-2022", "norma": "Resolucao ANTT 5998-2022", "grupo": "antt",
      "rotulo": "Resolução ANTT nº 5.998/2022", "url": ANTT, "fonte_normativa_oficial": ANTT, "fonte_status": ANTT,
      "nota_fonte_texto": "Texto da Resolução no ANTTlegis, consolidado com as Resoluções ANTT 6.016/2023 e 6.056/2024. "
@@ -109,6 +107,16 @@ NORMAS = [
     inm(96, 2021, "2021-05-27", "ultrassom diagnóstico ou terapêutico"),
     inm(97, 2021, "2021-05-27", "ressonância magnética nuclear"),
     rdc(36, 2013, "2013-07-25", ["36", "Art. 1", "Art. 8"]),
+    {"norma_id": "portaria-consolidacao-ms-5-2017", "norma": "Portaria de Consolidacao MS 5-2017", "grupo": "portaria-ms",
+     "rotulo": "Portaria de Consolidação GM/MS nº 5/2017",
+     "url": anvisalegis("POR", 5, 2017, "MS").replace("seqAto=000", "seqAto=001"),
+     "fonte_normativa_oficial": anvisalegis("POR", 5, 2017, "MS").replace("seqAto=000", "seqAto=001"),
+     "fonte_status": anvisalegis("POR", 5, 2017, "MS").replace("seqAto=000", "seqAto=001"),
+     "nota_fonte_texto": "Texto consolidado no AnvisaLegis. Usada no roteiro de imagem pelo Programa Nacional de "
+                         "Qualidade em Mamografia (Título II, Capítulo III, Seção II, Subseção II, arts. 206 a 224; origem "
+                         "PRT GM/MS 2.898/2013) e no de transporte pelo Anexo IV (sangue e hemocomponentes).",
+     "data_fonte": "2017-09-28", "status_vigencia": "vigente_com_alteracoes", "status_fonte": "AnvisaLegis",
+     "min_chars": 500000, "obrig": ["Art. 206", "Programa Nacional de Qualidade em Mamografia", "Art. 224"]},
 ]
 
 BLOCOS = {"p", "div", "br", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6", "table", "blockquote", "center"}
@@ -143,12 +151,13 @@ def recorta(n, txt):
     """Remove o cabeçalho de navegação dos portais (antes do título do ato)."""
     marcas = {
         "rdc-anvisa": r"^Resolu[çc][ãa]o da Diretoria Colegiada - RDC",
+        "portaria-ms": r"^PORTARIA DE CONSOLIDA[ÇC][ÃA]O N",
         "in-anvisa": r"^Instru[çc][ãa]o Normativa - IN",
         "antt": r"^RESOLUÇÃO Nº 5\.998",
         "municipal-sp": r"^PORTARIA SECRETARIA MUNICIPAL DA SAÚDE",
     }
     rx = marcas.get(n["grupo"])
-    if rx and n["status_fonte"] != "DOU (cópia SES-SP)":
+    if rx:
         ls = txt.split("\n")
         i = next((k for k, l in enumerate(ls) if re.match(rx, l, re.I)), None)
         if i is not None:

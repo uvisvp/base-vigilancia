@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-10-19T12:37:46.364676+00:00",
+  "gerado_em": "2026-10-19T12:57:47.551753+00:00",
   "normas": {
     "IN 360-2025": {
       "arquivo": "in-360-2025.json",
@@ -1362,33 +1362,6 @@
         "escopo_validacao": "dispositivos vinculados ao roteiro de academias e piscinas (app Roteiros); demais usos exigem revisão própria"
       }
     },
-    "RDC 707-2022": {
-      "arquivo": "rdc-707-2022.json",
-      "nos": 1436,
-      "sha256_texto": "c77b68bb93f858b311f5a40a347ea5f874755dbdf5db8846943eb9ba54cf2746",
-      "proveniencia": {
-        "norma": "RDC 707-2022",
-        "rotulo": "RDC Anvisa nº 707/2022",
-        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000707&seqAto=000&valorAno=2022&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_texto_utilizada": "https://ses.sp.bvs.br/wp-content/uploads/2022/07/U_RS-MS-ANVISA-RDC-707_010722.pdf",
-        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000707&seqAto=000&valorAno=2022&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "nota_fonte_texto": "Texto do DOU (Seção 1, 06/07/2022) arquivado pela SES-SP; o AnvisaLegis não abriu o ato na data da inclusão.",
-        "url_final": "https://ses.sp.bvs.br/wp-content/uploads/2022/07/U_RS-MS-ANVISA-RDC-707_010722.pdf",
-        "consultado_em": "2026-10-19T12:32:42.248278+00:00",
-        "data_fonte": "2022-07-01",
-        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
-        "formato_fonte": "pdf",
-        "sha256_fonte": "16e56296e5e94592080c33f1ca8ac61525533693ff7e88ca7926ae03838a40bc",
-        "sha256_texto": "c77b68bb93f858b311f5a40a347ea5f874755dbdf5db8846943eb9ba54cf2746",
-        "status_vigencia": "vigente",
-        "status_fonte": "DOU (cópia SES-SP)",
-        "texto": "textos/RDC 707-2022--oficial.txt",
-        "data_processamento": "2026-10-19T12:32:42.248753+00:00",
-        "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
-      }
-    },
     "Resolucao ANTT 5998-2022": {
       "arquivo": "resolucao-antt-5998-2022.json",
       "nos": 323,
@@ -1708,6 +1681,33 @@
         "status_fonte": "AnvisaLegis",
         "texto": "textos/RDC 34-2014--oficial.txt",
         "data_processamento": "2026-10-19T12:32:16.190639+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+      }
+    },
+    "Portaria de Consolidacao MS 5-2017": {
+      "arquivo": "portaria-de-consolidacao-ms-5-2017.json",
+      "nos": 6458,
+      "sha256_texto": "d0ba6de2b6052884ac5d8ab4c92d94443baad15eec71f8e1a7db7d05135eebb1",
+      "proveniencia": {
+        "norma": "Portaria de Consolidacao MS 5-2017",
+        "rotulo": "Portaria de Consolidação GM/MS nº 5/2017",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000005&seqAto=001&valorAno=2017&orgao=MS&cod_modulo=310&cod_menu=9431",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000005&seqAto=001&valorAno=2017&orgao=MS&cod_modulo=310&cod_menu=9431",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000005&seqAto=001&valorAno=2017&orgao=MS&cod_modulo=310&cod_menu=9431",
+        "nota_fonte_texto": "Texto consolidado no AnvisaLegis. Usada no roteiro de imagem pelo Programa Nacional de Qualidade em Mamografia (Título II, Capítulo III, Seção II, Subseção II, arts. 206 a 224; origem PRT GM/MS 2.898/2013) e no de transporte pelo Anexo IV (sangue e hemocomponentes).",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000005&seqAto=001&valorAno=2017&orgao=MS&cod_modulo=310&cod_menu=9431",
+        "consultado_em": "2026-10-19T12:57:46.998953+00:00",
+        "data_fonte": "2017-09-28",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "586f86017b3628adf6d2459b6e0ebceade1ebc28c47531f02270cdb3d8519101",
+        "sha256_texto": "d0ba6de2b6052884ac5d8ab4c92d94443baad15eec71f8e1a7db7d05135eebb1",
+        "status_vigencia": "vigente_com_alteracoes",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/Portaria de Consolidacao MS 5-2017--oficial.txt",
+        "data_processamento": "2026-10-19T12:57:47.002624+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
