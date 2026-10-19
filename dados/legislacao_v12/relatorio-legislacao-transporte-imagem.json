@@ -1,122 +1,14 @@
 {
   "schema": "relatorio-legislacao-transporte-imagem-v1",
-  "gerado_em": "2026-10-19T12:32:12.522472+00:00",
+  "gerado_em": "2026-10-19T12:57:38.942507+00:00",
   "normas": [
     {
-      "norma": "RDC 504-2021",
-      "arquivo": "rdc-504-2021.json",
-      "nos": 169,
-      "artigos": 48,
-      "chars": 27178,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "RDC 34-2014",
-      "arquivo": "rdc-34-2014.json",
-      "nos": 1728,
-      "artigos": 153,
-      "chars": 193689,
+      "norma": "Portaria de Consolidacao MS 5-2017",
+      "arquivo": "portaria-de-consolidacao-ms-5-2017.json",
+      "nos": 6458,
+      "artigos": 1220,
+      "chars": 1106768,
       "status_vigencia": "vigente_com_alteracoes",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "RDC 707-2022",
-      "arquivo": "rdc-707-2022.json",
-      "nos": 1436,
-      "artigos": 171,
-      "chars": 98708,
-      "status_vigencia": "vigente",
-      "fonte": "DOU (cópia SES-SP)"
-    },
-    {
-      "norma": "Resolucao ANTT 5998-2022",
-      "arquivo": "resolucao-antt-5998-2022.json",
-      "nos": 323,
-      "artigos": 48,
-      "chars": 58745,
-      "status_vigencia": "vigente_com_alteracoes",
-      "fonte": "ANTTlegis"
-    },
-    {
-      "norma": "Portaria SMS SP 266-2025",
-      "arquivo": "portaria-sms-sp-266-2025.json",
-      "nos": 255,
-      "artigos": 46,
-      "chars": 51409,
-      "status_vigencia": "vigente",
-      "fonte": "Catálogo de Legislação Municipal"
-    },
-    {
-      "norma": "RDC 611-2022",
-      "arquivo": "rdc-611-2022.json",
-      "nos": 357,
-      "artigos": 86,
-      "chars": 53526,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 90-2021",
-      "arquivo": "in-90-2021.json",
-      "nos": 330,
-      "artigos": 16,
-      "chars": 13052,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 91-2021",
-      "arquivo": "in-91-2021.json",
-      "nos": 159,
-      "artigos": 11,
-      "chars": 11384,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 92-2021",
-      "arquivo": "in-92-2021.json",
-      "nos": 323,
-      "artigos": 9,
-      "chars": 12287,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 93-2021",
-      "arquivo": "in-93-2021.json",
-      "nos": 141,
-      "artigos": 6,
-      "chars": 7768,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 96-2021",
-      "arquivo": "in-96-2021.json",
-      "nos": 66,
-      "artigos": 5,
-      "chars": 4105,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "IN 97-2021",
-      "arquivo": "in-97-2021.json",
-      "nos": 46,
-      "artigos": 15,
-      "chars": 6215,
-      "status_vigencia": "vigente",
-      "fonte": "AnvisaLegis"
-    },
-    {
-      "norma": "RDC 36-2013",
-      "arquivo": "rdc-36-2013.json",
-      "nos": 109,
-      "artigos": 14,
-      "chars": 10543,
-      "status_vigencia": "vigente",
       "fonte": "AnvisaLegis"
     }
   ]
