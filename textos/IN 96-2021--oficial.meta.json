@@ -1,0 +1,22 @@
+{
+  "norma": "IN 96-2021",
+  "rotulo": "IN Anvisa nº 96/2021",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000096&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000096&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000096&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis (ultrassom diagnóstico ou terapêutico).",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000096&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-19T12:32:55.680901+00:00",
+  "data_fonte": "2021-05-27",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "e0639f7d89af7cca61c44cbc5d79c9e853a417a19eb98bf5e357ca52e26e8c87",
+  "sha256_texto": "20106924d09deb2d1730e751b3ce5e2a385e333e9d22ced755a6fa08742ad912",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/IN 96-2021--oficial.txt",
+  "data_processamento": "2026-10-19T12:32:55.681013+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+}

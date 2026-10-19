@@ -1,0 +1,330 @@
+INSTRUÇÃO NORMATIVA - IN N° 90, DE 27 DE MAIO DE 2021 (*)
+Dispõe sobre requisitos sanitários para a garantia da qualidade e da segurança em sistemas de radiografia médica convencional, e dá outras providências.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 53, VII, §§ 1º e 3º, do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC nº 255, de 10 de dezembro de 2018, resolve adotar a seguinte Instrução Normativa, conforme deliberado em reunião realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DISPOSIÇÕES INICIAIS
+Art. 1º Esta Instrução Normativa estabelece requisitos sanitários para a garantia da qualidade e da segurança em sistemas de radiografia médica convencional, bem como a relação mínima de testes de aceitação e de controle de qualidade que devem ser realizados pelos serviços de saúde, determinando respectivas periodicidades, tolerâncias e níveis de restrição, conforme Anexo I desta Instrução Normativa.
+Parágrafo único. O rol de testes do Anexo I desta Instrução Normativa deve ser complementado pelos testes de aceitação e de controle de qualidade estabelecidos pelo fabricante do sistema avaliado e pelas demais normativas aplicáveis.
+Seção I
+Características dos equipamentos, dos processos e dos ambientes
+Art. 2º Todo equipamento de radiografia médica convencional deve possuir:
+I - blindagem no cabeçote de modo a garantir nível mínimo de radiação de fuga, restringida à taxa de kerma no ar de 1 mGy/h (um miligray por hora) a 1 (um) metro do ponto focal, quando operado em condições de ensaio de fuga, comprovada com certificado de adequação emitido pelo fabricante na instalação do tubo de raios X;
+II - o disposto no inciso I deste artigo aplica-se à radiação de fuga através do sistema de colimação;
+III - filtração total permanente do feixe útil de radiação de, no mínimo o equivalente a 2,5 mm (dois inteiros e cinco décimos de milímetro) de alumínio;
+IV - diafragma regulável com localização luminosa, para limitar o campo de radiação à região de interesse clínico;
+V - sistema para identificar quando o eixo do feixe de radiação está perpendicular ao plano do receptor de imagem e para ajustar o centro do feixe de radiação em relação ao centro do receptor de imagem;
+VI - sistema para indicar a distância foco-receptor ou foco-pele;
+VII - indicação visual do tubo selecionado no painel de controle, para equipamentos com mais de 1 (um) tubo;
+VIII - cabo disparador com comprimento mínimo de 2 (dois) metros, nos equipamentos móveis;
+IX - suporte do cabeçote ajustável, de modo a manter o tubo estável durante a exposição, a menos que o movimento do cabeçote seja função projetada do equipamento;
+X - componentes, tais como gerador, tubo, cabeçote, mesa e sistema de colimação, devem possuir identificação própria (marca, modelo, número de série), mediante etiqueta fixada em lugar visível; e
+XI - grade antidifusora removível, para equipamentos especificados para aplicações pediátricas.
+Art. 3º Quando houver sistema de Controle Automático de Exposição, o painel de controle deve possuir indicação clara de quando esse modo de operação está sendo utilizado.
+Art. 4º A absorção produzida pela mesa do equipamento ou pelo portareceptor de imagens vertical, quando aplicável, deve ser comprovada por meio de certificado de adequação emitido pelo fabricante.
+Art. 5º No painel de controle do equipamento, a terminologia e os valores dos parâmetros de operação devem estar exibidos em linguagem ou simbologia internacionalmente aceita, compreensível para o usuário.
+Art. 6º Os parâmetros operacionais, tais como tensão do tubo, filtração inerente e adicional, posição do ponto focal, distância fonte receptor de imagem, tamanho de campo (para equipamento com distância fonte-receptor de imagem constante), tempo e corrente do tubo ou seu produto, devem estar claramente indicados no equipamento.
+Art. 7º A emissão de raios X, enquanto durar a exposição radiográfica, deve ser indicada por sinal sonoro e luminoso localizado no painel de controle do equipamento.
+Art. 8º Deve estar disponível no comando, protocolo de técnicas radiográficas (tabela de exposição), especificando, para cada exame realizado no equipamento, as seguintes informações:
+I - tipo de exame (espessuras e partes anatômicas do paciente) e respectivos fatores de técnica radiográfica;
+II - parâmetros para o controle automático de exposição, quando aplicáveis;
+III - tamanho e tipo de receptor de imagem;
+IV - distância foco-receptor de imagem;
+V - tipo e posicionamento da blindagem a ser usada no paciente, quando aplicável; e
+VI - quando determinado pela autoridade sanitária competente, restrições de operação do equipamento e procedimentos de segurança.
+Art. 9º Todo equipamento com anodo rotatório deve ter 2 (dois) estágios de acionamento do feixe de raios X e possuir mecanismos para que:
+I - a emissão do feixe de raios X ocorra somente enquanto durar a pressão intencional sobre o botão disparador;
+II - seja necessário aliviar a pressão sobre o botão e pressioná-lo novamente para ocorrer repetição da exposição; e
+III - o botão disparador esteja instalado de tal forma que seja difícil efetuar exposição acidental.
+Art. 10. Os equipamentos de raios X devem ser providos de dispositivo que interrompa automaticamente a irradiação ao final do tempo, da dose, ou do produto corrente-tempo selecionados, ou a qualquer momento dentro do intervalo selecionado de exposição.
+Seção II
+Requisitos de desempenho e aceitação
+Art. 11. São condições dos procedimentos e equipamentos de radiografia médica convencional que inabilitam o seu uso:
+I - equipamento sem sistema de colimação ou sistema sem funcionar;
+II - equipamento sem luz de campo ou luz de campo sem funcionar;
+III - equipamento sem filtração adicional;
+IV - equipamento sem indicação no painel de controle dos parâmetros básicos (tensão (kV), corrente (mA) e tempo (s) ou o produto corrente x tempo (mAs);
+V - mesa bucky ou bucky mural sem grade antidifusora;
+VI - mais de 1 (um) equipamento instalado na mesma sala;
+VII - equipamento móvel sem cabo disparador; e
+VIII - equipamento com sistema de disparo que permita feixe contínuo, independentemente do tempo selecionado.
+Art. 12. As avaliações da qualidade da imagem devem:
+I - utilizar ferramenta de teste específica para radiografia médica convencional que verifique, no mínimo, resolução espacial e resolução de baixo contraste;
+II - após a realização do teste de aceitação ou dos testes completos de desempenho, incluindo avaliação do equipamento de raios X, receptores de imagem, sistema de processamento e visualização, deve-se produzir 1 (uma) imagem da ferramenta de teste, para ser utilizada como referência; e
+III - as avaliações quantitativas e qualitativas devem ser realizadas com base nos parâmetros estabelecidos no Anexo I desta Instrução Normativa, na imagem de referência e nas especificações da ferramenta de teste.
+CAPÍTULO II
+DISPOSIÇÕES FINAIS
+Art. 13. Ficam revogadas:
+I -a Instrução Normativa - IN nº 52, de 20 de dezembro de 2019, publicada no Diário Oficial da União de 26 de dezembro de 2019; e
+II - a Instrução Normativa - IN nº 78, de 18 de novembro de 2020, publicada no Diário Oficial da União de 25 de novembro de 2020.
+Art. 14. Esta Instrução Normativa entra em vigor na data de sua publicação.
+ANTONIO BARRA TORRES
+Diretor-Presidente
+ANEXO I
+TESTES DE ACEITAÇÃO E DE CONTROLE DE QUALIDADE PARA SERVIÇOS DE RADIOGRAFIA MÉDICA CONVENCIONAL
+APLICABILIDADE*
+TESTES
+PERIODICIDADE
+TOLERÂNCIA
+NÍVEL DE RESTRIÇÃO
+G
+Exatidão dos indicadores da distância foco-receptor
+Teste de aceitação ou após reparos
+≤ 5%
+-
+G
+Exatidão do indicador de campo luminoso
+Teste de aceitação, semestral ou após reparos
+≤ 2% da distância foco-receptor
+> 4%
+G
+Alinhamento do eixo central do feixe de Raios X
+Teste de aceitação, semestral ou após reparos
+≤ 3° em relação ao eixo perpendicular ao plano do receptor
+> 5°
+F (C/CR/DR)
+Alinhamento de grade
+Teste de aceitação, semestral ou após reparos
+Sem artefato, lâminas aparentes ou não uniformidade da imagem
+Não possuir grade
+G
+Integridade dos chassis e cassetes
+Teste de aceitação e anual
+Chassis e cassetes íntegros
+-
+G
+Valores representativos de dose
+Teste de aceitação, anual ou após reparos
+Anexo II desta Instrução Normativa
+-
+G
+Exatidão do indicador de tensão do tubo
+Teste de aceitação, anual ou após reparos
+≤ 10%.
+> 20%
+G
+Reprodutibilidade da tensão do tubo
+Teste de aceitação, anual ou após reparos
+≤ 5%
+> 10%
+G
+Exatidão do tempo de exposição
+Teste de aceitação, anual ou após reparos
+≤ 10%
+> 30%
+G
+Reprodutibilidade do tempo de exposição
+Teste de aceitação, anual ou após reparos
+≤ 10%
+> 20%
+G
+Reprodutibilidade do kerma no ar
+Teste de aceitação, anual ou após reparos
+≤ 10%
+> 20%
+G
+Linearidade do kerma no ar com o produto corrente tempo
+Teste de aceitação, anual ou após reparos
+≤ 20%
+> 40%
+F (C/CR/DR)
+Reprodutibilidade do Controle Automático de Exposição
+Teste de aceitação, anual ou após reparos
+≤ 10%
+> 20%
+F (C/CR/DR)
+Compensação do Controle Automático de Exposição para diferentes espessuras
+Teste de aceitação, anual ou após reparos
+≤ 20%
+> 40%
+G
+Rendimento do Tubo (R)
+Teste de aceitação, anual ou após reparos
+30
+≤ R (µGy/mAs)
+≤ 65, a 1 m para 80 kV e filtração total entre 2,5 mmAl e 5 mmAl
+R < 20 µGy/mAs
+R > 80 µGy/mAs
+G
+Camada Semirredutora (CSR)
+Teste de aceitação, anual ou após reparos
+Anexo III desta Instrução Normativa
+20% menor que os valores do Anexo III
+G
+Resolução Espacial
+Teste de aceitação, anual ou após reparos
+≥ 2,5 pl/mm
+< 1,5 pl/mm
+F/M (C)
+Contato tela-filme
+Teste de aceitação, anual ou após reparos
+Sem perda de uniformidade
+-
+G
+Artefatos na imagem
+Teste de aceitação, anual ou após reparos
+Imagens sem artefatos
+-
+F/M (C)
+Vedação da câmara escura
+Teste de aceitação, anual ou após reparos
+Sem entrada de luz externa
+Velando filme
+F (C/CR/DR), inclusive digitalização
+Uniformidade da imagem
+Teste de aceitação, anual ou após reparos
+≤ 10%
+> 20%
+F/M (CR)
+Diferença de sensibilidade entre as placas de fósforo, para receptores de imagem de mesmo tamanho
+Teste de aceitação, anual ou após reparos
+≤ 20%
+> 40%
+F/M (CR/DR)
+Exatidão do indicador de dose do detector (quando disponível)
+Teste de aceitação, anual ou após reparos
+≤ 20%
+> 40%
+F/M (CR/DR), inclusive digitalização
+Distorção geométrica
+Teste de aceitação, anual ou após reparos
+≤ 2%
+> 4%
+F/M (CR/DR)
+Efetividade do ciclo de apagamento
+Teste de aceitação, anual ou após reparos
+Ausência de imagem residual
+-
+F/M (CR/DR)
+Luminância do monitor para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≥ 170 cd/m²
+-
+G
+Luminância do negatoscópio para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≥ 1500 cd/m²
+-
+G
+Uniformidade da luminância dos monitores e negatoscópios para diagnóstico ou laudo
+Teste de aceitação, anual ou após reparos
+≤ 30%
+-
+G
+Iluminância da sala de laudos
+Teste de aceitação, anual ou após reparos
+≤ 50 lx
+-
+G
+Integridade dos acessórios e equipamentos de proteção individual
+Teste de aceitação, anual ou após reparos
+Íntegros
+-
+G
+Qualidade da imagem
+Teste de aceitação, anual e após reparos
+Art. 12 desta Instrução Normativa
+Art. 12 desta Instrução Normativa
+G
+Levantamento radiométrico
+Teste de aceitação, quadrienal ou após modificações nas salas, equipamentos ou procedimentos
+Área Livre:
+≤ 0,5 mSv/ano;
+Área Controlada:
+≤ 5,0 mSv/ano.
+Área Livre:
+> 1,0 mSv/ano;
+Área Controlada: > 10,0 mSv/ano.
+G
+Radiação de fuga do cabeçote
+Teste de aceitação, quadrienal ou após modificações nos equipamentos
+≤ 1,0 mGy/h a 1 m
+> 2,0 mGy/h a 1 m
+*F: Fixo; M: Móvel; C: Convencional; CR: Radiografia Computadorizada; DR: Radiografia Digital; G: Geral (F/M/C/CR/DR)
+Observação: Os testes de qualidade dos receptores de imagem devem ser realizados para todos os dispositivos disponíveis.
+ANEXO II
+VALORES REPRESENTATIVOS DE DOSE EM RADIODIAGNÓSTICO PARA PACIENTE ADULTO TÍPICO*
+Exame
+Incidência**
+DEP*** (mGy)
+Referência Máxima
+Coluna Lombar
+AP
+10
+LAT
+30
+JLS
+40
+Abdome, Urografia e Colecistectomia
+AP
+10
+Pelve
+AP
+10
+Bacia
+AP
+10
+Tórax
+PA
+0,4
+LAT
+1,4
+Coluna Torácica
+AP
+7
+LAT
+20
+Crânio
+AP
+5
+LAT
+3
+*Paciente adulto típico (para fins de avaliação de exposição médica em adulto) - Indivíduo com característica biométrica típica de adulto, com peso entre 60 e 75 kg e altura entre 1,60 e 1,75 m.
+**PA: Póstero Anterior; AP: Antero Posterior; LAT: Lateral; JLS: Junção Lombo-Sacro.
+*** DEP: Dose de Entrada na Pele.
+ANEXO III
+VALORES MÍNIMOS DE CAMADAS SEMIRREDUTORAS
+kVp
+CSR (mmAl)
+Monofásico
+Trifásico
+Alta frequência (recomendação)
+50
+1,5
+1,6
+1,8
+60
+1,8
+2,0
+2,2
+70
+2,1
+2,3
+2,5
+80
+2,3
+2,6
+2,9
+90
+2,5
+3,0
+3,2
+100
+2,7
+3,2
+3,6
+110
+3,0
+3,5
+3,9
+120
+3,2
+3,9
+4,3
+130
+3,5
+4,1
+4,7
+(*) Republicada por ter saído com incorreção no original, publicado no Diário Oficial da União n° 101, de 31 de maio de 2021, Seção 1, pág. 149.
+PUB D.O.U., 31/05/2021 - Seção 1
+REP., 06/07/2022 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

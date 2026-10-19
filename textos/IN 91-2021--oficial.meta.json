@@ -1,0 +1,22 @@
+{
+  "norma": "IN 91-2021",
+  "rotulo": "IN Anvisa nº 91/2021",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000091&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000091&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000091&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis (fluoroscopia e radiologia intervencionista).",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=INM&numeroAto=00000091&seqAto=000&valorAno=2021&orgao=DC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-19T12:32:51.558817+00:00",
+  "data_fonte": "2021-05-27",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "84fd0bcecfc5932e17c8fbad717d0a86c39c4473c9bbb16326250286544e7434",
+  "sha256_texto": "f211134521188bea0668e3b122d23848acd69f65269dd26648a4ff1855dd23ec",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/IN 91-2021--oficial.txt",
+  "data_processamento": "2026-10-19T12:32:51.558987+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+}

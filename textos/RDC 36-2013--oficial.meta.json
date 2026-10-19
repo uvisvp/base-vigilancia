@@ -1,0 +1,22 @@
+{
+  "norma": "RDC 36-2013",
+  "rotulo": "RDC Anvisa nº 36/2013",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000036&seqAto=000&valorAno=2013&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000036&seqAto=000&valorAno=2013&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000036&seqAto=000&valorAno=2013&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000036&seqAto=000&valorAno=2013&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-19T12:32:58.425365+00:00",
+  "data_fonte": "2013-07-25",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "ddf70efd67ff13a1af9065ab92941af96a91d8fd57edb8e4c98534e783bb1c6b",
+  "sha256_texto": "d09250345a67e4afde78bd4d92d4fadd3cbb01def2d5dd769ff7fed1e1cd9892",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 36-2013--oficial.txt",
+  "data_processamento": "2026-10-19T12:32:58.425570+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+}

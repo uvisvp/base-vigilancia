@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="aui ltr yui3-js-enabled js" dir="ltr" lang="pt-BR" amp>
+    <head>
+    	<title>InstruÁ„o Normativa - IN  n∫ 92, de 27/05/2021†</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1e2b4d">
+        <link rel="icon" type="image/png" sizes="32x32" href="/v2/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/v2/img/favicon-16x16.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- 
+		<link rel="apple-touch-icon" sizes="32x32" href="/v2/img/mobile/logo_app32.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="/v2/img/mobile/logo_app96.png" />
+		-->
+		<link rel="apple-touch-icon" sizes="144x144" href="/v2/img/mobile/logo_app144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/v2/img/mobile/logo_app192.png" />
+        
+        <link href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="/v2/css/header.css?20261019" rel="stylesheet" type="text/css">
+		<link href="/v2/css/custom.css?20261019" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/view/css/jquery-ui.css" />
+		<link rel="stylesheet" href="/view/css/styles.css?20261019" type="text/css" />
+		<link rel="stylesheet" href="/view/css/style.css?20261019" type="text/css" />
+		<link rel="stylesheet" href="/view/css/treeview.css" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/social-media.css?20261019" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/texto-ato.css?20261019" type="text/css" />
+		<!-- CUSTOM ANVISA -->
+		<link rel="stylesheet" href="/v2/css/folha_rosto_anvisa.css?20261019" type="text/css" />
+	</head>
+	<body id="corpo" class="">
+		<div class="container-fluid">
+			<div class="container">
+    			<div class="noprint" style="border-bottom: 1px solid #ccc; padding: 8px 0;">
+                	<nav id="breadcrumbs">
+                        <ul class="breadcrumb breadcrumb-horizontal">
+                        	<li>
+                        		<a href="/action/ActionDatalegis.php?acao=apresentacao&cod_menu=9431&cod_modulo=310" title="Voltar para Home">
+                        			<i class="fas fa-home"></i>
+                        		</a>
+                        	</li>
+                        	<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        	<li class="first">
+                                <a href="/action/ActionDatalegis.php?acao=categorias&cod_modulo=310&menuOpen=true">NORMAS REGULAT”RIAS    DA ANVISA</a>
+                        	</li>
+    					<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        <li class="active last">
+                            <a href="/action/ActionDatalegis.php?acao=recuperarTematicasCollapse&cod_modulo=310&cod_menu=9431">NORMAS POR TEMAS</a>
+                        </li>
+                    	</ul>
+                    </nav>
+                    <a href="javascript:;" id="voltar" class="float-right" onclick="window.close()">
+                    	<i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Voltar
+                    </a>
+				</div>
+    			<div class="noprint container" style="padding: 0 10px; margin: 0; text-align: right; display: flex;">
+            		<div id="barra-icones" class="item">
+            			<ul>
+        				<li>
+            				<a href="javascript:;" onclick="copyTextToClipboard('https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000092&sgl_tipo=INM&sgl_orgao=DC/ANVISA/MS&vlr_ano=2021&seq_ato=000&cod_modulo=310&cod_menu=9431', this)" data-toggle="tooltip" data-placement="bottom" title="Copie o link do Ato">
+            					<i class="fas fa-link" aria-hidden="true"></i> <span class="ocultar-mobile">COPIAR LINK</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="tags('00000092','INM','DC/ANVISA/MS','2021','000');" title="Cadastre aqui suas Tags para o ATO">
+            					<i class="fas fa-tags" aria-hidden="true"></i> <span class="ocultar-mobile">CRIAR TAGS</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="imprimir();">
+            					<i class="fa fa-print" aria-hidden="true"></i> <span class="ocultar-mobile">IMPRIMIR</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="pdf()">
+            					<i class="fas fa-file-pdf" aria-hidden="true"></i> <span class="ocultar-mobile">PDF</span>
+            				</a>
+        				</li>
+        				<!-- 
+                        -->
+        				<li>
+            				<a id="texto-notas" href="javascript:;" onclick="abrirTodosLinkNota()">
+            					<i class="fas fa-folder-open" aria-hidden="true"></i> <span class="ocultar-mobile">VER NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a id="texto-compilado" href="javascript:;" onclick="fecharTodosLinkNota()" style="text-decoration: underline;">
+            					<i class="fas fa-folder" aria-hidden="true"></i> <span class="ocultar-mobile">FECHAR NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        			</ul>
+    			
+				</div>
+			
+    			<div class="font-settings item item1" style="width: 90px">
+        			<a href="javascript:mudaFonte('mais');" title="Aumentar Texto" style="padding: 0 2px; font-size: 20px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>+
+        			</a>
+        			<i style="padding: 0 2px; margin: -15px 0 5px 0; font-size: 20px; color: #424242;">|</i>
+        			<a href="javascript:mudaFonte('menos');" title="Diminur Texto" style="padding: 0 2px; font-size: 17px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>-
+        			</a>
+        		</div>
+    		
+    		</div>
+            <div class="noprint social-media-share hide" style="display: none;">
+                <a class="share-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000092%26sgl_tipo%3DINM%26sgl_orgao%3DDC%2FANVISA%2FMS%26vlr_ano%3D2021%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-twitter" href="http://twitter.com/intent/tweet?text=Instru√ß√£o Normativa - IN  n¬∫ 92, de 27/05/2021¬†&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000092%26sgl_tipo%3DINM%26sgl_orgao%3DDC%2FANVISA%2FMS%26vlr_ano%3D2021%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000092%26sgl_tipo%3DINM%26sgl_orgao%3DDC%2FANVISA%2FMS%26vlr_ano%3D2021%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-whatsapp" href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000092%26sgl_tipo%3DINM%26sgl_orgao%3DDC%2FANVISA%2FMS%26vlr_ano%3D2021%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+            </div>
+		<article class="article">
+    		<div id="conteudo">
+				<div class="tab_menor noprint" style="border-bottom: 1px solid #9a9a9a; padding-bottom: 10px; margin: 10px 0;">
+					<div class="row">
+						<div class="col-9">
+    				<strong><span class="ico-situacao vigente status-1" title="Vigente">Vigente</span>InstruÁ„o Normativa - IN  n∫ 92, de 27/05/2021†</strong>&nbsp;
+						</div>
+						<div class="col-3 text-right">
+							<a class="btn btn-primary" style="color: white;" onclick="javascript:LinkTexto(&#039;INM&#039;,&#039;00000092&#039;,&#039;222&#039;,&#039;2021&#039;,&#039;ANVISA/MS&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;)">Ver mais detalhes</a>
+						</div>
+					</div>
+    			</div>
+    			<div class="ato">
+<p style="text-align: center;">MINIST&Eacute;RIO DA SA&Uacute;DE<p style="text-align: center;">AG&Ecirc;NCIA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p style="text-align: center;">DIRETORIA COLEGIADA</p><p style="text-align: center;">INSTRU&Ccedil;&Atilde;O NORMATIVA - IN N&deg; 92, DE 27 DE MAIO DE 2021 (*)</p><p style="text-align: justify; margin-left: 50%;">Disp&otilde;e sobre requisitos sanit&aacute;rios para a garantia da qualidade e da seguran&ccedil;a de sistemas de mamografia, e d&aacute; outras provid&ecirc;ncias.</p><p>A Diretoria Colegiada da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, no uso das atribui&ccedil;&otilde;es que lhe confere o <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">art. 15, III e IV, aliado ao art. 7&ordm;, III e IV da Lei n&ordm; 9.782, de 26 de janeiro de 1999</a>, e ao <a href="javascript:LinkTexto('RDC','00000255','000','2018','RDC/DC/ANVISA/MS','X','','')">art. 53, VII, &sect;&sect; 1&ordm; e 3&ordm;, do Regimento Interno aprovado pela Resolu&ccedil;&atilde;o de Diretoria Colegiada - RDC n&ordm; 255, de 10 de dezembro de 2018</a>, resolve adotar a seguinte Instru&ccedil;&atilde;o Normativa, conforme deliberado em reuni&atilde;o realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publica&ccedil;&atilde;o.</p><p style="text-align: center;">CAP&Iacute;TULO I</p><p style="text-align: center;">DISPOSI&Ccedil;&Otilde;ES INICIAIS</p><p>Art. 1&ordm; Esta Instru&ccedil;&atilde;o Normativa estabelece requisitos sanit&aacute;rios para a garantia da qualidade e da seguran&ccedil;a de sistemas de mamografia, bem como a rela&ccedil;&atilde;o m&iacute;nima de testes de aceita&ccedil;&atilde;o e de controle de qualidade que devem ser realizados pelos servi&ccedil;os de sa&uacute;de, determinando respectivas periodicidades, toler&acirc;ncias e n&iacute;veis de restri&ccedil;&atilde;o, conforme Anexo I desta Instru&ccedil;&atilde;o Normativa.</p><p>Par&aacute;grafo &uacute;nico. O rol de testes do Anexo I desta Instru&ccedil;&atilde;o Normativa deve ser complementado pelos testes de aceita&ccedil;&atilde;o e de controle de qualidade estabelecidos pelo fabricante do sistema avaliado e pelas demais normativas aplic&aacute;veis.</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o I </b></p><p style="text-align: center;"><b>Caracter&iacute;sticas dos equipamentos </b></p><p>Art. 2&ordm; Todo equipamento de mamografia deve possuir:</p><p>I - blindagem no cabe&ccedil;ote de modo a garantir n&iacute;vel m&iacute;nimo de radia&ccedil;&atilde;o de fuga, restringida &agrave; taxa de kerma no ar de 1 mGy/h (um miligray por hora) a 1 (um) metro do ponto focal, quando operado em condi&ccedil;&otilde;es de ensaio de fuga, comprovada com certificado de adequa&ccedil;&atilde;o emitido pelo fabricante na instala&ccedil;&atilde;o do tubo de raios X;</p><p>II - o requisito de que trata o inciso I deste artigo aplica-se &agrave; radia&ccedil;&atilde;o de fuga atrav&eacute;s do sistema de colima&ccedil;&atilde;o;</p><p>III - filtra&ccedil;&atilde;o total permanente m&iacute;nima do feixe &uacute;til de radia&ccedil;&atilde;o equivalente a 0,03 mm (tr&ecirc;s cent&eacute;simos de mil&iacute;metro) de molibd&ecirc;nio, para combina&ccedil;&atilde;o alvo/filtro Mo/Mo; 0,025 mm (vinte e cinco mil&eacute;simos de mil&iacute;metro) de r&oacute;dio, para a combina&ccedil;&atilde;o alvo/filtro Mo/Rh ou Rh/Rh; 0,06 mm (seis cent&eacute;simos de mil&iacute;metro) de molibd&ecirc;nio, para combina&ccedil;&atilde;o alvo/filtro W/Mo; 0,05 mm (cinco cent&eacute;simos de mil&iacute;metro) de r&oacute;dio, para combina&ccedil;&atilde;o alvo/filtro W/Rh;</p><p>IV - dispositivo para manter compress&atilde;o firme na mama para assegurar espessura uniforme na por&ccedil;&atilde;o radiografada, de modo que:</p><p>a) a placa de compress&atilde;o produza atenua&ccedil;&atilde;o de, no m&aacute;ximo, o equivalente a 2 mm (dois mil&iacute;metros) de Polimetil-Meta-Acrilato (PMMA), comprovada com certificado de adequa&ccedil;&atilde;o emitido pelo fabricante na instala&ccedil;&atilde;o do tubo de raios X; e</p><p>b) o sistema autom&aacute;tico garanta for&ccedil;a de compress&atilde;o do dispositivo entre 150 (cento e cinquenta) e 200 (duzentos) Newtons (N), indicando o valor da compress&atilde;o.</p><p>V - suporte de receptor de imagem com transmiss&atilde;o menor que 1 &micro;Gy (um microgray) por exposi&ccedil;&atilde;o a 5 cm (cinco cent&iacute;metros), sem a presen&ccedil;a da mama, para valores m&aacute;ximos de kVp e mAs empregados, comprovada com certificado de adequa&ccedil;&atilde;o emitido pelo fabricante na instala&ccedil;&atilde;o do tubo de raios X;</p><p>VI - tubo de raios X projetado especificamente para mamografia;</p><p>VII - gerador de alta frequ&ecirc;ncia;</p><p>VIII - controle autom&aacute;tico de exposi&ccedil;&atilde;o;</p><p>IX - dist&acirc;ncia do ponto focal at&eacute; o receptor de imagem n&atilde;o inferior a 50 cm (cinquenta cent&iacute;metros);</p><p>X - tamanho nominal do ponto focal n&atilde;o superior a 0,4 mm (quatro d&eacute;cimos de mil&iacute;metro); e</p><p>XI - sistema para indicar a espessura da mama comprimida, para equipamentos comercializados ap&oacute;s a publica&ccedil;&atilde;o desta Instru&ccedil;&atilde;o Normativa.</p><p>Art. 3&ordm; O painel de controle deve possuir indica&ccedil;&atilde;o clara de quando se utiliza o controle autom&aacute;tico de exposi&ccedil;&atilde;o.</p><p>Art. 4&ordm; No painel de controle do equipamento, a terminologia e os valores dos par&acirc;metros de opera&ccedil;&atilde;o devem estar exibidos em linguagem ou simbologia internacionalmente aceita, compreens&iacute;vel para o usu&aacute;rio.</p><p>Art. 5&ordm; A emiss&atilde;o de raios X, enquanto durar a exposi&ccedil;&atilde;o, deve ser indicada por sinal sonoro e luminoso no painel de controle do equipamento.</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o II </b></p><p style="text-align: center;"><b>Requisitos de desempenho e aceita&ccedil;&atilde;o </b></p><p>Art. 6&ordm; S&atilde;o condi&ccedil;&otilde;es dos procedimentos e equipamentos de mamografia que inabilitam seu uso:</p><p>I - equipamento sem sistema de colima&ccedil;&atilde;o ou sistema sem funcionar;</p><p>II - equipamento sem filtra&ccedil;&atilde;o adicional;</p><p>III - equipamento sem indica&ccedil;&atilde;o no painel de controle dos par&acirc;metros b&aacute;sicos (Tens&atilde;o (kVp), Corrente (mA) e Tempo (s) ou o produto corrente x tempo (mAs));</p><p>IV - equipamento sem sistema autom&aacute;tico de compress&atilde;o;</p><p>V - equipamento sem bandeja de compress&atilde;o, com bandeja danificada ou sem fixa&ccedil;&atilde;o;</p><p>VI - equipamento sem controle autom&aacute;tico de exposi&ccedil;&atilde;o (CAE) ou com CAE sem funcionar;</p><p>VII - equipamento com dist&acirc;ncia do ponto focal at&eacute; o receptor de imagem menor que 50 cm (cinquenta cent&iacute;metros);</p><p>VIII - suporte de receptor de imagem (bucky) sem grade antidifusora, exceto sistemas de magnifica&ccedil;&atilde;o;</p><p>IX - revela&ccedil;&atilde;o manual;</p><p>X - mais de 1 (um) equipamento instalado na mesma sala;</p><p>XI - utilizar negatosc&oacute;pios que n&atilde;o sejam espec&iacute;ficos para mamografia, quando o servi&ccedil;o realizar diagn&oacute;stico e laudos por meio de filme;</p><p>XII - utilizar monitor para diagn&oacute;stico e laudos que n&atilde;o seja espec&iacute;fico para mamografia; e</p><p>XIII - utilizar processadora n&atilde;o espec&iacute;fica e exclusiva para mamografia convencional, quando o servi&ccedil;o utilizar essa modalidade.</p><p>Art. 7&ordm; Os testes de controle de qualidade devem ser realizados com as respectivas periodicidades, toler&acirc;ncias e n&iacute;veis de restri&ccedil;&atilde;o estabelecidos no Anexo I desta Instru&ccedil;&atilde;o Normativa, e em conformidade com as demais normativas aplic&aacute;veis.</p><p>&sect; 1&ordm; Para servi&ccedil;os de mamografia em unidades itinerantes, os testes do Anexo I desta Instru&ccedil;&atilde;o Normativa devem ser realizados, no m&iacute;nimo, semestralmente, com exce&ccedil;&atilde;o dos testes de menor per&iacute;odo, que devem ser realizados conforme estabelecido no Anexo I desta Instru&ccedil;&atilde;o Normativa.</p><p>&sect; 2&ordm; A avalia&ccedil;&atilde;o di&aacute;ria da qualidade da imagem pode ser realizada por profissionais do pr&oacute;prio servi&ccedil;o, desde que treinados e legalmente habilitados para tais fun&ccedil;&otilde;es.</p><p style="text-align: center;">CAP&Iacute;TULO II</p><p style="text-align: center;">DISPOSI&Ccedil;&Otilde;ES FINAIS</p><p>Art. 8&ordm; Fica revogada a <a href="javascript:LinkTexto('INM','00000054','000','2019','DC/ANVISA/MS','','','')">Instru&ccedil;&atilde;o Normativa - IN n&ordm; 54, de 20 de dezembro de 2019</a>, publicada no Di&aacute;rio Oficial da Uni&atilde;o n&ordm; 249, de 26 de dezembro de 2019, Se&ccedil;&atilde;o 1, p&aacute;g. 128.</p><p>Art. 9&ordm; Esta Instru&ccedil;&atilde;o Normativa entra em vigor na data de sua publica&ccedil;&atilde;o.</p><p style="text-align: center;">ANTONIO BARRA TORRES<br>Diretor-Presidente</p><p style="text-align: center;"><b>ANEXO I</b></p><p style="text-align: center;"><b>TESTES DE ACEITA&Ccedil;&Atilde;O E DE CONTROLE DE QUALIDADE PARA SERVI&Ccedil;OS DE MAMOGRAFIA</b><br>&nbsp;</p><table align="center" border="1" cellpadding="4" cellspacing="0" class="Table" style="width:100%;" width="624">	<tbody>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><b>APLICABILIDADE*</b></p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><b>TESTES</b></p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><b>PERIODICIDADE</b></p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><b>TOLER&Acirc;NCIA</b></p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><b>N&Iacute;VEL DE RESTRI&Ccedil;&Atilde;O</b></p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Sensitometria da processadora</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, di&aacute;rio ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Linha de Base (LB)</p><p align="center" style="text-align:center; text-indent:0cm">Base + v&eacute;u<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,21&nbsp;DO</p><p align="center" style="text-align:center; text-indent:0cm">Base + v&eacute;u&nbsp;<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> LB + 0,02 DO</p><p align="center" style="text-align:center; text-indent:0cm">Densidade m&eacute;dia<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> LB&nbsp;+ 0,10 DO</p><p align="center" style="text-align:center; text-indent:0cm">Diferen&ccedil;a de densidades&nbsp;<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> LB +&nbsp;0,10 DO</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Base + v&eacute;u &gt; 0,25&nbsp;DO</p><p align="center" style="text-align:center; text-indent:0cm">Base + v&eacute;u&nbsp;&gt; LB + 0,03&nbsp;DO</p><p align="center" style="text-align:center; text-indent:0cm">Densidade m&eacute;dia &gt;&nbsp;LB +&nbsp;0,15&nbsp;DO</p><p align="center" style="text-align:center; text-indent:0cm">Diferen&ccedil;a de densidades &gt; LB + 0,15&nbsp;DO</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Temperatura do sistema de processamento</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, di&aacute;rio ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Conforme recomenda&ccedil;&atilde;o do fabricante</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Qualidade da imagem (Avaliada&nbsp;com ferramenta de teste espec&iacute;fica para mamografia)</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, di&aacute;rio ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Fibra<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,75 mm;</p><p align="center" style="text-align:center; text-indent:0cm">&nbsp;Microcalcifica&ccedil;&atilde;o<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,32 mm;</p><p align="center" style="text-align:center; text-indent:0cm">Massa<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,75 mm.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">N&atilde;o cumprir os requisitos</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C/CR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Integridade dos chassis e cassetes</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o e anual</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Chassis e cassetes &iacute;ntegros</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Valor representativo de dose glandular m&eacute;dia</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Anexo II desta Instru&ccedil;&atilde;o Normativa</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Exatid&atilde;o do indicador da tens&atilde;o do tubo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 5% do valor nominal</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 10% do valor nominal</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Reprodutibilidade da tens&atilde;o do tubo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">coeficiente de varia&ccedil;&atilde;o&nbsp;<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,05</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">coeficiente de varia&ccedil;&atilde;o &gt; 0,1</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Tempo m&aacute;ximo de exposi&ccedil;&atilde;o (para um simulador de 4,5 cm de PMMA)</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Contato: t<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 1,5 s</p><p align="center" style="text-align:center; text-indent:0cm">Magnifica&ccedil;&atilde;o: t<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 2,0 s</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Contato: t &gt; 2,0&nbsp;s</p><p align="center" style="text-align:center; text-indent:0cm">Magnifica&ccedil;&atilde;o: t &gt; 3,0 s</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Reprodutibilidade do controle autom&aacute;tico de exposi&ccedil;&atilde;o (CAE)</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 15%&nbsp;do valor m&eacute;dio, ou conforme especifica&ccedil;&atilde;o do fabricante</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt;&nbsp;30%&nbsp;do valor m&eacute;dio</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Compensa&ccedil;&atilde;o do CAE para diferentes espessuras</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 15%</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 30%</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Rendimento do tubo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">7 x&nbsp;<i>f</i>&nbsp;(mGy/s), medido a 28 kV</p><p align="center" style="text-align:center; text-indent:0cm">Onde&nbsp;<i>f</i>&nbsp;&eacute; igual a:</p><p align="center" style="text-align:center; text-indent:0cm">1 para Mo/Mo;</p><p align="center" style="text-align:center; text-indent:0cm">0,86 para Mo/Rh;</p><p align="center" style="text-align:center; text-indent:0cm">0,41 para W/Mo;</p><p align="center" style="text-align:center; text-indent:0cm">0,38 para W/Rh;</p><p align="center" style="text-align:center; text-indent:0cm">0,58 para Rh/Rh.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Camada Semirredutora (CSR)</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">(kVp/100)+0,03<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> CSR(mmAl)<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> (kVp/100) + c</p><p align="center" style="text-align:center; text-indent:0cm">onde&nbsp;<i>c&nbsp;</i>&eacute; igual a:</p><p align="center" style="text-align:center; text-indent:0cm">0,12 para Mo/Mo;</p><p align="center" style="text-align:center; text-indent:0cm">0,19 para Mo/Rh;</p><p align="center" style="text-align:center; text-indent:0cm">0,22 para Rh/Rh;</p><p align="center" style="text-align:center; text-indent:0cm">0,30 para W/Rh;</p><p align="center" style="text-align:center; text-indent:0cm">0,32 para W/Ag;</p><p align="center" style="text-align:center; text-indent:0cm">0,25 para W/Al.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CSR(mmAl)<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> (kVp/100)</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Resolu&ccedil;&atilde;o espacial</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Conforme especifica&ccedil;&atilde;o do fabricante.</p><p align="center" style="text-align:center; text-indent:0cm">Para mamografia convencional: &ge; 12 pl/mm</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Para mamografia convencional: &lt; 10 pl/mm</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Exatid&atilde;o do sistema de colima&ccedil;&atilde;o</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 2% da dist&acirc;ncia foco-receptor de imagem</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 4% da dist&acirc;ncia foco-receptor de imagem</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Sistema de compress&atilde;o autom&aacute;tico</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">150 N*&nbsp;<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> For&ccedil;a de compress&atilde;o<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 200 N</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 300 N&nbsp;ou &lt; 70 N</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Alinhamento da bandeja de compress&atilde;o</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 5 mm</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 10 mm</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Indica&ccedil;&atilde;o da espessura da mama comprimida</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 5 mm</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 10 mm</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Contato tela-filme</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Sem perda de uniformidade</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Artefatos na imagem</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Imagens sem artefatos</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Veda&ccedil;&atilde;o da c&acirc;mara escura</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Sem entrada de luz externa</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Velando filme</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CR/DR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Uniformidade da imagem</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Desvio m&aacute;ximo da Raz&atilde;o Sinal Ruido (RSR) das ROIs individuais em rela&ccedil;&atilde;o ao valor m&eacute;dio da RSR<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 15%, para placas de mesmo tamanho.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 25%</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Diferen&ccedil;a de sensibilidade entre as placas de f&oacute;sforo de mesmo tamanho</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">O mAs da exposi&ccedil;&atilde;o de qualquer placa de f&oacute;sforo n&atilde;o deve diferir mais que 10% da m&eacute;dia de todas as placas de mesmo tamanho.</p><p align="center" style="text-align:center; text-indent:0cm">A RSR de qualquer placa de f&oacute;sforo n&atilde;o deve diferir mais que 15% da RSR m&eacute;dio de todas as placas de mesmo tamanho.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Diferen&ccedil;a de mAs &gt; 15%</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CR/DR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Raz&atilde;o contraste ru&iacute;do (CNR)</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Anexo III desta Instru&ccedil;&atilde;o Normativa</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CR/DR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Efetividade do ciclo de apagamento</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Aus&ecirc;ncia de imagem residual</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Integridade dos acess&oacute;rios e equipamentos de prote&ccedil;&atilde;o individual</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&Iacute;ntegros</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">C</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Lumin&acirc;ncia do negatosc&oacute;pio para diagn&oacute;stico ou laudo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&ge; 3000 cd/m<sup>2</sup></p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 2500 cd/m<sup>2</sup></p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">CR/DR</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Lumin&acirc;ncia dos monitores para diagn&oacute;stico ou laudo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&ge; 350 cd/m<sup>2</sup></p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Uniformidade da Lumin&acirc;ncia dos monitores e negatosc&oacute;pios para diagn&oacute;stico ou laudo</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 20%</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">-</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Ilumin&acirc;ncia da sala de laudos</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, anual ou ap&oacute;s reparos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 50&nbsp;lx</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 100 lx</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Levantamento Radiom&eacute;trico</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, quadrienal ou ap&oacute;s modifica&ccedil;&otilde;es nas salas, equipamentos ou procedimentos</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&Aacute;rea Livre:<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 0,5 mSv/ano;</p><p align="center" style="text-align:center; text-indent:0cm">&Aacute;rea Controlada:<br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 5,0 mSv/ano.</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&Aacute;rea Livre: &gt; 1,0 mSv / ano;</p><p align="center" style="text-align:center; text-indent:0cm">&Aacute;rea controlada: &gt; 10,0 mSv / ano.</p></td>		</tr>		<tr>			<td style="width:128px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">G</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Radia&ccedil;&atilde;o de fuga do cabe&ccedil;ote</p></td>			<td style="padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">Teste de aceita&ccedil;&atilde;o, quadrienal ou ap&oacute;s modifica&ccedil;&otilde;es no equipamento</p></td>			<td style="width:126px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm"><br>			<span style="font-weight:400; font-variant:normal; white-space:pre-wrap"><span style="font-style:normal">&le;</span></span> 1,0 mGy/h a 1m</p></td>			<td style="width:144px; padding:0cm 0cm 0cm 0cm"><p align="center" style="text-align:center; text-indent:0cm">&gt; 2,0 mGy/h a 1m</p></td>		</tr>	</tbody></table><p><br>C: Mamografia Convencional; CR: Mamografia CR; DR: Mamografia DR; G: Geral.</p><p>*Para fins de avalia&ccedil;&atilde;o da for&ccedil;a de compress&atilde;o deve ser considerado 9,8 N = 1 kgf</p><p>Observa&ccedil;&atilde;o: Os testes de qualidade dos receptores de imagem devem ser realizados para todos os dispositivos dispon&iacute;veis.</p><p style="text-align: center;"><b>ANEXO II</b></p><p style="text-align: center;"><b>DOSE GLANDULAR M&Eacute;DIA (DGM) PARA MAMOGRAFIA</b><br>&nbsp;</p><table border="1" cellpadding="1" cellspacing="0" width="100%">	<tbody>		<tr>		</tr>		<tr>			<td colspan="2" rowspan="1"><p class="dou-paragraph" style="text-align: center;">Espessura (cm)</p></td>			<td colspan="2" rowspan="1"><p class="dou-paragraph" style="text-align: center;">DGM (mGy)</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">PMMA</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">Mama equivalente</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">Refer&ecirc;ncia</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">Toler&acirc;ncia</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">2</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">2,1</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">0,6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 1,0</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">3</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">3,2</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">1,0</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 1,5</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">4</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">4,5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">1,6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 2,0</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">4,5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">5,3</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">2,0</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 2,5</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">2,4</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 3,0</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">7,5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">3,6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 4,5</p></td>		</tr>	</tbody></table><p class="dou-paragraph" style="text-align: center;"><br><b>ANEXO III - RAZ&Atilde;O CONTRASTE RU&Iacute;DO (CNR)</b><br>&nbsp;</p><table border="1" cellpadding="1" cellspacing="0" width="100%">	<tbody>		<tr>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">Espessura de PMMA (cm)</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">N&iacute;veis de toler&acirc;ncia de CNRrel (<em class="dou-em">%</em>)</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">N&iacute;veis de restri&ccedil;&atilde;o CNRrel (%)</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">2</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;115</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 105</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">3</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;110</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 100</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">4</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;105</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 95</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">4,5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;103</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 93</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">5</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;100</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 90</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">6</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;95</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 85</p></td>		</tr>		<tr>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">7</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&ge;&nbsp;90</p></td>			<td colspan="1" rowspan="1"><p class="dou-paragraph" style="text-align: center;">&lt; 80</p></td>		</tr>	</tbody></table><p class="dou-paragraph"><br>(*) Republicada por ter sa&iacute;do com incorre&ccedil;&atilde;o no original, publicado no Di&aacute;rio Oficial da Uni&atilde;o n&ordm; 101, de 31 de maio de 2021, Se&ccedil;&atilde;o 1, p&aacute;g. 152.</p><p style="font-weight: bold;">PUB D.O.U., 31/05/2021 - Se&ccedil;&atilde;o 1</p><p>REP., 07/07/2022 - Se&ccedil;&atilde;o 1</p></p>
+					<p style="font-size: 0.8rem; text-align: center; font-style: italic; color: red;">Este texto n„o substitui a PublicaÁ„o Oficial.</p>
+				</div>
+			</div>
+		</article>
+                    	
+		<form name="formPdf" id="formPdf" action="/action/ActionDatalegis.php?acao=gerarPdfAto&cod_modulo=310&cod_menu=9431" method="post" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formImprimir" id="formImprimir" action="/action/ActionDatalegis.php?acao=imprimirAto&cod_modulo=310&cod_menu=9431" method="get" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formGerarLink" id="formGerarLink" action="/action/ActionDatalegis.php?acao=setGerarLink&cod_modulo=310&cod_menu=9431" method="get" target="_self">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		
+	</div>
+</div>
+		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@1.11/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/view/js/ajax.js"></script> 
+<script type="text/javascript">
+
+	function abreFecha(obj) {
+		if($(obj).is(':visible') ) {
+			$(obj).removeClass('d-block').addClass('d-none');
+		} else {
+			$(obj).removeClass('d-none').addClass('d-block');
+		}
+	}
+	
+	var in_abrir_segundo_nivel = "";
+	var in_abrir_todas_notas = false;
+	
+	function recuperarObjetoPai(obj, nuascendentes) {
+		var objPai = obj;
+	
+		for ( var i = 0; i < nuascendentes; i++) {
+			objPai = objPai.parentNode;
+		}
+	
+		return objPai;
+	}
+	
+	function historico(psLink) {
+		var root;
+		root = window.open(psLink,'Historico','width=360,height=240,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no');
+		root.focus();
+	}
+		
+	function mostra_arquivo(cod, tip, acao, txt, l, a) {
+		var url;
+		var str;
+		if (cod != "") {
+			caminho = "http://www.datalegis.inf.br/datalegis/arquivos/";
+			switch (acao) {
+			case 1: //-- mostra arquivo na tela - apenas imagens
+				document.write("<img src='" + caminho + cod + "." + tip
+						+ "' border='0' width='" + ((l) ? l : "100%")
+						+ "' heigth='" + ((a) ? a : "100%") + "'>");
+				break;
+			case 0: //-- nao mostra arquivo na tela - para todos os tipos
+				document.write("<a href='" + caminho + cod + "." + tip
+						+ "' target='new'>" + txt + "</a>");
+				break;
+			}
+		}
+	}
+
+	function LinkTexto(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, pDesItemFim) {
+		var link = "/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo="
+			+ psSigla + "&numeroAto=" + psNumero + "&seqAto=" + psSeq + "&valorAno=" + psAno + "&orgao=" + psOrgao 
+			+ "&codTipo=" + psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + pDesItemFim
+			+ "&cod_modulo=310&cod_menu=9431";
+		window.open(link, '_blank');		
+	}
+
+	$(function() {
+    	$(document).ajaxStart(function(){
+    		$('#loading').show();
+        })
+        .ajaxStop(function(){
+        	$('#loading').delay(100).hide();
+        	in_abrir_todas_notas = false;
+        });
+
+	});
+
+	$(document).on('click', "a[href*='javascript:LinkNota']", function(e) {
+
+		//e.isImmediatePropagationStopped();
+		e.preventDefault();
+		var objHref = $(this);
+	    var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    
+	    var parameters = parameter.split(",");
+	    
+        var psSigla = parameters[0];
+        var psNumero = parameters[1];
+        var psSeq = parameters[2];
+        var psAno = parameters[3];
+        var psOrgao = parameters[4];
+        var psCodTipo = parameters[5];
+        var psDesItem = parameters[6];
+        var psSeqNota = parameters[7];
+
+        var link = "/action/ActionDatalegis.php?acao=detalharNotaAjax&tipo="+ psSigla+ 
+		"&numeroAto="+ psNumero+ "&seqAto="+ psSeq+ "&valorAno=" +psAno+ 
+		"&orgao="+ psOrgao+ "&codTipo="+ psCodTipo + "&desItem=" + psDesItem + "&seqNota=" + psSeqNota+
+		"&cod_modulo=310&cod_menu=9431";
+		
+        var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+        $(objHref).attr('class', 'ato-'+idAto);
+		var divNota = $(this).siblings('div.'+idAto+':first');
+		
+        if(!$(divNota).length) {		        
+    	  	$.ajax({
+    	        url: link,
+    	        dataType: "text",
+    	        async: true,
+    	        cache: true,
+    	        success: function(html) {
+					$(objHref).parent("em:first").append(html);
+    	        },
+    	        error: function(obj) {
+    	            console.log(obj);
+    	        }
+    	    });
+		} else {
+			$(divNota).toggle();
+		}
+	});
+	
+	function abrirTodosLinkNota() {
+		in_abrir_todas_notas = true;
+		$('div.nota-revogado').show();
+		$('#texto-compilado').css('text-decoration','none');
+		$('#texto-notas').css('text-decoration','underline');
+		var searchLinkNota = "a[href*='javascript:LinkNota']";
+		
+		var linkBase = "/action/ActionDatalegis.php?acao=detalharNotasListaAjax&cod_modulo=310&cod_menu=9431";
+		var linkAjax = '';
+		var registroChamado = 0;
+		var registroChamadoTotal = 0;
+		var registroTotal = $(searchLinkNota).length;
+		var indexInicialChamado = null;
+		
+		$(searchLinkNota).each(function( index ) {
+			if(registroChamado == 0) {
+				linkAjax = '';
+				indexInicialChamado = index;
+			}
+
+			registroChamado++;
+			registroChamadoTotal++;
+			
+			var objHref = $(this);
+			var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    	
+    	    var parameters = parameter.split(",");
+    	    
+            var psSigla = parameters[0];
+            var psNumero = parameters[1];
+            var psSeq = parameters[2];
+            var psAno = parameters[3];
+            var psOrgao = parameters[4];
+            var psCodTipo = parameters[5];
+            var psDesItem = parameters[6];
+            var psSeqNota = parameters[7];
+
+            var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+            var idDivNota = 'ato-'+idAto+'-'+index;
+            $(objHref).attr('class', idDivNota);
+
+            var divNota = $('a.'+idDivNota).siblings('div.'+idAto+':first');
+			
+			if(!$(divNota).length) {
+                linkAjax += "&sgl_tipo[]="+psSigla+"&num_ato[]="+psNumero+"&seq_ato[]="+psSeq+"&vlr_ano[]="+psAno+"&sgl_orgao[]="+psOrgao;
+                linkAjax += "&cod_tipo[]="+psCodTipo+"&des_item[]="+psDesItem+"&seq_nota[]="+psSeqNota+"&index_js[]="+index;
+			}
+			
+            if((registroChamado == 100 || registroChamadoTotal == registroTotal) && linkAjax.length > 0) {
+            	registroChamado = 0;
+                     	
+            	$.ajax({
+        	        url: linkBase,
+        	        type: "POST",
+        	        data: linkAjax,
+        	        dataType: "json",
+        	        async: true,
+        	        cache: true,
+        	        success: function(jsonObj) {        				
+        				$.each(jsonObj, function(index, objNota) {
+        					divNota = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).siblings('div.'+objNota.ID_NOTA+':first');
+        					
+        					if(!$(divNota).length) {
+        						var objetoDestino = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).parent("em:first");
+            					$( "<div/>", {
+            					    "class": "well nota-revogado "+objNota.ID_NOTA,
+            					    html: objNota.NOTAS.join('')
+            					  }).appendTo(objetoDestino);
+        			        } else {
+        			        	$(divNota).show();
+        			        }
+        				});
+        	        },
+        	        error: function(obj) {
+        	            console.log(obj);
+        	        }
+        	    });
+			}
+		});
+	}
+	
+	function fecharTodosLinkNota() {
+		$('#texto-compilado').css('text-decoration','underline');
+		$('#texto-notas').css('text-decoration','none');
+		in_abrir_todas_notas = false;
+		$('div.nota-revogado').hide();
+	}
+	
+	function LinkNota(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psSeqNota) {
+	}
+
+	function gravarArquivo(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psDesItemFim) {
+		var link = "/action/detalhaAto.do?method=gravarAtoPDF&tipo="
+				+ psSigla
+				+ "&numeroAto="
+				+ psNumero
+				+ "&seqAto="
+				+ psSeq
+				+ "&valorAno="
+				+ psAno
+				+ "&orgao="
+				+ psOrgao
+				+ "&codTipo="
+				+ psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + psDesItemFim;
+		root = window.open(link, 'Imprimir', 'width=766,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	function abrirFrame(id, obj){
+		fAscendentes = "";
+	
+		var l_div = obj;
+		if (l_div.getElementsByTagName('div')[0].style.display == "none" || l_div.getElementsByTagName('div')[0].style.display == ""){
+			var l_frame = l_div.getElementsByTagName("iframe")[0];
+			var link = "/action/TematicaAction.php?acao=visualizarTextoAtosVinculados&codigo=" + id + "&word="+fAscendentes;
+	
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px -9px";
+			l_div.getElementsByTagName('div')[0].style.display = "block";
+			l_frame.src = link;
+		}else {
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px 3px";
+			l_div.getElementsByTagName('div')[0].style.display = "none";
+		}
+	}
+	
+	function retira_acentos(palavra) {
+		var com_acento = '·‡„‚‰ÈËÍÎÌÏÓÔÛÚıÙˆ˙˘˚¸Á¡¿√¬ƒ…» ÀÕÃŒœ”“’÷‘⁄Ÿ€‹«';
+		var sem_acento = 'aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC';
+		var nova='';
+	
+		for(var i = 0; i < palavra.length; i++) {
+			var p = com_acento.indexOf(palavra.substr(i,1));
+			
+			if (p > -1) {
+				nova += sem_acento.substr(p,1);
+			}else {
+				nova += palavra.substr(i,1);
+			}
+		}
+		return nova;
+	}
+		
+	function expandir(pObj, nuAscendentes) {
+		l_div = recuperarObjetoPai(pObj, nuAscendentes);
+		l_div_aps = l_div.getElementsByTagName('div')[0];
+	
+		if (l_div_aps.style.display == "" || l_div_aps.style.display == "block") {
+			//setarClassColapse();
+			setarPropriedadeDisplay(l_div_aps, "none");
+			pObj.style.backgroundPosition = "0px 3px";
+		} else {
+			pObj.style.backgroundPosition = "0px -9px";
+			l_div_aps.innerHTML = "<div style='font-size: 8pt; margin-left: 21px;'>Carregando...</div>";
+			setarPropriedadeDisplay(l_div_aps, "block");
+	
+			buscarFilhos('', "");
+		}
+	}
+	
+	function buscarFilhos(filtro, dshierarquia) {
+		var params = null;
+		processarAjax('/action/TematicaAction.php?acao=montarEstruturaTitulos&cotematica=' + l_div.getAttribute("codigo")+
+					  "&notematica="+filtro+"&nivel="+1+"&infiltro="+l_div.getAttribute("inFiltro"), 'POST', params, mostrarFilhos);
+	}
+	
+	function setarPropriedadeDisplay(pObj, pDisplay) {
+		pObj.style.display = pDisplay;
+	}
+	
+	function mostrarFilhos(pRetorno) {
+		var indice = '';
+	
+		l_div_aps.innerHTML = pRetorno;
+		setarPropriedadeDisplay(l_div_aps, "block");
+		
+		if (in_abrir_segundo_nivel == "S"){
+			in_abrir_segundo_nivel = "N";
+	
+			expandir(document.getElementById('treeviewDetalhe00').getElementsByTagName('span')[0], 1);
+		}
+	}
+
+	function pdf() {
+		$('#formPdf #html').val($('div.ato').html());
+		$('#formPdf').submit();
+	}
+
+	function imprimir() {
+		//window.location.href = window.location.href + '&print=S';
+		window.print();
+	}
+
+	function tags(num_ato,sgl_tipo,sgl_orgao,vlr_ano,seq_ato) {
+		var link = "/action/ActionDatalegis.php?acao=visualizarTagsAto&sgl_tipo="+sgl_tipo+
+			"&num_ato="+num_ato+"&seq_ato="+seq_ato+"&vlr_ano="+vlr_ano+"&sgl_orgao="+sgl_orgao+
+			"&cod_modulo=310&cod_menu=9431";
+		root = window.open(link,'Tags','width=640,height=190,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	var tam = 1.125;
+	function mudaFonte(tipo) {
+		if (tipo == 'mais') {
+			if(tam < 2) tam += 0.2;	
+		} else {
+			if(tam > 0.8) tam -= 0.2;
+		}
+
+		$("#conteudo p, #conteudo a, #conteudo span").css('font-size', tam + 'rem');
+		$("#conteudo div").css('font-size', (tam + 0.2) + 'rem');
+	}
+
+	</script>
+<script type="text/javascript" src="/v2/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/chosen.jquery-0.1.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/v2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/v2/js/sistema.js?20261019"></script>
+<script type="text/javascript" async src="/view/js/copytoclipboard.js?20261019"></script>
+<script type="text/javascript" async src="https://cdn.ampproject.org/v0.js"></script>
+<div class="noprint" id="loading" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100vw; height: 100vh; background: black; opacity: 25%; z-index: 5001; padding-top: 20%; display:none;">
+	<center style="z-index: 5002; color: white; font-weight: 400;">
+		<img style="margin-top: -8px" src="../view/img/Loading.gif" alt="loading" /> Carregando...
+	</center>
+</div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" charset="UTF-8"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>

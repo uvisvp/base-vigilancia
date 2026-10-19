@@ -1,0 +1,22 @@
+{
+  "norma": "Resolucao ANTT 5998-2022",
+  "rotulo": "Resolução ANTT nº 5.998/2022",
+  "fonte_oficial": "https://anttlegis.datalegis.inf.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00005998&sgl_tipo=RES&sgl_orgao=DG/ANTT/MI&vlr_ano=2022&seq_ato=000",
+  "fonte_texto_utilizada": "https://anttlegis.datalegis.inf.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00005998&sgl_tipo=RES&sgl_orgao=DG/ANTT/MI&vlr_ano=2022&seq_ato=000",
+  "fonte_status": "https://anttlegis.datalegis.inf.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00005998&sgl_tipo=RES&sgl_orgao=DG/ANTT/MI&vlr_ano=2022&seq_ato=000",
+  "nota_fonte_texto": "Texto da Resolução no ANTTlegis, consolidado com as Resoluções ANTT 6.016/2023 e 6.056/2024. As Instruções Complementares (Partes 1 a 7, Relação de Produtos Perigosos) não são transcritas: são publicadas como anexos em PDF no próprio ANTTlegis.",
+  "url_final": "https://anttlegis.datalegis.inf.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00005998&sgl_tipo=RES&sgl_orgao=DG/ANTT/MI&vlr_ano=2022&seq_ato=000",
+  "consultado_em": "2026-10-19T12:32:44.327945+00:00",
+  "data_fonte": "2022-11-03",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "28b7100d437e75f5e2808288de0a5f3ebc214df0a3d2b858289f099f43dfba5e",
+  "sha256_texto": "fb8d4d2cfa8a7d0d5f79b9b1ff7d4fc7def745c0367ce4c1ff80cbfecec8c3ec",
+  "status_vigencia": "vigente_com_alteracoes",
+  "status_fonte": "ANTTlegis",
+  "texto": "textos/Resolucao ANTT 5998-2022--oficial.txt",
+  "data_processamento": "2026-10-19T12:32:44.328308+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+}

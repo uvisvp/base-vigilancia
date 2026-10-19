@@ -1,0 +1,46 @@
+INSTRUÇÃO NORMATIVA - IN Nº 97, DE 27 DE MAIO DE 2021
+Dispõe sobre requisitos sanitários para a garantia da qualidade e da segurança em sistemas de ressonância magnética nuclear, e dá outras providências.
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe confere o art. 15, III e IV, aliado ao art. 7º, III e IV da Lei nº 9.782, de 26 de janeiro de 1999, e ao art. 53, VII, §§ 1º e 3º, do Regimento Interno aprovado pela Resolução de Diretoria Colegiada - RDC nº 255, de 10 de dezembro de 2018, resolve
+adotar a seguinte Instrução Normativa, conforme deliberado em reunião realizada em 26 de maio de 2021, e eu, Diretor-Presidente, determino a sua publicação.
+CAPÍTULO I
+DISPOSIÇÕES INICIAIS
+Art. 1º Esta Instrução Normativa estabelece requisitos sanitários para a garantia da qualidade e da segurança em sistemas de imagens por ressonância magnética nuclear, bem como a relação mínima de testes de aceitação e de controle de qualidade que devem ser realizados pelos serviços de saúde, determinando as respectivas periodicidades e tolerâncias, conforme Anexo desta Instrução Normativa.
+Parágrafo único. O rol de testes do Anexo desta Instrução Normativa deve ser complementado pelos testes de aceitação e de controle de qualidade estabelecidos pelo fabricante do sistema avaliado.
+Seção I
+Ambientes e equipamentos
+Art. 2º As salas do sistema de ressonância magnética devem dispor de isolamento acústico, de forma a atender os limites de exposição a níveis de ruído acústico estabelecidos nas normativas aplicáveis.
+Art. 3º O Projeto Básico de Arquitetura de salas de exames de equipamentos que utilizam líquidos criogênicos com tubo Quench deve prever a abertura da porta de acesso para fora do ambiente.
+Art. 4º O projeto de blindagem deve conter, além do exigido nas demais normativas aplicáveis:
+I - descrição técnica da blindagem para os campos eletromagnéticos, conforme estabelecido pelo fabricante;
+II - descrição das medidas para isolamento acústico da sala de exames e para atenuação de vibrações mecânicas no interior da sala, de forma a atender às normativas aplicáveis;
+III - descrições técnicas de blindagens adicionais e do sistema de evacuação massiva de gases criogênicos, quando aplicável; e
+IV - laudo de compatibilidade eletromagnética, contendo estudo de compatibilidade eletromagnética da instalação com os demais produtos para a saúde e sistemas passíveis de perturbação eletromagnética, e descrição das medidas para mitigar os riscos de interações indesejadas.
+Art. 5º A sala de exames deve possuir sinalização nas portas de acesso, informando os riscos e a proibição da entrada de pessoas com implantes ou outros objetos incompatíveis com a tecnologia, em linguagem ou simbologia internacionalmente aceita, compreensível para os indivíduos do público.
+Art. 6º O sistema de ressonância magnética que utiliza líquido criogênico deve possuir sistema de evacuação massiva de gases criogênicos.
+Art. 7º O serviço de saúde deve dispor de sistema de comunicação entre a sala de comando e a sala de exames, que permita manter contato audiovisual com o paciente durante toda a realização do procedimento.
+Art. 8º O serviço de saúde deve classificar seus ambientes conforme os critérios abaixo:
+I - zona I - ambientes de livre acesso para os indivíduos do público;
+II - zona II - ambientes externamente adjacentes à zona III, onde são realizados os procedimentos de acolhimento, anamnese e preparo do paciente e avaliação de compatibilidade de objetos, por exemplo;
+III - zona III - ambientes adjacentes à zona IV onde há restrição à circulação de pessoas e equipamentos devido ao risco de ocorrência de eventos adversos causados pela interação de indivíduos ou objetos com os campos eletromagnéticos produzidos pelo equipamento de ressonância magnética nuclear; e
+IV - zona IV - sala em que está localizado o equipamento de ressonância magnética nuclear.
+Art. 9º O serviço de saúde deve possuir sistema de detecção de metais para monitoramento do acesso de pessoas e objetos às zonas III e IV em quantidade compatível com o número de salas de exame.
+Seção II
+Processos de trabalho
+Art. 10. O serviço de saúde deve implementar processos de trabalho de forma a:
+I - garantir que nenhuma pessoa entre nas zonas III ou IV com o magneto gerando campo magnético, portando implantes ou objetos incompatíveis que comprometam a segurança ou qualidade do procedimento;
+II - garantir que nenhum paciente seja submetido a procedimento radiológico sem que atenda aos critérios clínicos e de segurança estabelecidos nas normativas aplicáveis; e
+III - mitigar os riscos de eventos adversos relacionados ao procedimento radiológico.
+Art. 11. O programa de educação permanente do serviço de saúde deve conter as orientações para toda a equipe sobre segurança e restrições de acesso às zonas III ou IV quando o magneto estiver gerando campo magnético, além do exigido nas demais normativas aplicáveis.
+Art. 12. O serviço de saúde deve prover proteção auditiva para o paciente e para o acompanhante ou profissional que precisar permanecer dentro da sala de exames, de modo a não exceder os limites de ruído acústico estabelecidos nas normativas aplicáveis.
+CAPÍTULO II
+DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+Art. 13. Os serviços de saúde abrangidos por esta Instrução Normativa terão o prazo de até 26 de dezembro de 2021 para se adequarem ao disposto nesta Instrução Normativa.
+Art. 14. Fica revogada a Instrução Normativa - IN nº 59, de 20 de dezembro de 2019, publicada no Diário Oficial da União de 26 de dezembro de 2019.
+Art. 15. Esta Instrução Normativa entra em vigor em 1º de julho de 2021.
+ANTONIO BARRA TORRES
+ANEXO
+TESTES DE ACEITAÇÃO E DE CONTROLE DE QUALIDADE PARA SERVIÇOS DE RESSONÂNCIA MAGNÉTICA NUCLEAR
+a. A avaliação da resolução espacial deve ser realizada nas direções de codificação de fase e frequência. Para uma aquisição com FOV de 25 cm e matriz de aquisição de 256 x 256, deve ser possível resolver no mínimo o objeto de 1mm.
+b. O método de avaliação da RSR deve estar de acordo com a geometria da bobina e o arranjo dos elementos da bobina para cada canal de recepção.
+PUB D.O.U., 31/05/2021 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

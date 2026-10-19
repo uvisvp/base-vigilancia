@@ -1,0 +1,22 @@
+{
+  "norma": "Portaria SMS SP 266-2025",
+  "rotulo": "Portaria SMS nº 266/2025",
+  "fonte_oficial": "https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-da-saude-sms-266-de-6-de-maio-de-2025",
+  "fonte_texto_utilizada": "https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-da-saude-sms-266-de-6-de-maio-de-2025",
+  "fonte_status": "https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-da-saude-sms-266-de-6-de-maio-de-2025",
+  "nota_fonte_texto": "Texto do Catálogo de Legislação Municipal (legislacao.prefeitura.sp.gov.br). Os anexos (lista de CNAE, formulários e documentos) são publicados à parte no site da Covisa.",
+  "url_final": "https://legislacao.prefeitura.sp.gov.br/portaria-secretaria-municipal-da-saude-sms-266-de-6-de-maio-de-2025",
+  "consultado_em": "2026-10-19T12:32:45.359094+00:00",
+  "data_fonte": "2025-05-06",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "e4f595d90de0619c75bef3797e8a56936aec0de0ff72d4dae74b3114b8b20b96",
+  "sha256_texto": "532e313aaea9e9fea138fcc4c04318be7a068574e9363538c9c68aa8e780a5cc",
+  "status_vigencia": "vigente",
+  "status_fonte": "Catálogo de Legislação Municipal",
+  "texto": "textos/Portaria SMS SP 266-2025--oficial.txt",
+  "data_processamento": "2026-10-19T12:32:45.359396+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
+}
