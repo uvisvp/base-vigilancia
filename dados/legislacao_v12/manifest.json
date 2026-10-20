@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-10-20T04:24:51.161534+00:00",
+  "gerado_em": "2026-10-20T04:27:56.254567+00:00",
   "normas": {
     "Decreto Estadual SP 69118-2024": {
       "arquivo": "decreto-estadual-sp-69118-2024.json",
@@ -843,6 +843,10 @@
       "arquivo": "rdc-204-2006.json",
       "nos": 927,
       "sha256_texto": "4d40a18c712834195374d8338c5f33bcbe2807b74c44a696c94f4c645772ee77",
+      "regulamento_tecnico": {
+        "id": "rdc-204-2006::regulamento-tecnico",
+        "item_7_2": "rdc-204-2006::regulamento-tecnico::item::7-2"
+      },
       "proveniencia": {
         "norma": "RDC 204-2006",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000204&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=002&tipo=RDC&valorAno=2006",
@@ -1296,6 +1300,14 @@
       "arquivo": "rdc-57-2009.json",
       "nos": 282,
       "sha256_texto": "09894193b190cf6956adf3eefb0038ebeaa839c3c9b44a29a319da01ec81d77d",
+      "regulamento_tecnico": {
+        "id": "rdc-57-2009::regulamento-tecnico",
+        "itens_confirmados": [
+          "rdc-57-2009::regulamento-tecnico::item::4-1",
+          "rdc-57-2009::regulamento-tecnico::item::6-6"
+        ],
+        "vinculo_artigo_6_remanescente": 0
+      },
       "proveniencia": {
         "norma": "RDC 57-2009",
         "fonte_oficial": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2009/rdc0057_17_11_2009.html",
@@ -1431,6 +1443,10 @@
       "arquivo": "rdc-67-2007.json",
       "nos": 4807,
       "sha256_texto": "9cdad901d51ff9b88cedfb239069591a9cb825d340b3dfc10d4a6eddd32a1d76",
+      "regulamento_tecnico": {
+        "id": "rdc-67-2007::regulamento-tecnico",
+        "item_5_1": "rdc-67-2007::regulamento-tecnico::item::5-1"
+      },
       "proveniencia": {
         "norma": "RDC 67-2007",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000067&seqAto=002&valorAno=2007&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=1696&cod_modulo=134&pesquisa=true",
