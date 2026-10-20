@@ -1,0 +1,21 @@
+{
+  "status": "ok",
+  "fonte": "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_202609.ZIP",
+  "tipo_fonte": "Base mensal do CNES (DATASUS/Ministério da Saúde)",
+  "competencia": "09/2026",
+  "gerado_em": "2026-10-20T09:22:17.758778+00:00",
+  "versao_gerador": "2026-10-20-cnes-v1",
+  "municipios": [
+    "355030"
+  ],
+  "registros": 43764,
+  "ativos": 29729,
+  "com_cnpj": 29572,
+  "com_equipamentos": 20119,
+  "com_licenca_sanitaria": 32226,
+  "fragmentos_estabelecimentos": 762,
+  "fragmentos_cnpj": 730,
+  "chave": "CNES (7 dígitos)",
+  "fragmentacao": "3 primeiros dígitos do CNES; índice por CNPJ com 3 primeiros dígitos",
+  "limitacao": "Cadastro declarado pelo estabelecimento e pelo gestor; pode estar desatualizado. Não prova funcionamento regular. Sem CPF e sem dados de profissionais."
+}
