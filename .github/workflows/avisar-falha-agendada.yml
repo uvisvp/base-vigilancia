@@ -1,0 +1,68 @@
+name: Avisar falha de atualização agendada
+
+# Quando uma atualização agendada termina, abre (ou atualiza) uma issue “Falha na
+# atualização: <nome>” se ela falhou e fecha a issue quando volta a funcionar. A issue
+# chega por e-mail a quem acompanha o repositório: assim a base parada não passa
+# semanas despercebida (out/2026: base principal 3 semanas sem atualizar).
+on:
+  workflow_run:
+    types: [completed]
+    workflows:
+      - Atualizar Aditivos e Coadjuvantes
+      - Atualizar Alertas Sanitários
+      - Atualizar base da Anvisa
+      - Atualizar banco CADIFA
+      - Atualizar Produtos de Cannabis
+      - Atualizar banco CBPF de IFA
+      - Atualizar listas da Portaria 344/98
+      - Atualizar banco IN 211
+      - Atualizar IN 75/2020 completa
+      - Atualizar legislação adicional
+      - Atualizar legislação certificação IFA
+      - Atualizar legislação IFA certificação
+      - Atualizar legislação IFA complementar
+      - Atualizar MAPA - Vinhos e Bebidas
+      - Atualizar MAPA - SIF
+      - Atualizar produtos irregulares
+      - Atualizar RDC 429/2020 completa
+      - Atualizar regras matéria-prima e IFA
+      - Atualizar manifesto regulatório
+
+permissions:
+  issues: write
+  actions: read
+
+jobs:
+  avisar:
+    # só execuções do agendamento ou manuais na main; cancelada não é falha
+    if: github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.conclusion != 'cancelled' && github.event.workflow_run.conclusion != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run;
+            const titulo = `Falha na atualização: ${run.name}`;
+            const {data: abertas} = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'falha-agendada', per_page: 100});
+            const issue = abertas.find(i => i.title === titulo);
+            const quando = new Date(run.updated_at).toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'});
+            if (run.conclusion === 'success') {
+              if (issue) {
+                await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number,
+                  body: `Voltou a funcionar em ${quando}: ${run.html_url}`});
+                await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, state: 'closed', state_reason: 'completed'});
+              }
+              return;
+            }
+            // passo que falhou, para a issue dizer onde parou
+            const {data: jobs} = await github.rest.actions.listJobsForWorkflowRun({owner: context.repo.owner, repo: context.repo.repo, run_id: run.id});
+            const passos = jobs.jobs.flatMap(j => (j.steps || []).filter(s => s.conclusion === 'failure').map(s => `${j.name} › ${s.name}`));
+            const corpo = `A atualização **${run.name}** falhou em ${quando} (${run.event}).\n\n` +
+              `Passo com falha: ${passos.join('; ') || 'não identificado'}\n\nExecução: ${run.html_url}\n\n` +
+              `Enquanto a falha durar, o app usa a última versão publicada desta base.`;
+            if (issue) {
+              await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body: corpo});
+            } else {
+              await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, title: titulo, body: corpo, labels: ['falha-agendada']});
+            }

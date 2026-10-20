@@ -2,8 +2,10 @@ name: Atualizar Alertas Sanitários
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "15 11 * * 3"
+  # Agendamento suspenso em 20/10/2026: a consulta da Anvisa passou a exigir o teste anti-robô Cloudflare Turnstile (HTTP 403 "turnstile_invalido" desde 30/09/2026).
+  # Os dados publicados continuam disponíveis; rode manualmente ou reative quando a fonte voltar.
+  # schedule:
+  #   - cron: "15 11 * * 3"
 
 permissions:
   contents: write
