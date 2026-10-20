@@ -9,7 +9,10 @@ CNPJ e não traz equipamentos, serviços nem licença sanitária.
 Publica, só para os municípios de MUNICIPIOS (código IBGE de 6 dígitos):
 - cnes/estabelecimentos/<3 primeiros dígitos do CNES>.json: {cnes: estabelecimento}
 - cnes/cnpj/<3 primeiros dígitos do CNPJ>.json: {cnpj: [cnes, ...]}, pelo CNPJ
-  próprio e pelo CNPJ da mantenedora
+  próprio do estabelecimento
+- cnes/mantenedora/<3 primeiros dígitos do CNPJ>.json: {cnpj: [cnes, ...]}, pelo
+  CNPJ da mantenedora (a Prefeitura mantém mais de mil unidades: índice à parte,
+  para a busca pelo CNPJ próprio não carregar todas)
 - cnes/manifest.json e a entrada "cnes" no manifesto principal
 
 Não publica CPF (estabelecimento de pessoa física e diretor clínico) nem dados
@@ -217,18 +220,20 @@ def carregar(base):
 
 
 def publicar(estab, competencia):
-    por_cnes, por_cnpj = defaultdict(dict), defaultdict(lambda: defaultdict(list))
+    por_cnes = defaultdict(dict)
+    por_cnpj, por_mant = defaultdict(lambda: defaultdict(list)), defaultdict(lambda: defaultdict(list))
     for item in estab.values():
         por_cnes[item["cnes"][:3]][item["cnes"]] = item
-        for chave in {item.get("cnpj"), item.get("cnpj_mantenedora")}:
-            if chave and len(chave) == 14 and item["cnes"] not in por_cnpj[chave[:3]][chave]:
-                por_cnpj[chave[:3]][chave].append(item["cnes"])
+        for chave, indice in ((item.get("cnpj"), por_cnpj), (item.get("cnpj_mantenedora"), por_mant)):
+            if chave and len(chave) == 14 and item["cnes"] not in indice[chave[:3]][chave]:
+                indice[chave[:3]][chave].append(item["cnes"])
     temporario = Path(tempfile.mkdtemp(prefix=".cnes_", dir=DADOS))
     try:
         for shard, mapa in por_cnes.items():
             gravar_json(temporario / "estabelecimentos" / f"{shard}.json", dict(sorted(mapa.items())))
-        for shard, mapa in por_cnpj.items():
-            gravar_json(temporario / "cnpj" / f"{shard}.json", {k: sorted(v) for k, v in sorted(mapa.items())})
+        for pasta, indice in (("cnpj", por_cnpj), ("mantenedora", por_mant)):
+            for shard, mapa in indice.items():
+                gravar_json(temporario / pasta / f"{shard}.json", {k: sorted(v) for k, v in sorted(mapa.items())})
         meta = {
             "status": "ok",
             "fonte": f"{FTP}BASE_DE_DADOS_CNES_{competencia}.ZIP",
@@ -244,8 +249,9 @@ def publicar(estab, competencia):
             "com_licenca_sanitaria": sum(1 for x in estab.values() if (x.get("licenca_sanitaria") or {}).get("numero")),
             "fragmentos_estabelecimentos": len(por_cnes),
             "fragmentos_cnpj": len(por_cnpj),
+            "fragmentos_mantenedora": len(por_mant),
             "chave": "CNES (7 dígitos)",
-            "fragmentacao": "3 primeiros dígitos do CNES; índice por CNPJ com 3 primeiros dígitos",
+            "fragmentacao": "3 primeiros dígitos do CNES; índices por CNPJ próprio (cnpj/) e da mantenedora (mantenedora/), 3 primeiros dígitos",
             "limitacao": "Cadastro declarado pelo estabelecimento e pelo gestor; pode estar desatualizado. "
                          "Não prova funcionamento regular. Sem CPF e sem dados de profissionais.",
         }
