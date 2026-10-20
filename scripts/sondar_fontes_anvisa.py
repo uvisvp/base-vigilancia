@@ -10,11 +10,11 @@ NAV = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.
        "Accept": "application/json, text/plain, */*", "Accept-Language": "pt-BR,pt;q=0.9", "Authorization": "Guest"}
 
 
-def pede(rotulo, url, headers=None, dados=None, metodo=None):
+def pede(rotulo, url, headers=None, dados=None, metodo=None, tudo=False):
     try:
         req = urllib.request.Request(url, data=dados, headers=headers or {}, method=metodo)
         with urllib.request.urlopen(req, timeout=60) as r:
-            corpo = r.read(400).decode("utf-8", "replace")
+            corpo = r.read(None if tudo else 400).decode("utf-8", "replace")
             print(f"{rotulo}: HTTP {r.status} | {corpo[:240]!r}")
             return r.status, corpo
     except urllib.error.HTTPError as e:
@@ -43,13 +43,19 @@ def dossies():
     cid, sec = os.environ.get("ANVISA_CLIENT_ID", ""), os.environ.get("ANVISA_CLIENT_SECRET", "")
     gw = "https://api-gateway.prd.apps.anvisa.gov.br/consultas-externas-api"
     for p in ["/v3/api-docs", "/v2/api-docs", "/api-docs", "/swagger-ui/index.html", "/api/v1/v3/api-docs"]:
-        st, corpo = pede(f"documentação {p}", gw + p, {"User-Agent": NAV["User-Agent"]})
+        st, corpo = pede(f"documentação {p}", gw + p, {"User-Agent": NAV["User-Agent"]}, tudo=True)
         if st == 200 and corpo.lstrip().startswith("{"):
-            try:
-                with urllib.request.urlopen(gw + p, timeout=60) as r:
-                    print("caminhos:", sorted(json.loads(r.read()).get("paths", {}))[:80])
-            except Exception as e:
-                print("caminhos: erro", e)
+            doc = json.loads(corpo)
+            print("servidores:", doc.get("servers"))
+            for caminho, ops in sorted(doc.get("paths", {}).items()):
+                for metodo, op in ops.items():
+                    params = [x.get("name") for x in op.get("parameters", [])]
+                    corpo_ref = json.dumps(op.get("requestBody", {}))[:160]
+                    print(f"  {metodo.upper()} {caminho} | {op.get('summary') or op.get('operationId')} | params={params} | corpo={corpo_ref}")
+            esquemas = doc.get("components", {}).get("schemas", {})
+            for nome in esquemas:
+                if "ossie" in nome or "Filtro" in nome or "Pesquisa" in nome:
+                    print("  esquema", nome, json.dumps(esquemas[nome])[:600])
     pede("documentação pública", "https://api.anvisa.gov.br/consultas-externas/dossie-doc", {"User-Agent": NAV["User-Agent"]})
     if not (cid and sec):
         print("dossiês: sem credenciais (ANVISA_CLIENT_ID/SECRET)")
