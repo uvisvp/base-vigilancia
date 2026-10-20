@@ -61,6 +61,12 @@ def limpo(d):
     return {k: v for k, v in d.items() if v not in (None, "", [], {})}
 
 
+def codigo(valor):
+    """Código sem espaços e sem zeros à esquerda ("08" e "8" são o mesmo motivo)."""
+    v = texto(valor)
+    return v.lstrip("0") or "0" if v.isdigit() else v
+
+
 def data_br(valor):
     """DD/MM/AAAA para AAAA-MM-DD."""
     m = re.match(r"^(\d{2})/(\d{2})/(\d{4})", texto(valor))
@@ -113,21 +119,28 @@ class Base:
             for linha in leitor:
                 yield dict(zip(cabecalho, linha))
 
-    def descricoes(self, tabela, *chaves):
-        """Tabela de apoio: (chaves) -> primeira coluna DS_/NO_."""
-        mapa = {}
+    def descricoes(self, tabela, n=1):
+        """Tabela de apoio: as n primeiras colunas (códigos) -> primeira coluna DS_/NO_.
+
+        Pela posição, porque os nomes variam entre a tabela de apoio e a de uso
+        (CO_MOTIVO_DESAB x CO_MOTIVO_DESATIVACAO, CO_SERVICO x CO_SERVICO_ESPECIALIZADO)."""
+        mapa, amostra = {}, None
         for linha in self.linhas(tabela) or []:
-            coluna = next((c for c in linha if c.startswith(("DS_", "NO_"))), None)
+            colunas = list(linha)
+            coluna = next((c for c in colunas[n:] if c.startswith(("DS_", "NO_"))), None)
             if coluna:
-                mapa[tuple(texto(linha.get(c)) for c in chaves)] = texto(linha[coluna])
+                mapa[tuple(codigo(linha[c]) for c in colunas[:n])] = texto(linha[coluna])
+                amostra = amostra or (colunas[:n], coluna, list(mapa.items())[:3])
+        print("Tabela de apoio", tabela, len(mapa), "códigos", amostra or "")
         return mapa
 
 
 def carregar(base):
-    tipos = base.descricoes("tbTipoUnidade", "CO_TIPO_UNIDADE")
-    turnos = base.descricoes("tbTurnoAtendimento", "CO_TURNO_ATENDIMENTO")
-    naturezas = base.descricoes("tbNaturezaJuridica", "CO_NATUREZA_JUR")
-    motivos = base.descricoes("tbMotivoDesativacao", "CO_MOTIVO_DESAB")
+    tipos = base.descricoes("tbTipoUnidade")
+    turnos = base.descricoes("tbTurnoAtendimento")
+    naturezas = base.descricoes("tbNaturezaJuridica")
+    motivos = base.descricoes("tbMotivoDesativacao")
+    orgaos = base.descricoes("tbOrgaoEmissor")
     estab = {}
     diagnostico = defaultdict(Counter)
     for x in base.linhas("tbEstabelecimento"):
@@ -146,7 +159,7 @@ def carregar(base):
             "cnpj": cnpj if len(cnpj) == 14 else "",
             "cnpj_mantenedora": digitos(x.get("NU_CNPJ_MANTENEDORA")),
             "pessoa": {"1": "física", "3": "jurídica"}.get(texto(x.get("TP_PFPJ")), ""),
-            "tipo_unidade": tipos.get((texto(x.get("TP_UNIDADE")),), texto(x.get("TP_UNIDADE"))),
+            "tipo_unidade": tipos.get((codigo(x.get("TP_UNIDADE")),), texto(x.get("TP_UNIDADE"))),
             "logradouro": texto(x.get("NO_LOGRADOURO")),
             "numero": texto(x.get("NU_ENDERECO")),
             "complemento": texto(x.get("NO_COMPLEMENTO")),
@@ -155,31 +168,32 @@ def carregar(base):
             "codigo_municipio": unidade[:6],
             "telefone": texto(x.get("NU_TELEFONE")),
             "email": texto(x.get("NO_EMAIL")).lower(),
-            "natureza_juridica": naturezas.get((texto(x.get("CO_NATUREZA_JUR")),), texto(x.get("CO_NATUREZA_JUR"))),
+            "natureza_juridica": naturezas.get((codigo(x.get("CO_NATUREZA_JUR")),), texto(x.get("CO_NATUREZA_JUR"))),
             "gestao": {"M": "municipal", "E": "estadual", "D": "dupla", "S": "sem gestão"}.get(texto(x.get("TP_GESTAO")), texto(x.get("TP_GESTAO"))),
-            "turno": turnos.get((texto(x.get("CO_TURNO_ATENDIMENTO")),), ""),
+            "turno": turnos.get((codigo(x.get("CO_TURNO_ATENDIMENTO")),), ""),
             "licenca_sanitaria": limpo({
                 "numero": texto(x.get("NU_ALVARA")),
                 "data_expedicao": data_br(x.get("DT_EXPEDICAO")),
                 "validade": data_br(x.get("DT_VAL_LIC_SANI")),
+                "orgao_expedidor": orgaos.get((codigo(x.get("TP_ORGAO_EXPEDIDOR")),), "") if texto(x.get("TP_ORGAO_EXPEDIDOR")) else "",
                 "codigo_orgao_expedidor": texto(x.get("TP_ORGAO_EXPEDIDOR")),
                 "codigo_tipo": texto(x.get("TP_LIC_SANI")),
             }),
             "registro_diretor_clinico": texto(x.get("REG_DIRETORCLN")),
-            "situacao": ("desativado" + (" — " + motivos.get((motivo,), motivo) if motivo else "")) if motivo else "ativo",
+            "situacao": ("desativado — " + motivos.get((codigo(motivo),), "motivo " + motivo).lower()) if motivo else "ativo",
             "data_atualizacao": data_br(x.get("DT_ATUALIZACAO")),
         })
     print("Estabelecimentos nos municípios", MUNICIPIOS, ":", len(estab))
     for campo, contagem in diagnostico.items():
         print("Valores de", campo, dict(contagem.most_common(12)))
 
-    equipamentos = base.descricoes("tbEquipamento", "CO_EQUIPAMENTO", "CO_TIPO_EQUIPAMENTO")
-    tipos_equip = base.descricoes("tbTipoEquipamento", "CO_TIPO_EQUIPAMENTO")
+    equipamentos = base.descricoes("tbEquipamento", 2)
+    tipos_equip = base.descricoes("tbTipoEquipamento")
     for x in base.linhas("rlEstabEquipamento") or []:
         alvo = estab.get(texto(x.get("CO_UNIDADE")))
         if not alvo:
             continue
-        chave = (texto(x.get("CO_EQUIPAMENTO")), texto(x.get("CO_TIPO_EQUIPAMENTO")))
+        chave = (codigo(x.get("CO_EQUIPAMENTO")), codigo(x.get("CO_TIPO_EQUIPAMENTO")))
         alvo.setdefault("equipamentos", []).append(limpo({
             "equipamento": equipamentos.get(chave, "código " + chave[0]),
             "tipo": tipos_equip.get((chave[1],), ""),
@@ -188,13 +202,13 @@ def carregar(base):
             "sus": texto(x.get("TP_SUS")) == "1",
         }))
 
-    servicos = base.descricoes("tbServicoEspecializado", "CO_SERVICO")
-    classes = base.descricoes("tbClassificacaoServico", "CO_SERVICO", "CO_CLASSIFICACAO")
+    servicos = base.descricoes("tbServicoEspecializado")
+    classes = base.descricoes("tbClassificacaoServico", 2)
     for x in base.linhas("rlEstabServClass") or []:
         alvo = estab.get(texto(x.get("CO_UNIDADE")))
         if not alvo or texto(x.get("ST_ATIVO_SN")).upper() == "N":
             continue
-        servico, classe = texto(x.get("CO_SERVICO")), texto(x.get("CO_CLASSIFICACAO"))
+        servico, classe = codigo(x.get("CO_SERVICO")), codigo(x.get("CO_CLASSIFICACAO"))
         nome = " — ".join(filter(None, [servicos.get((servico,), "serviço " + servico), classes.get((servico, classe), "")]))
         lista = alvo.setdefault("servicos", [])
         if nome not in lista:
