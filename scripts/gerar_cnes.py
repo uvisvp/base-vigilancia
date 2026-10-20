@@ -24,6 +24,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import tempfile
 import urllib.request
 import zipfile
@@ -78,11 +79,17 @@ def ultimo_arquivo():
         raise RuntimeError("Nenhuma BASE_DE_DADOS_CNES_AAAAMM.ZIP no FTP do DATASUS.")
     competencia = nomes[-1]
     destino = Path(tempfile.gettempdir()) / f"BASE_DE_DADOS_CNES_{competencia}.ZIP"
-    if not destino.exists():
-        print("Baixando", competencia, "…")
-        with urllib.request.urlopen(f"{FTP}BASE_DE_DADOS_CNES_{competencia}.ZIP", timeout=3600) as r, \
-                open(destino, "wb") as saida:
-            shutil.copyfileobj(r, saida, 1 << 20)
+    url = f"{FTP}BASE_DE_DADOS_CNES_{competencia}.ZIP"
+    # O FTP do DATASUS derruba conexões longas: curl com retomada (-C -) até o ZIP ficar íntegro.
+    for tentativa in range(1, 7):
+        if destino.exists() and zipfile.is_zipfile(destino):
+            break
+        print("Baixando", competencia, "| tentativa", tentativa)
+        subprocess.run(["curl", "-sS", "--retry", "3", "--retry-delay", "15", "-C", "-",
+                        "-m", "3000", "-o", str(destino), url], check=False)
+    if not zipfile.is_zipfile(destino):
+        raise RuntimeError(f"Não foi possível baixar {url} completo.")
+    print("Arquivo:", destino, round(destino.stat().st_size / 2**20), "MB")
     return destino, competencia
 
 
