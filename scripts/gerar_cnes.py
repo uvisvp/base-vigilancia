@@ -143,7 +143,6 @@ def carregar(base):
     turnos = base.descricoes("tbTurnoAtendimento")
     naturezas = base.descricoes("tbNaturezaJuridica")
     motivos = base.descricoes("tbMotivoDesativacao")
-    orgaos = base.descricoes("tbOrgaoEmissor")
     estab = {}
     diagnostico = defaultdict(Counter)
     for x in base.linhas("tbEstabelecimento"):
@@ -178,7 +177,7 @@ def carregar(base):
                 "numero": texto(x.get("NU_ALVARA")),
                 "data_expedicao": data_br(x.get("DT_EXPEDICAO")),
                 "validade": data_br(x.get("DT_VAL_LIC_SANI")),
-                "orgao_expedidor": orgaos.get((codigo(x.get("TP_ORGAO_EXPEDIDOR")),), "") if texto(x.get("TP_ORGAO_EXPEDIDOR")) else "",
+                # Sem tabela de apoio na base (tbOrgaoEmissor é a de emissores de RG): fica o código.
                 "codigo_orgao_expedidor": texto(x.get("TP_ORGAO_EXPEDIDOR")),
                 "codigo_tipo": texto(x.get("TP_LIC_SANI")),
             }),
@@ -206,13 +205,14 @@ def carregar(base):
         }))
 
     servicos = base.descricoes("tbServicoEspecializado")
+    # tbClassificacaoServico: CO_CLASSIFICACAO_SERVICO vem antes de CO_SERVICO_ESPECIALIZADO
     classes = base.descricoes("tbClassificacaoServico", 2)
     for x in base.linhas("rlEstabServClass") or []:
         alvo = estab.get(texto(x.get("CO_UNIDADE")))
         if not alvo or texto(x.get("ST_ATIVO_SN")).upper() == "N":
             continue
         servico, classe = codigo(x.get("CO_SERVICO")), codigo(x.get("CO_CLASSIFICACAO"))
-        nome = " — ".join(filter(None, [servicos.get((servico,), "serviço " + servico), classes.get((servico, classe), "")]))
+        nome = " — ".join(filter(None, [servicos.get((servico,), "serviço " + servico), classes.get((classe, servico), "")]))
         lista = alvo.setdefault("servicos", [])
         if nome not in lista:
             lista.append(nome)
