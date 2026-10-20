@@ -1,0 +1,41 @@
+name: Sondar fontes do CNES
+
+# Teste manual: o FTP do DATASUS (base mensal completa do CNES) e a API de dados
+# abertos do Ministério da Saúde respondem a partir do GitHub Actions?
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/manipulacao-tablet-blocos-czcgtx]
+    paths: [.github/workflows/sondar-cnes.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  sondar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: FTP do DATASUS
+        continue-on-error: true
+        run: |
+          curl -sS -m 120 --list-only ftp://ftp.datasus.gov.br/cnes/ | tail -15
+          echo "--- BASE_DE_DADOS mais recentes"
+          curl -sS -m 120 --list-only ftp://ftp.datasus.gov.br/cnes/ | grep -i BASE_DE_DADOS | sort | tail -3
+          ultimo=$(curl -sS -m 120 --list-only ftp://ftp.datasus.gov.br/cnes/ | grep -i BASE_DE_DADOS | sort | tail -1)
+          curl -sSI -m 120 "ftp://ftp.datasus.gov.br/cnes/$ultimo" | head
+      - name: Baixar a base mensal e listar o conteúdo
+        continue-on-error: true
+        run: |
+          ultimo=$(curl -sS -m 120 --list-only ftp://ftp.datasus.gov.br/cnes/ | grep -i BASE_DE_DADOS | sort | tail -1)
+          time curl -sS -m 1500 -o base.zip "ftp://ftp.datasus.gov.br/cnes/$ultimo"
+          ls -la base.zip
+          unzip -l base.zip | sort -k1 -n | tail -40
+          for t in tbEstabelecimento rlEstabEquipamento tbCargaHorariaSus rlEstabServClass tbTipoUnidade tbEquipamento; do
+            f=$(unzip -Z1 base.zip | grep -i "^${t}[0-9]*\.csv" | head -1)
+            [ -n "$f" ] && { echo "=== $f"; unzip -p base.zip "$f" | head -2 | iconv -f latin1 -t utf-8 | cut -c1-1500; }
+          done
+      - name: API de dados abertos
+        continue-on-error: true
+        run: |
+          time curl -sS -m 60 "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos?codigo_municipio=355030&limit=20&offset=0" | head -c 400
