@@ -2,10 +2,10 @@ name: Atualizar Produtos de Cannabis
 
 on:
   workflow_dispatch:
-  # Agendamento suspenso em 20/10/2026: a consulta da Anvisa passou a exigir o teste anti-robô Cloudflare Turnstile (HTTP 403 "turnstile_invalido" desde 29/09/2026).
-  # Os dados publicados continuam disponíveis; rode manualmente ou reative quando a fonte voltar.
-  # schedule:
-  #   - cron: "30 10 * * 2"
+  # Desde 20/10/2026 a fonte é o CSV aberto da Anvisa (dados.anvisa.gov.br), atualizado
+  # às terças; a consulta da Anvisa passou a exigir o teste anti-robô Cloudflare Turnstile.
+  schedule:
+    - cron: "30 10 * * 3"
 
 permissions:
   contents: write
@@ -26,8 +26,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Gerar base de Cannabis
-        run: python scripts/gerar_cannabis.py
+      - name: Gerar base de Cannabis (dados abertos da Anvisa)
+        run: python scripts/gerar_cannabis_abertos.py
 
       - name: Verificar alterações
         id: changes
