@@ -53,7 +53,11 @@ jobs:
       - name: Gerar índices de nomes de alimentos e de apresentações por registro
         run: python scripts/gerar_indices_apoio.py
 
+      # painel próprio (Power BI de suplementos): se falhar, as demais bases são publicadas
+      # mesmo assim e a execução termina com falha no último passo (dispara o aviso)
       - name: Gerar constituintes de suplementos
+        id: suplementos
+        continue-on-error: true
         run: python scripts/gerar_suplementos_constituintes.py
 
       - name: Gerar visões completas por processo
@@ -87,3 +91,9 @@ jobs:
             git rebase -X theirs origin/main
           done
           git push origin HEAD:main
+
+      - name: Falha nos constituintes de suplementos
+        if: steps.suplementos.outcome == 'failure'
+        run: |
+          echo "::error::Constituintes de suplementos não atualizados; as demais bases foram publicadas."
+          exit 1

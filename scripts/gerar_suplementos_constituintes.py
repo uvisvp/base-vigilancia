@@ -550,6 +550,9 @@ def validar_registros(registros, total_anterior):
         "nutriente_substancia_enzima",
     )
 
+    # linha do painel sem campo obrigatório (ex.: constituinte novo ainda sem função, out/2026)
+    # fica de fora e vai para o log; acima de 2% das linhas a publicação é cancelada
+    incompletas = []
     for indice, registro in enumerate(registros, start=1):
         if set(registro) != campos_esperados:
             raise RuntimeError(
@@ -560,10 +563,21 @@ def validar_registros(registros, total_anterior):
             campo for campo in obrigatorios if not registro[campo]
         ]
         if faltantes:
-            raise RuntimeError(
-                f"Linha {indice} sem campo obrigatório: "
-                + ", ".join(faltantes)
-            )
+            incompletas.append((indice, registro, faltantes))
+
+    if len(incompletas) > len(registros) * 0.02:
+        raise RuntimeError(
+            f"{len(incompletas)} linhas sem campo obrigatório "
+            f"(de {len(registros)}). A publicação foi cancelada."
+        )
+    for indice, registro, faltantes in incompletas:
+        print(
+            f"AVISO: linha {indice} descartada, sem {', '.join(faltantes)}:",
+            registro.get("constituinte") or registro.get("categoria") or "(sem nome)"
+        )
+    if incompletas:
+        descartar = {id(r) for _, r, _ in incompletas}
+        registros[:] = [r for r in registros if id(r) not in descartar]
 
     constituintes_normalizados = {
         normalizar_busca(item["constituinte"])
