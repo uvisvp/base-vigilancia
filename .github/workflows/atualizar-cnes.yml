@@ -1,0 +1,53 @@
+name: Atualizar CNES
+
+on:
+  workflow_dispatch:
+  # A base mensal do CNES sai no FTP do DATASUS por volta do dia 15 do mês seguinte.
+  # Dia 20 às 07:00 no horário de Brasília (10:00 UTC).
+  schedule:
+    - cron: "0 10 20 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-cnes
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar base do CNES (município de São Paulo)
+        run: python scripts/gerar_cnes.py
+
+      - name: Verificar alterações
+        id: changes
+        run: |
+          git add dados/cnes dados/manifest.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Salvar atualização
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Atualiza base do CNES"
+          for tentativa in 1 2 3 4; do
+            git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0
+            sleep $((tentativa * 10))
+          done
+          exit 1

@@ -27,6 +27,7 @@ on:
       - Atualizar RDC 429/2020 completa
       - Atualizar regras matéria-prima e IFA
       - Atualizar manifesto regulatório
+      - Atualizar CNES
 
 permissions:
   issues: write
