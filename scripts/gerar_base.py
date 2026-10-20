@@ -3641,7 +3641,7 @@ def gerar_manifesto(
     }
 
     # Preserva bases auxiliares já geradas por outros workflows,
-    # como suplementos, produtos irregulares, cannabis, alertas,
+    # como suplementos, produtos irregulares, cannabis,
     # aditivos, coadjuvantes etc.
     manifesto["bases"].update(
         bases_preservadas

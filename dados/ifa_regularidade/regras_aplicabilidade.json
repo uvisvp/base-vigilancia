@@ -1,6 +1,6 @@
 {
   "schema": "regularidade-materia-prima-ifa-v1",
-  "gerado_em": "2026-09-17T11:04:19.771205+00:00",
+  "gerado_em": "2026-10-20T17:06:58.456402+00:00",
   "principio": "A ferramenta verifica evidências regulatórias públicas e pendências documentais. Não deve converter ausência em banco público em irregularidade automática.",
   "conceitos": {
     "materia_prima": {
@@ -44,11 +44,6 @@
           "id": "controle_especial",
           "fonte": "dados/controlados_portaria344/listas.json",
           "resultado": "condicional"
-        },
-        {
-          "id": "alertas",
-          "fonte": "dados/alertas_sanitarios",
-          "resultado": "evidencia_publica"
         },
         {
           "id": "produtos_irregulares",
@@ -110,11 +105,6 @@
           "id": "controle_especial",
           "fonte": "dados/controlados_portaria344/listas.json",
           "resultado": "condicional"
-        },
-        {
-          "id": "alertas",
-          "fonte": "dados/alertas_sanitarios",
-          "resultado": "evidencia_publica"
         },
         {
           "id": "produtos_irregulares",
@@ -186,5 +176,5 @@
     "Certificado de análise e controle de qualidade do lote permanecem dependentes de conferência documental/técnica.",
     "Ausência em CADIFA, CBPF ou base legada não equivale automaticamente a irregularidade."
   ],
-  "sha256_conteudo": "f6f30bde189d10040e074391614f538997d9f6c5530bcea1b26fffd30040128b"
+  "sha256_conteudo": "7a1c59624fe90cf0c4b54fd520ad916c9028dda13b73a4effa4523aa64c59506"
 }

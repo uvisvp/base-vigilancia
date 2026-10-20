@@ -9,7 +9,6 @@ on:
     types: [completed]
     workflows:
       - Atualizar Aditivos e Coadjuvantes
-      - Atualizar Alertas Sanitários
       - Atualizar base da Anvisa
       - Atualizar banco CADIFA
       - Atualizar Produtos de Cannabis
