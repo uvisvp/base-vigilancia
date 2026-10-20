@@ -1,13 +1,13 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-09-06T01:58:03.749694+00:00",
+  "gerado_em": "2026-10-20T04:12:47.810781+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "0817ff9c8c2254179cbe1cdaf24ab054f56caa3614821229eec54e3e6f64896b",
-      "normas": 23,
+      "sha256": "68369c5e6a4b496620702aeb50a25dd726d42f48340bcbeb1551c2ec11d7bde4",
+      "normas": 66,
       "curados": 3
     },
     "in75_completa": {
@@ -53,7 +53,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/in-75-2020-anexo-xv.json",
       "schema": "legislacao-curada-v1",
-      "sha256": "c32f56f35f9554d1ceadf6d11816b922ac3b1acbc6fc8821ac71ef718141ac7d",
+      "sha256": "aa1af2705dc23ad2bfe321c8894bd545b81a66fe51fcc406e03581c65584d615",
       "registros": 3,
       "escopo": "operacional_complementar",
       "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=INM&numeroAto=00000075&seqAto=000&valorAno=2020&orgao=DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true"
@@ -62,7 +62,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-cosmeticos.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "a975def850f7aec5ce4b19f0901e09f1e86b9e5e0e754a10f92deb6f4aaef2d5",
+      "sha256": "5a24b01e5bbcbd4c16fa5727ffef04ba90d59669f07b16233169c7cc3d91a84c",
       "registros": 10,
       "categoria": "cosmeticos",
       "fonte_oficial": "https://www.gov.br/anvisa/pt-br/comunicacao/campanhas/estetica/consulta-de-cosmeticos",
@@ -90,7 +90,7 @@
       "status": "ok",
       "arquivo": "dados/legislacao_curada/regularizacao-saneantes.json",
       "schema": "regularizacao-produtos-v1",
-      "sha256": "e5c4fad5ec8126f444a7895f373a48266c65dc299e0037194319626513f9c78d",
+      "sha256": "45ad94b33de1319ff5a8358f6fa17a28e9388d40b97b02032c6f4089683d779e",
       "registros": 4,
       "categoria": "saneantes",
       "fonte_oficial": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-aprova-correcoes-na-rdc-989-2025-e-aprimora-procedimentos-para-produtos-saneantes",
@@ -118,7 +118,7 @@
       "status": "ok",
       "arquivo": "dados/controlados_portaria344/manifest.json",
       "schema": "controlados-portaria344-v2",
-      "sha256": "191c6a21ef06061dd1bf8a19eb7f6f81f27946229849f34538a2202045f6ef0c",
+      "sha256": "965b455287add1f6fc558aa15e59e67768685bd27732152a9b3be2960d5e2cf5",
       "escopo": "operacional",
       "listas_incluidas": [
         "A1",
@@ -135,13 +135,13 @@
       "substancias": 476,
       "adendos": 101,
       "norma_fonte": "RDC Anvisa 1.036/2026",
-      "data_fonte": "Thu, 03 Sep 2026 12:19:43 GMT"
+      "data_fonte": "Mon, 19 Oct 2026 16:31:48 GMT"
     },
     "roteiro_drogaria": {
       "status": "ok",
       "arquivo": "dados/roteiros/drogaria.json",
       "schema": "roteiro-estruturado-v1",
-      "sha256": "d7264422ccc1f15719b7d1c193d39cfa519aeb0a2d8ba60bde61e7a6e5a82411",
+      "sha256": "9c0867e42f11c8ec3672322dbb06a523e0033b16f2aaafafa8708729a1e4d6d1",
       "registros": 304,
       "versao": "drogaria-2026.09.06-3",
       "cards": 8,
