@@ -168,6 +168,8 @@ def processar(textos=TEXTOS,saida=SAIDA):
         doc=documentos.setdefault(norma,{'schema':'legislacao-hierarquica-v12','norma':norma,'sha256_texto':None,'nos':[],'validacao':{'ids_estruturais_repetidos':[],'artigos_repetidos_na_fonte':{}}})
         doc['nos']=[n for n in doc['nos'] if n['id']!=r['id']]; doc['nos'].append(r); manifest['curados']+=1; com_curados.add(norma)
     validar_destinos(documentos)
+    try:anterior=json.loads((saida/'manifest.json').read_text(encoding='utf-8')).get('normas',{})
+    except (OSError,ValueError):anterior={}
     for norma,doc in sorted(documentos.items()):
         ids=[n['id'] for n in doc['nos'] if n.get('estrutural',True)]; rep=sorted({x for x in ids if ids.count(x)>1}); doc['validacao']['ids_estruturais_repetidos']=rep
         if rep:raise RuntimeError(f'{norma}: IDs estruturais duplicados: {rep[:10]}')
@@ -187,6 +189,12 @@ def processar(textos=TEXTOS,saida=SAIDA):
         else:
             destino.write_text(json.dumps(doc,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
         manifest['normas'][norma]={'arquivo':destino.name,'nos':len(doc['nos']),'sha256_texto':doc.get('sha256_texto')}
+        # campos que outros scripts acrescentam ao manifesto (ex.: regulamento_tecnico das RDC 67,
+        # 204 e 57) continuam enquanto a norma for a mesma
+        extra=anterior.get(norma) or {}
+        if extra.get('arquivo')==destino.name:
+            for k,v in extra.items():
+                if k not in manifest['normas'][norma] and k!='proveniencia':manifest['normas'][norma][k]=v
         if doc.get('proveniencia'):
             manifest['normas'][norma]['proveniencia']=doc['proveniencia']
     (saida/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
