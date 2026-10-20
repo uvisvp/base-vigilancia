@@ -76,7 +76,6 @@ def main():
                     {"id": "fornecedor_afe_ae", "fonte": "dados/afe_ae", "resultado": "evidencia_publica"},
                     {"id": "atividade_autorizada", "fonte": "dados/afe_ae_atividades", "resultado": "evidencia_publica"},
                     {"id": "controle_especial", "fonte": "dados/controlados_portaria344/listas.json", "resultado": "condicional"},
-                    {"id": "alertas", "fonte": "dados/alertas_sanitarios", "resultado": "evidencia_publica"},
                     {"id": "produtos_irregulares", "fonte": "dados/produtos_irregulares", "resultado": "evidencia_publica"}
                 ],
                 "verificacoes_documentais": [
@@ -114,7 +113,6 @@ def main():
                     {"id": "empresa_afe_ae", "fonte": "dados/afe_ae", "resultado": "evidencia_publica"},
                     {"id": "atividade_autorizada", "fonte": "dados/afe_ae_atividades", "resultado": "evidencia_publica"},
                     {"id": "controle_especial", "fonte": "dados/controlados_portaria344/listas.json", "resultado": "condicional"},
-                    {"id": "alertas", "fonte": "dados/alertas_sanitarios", "resultado": "evidencia_publica"},
                     {"id": "produtos_irregulares", "fonte": "dados/produtos_irregulares", "resultado": "evidencia_publica"}
                 ],
                 "se_ifa": {

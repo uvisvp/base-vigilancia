@@ -30,8 +30,6 @@ def consultas():
     for nome, rota, url in [
         ("cannabis", "https://consultas.anvisa.gov.br/#/cannabis/",
          "https://consultas.anvisa.gov.br/api/consulta/cannabis/produtos/?page=1&count=10&filter%5BsituacaoRegistro%5D=V"),
-        ("alertas", "https://consultas.anvisa.gov.br/#/alertas-sanitarios/",
-         "https://consultas.anvisa.gov.br/api/consulta/alertasSanitarios/listagem?page=1&count=10&column=numeroSeqAlerta&order=asc"),
     ]:
         pede(f"{nome} | identificação atual", url, {"Authorization": "Guest", "Referer": rota, "User-Agent": "base-vigilancia/1.0", "Accept": "application/json"})
         pede(f"{nome} | navegador", url, dict(NAV, Referer=rota))

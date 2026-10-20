@@ -1,6 +1,6 @@
 {
   "schema": "ifa-regularidade-manifest-v1",
-  "gerado_em": "2026-10-12T19:24:35.897730+00:00",
+  "gerado_em": "2026-10-20T17:06:58.456402+00:00",
   "fontes": {
     "cbpf_ifa": {
       "arquivo": "cbpf_ifa.json",
@@ -31,7 +31,7 @@
     "regras_aplicabilidade": {
       "arquivo": "regras_aplicabilidade.json",
       "schema": "regularidade-materia-prima-ifa-v1",
-      "sha256": "f6f30bde189d10040e074391614f538997d9f6c5530bcea1b26fffd30040128b",
+      "sha256": "7a1c59624fe90cf0c4b54fd520ad916c9028dda13b73a4effa4523aa64c59506",
       "escopos": [
         "farmacia_manipulacao",
         "atacadista_distribuidor_insumos"
