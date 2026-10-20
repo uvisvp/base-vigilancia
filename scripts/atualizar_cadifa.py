@@ -166,15 +166,25 @@ def main():
     import ssl, urllib.request, gzip
     h = headers_powerbi(diag["resource_key"], diag["pagina_powerbi"])
     h["Content-Type"] = "application/json;charset=UTF-8"
-    req = urllib.request.Request(f"{diag['api']}/public/reports/querydata?synchronous=true", data=body, headers=h)
-    with urllib.request.urlopen(req, timeout=240, context=ssl._create_unverified_context()) as r:
-        rb = r.read()
-        status = r.status
-        if "gzip" in r.headers.get("Content-Encoding", "").lower():
-            rb = gzip.decompress(rb)
-    registros_origem = decodificar(json.loads(rb.decode("utf-8", errors="replace")), campos)
+    # O painel às vezes responde vazio (19/10/2026); na execução seguinte veio completo.
+    # Tenta de novo antes de desistir, sem publicar base vazia.
+    import time
+    registros_origem, status = [], None
+    for tentativa in range(1, 4):
+        req = urllib.request.Request(f"{diag['api']}/public/reports/querydata?synchronous=true", data=body, headers=h)
+        with urllib.request.urlopen(req, timeout=240, context=ssl._create_unverified_context()) as r:
+            rb = r.read()
+            status = r.status
+            if "gzip" in r.headers.get("Content-Encoding", "").lower():
+                rb = gzip.decompress(rb)
+        registros_origem = decodificar(json.loads(rb.decode("utf-8", errors="replace")), campos)
+        if registros_origem:
+            break
+        print(f"Painel CADIFA sem registros (tentativa {tentativa}/3).")
+        if tentativa < 3:
+            time.sleep(90)
     if not registros_origem:
-        raise RuntimeError("Painel CADIFA retornou zero registros")
+        raise RuntimeError("Painel CADIFA retornou zero registros em 3 tentativas")
 
     registros = []
     for r in registros_origem:
