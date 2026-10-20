@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-10-20T04:52:48.125273+00:00",
+  "gerado_em": "2026-10-20T06:27:48.821330+00:00",
   "normas": {
     "Decreto Estadual SP 69118-2024": {
       "arquivo": "decreto-estadual-sp-69118-2024.json",
@@ -777,7 +777,7 @@
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
         "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00001039&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2026",
-        "consultado_em": "2026-10-20T04:31:56.460126+00:00",
+        "consultado_em": "2026-10-20T06:27:48.816180+00:00",
         "data_fonte": "2026-08-26",
         "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
         "formato_fonte": "html",
@@ -786,7 +786,7 @@
         "status_vigencia": "vigente",
         "status_fonte": "AnvisaLegis",
         "texto": "textos/RDC 1039-2026--oficial.txt",
-        "data_processamento": "2026-10-20T04:31:56.460378+00:00",
+        "data_processamento": "2026-10-20T06:27:48.816430+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
@@ -1424,7 +1424,7 @@
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9428&cod_modulo=310&link=S&numeroAto=00000653&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
         "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9428&cod_modulo=310&link=S&numeroAto=00000653&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
-        "consultado_em": "2026-10-20T04:31:35.991500+00:00",
+        "consultado_em": "2026-10-20T06:27:46.303040+00:00",
         "data_fonte": "2022-03-24",
         "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
         "formato_fonte": "html",
@@ -1433,7 +1433,7 @@
         "status_vigencia": "vigente",
         "status_fonte": "AnvisaLegis",
         "texto": "textos/RDC 653-2022--oficial.txt",
-        "data_processamento": "2026-10-20T04:31:35.991738+00:00",
+        "data_processamento": "2026-10-20T06:27:46.303246+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
@@ -1492,7 +1492,7 @@
         "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
         "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
         "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000670&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
-        "consultado_em": "2026-10-20T04:31:54.761966+00:00",
+        "consultado_em": "2026-10-20T06:27:47.461090+00:00",
         "data_fonte": "2022-03-30",
         "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
         "formato_fonte": "html",
@@ -1501,7 +1501,7 @@
         "status_vigencia": "vigente",
         "status_fonte": "AnvisaLegis",
         "texto": "textos/RDC 670-2022--oficial.txt",
-        "data_processamento": "2026-10-20T04:31:54.762147+00:00",
+        "data_processamento": "2026-10-20T06:27:47.461415+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "texto estruturado para consulta; alterações e revogações específicas seguem a fonte oficial e a proveniência"
