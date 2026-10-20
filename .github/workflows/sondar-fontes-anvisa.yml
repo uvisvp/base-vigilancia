@@ -1,0 +1,25 @@
+name: Sondar fontes da Anvisa
+
+# Diagnóstico das fontes que falharam nas atualizações agendadas (out/2026). Só lê.
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/manipulacao-tablet-blocos-czcgtx]
+    paths: [scripts/sondar_fontes_anvisa.py, .github/workflows/sondar-fontes-anvisa.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  sondar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sondar
+        env:
+          ANVISA_CLIENT_ID: ${{ secrets.ANVISA_CLIENT_ID }}
+          ANVISA_CLIENT_SECRET: ${{ secrets.ANVISA_CLIENT_SECRET }}
+        run: python scripts/sondar_fontes_anvisa.py
