@@ -3,7 +3,7 @@
   "fonte": "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_202609.ZIP",
   "tipo_fonte": "Base mensal do CNES (DATASUS/Ministério da Saúde)",
   "competencia": "09/2026",
-  "gerado_em": "2026-10-20T09:40:48.770584+00:00",
+  "gerado_em": "2026-10-20T10:00:45.374692+00:00",
   "versao_gerador": "2026-10-20-cnes-v1",
   "municipios": [
     "355030"
