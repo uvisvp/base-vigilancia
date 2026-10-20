@@ -133,14 +133,18 @@ def carregar_curados():
 
 def processar(textos=TEXTOS,saida=SAIDA):
     textos,saida=Path(textos),Path(saida); normas_dir=saida/'normas'; normas_dir.mkdir(parents=True,exist_ok=True)
-    manifest={'schema':'legislacao-hierarquica-v12','gerado_em':datetime.now(timezone.utc).isoformat(),'normas':{},'curados':0}; documentos={}
+    manifest={'schema':'legislacao-hierarquica-v12','gerado_em':datetime.now(timezone.utc).isoformat(),'normas':{},'curados':0}; documentos={}; assinaturas={}; com_curados=set()
     for arq in sorted(textos.glob('*.txt')):
-        norma=arq.stem.split('--',1)[0]; documentos[norma]=estruturar_texto(norma,arq.read_text(encoding='utf-8'))
+        norma=arq.stem.split('--',1)[0]; documentos[norma]=estruturar_texto(norma,arq.read_text(encoding='utf-8')); assinaturas[norma]={documentos[norma]['sha256_texto'],sha256_texto(arq.read_text(encoding='utf-8').strip())}
         meta_path=arq.with_suffix('.meta.json')
         if meta_path.exists():
             meta=json.loads(meta_path.read_text(encoding='utf-8'))
-            if meta.get('sha256_texto')!=documentos[norma]['sha256_texto']:
+            # a assinatura revisada foi calculada sobre o texto sem espaço nas pontas; a quebra de
+            # linha final que o arquivo ganha ao ser gravado não é alteração de conteúdo
+            bruto=arq.read_text(encoding='utf-8')
+            if meta.get('sha256_texto') not in (documentos[norma]['sha256_texto'],sha256_texto(bruto.strip())):
                 raise RuntimeError(f'{arq.name}: texto diferente da fonte revisada; renovar metadados antes de publicar')
+            documentos[norma]['sha256_texto']=meta['sha256_texto']  # a assinatura revisada (texto sem espaço nas pontas)
             documentos[norma]['proveniencia']=meta
             for no in documentos[norma]['nos']:
                 no['status_vigencia']='revogado' if re.search(r'\(Revogad[oa]',no['texto'],re.I) else meta.get('status_vigencia','pendente_validacao')
@@ -162,12 +166,26 @@ def processar(textos=TEXTOS,saida=SAIDA):
         if norma!=r['norma']:
             r['norma']=norma; r['id']=chave(norma,r.get('anexo'),r['tipo'],str(r['numero']))
         doc=documentos.setdefault(norma,{'schema':'legislacao-hierarquica-v12','norma':norma,'sha256_texto':None,'nos':[],'validacao':{'ids_estruturais_repetidos':[],'artigos_repetidos_na_fonte':{}}})
-        doc['nos']=[n for n in doc['nos'] if n['id']!=r['id']]; doc['nos'].append(r); manifest['curados']+=1
+        doc['nos']=[n for n in doc['nos'] if n['id']!=r['id']]; doc['nos'].append(r); manifest['curados']+=1; com_curados.add(norma)
     validar_destinos(documentos)
     for norma,doc in sorted(documentos.items()):
         ids=[n['id'] for n in doc['nos'] if n.get('estrutural',True)]; rep=sorted({x for x in ids if ids.count(x)>1}); doc['validacao']['ids_estruturais_repetidos']=rep
         if rep:raise RuntimeError(f'{norma}: IDs estruturais duplicados: {rep[:10]}')
-        destino=normas_dir/f'{slug(norma)}.json'; destino.write_text(json.dumps(doc,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+        destino=normas_dir/f'{slug(norma)}.json'
+        # norma já publicada com o mesmo texto: fica a versão publicada. Várias normas foram
+        # estruturadas por scripts próprios (alíneas, anexos, ocorrências desambiguadas) e os
+        # roteiros citam esses IDs; reestruturar texto igual só trocaria IDs sem mudar conteúdo.
+        publicado=None
+        if destino.exists() and norma not in com_curados:
+            try:publicado=json.loads(destino.read_text(encoding='utf-8'))
+            except ValueError:publicado=None
+        # publicado só com parte dos dispositivos da estruturação atual (ex.: Portaria 344 sem os
+        # arts. 14 a 50): não é estrutura própria, é estrutura incompleta, e sai a atual
+        ids_pub={n['id'] for n in (publicado or {}).get('nos',[])}; ids_novo={n['id'] for n in doc['nos']}
+        if publicado and publicado.get('sha256_texto') in assinaturas.get(norma,set()) and not ids_pub<ids_novo:
+            doc=publicado
+        else:
+            destino.write_text(json.dumps(doc,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
         manifest['normas'][norma]={'arquivo':destino.name,'nos':len(doc['nos']),'sha256_texto':doc.get('sha256_texto')}
         if doc.get('proveniencia'):
             manifest['normas'][norma]['proveniencia']=doc['proveniencia']

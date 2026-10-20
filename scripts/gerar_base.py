@@ -270,8 +270,10 @@ def resolver_url_cmed():
         )
         for link in links
         if (
-            "conformidade_site" in link.lower()
-            and "conformidade_gov" not in link.lower()
+            # nome do arquivo de preços ao consumidor (PMC): “xls_conformidade_site_…” até
+            # set/2026, “lista_pmc__…” desde out/2026; fora a lista de preços ao governo (PMVG)
+            re.search(r"conformidade_site|lista_pmc", link, re.I)
+            and not re.search(r"conformidade_gov|pmvg", link, re.I)
         )
     ]
 
@@ -1509,6 +1511,41 @@ def encontrar_cabecalho_cmed(planilha):
         "Cabeçalho da planilha CMED "
         "não foi localizado."
     )
+
+
+def cmed_anterior(erro):
+    print(
+        "AVISO: CMED não atualizada; mantida a base anterior.",
+        f"Motivo: {erro}"
+    )
+
+    try:
+        anterior = json.loads(
+            (DADOS / "manifest.json").read_text(
+                encoding="utf-8"
+            )
+        )["bases"]["cmed"]
+    except Exception:
+        raise RuntimeError(
+            "CMED falhou e não há base anterior "
+            "no manifesto."
+        ) from erro
+
+    if not (DADOS / "cmed").is_dir():
+        raise RuntimeError(
+            "CMED falhou e a pasta dados/cmed "
+            "não existe."
+        ) from erro
+
+    anterior = dict(anterior)
+    anterior["status"] = "mantida"
+    anterior["aviso"] = (
+        "Atualização da CMED falhou em "
+        + datetime.now(timezone.utc).isoformat()
+        + f": {erro}"
+    )
+
+    return anterior
 
 
 def gerar_cmed():
@@ -3777,7 +3814,12 @@ if __name__ == "__main__":
         "=== CMED — EAN/GTIN ==="
     )
 
-    cmed = gerar_cmed()
+    # a planilha da CMED depende da página de preços, que muda de formato: se ela falhar, a
+    # base CMED anterior fica (arquivos e manifesto) e as demais bases seguem publicadas
+    try:
+        cmed = gerar_cmed()
+    except Exception as erro:
+        cmed = cmed_anterior(erro)
 
     print(
     "=== SANEANTES ==="
