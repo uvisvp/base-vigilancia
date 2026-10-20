@@ -231,9 +231,12 @@ def publicar(estab, competencia):
     try:
         for shard, mapa in por_cnes.items():
             gravar_json(temporario / "estabelecimentos" / f"{shard}.json", dict(sorted(mapa.items())))
+        # ativos primeiro: o app mostra só as primeiras unidades de uma mantenedora grande
+        situacao = {x["cnes"]: x.get("situacao") != "ativo" for x in estab.values()}
         for pasta, indice in (("cnpj", por_cnpj), ("mantenedora", por_mant)):
             for shard, mapa in indice.items():
-                gravar_json(temporario / pasta / f"{shard}.json", {k: sorted(v) for k, v in sorted(mapa.items())})
+                gravar_json(temporario / pasta / f"{shard}.json",
+                            {k: sorted(v, key=lambda c: (situacao.get(c, True), c)) for k, v in sorted(mapa.items())})
         meta = {
             "status": "ok",
             "fonte": f"{FTP}BASE_DE_DADOS_CNES_{competencia}.ZIP",
