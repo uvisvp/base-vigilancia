@@ -27,6 +27,7 @@ on:
       - Atualizar regras matéria-prima e IFA
       - Atualizar manifesto regulatório
       - Atualizar CNES
+      - Atualizar produtos não regularizados como dispositivos médicos
 
 permissions:
   issues: write

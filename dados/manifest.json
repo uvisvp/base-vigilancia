@@ -775,6 +775,18 @@
       "registros": 560,
       "status": "ok",
       "tipo_fonte": "Painel público Power BI da Anvisa"
+    },
+    "produtos_nao_regulados": {
+      "status": "ok",
+      "fonte": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/produtos-para-saude/produtos-nao-regulados",
+      "tipo_fonte": "Página da Anvisa (gov.br)",
+      "gerado_em": "2026-10-22T18:06:13.353394+00:00",
+      "atualizado_na_fonte": "24/07/2024",
+      "versao_gerador": "2026-10-22-produtos-nao-regulados-v1",
+      "registros": 244,
+      "categorias": 10,
+      "arquivo": "produtos_nao_regulados/lista.json",
+      "observacao": "Produtos que não exigem notificação ou registro como dispositivo médico; as exceções de cada item ficam no texto."
     }
   },
   "gerado_em": "2026-10-21T14:25:39.372047+00:00",
