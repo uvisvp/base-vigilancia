@@ -1,0 +1,42 @@
+{
+  "schema": "relatorio-legislacao-revisao-geral-v1",
+  "gerado_em": "2026-10-25T13:20:51.484993+00:00",
+  "normas": [
+    {
+      "norma": "RDC 16-2014",
+      "arquivo": "rdc-16-2014.json",
+      "nos": 258,
+      "artigos": 46,
+      "chars": 41660,
+      "status_vigencia": "vigente_com_alteracoes",
+      "fonte": "AnvisaLegis"
+    },
+    {
+      "norma": "RDC 166-2017",
+      "arquivo": "rdc-166-2017.json",
+      "nos": 309,
+      "artigos": 71,
+      "chars": 36331,
+      "status_vigencia": "vigente",
+      "fonte": "AnvisaLegis"
+    },
+    {
+      "norma": "RDC 50-2002",
+      "arquivo": "rdc-50-2002.json",
+      "nos": 3799,
+      "artigos": 6,
+      "chars": 337899,
+      "status_vigencia": "vigente_com_alteracoes",
+      "fonte": "AnvisaLegis"
+    },
+    {
+      "norma": "Portaria SVS MS 64-2018",
+      "arquivo": "portaria-svs-ms-64-2018.json",
+      "nos": 28,
+      "artigos": 3,
+      "chars": 2545,
+      "status_vigencia": "vigente",
+      "fonte": "AnvisaLegis"
+    }
+  ]
+}
