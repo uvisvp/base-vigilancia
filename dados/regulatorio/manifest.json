@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-10-20T19:24:15.974660+00:00",
+  "gerado_em": "2026-10-25T12:53:37.340923+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "1a5bb465d29be74628aefad40d26de8b360f550d44549060e3e8e843dceb7138",
+      "sha256": "d4cb6e3b878fcc7f8c9a45fa8edce5aa13592c2ba6e4e76d9bb7456ecec9d073",
       "normas": 66,
       "curados": 3
     },
