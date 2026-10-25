@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-10-25T13:20:57.852427+00:00",
+  "gerado_em": "2026-10-25T19:32:50.532436+00:00",
   "normas": {
     "Decreto Estadual SP 69118-2024": {
       "arquivo": "decreto-estadual-sp-69118-2024.json",
@@ -640,6 +640,33 @@
         "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
       }
     },
+    "Portaria SVS MS 64-2018": {
+      "arquivo": "portaria-svs-ms-64-2018.json",
+      "nos": 28,
+      "sha256_texto": "212b7272d83c9c0381d9d929ec1574ad1f68dd55a10647dbded4605f64c68a84",
+      "proveniencia": {
+        "norma": "Portaria SVS MS 64-2018",
+        "rotulo": "Portaria SVS/MS nº 64/2018",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis (normas de interpretação do teste de sensibilidade aos antimicrobianos pelo BrCAST).",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+        "consultado_em": "2026-10-25T13:20:57.851072+00:00",
+        "data_fonte": "2018-12-11",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "78afd3516cbff9e4f120f78a083372e8fbbb08bff75ee8acd4572709726318fa",
+        "sha256_texto": "212b7272d83c9c0381d9d929ec1574ad1f68dd55a10647dbded4605f64c68a84",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/Portaria SVS MS 64-2018--oficial.txt",
+        "data_processamento": "2026-10-25T13:20:57.851136+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+      }
+    },
     "Portaria de Consolidacao MS 5-2017": {
       "arquivo": "portaria-de-consolidacao-ms-5-2017.json",
       "nos": 6458,
@@ -811,6 +838,60 @@
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+      }
+    },
+    "RDC 16-2014": {
+      "arquivo": "rdc-16-2014.json",
+      "nos": 258,
+      "sha256_texto": "5d78a9c858de71115c92f2bd95cf69acfd5328fc4e1dc30fee01fa90f4808c68",
+      "proveniencia": {
+        "norma": "RDC 16-2014",
+        "rotulo": "RDC Anvisa nº 16/2014",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "consultado_em": "2026-10-25T13:20:52.954046+00:00",
+        "data_fonte": "2014-04-01",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "6f5e820cdc232920b7e6176de1ac23e3afb639a3c6a95b581eadbaff1c88186c",
+        "sha256_texto": "5d78a9c858de71115c92f2bd95cf69acfd5328fc4e1dc30fee01fa90f4808c68",
+        "status_vigencia": "vigente_com_alteracoes",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 16-2014--oficial.txt",
+        "data_processamento": "2026-10-25T13:20:52.954308+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+      }
+    },
+    "RDC 166-2017": {
+      "arquivo": "rdc-166-2017.json",
+      "nos": 309,
+      "sha256_texto": "f83c35dbef76e2a010a8d87fde51f43bbec7637916c7899175cb0c5660acac37",
+      "proveniencia": {
+        "norma": "RDC 166-2017",
+        "rotulo": "RDC Anvisa nº 166/2017",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "consultado_em": "2026-10-25T13:20:54.272168+00:00",
+        "data_fonte": "2017-07-24",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "f23a49ea4607865e89ec767abc88b50b5b1078b731708223c6a67ee2de03a0b0",
+        "sha256_texto": "f83c35dbef76e2a010a8d87fde51f43bbec7637916c7899175cb0c5660acac37",
+        "status_vigencia": "vigente",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 166-2017--oficial.txt",
+        "data_processamento": "2026-10-25T13:20:54.272317+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
       }
     },
     "RDC 197-2017": {
@@ -1221,6 +1302,33 @@
         "data_processamento": "2026-09-17T23:21:05.778263+00:00",
         "schema": "proveniencia-legislativa-v1",
         "escopo_validacao": "consulta estruturada; observar status de vigência e alterações"
+      }
+    },
+    "RDC 50-2002": {
+      "arquivo": "rdc-50-2002.json",
+      "nos": 3799,
+      "sha256_texto": "5c415d854d58f71cbef59469135fcc0b260859492c51daf08e9f3fc7c6f8c9ea",
+      "proveniencia": {
+        "norma": "RDC 50-2002",
+        "rotulo": "RDC Anvisa nº 50/2002",
+        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+        "consultado_em": "2026-10-25T13:20:56.616736+00:00",
+        "data_fonte": "2002-02-21",
+        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+        "formato_fonte": "html",
+        "sha256_fonte": "a92a18a935800e1d99078b10b3c0d7c9d1cb739392cc79afd44c0050c5cf05ea",
+        "sha256_texto": "5c415d854d58f71cbef59469135fcc0b260859492c51daf08e9f3fc7c6f8c9ea",
+        "status_vigencia": "vigente_com_alteracoes",
+        "status_fonte": "AnvisaLegis",
+        "texto": "textos/RDC 50-2002--oficial.txt",
+        "data_processamento": "2026-10-25T13:20:56.618144+00:00",
+        "schema": "proveniencia-legislativa-v1",
+        "estruturar_alineas": true,
+        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
       }
     },
     "RDC 50-2014": {
@@ -1711,114 +1819,6 @@
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
         "escopo_validacao": "roteiros de transporte de material biológico e de diagnóstico por imagem (app Roteiros); demais usos exigem revisão própria"
-      }
-    },
-    "RDC 16-2014": {
-      "arquivo": "rdc-16-2014.json",
-      "nos": 258,
-      "sha256_texto": "5d78a9c858de71115c92f2bd95cf69acfd5328fc4e1dc30fee01fa90f4808c68",
-      "proveniencia": {
-        "norma": "RDC 16-2014",
-        "rotulo": "RDC Anvisa nº 16/2014",
-        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
-        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "consultado_em": "2026-10-25T13:20:52.954046+00:00",
-        "data_fonte": "2014-04-01",
-        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
-        "formato_fonte": "html",
-        "sha256_fonte": "6f5e820cdc232920b7e6176de1ac23e3afb639a3c6a95b581eadbaff1c88186c",
-        "sha256_texto": "5d78a9c858de71115c92f2bd95cf69acfd5328fc4e1dc30fee01fa90f4808c68",
-        "status_vigencia": "vigente_com_alteracoes",
-        "status_fonte": "AnvisaLegis",
-        "texto": "textos/RDC 16-2014--oficial.txt",
-        "data_processamento": "2026-10-25T13:20:52.954308+00:00",
-        "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
-      }
-    },
-    "RDC 166-2017": {
-      "arquivo": "rdc-166-2017.json",
-      "nos": 309,
-      "sha256_texto": "f83c35dbef76e2a010a8d87fde51f43bbec7637916c7899175cb0c5660acac37",
-      "proveniencia": {
-        "norma": "RDC 166-2017",
-        "rotulo": "RDC Anvisa nº 166/2017",
-        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
-        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "consultado_em": "2026-10-25T13:20:54.272168+00:00",
-        "data_fonte": "2017-07-24",
-        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
-        "formato_fonte": "html",
-        "sha256_fonte": "f23a49ea4607865e89ec767abc88b50b5b1078b731708223c6a67ee2de03a0b0",
-        "sha256_texto": "f83c35dbef76e2a010a8d87fde51f43bbec7637916c7899175cb0c5660acac37",
-        "status_vigencia": "vigente",
-        "status_fonte": "AnvisaLegis",
-        "texto": "textos/RDC 166-2017--oficial.txt",
-        "data_processamento": "2026-10-25T13:20:54.272317+00:00",
-        "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
-      }
-    },
-    "RDC 50-2002": {
-      "arquivo": "rdc-50-2002.json",
-      "nos": 3799,
-      "sha256_texto": "5c415d854d58f71cbef59469135fcc0b260859492c51daf08e9f3fc7c6f8c9ea",
-      "proveniencia": {
-        "norma": "RDC 50-2002",
-        "rotulo": "RDC Anvisa nº 50/2002",
-        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
-        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
-        "consultado_em": "2026-10-25T13:20:56.616736+00:00",
-        "data_fonte": "2002-02-21",
-        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
-        "formato_fonte": "html",
-        "sha256_fonte": "a92a18a935800e1d99078b10b3c0d7c9d1cb739392cc79afd44c0050c5cf05ea",
-        "sha256_texto": "5c415d854d58f71cbef59469135fcc0b260859492c51daf08e9f3fc7c6f8c9ea",
-        "status_vigencia": "vigente_com_alteracoes",
-        "status_fonte": "AnvisaLegis",
-        "texto": "textos/RDC 50-2002--oficial.txt",
-        "data_processamento": "2026-10-25T13:20:56.618144+00:00",
-        "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
-      }
-    },
-    "Portaria SVS MS 64-2018": {
-      "arquivo": "portaria-svs-ms-64-2018.json",
-      "nos": 28,
-      "sha256_texto": "212b7272d83c9c0381d9d929ec1574ad1f68dd55a10647dbded4605f64c68a84",
-      "proveniencia": {
-        "norma": "Portaria SVS MS 64-2018",
-        "rotulo": "Portaria SVS/MS nº 64/2018",
-        "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
-        "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
-        "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis (normas de interpretação do teste de sensibilidade aos antimicrobianos pelo BrCAST).",
-        "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
-        "consultado_em": "2026-10-25T13:20:57.851072+00:00",
-        "data_fonte": "2018-12-11",
-        "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
-        "formato_fonte": "html",
-        "sha256_fonte": "78afd3516cbff9e4f120f78a083372e8fbbb08bff75ee8acd4572709726318fa",
-        "sha256_texto": "212b7272d83c9c0381d9d929ec1574ad1f68dd55a10647dbded4605f64c68a84",
-        "status_vigencia": "vigente",
-        "status_fonte": "AnvisaLegis",
-        "texto": "textos/Portaria SVS MS 64-2018--oficial.txt",
-        "data_processamento": "2026-10-25T13:20:57.851136+00:00",
-        "schema": "proveniencia-legislativa-v1",
-        "estruturar_alineas": true,
-        "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
       }
     }
   },
