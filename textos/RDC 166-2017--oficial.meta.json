@@ -1,0 +1,22 @@
+{
+  "norma": "RDC 166-2017",
+  "rotulo": "RDC Anvisa nº 166/2017",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000166&seqAto=000&valorAno=2017&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-25T13:20:54.272168+00:00",
+  "data_fonte": "2017-07-24",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "f23a49ea4607865e89ec767abc88b50b5b1078b731708223c6a67ee2de03a0b0",
+  "sha256_texto": "f83c35dbef76e2a010a8d87fde51f43bbec7637916c7899175cb0c5660acac37",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 166-2017--oficial.txt",
+  "data_processamento": "2026-10-25T13:20:54.272317+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+}

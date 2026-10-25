@@ -1,0 +1,258 @@
+Resoluçăo da Diretoria Colegiada - RDC nş 16, de 01/04/2014
+COPIAR LINK
+CRIAR TAGS
+IMPRIMIR
+PDF
+VER NOTAS DE ALTERAÇĂO
+FECHAR NOTAS DE ALTERAÇĂO
++
+|
+-
+Resoluçăo da Diretoria Colegiada Anvisa nş 1.015, de 02/02/2026
+Resoluçăo da Diretoria Colegiada Anvisa nş 1.013, de 30/01/2026
+Resoluçăo da Diretoria Colegiada - RDC nş 887, de 11/07/2024
+Vigente com AlteraçõesResoluçăo da Diretoria Colegiada - RDC nş 16, de 01/04/2014
+Ver mais detalhes
+MINISTÉRIO DA SAÚDE
+AGÊNCIA NACIONAL DE VIGILÂNCIA SANITÁRIA
+DIRETORIA COLEGIADA
+RESOLUÇÃO-RDC Nº 16, DE 1º- DE ABRIL DE 2014
+RET., 04/04/2014 - Seção 1
+Dispõe sobre os Critérios para Peticionamento de Autorização de Funcionamento (AFE) e Autorização Especial (AE) de Empresas
+A Diretoria Colegiada da Agência Nacional de Vigilância Sanitária, no uso das atribuições que lhe conferem os incisos III e IV, do art. 15 da Lei n.º 9.782, de 26 de janeiro de 1999, o inciso II, e §§ 1° e 3° do art. 54 do Regimento Interno aprovado nos termos do Anexo I da Portaria nº 354 da ANVISA, de 11 de agosto de 2006, republicada no DOU de 21 de agosto de 2006, e suas atualizações, tendo em vista o disposto nos incisos III, do art. 2º, III e IV, do art. 7º da Lei n.º 9.782, de 1999, no art. 35 do Decreto n.º 3.029, de 16 de abril de 1999, e o Programa de Melhoria do Processo de Regulamentação da Agência, instituído por meio da Portaria nº 422, de 16 de abril de 2008, em reunião realizada em 25 de março de 2014, adota a seguinte Resolução da Diretoria Colegiada, e eu, Diretor-Presidente, determino a sua publicação:
+CAPÍTULO I
+DAS DISPOSIÇÕES INICIAIS
+Seção I
+Objetivo
+Art. 1º Esta Resolução tem o objetivo de estabelecer os critérios relativos à concessão, alteração, retificação de publicação, cancelamento, bem como para a interposição de recurso administrativo contra o indeferimento de pedidos relativos aos peticionamentos de Autorização de Funcionamento (AFE) e Autorização Especial (AE) de empresas e estabelecimentos que realizam as atividades elencadas na Seção III do Capítulo I com medicamentos e insumos farmacêuticos destinados a uso humano, substâncias sujeitas a controle especial, produtos para saúde, cosméticos, produtos de higiene pessoal, perfumes, saneantes e cultivo de plantas que possam originar substâncias sujeitas a controle especial. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Seção II
+Definições
+Art. 2º Para efeitos desta Resolução são adotadas as seguintes definições:
+I - autoridade sanitária: Agência Nacional de Vigilância Sanitária e entes/órgãos de vigilância sanitária dos Estados, do Distrito Federal e dos Municípios;
+II - Autorização de Funcionamento (AFE): ato de competência da Agência Nacional de Vigilância Sanitária, contendo autorização para o funcionamento de empresas ou estabelecimentos, instituições e órgãos, concedido mediante o cumprimento dos requisitos técnicos e administrativos constantes desta Resolução;
+III - Autorização Especial (AE): ato de competência da Agência Nacional de Vigilância Sanitária que autoriza o exercício de atividades que envolvem insumos farmacêuticos, medicamentos e substâncias sujeitas a controle especial, bem como o cultivo de plantas que possam originar substâncias sujeitas a controle especial, mediante comprovação de requisitos técnicos e administrativos específicos, constantes desta Resolução;
+IV - caducidade: estado ou condição da autorização que se tornou caduca, perdendo sua validade pelo decurso do prazo legal;
+V - comércio varejista de produtos para saúde: compreende as atividades de comercialização de produtos para saúde de uso leigo, em quantidade que não exceda a normalmente destinada ao uso próprio e diretamente a pessoa física para uso pessoal ou doméstico;
+VI - distribuidor ou comércio atacadista: compreende o comércio de medicamentos, insumos farmacêuticos, produtos para saúde, cosméticos, produtos de higiene pessoal, perfumes e saneantes, em quaisquer quantidades, realizadas entre pessoas jurídicas ou a profissionais para o exercício de suas atividades;
+VII - documentos para instrução: documentos apresentados para instrução de processos ou petições relativos à Autorização de Funcionamento (AFE) e Autorização Especial (AE);
+VIII - empresa: pessoa jurídica, de direito público ou privado, que explore como objeto principal ou subsidiário as atividades discriminadas na Seção III do Capítulo I desta Resolução, equiparando-se à mesma as unidades dos órgãos de administração direta ou indireta, federal ou estadual, do Distrito Federal e dos municípios que desenvolvam estas atividades;
+IX - envase ou enchimento de gases medicinais: operação referente ao acondicionamento de gases medicinais em cilindros e líquidos criogênicos em tanques criogênicos ou caminhões-tanque;
+X - estabelecimento: unidade da empresa constituída juridicamente e com CNPJ (Cadastro Nacional da Pessoa Jurídica) devidamente estabelecido;
+XI - filial: qualquer estabelecimento vinculado a outro que detenha o poder de comando sobre este;
+XII - formulário de petição (FP): instrumento para inserção de dados que permitem identificar o solicitante e o objeto solicitado, disponível durante o peticionamento, realizado no sítio eletrônico da Anvisa (http://www.anvisa.gov.br);
+XIII - licença sanitária: documento emitido pela autoridade sanitária competente dos Estados, do Distrito Federal e dos Municípios, onde constam as atividades sujeitas a vigilância sanitária que o estabelecimento está apto a exercer;
+XIV - matriz: estabelecimento da empresa que representa sua sede, ou seja, aquele que tem primazia na direção e a que estão subordinados todos os demais, chamados de filiais;
+XV - autoridade sanitária: Agência Nacional de Vigilância Sanitária e vigilância sanitária dos Estados, do Distrito Federal e dos Municípios;
+XVI - peticionamento eletrônico: requerimento realizado em ambiente Internet, por meio do formulário de petição identificado por um número de transação, cujos dados são diretamente enviados ao sistema de informações da Anvisa, sem necessidade de envio da documentação física à Agência;
+XVII - peticionamento manual: requerimento realizado em ambiente Internet por meio do formulário de petição, identificado por um número de transação, cujos documentos serão fisicamente protocolados na Anvisa;
+XVIII - produto para saúde de uso leigo: produto médico ou produto diagnóstico para uso in vitro de uso pessoal que não dependa de assistência profissional para sua utilização, conforme especificação definida no registro ou cadastro do produto junto à Anvisa;
+XIX - responsável legal: pessoa física designada em estatuto, contrato social ou ata de constituição incumbida de representar a empresa, ativa e passivamente, nos atos judiciais e extrajudiciais;
+XX - responsável técnico: profissional legalmente habilitado pelo respectivo conselho profissional para a atividade que a empresa realiza na área de produtos abrangidos por esta Resolução;
+XXI - requisitos técnicos: critérios técnicos e operacionais estabelecidos nesta Resolução exigidos das empresas ou estabelecimentos para fins de Autorização de Funcionamento (AFE) ou Autorização Especial (AE), sem prejuízo dos requisitos previstos em normas específicas, complementares e suplementares da Anvisa, dos Estados, Municípios e Distrito Federal; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+XXII - substâncias e plantas sujeitas a controle especial: aquelas relacionadas nas listas do Anexo I da Portaria SVS/MS nº 344, de 12 de maio de 1998; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+XXIII - alteração de implementação imediata: alteração que independe de manifestação prévia da Anvisa, para a imediata implementação pela empresa após a protocolização de petição junto à Anvisa e cumprimento do disposto neste regulamento, desde que a alteração solicitada esteja contemplada na licença emitida pela autoridade sanitária competente; e (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+XXIV - relatório de inspeção: documento emitido pela autoridade sanitária competente que descreva a situação da empresa, contemplando as informações dos requisitos técnicos dispostos nesta Resolução. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Seção III
+Abrangência
+Art. 3º A AFE é exigida de cada empresa que realiza as atividades de armazenamento, distribuição, embalagem, expedição, exportação, extração, fabricação, fracionamento, importação, produção, purificação, reembalagem, síntese, transformação e transporte de medicamentos e insumos farmacêuticos destinados a uso humano, cosméticos, produtos de higiene pessoal, perfumes saneantes e envase ou enchimento de gases medicinais.
+Parágrafo único. A AFE é exigida de cada estabelecimento que realiza as atividades descritas no caput com produtos para saúde.
+Art. 4º A AE é exigida para o exercício das atividades descritas no art. 3º ou qualquer outra, para qualquer fim, com as substâncias, plantas e fungos sujeitos a controle especial ou com os medicamentos ou produtos que as contenham, segundo o disposto na Portaria SVS/MS nº 344, de 1998 e na Portaria SVS/MS nº 6, de 29 de janeiro de 1999. (Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.015, de 02/02/2026)
+§ 1º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 3º Quando se tratar de finalidade exclusiva de ensino e de pesquisa, no âmbito estritamente acadêmico, as instituições de ensino superior ou técnico, inclusive suas fundações de apoio, devem solicitar a Autorização Especial Simplificada para Instituição de Ensino e Pesquisa (AEP), nos termos da Resolução da Diretoria Colegiada - RDC nº 988, de 15 de agosto de 2025. (Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.013, de 30/01/2026)
+§ 4º Excetua-se do disposto no § 3º a atividade de cultivo da espécie vegetal Cannabis sativa L. destinada exclusivamente a fins de pesquisa, regulamentada pelas Resoluções da Diretoria Colegiada - RDC nº 1.012, de 30 de janeiro de 2026 e Resoluções da Diretoria Colegiada - RDC nº 1.013, de 30 de janeiro de 2026, ainda que realizadas no âmbito estritamente acadêmico, as quais estão condicionadas à obtenção prévia de Autorização Especial (AE) emitida pela Anvisa. (Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.013, de 30/01/2026)
+Art. 5º Não é exigida AFE dos seguintes estabelecimentos, empresas ou atividades: (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+I - que exercem o comércio varejista de produtos para saúde de uso leigo;
+II - matriz ou filial que não realizam atividades com produtos para saúde sujeitas à AFE; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+III - que realizam o comércio varejista de cosméticos, produtos de higiene pessoal, perfumes e saneantes;
+IV - que exercem exclusivamente atividades de fabricação, distribuição, armazenamento, embalagem, exportação, fracionamento, transporte ou importação, de matérias-primas, componentes e insumos não sujeitos a controle especial, que são destinados à fabricação de produtos para saúde, cosméticos, produtos de higiene pessoal, perfumes e saneantes; e
+Observação: Vide o item 1 do Capítulo IV do Anexo (Regulamento Técnico de Bens e Produtos Importados para fins de Vigilância Sanitária) da Resolução - RDC nº 81, de 5 de novembro de 2008).
+V - que realizam exclusivamente a instalação, manutenção e assistência técnica de equipamentos para saúde; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+VI - transporte de medicamentos, saneantes, produtos para saúde, cosméticos, perfumes e produtos de higiene entre o comércio varejista e o consumidor final; (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+VII - importar produtos destinados exclusivamente para ensaios clínicos, programa de acesso expandido, programa de uso compassivo e programa de fornecimento de medicamento pós-estudo, desde que a empresa seja detentora de documento de caráter autorizador e necessário para a solicitação de importação, emitido pela Anvisa, necessário para a execução do determinado programa; (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+VIII - importar produtos destinados exclusivamente para análise laboratorial de controle da qualidade ou para desenvolvimento de novos produtos; e (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+IX - instituições científicas, tecnológicas, de inovação e desenvolvimento experimental que realizam exclusivamente atividade de pesquisa básica ou aplicada de caráter científico, tecnológico ou de desenvolvimento de novos produtos, serviços ou processos. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. A dispensa de AFE não desobriga os estabelecimentos ou empresas a realizarem as atividades conforme a legislação aplicável a cada atividade ou produto. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 5º-A. Não é exigida a atividade de importar na AE das empresas detentoras de AE de Laboratório ou Instituição de Pesquisa para importação de produtos destinados exclusivamente para uso próprio nas atividades de pesquisa. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 6º As farmácias e drogarias deverão seguir o disposto na Resolução da Diretoria Colegiada - RDC nº 17, de 28 de março de 2013.
+Art. 7º Os estabelecimentos detentores de AFE para a atividade de distribuição ou fabricação de produtos para saúde poderão comercializar produtos para saúde no varejo, sem a necessidade de AFE específica para a referida atividade, desde que sejam cumpridas as exigências da legislação local acerca do licenciamento de estabelecimentos.
+Art. 8º As fabricantes e envasadoras de gases medicinais deverão seguir o disposto nesta Resolução e na Resolução da Diretoria Colegiada - RDC nº 32, de 5 de julho de 2011.
+Art. 8-Aº As distribuidoras, armazenadoras e transportadoras de gases medicinais deverão seguir o disposto nesta Resolução e na Resolução da Diretoria Colegiada - RDC nº 887, de 11 de julho de 2024, e atualizações. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 887, de 11/07/2024)
+CAPÍTULO II
+DO PETICIONAMENTO E ANÁLISE
+Art. 9º. O requerimento de concessão, cancelamento, alteração, retificação de publicação, cumprimento de exigência e aditamento, bem como a interposição de recurso administrativo contra o indeferimento de pedidos relativos aos peticionamentos de AFE e AE de empresas e estabelecimentos que realizem as atividades abrangidas por esta Resolução dar-se-á por meio de peticionamento eletrônico ou peticionamento manual. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 10. Os critérios para o peticionamento e o recolhimento de taxa de cada tipo de AFE e AE estão estabelecidos na Resolução da Diretoria Colegiada - RDC nº 222, de 28 de dezembro de 2006, ou outra que venha a substituí-la. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1° A AFE deve ser peticionada por cada empresa que realiza atividades com medicamentos, insumos farmacêuticos, cosméticos, produtos de higiene pessoal, perfumes e saneantes, utilizando- se o Cadastro Nacional da Pessoa Jurídica (CNPJ) da matriz da empresa, e é extensiva a todos os estabelecimentos filiais.
+§ 2º No caso de atividades realizadas com produtos para saúde, o peticionamento da AFE deve ser por estabelecimento, utilizando- se o Cadastro Nacional da Pessoa Jurídica (CNPJ) do estabelecimento que irá realizar a atividade peticionada.
+§ 3° A AE deve ser peticionada utilizando o Cadastro Nacional da Pessoa Jurídica (CNPJ).
+§ 4º A AE a ser obtida para as atividades que não estejam enquadradas no art. 3º desta Resolução não está condicionada à concessão de AFE.
+Art. 11. O ato administrativo público de concessão, cancelamento, alteração e retificação de publicação de AFE e AE somente produzirá efeitos a partir de sua publicação no Diário Oficial da União (DOU). (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º Excetuam-se do disposto no caput as alterações relativas à mudança de responsável técnico e responsável legal, que deverão ser peticionadas eletronicamente pela empresa ou estabelecimento para alteração do cadastro, no prazo de 30 dias após consolidação da alteração, e serão atualizadas automaticamente, sem publicação no DOU.
+§ 2º Excetua-se do caput o indeferimento de retificação de publicação, cuja decisão será comunicada diretamente à empresa.
+Seção I
+Dos Requisitos Técnicos e Documentos para Instrução
+Art. 12. A concessão, cancelamento a pedido, alteração, retificação de publicação e a retratação de recurso administrativo de AFE e AE dependem: (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+I - do cumprimento dos requisitos técnicos contidos nesta Resolução; e
+II - da análise e deferimento dos documentos para instrução anexados ao formulário de petição devidamente preenchido e protocolado via peticionamento eletrônico ou peticionamento manual.
+Parágrafo único. Quando se tratar de AE, além do cumprimento do disposto nos incisos I e II, também devem ser cumpridas as exigências contidas na Portaria SVS/MS nº 344, de 1998 , e na Portaria SVS/MS nº 6, de 1999.
+Art. 13. O cadastro das filiais deve ser realizado e mantido atualizado pela empresa no banco de dados da Anvisa.
+Art. 14. Os requisitos técnicos devem ser verificados no ato da inspeção sanitária e estas informações devem constar no relatório de inspeção emitido pela autoridade sanitária local competente.
+Art. 15. A documentação de instrução dos pedidos de concessão, cancelamento a pedido, alteração, retificação de publicação e recurso administrativo de AFE e AE deve ser apresentada conforme descrição a seguir: (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+I - para concessão em favor de:
+a) fabricantes: relatório de inspeção que ateste o cumprimento dos requisitos técnicos desta Resolução para as atividades e classes pleiteadas, emitido pela autoridade sanitária local competente;
+b) varejistas de produto para a saúde: contrato social ou Cadastro Nacional de Pessoa Jurídica (CNPJ) com objeto compatível com a atividade pleiteada; (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+c) outras empresas: relatório de inspeção que ateste o cumprimento dos requisitos técnicos desta Resolução para as atividades e classes pleiteadas, emitidos pela autoridade sanitária local competente. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+II - (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+III - para as seguintes alterações:
+a) ampliação ou redução de atividades ou classes de produtos: relatório de inspeção ou documento equivalente que ateste o cumprimento dos requisitos técnicos desta Resolução para as atividades e classes pleiteadas, emitidos pela autoridade sanitária local competente ou licença sanitária vigente com os dados atualizados;
+b) alteração de endereço: relatório de inspeção ou documento equivalente que ateste o cumprimento dos requisitos técnicos desta Resolução para as atividades e classes pleiteadas, emitidos pela autoridade sanitária local competente ou licença sanitária vigente com os dados atualizados;
+c) alteração de endereço por ato público: declaração emitida pela autoridade competente ou a cópia do ato público que originou a alteração;
+d) alteração de razão social: Cadastro Nacional de Pessoa Jurídica (CNPJ) com dados atualizados;
+e) alteração por modificação na extensão do CNPJ da matriz, exclusivamente em virtude de ato declaratório da Receita Federal do Brasil: CNPJ com dados atualizados;
+f) alteração de responsável técnico: documento de regularidade técnica atualizado e emitido pelo respectivo Conselho de Classe profissional;
+g) alteração de responsável legal: cópia da respectiva alteração de contrato social devidamente consolidada ou a ata de assembleia devidamente registrada na Junta Comercial.
+IV - para retificações de publicação, cancelamentos a pedido e recursos administrativos: ofício com a justificativa técnica para o pleito, com a juntada de quaisquer documentos que a empresa ou estabelecimento julgue necessários para a comprovação de erro de publicação, justificativa para o cancelamento ou reforma da decisão de indeferimento.
+§ 1º No peticionamento de concessão por empresas que tiveram AFE ou AE canceladas por caducidade, o relatório de inspeção ou documento equivalente podem ser substituídos pela licença sanitária vigente com os dados atualizados.
+§ 2º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 3º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 4º Nos peticionamentos relativos à AE, a licença sanitária, o relatório de inspeção ou o documento equivalente devem informar explicitamente que o estabelecimento cumpre os requisitos de controle especial constantes da Portaria SVS/MS nº 344, de 1998 e da Portaria SVS/MS nº 6, de 1999.
+Art. 16. A Anvisa pode, a qualquer momento, obedecido o devido processo legal, cancelar a AFE e a AE das empresas ou estabelecimentos caso ocorram fatos que justifiquem tal medida.
+Art. 17. Para fins de tomada de decisão acerca dos peticionamentos de concessão e alteração de AFE e AE, o relatório de inspeção que ateste o cumprimento dos requisitos técnicos desta Resolução para a atividade pleiteada deve ter sido emitido pela autoridade sanitária local competente em até 12 (doze) meses anteriores à data de protocolização do pedido. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 18. A apresentação de documentos ilegíveis ou a ausência de documentos de instrução ensejará o indeferimento das petições de AFE e AE.
+Seção II
+(Revogada pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 19. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 20. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 3º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 4º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 21. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Seção III
+Da Alteração
+Art. 22. A alteração da AFE ou da AE cabe nas seguintes hipóteses:
+I - ampliação de atividades;
+II - redução de atividades;
+III - ampliação de classes de produtos;
+IV - redução de classes;
+V - alteração de endereço;
+VI - alteração de razão social;
+VII - alteração por modificação na extensão do CNPJ da matriz, exclusivamente em virtude de ato declaratório da Receita Federal do Brasil;
+VIII - alteração de responsável técnico; e
+IX - alteração de responsável legal.
+Parágrafo único. A ampliação e redução de classes de produtos somente é permitida entre cosméticos, produtos de higiene pessoal e perfumes e entre medicamentos, insumos farmacêuticos e gases medicinais. (Redação dada pela Resolução da Diretoria Colegiada - RDC nº 887, de 11/07/2024)
+Art. 22-A. As alterações previstas nos incisos II, V, VI e VII do art. 22 são de implementação imediata, após a data de protocolização da petição, desde que o exercício das atividades esteja contemplado na licença emitida pelo órgão sanitário competente da unidade federativa. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. A implementação imediata das alterações não impede a análise, a qualquer tempo, da documentação exigida, podendo ser ratificada ou indeferida. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 23. Os pedidos de alterações da AFE e da AE deverão ocorrer de forma individual e separada em cada AFE e AE da empresa e de seus estabelecimentos, quando aplicável.
+Parágrafo único. (Revogado pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Seção IV
+Do Cancelamento
+Art. 24. O cancelamento da AFE e AE a pedido da empresa ou estabelecimento deve ser peticionado nos seguintes casos:
+I - encerramento de atividades; ou
+II - encerramento de atividades com substâncias sujeitas a controle especial ou com os medicamentos que as contenham, bem como com as plantas que podem originar tais substâncias.
+Parágrafo único. O cancelamento da AFE ou da AE não afasta a responsabilidade da empresa ou estabelecimento pelos produtos que ainda estiverem no mercado.
+Seção V
+Do Recurso Administrativo
+Art. 25. No caso de indeferimento de pedidos relativos à AFE e AE, é cabível recurso administrativo nos termos da Resolução da Diretoria Colegiada - RDC nº 25, de 4 de abril de 2008.
+Art. 26. O recurso administrativo deve ser interposto uma única vez para cada expediente indeferido.
+CAPÍTULO III
+DOS REQUISITOS TÉCNICOS PARA FABRICANTES
+Art. 27. Os fabricantes de medicamentos, insumos farmacêuticos, produtos para a saúde, cosméticos, produtos de higiene pessoal, perfumes e saneantes, deverão apresentar as informações gerais e cumprir os requisitos técnicos a seguir relacionados, os quais serão avaliados na inspeção pela autoridade sanitária local competente:
+I - informações gerais:
+a) contrato social ou ata de constituição registrada na junta comercial e suas alterações, se houver;
+b) Cadastro Nacional da Pessoa Jurídica (CNPJ) contemplando a atividade econômica pleiteada;
+c) autorização ou alvará referente à localização e ocupação, planta arquitetônica, proteção ambiental, segurança de instalações e segurança dos trabalhadores;
+d) organograma e definição dos cargos, responsabilidades e da qualificação necessária para seus ocupantes;
+e) comprovação do registro de responsabilidade técnica realizada pelo profissional legalmente habilitado junto ao respectivo conselho de classe; e
+f) contratos de prestação de serviços diversos ou documentos equivalentes, os quais devem ser realizados somente com empresas autorizadas e licenciadas pela autoridade competente, quando aplicável.
+II - requisitos técnicos:
+a) instalações, equipamentos e aparelhagem técnica necessários e em condições adequadas à finalidade a que se propõem, incluindo qualificações e calibrações;
+b) sistema da qualidade estabelecido;
+c) política de validação e qualificação claramente definida, nos casos em que seja exigido pela norma de boas práticas de fabricação específica;
+d) sistemas de utilidades de suporte ao processo produtivo em condições adequadas à finalidade a que se propõem;
+e) condições de higiene, armazenamento e operação adequadas às necessidades do produto, de forma a reduzir o risco de contaminação ou alterações de suas características;
+f) recursos humanos capacitados ao desempenho das atividades de produção, controle da qualidade, garantia da qualidade e demais atividades de suporte;
+g) meios para a inspeção e o controle de qualidade dos produtos que industrialize, incluindo especificações e métodos analíticos;
+h) procedimentos operacionais padrão e demais documentos necessários concluídos e aprovados;
+i) meios capazes de eliminar ou reduzir elementos de poluição decorrente da industrialização procedida, que causem efeitos nocivos à saúde; e
+j) para fabricantes de produtos para saúde, também devem ser apresentadas evidências do cumprimento do plano de desenvolvimento de projeto até, no mínimo, a fase de definição de dados de entrada de projeto.
+CAPÍTULO IV
+DOS REQUISITOS TÉCNICOS PARA IMPORTADORES, DISTRIBUIDORES, ARMAZENADORES, TRANSPORTADORES, EXPORTADORES E FRACIONADORES
+Art. 28. Os importadores, distribuidores, armazenadores, transportadores e exportadores de medicamentos, insumos farmacêuticos, produtos para saúde, cosméticos, produtos para higiene pessoal, perfumes e saneantes e fracionadores de insumos farmacêuticos, deverão apresentar as informações gerais e cumprir os requisitos técnicos a seguir relacionados, os quais serão avaliados na inspeção pela autoridade sanitária local competente:
+I - informações gerais:
+a) contrato social ou ata de constituição registrada na junta comercial e suas alterações, se houver;
+b) Cadastro Nacional da Pessoa Jurídica (CNPJ) contemplando a atividade econômica pleiteada;
+c) autorização ou alvará referente à localização e ocupação, planta arquitetônica, proteção ambiental, segurança de instalações e segurança dos trabalhadores;
+d) contratos de prestação de serviços diversos ou documentos equivalentes, os quais devem ser realizados somente com empresas autorizadas e licenciadas pela autoridade competente, quando aplicável;
+e) comprovação do registro de responsabilidade técnica realizada pelo profissional legalmente habilitado junto ao respectivo conselho de classe; e
+f) para distribuidores e armazenadores de medicamentos, insumos farmacêuticos e produtos para saúde, Manual de Boas Práticas de Distribuição e Armazenagem.
+II - requisitos técnicos:
+a) existência de instalações, equipamentos e aparelhagem técnica necessários e em condições adequadas à finalidade a que se propõem, incluindo qualificações e calibrações;
+b) existência de recursos humanos qualificados e devidamente capacitados ao desempenho das atividades da empresa ou estabelecimento, incluindo, no caso de importadora de medicamentos, a garantia da qualidade dos medicamentos, a investigação de desvio de qualidade e demais atividades de suporte;
+c) condições de higiene, armazenamento e operação adequadas às necessidades do produto, de forma a reduzir o risco de contaminação ou alteração de suas características;
+d) procedimentos operacionais padrão para recepção, identificação, controles de estoque e armazenamento de produtos acabados, devolvidos ou recolhidos;
+e) programa de autoinspeção, com abrangência, frequência, responsabilidades de execução e ações decorrentes das não conformidades;
+f) área separada, identificada e de acesso restrito para o armazenamento de produtos ou substâncias sujeitas a controle especial;
+g) sistema de controle de estoque que possibilite a emissão de inventários periódicos;
+h) sistema formal de investigação de desvios de qualidade e medidas preventivas e corretivas adotadas após a identificação das causas;
+i) sistema da qualidade estabelecido;
+j) plano para gerenciamento de resíduos;
+k) áreas de recebimento e expedição adequadas e protegidas contra variações climáticas;
+l) mecanismos que assegurem que fornecedores e clientes estejam devidamente regularizados junto às autoridades sanitárias competentes, quando aplicável; e
+m) para transportadores, relação do quantitativo e identificação dos veículos próprios ou de terceiros sob sua responsabilidade, disponibilizados para o transporte, que deverão ser munidos dos equipamentos necessários à manutenção das condições específicas de transporte requeridas para cada produto sujeito à vigilância sanitária.
+CAPÍTULO V
+DOS REQUISITOS TÉCNICOS PARA ATIVIDADES COM SUBSTÂNCIAS OU MEDICAMENTOS SUJEITOS A CONTROLE ESPECIAL
+Art. 29. Para as atividades com substâncias ou medicamentos sujeitos a controle especial deverão ser apresentados os seguintes documentos, bem como deverão ser cumpridos os requisitos técnicos contidos na Portaria SVS/MS nº 344, de 1998, e na Portaria SVS/MS nº 6, de 1999, a serem avaliados na inspeção pela autoridade sanitária local competente:
+I - contrato social ou ata de constituição registrada na junta comercial e suas alterações, se houver;
+II - Cadastro Nacional da Pessoa Jurídica (CNPJ) com o código e a descrição da atividade econômica referente à atividade peticionada; e
+III - comprovação da responsabilidade técnica realizada por profissional legalmente habilitado.
+CAPÍTULO V-A
+DA DEFINIÇÃO DOS PROCESSOS DE AFE e AE
+(Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-A. O processo de fabricação de medicamentos e de produtos para a saúde contempla as atividades de armazenar, embalar, reembalar, expedir, distribuir e importar para uso próprio. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. O Agente Regulado poderá ampliar suas atividades para transportar, importar e exportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-B. O processo de fabricação de cosméticos, produtos de higiene, perfumes e de saneantes domissanitários contempla as atividades de armazenar, embalar, reembalar, fracionar, expedir, distribuir e importar para uso próprio. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. O Agente Regulado poderá ampliar suas atividades para transportar, importar e exportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-C. O processo de fabricação de insumos farmacêuticos contempla as atividades de extrair, sintetizar, purificar, transformar, armazenar, importar para uso próprio, expedir e distribuir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. O Agente Regulado poderá ampliar suas atividades para importar, exportar, fracionar e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-D. O processo de importação de medicamento, insumos farmacêuticos, cosméticos, produtos de higiene, perfume, saneantes domissanitários e de produtos para saúde contempla as atividades de armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º O Agente Regulado poderá ampliar suas atividades para fabricar, exportar, distribuir, embalar, reembalar e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º No caso de insumos farmacêuticos o Agente Regulado poderá, ainda, ampliar suas atividades para fracionar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-E. O processo de exportação de medicamentos, insumos farmacêuticos, cosméticos, produtos de higiene, perfumes, saneantes domissanitários, produtos para a saúde, contempla as atividades de armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º O Agente Regulado poderá ampliar suas atividades para fabricar, distribuir, importar, transportar, embalar e reembalar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º No caso de insumos farmacêuticos o Agente Regulado poderá, ainda, ampliar suas atividades para fracionar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-F. O processo de distribuição de medicamento, insumos farmacêuticos, cosméticos, produtos de higiene, perfume, saneantes domissanitários e de produtos para saúde, contempla as atividades de armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º O Agente poderá ampliar suas atividades para fabricar, importar, exportar, embalar, reembalar e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º No caso de insumos farmacêuticos o Agente Regulado poderá, ainda, ampliar suas atividades para fracionar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 3º É permitido ao agente regulado exercer as atividades de distribuição e dispensação na mesma empresa, desde que em estabelecimentos distintos. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 4º Para os fins do parágrafo anterior o Agente Regulado deve solicitar Autorização de Funcionamento de Empresa (AFE) e, quando aplicável, Autorização Especial (AE), emitida pela Agência Nacional de Vigilância Sanitária - ANVISA para drogaria ou farmácia, nos termos da Lei n° 9.782, de 26 de janeiro de 1999. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-G. O processo de fracionamento de insumos farmacêuticos contempla as atividades de armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Parágrafo único. No caso de insumos farmacêuticos o Agente Regulado poderá ampliar suas atividades para fabricar, importar, exportar, distribuir e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-H. O processo de armazenar medicamentos, insumos farmacêuticos, cosméticos, produtos de higiene, perfumes, saneantes domissanitários, produtos para a saúde contempla a atividade de expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º O Agente Regulado poderá ampliar suas atividades para fabricar, distribuir, importar, exportar, embalar, reembalar e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º No caso de insumos farmacêuticos o Agente Regulado somente poderá ampliar suas atividades para fabricar, distribuir, importar, exportar e transportar. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-I. O processo de transportar medicamentos, insumos farmacêuticos, cosméticos, produtos de higiene, perfumes, saneantes domissanitários, produtos para a saúde é único. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º O Agente Regulado poderá ampliar suas atividades para fabricar, distribuir, importar, exportar, embalar, reembalar, armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º No caso de insumos farmacêuticos o Agente Regulado somente poderá ampliar suas atividades para fabricar, distribuir, importar, exportar, armazenar e expedir. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+Art. 29-J. A ampliação de atividade somente será permitida desde que respeitada a classe de produto para a qual a Autorização de Funcionamento foi concedida. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 1º Para a obtenção das atividades que contemplam os processos tratados neste Capítulo, tais atividades deverão constar no Relatório de Inspeção encaminhado quando da solicitação de concessão de Autorização de Funcionamento (AFE) ou Autorização de Funcionamento Especial (AE). (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+§ 2º As atividades não concedidas e contempladas nos processos tratados neste Capítulo poderão ser objeto de ampliação de atividade. (Incluído pela Resolução da Diretoria Colegiada - RDC nº 860, de 06/05/2024)
+CAPÍTULO VI
+DAS DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+(Retificado no DOU nº 64, de 03/04/2014)
+(Retificado no DOU nº 65, de 04/04/2014)
+Art. 30. O descumprimento das disposições contidas nesta Resolução constitui infração sanitária, nos termos da Lei nº 6.437, de 20 de agosto de 1977, sem prejuízo das responsabilidades civil, administrativa e penal cabíveis.
+RET., 03/04/2014 - Seção 1
+Art. 31. A partir da entrada em vigor desta Resolução, ficam mantidas as internalizações das seguintes Resoluções MERCOSUL: GMC n° 3/99 - "Registro de Empresas de Produtos Domisanitários"; GMC nº 05/05 - "Regulamento Técnico sobre Autorização de Funcionamento/ Habilitação de Empresas de Produtos de Higiene Pessoal, Cosméticos e Perfumes, suas Modificações y Cancelamento"; GMC nº 132/96 - Alterações da Autorização de Funcionamento das Empresas Solicitantes de Registro de Produtos Farmacêuticos do Estado Parte Receptor; e GMC nº 24/96 - Registro de Empresas Domisanitarios.
+RET., 03/04/2014 - Seção 1
+Art. 32. Esta Resolução da Diretoria Colegiada entra em vigor 90 (noventa) dias após a data de sua publicação.
+RET., 03/04/2014 - Seção 1
+Parágrafo único. Os estabelecimentos filiais de empresas que realizem atividades referentes a produtos para saúde para os quais é exigida AFE nos termos desta Resolução terão o prazo de um ano, contado a partir de 04 de agosto de 2014, para requerer à ANVISA a referida autorização. (Redação dada pela Resolução da Diretoria Colegiada - RDC n° 40, de 01/08/2014)
+Art. 33. Ficam revogados a partir da entrada em vigor desta Resolução os seguintes regulamentos: os itens 2, 3 e 6 da Instrução Normativa nº 1, de 30 de setembro de 1994; a Portaria SVS/MS nº 182, de 20 de novembro de 1996; os artigos 3º, 5º, 6º, 9º e 10 da Portaria SVS/MS nº 344, de 12 de maio de 1998; os artigos 2º, 4º, 5º, 6º, 7º, 9º, 11, 12 e 13 da Instrução Normativa do Anexo e o Anexo I da Portaria SVS/MS nº 6, de 29 de janeiro de 1999; a Portaria SVS/MS nº 1.052, de 29 de dezembro de 1998; o parágrafo único do art. 10, o art. 12 e o Anexo I da Portaria SVS/MS nº 802, de 8 de outubro de 1998; a Resolução nº 329, de 22 de julho de 1999; a Resolução nº 327, de 22 de julho de 1999; a Resolução da Diretoria Colegiada - RDC nº 128, de 9 de maio de 2002; a Resolução da Diretoria Colegiada - RDC nº 158, de 31 de maio de 2002; e a Resolução da Diretoria Colegiada - RDC nº 183, de 5 de outubro de 2006
+RET., 03/04/2014 - Seção 1
+DIRCEU BRÁS APARECIDO BARBANO
+PUB D.O.U., 02/04/2014 - Seção 1
+Este texto năo substitui a Publicaçăo Oficial.

@@ -1,0 +1,22 @@
+{
+  "norma": "RDC 50-2002",
+  "rotulo": "RDC Anvisa nº 50/2002",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000050&seqAto=002&valorAno=2002&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-25T13:20:56.616736+00:00",
+  "data_fonte": "2002-02-21",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "a92a18a935800e1d99078b10b3c0d7c9d1cb739392cc79afd44c0050c5cf05ea",
+  "sha256_texto": "5c415d854d58f71cbef59469135fcc0b260859492c51daf08e9f3fc7c6f8c9ea",
+  "status_vigencia": "vigente_com_alteracoes",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 50-2002--oficial.txt",
+  "data_processamento": "2026-10-25T13:20:56.618144+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+}

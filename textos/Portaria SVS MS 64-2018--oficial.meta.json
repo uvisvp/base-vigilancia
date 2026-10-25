@@ -1,0 +1,22 @@
+{
+  "norma": "Portaria SVS MS 64-2018",
+  "rotulo": "Portaria SVS/MS nº 64/2018",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis (normas de interpretação do teste de sensibilidade aos antimicrobianos pelo BrCAST).",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=POR&numeroAto=00000064&seqAto=000&valorAno=2018&orgao=SVS%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-25T13:20:57.851072+00:00",
+  "data_fonte": "2018-12-11",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "78afd3516cbff9e4f120f78a083372e8fbbb08bff75ee8acd4572709726318fa",
+  "sha256_texto": "212b7272d83c9c0381d9d929ec1574ad1f68dd55a10647dbded4605f64c68a84",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/Portaria SVS MS 64-2018--oficial.txt",
+  "data_processamento": "2026-10-25T13:20:57.851136+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+}

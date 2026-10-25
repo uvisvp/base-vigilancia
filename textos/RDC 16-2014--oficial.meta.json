@@ -1,0 +1,22 @@
+{
+  "norma": "RDC 16-2014",
+  "rotulo": "RDC Anvisa nº 16/2014",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "nota_fonte_texto": "Texto oficial/consolidado obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo=RDC&numeroAto=00000016&seqAto=000&valorAno=2014&orgao=RDC%2FDC%2FANVISA%2FMS&cod_modulo=310&cod_menu=9431",
+  "consultado_em": "2026-10-25T13:20:52.954046+00:00",
+  "data_fonte": "2014-04-01",
+  "tipo_data_fonte": "data_do_ato; situação regulatória conferida nas fontes oficiais indicadas",
+  "formato_fonte": "html",
+  "sha256_fonte": "6f5e820cdc232920b7e6176de1ac23e3afb639a3c6a95b581eadbaff1c88186c",
+  "sha256_texto": "5d78a9c858de71115c92f2bd95cf69acfd5328fc4e1dc30fee01fa90f4808c68",
+  "status_vigencia": "vigente_com_alteracoes",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 16-2014--oficial.txt",
+  "data_processamento": "2026-10-25T13:20:52.954308+00:00",
+  "schema": "proveniencia-legislativa-v1",
+  "estruturar_alineas": true,
+  "escopo_validacao": "citações do app Roteiros (Atacadista de medicamentos e EAC Tipo III); demais usos exigem revisão própria"
+}

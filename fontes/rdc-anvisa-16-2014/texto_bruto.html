@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="aui ltr yui3-js-enabled js" dir="ltr" lang="pt-BR" amp>
+    <head>
+    	<title>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 16, de 01/04/2014</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    	<!-- <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> -->
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#1e2b4d">
+        <link rel="icon" type="image/png" sizes="32x32" href="/v2/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/v2/img/favicon-16x16.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <!-- 
+		<link rel="apple-touch-icon" sizes="32x32" href="/v2/img/mobile/logo_app32.png" />
+		<link rel="apple-touch-icon" sizes="96x96" href="/v2/img/mobile/logo_app96.png" />
+		-->
+		<link rel="apple-touch-icon" sizes="144x144" href="/v2/img/mobile/logo_app144.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/v2/img/mobile/logo_app192.png" />
+        
+        <link href="//cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" type="text/css">
+		<link href="/v2/css/header.css?20261025" rel="stylesheet" type="text/css">
+		<link href="/v2/css/custom.css?20261025" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/view/css/jquery-ui.css" />
+		<link rel="stylesheet" href="/view/css/styles.css?20261025" type="text/css" />
+		<link rel="stylesheet" href="/view/css/style.css?20261025" type="text/css" />
+		<link rel="stylesheet" href="/view/css/treeview.css" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/social-media.css?20261025" type="text/css" />
+		<link rel="stylesheet" href="/v2/css/texto-ato.css?20261025" type="text/css" />
+		<!-- CUSTOM ANVISA -->
+		<link rel="stylesheet" href="/v2/css/folha_rosto_anvisa.css?20261025" type="text/css" />
+	</head>
+	<body id="corpo" class="">
+		<div class="container-fluid">
+			<div class="container">
+    			<div class="noprint" style="border-bottom: 1px solid #ccc; padding: 8px 0;">
+                	<nav id="breadcrumbs">
+                        <ul class="breadcrumb breadcrumb-horizontal">
+                        	<li>
+                        		<a href="/action/ActionDatalegis.php?acao=apresentacao&cod_menu=9431&cod_modulo=310" title="Voltar para Home">
+                        			<i class="fas fa-home"></i>
+                        		</a>
+                        	</li>
+                        	<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        	<li class="first">
+                                <a href="/action/ActionDatalegis.php?acao=categorias&cod_modulo=310&menuOpen=true">NORMAS REGULAT”RIAS    DA ANVISA</a>
+                        	</li>
+    					<li><span class="divider"><i class="fas fa-chevron-right"></i></span></li>
+                        <li class="active last">
+                            <a href="/action/ActionDatalegis.php?acao=recuperarTematicasCollapse&cod_modulo=310&cod_menu=9431">NORMAS POR TEMAS</a>
+                        </li>
+                    	</ul>
+                    </nav>
+                    <a href="javascript:;" id="voltar" class="float-right" onclick="window.close()">
+                    	<i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Voltar
+                    </a>
+				</div>
+    			<div class="noprint container" style="padding: 0 10px; margin: 0; text-align: right; display: flex;">
+            		<div id="barra-icones" class="item">
+            			<ul>
+        				<li>
+            				<a href="javascript:;" onclick="copyTextToClipboard('https://anvisalegis.datalegis.net/action/UrlPublicasAction.php?acao=abrirAtoPublico&num_ato=00000016&sgl_tipo=RDC&sgl_orgao=RDC/DC/ANVISA/MS&vlr_ano=2014&seq_ato=000&cod_modulo=310&cod_menu=9431', this)" data-toggle="tooltip" data-placement="bottom" title="Copie o link do Ato">
+            					<i class="fas fa-link" aria-hidden="true"></i> <span class="ocultar-mobile">COPIAR LINK</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="tags('00000016','RDC','RDC/DC/ANVISA/MS','2014','000');" title="Cadastre aqui suas Tags para o ATO">
+            					<i class="fas fa-tags" aria-hidden="true"></i> <span class="ocultar-mobile">CRIAR TAGS</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="imprimir();">
+            					<i class="fa fa-print" aria-hidden="true"></i> <span class="ocultar-mobile">IMPRIMIR</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a href="javascript:;" onclick="pdf()">
+            					<i class="fas fa-file-pdf" aria-hidden="true"></i> <span class="ocultar-mobile">PDF</span>
+            				</a>
+        				</li>
+        				<!-- 
+    					<li>
+            				<a href="javascript:;" onclick="abreFecha('#divHistoricoAto')">
+            					<i class="fas fa-hourglass-start" aria-hidden="true"></i> <span class="ocultar-mobile">HIST”RICO DO ATO</span>
+            				</a>
+        				</li>
+                        -->
+        				<li>
+            				<a id="texto-notas" href="javascript:;" onclick="abrirTodosLinkNota()">
+            					<i class="fas fa-folder-open" aria-hidden="true"></i> <span class="ocultar-mobile">VER NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        				<li>
+            				<a id="texto-compilado" href="javascript:;" onclick="fecharTodosLinkNota()" style="text-decoration: underline;">
+            					<i class="fas fa-folder" aria-hidden="true"></i> <span class="ocultar-mobile">FECHAR NOTAS DE ALTERA«√O</span>
+            				</a>
+        				</li>
+        			</ul>
+    			
+				</div>
+			
+    			<div class="font-settings item item1" style="width: 90px">
+        			<a href="javascript:mudaFonte('mais');" title="Aumentar Texto" style="padding: 0 2px; font-size: 20px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>+
+        			</a>
+        			<i style="padding: 0 2px; margin: -15px 0 5px 0; font-size: 20px; color: #424242;">|</i>
+        			<a href="javascript:mudaFonte('menos');" title="Diminur Texto" style="padding: 0 2px; font-size: 17px; color: black; text-decoration: none;font-weight: 400;">
+        				<i class="glyphicon glyphicon-font"></i>-
+        			</a>
+        		</div>
+    		
+    		</div>
+			<div class="container-fluid col-10 noprint">
+    			<div id="divHistoricoAto" class="d-none mb-3">
+						<a href="/action/ActionDatalegis.php?acao=detalharAto&tipo=RDC&numeroAto=00001015&seqAto=000&valorAno=2026&orgao=RDC/DC/ANVISA/MS&nomeTitulo=codigos&desItem=&desItemFim=&cod_modulo=310&cod_menu=9431" class="d-block" style="font-size: 0.9rem;" target="_blank">
+							ResoluÁ„o da Diretoria Colegiada Anvisa n∫ 1.015, de 02/02/2026						</a>
+						<a href="/action/ActionDatalegis.php?acao=detalharAto&tipo=RDC&numeroAto=00001013&seqAto=000&valorAno=2026&orgao=RDC/DC/ANVISA/MS&nomeTitulo=codigos&desItem=&desItemFim=&cod_modulo=310&cod_menu=9431" class="d-block" style="font-size: 0.9rem;" target="_blank">
+							ResoluÁ„o da Diretoria Colegiada Anvisa n∫ 1.013, de 30/01/2026						</a>
+						<a href="/action/ActionDatalegis.php?acao=detalharAto&tipo=RDC&numeroAto=00000887&seqAto=000&valorAno=2024&orgao=RDC/DC/ANVISA/MS&nomeTitulo=codigos&desItem=&desItemFim=&cod_modulo=310&cod_menu=9431" class="d-block" style="font-size: 0.9rem;" target="_blank">
+							ResoluÁ„o da Diretoria Colegiada - RDC n∫ 887, de 11/07/2024						</a>
+    			</div>
+			</div>
+            <div class="noprint social-media-share hide" style="display: none;">
+                <a class="share-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000016%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-twitter" href="http://twitter.com/intent/tweet?text=Resolu√ß√£o da Diretoria Colegiada - RDC n¬∫ 16, de 01/04/2014&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000016%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000016%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+                <a class="share-whatsapp" href="https://api.whatsapp.com/send?phone=&amp;text=https%3A%2F%2Fanvisalegis.datalegis.net%2Faction%2FUrlPublicasAction.php%3Facao%3DabrirAtoPublico%26num_ato%3D00000016%26sgl_tipo%3DRDC%26sgl_orgao%3DRDC%2FDC%2FANVISA%2FMS%26vlr_ano%3D2014%26seq_ato%3D000%26cod_modulo%3D310%26cod_menu%3D9431" target="_blank"></a>
+            </div>
+		<article class="article">
+    		<div id="conteudo">
+				<div class="tab_menor noprint" style="border-bottom: 1px solid #9a9a9a; padding-bottom: 10px; margin: 10px 0;">
+					<div class="row">
+						<div class="col-9">
+    				<strong><span class="ico-situacao vigente com altera&ccedil;&otilde;es status-10" title="Vigente com Altera&ccedil;&otilde;es">Vigente com Altera&ccedil;&otilde;es</span>ResoluÁ„o da Diretoria Colegiada - RDC n∫ 16, de 01/04/2014</strong>&nbsp;
+						</div>
+						<div class="col-3 text-right">
+							<a class="btn btn-primary" style="color: white;" onclick="javascript:LinkTexto(&#039;RDC&#039;,&#039;0000016&#039;,&#039;222&#039;,&#039;2014&#039;,&#039;ANVISA/MS&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;)">Ver mais detalhes</a>
+						</div>
+					</div>
+    			</div>
+    			<div class="ato">
+<p style="text-align: center;">MINIST&Eacute;RIO DA SA&Uacute;DE<p style="text-align: center;">AG&Ecirc;NCIA NACIONAL DE VIGIL&Acirc;NCIA SANIT&Aacute;RIA</p><p style="text-align: center;">DIRETORIA COLEGIADA</p><p style="text-align: center;">RESOLU&Ccedil;&Atilde;O-RDC N&ordm; 16, DE 1&ordm;- DE ABRIL DE 2014</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkTexto('RDC','00000016','RT1','2014','RDC/DC/ANVISA/MS','','','')">RET., 04/04/2014 - Se&ccedil;&atilde;o 1</a></em></p><p style="text-align: justify; margin-left: 50%;">Disp&otilde;e sobre os Crit&eacute;rios para Peticionamento de Autoriza&ccedil;&atilde;o de Funcionamento (AFE) e Autoriza&ccedil;&atilde;o Especial (AE) de Empresas</p><p>A Diretoria Colegiada da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, no uso das atribui&ccedil;&otilde;es que lhe conferem os <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','15.6','')">incisos III</a> e <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','15.8','')">IV, do art. 15</a> da <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">Lei n.&ordm; 9.782, de 26 de janeiro de 1999</a>, o <a href="javascript:LinkTexto('POR','00000354','000','2006','ANVISA/MS','A','54','')">inciso II, e &sect;&sect; 1&deg; e 3&deg; do art. 54 do Regimento Interno</a> aprovado nos termos do Anexo I da <a href="javascript:LinkTexto('POR','00000354','000','2006','ANVISA/MS','','','')">Portaria n&ordm; 354 da ANVISA, de 11 de agosto de 2006</a>, republicada no DOU de 21 de agosto de 2006, e suas atualiza&ccedil;&otilde;es, tendo em vista o disposto nos <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','2.3','')">incisos III, do art. 2&ordm;</a>, <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','7.3','')">III</a> e <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','A','7.4','')">IV, do art. 7&ordm;</a> da <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">Lei n.&ordm; 9.782, de 1999</a>, no <a href="javascript:LinkTexto('DEC','00003029','000','1999','NI','','','')">art. 35</a> do <a href="javascript:LinkTexto('DEC','00003029','000','1999','NI','','','')">Decreto n.&ordm; 3.029, de 16 de abril de 1999</a>, e o Programa de Melhoria do Processo de Regulamenta&ccedil;&atilde;o da Ag&ecirc;ncia, institu&iacute;do por meio da <a href="javascript:LinkTexto('POR','00000422','000','2008','ANVISA/MS','','','')">Portaria n&ordm; 422, de 16 de abril de 2008</a>, em reuni&atilde;o realizada em 25 de mar&ccedil;o de 2014, adota a seguinte Resolu&ccedil;&atilde;o da Diretoria Colegiada, e eu, Diretor-Presidente, determino a sua publica&ccedil;&atilde;o:</p><p style="text-align: center;">CAP&Iacute;TULO I</p><p style="text-align: center;">DAS DISPOSI&Ccedil;&Otilde;ES INICIAIS</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o I&nbsp;</b></p><p style="text-align: center;"><b>Objetivo</b></p><p>Art. 1&ordm; Esta Resolu&ccedil;&atilde;o tem o objetivo de estabelecer os crit&eacute;rios relativos &agrave; concess&atilde;o, altera&ccedil;&atilde;o, retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o, cancelamento, bem como para a interposi&ccedil;&atilde;o de recurso administrativo contra o indeferimento de pedidos relativos aos peticionamentos de Autoriza&ccedil;&atilde;o de Funcionamento (AFE) e Autoriza&ccedil;&atilde;o Especial (AE) de empresas e estabelecimentos que realizam as atividades elencadas na Se&ccedil;&atilde;o III do Cap&iacute;tulo I com medicamentos e insumos farmac&ecirc;uticos destinados a uso humano, subst&acirc;ncias sujeitas a controle especial, produtos para sa&uacute;de, cosm&eacute;ticos, produtos de higiene pessoal, perfumes, saneantes e cultivo de plantas que possam originar subst&acirc;ncias sujeitas a controle especial.&nbsp;<em> (Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','1','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p style="text-align: center;"><b>Se&ccedil;&atilde;o II&nbsp;</b></p><p style="text-align: center;"><b>Defini&ccedil;&otilde;es</b></p><p>Art. 2&ordm; Para efeitos desta Resolu&ccedil;&atilde;o s&atilde;o adotadas as seguintes defini&ccedil;&otilde;es:</p><p>I - autoridade sanit&aacute;ria: Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria e entes/&oacute;rg&atilde;os de vigil&acirc;ncia sanit&aacute;ria dos Estados, do Distrito Federal e dos Munic&iacute;pios;</p><p>II - Autoriza&ccedil;&atilde;o de Funcionamento (AFE): ato de compet&ecirc;ncia da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria, contendo autoriza&ccedil;&atilde;o para o funcionamento de empresas ou estabelecimentos, institui&ccedil;&otilde;es e &oacute;rg&atilde;os, concedido mediante o cumprimento dos requisitos t&eacute;cnicos e administrativos constantes desta Resolu&ccedil;&atilde;o;</p><p>III - Autoriza&ccedil;&atilde;o Especial (AE): ato de compet&ecirc;ncia da Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria que autoriza o exerc&iacute;cio de atividades que envolvem insumos farmac&ecirc;uticos, medicamentos e subst&acirc;ncias sujeitas a controle especial, bem como o cultivo de plantas que possam originar subst&acirc;ncias sujeitas a controle especial, mediante comprova&ccedil;&atilde;o de requisitos t&eacute;cnicos e administrativos espec&iacute;ficos, constantes desta Resolu&ccedil;&atilde;o;</p><p>IV - caducidade: estado ou condi&ccedil;&atilde;o da autoriza&ccedil;&atilde;o que se tornou caduca, perdendo sua validade pelo decurso do prazo legal;</p><p>V - com&eacute;rcio varejista de produtos para sa&uacute;de: compreende as atividades de comercializa&ccedil;&atilde;o de produtos para sa&uacute;de de uso leigo, em quantidade que n&atilde;o exceda a normalmente destinada ao uso pr&oacute;prio e diretamente a pessoa f&iacute;sica para uso pessoal ou dom&eacute;stico;</p><p>VI - distribuidor ou com&eacute;rcio atacadista: compreende o com&eacute;rcio de medicamentos, insumos farmac&ecirc;uticos, produtos para sa&uacute;de, cosm&eacute;ticos, produtos de higiene pessoal, perfumes e saneantes, em quaisquer quantidades, realizadas entre pessoas jur&iacute;dicas ou a profissionais para o exerc&iacute;cio de suas atividades;</p><p>VII - documentos para instru&ccedil;&atilde;o: documentos apresentados para instru&ccedil;&atilde;o de processos ou peti&ccedil;&otilde;es relativos &agrave; Autoriza&ccedil;&atilde;o de Funcionamento (AFE) e Autoriza&ccedil;&atilde;o Especial (AE);</p><p>VIII - empresa: pessoa jur&iacute;dica, de direito p&uacute;blico ou privado, que explore como objeto principal ou subsidi&aacute;rio as atividades discriminadas na Se&ccedil;&atilde;o III do Cap&iacute;tulo I desta Resolu&ccedil;&atilde;o, equiparando-se &agrave; mesma as unidades dos &oacute;rg&atilde;os de administra&ccedil;&atilde;o direta ou indireta, federal ou estadual, do Distrito Federal e dos munic&iacute;pios que desenvolvam estas atividades;</p><p>IX - envase ou enchimento de gases medicinais: opera&ccedil;&atilde;o referente ao acondicionamento de gases medicinais em cilindros e l&iacute;quidos criog&ecirc;nicos em tanques criog&ecirc;nicos ou caminh&otilde;es-tanque;</p><p>X - estabelecimento: unidade da empresa constitu&iacute;da juridicamente e com CNPJ (Cadastro Nacional da Pessoa Jur&iacute;dica) devidamente estabelecido;</p><p>XI - filial: qualquer estabelecimento vinculado a outro que detenha o poder de comando sobre este;</p><p>XII - formul&aacute;rio de peti&ccedil;&atilde;o (FP): instrumento para inser&ccedil;&atilde;o de dados que permitem identificar o solicitante e o objeto solicitado, dispon&iacute;vel durante o peticionamento, realizado no s&iacute;tio eletr&ocirc;nico da Anvisa (http://www.anvisa.gov.br);</p><p>XIII - licen&ccedil;a sanit&aacute;ria: documento emitido pela autoridade sanit&aacute;ria competente dos Estados, do Distrito Federal e dos Munic&iacute;pios, onde constam as atividades sujeitas a vigil&acirc;ncia sanit&aacute;ria que o estabelecimento est&aacute; apto a exercer;</p><p>XIV - matriz: estabelecimento da empresa que representa sua sede, ou seja, aquele que tem primazia na dire&ccedil;&atilde;o e a que est&atilde;o subordinados todos os demais, chamados de filiais;</p><p>XV - autoridade sanit&aacute;ria: Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria e vigil&acirc;ncia sanit&aacute;ria dos Estados, do Distrito Federal e dos Munic&iacute;pios;</p><p>XVI - peticionamento eletr&ocirc;nico: requerimento realizado em ambiente Internet, por meio do formul&aacute;rio de peti&ccedil;&atilde;o identificado por um n&uacute;mero de transa&ccedil;&atilde;o, cujos dados s&atilde;o diretamente enviados ao sistema de informa&ccedil;&otilde;es da Anvisa, sem necessidade de envio da documenta&ccedil;&atilde;o f&iacute;sica &agrave; Ag&ecirc;ncia;</p><p>XVII - peticionamento manual: requerimento realizado em ambiente Internet por meio do formul&aacute;rio de peti&ccedil;&atilde;o, identificado por um n&uacute;mero de transa&ccedil;&atilde;o, cujos documentos ser&atilde;o fisicamente protocolados na Anvisa;</p><p>XVIII - produto para sa&uacute;de de uso leigo: produto m&eacute;dico ou produto diagn&oacute;stico para uso in vitro de uso pessoal que n&atilde;o dependa de assist&ecirc;ncia profissional para sua utiliza&ccedil;&atilde;o, conforme especifica&ccedil;&atilde;o definida no registro ou cadastro do produto junto &agrave; Anvisa;</p><p>XIX - respons&aacute;vel legal: pessoa f&iacute;sica designada em estatuto, contrato social ou ata de constitui&ccedil;&atilde;o incumbida de representar a empresa, ativa e passivamente, nos atos judiciais e extrajudiciais;</p><p>XX - respons&aacute;vel t&eacute;cnico: profissional legalmente habilitado pelo respectivo conselho profissional para a atividade que a empresa realiza na &aacute;rea de produtos abrangidos por esta Resolu&ccedil;&atilde;o;</p><p>XXI - requisitos t&eacute;cnicos: crit&eacute;rios t&eacute;cnicos e operacionais estabelecidos nesta Resolu&ccedil;&atilde;o exigidos das empresas ou estabelecimentos para fins de Autoriza&ccedil;&atilde;o de Funcionamento (AFE) ou Autoriza&ccedil;&atilde;o Especial (AE), sem preju&iacute;zo dos requisitos previstos em normas espec&iacute;ficas, complementares e suplementares da Anvisa, dos Estados, Munic&iacute;pios e Distrito Federal;&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','2','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>XXII - subst&acirc;ncias e plantas sujeitas a controle especial: aquelas relacionadas nas listas do <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS/MS','X','','')">Anexo I da Portaria SVS/MS n&ordm; 344, de 12 de maio de 1998</a>;&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','2','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>XXIII - altera&ccedil;&atilde;o de implementa&ccedil;&atilde;o imediata: altera&ccedil;&atilde;o que independe de manifesta&ccedil;&atilde;o pr&eacute;via da Anvisa, para a imediata implementa&ccedil;&atilde;o pela empresa ap&oacute;s a protocoliza&ccedil;&atilde;o de peti&ccedil;&atilde;o junto &agrave; Anvisa e cumprimento do disposto neste regulamento, desde que a altera&ccedil;&atilde;o solicitada esteja contemplada na licen&ccedil;a emitida pela autoridade sanit&aacute;ria competente; e<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>XXIV - relat&oacute;rio de inspe&ccedil;&atilde;o: documento emitido pela autoridade sanit&aacute;ria competente que descreva a situa&ccedil;&atilde;o da empresa, contemplando as informa&ccedil;&otilde;es dos requisitos t&eacute;cnicos dispostos nesta Resolu&ccedil;&atilde;o.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o III</b></p><p style="text-align: center;"><b>Abrang&ecirc;ncia</b></p><p>Art. 3&ordm; A AFE &eacute; exigida de cada empresa que realiza as atividades de armazenamento, distribui&ccedil;&atilde;o, embalagem, expedi&ccedil;&atilde;o, exporta&ccedil;&atilde;o, extra&ccedil;&atilde;o, fabrica&ccedil;&atilde;o, fracionamento, importa&ccedil;&atilde;o, produ&ccedil;&atilde;o, purifica&ccedil;&atilde;o, reembalagem, s&iacute;ntese, transforma&ccedil;&atilde;o e transporte de medicamentos e insumos farmac&ecirc;uticos destinados a uso humano, cosm&eacute;ticos, produtos de higiene pessoal, perfumes saneantes e envase ou enchimento de gases medicinais.</p><p>Par&aacute;grafo &uacute;nico. A AFE &eacute; exigida de cada estabelecimento que realiza as atividades descritas no caput com produtos para sa&uacute;de.</p><p>Art. 4&ordm; A AE &eacute; exigida para o exerc&iacute;cio das atividades descritas no art. 3&ordm; ou qualquer outra, para qualquer fim, com as subst&acirc;ncias, plantas e fungos sujeitos a controle especial ou com os medicamentos ou produtos que as contenham, segundo o disposto na <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS/MS','','','')">Portaria SVS/MS n&ordm; 344, de 1998</a> e na <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS/MS','','','')">Portaria SVS/MS n&ordm; 6, de 29 de janeiro de 1999</a>.&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00001015','000','2026','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada Anvisa n&ordm; 1.015, de 02/02/2026</a>)</em>&nbsp;</p><p>&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','4','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 1&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','4','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 2&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','4','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect; 3&ordm; Quando se tratar de finalidade exclusiva de ensino e de pesquisa, no &acirc;mbito estritamente acad&ecirc;mico, as institui&ccedil;&otilde;es de ensino superior ou t&eacute;cnico, inclusive suas funda&ccedil;&otilde;es de apoio, devem solicitar a Autoriza&ccedil;&atilde;o Especial Simplificada para Institui&ccedil;&atilde;o de Ensino e Pesquisa (AEP), nos termos da <a href="javascript:LinkTexto('RDC','00000988','000','2025','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 988, de 15 de agosto de 2025</a>.&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00001013','000','2026','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada Anvisa n&ordm; 1.013, de 30/01/2026</a>)</em><br>&nbsp;<br><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','4','4')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect; 4&ordm; Excetua-se do disposto no &sect; 3&ordm; a atividade de cultivo da esp&eacute;cie vegetal Cannabis sativa L. destinada exclusivamente a fins de pesquisa, regulamentada pelas <a href="javascript:LinkTexto('RDC','00001012','000','2026','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&otilde;es da Diretoria Colegiada - RDC n&ordm; 1.012, de 30 de janeiro de 2026</a> e <a href="javascript:LinkTexto('RDC','00001013','000','2026','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&otilde;es da Diretoria Colegiada - RDC n&ordm; 1.013, de 30 de janeiro de 2026</a>, ainda que realizadas no &acirc;mbito estritamente acad&ecirc;mico, as quais est&atilde;o condicionadas &agrave; obten&ccedil;&atilde;o pr&eacute;via de Autoriza&ccedil;&atilde;o Especial (AE) emitida pela Anvisa.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00001013','000','2026','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada Anvisa n&ordm; 1.013, de 30/01/2026</a>)</em>&nbsp;</p><p>Art. 5&ordm; N&atilde;o &eacute; exigida AFE dos seguintes estabelecimentos, empresas ou atividades:<em>&nbsp;(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','5','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>I - que exercem o com&eacute;rcio varejista de produtos para sa&uacute;de de uso leigo;</p><p>II - matriz ou filial que n&atilde;o realizam atividades com produtos para sa&uacute;de sujeitas &agrave; AFE;&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','5','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>III - que realizam o com&eacute;rcio varejista de cosm&eacute;ticos, produtos de higiene pessoal, perfumes e saneantes;</p><p>IV - que exercem exclusivamente atividades de fabrica&ccedil;&atilde;o, distribui&ccedil;&atilde;o, armazenamento, embalagem, exporta&ccedil;&atilde;o, fracionamento, transporte ou importa&ccedil;&atilde;o, de mat&eacute;rias-primas, componentes e insumos n&atilde;o sujeitos a controle especial, que s&atilde;o destinados &agrave; fabrica&ccedil;&atilde;o de produtos para sa&uacute;de, cosm&eacute;ticos, produtos de higiene pessoal, perfumes e saneantes; e</p><p style="display: block; border-top: 1px solid black; border-bottom: 1px solid black; "><br><em><b>Observa&ccedil;&atilde;o:</b> Vide o item 1 do Cap&iacute;tulo IV do Anexo (Regulamento T&eacute;cnico de Bens e Produtos Importados para fins de Vigil&acirc;ncia Sanit&aacute;ria) da <a href="javascript:LinkTexto('RDC','00000081','000','2008','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o - RDC n&ordm; 81, de 5 de novembro de 2008</a>).</em><br>&nbsp;</p><p>V - que realizam exclusivamente a instala&ccedil;&atilde;o, manuten&ccedil;&atilde;o e assist&ecirc;ncia t&eacute;cnica de equipamentos para sa&uacute;de;<em>&nbsp;(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','5','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>VI - transporte de medicamentos, saneantes, produtos para sa&uacute;de, cosm&eacute;ticos, perfumes e produtos de higiene entre o com&eacute;rcio varejista e o consumidor final;<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>VII - importar produtos destinados exclusivamente para ensaios cl&iacute;nicos, programa de acesso expandido, programa de uso compassivo e programa de fornecimento de medicamento p&oacute;s-estudo, desde que a empresa seja detentora de documento de car&aacute;ter autorizador e necess&aacute;rio para a solicita&ccedil;&atilde;o de importa&ccedil;&atilde;o, emitido pela Anvisa, necess&aacute;rio para a execu&ccedil;&atilde;o do determinado programa;&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>VIII - importar produtos destinados exclusivamente para an&aacute;lise laboratorial de controle da qualidade ou para desenvolvimento de novos produtos; e&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>IX - institui&ccedil;&otilde;es cient&iacute;ficas, tecnol&oacute;gicas, de inova&ccedil;&atilde;o e desenvolvimento experimental que realizam exclusivamente atividade de pesquisa b&aacute;sica ou aplicada de car&aacute;ter cient&iacute;fico, tecnol&oacute;gico ou de desenvolvimento de novos produtos, servi&ccedil;os ou processos.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. A dispensa de AFE n&atilde;o desobriga os estabelecimentos ou empresas a realizarem as atividades conforme a legisla&ccedil;&atilde;o aplic&aacute;vel a cada atividade ou produto.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 5&ordm;-A. N&atilde;o &eacute; exigida a atividade de importar na AE das empresas detentoras de AE de Laborat&oacute;rio ou Institui&ccedil;&atilde;o de Pesquisa para importa&ccedil;&atilde;o de produtos destinados exclusivamente para uso pr&oacute;prio nas atividades de pesquisa.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 6&ordm; As farm&aacute;cias e drogarias dever&atilde;o seguir o disposto na <a href="javascript:LinkTexto('RES','00000017','000','2013','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 17, de 28 de mar&ccedil;o de 2013</a>.</p><p>Art. 7&ordm; Os estabelecimentos detentores de AFE para a atividade de distribui&ccedil;&atilde;o ou fabrica&ccedil;&atilde;o de produtos para sa&uacute;de poder&atilde;o comercializar produtos para sa&uacute;de no varejo, sem a necessidade de AFE espec&iacute;fica para a referida atividade, desde que sejam cumpridas as exig&ecirc;ncias da legisla&ccedil;&atilde;o local acerca do licenciamento de estabelecimentos.</p><p>Art. 8&ordm; As fabricantes e envasadoras de gases medicinais dever&atilde;o seguir o disposto nesta Resolu&ccedil;&atilde;o e na&nbsp;<a href="javascript:LinkTexto('RES','00000032','000','2011','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 32, de 5 de julho de 2011</a>.</p><p>Art. 8-A&ordm; As distribuidoras, armazenadoras e transportadoras de gases medicinais dever&atilde;o seguir o disposto nesta Resolu&ccedil;&atilde;o e na <a href="javascript:LinkTexto('RES','00000887','000','2024','RE/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 887, de 11 de julho de 2024</a>, e atualiza&ccedil;&otilde;es.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000887','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 887, de 11/07/2024</a>)</em>&nbsp;</p><p style="text-align: center;">CAP&Iacute;TULO II</p><p style="text-align: center;">DO PETICIONAMENTO E AN&Aacute;LISE</p><p>Art. 9&ordm;. O requerimento de concess&atilde;o, cancelamento, altera&ccedil;&atilde;o, retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o, cumprimento de exig&ecirc;ncia e aditamento, bem como a interposi&ccedil;&atilde;o de recurso administrativo contra o indeferimento de pedidos relativos aos peticionamentos de AFE e AE de empresas e estabelecimentos que realizem as atividades abrangidas por esta Resolu&ccedil;&atilde;o dar-se-&aacute; por meio de peticionamento eletr&ocirc;nico ou peticionamento manual.&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<em> </em></p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','9','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>Art. 10. Os crit&eacute;rios para o peticionamento e o recolhimento de taxa de cada tipo de AFE e AE est&atilde;o estabelecidos na <a href="javascript:LinkTexto('RDC','00000222','000','2006','RDC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 222, de 28 de dezembro de 2006</a>, ou outra que venha a substitu&iacute;-la.<em>&nbsp;(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','10','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect; 1&deg; A AFE deve ser peticionada por cada empresa que realiza atividades com medicamentos, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene pessoal, perfumes e saneantes, utilizando- se o Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) da matriz da empresa, e &eacute; extensiva a todos os estabelecimentos filiais.</p><p>&sect; 2&ordm; No caso de atividades realizadas com produtos para sa&uacute;de, o peticionamento da AFE deve ser por estabelecimento, utilizando- se o Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) do estabelecimento que ir&aacute; realizar a atividade peticionada.</p><p>&sect; 3&deg; A AE deve ser peticionada utilizando o Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ).</p><p>&sect; 4&ordm; A AE a ser obtida para as atividades que n&atilde;o estejam enquadradas no art. 3&ordm; desta Resolu&ccedil;&atilde;o n&atilde;o est&aacute; condicionada &agrave; concess&atilde;o de AFE.</p><p>Art. 11. O ato administrativo p&uacute;blico de concess&atilde;o, cancelamento, altera&ccedil;&atilde;o e retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o de AFE e AE somente produzir&aacute; efeitos a partir de sua publica&ccedil;&atilde;o no Di&aacute;rio Oficial da Uni&atilde;o (DOU).&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','11','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect; 1&ordm; Excetuam-se do disposto no caput as altera&ccedil;&otilde;es relativas &agrave; mudan&ccedil;a de respons&aacute;vel t&eacute;cnico e respons&aacute;vel legal, que dever&atilde;o ser peticionadas eletronicamente pela empresa ou estabelecimento para altera&ccedil;&atilde;o do cadastro, no prazo de 30 dias ap&oacute;s consolida&ccedil;&atilde;o da altera&ccedil;&atilde;o, e ser&atilde;o atualizadas automaticamente, sem publica&ccedil;&atilde;o no DOU.</p><p>&sect; 2&ordm; Excetua-se do caput o indeferimento de retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o, cuja decis&atilde;o ser&aacute; comunicada diretamente &agrave; empresa.</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o I</b></p><p style="text-align: center;"><b>Dos Requisitos T&eacute;cnicos e Documentos para Instru&ccedil;&atilde;o&nbsp;</b></p><p>Art. 12. A concess&atilde;o, cancelamento a pedido, altera&ccedil;&atilde;o, retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o e a retrata&ccedil;&atilde;o de recurso administrativo de AFE e AE dependem:&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','12','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>I - do cumprimento dos requisitos t&eacute;cnicos contidos nesta Resolu&ccedil;&atilde;o; e</p><p>II - da an&aacute;lise e deferimento dos documentos para instru&ccedil;&atilde;o anexados ao formul&aacute;rio de peti&ccedil;&atilde;o devidamente preenchido e protocolado via peticionamento eletr&ocirc;nico ou peticionamento manual.</p><p>Par&aacute;grafo &uacute;nico. Quando se tratar de AE, al&eacute;m do cumprimento do disposto nos incisos I e II, tamb&eacute;m devem ser cumpridas as exig&ecirc;ncias contidas na <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')">Portaria SVS/MS n&ordm; 344, de 1998 </a>, e na <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS','','','')">Portaria SVS/MS n&ordm; 6, de 1999</a>.</p><p>Art. 13. O cadastro das filiais deve ser realizado e mantido atualizado pela empresa no banco de dados da Anvisa.</p><p>Art. 14. Os requisitos t&eacute;cnicos devem ser verificados no ato da inspe&ccedil;&atilde;o sanit&aacute;ria e estas informa&ccedil;&otilde;es devem constar no relat&oacute;rio de inspe&ccedil;&atilde;o emitido pela autoridade sanit&aacute;ria local competente.</p><p>Art. 15. A documenta&ccedil;&atilde;o de instru&ccedil;&atilde;o dos pedidos de concess&atilde;o, cancelamento a pedido, altera&ccedil;&atilde;o, retifica&ccedil;&atilde;o de publica&ccedil;&atilde;o e recurso administrativo de AFE e AE deve ser apresentada conforme descri&ccedil;&atilde;o a seguir:&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>I - para concess&atilde;o em favor de:</p><p>a) fabricantes: relat&oacute;rio de inspe&ccedil;&atilde;o que ateste o cumprimento dos requisitos t&eacute;cnicos desta Resolu&ccedil;&atilde;o para as atividades e classes pleiteadas, emitido pela autoridade sanit&aacute;ria local competente;</p><p>b) varejistas de produto para a sa&uacute;de: contrato social ou Cadastro Nacional de Pessoa Jur&iacute;dica (CNPJ) com objeto compat&iacute;vel com a atividade pleiteada;&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>c) outras empresas: relat&oacute;rio de inspe&ccedil;&atilde;o que ateste o cumprimento dos requisitos t&eacute;cnicos desta Resolu&ccedil;&atilde;o para as atividades e classes pleiteadas, emitidos pela autoridade sanit&aacute;ria local competente.<em>&nbsp;(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">II -&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','4')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>III - para as seguintes altera&ccedil;&otilde;es:</p><p>a) amplia&ccedil;&atilde;o ou redu&ccedil;&atilde;o de atividades ou classes de produtos:&nbsp;relat&oacute;rio de inspe&ccedil;&atilde;o ou documento equivalente que ateste o cumprimento dos requisitos t&eacute;cnicos desta Resolu&ccedil;&atilde;o para as atividades e classes pleiteadas, emitidos pela autoridade sanit&aacute;ria local competente ou licen&ccedil;a sanit&aacute;ria vigente com os dados atualizados;</p><p>b) altera&ccedil;&atilde;o de endere&ccedil;o: relat&oacute;rio de inspe&ccedil;&atilde;o ou documento equivalente que ateste o cumprimento dos requisitos t&eacute;cnicos desta Resolu&ccedil;&atilde;o para as atividades e classes pleiteadas, emitidos pela autoridade sanit&aacute;ria local competente ou licen&ccedil;a sanit&aacute;ria vigente com os dados atualizados;</p><p>c) altera&ccedil;&atilde;o de endere&ccedil;o por ato p&uacute;blico: declara&ccedil;&atilde;o emitida pela autoridade competente ou a c&oacute;pia do ato p&uacute;blico que originou a altera&ccedil;&atilde;o;</p><p>d) altera&ccedil;&atilde;o de raz&atilde;o social: Cadastro Nacional de Pessoa Jur&iacute;dica (CNPJ) com dados atualizados;</p><p>e) altera&ccedil;&atilde;o por modifica&ccedil;&atilde;o na extens&atilde;o do CNPJ da matriz, exclusivamente em virtude de ato declarat&oacute;rio da Receita Federal do Brasil: CNPJ com dados atualizados;</p><p>f) altera&ccedil;&atilde;o de respons&aacute;vel t&eacute;cnico: documento de regularidade t&eacute;cnica atualizado e emitido pelo respectivo Conselho de Classe profissional;</p><p>g) altera&ccedil;&atilde;o de respons&aacute;vel legal: c&oacute;pia da respectiva altera&ccedil;&atilde;o de contrato social devidamente consolidada ou a ata de assembleia devidamente registrada na Junta Comercial.</p><p>IV - para retifica&ccedil;&otilde;es de publica&ccedil;&atilde;o, cancelamentos a pedido e recursos administrativos: of&iacute;cio com a justificativa t&eacute;cnica para o pleito, com a juntada de quaisquer documentos que a empresa ou estabelecimento julgue necess&aacute;rios para a comprova&ccedil;&atilde;o de erro de publica&ccedil;&atilde;o, justificativa para o cancelamento ou reforma da decis&atilde;o de indeferimento.</p><p>&sect; 1&ordm; No peticionamento de concess&atilde;o por empresas que tiveram AFE ou AE canceladas por caducidade, o relat&oacute;rio de inspe&ccedil;&atilde;o ou documento equivalente podem ser substitu&iacute;dos pela licen&ccedil;a sanit&aacute;ria vigente com os dados atualizados.</p><p class="link-revogado" style="border-color: red !important;">&sect; 2&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','5')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 3&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','15','6')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>&sect; 4&ordm; Nos peticionamentos relativos &agrave; AE, a licen&ccedil;a sanit&aacute;ria, o relat&oacute;rio de inspe&ccedil;&atilde;o ou o documento equivalente devem informar explicitamente que o estabelecimento cumpre os requisitos de controle especial constantes da <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')">Portaria SVS/MS n&ordm; 344, de 1998</a> e da <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS','','','')">Portaria SVS/MS n&ordm; 6, de 1999</a>.</p><p>Art. 16. A Anvisa pode, a qualquer momento, obedecido o devido processo legal, cancelar a AFE e a AE das empresas ou estabelecimentos caso ocorram fatos que justifiquem tal medida.</p><p>Art. 17. Para fins de tomada de decis&atilde;o acerca dos peticionamentos de concess&atilde;o e altera&ccedil;&atilde;o de AFE e AE, o relat&oacute;rio de inspe&ccedil;&atilde;o que ateste o cumprimento dos requisitos t&eacute;cnicos desta Resolu&ccedil;&atilde;o para a atividade pleiteada deve ter sido emitido pela autoridade sanit&aacute;ria local competente em at&eacute; 12 (doze) meses anteriores &agrave; data de protocoliza&ccedil;&atilde;o do pedido.&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','17','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>Art. 18. A apresenta&ccedil;&atilde;o de documentos ileg&iacute;veis ou a aus&ecirc;ncia de documentos de instru&ccedil;&atilde;o ensejar&aacute; o indeferimento das peti&ccedil;&otilde;es de AFE e AE.</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o II</b></p><p style="text-align: center; border-color: red !important;" class="link-revogado"><em class="link-revogado" style="color: red !important;">(Revogada pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br><br><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','19','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">Art. 19.&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','19','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">Par&aacute;grafo &uacute;nico.&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','19','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">Art. 20.&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','20','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 1&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','20','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 2&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','20','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 3&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','20','4')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 4&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','20','5')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">Art. 21.&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','21','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 1&ordm;.<em class="link-revogado" style="color: red !important;">&nbsp;(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','21','2')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p class="link-revogado" style="border-color: red !important;">&sect; 2&ordm;&nbsp;<em class="link-revogado" style="color: red !important;">(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;<br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','21','3')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p style="text-align: center;"><b>Se&ccedil;&atilde;o III</b></p><p style="text-align: center;"><b>Da Altera&ccedil;&atilde;o</b></p><p>Art. 22. A altera&ccedil;&atilde;o da AFE ou da AE cabe nas seguintes hip&oacute;teses:</p><p>I - amplia&ccedil;&atilde;o de atividades;</p><p>II - redu&ccedil;&atilde;o de atividades;</p><p>III - amplia&ccedil;&atilde;o de classes de produtos;</p><p>IV - redu&ccedil;&atilde;o de classes;</p><p>V - altera&ccedil;&atilde;o de endere&ccedil;o;</p><p>VI - altera&ccedil;&atilde;o de raz&atilde;o social;</p><p>VII - altera&ccedil;&atilde;o por modifica&ccedil;&atilde;o na extens&atilde;o do CNPJ da matriz, exclusivamente em virtude de ato declarat&oacute;rio da Receita Federal do Brasil;</p><p>VIII - altera&ccedil;&atilde;o de respons&aacute;vel t&eacute;cnico; e</p><p>IX - altera&ccedil;&atilde;o de respons&aacute;vel legal.</p><p>Par&aacute;grafo &uacute;nico. A amplia&ccedil;&atilde;o e redu&ccedil;&atilde;o de classes de produtos somente &eacute; permitida entre cosm&eacute;ticos, produtos de higiene pessoal e perfumes e entre medicamentos, insumos farmac&ecirc;uticos e gases medicinais.&nbsp;<em>(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000887','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 887, de 11/07/2024</a>)</em>&nbsp;</p><p>&nbsp;<em style="display: block; border-bottom: 1px solid black; text-align: right"> <a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','22','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>Art. 22-A. As altera&ccedil;&otilde;es previstas nos incisos II, V, VI e VII do art. 22 s&atilde;o de implementa&ccedil;&atilde;o imediata, ap&oacute;s a data de protocoliza&ccedil;&atilde;o da peti&ccedil;&atilde;o, desde que o exerc&iacute;cio das atividades esteja contemplado na licen&ccedil;a emitida pelo &oacute;rg&atilde;o sanit&aacute;rio competente da unidade federativa.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. A implementa&ccedil;&atilde;o imediata das altera&ccedil;&otilde;es n&atilde;o impede a an&aacute;lise, a qualquer tempo, da documenta&ccedil;&atilde;o exigida, podendo ser ratificada ou indeferida.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 23. Os pedidos de altera&ccedil;&otilde;es da AFE e da AE dever&atilde;o ocorrer de forma individual e separada em cada AFE e AE da empresa e de seus estabelecimentos, quando aplic&aacute;vel.</p><p class="link-revogado" style="border-color: red !important;">Par&aacute;grafo &uacute;nico.<em class="link-revogado" style="color: red !important;">&nbsp;(Revogado pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em><br>&nbsp;</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right">&nbsp;<a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','23','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p style="text-align: center;"><b>Se&ccedil;&atilde;o IV</b></p><p style="text-align: center;"><b>Do Cancelamento</b></p><p>Art. 24. O cancelamento da AFE e AE a pedido da empresa ou estabelecimento deve ser peticionado nos seguintes casos:</p><p>I - encerramento de atividades; ou</p><p>II - encerramento de atividades com subst&acirc;ncias sujeitas a controle especial ou com os medicamentos que as contenham, bem como com as plantas que podem originar tais subst&acirc;ncias.</p><p>Par&aacute;grafo &uacute;nico. O cancelamento da AFE ou da AE n&atilde;o afasta a responsabilidade da empresa ou estabelecimento pelos produtos que ainda estiverem no mercado.</p><p style="text-align: center;"><b>Se&ccedil;&atilde;o V</b></p><p style="text-align: center;"><b>Do Recurso Administrativo</b></p><p>Art. 25. No caso de indeferimento de pedidos relativos &agrave; AFE e AE, &eacute; cab&iacute;vel recurso administrativo nos termos da <a href="javascript:LinkTexto('RES','00000025','000','2008','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 25, de 4 de abril de 2008</a>.</p><p>Art. 26. O recurso administrativo deve ser interposto uma &uacute;nica vez para cada expediente indeferido.</p><p style="text-align: center;">CAP&Iacute;TULO III</p><p style="text-align: center;">DOS REQUISITOS T&Eacute;CNICOS PARA FABRICANTES</p><p>Art. 27. Os fabricantes de medicamentos, insumos farmac&ecirc;uticos, produtos para a sa&uacute;de, cosm&eacute;ticos, produtos de higiene pessoal, perfumes e saneantes, dever&atilde;o apresentar as informa&ccedil;&otilde;es gerais e cumprir os requisitos t&eacute;cnicos a seguir relacionados, os quais ser&atilde;o avaliados na inspe&ccedil;&atilde;o pela autoridade sanit&aacute;ria local competente:</p><p>I - informa&ccedil;&otilde;es gerais:</p><p>a) contrato social ou ata de constitui&ccedil;&atilde;o registrada na junta comercial e suas altera&ccedil;&otilde;es, se houver;</p><p>b) Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) contemplando a atividade econ&ocirc;mica pleiteada;</p><p>c) autoriza&ccedil;&atilde;o ou alvar&aacute; referente &agrave; localiza&ccedil;&atilde;o e ocupa&ccedil;&atilde;o, planta arquitet&ocirc;nica, prote&ccedil;&atilde;o ambiental, seguran&ccedil;a de instala&ccedil;&otilde;es e seguran&ccedil;a dos trabalhadores;</p><p>d) organograma e defini&ccedil;&atilde;o dos cargos, responsabilidades e da qualifica&ccedil;&atilde;o necess&aacute;ria para seus ocupantes;</p><p>e) comprova&ccedil;&atilde;o do registro de responsabilidade t&eacute;cnica realizada pelo profissional legalmente habilitado junto ao respectivo conselho de classe; e</p><p>f) contratos de presta&ccedil;&atilde;o de servi&ccedil;os diversos ou documentos equivalentes, os quais devem ser realizados somente com empresas autorizadas e licenciadas pela autoridade competente, quando aplic&aacute;vel.</p><p>II - requisitos t&eacute;cnicos:</p><p>a) instala&ccedil;&otilde;es, equipamentos e aparelhagem t&eacute;cnica necess&aacute;rios e em condi&ccedil;&otilde;es adequadas &agrave; finalidade a que se prop&otilde;em, incluindo qualifica&ccedil;&otilde;es e calibra&ccedil;&otilde;es;</p><p>b) sistema da qualidade estabelecido;</p><p>c) pol&iacute;tica de valida&ccedil;&atilde;o e qualifica&ccedil;&atilde;o claramente definida, nos casos em que seja exigido pela norma de boas pr&aacute;ticas de fabrica&ccedil;&atilde;o espec&iacute;fica;</p><p>d) sistemas de utilidades de suporte ao processo produtivo em condi&ccedil;&otilde;es adequadas &agrave; finalidade a que se prop&otilde;em;</p><p>e) condi&ccedil;&otilde;es de higiene, armazenamento e opera&ccedil;&atilde;o adequadas &agrave;s necessidades do produto, de forma a reduzir o risco de contamina&ccedil;&atilde;o ou altera&ccedil;&otilde;es de suas caracter&iacute;sticas;</p><p>f) recursos humanos capacitados ao desempenho das atividades de produ&ccedil;&atilde;o, controle da qualidade, garantia da qualidade e demais atividades de suporte;</p><p>g) meios para a inspe&ccedil;&atilde;o e o controle de qualidade dos produtos que industrialize, incluindo especifica&ccedil;&otilde;es e m&eacute;todos anal&iacute;ticos;</p><p>h) procedimentos operacionais padr&atilde;o e demais documentos necess&aacute;rios conclu&iacute;dos e aprovados;</p><p>i) meios capazes de eliminar ou reduzir elementos de polui&ccedil;&atilde;o decorrente da industrializa&ccedil;&atilde;o procedida, que causem efeitos nocivos &agrave; sa&uacute;de; e</p><p>j) para fabricantes de produtos para sa&uacute;de, tamb&eacute;m devem ser apresentadas evid&ecirc;ncias do cumprimento do plano de desenvolvimento de projeto at&eacute;, no m&iacute;nimo, a fase de defini&ccedil;&atilde;o de dados de entrada de projeto.</p><p style="text-align: center;">CAP&Iacute;TULO IV</p><p style="text-align: center;">DOS REQUISITOS T&Eacute;CNICOS PARA IMPORTADORES, DISTRIBUIDORES, ARMAZENADORES, TRANSPORTADORES, EXPORTADORES E FRACIONADORES</p><p>Art. 28. Os importadores, distribuidores, armazenadores, transportadores e exportadores de medicamentos, insumos farmac&ecirc;uticos, produtos para sa&uacute;de, cosm&eacute;ticos, produtos para higiene pessoal, perfumes e saneantes e fracionadores de insumos farmac&ecirc;uticos, dever&atilde;o apresentar as informa&ccedil;&otilde;es gerais e cumprir os requisitos t&eacute;cnicos a seguir relacionados, os quais ser&atilde;o avaliados na inspe&ccedil;&atilde;o pela autoridade sanit&aacute;ria local competente:</p><p>I - informa&ccedil;&otilde;es gerais:</p><p>a) contrato social ou ata de constitui&ccedil;&atilde;o registrada na junta comercial e suas altera&ccedil;&otilde;es, se houver;</p><p>b) Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) contemplando a atividade econ&ocirc;mica pleiteada;</p><p>c) autoriza&ccedil;&atilde;o ou alvar&aacute; referente &agrave; localiza&ccedil;&atilde;o e ocupa&ccedil;&atilde;o, planta arquitet&ocirc;nica, prote&ccedil;&atilde;o ambiental, seguran&ccedil;a de instala&ccedil;&otilde;es e seguran&ccedil;a dos trabalhadores;</p><p>d) contratos de presta&ccedil;&atilde;o de servi&ccedil;os diversos ou documentos equivalentes, os quais devem ser realizados somente com empresas autorizadas e licenciadas pela autoridade competente, quando aplic&aacute;vel;</p><p>e) comprova&ccedil;&atilde;o do registro de responsabilidade t&eacute;cnica realizada pelo profissional legalmente habilitado junto ao respectivo conselho de classe; e</p><p>f) para distribuidores e armazenadores de medicamentos, insumos farmac&ecirc;uticos e produtos para sa&uacute;de, Manual de Boas Pr&aacute;ticas de Distribui&ccedil;&atilde;o e Armazenagem.</p><p>II - requisitos t&eacute;cnicos:</p><p>a) exist&ecirc;ncia de instala&ccedil;&otilde;es, equipamentos e aparelhagem t&eacute;cnica necess&aacute;rios e em condi&ccedil;&otilde;es adequadas &agrave; finalidade a que se prop&otilde;em, incluindo qualifica&ccedil;&otilde;es e calibra&ccedil;&otilde;es;</p><p>b) exist&ecirc;ncia de recursos humanos qualificados e devidamente capacitados ao desempenho das atividades da empresa ou estabelecimento, incluindo, no caso de importadora de medicamentos, a garantia da qualidade dos medicamentos, a investiga&ccedil;&atilde;o de desvio de qualidade e demais atividades de suporte;</p><p>c) condi&ccedil;&otilde;es de higiene, armazenamento e opera&ccedil;&atilde;o adequadas &agrave;s necessidades do produto, de forma a reduzir o risco de contamina&ccedil;&atilde;o ou altera&ccedil;&atilde;o de suas caracter&iacute;sticas;</p><p>d) procedimentos operacionais padr&atilde;o para recep&ccedil;&atilde;o, identifica&ccedil;&atilde;o, controles de estoque e armazenamento de produtos acabados, devolvidos ou recolhidos;</p><p>e) programa de autoinspe&ccedil;&atilde;o, com abrang&ecirc;ncia, frequ&ecirc;ncia, responsabilidades de execu&ccedil;&atilde;o e a&ccedil;&otilde;es decorrentes das n&atilde;o conformidades;</p><p>f) &aacute;rea separada, identificada e de acesso restrito para o armazenamento de produtos ou subst&acirc;ncias sujeitas a controle especial;</p><p>g) sistema de controle de estoque que possibilite a emiss&atilde;o de invent&aacute;rios peri&oacute;dicos;</p><p>h) sistema formal de investiga&ccedil;&atilde;o de desvios de qualidade e medidas preventivas e corretivas adotadas ap&oacute;s a identifica&ccedil;&atilde;o das causas;</p><p>i) sistema da qualidade estabelecido;</p><p>j) plano para gerenciamento de res&iacute;duos;</p><p>k) &aacute;reas de recebimento e expedi&ccedil;&atilde;o adequadas e protegidas contra varia&ccedil;&otilde;es clim&aacute;ticas;</p><p>l) mecanismos que assegurem que fornecedores e clientes estejam devidamente regularizados junto &agrave;s autoridades sanit&aacute;rias competentes, quando aplic&aacute;vel; e</p><p>m) para transportadores, rela&ccedil;&atilde;o do quantitativo e identifica&ccedil;&atilde;o dos ve&iacute;culos pr&oacute;prios ou de terceiros sob sua responsabilidade, disponibilizados para o transporte, que dever&atilde;o ser munidos dos equipamentos necess&aacute;rios &agrave; manuten&ccedil;&atilde;o das condi&ccedil;&otilde;es espec&iacute;ficas de transporte requeridas para cada produto sujeito &agrave; vigil&acirc;ncia sanit&aacute;ria.</p><p style="text-align: center;">CAP&Iacute;TULO V</p><p style="text-align: center;">DOS REQUISITOS T&Eacute;CNICOS PARA ATIVIDADES COM SUBST&Acirc;NCIAS OU MEDICAMENTOS SUJEITOS A CONTROLE ESPECIAL</p><p>Art. 29. Para as atividades com subst&acirc;ncias ou medicamentos sujeitos a controle especial dever&atilde;o ser apresentados os seguintes documentos, bem como dever&atilde;o ser cumpridos os requisitos t&eacute;cnicos contidos na <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','','','')">Portaria SVS/MS n&ordm; 344, de 1998</a>, e na <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS','','','')">Portaria SVS/MS n&ordm; 6, de 1999</a>, a serem avaliados na inspe&ccedil;&atilde;o pela autoridade sanit&aacute;ria local competente:</p><p>I - contrato social ou ata de constitui&ccedil;&atilde;o registrada na junta comercial e suas altera&ccedil;&otilde;es, se houver;</p><p>II - Cadastro Nacional da Pessoa Jur&iacute;dica (CNPJ) com o c&oacute;digo e a descri&ccedil;&atilde;o da atividade econ&ocirc;mica referente &agrave; atividade peticionada; e</p><p>III - comprova&ccedil;&atilde;o da responsabilidade t&eacute;cnica realizada por profissional legalmente habilitado.</p><p style="text-align: center;">CAP&Iacute;TULO V-A&nbsp;<em>&nbsp;</em></p><p style="text-align: center;">DA DEFINI&Ccedil;&Atilde;O DOS PROCESSOS DE AFE e AE&nbsp;</p><p style="text-align: center;"><em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-A. O processo de fabrica&ccedil;&atilde;o de medicamentos e de produtos para a sa&uacute;de contempla as atividades de armazenar, embalar, reembalar, expedir, distribuir e importar para uso pr&oacute;prio.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. O Agente Regulado poder&aacute; ampliar suas atividades para transportar, importar e exportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-B. O processo de fabrica&ccedil;&atilde;o de cosm&eacute;ticos, produtos de higiene, perfumes e de saneantes domissanit&aacute;rios contempla as atividades de armazenar, embalar, reembalar, fracionar, expedir, distribuir e importar para uso pr&oacute;prio.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. O Agente Regulado poder&aacute; ampliar suas atividades para transportar, importar e exportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-C. O processo de fabrica&ccedil;&atilde;o de insumos farmac&ecirc;uticos contempla as atividades de extrair, sintetizar, purificar, transformar, armazenar, importar para uso pr&oacute;prio, expedir e distribuir.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. O Agente Regulado poder&aacute; ampliar suas atividades para importar, exportar, fracionar e transportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-D. O processo de importa&ccedil;&atilde;o de medicamento, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene, perfume, saneantes domissanit&aacute;rios e de produtos para sa&uacute;de contempla as atividades de armazenar e expedir.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; O Agente Regulado poder&aacute; ampliar suas atividades para fabricar, exportar, distribuir, embalar, reembalar e transportar.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; No caso de insumos farmac&ecirc;uticos o Agente Regulado poder&aacute;, ainda, ampliar suas atividades para fracionar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-E. O processo de exporta&ccedil;&atilde;o de medicamentos, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene, perfumes, saneantes domissanit&aacute;rios, produtos para a sa&uacute;de, contempla as atividades de armazenar e expedir.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; O Agente Regulado poder&aacute; ampliar suas atividades para fabricar, distribuir, importar, transportar, embalar e reembalar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; No caso de insumos farmac&ecirc;uticos o Agente Regulado poder&aacute;, ainda, ampliar suas atividades para fracionar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-F. O processo de distribui&ccedil;&atilde;o de medicamento, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene, perfume, saneantes domissanit&aacute;rios e de produtos para sa&uacute;de, contempla as atividades de armazenar e expedir.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; O Agente poder&aacute; ampliar suas atividades para fabricar, importar, exportar, embalar, reembalar e transportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; No caso de insumos farmac&ecirc;uticos o Agente Regulado poder&aacute;, ainda, ampliar suas atividades para fracionar.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 3&ordm; &Eacute; permitido ao agente regulado exercer as atividades de distribui&ccedil;&atilde;o e dispensa&ccedil;&atilde;o na mesma empresa, desde que em estabelecimentos distintos.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 4&ordm; Para os fins do par&aacute;grafo anterior o Agente Regulado deve solicitar Autoriza&ccedil;&atilde;o de Funcionamento de Empresa (AFE) e, quando aplic&aacute;vel, Autoriza&ccedil;&atilde;o Especial (AE), emitida pela Ag&ecirc;ncia Nacional de Vigil&acirc;ncia Sanit&aacute;ria - ANVISA para drogaria ou farm&aacute;cia, nos termos da <a href="javascript:LinkTexto('LEI','00009782','000','1999','NI','','','')">Lei n&deg; 9.782, de 26 de janeiro de 1999</a>.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-G. O processo de fracionamento de insumos farmac&ecirc;uticos contempla as atividades de armazenar e expedir.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Par&aacute;grafo &uacute;nico. No caso de insumos farmac&ecirc;uticos o Agente Regulado poder&aacute; ampliar suas atividades para fabricar, importar, exportar, distribuir e transportar.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-H. O processo de armazenar medicamentos, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene, perfumes, saneantes domissanit&aacute;rios, produtos para a sa&uacute;de contempla a atividade de expedir.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; O Agente Regulado poder&aacute; ampliar suas atividades para fabricar, distribuir, importar, exportar, embalar, reembalar e transportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; No caso de insumos farmac&ecirc;uticos o Agente Regulado somente poder&aacute; ampliar suas atividades para fabricar, distribuir, importar, exportar e transportar.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-I. O processo de transportar medicamentos, insumos farmac&ecirc;uticos, cosm&eacute;ticos, produtos de higiene, perfumes, saneantes domissanit&aacute;rios, produtos para a sa&uacute;de &eacute; &uacute;nico.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; O Agente Regulado poder&aacute; ampliar suas atividades para fabricar, distribuir, importar, exportar, embalar, reembalar, armazenar e expedir.<em>&nbsp;(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; No caso de insumos farmac&ecirc;uticos o Agente Regulado somente poder&aacute; ampliar suas atividades para fabricar, distribuir, importar, exportar, armazenar e expedir.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>Art. 29-J. A amplia&ccedil;&atilde;o de atividade somente ser&aacute; permitida desde que respeitada a classe de produto para a qual a Autoriza&ccedil;&atilde;o de Funcionamento foi concedida.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 1&ordm; Para a obten&ccedil;&atilde;o das atividades que contemplam os processos tratados neste Cap&iacute;tulo, tais atividades dever&atilde;o constar no Relat&oacute;rio de Inspe&ccedil;&atilde;o encaminhado quando da solicita&ccedil;&atilde;o de concess&atilde;o de Autoriza&ccedil;&atilde;o de Funcionamento (AFE) ou Autoriza&ccedil;&atilde;o de Funcionamento Especial (AE).&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p>&sect; 2&ordm; As atividades n&atilde;o concedidas e contempladas nos processos tratados neste Cap&iacute;tulo poder&atilde;o ser objeto de amplia&ccedil;&atilde;o de atividade.&nbsp;<em>(Inclu&iacute;do pela <a href="javascript:LinkTexto('RDC','00000860','000','2024','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 860, de 06/05/2024</a>)</em>&nbsp;</p><p style="text-align: center;">CAP&Iacute;TULO VI</p><p style="text-align: center;">DAS DISPOSI&Ccedil;&Otilde;ES FINAIS E TRANSIT&Oacute;RIAS</p><p style="text-align: center;"><em>(Retificado no DOU n&ordm; 64, de 03/04/2014)</em></p><p style="text-align: center;"><em>(Retificado no DOU n&ordm; 65, de 04/04/2014)</em></p><p>Art. 30. O descumprimento das disposi&ccedil;&otilde;es contidas nesta Resolu&ccedil;&atilde;o constitui infra&ccedil;&atilde;o sanit&aacute;ria, nos termos da <a href="javascript:LinkTexto('LEI','00006437','000','1977','NI','','','')">Lei n&ordm; 6.437, de 20 de agosto de 1977</a>, sem preju&iacute;zo das responsabilidades civil, administrativa e penal cab&iacute;veis.</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkTexto('RDC','00000016','RET','2014','RDC/DC/ANVISA/MS','','','')">RET., 03/04/2014 - Se&ccedil;&atilde;o 1</a></em></p><p>Art. 31. A partir da entrada em vigor desta Resolu&ccedil;&atilde;o, ficam mantidas as internaliza&ccedil;&otilde;es das seguintes Resolu&ccedil;&otilde;es MERCOSUL: GMC n&deg; 3/99 - "Registro de Empresas de Produtos Domisanit&aacute;rios"; GMC n&ordm; 05/05 - "Regulamento T&eacute;cnico sobre Autoriza&ccedil;&atilde;o de Funcionamento/ Habilita&ccedil;&atilde;o de Empresas de Produtos de Higiene Pessoal, Cosm&eacute;ticos e Perfumes, suas Modifica&ccedil;&otilde;es y Cancelamento"; GMC n&ordm; 132/96 - Altera&ccedil;&otilde;es da Autoriza&ccedil;&atilde;o de Funcionamento das Empresas Solicitantes de Registro de Produtos Farmac&ecirc;uticos do Estado Parte Receptor; e GMC n&ordm; 24/96 - Registro de Empresas Domisanitarios.</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkTexto('RDC','00000016','RET','2014','RDC/DC/ANVISA/MS','','','')">RET., 03/04/2014 - Se&ccedil;&atilde;o 1</a></em></p><p>Art. 32. Esta Resolu&ccedil;&atilde;o da Diretoria Colegiada entra em vigor 90 (noventa) dias ap&oacute;s a data de sua publica&ccedil;&atilde;o.</p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkTexto('RDC','00000016','RET','2014','RDC/DC/ANVISA/MS','','','')">RET., 03/04/2014 - Se&ccedil;&atilde;o 1</a></em></p><p>Par&aacute;grafo &uacute;nico. Os estabelecimentos filiais de empresas que realizem atividades referentes a produtos para sa&uacute;de para os quais &eacute; exigida AFE nos termos desta Resolu&ccedil;&atilde;o ter&atilde;o o prazo de um ano, contado a partir de 04 de agosto de 2014, para requerer &agrave; ANVISA a referida autoriza&ccedil;&atilde;o.<em>&nbsp;(Reda&ccedil;&atilde;o dada pela <a href="javascript:LinkTexto('RDC','00000040','000','2014','RDC/DC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&deg; 40, de 01/08/2014</a>)</em></p><p style="display: block; border-bottom: 1px solid black; text-align: right;"><em><a href="javascript:LinkNota('RDC','00000016','000','2014','RDC/DC/ANVISA/MS','A','32','1')">Reda&ccedil;&otilde;es Anteriores</a></em></p><p>Art. 33. Ficam revogados a partir da entrada em vigor desta Resolu&ccedil;&atilde;o os seguintes regulamentos: os <a href="javascript:LinkTexto('INM','00000001','000','1994','SVS/MS','','','')">itens 2, 3 e 6 da Instru&ccedil;&atilde;o Normativa n&ordm; 1, de 30 de setembro de 1994</a>; a <a href="javascript:LinkTexto('POR','00000182','000','1996','SVS','','','')">Portaria SVS/MS n&ordm; 182, de 20 de novembro de 1996</a>; os <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','A','3','')"> artigos 3&ordm;</a>, <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','A','5','')">5&ordm;</a>, <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','A','6','')">6&ordm;</a>, <a href="javascript:LinkTexto('POR','00000344','000','1998','SVS','A','9','10')">9&ordm; e 10 da Portaria SVS/MS n&ordm; 344, de 12 de maio de 1998</a>; os artigos 2&ordm;, 4&ordm;, 5&ordm;, 6&ordm;, 7&ordm;, 9&ordm;, 11, 12 e 13 da Instru&ccedil;&atilde;o Normativa do Anexo e o <a href="javascript:LinkTexto('POR','00000006','000','1999','SVS','','','')">Anexo I da Portaria SVS/MS n&ordm; 6, de 29 de janeiro de 1999</a>; a <a href="javascript:LinkTexto('POR','00001052','000','1998','SVS/MS','','','')">Portaria SVS/MS n&ordm; 1.052, de 29 de dezembro de 1998</a>; o <a href="javascript:LinkTexto('POR','00000802','000','1998','SVS','A','10','')">par&aacute;grafo &uacute;nico do art. 10</a>, o <a href="javascript:LinkTexto('POR','00000802','000','1998','SVS','A','12','')">art. 12</a> e o <a href="javascript:LinkTexto('POR','00000802','000','1998','SVS','X','1','')">Anexo I da Portaria SVS/MS n&ordm; 802, de 8 de outubro de 1998</a>; a <a href="javascript:LinkTexto('RES','00000329','000','1999','ANVS/MS','','','')">Resolu&ccedil;&atilde;o n&ordm; 329, de 22 de julho de 1999</a>; a <a href="javascript:LinkTexto('RES','00000327','000','1999','ANVS/MS','','','')">Resolu&ccedil;&atilde;o n&ordm; 327, de 22 de julho de 1999</a>; a <a href="javascript:LinkTexto('RES','00000128','000','2002','RDC/ANVISA','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 128, de 9 de maio de 2002</a>; a <a href="javascript:LinkTexto('RES','00000158','000','2002','RDC/ANVISA','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 158, de 31 de maio de 2002</a>; e a <a href="javascript:LinkTexto('RES','00000183','000','2006','RDC/ANVISA/MS','','','')">Resolu&ccedil;&atilde;o da Diretoria Colegiada - RDC n&ordm; 183, de 5 de outubro de 2006 </a></p><p><em style="display: block; border-bottom: 1px solid black; text-align: right"><a href="javascript:LinkTexto('RDC','00000016','RET','2014','RDC/DC/ANVISA/MS','','','')">RET., 03/04/2014 - Se&ccedil;&atilde;o 1</a></em></p><p style="text-align: center;">DIRCEU BR&Aacute;S APARECIDO BARBANO</p><p style="font-weight: bold;">PUB D.O.U., 02/04/2014 - Se&ccedil;&atilde;o 1</p></p>
+					<p style="font-size: 0.8rem; text-align: center; font-style: italic; color: red;">Este texto n„o substitui a PublicaÁ„o Oficial.</p>
+				</div>
+			</div>
+		</article>
+                    	
+		<form name="formPdf" id="formPdf" action="/action/ActionDatalegis.php?acao=gerarPdfAto&cod_modulo=310&cod_menu=9431" method="post" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formImprimir" id="formImprimir" action="/action/ActionDatalegis.php?acao=imprimirAto&cod_modulo=310&cod_menu=9431" method="get" target="_new">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		<form name="formGerarLink" id="formGerarLink" action="/action/ActionDatalegis.php?acao=setGerarLink&cod_modulo=310&cod_menu=9431" method="get" target="_self">
+			<input type="hidden" name="html" id="html" value="" />
+		</form>
+		
+	</div>
+</div>
+		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@1.11/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/view/js/ajax.js"></script> 
+<script type="text/javascript">
+
+	function abreFecha(obj) {
+		if($(obj).is(':visible') ) {
+			$(obj).removeClass('d-block').addClass('d-none');
+		} else {
+			$(obj).removeClass('d-none').addClass('d-block');
+		}
+	}
+	
+	var in_abrir_segundo_nivel = "";
+	var in_abrir_todas_notas = false;
+	
+	function recuperarObjetoPai(obj, nuascendentes) {
+		var objPai = obj;
+	
+		for ( var i = 0; i < nuascendentes; i++) {
+			objPai = objPai.parentNode;
+		}
+	
+		return objPai;
+	}
+	
+	function historico(psLink) {
+		var root;
+		root = window.open(psLink,'Historico','width=360,height=240,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no');
+		root.focus();
+	}
+		
+	function mostra_arquivo(cod, tip, acao, txt, l, a) {
+		var url;
+		var str;
+		if (cod != "") {
+			caminho = "http://www.datalegis.inf.br/datalegis/arquivos/";
+			switch (acao) {
+			case 1: //-- mostra arquivo na tela - apenas imagens
+				document.write("<img src='" + caminho + cod + "." + tip
+						+ "' border='0' width='" + ((l) ? l : "100%")
+						+ "' heigth='" + ((a) ? a : "100%") + "'>");
+				break;
+			case 0: //-- nao mostra arquivo na tela - para todos os tipos
+				document.write("<a href='" + caminho + cod + "." + tip
+						+ "' target='new'>" + txt + "</a>");
+				break;
+			}
+		}
+	}
+
+	function LinkTexto(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, pDesItemFim) {
+		var link = "/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&tipo="
+			+ psSigla + "&numeroAto=" + psNumero + "&seqAto=" + psSeq + "&valorAno=" + psAno + "&orgao=" + psOrgao 
+			+ "&codTipo=" + psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + pDesItemFim
+			+ "&cod_modulo=310&cod_menu=9431";
+		window.open(link, '_blank');		
+	}
+
+	$(function() {
+    	$(document).ajaxStart(function(){
+    		$('#loading').show();
+        })
+        .ajaxStop(function(){
+        	$('#loading').delay(100).hide();
+        	in_abrir_todas_notas = false;
+        });
+
+	});
+
+	$(document).on('click', "a[href*='javascript:LinkNota']", function(e) {
+
+		//e.isImmediatePropagationStopped();
+		e.preventDefault();
+		var objHref = $(this);
+	    var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    
+	    var parameters = parameter.split(",");
+	    
+        var psSigla = parameters[0];
+        var psNumero = parameters[1];
+        var psSeq = parameters[2];
+        var psAno = parameters[3];
+        var psOrgao = parameters[4];
+        var psCodTipo = parameters[5];
+        var psDesItem = parameters[6];
+        var psSeqNota = parameters[7];
+
+        var link = "/action/ActionDatalegis.php?acao=detalharNotaAjax&tipo="+ psSigla+ 
+		"&numeroAto="+ psNumero+ "&seqAto="+ psSeq+ "&valorAno=" +psAno+ 
+		"&orgao="+ psOrgao+ "&codTipo="+ psCodTipo + "&desItem=" + psDesItem + "&seqNota=" + psSeqNota+
+		"&cod_modulo=310&cod_menu=9431";
+		
+        var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+        $(objHref).attr('class', 'ato-'+idAto);
+		var divNota = $(this).siblings('div.'+idAto+':first');
+		
+        if(!$(divNota).length) {		        
+    	  	$.ajax({
+    	        url: link,
+    	        dataType: "text",
+    	        async: true,
+    	        cache: true,
+    	        success: function(html) {
+					$(objHref).parent("em:first").append(html);
+    	        },
+    	        error: function(obj) {
+    	            console.log(obj);
+    	        }
+    	    });
+		} else {
+			$(divNota).toggle();
+		}
+	});
+	
+	function abrirTodosLinkNota() {
+		in_abrir_todas_notas = true;
+		$('div.nota-revogado').show();
+		$('#texto-compilado').css('text-decoration','none');
+		$('#texto-notas').css('text-decoration','underline');
+		var searchLinkNota = "a[href*='javascript:LinkNota']";
+		
+		var linkBase = "/action/ActionDatalegis.php?acao=detalharNotasListaAjax&cod_modulo=310&cod_menu=9431";
+		var linkAjax = '';
+		var registroChamado = 0;
+		var registroChamadoTotal = 0;
+		var registroTotal = $(searchLinkNota).length;
+		var indexInicialChamado = null;
+		
+		$(searchLinkNota).each(function( index ) {
+			if(registroChamado == 0) {
+				linkAjax = '';
+				indexInicialChamado = index;
+			}
+
+			registroChamado++;
+			registroChamadoTotal++;
+			
+			var objHref = $(this);
+			var parameter = objHref.attr('href')
+	    	.replace(/(\r\n|\n|\r)/gm, "")
+	    	.replaceAll(' ','')
+	    	.replaceAll('javascript:LinkNota(','')
+	    	.replaceAll(')','')
+	    	.replaceAll("'",'');
+	    	
+    	    var parameters = parameter.split(",");
+    	    
+            var psSigla = parameters[0];
+            var psNumero = parameters[1];
+            var psSeq = parameters[2];
+            var psAno = parameters[3];
+            var psOrgao = parameters[4];
+            var psCodTipo = parameters[5];
+            var psDesItem = parameters[6];
+            var psSeqNota = parameters[7];
+
+            var idAto =(psSigla+psNumero+psSeq+psAno+psOrgao+psCodTipo+psDesItem+psSeqNota).replaceAll('.','').replaceAll('/','').replaceAll(',','').replaceAll('-','');
+            var idDivNota = 'ato-'+idAto+'-'+index;
+            $(objHref).attr('class', idDivNota);
+
+            var divNota = $('a.'+idDivNota).siblings('div.'+idAto+':first');
+			
+			if(!$(divNota).length) {
+                linkAjax += "&sgl_tipo[]="+psSigla+"&num_ato[]="+psNumero+"&seq_ato[]="+psSeq+"&vlr_ano[]="+psAno+"&sgl_orgao[]="+psOrgao;
+                linkAjax += "&cod_tipo[]="+psCodTipo+"&des_item[]="+psDesItem+"&seq_nota[]="+psSeqNota+"&index_js[]="+index;
+			}
+			
+            if((registroChamado == 100 || registroChamadoTotal == registroTotal) && linkAjax.length > 0) {
+            	registroChamado = 0;
+                     	
+            	$.ajax({
+        	        url: linkBase,
+        	        type: "POST",
+        	        data: linkAjax,
+        	        dataType: "json",
+        	        async: true,
+        	        cache: true,
+        	        success: function(jsonObj) {        				
+        				$.each(jsonObj, function(index, objNota) {
+        					divNota = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).siblings('div.'+objNota.ID_NOTA+':first');
+        					
+        					if(!$(divNota).length) {
+        						var objetoDestino = $('a.ato-'+objNota.ID_NOTA+'-'+objNota.INDEX).parent("em:first");
+            					$( "<div/>", {
+            					    "class": "well nota-revogado "+objNota.ID_NOTA,
+            					    html: objNota.NOTAS.join('')
+            					  }).appendTo(objetoDestino);
+        			        } else {
+        			        	$(divNota).show();
+        			        }
+        				});
+        	        },
+        	        error: function(obj) {
+        	            console.log(obj);
+        	        }
+        	    });
+			}
+		});
+	}
+	
+	function fecharTodosLinkNota() {
+		$('#texto-compilado').css('text-decoration','underline');
+		$('#texto-notas').css('text-decoration','none');
+		in_abrir_todas_notas = false;
+		$('div.nota-revogado').hide();
+	}
+	
+	function LinkNota(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psSeqNota) {
+	}
+
+	function gravarArquivo(psSigla, psNumero, psSeq, psAno, psOrgao, psCodTipo, psDesItem, psDesItemFim) {
+		var link = "/action/detalhaAto.do?method=gravarAtoPDF&tipo="
+				+ psSigla
+				+ "&numeroAto="
+				+ psNumero
+				+ "&seqAto="
+				+ psSeq
+				+ "&valorAno="
+				+ psAno
+				+ "&orgao="
+				+ psOrgao
+				+ "&codTipo="
+				+ psCodTipo + "&desItem=" + psDesItem + "&desItemFim=" + psDesItemFim;
+		root = window.open(link, 'Imprimir', 'width=766,height=600,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	function abrirFrame(id, obj){
+		fAscendentes = "";
+	
+		var l_div = obj;
+		if (l_div.getElementsByTagName('div')[0].style.display == "none" || l_div.getElementsByTagName('div')[0].style.display == ""){
+			var l_frame = l_div.getElementsByTagName("iframe")[0];
+			var link = "/action/TematicaAction.php?acao=visualizarTextoAtosVinculados&codigo=" + id + "&word="+fAscendentes;
+	
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px -9px";
+			l_div.getElementsByTagName('div')[0].style.display = "block";
+			l_frame.src = link;
+		}else {
+			l_div.getElementsByTagName("span")[0].style.backgroundPosition = "0px 3px";
+			l_div.getElementsByTagName('div')[0].style.display = "none";
+		}
+	}
+	
+	function retira_acentos(palavra) {
+		var com_acento = '·‡„‚‰ÈËÍÎÌÏÓÔÛÚıÙˆ˙˘˚¸Á¡¿√¬ƒ…» ÀÕÃŒœ”“’÷‘⁄Ÿ€‹«';
+		var sem_acento = 'aaaaaeeeeiiiiooooouuuucAAAAAEEEEIIIIOOOOOUUUUC';
+		var nova='';
+	
+		for(var i = 0; i < palavra.length; i++) {
+			var p = com_acento.indexOf(palavra.substr(i,1));
+			
+			if (p > -1) {
+				nova += sem_acento.substr(p,1);
+			}else {
+				nova += palavra.substr(i,1);
+			}
+		}
+		return nova;
+	}
+		
+	function expandir(pObj, nuAscendentes) {
+		l_div = recuperarObjetoPai(pObj, nuAscendentes);
+		l_div_aps = l_div.getElementsByTagName('div')[0];
+	
+		if (l_div_aps.style.display == "" || l_div_aps.style.display == "block") {
+			//setarClassColapse();
+			setarPropriedadeDisplay(l_div_aps, "none");
+			pObj.style.backgroundPosition = "0px 3px";
+		} else {
+			pObj.style.backgroundPosition = "0px -9px";
+			l_div_aps.innerHTML = "<div style='font-size: 8pt; margin-left: 21px;'>Carregando...</div>";
+			setarPropriedadeDisplay(l_div_aps, "block");
+	
+			buscarFilhos('', "");
+		}
+	}
+	
+	function buscarFilhos(filtro, dshierarquia) {
+		var params = null;
+		processarAjax('/action/TematicaAction.php?acao=montarEstruturaTitulos&cotematica=' + l_div.getAttribute("codigo")+
+					  "&notematica="+filtro+"&nivel="+1+"&infiltro="+l_div.getAttribute("inFiltro"), 'POST', params, mostrarFilhos);
+	}
+	
+	function setarPropriedadeDisplay(pObj, pDisplay) {
+		pObj.style.display = pDisplay;
+	}
+	
+	function mostrarFilhos(pRetorno) {
+		var indice = '';
+	
+		l_div_aps.innerHTML = pRetorno;
+		setarPropriedadeDisplay(l_div_aps, "block");
+		
+		if (in_abrir_segundo_nivel == "S"){
+			in_abrir_segundo_nivel = "N";
+	
+			expandir(document.getElementById('treeviewDetalhe00').getElementsByTagName('span')[0], 1);
+		}
+	}
+
+	function pdf() {
+		$('#formPdf #html').val($('div.ato').html());
+		$('#formPdf').submit();
+	}
+
+	function imprimir() {
+		//window.location.href = window.location.href + '&print=S';
+		window.print();
+	}
+
+	function tags(num_ato,sgl_tipo,sgl_orgao,vlr_ano,seq_ato) {
+		var link = "/action/ActionDatalegis.php?acao=visualizarTagsAto&sgl_tipo="+sgl_tipo+
+			"&num_ato="+num_ato+"&seq_ato="+seq_ato+"&vlr_ano="+vlr_ano+"&sgl_orgao="+sgl_orgao+
+			"&cod_modulo=310&cod_menu=9431";
+		root = window.open(link,'Tags','width=640,height=190,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no');
+	}
+	
+	var tam = 1.125;
+	function mudaFonte(tipo) {
+		if (tipo == 'mais') {
+			if(tam < 2) tam += 0.2;	
+		} else {
+			if(tam > 0.8) tam -= 0.2;
+		}
+
+		$("#conteudo p, #conteudo a, #conteudo span").css('font-size', tam + 'rem');
+		$("#conteudo div").css('font-size', (tam + 0.2) + 'rem');
+	}
+
+	</script>
+<script type="text/javascript" src="/v2/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.cookie-1.4.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/chosen.jquery-0.1.1.min.js"></script>
+<script type="text/javascript" src="/v2/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/v2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/v2/js/sistema.js?20261025"></script>
+<script type="text/javascript" async src="/view/js/copytoclipboard.js?20261025"></script>
+<script type="text/javascript" async src="https://cdn.ampproject.org/v0.js"></script>
+<div class="noprint" id="loading" style="position: fixed; top: 0; bottom: 0; right: 0; left: 0; width: 100vw; height: 100vh; background: black; opacity: 25%; z-index: 5001; padding-top: 20%; display:none;">
+	<center style="z-index: 5002; color: white; font-weight: 400;">
+		<img style="margin-top: -8px" src="../view/img/Loading.gif" alt="loading" /> Carregando...
+	</center>
+</div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js" charset="UTF-8"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>
