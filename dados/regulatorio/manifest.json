@@ -1,12 +1,12 @@
 {
   "schema": "manifesto-regulatorio-v1",
-  "gerado_em": "2026-10-25T19:32:52.159551+00:00",
+  "gerado_em": "2026-10-26T16:15:51.902317+00:00",
   "bases": {
     "legislacao_hierarquica": {
       "status": "ok",
       "arquivo": "dados/legislacao_v12/manifest.json",
       "schema": "legislacao-hierarquica-v12",
-      "sha256": "e98aff458285389efa86d409dbf7d6922fdee1132872afd40e098d318ad09eb8",
+      "sha256": "65c1e089c7b72e9678160077d333edbc2dc4a07035bd660d241824c37f453626",
       "normas": 70,
       "curados": 3
     },
@@ -118,7 +118,7 @@
       "status": "ok",
       "arquivo": "dados/controlados_portaria344/manifest.json",
       "schema": "controlados-portaria344-v2",
-      "sha256": "965b455287add1f6fc558aa15e59e67768685bd27732152a9b3be2960d5e2cf5",
+      "sha256": "b5fe5ef33f922ac5992598ae5362e32e17b53c9ae9d68a494e237e32a430171b",
       "escopo": "operacional",
       "listas_incluidas": [
         "A1",
@@ -135,7 +135,7 @@
       "substancias": 476,
       "adendos": 101,
       "norma_fonte": "RDC Anvisa 1.036/2026",
-      "data_fonte": "Mon, 19 Oct 2026 16:31:48 GMT"
+      "data_fonte": "Mon, 26 Oct 2026 16:11:44 GMT"
     },
     "roteiro_drogaria": {
       "status": "ok",
