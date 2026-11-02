@@ -7,31 +7,31 @@
       "nome": "Estabelecimentos Registrados no SIF",
       "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/97277e92-264a-4dc0-9aea-f87b8ea93798/download/sigsifestabelecimentosregistradosnosif.csv",
       "arquivo_origem": "sigsifestabelecimentosregistradosnosif.csv",
-      "data_fonte": "Fri, 02 Oct 2026 06:02:14 GMT",
-      "sha256": "0e3dcf58e379144f716dc62cabde3ec403544b3da9aa1874baad3ad61e51dfac",
+      "data_fonte": "Mon, 02 Nov 2026 06:02:13 GMT",
+      "sha256": "e4de43489220791d3bf8086cb6d5974f86da5407c3f823bae84dc047662a02a4",
       "encoding_detectado": "utf-8-sig",
       "separador_detectado": ";",
-      "quantidade_registros": 36639
+      "quantidade_registros": 36891
     },
     {
       "nome": "Relatório de Estabelecimentos",
       "url": "https://dados.agricultura.gov.br/dataset/062166e3-b515-4274-8e7d-68aadd64b820/resource/7d02af92-e3cf-4ae4-af8a-0dad334ffdfa/download/sigsifrelatorioestabelecimentos.csv",
       "arquivo_origem": "sigsifrelatorioestabelecimentos.csv",
-      "data_fonte": "Fri, 02 Oct 2026 06:10:33 GMT",
-      "sha256": "6219ba51e22e02ae723d505ab52c7670c4a5d954c5974ddec47a4abcf743ee40",
+      "data_fonte": "Mon, 02 Nov 2026 06:00:12 GMT",
+      "sha256": "5dd5db169d64349dab87bee479189c1b1581eb9281a949099ef6b6dab9267f54",
       "encoding_detectado": "utf-8-sig",
       "separador_detectado": ";",
-      "quantidade_registros": 3182
+      "quantidade_registros": 3178
     }
   ],
-  "data_download": "2026-10-05T17:58:50Z",
-  "data_processamento": "2026-10-05T17:58:50Z",
-  "quantidade_registros": 36639,
+  "data_download": "2026-11-02T19:14:12Z",
+  "data_processamento": "2026-11-02T19:14:12Z",
+  "quantidade_registros": 36891,
   "versao_schema": "1.0.1",
-  "sha256_conjunto": "378c04f57464fbc6a8c6caeba573e6bd2be50c2ce89a2469e8412d51f9b3fc7f",
+  "sha256_conjunto": "7ee757ea5cd0477dbb056f303b891244ba07cf993ea14ffcb595cce3334d53a9",
   "identificador_principal": "numero_sif",
   "campo_identificador_fiscal_origem": "CPF_CNPJ",
-  "duplicados_numero_sif_na_fonte_principal": 1181,
+  "duplicados_numero_sif_na_fonte_principal": 1188,
   "fragmentacao": {
     "tamanho_lote": 5000,
     "fragmentos": [
@@ -65,26 +65,26 @@
       },
       {
         "arquivo": "lotes/0007.json",
-        "quantidade": 1639
+        "quantidade": 1891
       }
     ]
   },
   "indices": {
     "sif": {
       "arquivo": "indice_sif.json",
-      "chaves": 3143
+      "chaves": 3139
     },
     "cnpj": {
       "arquivo": "indice_cnpj.json",
-      "chaves": 2881
+      "chaves": 2877
     },
     "nome": {
       "arquivo": "indice_nome.json",
-      "chaves": 3736
+      "chaves": 3729
     },
     "municipio_uf": {
       "arquivo": "indice_municipio_uf.json",
-      "chaves": 1489
+      "chaves": 1490
     },
     "situacao": {
       "arquivo": "indice_situacao.json",
@@ -104,16 +104,16 @@
     }
   },
   "estatisticas": {
-    "fonte_principal_registros": 36639,
-    "fonte_relatorio_registros": 3182,
+    "fonte_principal_registros": 36891,
+    "fonte_relatorio_registros": 3178,
     "relatorio_sem_sif": 0,
     "principal_sem_sif": 0,
-    "cnpj_valido": 36349,
+    "cnpj_valido": 36599,
     "cnpj_invalido": 0,
     "sem_cnpj": 0,
-    "sif_com_classificacao_complementar": 36568,
+    "sif_com_classificacao_complementar": 36820,
     "sif_sem_classificacao_complementar": 71,
-    "sif_com_multiplas_classificacoes": 315
+    "sif_com_multiplas_classificacoes": 318
   },
   "observacao": "Base cadastral principal enriquecida com todas as classificações Área/Categoria/Classe disponíveis no relatório complementar por SIF. Resultado vazio significa apenas 'não localizado nesta base'."
 }
