@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T16:21:03.974557+00:00",
+  "gerado_em": "2026-11-02T19:50:18.763574+00:00",
   "painel_escolhido": "https://app.powerbi.com/view?r=eyJrIjoiOTQwZDZjZWEtNzUwNy00MTdhLTk3ZDEtN2VhNDM2ZDNhMTEzIiwidCI6ImI2N2FmMjNmLWMzZjMtNGQzNS04MGM3LWI3MDg1ZjVlZGQ4MSJ9",
   "pontuacao": 11,
   "entidade": "TA_DADOS_CADIFA",
@@ -138,7 +138,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-parlatorio-coifa-rev00.docx/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-parlatorio-coifa-rev00.docx",
         "nivel": 1,
-        "links": 97
+        "links": 100
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-mudanca-do-detentor-da-cadifa-form-871-manual-f-anvisa-011-v-00/@@download/file",
@@ -156,13 +156,13 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/representacao-esquematica-de-submissao-do-difa/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/representacao-esquematica-de-submissao-do-difa",
         "nivel": 1,
-        "links": 97
+        "links": 100
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/schematic-representation-of-difa-submission/view",
-        "url_final": "http://www.gov.br/anvisa/en/regulation-of-products/active-pharmaceutical-ingredients/other-documents/schematic-representation-of-difa-submission",
+        "url_final": "https://www.gov.br/anvisa/en/regulation-of-products/active-pharmaceutical-ingredients/other-documents/schematic-representation-of-difa-submission",
         "nivel": 1,
-        "links": 48
+        "links": 50
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/sugestao-de-nome/view",
@@ -186,7 +186,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc/view",
         "url_final": "http://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-ifa.doc",
         "nivel": 1,
-        "links": 100
+        "links": 97
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/formularios-e-modelos/formulario-de-peticao-2-ifa.doc/view",
@@ -222,7 +222,7 @@
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/representacao-esquematica-de-submissao-do-difa",
         "url_final": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/representacao-esquematica-de-submissao-do-difa",
         "nivel": 2,
-        "links": 101
+        "links": 100
       },
       {
         "url": "https://www.gov.br/anvisa/pt-br/setorregulado/regularizacao/insumos/outros-documentos/sugestao-de-nome",
