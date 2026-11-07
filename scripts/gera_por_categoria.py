@@ -46,6 +46,10 @@ CAMPOS = [
     ('regulamento_original', 'ro'),
     ('observacoes', 'ob'),
     ('aditivo', 'ad'),
+    # texto original de "possui restrição" (Sim, Não ou vazio): a coluna 'restrito' é
+    # derivada dele e não distingue o vazio; sem este campo a verificação falha quando a
+    # Anvisa publica a relação sem preencher (ex.: INS 246, categoria 16.1.2.2, nov/2026)
+    ('possui_restricao', 'pr'),
 ]
 VERSAO_ESQUEMA = 1
 
