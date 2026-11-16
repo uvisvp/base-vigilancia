@@ -61,8 +61,9 @@ XL - rastreabilidade: capacidade de recuperação, por meio de identificações 
 XLI - relatório de validação: documento no qual os procedimentos, os registros, os resultados e a avaliação da validação são consolidados e sumarizados;
 XLII - Responsável Legal (RL): pessoa física investida de poderes legais para praticar atos em nome de determinada pessoa jurídica;
 XLIII - Responsável Técnico (RT): profissional legalmente habilitado que assume perante a Vigilância Sanitária a responsabilidade técnica do serviço que executa atividades relacionadas ao EAC;
-XLIV - serviço de EAC itinerante: Estabelecimento Assistencial de Saúde (EAS) que realiza as atividades relacionadas aos Exames de Análises Clínicas (EAC) fora de sua sede fixa ou do Serviço Tipo III a ele vinculado. O serviço de EAC itinerante se caracteriza por executar suas atividades de forma esporádica ou sazonal, além de praticar suas atividades fora do estabelecimento, e se limitam a realizar intervenções pontuais e temporárias destinadas a uma população específica em um ambiente determinado, tais como em domicílio, empresas e estabelecimentos. Portanto, as atividades relacionadas ao EAC não podem ser realizadas de forma contínua e regular, sob pena de se caracterizar como estabelecimento fixo;
-XLV - supervisor do pessoal técnico: profissional legalmente habilitado que realiza, presencialmente, a supervisão do pessoal técnico durante o período de funcionamento do serviço que executa atividades relacionadas ao EAC;
+XLIV - serviço de EAC itinerante: Estabelecimento Assistencial de Saúde (EAS) que realiza as atividades relacionadas aos Exames de Análises Clínicas (EAC) fora de sua sede fixa ou do Serviço Tipo II ou do Serviço Tipo III a ele vinculado. O serviço de EAC itinerante caracteriza-se por executar suas atividades de forma esporádica ou sazonal, fora do estabelecimento, limitando-se a intervenções pontuais e temporárias destinadas a uma população específica em ambiente determinado, tais como domicílios, empresas e estabelecimentos. As atividades relacionadas ao EAC não podem ser realizadas de forma contínua e regular, sob pena de caracterização como estabelecimento fixo;
+XLV - supervisor do pessoal técnico: profissional legalmente habilitado que realiza a supervisão do pessoal técnico;
+XLV-A - supervisão do pessoal técnico: monitoramento, acompanhamento, controle ou orientação de atividades, pessoas, equipamentos ou sistemas, realizado de forma presencial ou remota, nos termos desta Resolução, durante todo o período de funcionamento do serviço que executa atividades relacionadas aos EAC;
 XLVI - validação: processo estabelecido por evidências documentadas que comprovam que uma atividade específica apresenta conformidade com as especificações pré-determinadas e atende aos requisitos da qualidade.
 CAPÍTULO II
 DOS SERVIÇOS
@@ -133,8 +134,8 @@ Art. 23. É permitida a coleta de outros materiais biológicos além dos citados
 § 3º É permitida ao Serviço Tipo II a transcrição do laudo emitido pelo Serviço Tipo III, desde que garantida a fidedignidade dos dados e rastreabilidade do serviço responsável pela etapa analítica; e,
 § 4º É permitida ao Serviço Tipo II a execução de EAC presencial, cuja realização ocorra no ato da coleta.
 Art. 24. Somente é permitido ao Serviço Tipo II coletar, armazenar, acondicionar, processar e transportar material biológico no âmbito da realização da fase pré- analítica para a execução do EAC no Serviço Tipo III.
-Art. 25. É proibido ao Serviço Tipo II o recebimento de material biológico encaminhado por outro Serviço que realiza atividades relacionadas ao EAC.
-Parágrafo único. Excetua-se do disposto no caput deste artigo, o recebimento de material biológico encaminhado pelo Serviço de EAC Itinerante para o Posto de Coleta.
+Art. 25. É proibido ao Consultório Isolado classificado como Serviço Tipo II o recebimento de material biológico encaminhado por outro serviço que realize atividades relacionadas aos EAC.
+Parágrafo único. (Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.043, de 01/10/2026, republicada no DOU nº 195, de 15/10/2026)
 Art. 26. É permitida a guarda e o armazenamento de material de CIQ e CEQ, conforme as instruções do fabricante.
 Subseção III
 Infraestrutura
@@ -194,9 +195,9 @@ Art. 41. A sala de coleta e execução de EAC no Serviço Tipo III deve dispor d
 Art. 42. A iluminação da sala de coleta e execução de EAC deve ser planejada de modo a não prejudicar a avaliação do EAC e da coloração da pele do paciente.
 Seção V
 Do Serviço de EAC Itinerante
-Art. 43. Somente o Serviço Tipo III pode manter Serviço de EAC Itinerante, seja ele próprio ou contratado.
+Art. 43. Somente o Serviço Tipo II (Posto de Coleta) e o Serviço Tipo III podem manter Serviço de EAC Itinerante, próprio ou contratado.
 Art. 44. O Serviço de EAC Itinerante contratado deve possuir sede fixa com alvará de licenciamento ou equivalente, expedido pelo órgão sanitário local, indicando expressamente as atividades realizadas.
-Parágrafo único. O Serviço de EAC Itinerante próprio pode ter sua sede fixa no Serviço Tipo III que o mantém.
+Parágrafo único. O Serviço de EAC Itinerante próprio pode ter sua sede fixa no Serviço Tipo III ou no Serviço Tipo II (Posto de Coleta) que o mantém.
 Art. 45. O Serviço de EAC Itinerante deve estar regularizado junto à autoridade sanitária competente da localidade onde estão sendo executadas suas atividades.
 Art. 46. O Serviço de EAC Itinerante deve possuir um profissional legalmente habilitado como Responsável Técnico.
 Parágrafo único. Em caso de impedimento do Responsável Técnico, o Serviço de EAC Itinerante deve contar com um profissional legalmente habilitado para substituí-lo.
@@ -204,20 +205,20 @@ Art. 47. É proibido ao Serviço de EAC Itinerante executar o EAC com a estrutur
 Parágrafo único. Fica permitida a execução de EAC nos meios de transporte utilizados em situações de urgência e emergência.
 Art. 48. O Serviço de EAC Itinerante deve realizar as medidas e verificações após a montagem do equipamento no local de parada para atendimento, mantendo-se os registros, a fim de atestar a conformidade às características de projeto e de desempenho declaradas pelo fabricante, bem como, aos requisitos desta Resolução e demais normativas aplicáveis.
 Art. 49. O Serviço de EAC Itinerante deve seguir os demais requisitos para o Serviço que executa EAC definidos nesta Resolução.
-Art. 50. O Serviço de EAC Itinerante somente pode coletar e transportar material biológico para o Serviço Tipo III a ele vinculado.
-Parágrafo único. É permitido ao Serviço Tipo III a contratação de Serviço de EAC Itinerante para a coleta de material biológico a ser enviado ao Posto de Coleta vinculado a ele.
+Art. 50. O Serviço de EAC Itinerante somente pode coletar e transportar material biológico para o Serviço Tipo III ou para o Serviço Tipo II (Posto de Coleta) que o mantém.
+Parágrafo único. São permitidas a coleta e o transporte de material biológico pelo Serviço de EAC Itinerante, para o Serviço Tipo III vinculado ao Serviço Tipo II (Posto de Coleta) que o mantém.
 Art. 51. O Serviço de EAC Itinerante somente pode executar EAC se cumprir os seguintes requisitos obrigatórios:
 I - executar EAC exclusivamente em material biológico obtido por coleta por punção capilar, coleta em cavidade oral, em nasofaringe ou em orofaringe;
 II - não realizar Metodologia própria (in house); e,
 III - utilizar somente equipamento que não requeira o uso de água reagente produzida no serviço.
-§ 1º É permitida ao Serviço de EAC itinerante a coleta de outros materiais biológicos além dos previstos no inciso I do caput deste artigo, desde que realizada por profissional legalmente habilitado ou profissional capacitado sob supervisão, e somente no âmbito da fase pré-analítica, para a execução da fase analítica do EAC no Serviço Tipo III a ele vinculado.
-§ 2º Somente é permitido ao Serviço de EAC Itinerante coletar, armazenar, acondicionar, processar e transportar material biológico no âmbito da realização da fase pré-analítica para a execução do EAC no Serviço Tipo III.
-§ 3º Não é permitida ao Serviço de EAC Itinerante a transcrição do laudo liberado pelo Serviço Tipo III.
+§ 1º É permitida ao Serviço de EAC Itinerante a coleta de outros materiais biológicos além dos previstos no inciso I do caput deste artigo, desde que realizada por profissional legalmente habilitado ou profissional capacitado sob supervisão, e somente no âmbito da fase pré-analítica, para execução da fase analítica no Serviço Tipo II (Posto de Coleta) ou no Serviço Tipo III que o mantém.
+§ 2º Somente é permitido ao Serviço de EAC Itinerante coletar, armazenar, acondicionar, processar e transportar material biológico no âmbito da fase pré-analítica para a execução do EAC no Serviço Tipo II (Posto de Coleta) ou no Serviço Tipo III que o mantém.
+§ 3º Não é permitida ao Serviço de EAC Itinerante a transcrição do laudo liberado pelo Serviço Tipo II (Posto de Coleta) ou pelo Serviço Tipo III que o mantém.
 § 4º É permitido ao Serviço de EAC Itinerante a execução de EAC presencial, cuja realização ocorra no ato da coleta.
 § 5º O local onde serão realizadas as atividades de coleta e execução de EAC deve dispor, pelo menos, de meios que garantam a privacidade e o atendimento individualizado.
 Art. 52. A coleta e a execução de EAC no serviço de EAC itinerante devem ser realizadas por profissional legalmente habilitado ou profissional capacitado sob supervisão.
 Art. 53. O Serviço de EAC Itinerante deve realizar o CIQ e o CEQ, conforme estabelecido nesta Resolução.
-Parágrafo único. O Serviço de EAC Itinerante próprio poderá realizar o CIQ e o CEQ, conforme determinado pelo Serviço Tipo III que o mantém.
+Parágrafo único. O Serviço de EAC Itinerante próprio poderá realizar o CIQ e o CEQ, conforme determinado pelo Serviço Tipo II (Posto de Coleta) ou pelo Serviço Tipo III que o mantém.
 CAPÍTULO III
 DAS CONDIÇÕES GERAIS
 Seção I
@@ -386,6 +387,12 @@ Art. 122. O Serviço que executa as atividades relacionadas ao EAC deve possuir 
 § 1º O supervisor do pessoal técnico poderá ser o Responsável Técnico.
 § 2º O Serviço que executa as atividades relacionadas ao EAC pode possuir um ou mais supervisores do pessoal técnico.
 § 3º Em caso de impedimento do supervisor do pessoal técnico, o Serviço que executa as atividades relacionadas ao EAC deve contar com um profissional legalmente habilitado para substituí-lo.
+§ 4º É permitida a supervisão do pessoal técnico de forma remota somente para a Central de Distribuição que proceder unicamente à manipulação da embalagem secundária ou da embalagem terciária.
+§ 5º A supervisão do pessoal técnico de forma remota deve ser documentada.
+§ 6º O registro da supervisão do pessoal técnico de forma remota deve conter, no mínimo:
+I - todas as comunicações realizadas entre o supervisor e o pessoal técnico;
+II - todas as ocorrências observadas; e
+III - as ações preventivas e corretivas adotadas.
 Art. 123. O Serviço que executa as atividades relacionadas ao EAC deve manter registros da formação e qualificação de seus profissionais, compatíveis com as funções desempenhadas.
 Art. 124. O Serviço que executa as atividades relacionadas ao EAC deve implementar Programa de Educação Permanente para toda a equipe.
 Art. 125. O Programa de Educação Permanente deve contemplar:
