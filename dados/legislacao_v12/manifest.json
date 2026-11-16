@@ -1,6 +1,6 @@
 {
   "schema": "legislacao-hierarquica-v12",
-  "gerado_em": "2026-11-16T19:51:34.718821+00:00",
+  "gerado_em": "2026-11-15T20:53:11.545933+00:00",
   "normas": {
     "Decreto Estadual SP 69118-2024": {
       "arquivo": "decreto-estadual-sp-69118-2024.json",
@@ -1772,26 +1772,31 @@
     },
     "RDC 978-2025": {
       "arquivo": "rdc-978-2025.json",
-      "nos": 601,
-      "sha256_texto": "26da55b32c5279ca75e61cfe92aef6663113a9a6a3e52b56f8b6d263efdc82c0",
+      "nos": 608,
+      "sha256_texto": "f1c63dbc569f02fd00f1651a501d17fc2fc6e39936848e1871e711bbcbf3b442",
       "proveniencia": {
         "norma": "RDC 978-2025",
         "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=8542&cod_modulo=310&link=S&numeroAto=00000978&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2025",
-        "consultado_em": "2026-09-06T00:56:39.596460+00:00",
+        "consultado_em": "2026-11-15T20:53:11.545387+00:00",
         "data_fonte": "2025-06-06",
         "tipo_data_fonte": "data_do_ato; consolidação sem data oficial declarada",
-        "sha256_fonte": "4da2e1e362f2439ded07ccbb7119f171a93e0f48a86855343b22cc792d0bbec5",
-        "sha256_texto": "26da55b32c5279ca75e61cfe92aef6663113a9a6a3e52b56f8b6d263efdc82c0",
+        "sha256_fonte": "be14aa8b8f1393a25407cc4fe88c9dda942d2d85c6112ddcb1b41709906f8a11",
+        "sha256_texto": "f1c63dbc569f02fd00f1651a501d17fc2fc6e39936848e1871e711bbcbf3b442",
         "alteracoes_encontradas": [
           "(Redação dada pela Resolução da Diretoria Colegiada Anvisa - RDC nº 986, de 15/08/2025)",
-          "(Incluído pela Resolução da Diretoria Colegiada Anvisa - RDC nº 986, de 15/08/2025)"
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa - RDC nº 986, de 15/08/2025)",
+          "(Redação dada pela Resolução da Diretoria Colegiada Anvisa nº 1.043, de 01/10/2026, republicada no DOU nº 195, de 15/10/2026)",
+          "(Incluído pela Resolução da Diretoria Colegiada Anvisa nº 1.043, de 01/10/2026, republicada no DOU nº 195, de 15/10/2026)",
+          "(Revogado pela Resolução da Diretoria Colegiada Anvisa nº 1.043, de 01/10/2026, republicada no DOU nº 195, de 15/10/2026)"
         ],
         "status_vigencia": "vigente_com_alteracoes",
         "texto": "textos\\RDC 978-2025--oficial.txt",
-        "data_processamento": "2026-09-06T00:58:23.599264+00:00",
+        "data_processamento": "2026-11-15T20:53:11.545387+00:00",
         "schema": "proveniencia-legislativa-v1",
         "estruturar_alineas": true,
-        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria"
+        "escopo_validacao": "dispositivos vinculados ao roteiro de drogaria; anexos e demais usos exigem revisão própria",
+        "fonte_alteracao": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&link=S&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&cod_modulo=310&cod_menu=9428&numeroAto=00001043&valorAno=2026",
+        "nota_fonte_texto": "Texto consolidado do AnvisaLegis; dispositivos alterados pela RDC 1.043/2026 conferidos com o texto da própria RDC 1.043 no AnvisaLegis."
       }
     },
     "Resolucao ANTT 5998-2022": {
