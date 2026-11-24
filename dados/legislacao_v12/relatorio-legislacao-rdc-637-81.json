@@ -1,0 +1,24 @@
+{
+  "schema": "relatorio-legislacao-rdc-637-81-v1",
+  "gerado_em": "2026-11-24T15:33:30.277053+00:00",
+  "catalogo_atualizado": true,
+  "normas": [
+    {
+      "norma": "RDC 637-2022",
+      "arquivo": "rdc-637-2022.json",
+      "nos": 18,
+      "chars": 3537,
+      "status_vigencia": "vigente",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000637&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022"
+    },
+    {
+      "norma": "RDC 81-2008",
+      "arquivo": "rdc-81-2008.json",
+      "nos": 1646,
+      "chars": 258646,
+      "status_vigencia": "vigente com alterações",
+      "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000081&seqAto=000&valorAno=2008&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true"
+    }
+  ],
+  "total_normas_manifest": 72
+}

@@ -1,0 +1,20 @@
+{
+  "norma": "RDC 637-2022",
+  "rotulo": "RDC Anvisa nº 637/2022",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000637&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000637&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000637&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "nota_fonte_texto": "Texto oficial obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&cod_menu=9431&cod_modulo=310&link=S&numeroAto=00000637&orgao=RDC%2FDC%2FANVISA%2FMS&seqAto=000&tipo=RDC&valorAno=2022",
+  "consultado_em": "2026-11-24T15:33:31.914576+00:00",
+  "data_fonte": "2022-03-24",
+  "tipo_data_fonte": "data_do_ato; texto consolidado conferido no AnvisaLegis",
+  "formato_fonte": "html",
+  "sha256_fonte": "c53df92ddbd005f6516c275ecb3036c4e5db0b04b0fef1299448aa3ae7ec4d3d",
+  "sha256_texto": "48e7cb1256b5ff04fdf0ae63d15ca8daeeee9ed0c4b3c880ed6e630cbfc32467",
+  "status_vigencia": "vigente",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 637-2022--oficial.txt",
+  "data_processamento": "2026-11-24T15:33:31.914700+00:00",
+  "schema": "proveniencia-legislativa-v1"
+}

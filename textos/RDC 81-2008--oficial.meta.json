@@ -1,0 +1,20 @@
+{
+  "norma": "RDC 81-2008",
+  "rotulo": "RDC Anvisa nº 81/2008",
+  "fonte_oficial": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000081&seqAto=000&valorAno=2008&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true",
+  "fonte_texto_utilizada": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000081&seqAto=000&valorAno=2008&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true",
+  "fonte_status": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000081&seqAto=000&valorAno=2008&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true",
+  "nota_fonte_texto": "Texto consolidado (vigente com alterações) obtido diretamente do AnvisaLegis.",
+  "url_final": "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=abrirTextoAto&tipo=RDC&numeroAto=00000081&seqAto=000&valorAno=2008&orgao=RDC/DC/ANVISA/MS&codTipo=&desItem=&desItemFim=&cod_menu=9434&cod_modulo=310&pesquisa=true",
+  "consultado_em": "2026-11-24T15:33:33.736287+00:00",
+  "data_fonte": "2008-11-05",
+  "tipo_data_fonte": "data_do_ato; texto consolidado conferido no AnvisaLegis",
+  "formato_fonte": "html",
+  "sha256_fonte": "532e2a0df83743445eb387d4657b8d4a76ffcda38c74ade77b4a123aab3ece30",
+  "sha256_texto": "8a06f67cf5e8960106fbc5fbea6a720c1f4d57ff637e53cb25601685312da97b",
+  "status_vigencia": "vigente com alterações",
+  "status_fonte": "AnvisaLegis",
+  "texto": "textos/RDC 81-2008--oficial.txt",
+  "data_processamento": "2026-11-24T15:33:33.737366+00:00",
+  "schema": "proveniencia-legislativa-v1"
+}
